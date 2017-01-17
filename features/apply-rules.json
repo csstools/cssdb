@@ -1,0 +1,15 @@
+{
+  "title": "@apply rules",
+  "description": "A syntax for storing properties in a named variable, referenceable in other style rules",
+  "specification": "http://tabatkins.github.io/specs/css-apply-rule/",
+  "stage": null,
+  "citations": [
+    "http://tabatkins.github.io/specs/css-apply-rule/"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-apply",
+      "link": "https://github.com/pascalduez/postcss-apply"
+    }
+  ]
+}

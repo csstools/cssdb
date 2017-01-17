@@ -1,0 +1,66 @@
+{
+  "name": "css-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A database of staged CSS features",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/css-db",
+  "homepage": "https://github.com/jonathantneal/css-db#readme",
+  "bugs": "https://github.com/jonathantneal/css-db/issues",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "features"
+  ],
+  "scripts": {
+    "lint": "npm run lint:ec && npm run lint:js",
+    "lint:ec": "echint",
+    "lint:js": "eslint *.js --cache --ignore-pattern .gitignore",
+    "publish": "npm run publish:gh-pages && npm run publish:features && npm run publish:push",
+    "publish:gh-pages": "node tasks/publish-gh-pages",
+    "publish:features": "node tasks/publish-features",
+    "publish:push": "git push && git push origin `git subtree split --prefix gh-pages master`:gh-pages",
+    "pre-commit": "echo 'Running pre-commit checks...' && exit 0",
+    "test": "npm run lint && npm run test:json",
+    "test:json": "node tasks/test-json"
+  },
+  "engines": {
+    "node": ">=6.5.0"
+  },
+  "devDependencies": {
+    "echint": "^2.1.1",
+    "echint-config-dev": "1.0.0",
+    "eslint": "^3.13.1",
+    "eslint-config-dev": "1.0.0",
+    "eslit": "^3.0.0",
+    "fse": "^1.0.0",
+    "pre-commit": "^1.2.2"
+  },
+  "echint": {
+    "extends": "dev"
+  },
+  "eslintConfig": {
+    "extends": "dev",
+    "rules": {
+      "no-nested-ternary": [
+        0
+      ],
+      "wrap-regex": [
+        0
+      ]
+    }
+  },
+  "pre-commit": [
+    "pre-commit",
+    "test"
+  ],
+  "keywords": [
+    "css",
+    "features",
+    "list",
+    "specifications",
+    "stages",
+    "tc39"
+  ]
+}

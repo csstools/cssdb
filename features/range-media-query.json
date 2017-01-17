@@ -1,0 +1,15 @@
+{
+  "title": "range media queries",
+  "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
+  "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
+  "stage": null,
+  "citations": [
+    "https://drafts.csswg.org/mediaqueries/#mq-ranges"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-media-minmax",
+      "link": "https://github.com/postcss/postcss-media-minmax"
+    }
+  ]
+}

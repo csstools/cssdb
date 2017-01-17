@@ -1,0 +1,15 @@
+{
+  "title": ":not list pseudo-class",
+  "description": "A pseudo-class used to ignore a selector list",
+  "specification": "https://drafts.csswg.org/selectors-4/#negation",
+  "stage": null,
+  "citations": [
+    "https://drafts.csswg.org/selectors-4/#negation"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-selector-not",
+      "link": "https://github.com/postcss/postcss-selector-not"
+    }
+  ]
+}

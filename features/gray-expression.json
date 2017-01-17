@@ -1,0 +1,15 @@
+{
+  "title": "gray expressions",
+  "description": "An expression used to specify fully desaturated colors",
+  "specification": "https://drafts.csswg.org/css-color/#grays",
+  "stage": null,
+  "citations": [
+    "https://drafts.csswg.org/css-color/#grays"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-color-gray",
+      "link": "https://github.com/postcss/postcss-color-gray"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "color expressions",
+  "description": "A function used to modify a color",
+  "specification": "https://drafts.csswg.org/css-color/#modifying-colors",
+  "stage": null,
+  "citations": [
+    "https://drafts.csswg.org/css-color/#modifying-colors"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-color-function",
+      "link": "https://github.com/postcss/postcss-color-function"
+    }
+  ]
+}

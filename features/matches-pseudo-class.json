@@ -1,0 +1,15 @@
+{
+  "title": ":matches pseudo-class",
+  "description": "A pseudo-class used to match a selector list",
+  "specification": "https://drafts.csswg.org/selectors-4/#matches",
+  "stage": null,
+  "citations": [
+    "https://drafts.csswg.org/selectors-4/#matches"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-selector-matches",
+      "link": "https://github.com/postcss/postcss-selector-matches"
+    }
+  ]
+}

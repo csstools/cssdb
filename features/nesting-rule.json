@@ -1,0 +1,15 @@
+{
+  "title": "nesting rules",
+  "description": "A syntax for nesting relative rules inside another",
+  "specification": "http://tabatkins.github.io/specs/css-nesting/",
+  "stage": null,
+  "citations": [
+    "http://tabatkins.github.io/specs/css-nesting/"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-nesting",
+      "link": "https://github.com/jonathantneal/postcss-nesting"
+    }
+  ]
+}

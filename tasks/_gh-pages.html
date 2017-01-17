@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CSS Database</title>
+<link href="style.css" rel="stylesheet">
+
+<header class="cssdb-header">
+	<img class="cssdb-header-branding" src="https://rawgit.com/jonathantneal/media-expressions-spec/gh-pages/css-logo.svg" alt="CSS Logo" width="90" height="90">
+	<div class="cssdb-header-heading">
+		<h1 class="cssdb-header-title">What’s next for CSS?</h1>
+		<p class="cssdb-header-desc">CSS Database is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.</p>
+	</div>
+	<a class="cssdb-header-link" href="">What are the stages?</a>
+</header>
+<table class="cssdb-features">
+	<thead>
+		<tr>
+			<th>Feature</th>
+			<th>Stage</th>
+			<th>Description</th>
+			<th>Specification</th>
+			<th>Polyfills</th>
+		</tr>
+	</thead>
+	<tbody>${ features.map(
+		(feature) => `<tr class="cssdb-feature">
+			<td class="cssdb-feature-title">${ feature.title }</td>
+			<td class="cssdb-feature-stage stage--${ feature.stage }">${ feature.stage === null ? 'NR' : feature.stage }</td>
+			<td class="cssdb-feature-desc">${ feature.description }</td>
+			<td class="cssdb-feature-spec"><a href="${ feature.specification }">${ feature.specification }</a></td>
+			<td class="cssdb-feature-fill">${ feature.polyfills && feature.polyfills.length ? `<ul>${ feature.polyfills.map((polyfill) => `<a href="${ polyfill.link }">${ polyfill.name }</a>`) }</ul>` : '' }</td>
+		</tr>`
+	) }</tbody>
+</table>

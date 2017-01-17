@@ -1,0 +1,15 @@
+{
+  "title": "variables",
+  "description": "A syntax for defining custom values accepted by all CSS properties",
+  "specification": "https://www.w3.org/TR/css-variables/",
+  "stage": null,
+  "citations": [
+    "https://www.w3.org/TR/css-variables/"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-custom-properties",
+      "link": "https://github.com/postcss/postcss-custom-properties"
+    }
+  ]
+}

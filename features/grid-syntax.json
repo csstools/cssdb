@@ -1,0 +1,9 @@
+{
+  "title": "grid layout",
+  "description": "A syntax for using a grid concept to lay out content",
+  "specification": "https://www.w3.org/TR/css-grid-1/",
+  "stage": null,
+  "citations": [
+    "https://www.w3.org/TR/css-grid-1/"
+  ]
+}

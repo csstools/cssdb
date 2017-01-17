@@ -1,0 +1,121 @@
+/* Scaffolding
+/* ========================================================================== */
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+body {
+	font: 100%/1 sans-serif;
+	margin: 32px 64px;
+}
+
+a {
+	color: #08a6d1;
+	text-decoration: none;
+}
+
+/* Header
+/* ========================================================================== */
+
+.cssdb-header {
+	align-items: center;
+	display: flex;
+}
+
+.cssdb-header-branding {
+	height: 114px;
+	margin-right: 36px;
+	width: 114px;
+}
+
+.cssdb-header-heading {
+	flex-grow: 1;
+}
+
+.cssdb-header-title {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0 0 12px;
+}
+
+.cssdb-header-desc {
+	color: #616161;
+	font-size: 14px;
+	line-height: calc(18 / 14);
+	margin: 0;
+	max-width: 44em;
+}
+
+.cssdb-header-link {
+	text-align: right;
+	margin-left: 60px;
+	white-space: nowrap;
+}
+
+/* Features List
+/* ========================================================================== */
+
+.cssdb-features {
+	box-shadow: 0 0 1px 0 #e1e1e1;
+	border-collapse: collapse;
+	margin-top: 42px;
+	width: 100%;
+}
+
+.cssdb-features td,
+.cssdb-features th {
+	font-size: 14px;
+	padding: 22px 26px;
+}
+
+.cssdb-features th {
+	font-weight: 700;
+	line-height: 1;
+}
+
+.cssdb-features th:not(:first-child) {
+	box-shadow: inset 1px 0 0 0 #f5f5f5;
+}
+
+.cssdb-features td {
+	box-shadow: inset 0 .5px 0 0 #fff, inset 0 -.5px 0 0 #fff;
+	line-height: calc(22 / 18);
+}
+
+.cssdb-features td:not(.cssdb-feature-stage):not(:first-child) {
+	box-shadow: inset 1px 0 0 0 #ededed;
+}
+
+.cssdb-feature:nth-child(odd) {
+	background-color: #f7f7f7;
+}
+
+.cssdb-feature-stage {
+	color: #fff;
+	text-align: center;
+}
+
+.stage--null {
+	background-color: #414141;
+}
+
+.stage--0 {
+	background-color: #d02c2c;
+}
+
+.stage--1 {
+	background-color: #ed782a;
+}
+
+.stage--2 {
+	background-color: #e7c924;
+}
+
+.stage--3 {
+	background-color: #899c1f;
+}
+
+.stage--4 {
+	background-color: #3e7817;
+}
