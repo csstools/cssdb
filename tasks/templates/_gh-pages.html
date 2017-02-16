@@ -26,7 +26,7 @@
 	<tbody>${ features.map(
 		(feature) => `<tr class="cssdb-feature">
 			<td class="cssdb-feature-title">${ feature.title }</td>
-			<td class="cssdb-feature-stage stage--${ feature.stage }">${ feature.stage === null ? 'NR' : feature.stage }</td>
+			<td class="cssdb-feature-stage stage--${ feature.stage }">${ feature.stage === null ? '×' : feature.stage }</td>
 			<td class="cssdb-feature-desc">${ feature.description }</td>
 			<td class="cssdb-feature-spec"><a href="${ feature.specification }">${ feature.specification }</a></td>
 			<td class="cssdb-feature-fill">${ feature.polyfills && feature.polyfills.length ? `<ul>${ feature.polyfills.map((polyfill) => `<a href="${ polyfill.link }">${ polyfill.name }</a>`) }</ul>` : '' }</td>

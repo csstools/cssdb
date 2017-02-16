@@ -2,11 +2,9 @@
 
 Pull requests are the most helpful contributions.
 
-We need updates to existing CSS features and to add missing and new features. A feature only needs a **name**, a **description**, and a link to its **specification**, because every feature is "*Unrecognized*" until we see proof of a **stage** change from the [CSSWG](#join-the-csswg).
+We need updates to existing CSS features and to add missing and new features. A feature only needs a **name**, a **description**, and a link to its **specification**, because every feature is "*unrecognized*" until we see proof of a **stage** change from the [CSSWG](#join-the-csswg).
 
 Non-CSSWG members can still update CSS features by including **citations** to public notes that show how the CSSWG is advancing a feature. If you need further clarification, read [why we are doing this](#why-are-we-doing-this).
-
-Without further adeu, read about [updating a feature](#updating-a-feature) or [adding-a-new-feature](#adding-a-new-feature).
 
 #### Updating a feature
 
@@ -23,14 +21,14 @@ The only fields you’ll see in our JSON file are, in order:
 - `title`: the name of the feature.
 - `description`: a brief description of the feature.
 - `specification`: a link to feature’s specification.
-- `stage`: the position of the feature within the [staging process]. Stages should be a number, and unrecognized stages should be `null`.
+- `stage`: the position of the feature within the [staging process]. Stages should be a number, and no stage (*unrecognized*) should be `null`.
 - `stage`: the current [stage](README.md#staging-process) of the feature; where
-    + `0` means Stage 0, i.e. "*Aspirational*",
-    + `1` means Stage 1, i.e. "*Experimental*",
-    + `2` means Stage 2, i.e. "*Draft*",
-    + `3` means Stage 3, i.e. "*Adoption*",
-    + `4` means Stage 4, i.e. "*Complete*", and
-    + `null` means we don’t know, i.e. "*Unrecognized*".
+    + `0` means **Stage 0** (*Aspirational*),
+    + `1` means **Stage 1** (*Experimental*),
+    + `2` means **Stage 2** (*Draft*),
+    + `3` means **Stage 3** (*Adoption*),
+    + `4` means **Stage 4** (*Complete*), and
+    + `null` means **No Stage** (*Unrecognized*).
 - `citations`: a list of links realted to the feature and its progress.
 - `issues`: a link to issue tracking for the feature.
 - `polyfills`: A list of polyfills used to simulate the feature; which includes
@@ -52,7 +50,7 @@ If you’re changing the **stage** of a feature, be sure to add a **citation** t
 
 For best results, be sure your contributions make sense to everyone else. If you’re unfamiliar with git, consider the following workflow.
 
-1. To begin, [fork this project], clone your fork, and add our upstream.
+1. To begin, [fork this project][fork], clone your fork, and add our upstream.
     ```bash
     # Clone your fork of the repo into the current directory
     git clone https://github.com/<your-user>/css-db
