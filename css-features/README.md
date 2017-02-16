@@ -12,6 +12,16 @@ A syntax for storing properties in a named variable, referenceable in other styl
 
 - http://tabatkins.github.io/specs/css-apply-rule/
 
+### aspect ratio
+
+> Status: Unrecognized
+
+A spec for an Aspect Ratio property for CSS
+
+##### Citations
+
+- https://github.com/tomhodgins/aspect-ratio-spec
+
 ### color expressions
 
 > Status: Unrecognized
@@ -41,6 +51,16 @@ An at-rule used to define aliases representing selectors
 ##### Citations
 
 - https://drafts.csswg.org/css-extensions/#custom-selectors
+
+### element queries
+
+> Status: Unrecognized
+
+A spec for a container-style element query syntax
+
+##### Citations
+
+- https://github.com/tomhodgins/element-queries-spec
 
 ### gray expressions
 
