@@ -13,39 +13,40 @@ Did you come here to update the status of a CSS feature or add a new one? Quick,
 This staging process reflects the real-life stability of new CSS features.
 
 You can read an [inside view of the CSSWG] to learn about the official (and unofficial) development stages of CSS specifications. In reality, specifications and browser implementations happen out of sync. Stable CSS features are missing in all browsers, while other CSS features developed outside the [CSSWG] are already behind flags in Chrome. This is too ambiguous for the web development community, and a more accountable process is desired.
-
-#### Stage 0: Aspirational
-
+<hr>
+### Stage 0: Aspirational
+<img src="https://dl.dropboxusercontent.com/u/18590/stage--0.png" width="90px" height="90px" align="left">
 > “This is a crazy idea.”
 
 A CSS specification presented to the CSSWG by a [champion] within or outside the CSSWG. It should be considered highly instable and subject to change.
-
-#### Stage 1: Experimental
-
+<hr>
+### Stage 1: Experimental
+<img src="https://dl.dropboxusercontent.com/u/18590/stage--1.png" width="90px" height="90px" align="left">
 > “This idea might not be crazy.”
 
 A CSS specification formally endorsed by the [CSSWG]. It should be considered highly instable and subject to change.
-
-#### Stage 2: Draft
-
+<hr>
+### Stage 2: Draft
+<img src="https://dl.dropboxusercontent.com/u/18590/stage--2.png" width="90px" height="90px" align="left">
 > “This idea is not crazy.”
 
 A CSS specification formally endorsed by the [CSSWG] and requiring implementations to move forward. It should be considered stable and subject to little change.
-
-#### Stage 3: Adoption
-
+<hr>
+### Stage 3: Adoption
+<img src="https://dl.dropboxusercontent.com/u/18590/stage--3.png" width="90px" height="90px" align="left">
 > “This idea is becoming part of the web.”
 
 A CSS specification formally endorsed by the [CSSWG] and being implemented by [recognized browser vendors](#recognized-browser-vendors), possibly behind a flag. It should be considered stable and subject to little change.
-
-#### Stage 4: Complete
-
+<hr>
+### Stage 4: Complete
+<img src="https://dl.dropboxusercontent.com/u/18590/stage-4.png" width="90px" height="90px" align="left">
 > “This idea is part of the web.”
 
 A CSS specification formally endorsed by the [CSSWG] and implemented by all [recognized browser vendors](#recognized-browser-vendors).
+<hr>
 
-#### No Stage: Unrecognized
-
+### No Stage: Unrecognized
+<img src="https://dl.dropboxusercontent.com/u/18590/nr.png" width="90px" height="90px" align="left">
 > “I have no idea what I’m doing.”
 
 This is any specification that has not yet been presented to the [CSSWG], or that has been formally rejected or deprecated by the [CSSWG].
