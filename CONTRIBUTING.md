@@ -2,7 +2,7 @@
 
 Pull requests are the most helpful contributions.
 
-We need updates to existing CSS features and to add missing and new features. A feature only needs a **name**, a **description**, and a link to its **specification**, because every feature is "*unrecognized*" until we see proof of a **stage** change from the [CSSWG](#join-the-csswg).
+We need updates to existing CSS features and to add missing and new features. A feature only needs a **title**, a **description**, and a link to its **specification**, because every feature is "*unrecognized*" until we see proof of a **stage** change from the [CSSWG](#join-the-csswg).
 
 Non-CSSWG members can still update CSS features by including **citations** to public notes that show how the CSSWG is advancing a feature. If you need further clarification, read [why we are doing this](#why-are-we-doing-this).
 
@@ -29,7 +29,7 @@ The only fields you’ll see in our JSON file are, in order:
     + `3` means **Stage 3** (*Adoption*),
     + `4` means **Stage 4** (*Complete*), and
     + `null` means **No Stage** (*Unrecognized*).
-- `citations`: a list of links realted to the feature and its progress.
+- `citations`: a list of links related to the feature and its progress.
 - `issues`: a link to issue tracking for the feature.
 - `polyfills`: A list of polyfills used to simulate the feature; which includes
     + `name`: the shorthand name of the polyfill, and
@@ -37,7 +37,7 @@ The only fields you’ll see in our JSON file are, in order:
 
 All contributions must follow the syntax and style of existing JSON files, which;
     1. Exist as `css-features/${ featureName }.json`, where `featureName` is the [kebab-case](http://wiki.c2.com/?KebabCase) name representing the title and thematic category of the feature, like `hwb-color`, `matches-pseudo-class`, or `grid-syntax`.
-    2. Include at least the required fields; **name**, **description**, **specification**, and **stage** (which is `null` if you don’t know it).
+    2. Include at least the required fields; **title**, **description**, **specification**, and **stage** (which is `null` if you don’t know it).
 
 Did you write the specification you are submitting? It must;
     1. Describe what the feature does in as few words as possible.
@@ -68,7 +68,7 @@ For best results, be sure your contributions make sense to everyone else. If you
     git checkout -b feature/thing
     ```
     ```bash
-    # Or, move into a new branch for a update
+    # Or, move into a new branch for an update
     git checkout -b update/something
     ```
 
