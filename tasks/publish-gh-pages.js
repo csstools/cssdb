@@ -3,10 +3,10 @@ const eslit = require('eslit');
 const fs    = require('fse');
 
 // features directory
-const src = fs.join(fs.dirname(__dirname), 'features');
+const src = fs.join(fs.dirname(__dirname), 'css-features');
 const dir = fs.join(fs.dirname(__dirname), 'gh-pages');
 const md  = fs.join(dir, 'index.html');
-const tpl = fs.join(__dirname, '_gh-pages.html');
+const tpl = fs.join(__dirname, 'templates', '_gh-pages.html');
 
 // promise a list of files within the features directory
 fs.readdir(src).then(

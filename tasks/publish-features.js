@@ -3,9 +3,9 @@ const eslit = require('eslit');
 const fs    = require('fse');
 
 // features directory
-const dir = fs.join(fs.dirname(__dirname), 'features');
+const dir = fs.join(fs.dirname(__dirname), 'css-features');
 const md  = fs.join(dir, 'README.md');
-const tpl = fs.join(__dirname, '_features.md');
+const tpl = fs.join(__dirname, 'templates', '_features.md');
 
 // promise a list of files within the features directory
 fs.readdir(dir).then(

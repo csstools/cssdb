@@ -1,5 +1,7 @@
 # CSS Database
 
+CSS Database is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+
 ### @apply rules
 
 > Status: Unrecognized
@@ -60,7 +62,7 @@ A syntax for using a grid concept to lay out content
 
 - https://www.w3.org/TR/css-grid-1/
 
-### hex #rgba colors
+### hex alpha colors
 
 > Status: Unrecognized
 
