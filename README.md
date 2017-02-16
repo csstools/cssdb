@@ -19,14 +19,14 @@ You can read an [inside view of the CSSWG] to learn about the official (and unof
 <img src="https://dl.dropboxusercontent.com/u/18590/stage--0.png" width="90px" height="90px" align="left">
 > “This is a crazy idea.”
 
-A CSS specification presented to the CSSWG by a [champion] within or outside the CSSWG. It should be considered highly instable and subject to change.
+A CSS specification presented to the CSSWG by a [champion] within or outside the CSSWG. It should be considered highly unstable and subject to change.
 
 ---
 ### Stage 1: Experimental
 <img src="https://dl.dropboxusercontent.com/u/18590/stage--1.png" width="90px" height="90px" align="left">
 > “This idea might not be crazy.”
 
-A CSS specification formally endorsed by the [CSSWG]. It should be considered highly instable and subject to change.
+A CSS specification formally endorsed by the [CSSWG]. It should be considered highly unstable and subject to change.
 
 ---
 ### Stage 2: Draft
