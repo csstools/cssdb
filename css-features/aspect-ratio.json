@@ -1,0 +1,16 @@
+{
+  "title": "aspect ratio",
+  "description": "A spec for an Aspect Ratio property for CSS",
+  "specification": "https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html",
+  "stage": null,
+  "citations": [
+    "https://github.com/tomhodgins/aspect-ratio-spec"
+  ],
+  "issues": "https://github.com/tomhodgins/aspect-ratio-spec/issues",
+  "polyfills": [
+    {
+      "name": "aspect-ratio.js",
+      "link": "https://github.com/tomhodgins/aspect-ratio-spec"
+    }
+  ]
+}
