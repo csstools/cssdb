@@ -6,15 +6,15 @@ We need updates to existing CSS features and to add missing and new features. A 
 
 Non-CSSWG members can still update CSS features by including **citations** to public notes that show how the CSSWG is advancing a feature. If you need further clarification, read [why we are doing this](#why-are-we-doing-this).
 
-#### Updating a feature
+### Updating a feature
 
 Does one of the CSS features listed here have out-of-date info? Goto [css-features](css-features) and find the feature you want to update. It’s a JSON file, so make changes directly to the JSON and [make a pull request](#making-a-pull-request).
 
-##### Adding a new feature
+### Adding a new feature
 
 Is an experimental CSS feature not listed here? Add the feature to [css-features](css-features). You’ll be creating a JSON file, so make additions directly to the JSON and [make a pull request](#making-a-pull-request).
 
-#### How the JSON file works
+### Advanced Usage: How the JSON file works
 
 The only fields you’ll see in our JSON file are, in order:
 
