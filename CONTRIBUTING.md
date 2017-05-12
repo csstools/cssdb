@@ -93,18 +93,20 @@ The only fields you’ll see in our JSON file are, in order:
 
 All contributions must follow the syntax and style of existing JSON files,
 which;
-    1. Exist as `css-features/${ featureName }.json`, where `featureName` is
-       the [kebab-case](http://wiki.c2.com/?KebabCase) name representing the
-       title and thematic category of the feature, like `hwb-color`,
-       `matches-pseudo-class`, or `grid-syntax`.
-    2. Include at least the required fields; **title**, **description**,
-       **specification**, and **stage** (which is `null` if you don’t know it).
+
+1. Exist as `css-features/${ featureName }.json`, where `featureName` is the
+   [kebab-case](http://wiki.c2.com/?KebabCase) name representing the title and
+   thematic category of the feature, like `hwb-color`, `matches-pseudo-class`,
+   or `grid-syntax`.
+2. Include at least the required fields; **title**, **description**,
+   **specification**, and **stage** (which is `null` if you don’t know it).
 
 Did you write the specification you are submitting? It must;
-    1. Describe what the feature does in as few words as possible.
-    2. Describe why the feature exists in as few words as possible.
-    3. Describe how the feature and its parts operate as clearly and completely
-       as possible.
+
+1. Describe what the feature does in as few words as possible.
+2. Describe why the feature exists in as few words as possible.
+3. Describe how the feature and its parts operate as clearly and completely as
+   possible.
 
 If you’re changing the **stage** of a feature, be sure to add a **citation**
 that proves its new position in the
@@ -123,5 +125,11 @@ instructions.
 ### Why are we doing this?
 
 The CSSWG doesn’t follow the [TC39 process]. How they operate [in theory](https://www.w3.org/Style/CSS/specs.en.html) versus [in real life](http://fantasai.inkedblade.net/weblog/2011/inside-csswg/) is unclear, and
-browsers [don’t necessarily follow their process anyway](https://www.chromestatus.com/feature/5753701012602880),so we have to discern what’s really going on ourselves. If we didn’t, we
+browsers
+[don’t necessarily follow their process anyway](https://www.chromestatus.com/feature/5753701012602880),
+so we have to discern what’s really going on ourselves. If we didn’t, we
 probably wouldn’t need this repository.
+
+[fork]: fork
+[staging process]: README.md#staging-process
+[TC39 process]: https://thefeedbackloop.xyz/tc39-a-process-sketch-stages-0-and-1/
