@@ -30,7 +30,7 @@ A CSS specification presented to the CSSWG by a [champion] within or outside the
 
 > “This idea might not be crazy.”
 
-A CSS specification formally endorsed by the [CSSWG]. It should be considered highly unstable and subject to change.
+A CSS specification formally endorsed by the [CSSWG]. It should be considered highly unstable, subject to change, and subject to rejection as a standard.
 
 ---
 
@@ -40,7 +40,7 @@ A CSS specification formally endorsed by the [CSSWG]. It should be considered hi
 
 > “This idea is not crazy.”
 
-A CSS specification formally endorsed by the [CSSWG] and requiring implementations to move forward. It should be considered stable and subject to little change.
+A CSS specification formally endorsed by the [CSSWG] and requiring implementations to move forward. It should be considered stable and subject to little change, but still subject to rejection as a standard.
 
 ---
 
@@ -50,7 +50,7 @@ A CSS specification formally endorsed by the [CSSWG] and requiring implementatio
 
 > “This idea is becoming part of the web.”
 
-A CSS specification formally endorsed by the [CSSWG] and being implemented by [recognized browser vendors](#recognized-browser-vendors), possibly behind a flag. It should be considered stable and subject to little change.
+A CSS specification formally endorsed by the [CSSWG] and being implemented by [recognized browser vendors](#recognized-browser-vendors), possibly behind a flag. It should be considered stable and subject to little change, with likely acceptance as a standard.
 
 ---
 
