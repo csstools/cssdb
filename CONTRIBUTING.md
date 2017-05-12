@@ -29,47 +29,48 @@ directly to the JSON and [make a pull request](#making-a-pull-request).
 For best results, be sure your contributions make sense to everyone else. If
 you’re unfamiliar with git, consider the following workflow.
 
-1. To begin, [fork this project][fork], clone your fork, and add our upstream.
+1. To begin; [fork this project][fork], clone your fork, and add our upstream.
     ```bash
     # Clone your fork of the repo into the current directory
-    git clone https://github.com/<your-user>/css-db
+    git clone git@github.com:YOUR_USER/css-db.git
+
     # Navigate to the newly cloned directory
     cd css-db
+
     # Assign the original repo to a remote called "upstream"
-    git remote add upstream https://github.com/jonathantneal/css-db
+    git remote add upstream git@github.com:jonathantneal/css-db.git
+
     # Install the tools necessary for testing
     npm install
     ```
 
 2. Create a branch for your feature or update:
     ```bash
-    # Move into a new branch for a feature
+    # Move into a new branch for your new feature
     git checkout -b feature/thing
     ```
     ```bash
-    # Or, move into a new branch for an update
+    # Or, move into a new branch for your update
     git checkout -b update/something
     ```
 
-3. Be sure your code follows our practices.
+3. If your code follows our practices, then push your branch up to your fork:
     ```bash
     # Test current code
     npm test
     ```
-
-4. Push your branch up to your fork:
     ```bash
-    # Push a feature branch
+    # Push the branch for your new feature
     git push origin feature/thing
     ```
     ```bash
-    # Or, push a fix branch
-    git push origin fix/something
+    # Or, push the branch for your update
+    git push origin update/something
     ```
 
 ---
 
-### Advanced Usage: How the JSON file looks
+## Advanced Usage: How the JSON file looks
 
 The only fields you’ll see in our JSON file are, in order:
 
@@ -79,12 +80,12 @@ The only fields you’ll see in our JSON file are, in order:
 - `stage`: the position of the feature within the [staging process]. Stages
    should be a number, and no stage (*unrecognized*) should be `null`.
 - `stage`: the current [stage](README.md#staging-process) of the feature; where
-    + `0` means **Stage 0** (*Aspirational*),
-    + `1` means **Stage 1** (*Experimental*),
-    + `2` means **Stage 2** (*Draft*),
-    + `3` means **Stage 3** (*Adoption*),
-    + `4` means **Stage 4** (*Complete*), and
-    + `null` means **No Stage** (*Unrecognized*).
+    + `0` means **Stage 0** — *Aspirational*,
+    + `1` means **Stage 1** — *Experimental*,
+    + `2` means **Stage 2** — *Draft*,
+    + `3` means **Stage 3** — *Adoption*,
+    + `4` means **Stage 4** — *Complete*, and
+    + `null` means **No Stage** — *Unrecognized*.
 - `citations`: a list of links related to the feature and its progress.
 - `issues`: a link to issue tracking for the feature.
 - `polyfills`: A list of polyfills used to simulate the feature; which includes
@@ -114,7 +115,7 @@ that proves its new position in the
 
 ---
 
-### Join the CSSWG
+## Join the CSSWG
 
 Passionate and informed developers should consider joining the CSSWG. Read the
 [instructions for joining the CSSWG](https://www.w3.org/2004/01/pp-impl/32061/instructions).
