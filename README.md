@@ -12,8 +12,9 @@ Did you come here to update the status of a CSS feature or add a new one? Quick,
 
 This staging process reflects the real-life stability of new CSS features.
 
-You can read an [inside view of the CSSWG] to learn about the official (and unofficial) development stages of CSS specifications. In reality, specifications and browser implementations happen out of sync. Stable CSS features are missing in all browsers, while other CSS features developed outside the [CSSWG] are already behind flags in Chrome. This is too ambiguous for the web development community, and a more accountable process is desired.
+Staging processes allow developers to accomplish real things and get involved in the creation of standards,testing, feedback, and new use cases.
 
+You can read an [inside view of the CSSWG] to learn about the official (and unofficial) development stages of CSS specifications. In reality, specifications and browser implementations happen out of sync. Stable CSS features are missing in all browsers, while other CSS features developed outside the [CSSWG] are already behind flags in Chrome. This is too ambiguous for the web development community, and a more accountable process is desired.
 
 ### Stage 0: Aspirational
 <img src="https://dl.dropboxusercontent.com/u/18590/stage--0.png" width="90px" height="90px" align="left">
