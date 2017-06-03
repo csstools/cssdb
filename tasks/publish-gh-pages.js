@@ -1,12 +1,13 @@
 // tooling
 const eslit = require('eslit');
 const fs    = require('fse');
+const path  = require('path');
 
 // features directory
-const src = fs.join(fs.dirname(__dirname), 'css-features');
-const dir = fs.join(fs.dirname(__dirname), 'gh-pages');
-const md  = fs.join(dir, 'index.html');
-const tpl = fs.join(__dirname, 'templates', '_gh-pages.html');
+const src = path.join(path.dirname(__dirname), 'css-features');
+const dir = path.join(path.dirname(__dirname), 'gh-pages');
+const md  = path.join(dir, 'index.html');
+const tpl = path.join(__dirname, 'templates', '_gh-pages.html');
 
 // promise a list of files within the features directory
 fs.readdir(src).then(
@@ -17,7 +18,7 @@ fs.readdir(src).then(
 		).map(
 			// read the json file
 			(basename) => fs.readFile(
-				fs.resolve(src, basename),
+				path.resolve(src, basename),
 				'utf8'
 			).then(
 				// parse it as an object
@@ -28,7 +29,7 @@ fs.readdir(src).then(
 ).then(
 	// use eslit to templatize the feature data
 	(features) => eslit.import(
-		fs.join(tpl),
+		path.join(tpl),
 		{
 			features
 		}

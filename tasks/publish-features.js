@@ -1,11 +1,12 @@
 // tooling
 const eslit = require('eslit');
 const fs    = require('fse');
+const path  = require('path');
 
 // features directory
-const dir = fs.join(fs.dirname(__dirname), 'css-features');
-const md  = fs.join(dir, 'README.md');
-const tpl = fs.join(__dirname, 'templates', '_features.md');
+const dir = path.join(path.dirname(__dirname), 'css-features');
+const md  = path.join(dir, 'README.md');
+const tpl = path.join(__dirname, 'templates', '_features.md');
 
 // promise a list of files within the features directory
 fs.readdir(dir).then(
@@ -16,7 +17,7 @@ fs.readdir(dir).then(
 		).map(
 			// read the json file
 			(basename) => fs.readFile(
-				fs.resolve(dir, basename),
+				path.resolve(dir, basename),
 				'utf8'
 			).then(
 				// parse it as an object
@@ -27,7 +28,7 @@ fs.readdir(dir).then(
 ).then(
 	// use eslit to templatize the feature data
 	(features) => eslit.import(
-		fs.join(tpl),
+		path.join(tpl),
 		{
 			features
 		}

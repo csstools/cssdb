@@ -29,12 +29,12 @@
     "node": ">=6.5.0"
   },
   "devDependencies": {
-    "echint": "^2.1.1",
+    "echint": "^4.0.1",
     "echint-config-dev": "1.0.0",
-    "eslint": "^3.13.1",
-    "eslint-config-dev": "1.0.0",
-    "eslit": "^3.0.0",
-    "fse": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-dev": "2.0.0",
+    "eslit": "^4.1.1",
+    "fse": "^3.0.0",
     "pre-commit": "^1.2.2"
   },
   "echint": {

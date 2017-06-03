@@ -1,5 +1,6 @@
 // tooling
-const fs = require('fse');
+const fs    = require('fse');
+const path  = require('path');
 
 // features directory
 const dir = 'css-features';
@@ -9,12 +10,12 @@ fs.readdir(dir).then(
 		basenames.filter(
 			(basename) => basename.slice(-5) === '.json'
 		).map(
-			(basename) => fs.resolve(dir, basename)
+			(basename) => path.resolve(dir, basename)
 		).map(
 			(filepath) => fs.readFile(filepath, 'utf8').then(
 				(content) => JSON.parse(content)
 			).then(hasRequiredData).then(
-				(result) => result === true ? Promise.resolve(result) : Promise.reject(`${ result } in ${ fs.basename(filepath) }`)
+				(result) => result === true ? Promise.resolve(result) : Promise.reject(`${ result } in ${ path.basename(filepath) }`)
 			)
 		)
 	)
