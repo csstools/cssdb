@@ -2,7 +2,7 @@
   "title": "hwb() expressions",
   "description": "An expression used to specify colors, similar to HSL, but often even easier for humans to work with",
   "specification": "https://drafts.csswg.org/css-color/#the-hwb-notation",
-  "stage": null,
+  "stage": 0,
   "citations": [
     "https://drafts.csswg.org/css-color/#the-hwb-notation"
   ],
