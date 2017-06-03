@@ -2,8 +2,9 @@
   "title": ":matches pseudo-class",
   "description": "A pseudo-class used to match a selector list",
   "specification": "https://drafts.csswg.org/selectors-4/#matches",
-  "stage": null,
+  "stage": 1,
   "citations": [
+    "https://www.w3.org/TR/selectors4/",
     "https://drafts.csswg.org/selectors-4/#matches"
   ],
   "polyfills": [
