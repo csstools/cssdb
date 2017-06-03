@@ -26,7 +26,7 @@ outside the [CSSWG] are already behind flags in Chrome. This is too ambiguous
 for the web development community, and a more accountable process is desired.
 
 ### Stage 0: Aspirational
-<img src="https://dl.dropboxusercontent.com/u/18590/stage--0.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-0.svg" width="90px" height="90px" align="left">
 
 > “This is a crazy idea.”
 
@@ -37,7 +37,7 @@ the CSSWG. It should be considered highly unstable and subject to change.
 
 ### Stage 1: Experimental
 
-<img src="https://dl.dropboxusercontent.com/u/18590/stage--1.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-1.svg" width="90px" height="90px" align="left">
 
 > “This idea might not be crazy.”
 
@@ -48,7 +48,7 @@ highly unstable, subject to change, and subject to rejection as a standard.
 
 ### Stage 2: Draft
 
-<img src="https://dl.dropboxusercontent.com/u/18590/stage--2.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-2.svg" width="90px" height="90px" align="left">
 
 > “This idea is not crazy.”
 
@@ -60,7 +60,7 @@ little change, but still subject to rejection as a standard.
 
 ### Stage 3: Adoption
 
-<img src="https://dl.dropboxusercontent.com/u/18590/stage--3.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-3.svg" width="90px" height="90px" align="left">
 
 > “This idea is becoming part of the web.”
 
@@ -73,7 +73,7 @@ acceptance as a standard.
 
 ### Stage 4: Complete
 
-<img src="https://dl.dropboxusercontent.com/u/18590/stage-4.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-4.svg" width="90px" height="90px" align="left">
 
 > “This idea is part of the web.”
 
@@ -84,7 +84,7 @@ A CSS specification formally endorsed by the [CSSWG] and implemented by all
 
 ### No Stage: Unrecognized
 
-<img src="https://dl.dropboxusercontent.com/u/18590/x.png" width="90px" height="90px" align="left">
+<img src="https://jonathantneal.github.io/css-db/stage-X.svg" width="90px" height="90px" align="left">
 
 > “I have no idea what I’m doing.”
 
