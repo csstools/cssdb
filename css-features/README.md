@@ -4,7 +4,7 @@ CSS Database is a comprehensive list of CSS features and their positions in the 
 
 ### @apply rules
 
-> Status: Unrecognized
+> Status: Stage 0
 
 A syntax for storing properties in a named variable, referenceable in other style rules
 
