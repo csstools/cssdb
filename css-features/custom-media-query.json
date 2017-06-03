@@ -2,8 +2,9 @@
   "title": "custom media queries",
   "description": "An at-rule used to define aliases representing media queries",
   "specification": "https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#custom-mq",
-  "stage": null,
+  "stage": 0,
   "citations": [
+    "https://drafts.csswg.org/mediaqueries-5/",
     "https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#custom-mq"
   ],
   "polyfills": [
