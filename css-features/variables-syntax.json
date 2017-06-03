@@ -2,8 +2,9 @@
   "title": "variables",
   "description": "A syntax for defining custom values accepted by all CSS properties",
   "specification": "https://www.w3.org/TR/css-variables/",
-  "stage": null,
+  "stage": 4,
   "citations": [
+    "http://caniuse.com/flexbox",
     "https://www.w3.org/TR/css-variables/"
   ],
   "polyfills": [
