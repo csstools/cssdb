@@ -2,7 +2,7 @@
   "title": "custom selectors",
   "description": "An at-rule used to define aliases representing selectors",
   "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
-  "stage": null,
+  "stage": 0,
   "citations": [
     "https://drafts.csswg.org/css-extensions/#custom-selectors"
   ],
