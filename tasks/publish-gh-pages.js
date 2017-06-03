@@ -28,7 +28,7 @@ fs.readdir(src).then(
 	)
 ).then(
 	// use eslit to templatize the feature data
-	(features) => eslit.include(
+	(features) => eslit(
 		path.join(tpl),
 		{
 			features
