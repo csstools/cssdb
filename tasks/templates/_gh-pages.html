@@ -26,10 +26,30 @@
 	<tbody>${ features.map(
 		(feature) => `<tr class="cssdb-feature">
 			<td class="cssdb-feature-title">${ feature.title }</td>
-			<td class="cssdb-feature-stage cssdb-stage-${ feature.stage === false ? 'rejected' : feature.stage }"><img src="https://jonathantneal.github.io/css-db/stage-${ feature.stage === false ? 'X' : feature.stage }.svg"></td>
+			<td class="cssdb-feature-stage cssdb-stage-${ feature.stage === false ? 'rejected' : feature.stage }"><img src="https://jonathantneal.github.io/css-db/stage-${ feature.stage === false ? 'X' : feature.stage }.svg" alt="${ feature.stage === false ? 'Rejected' : `Stage ${ feature.stage }` }"></td>
 			<td class="cssdb-feature-desc">${ feature.description }</td>
 			<td class="cssdb-feature-spec"><a href="${ feature.specification }">${ feature.specification }</a></td>
 			<td class="cssdb-feature-fill">${ feature.polyfills && feature.polyfills.length ? `<ul>${ feature.polyfills.map((polyfill) => `<a href="${ polyfill.link }">${ polyfill.name }</a>`) }</ul>` : '' }</td>
 		</tr>`
 	) }</tbody>
 </table>
+<script>
+Array.prototype.forEach.call(
+	document.querySelectorAll('.cssdb-feature-stage'),
+	($stage) => {
+		const alt = {
+			0: 'This is an Editor’s Draft championed by a non-CSSWG member. It should be considered highly unstable and subject to change.',
+			1: 'This is an Editor’s Draft championed by a CSSWG member. It should still be considered highly unstable and subject to change.',
+			2: 'This is an Editor’s Draft hosted by the CSS or W3C. It should still be considered highly unstable and subject to change.',
+			3: 'This is a Working Draft Draft hosted by the CSSWG or W3C and requiring implementations to move forward. It should be considered stable and subject to little change. It is still subject to rejection as a standard.',
+			4: 'This is a Candidate Recommendation hosted by the CSSWG or W3C and being implemented by at least 2 recognized browser vendors, possibly behind a flag. It should be considered stable and subject to little change. It will likely become a standard.',
+			5: 'This is a Recommendation hosted by the CSSWG or W3C and implemented by all recognized browser vendors. It is a standard.',
+			rejected: 'This specification has been rejected or neglected by its editor, or formally rejected by the CSSWG.'
+		};
+
+		const stage = $stage.className.replace(/cssdb-feature-stage cssdb-stage-/, '');
+
+		$stage.firstChild.setAttribute('title', alt[stage]);
+	}
+)
+</script>
