@@ -4,7 +4,7 @@ CSS Database is a comprehensive list of CSS features and their positions in the 
 
 ### @apply rules
 
-> Status: Stage 0
+> Status: Stage false
 
 A syntax for storing properties in a named variable, referenceable in other style rules
 
@@ -14,7 +14,7 @@ A syntax for storing properties in a named variable, referenceable in other styl
 
 ### aspect ratio
 
-> Status: Unrecognized
+> Status: Stage 0
 
 A spec for an Aspect Ratio property for CSS
 
@@ -24,7 +24,7 @@ A spec for an Aspect Ratio property for CSS
 
 ### color expressions
 
-> Status: Stage 0
+> Status: Stage 2
 
 A function used to modify a color
 
@@ -34,7 +34,7 @@ A function used to modify a color
 
 ### custom media queries
 
-> Status: Stage 0
+> Status: Stage 2
 
 An at-rule used to define aliases representing media queries
 
@@ -44,7 +44,7 @@ An at-rule used to define aliases representing media queries
 
 ### custom selectors
 
-> Status: Stage 0
+> Status: Stage 2
 
 An at-rule used to define aliases representing selectors
 
@@ -54,7 +54,7 @@ An at-rule used to define aliases representing selectors
 
 ### element queries
 
-> Status: Unrecognized
+> Status: Stage 0
 
 A spec for a container-style element query syntax
 
@@ -64,7 +64,7 @@ A spec for a container-style element query syntax
 
 ### gray expressions
 
-> Status: Stage 0
+> Status: Stage 2
 
 An expression used to specify fully desaturated colors
 
@@ -74,7 +74,7 @@ An expression used to specify fully desaturated colors
 
 ### grid layout
 
-> Status: Stage 3
+> Status: Stage 4
 
 A syntax for using a grid concept to lay out content
 
@@ -84,7 +84,7 @@ A syntax for using a grid concept to lay out content
 
 ### hex alpha colors
 
-> Status: Stage 0
+> Status: Stage 2
 
 A 4 & 8 character hex notation for color to include the opacity level
 
@@ -94,7 +94,7 @@ A 4 & 8 character hex notation for color to include the opacity level
 
 ### hwb() expressions
 
-> Status: Stage 0
+> Status: Stage 2
 
 An expression used to specify colors, similar to HSL, but often even easier for humans to work with
 
@@ -104,7 +104,7 @@ An expression used to specify colors, similar to HSL, but often even easier for 
 
 ### :matches pseudo-class
 
-> Status: Stage 1
+> Status: Stage 3
 
 A pseudo-class used to match a selector list
 
@@ -114,7 +114,7 @@ A pseudo-class used to match a selector list
 
 ### media() expressions
 
-> Status: Unrecognized
+> Status: Stage 0
 
 An expression used to define media queries within values
 
@@ -124,7 +124,7 @@ An expression used to define media queries within values
 
 ### nesting rules
 
-> Status: Stage 0
+> Status: Stage 1
 
 A syntax for nesting relative rules inside another
 
@@ -134,7 +134,7 @@ A syntax for nesting relative rules inside another
 
 ### :not list pseudo-class
 
-> Status: Stage 1
+> Status: Stage 3
 
 A pseudo-class used to ignore a selector list
 
@@ -144,17 +144,17 @@ A pseudo-class used to ignore a selector list
 
 ### range media queries
 
-> Status: Stage 1
+> Status: Stage 3
 
 A syntax for defining media query ranges using ordinary mathematical comparison operators
 
 ##### Citations
 
-- https://www.w3.org/TR/mediaqueries-4/- https://drafts.csswg.org/mediaqueries/#mq-ranges
+- https://www.w3.org/TR/mediaqueries-4/#mq-ranges- https://drafts.csswg.org/mediaqueries/#mq-ranges
 
 ### variables
 
-> Status: Stage 4
+> Status: Stage 5
 
 A syntax for defining custom values accepted by all CSS properties
 

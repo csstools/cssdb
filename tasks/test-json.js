@@ -27,9 +27,9 @@ fs.readdir(dir).then(
 function hasRequiredData(data) {
 	const hasRequiredFields = Object.keys(data).slice(0, 5).join() === 'title,description,specification,stage,citations';
 
-	const hasValidStage = data.stage === null || data.stage === 0 || data.stage === 1 || data.stage === 2 || data.stage === 3 || data.stage === 4;
+	const hasValidStage = data.stage === false || data.stage === 0 || data.stage === 1 || data.stage === 2 || data.stage === 3 || data.stage === 4 || data.stage === 5;
 
-	const hasRequiredCitations = data.citations.length > data.stage;
+	const hasRequiredCitations = data.citations.length >= data.stage - 1;
 
 	const hasOrderlyAdditionalFields = /^(|issues|issues,polyfill|polyfill)$/.test(
 		Object.keys(data).filter(

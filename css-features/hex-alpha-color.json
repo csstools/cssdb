@@ -2,7 +2,7 @@
   "title": "hex alpha colors",
   "description": "A 4 & 8 character hex notation for color to include the opacity level",
   "specification": "https://drafts.csswg.org/css-color/#hex-notation",
-  "stage": 0,
+  "stage": 2,
   "citations": [
     "https://drafts.csswg.org/css-color/#hex-notation"
   ],

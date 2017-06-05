@@ -20,7 +20,7 @@
     "publish": "npm run publish:gh-pages && npm run publish:features && npm run publish:push",
     "publish:gh-pages": "node tasks/publish-gh-pages",
     "publish:features": "node tasks/publish-features",
-    "publish:push": "git push && git push origin `git subtree split --prefix gh-pages master`:gh-pages",
+    "publish:push": "git push -f && git push -f origin `git subtree split --prefix gh-pages master`:gh-pages",
     "pre-commit": "echo 'Running pre-commit checks...' && exit 0",
     "test": "npm run lint && npm run test:json",
     "test:json": "node tasks/test-json"

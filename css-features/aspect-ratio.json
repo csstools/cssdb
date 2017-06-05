@@ -2,7 +2,7 @@
   "title": "aspect ratio",
   "description": "A spec for an Aspect Ratio property for CSS",
   "specification": "https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html",
-  "stage": null,
+  "stage": 0,
   "citations": [
     "https://github.com/tomhodgins/aspect-ratio-spec"
   ],

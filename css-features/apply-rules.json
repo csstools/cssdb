@@ -2,7 +2,7 @@
   "title": "@apply rules",
   "description": "A syntax for storing properties in a named variable, referenceable in other style rules",
   "specification": "http://tabatkins.github.io/specs/css-apply-rule/",
-  "stage": 0,
+  "stage": false,
   "citations": [
     "http://tabatkins.github.io/specs/css-apply-rule/"
   ],

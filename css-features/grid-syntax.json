@@ -2,7 +2,7 @@
   "title": "grid layout",
   "description": "A syntax for using a grid concept to lay out content",
   "specification": "https://www.w3.org/TR/css-grid-1/",
-  "stage": 3,
+  "stage": 4,
   "citations": [
     "http://caniuse.com/css-grid",
     "https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/",

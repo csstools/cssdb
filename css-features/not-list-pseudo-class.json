@@ -2,7 +2,7 @@
   "title": ":not list pseudo-class",
   "description": "A pseudo-class used to ignore a selector list",
   "specification": "https://drafts.csswg.org/selectors-4/#negation",
-  "stage": 1,
+  "stage": 3,
   "citations": [
     "https://www.w3.org/TR/selectors4/#negation",
     "https://drafts.csswg.org/selectors-4/#negation"

@@ -2,9 +2,9 @@
   "title": "range media queries",
   "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
   "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
-  "stage": 1,
+  "stage": 3,
   "citations": [
-    "https://www.w3.org/TR/mediaqueries-4/",
+    "https://www.w3.org/TR/mediaqueries-4/#mq-ranges",
     "https://drafts.csswg.org/mediaqueries/#mq-ranges"
   ],
   "polyfills": [

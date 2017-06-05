@@ -83,10 +83,6 @@ a {
 	line-height: calc(22 / 18);
 }
 
-.cssdb-features td:not(.cssdb-feature-stage):not(:first-child) {
-	box-shadow: inset 1px 0 0 0 #ededed;
-}
-
 .cssdb-feature:nth-child(odd) {
 	background-color: #f7f7f7;
 }
@@ -96,26 +92,13 @@ a {
 	text-align: center;
 }
 
-.stage--null {
-	background-color: #414141;
+.cssdb-features .cssdb-feature-stage {
+	padding: 0;
 }
 
-.stage--0 {
-	background-color: #d02c2c;
-}
-
-.stage--1 {
-	background-color: #ed782a;
-}
-
-.stage--2 {
-	background-color: #e7c924;
-}
-
-.stage--3 {
-	background-color: #899c1f;
-}
-
-.stage--4 {
-	background-color: #3e7817;
+.cssdb-feature-stage img {
+	border-radius: 10px;
+	margin: 5px;
+	max-height: 90px;
+	vertical-align: top;
 }
