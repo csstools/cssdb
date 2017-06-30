@@ -8,7 +8,7 @@
   ],
   "polyfills": [
     {
-      "name": "postcss-color-function",
+      "name": "postcss-custom-selectors",
       "link": "https://github.com/postcss/postcss-custom-selectors"
     }
   ]
