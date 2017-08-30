@@ -1,0 +1,16 @@
+{
+  "title": "logical properties",
+  "description": "Flow-relative (LTR or RTL) properties and values",
+  "specification": "https://drafts.csswg.org/css-logical/",
+  "stage": 3,
+  "citations": [
+    "https://drafts.csswg.org/css-logical/",
+    "https://www.w3.org/TR/css-logical/"
+  ],
+  "polyfills": [
+    {
+      "name": "postcss-logical",
+      "link": "https://github.com/jonathantneal/postcss-logical-properties"
+    }
+  ]
+}

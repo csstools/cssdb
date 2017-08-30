@@ -102,6 +102,16 @@ An expression used to specify colors, similar to HSL, but often even easier for 
 
 - https://drafts.csswg.org/css-color/#the-hwb-notation
 
+### logical properties
+
+> Status: Stage 3
+
+Flow-relative (LTR or RTL) properties and values
+
+##### Citations
+
+- https://drafts.csswg.org/css-logical/- https://www.w3.org/TR/css-logical/
+
 ### :matches pseudo-class
 
 > Status: Stage 3
