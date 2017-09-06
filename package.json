@@ -21,8 +21,7 @@
     "publish:gh-pages": "node tasks/publish-gh-pages",
     "publish:features": "node tasks/publish-features",
     "publish:push": "git push -f && git push -f origin `git subtree split --prefix gh-pages master`:gh-pages",
-    "pre-commit": "echo 'Running pre-commit checks...' && exit 0",
-    "test": "npm run lint && npm run test:json",
+    "test": "echo 'Running tests...'; npm run lint && npm run test:json",
     "test:json": "node tasks/test-json"
   },
   "engines": {
@@ -31,10 +30,11 @@
   "devDependencies": {
     "echint": "^4.0.1",
     "echint-config-dev": "1.0.0",
-    "eslint": "^4.5.0",
+    "eslint": "^4.6.1",
     "eslint-config-dev": "2.0.0",
-    "eslit": "^4.1.1",
-    "fse": "^3.0.0",
+    "eslit": "^5.0.0",
+    "fse": "^3.1.0",
+    "marked": "^0.3.6",
     "pre-commit": "^1.2.2"
   },
   "echint": {
@@ -51,10 +51,6 @@
       ]
     }
   },
-  "pre-commit": [
-    "pre-commit",
-    "test"
-  ],
   "keywords": [
     "css",
     "features",
