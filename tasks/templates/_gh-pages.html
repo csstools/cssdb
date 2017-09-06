@@ -1,8 +1,19 @@
 <!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>CSS Database</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jon_neal">
+<meta name="twitter:title" content="Jonathan Neal">
+<meta name="twitter:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<meta name="twitter:image" content="https://jonathantneal.github.io/me-card.jpg">
+<meta property="og:image" content="https://jonathantneal.github.io/me-card.jpg" itemprop="thumbnailUrl">
+<meta property="og:title" content="Jonathan Neal">
+<meta property="og:url" content="https://jonathantneal.github.io/css-db">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<link href="css-logo.ico" rel="shortcut icon">
 <link href="style.css" rel="stylesheet">
 
 <header class="cssdb-header">
@@ -20,16 +31,19 @@
 			<th>Stage</th>
 			<th>Description</th>
 			<th>Specification</th>
-			<th>Polyfills</th>
+			<th>Polyfill</th>
 		</tr>
 	</thead>
-	<tbody>${ features.map(
+	<tbody>${ features.slice(0).sort((a, b) => b.stage - a.stage).map(
 		(feature) => `<tr class="cssdb-feature">
 			<td class="cssdb-feature-title">${ feature.title }</td>
-			<td class="cssdb-feature-stage cssdb-stage-${ feature.stage === false ? 'rejected' : feature.stage }"><img src="https://jonathantneal.github.io/css-db/stage-${ feature.stage === false ? 'X' : feature.stage }.svg" alt="${ feature.stage === false ? 'Rejected' : `Stage ${ feature.stage }` }"></td>
-			<td class="cssdb-feature-desc">${ feature.description }</td>
-			<td class="cssdb-feature-spec"><a href="${ feature.specification }">${ feature.specification }</a></td>
-			<td class="cssdb-feature-fill">${ feature.polyfills && feature.polyfills.length ? `<ul>${ feature.polyfills.map((polyfill) => `<a href="${ polyfill.link }">${ polyfill.name }</a>`) }</ul>` : '' }</td>
+			<td class="cssdb-feature-stage cssdb-stage-${ feature.stage === -1 ? 'rejected' : feature.stage }"><img src="https://jonathantneal.github.io/css-db/stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="${ feature.stage === -1 ? 'Rejected' : `Stage ${ feature.stage }` }" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>${ feature.description }</p>
+				<pre>${ feature.example }</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="${ feature.specification }">${ feature.specification.replace(/^https:\/\//, '') }</a></td>
+			<td class="cssdb-feature-fill">${ feature.polyfills && feature.polyfills.length ? `<ul>${ feature.polyfills.map((polyfill) => `<li><a href="${ polyfill.link }">${ polyfill.type }</a></li>`) }</ul>` : '' }</td>
 		</tr>`
 	) }</tbody>
 </table>

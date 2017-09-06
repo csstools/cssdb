@@ -1,7 +1,8 @@
 // tooling
-const eslit = require('eslit');
-const fs    = require('fse');
-const path  = require('path');
+const eslit  = require('eslit');
+const fs     = require('fse');
+const marked = require('marked');
+const path   = require('path');
 
 // features directory
 const src = path.join(path.dirname(__dirname), 'css-features');
@@ -10,28 +11,16 @@ const md  = path.join(dir, 'index.html');
 const tpl = path.join(__dirname, 'templates', '_gh-pages.html');
 
 // promise a list of files within the features directory
-fs.readdir(src).then(
-	(basenames) => Promise.all(
-		basenames.filter(
-			// filter out non-json files
-			(basename) => basename.slice(-5) === '.json'
-		).map(
-			// read the json file
-			(basename) => fs.readFile(
-				path.resolve(src, basename),
-				'utf8'
-			).then(
-				// parse it as an object
-				(content) => JSON.parse(content)
-			)
-		)
-	)
-).then(
+fs.readJson('features.json').then(
 	// use eslit to templatize the feature data
 	(features) => eslit(
 		path.join(tpl),
 		{
-			features
+			features: features.slice(0).map((feature) => {
+				feature.title = marked(feature.title);
+
+				return feature;
+			})
 		}
 	).then(
 		// write the compiled template

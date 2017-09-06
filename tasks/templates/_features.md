@@ -2,14 +2,20 @@
 
 CSS Database is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
 
-${ features.map((feature) => `### ${ feature.title }
+${features.map((feature) => `---
 
-> Status: ${ feature.stage === null ? 'Unrecognized' : `Stage ${ feature.stage }` }
+### <img src="https://jonathantneal.github.io/css-db/stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="${ feature.stage === -1 ? 'Rejected' : `Stage ${ feature.stage }` }" width="62" height="62" align="right"> ${feature.title}
 
-${ feature.description }
+> ${feature.description}
 
-##### Citations
+[Specification](${feature.specification})
 
-${ feature.citations.map((citation) => `- ${ citation }`) }
+\`\`\`css
+${feature.example}
+\`\`\`
 
-`) }
+${feature.polyfills ? `###### Polyfills
+
+${feature.polyfills.map((polyfill) => `- [${polyfill.type}](${polyfill.link})
+`)}
+` : ''}`)}

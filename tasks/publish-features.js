@@ -4,33 +4,16 @@ const fs    = require('fse');
 const path  = require('path');
 
 // features directory
-const dir = path.join(path.dirname(__dirname), 'css-features');
-const md  = path.join(dir, 'README.md');
+const md  = path.join(__dirname, '..', 'FEATURES.md');
 const tpl = path.join(__dirname, 'templates', '_features.md');
 
 // promise a list of files within the features directory
-fs.readdir(dir).then(
-	(basenames) => Promise.all(
-		basenames.filter(
-			// filter out non-json files
-			(basename) => basename.slice(-5) === '.json'
-		).map(
-			// read the json file
-			(basename) => fs.readFile(
-				path.resolve(dir, basename),
-				'utf8'
-			).then(
-				// parse it as an object
-				(content) => JSON.parse(content)
-			)
-		)
-	)
-).then(
+fs.readJson('features.json').then(
 	// use eslit to templatize the feature data
 	(features) => eslit(
 		path.join(tpl),
 		{
-			features
+			features: features.slice(0)
 		}
 	).then(
 		// write the compiled template
