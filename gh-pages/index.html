@@ -1,8 +1,19 @@
 <!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>CSS Database</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jon_neal">
+<meta name="twitter:title" content="Jonathan Neal">
+<meta name="twitter:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<meta name="twitter:image" content="https://jonathantneal.github.io/me-card.jpg">
+<meta property="og:image" content="https://jonathantneal.github.io/me-card.jpg" itemprop="thumbnailUrl">
+<meta property="og:title" content="Jonathan Neal">
+<meta property="og:url" content="https://jonathantneal.github.io/css-db">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<link href="css-logo.ico" rel="shortcut icon">
 <link href="style.css" rel="stylesheet">
 
 <header class="cssdb-header">
@@ -20,111 +31,211 @@
 			<th>Stage</th>
 			<th>Description</th>
 			<th>Specification</th>
-			<th>Polyfills</th>
+			<th>Polyfill</th>
 		</tr>
 	</thead>
 	<tbody><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">@apply rules</td>
-			<td class="cssdb-feature-stage cssdb-stage-rejected"><img src="https://jonathantneal.github.io/css-db/stage-X.svg" alt="Rejected"></td>
-			<td class="cssdb-feature-desc">A syntax for storing properties in a named variable, referenceable in other style rules</td>
-			<td class="cssdb-feature-spec"><a href="http://tabatkins.github.io/specs/css-apply-rule/">http://tabatkins.github.io/specs/css-apply-rule/</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/pascalduez/postcss-apply">postcss-apply</a></ul></td>
+			<td class="cssdb-feature-title"><p>Custom Properties</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-5"><img src="https://jonathantneal.github.io/css-db/stage-5.svg" alt="Stage 5" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for defining custom values accepted by all CSS properties</p>
+				<pre>--some-length: 32px;
+
+height: var(--some-length);
+width: var(--some-length);</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-variables/">drafts.csswg.org/css-variables/</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-properties">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">aspect ratio</td>
-			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0"></td>
-			<td class="cssdb-feature-desc">A spec for an Aspect Ratio property for CSS</td>
-			<td class="cssdb-feature-spec"><a href="https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html">https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/tomhodgins/aspect-ratio-spec">aspect-ratio.js</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">color expressions</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">A function used to modify a color</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#modifying-colors">https://drafts.csswg.org/css-color/#modifying-colors</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-color-function">postcss-color-function</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">custom media queries</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">An at-rule used to define aliases representing media queries</td>
-			<td class="cssdb-feature-spec"><a href="https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#custom-mq">https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#custom-mq</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-custom-media">postcss-custom-media</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">custom selectors</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">An at-rule used to define aliases representing selectors</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-extensions/#custom-selectors">https://drafts.csswg.org/css-extensions/#custom-selectors</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-custom-selectors">postcss-color-function</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">element queries</td>
-			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0"></td>
-			<td class="cssdb-feature-desc">A spec for a container-style element query syntax</td>
-			<td class="cssdb-feature-spec"><a href="https://tomhodgins.github.io/element-queries-spec/element-queries.html">https://tomhodgins.github.io/element-queries-spec/element-queries.html</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/eqcss/eqcss">EQCSS</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">gray expressions</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">An expression used to specify fully desaturated colors</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#grays">https://drafts.csswg.org/css-color/#grays</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-color-gray">postcss-color-gray</a></ul></td>
-		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">grid layout</td>
-			<td class="cssdb-feature-stage cssdb-stage-4"><img src="https://jonathantneal.github.io/css-db/stage-4.svg" alt="Stage 4"></td>
-			<td class="cssdb-feature-desc">A syntax for using a grid concept to lay out content</td>
-			<td class="cssdb-feature-spec"><a href="https://www.w3.org/TR/css-grid-1/">https://www.w3.org/TR/css-grid-1/</a></td>
+			<td class="cssdb-feature-title"><p>Grid Layout</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-4"><img src="https://jonathantneal.github.io/css-db/stage-4.svg" alt="Stage 4" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for using a grid concept to lay out content</p>
+				<pre>display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-gap: 10px;</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-grid-2/">drafts.csswg.org/css-grid-2/</a></td>
 			<td class="cssdb-feature-fill"></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">hex alpha colors</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">A 4 & 8 character hex notation for color to include the opacity level</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#hex-notation">https://drafts.csswg.org/css-color/#hex-notation</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-color-hex-alpha">postcss-color-hex-alpha</a></ul></td>
+			<td class="cssdb-feature-title"><p>Selectors <code>:not()</code> Negation Pseudo-Class</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A pseudo-class used to ignore a selector list</p>
+				<pre>p:not(:first-child, .special) {}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/selectors-4/#negation">drafts.csswg.org/selectors-4/#negation</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-selector-not">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">hwb() expressions</td>
-			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2"></td>
-			<td class="cssdb-feature-desc">An expression used to specify colors, similar to HSL, but often even easier for humans to work with</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#the-hwb-notation">https://drafts.csswg.org/css-color/#the-hwb-notation</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-color-hwb">postcss-color-hwb</a></ul></td>
+			<td class="cssdb-feature-title"><p>Selectors <code>:matches()</code> Matches-Any Pseudo-class</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A pseudo-class used to match a selector list</p>
+				<pre>p:matches(:first-child, .special) {}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/selectors-4/#matches">drafts.csswg.org/selectors-4/#matches</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-selector-matches">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">logical properties</td>
-			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3"></td>
-			<td class="cssdb-feature-desc">Flow-relative (LTR or RTL) properties and values</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-logical/">https://drafts.csswg.org/css-logical/</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/jonathantneal/postcss-logical-properties">postcss-logical</a></ul></td>
+			<td class="cssdb-feature-title"><p>Logical Properties and Values</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>Flow-relative (LTR or RTL) properties and values</p>
+				<pre>float: inline-start;
+margin-inline-start: 10px;</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-logical/">drafts.csswg.org/css-logical/</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/jonathantneal/postcss-logical-properties">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">:matches pseudo-class</td>
-			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3"></td>
-			<td class="cssdb-feature-desc">A pseudo-class used to match a selector list</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/selectors-4/#matches">https://drafts.csswg.org/selectors-4/#matches</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-selector-matches">postcss-selector-matches</a></ul></td>
+			<td class="cssdb-feature-title"><p>Media Queries Ranges</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for defining media query ranges using ordinary mathematical comparison operators</p>
+				<pre>@custom-media --small-viewport (max-width: 30em);
+@media (--small-viewport) {}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/mediaqueries/#mq-ranges">drafts.csswg.org/mediaqueries/#mq-ranges</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-media-minmax">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">media() expressions</td>
-			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0"></td>
-			<td class="cssdb-feature-desc">An expression used to define media queries within values</td>
-			<td class="cssdb-feature-spec"><a href="https://jonathantneal.github.io/media-expressions-spec/">https://jonathantneal.github.io/media-expressions-spec/</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/jonathantneal/postcss-media-fn">postcss-media-fn</a></ul></td>
+			<td class="cssdb-feature-title"><p>Custom Selectors</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>An at-rule used to define aliases representing selectors</p>
+				<pre>@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+article :--heading + p { margin-top: 0; }</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-extensions/#custom-selectors">drafts.csswg.org/css-extensions/#custom-selectors</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-selectors">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">nesting rules</td>
-			<td class="cssdb-feature-stage cssdb-stage-1"><img src="https://jonathantneal.github.io/css-db/stage-1.svg" alt="Stage 1"></td>
-			<td class="cssdb-feature-desc">A syntax for nesting relative rules inside another</td>
-			<td class="cssdb-feature-spec"><a href="http://tabatkins.github.io/specs/css-nesting/">http://tabatkins.github.io/specs/css-nesting/</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/jonathantneal/postcss-nesting">postcss-nesting</a></ul></td>
+			<td class="cssdb-feature-title"><p>Color <code>hwb()</code> Function</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A function used to specify colors, similar to HSL, but often even easier for humans to work with</p>
+				<pre>color: hwb(120deg, 44%, 50%);</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#the-hwb-notation">drafts.csswg.org/css-color/#the-hwb-notation</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-hwb">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">:not list pseudo-class</td>
-			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3"></td>
-			<td class="cssdb-feature-desc">A pseudo-class used to ignore a selector list</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/selectors-4/#negation">https://drafts.csswg.org/selectors-4/#negation</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-selector-not">postcss-selector-not</a></ul></td>
+			<td class="cssdb-feature-title"><p>Color <code>color-mod()</code> Function</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A function used to modify a color</p>
+				<pre>color: color-mod(black alpha(50%));</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#modifying-colors">drafts.csswg.org/css-color/#modifying-colors</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-function">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">range media queries</td>
-			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3"></td>
-			<td class="cssdb-feature-desc">A syntax for defining media query ranges using ordinary mathematical comparison operators</td>
-			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/mediaqueries/#mq-ranges">https://drafts.csswg.org/mediaqueries/#mq-ranges</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-media-minmax">postcss-media-minmax</a></ul></td>
+			<td class="cssdb-feature-title"><p>Color <code>#RRGGBBAA</code> Notation</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A 4 & 8 character hex notation for color to include the opacity level</p>
+				<pre>background-color: #f3f3f3f3;
+color: #0003;</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#hex-notation">drafts.csswg.org/css-color/#hex-notation</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-hex-alpha">PostCSS Plugin</a></li></ul></td>
 		</tr><tr class="cssdb-feature">
-			<td class="cssdb-feature-title">variables</td>
-			<td class="cssdb-feature-stage cssdb-stage-5"><img src="https://jonathantneal.github.io/css-db/stage-5.svg" alt="Stage 5"></td>
-			<td class="cssdb-feature-desc">A syntax for defining custom values accepted by all CSS properties</td>
-			<td class="cssdb-feature-spec"><a href="https://www.w3.org/TR/css-variables/">https://www.w3.org/TR/css-variables/</a></td>
-			<td class="cssdb-feature-fill"><ul><a href="https://github.com/postcss/postcss-custom-properties">postcss-custom-properties</a></ul></td>
+			<td class="cssdb-feature-title"><p>Media Queries Custom Media Queries</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>An at-rule used to define aliases representing media queries</p>
+				<pre>float: inline-start;
+margin-inline-start: 10px;</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/mediaqueries-5/#custom-mq">drafts.csswg.org/mediaqueries-5/#custom-mq</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-media">PostCSS Plugin</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Color <code>gray()</code> Function</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A function used to specify fully desaturate colors</p>
+				<pre>color: gray(red);</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#grays">drafts.csswg.org/css-color/#grays</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-gray">PostCSS Plugin</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Nesting</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-1"><img src="https://jonathantneal.github.io/css-db/stage-1.svg" alt="Stage 1" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for nesting relative rules inside another</p>
+				<pre>article {
+  p {
+    color: #333;
+  }
+}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://tabatkins.github.io/specs/css-nesting/">tabatkins.github.io/specs/css-nesting/</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/jonathantneal/postcss-nesting">PostCSS Plugin</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Media Queries <code>media()</code> Function</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A function used to define media queries within values</p>
+				<pre>font-size: media(
+  16px,
+  (min-width:  600px) 20px,
+  (min-width: 1000px) 40px,
+  (min-width: 1400px) 60px
+);</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://jonathantneal.github.io/media-expressions-spec/">jonathantneal.github.io/media-expressions-spec/</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/jonathantneal/postcss-media-fn">PostCSS Plugin</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Element Queries</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for container-style element queries</p>
+				<pre>@element html and (min-width: 500px) {
+  body {
+    background: lime;
+  }
+}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://tomhodgins.github.io/element-queries-spec/element-queries.html">tomhodgins.github.io/element-queries-spec/element-queries.html</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/eqcss/eqcss">JS Library</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Sizing <code>aspect-ratio</code> Property</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A property for defining the aspect ratio of an element</p>
+				<pre>div {
+  aspect-ratio: 16/9;
+  width: 200px;
+}</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html">tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/tomhodgins/aspect-ratio-spec">JS Library</a></li></ul></td>
+		</tr><tr class="cssdb-feature">
+			<td class="cssdb-feature-title"><p>Custom Property Sets</p>
+</td>
+			<td class="cssdb-feature-stage cssdb-stage-rejected"><img src="https://jonathantneal.github.io/css-db/stage-X.svg" alt="Rejected" width="90" height="90"></td>
+			<td class="cssdb-feature-desc">
+				<p>A syntax for storing properties in a named variable, referenceable in other style rules</p>
+				<pre>--some-length-styles: {
+  height: 32px;
+  width: 32px; 
+};
+
+@apply --some-length-styles;</pre>
+			</td>
+			<td class="cssdb-feature-spec"><a href="https://tabatkins.github.io/specs/css-apply-rule/">tabatkins.github.io/specs/css-apply-rule/</a></td>
+			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/pascalduez/postcss-apply">PostCSS Plugin</a></li></ul></td>
 		</tr></tbody>
 </table>
 <script>

@@ -72,6 +72,7 @@ a {
 .cssdb-features th {
 	font-weight: 700;
 	line-height: 1;
+	text-align: left;
 }
 
 .cssdb-features th:not(:first-child) {
@@ -97,8 +98,25 @@ a {
 }
 
 .cssdb-feature-stage img {
-	border-radius: 10px;
 	margin: 5px;
 	max-height: 90px;
 	vertical-align: top;
+}
+
+.cssdb-feature-desc p {
+	margin: 0;
+}
+
+.cssdb-feature-desc pre {
+	background-color: #fff;
+	box-shadow: inset 0 0 0 1px #e2e2e2;
+	font-family: monospace, monospace;
+	margin: 1em -1em 0;
+	padding: .75em 1em;
+}
+
+.cssdb-feature-fill ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
