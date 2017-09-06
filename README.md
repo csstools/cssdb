@@ -2,7 +2,6 @@
 
 [![Build Status][cli-img]][cli-url]
 [![Licensing][lic-img]][lic-url]
-[![Changelog][log-img]][log-url]
 
 [CSS Database] is a comprehensive list of CSS features and their positions in
 the process of becoming implemented web standards.
@@ -26,6 +25,7 @@ too ambiguous for the web development community, and a more accountable process
 is desired.
 
 ### Stage 0: Aspirational
+
 <img src="https://jonathantneal.github.io/css-db/stage-0.svg" align="left" width="90" height="90">
 
 > “This is my crazy idea.”
@@ -127,8 +127,6 @@ organization itself.
 [cli-img]: https://img.shields.io/travis/jonathantneal/css-db.svg
 [lic-url]: LICENSE.md
 [lic-img]: https://img.shields.io/badge/license-CC0--1.0-blue.svg
-[log-url]: CHANGELOG.md
-[log-img]: https://img.shields.io/badge/changelog-md-blue.svg
 [git-url]: https://gitter.im/postcss/postcss
 [git-img]: https://img.shields.io/badge/chat-gitter-blue.svg
 
