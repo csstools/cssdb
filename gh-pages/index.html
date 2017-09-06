@@ -40,10 +40,12 @@
 			<td class="cssdb-feature-stage cssdb-stage-5"><img src="https://jonathantneal.github.io/css-db/stage-5.svg" alt="Stage 5" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A syntax for defining custom values accepted by all CSS properties</p>
-				<pre>--some-length: 32px;
+				<pre>img {
+  --some-length: 32px;
 
-height: var(--some-length);
-width: var(--some-length);</pre>
+  height: var(--some-length);
+  width: var(--some-length);
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-variables/">drafts.csswg.org/css-variables/</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-properties">PostCSS Plugin</a></li></ul></td>
@@ -53,9 +55,11 @@ width: var(--some-length);</pre>
 			<td class="cssdb-feature-stage cssdb-stage-4"><img src="https://jonathantneal.github.io/css-db/stage-4.svg" alt="Stage 4" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A syntax for using a grid concept to lay out content</p>
-				<pre>display: grid;
-grid-template-columns: 100px 100px 100px;
-grid-gap: 10px;</pre>
+				<pre>section {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-grid-2/">drafts.csswg.org/css-grid-2/</a></td>
 			<td class="cssdb-feature-fill"></td>
@@ -85,8 +89,10 @@ grid-gap: 10px;</pre>
 			<td class="cssdb-feature-stage cssdb-stage-3"><img src="https://jonathantneal.github.io/css-db/stage-3.svg" alt="Stage 3" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>Flow-relative (LTR or RTL) properties and values</p>
-				<pre>float: inline-start;
-margin-inline-start: 10px;</pre>
+				<pre>span:first-child {
+  float: inline-start;
+  margin-inline-start: 10px;
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-logical/">drafts.csswg.org/css-logical/</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/jonathantneal/postcss-logical-properties">PostCSS Plugin</a></li></ul></td>
@@ -97,6 +103,7 @@ margin-inline-start: 10px;</pre>
 			<td class="cssdb-feature-desc">
 				<p>A syntax for defining media query ranges using ordinary mathematical comparison operators</p>
 				<pre>@custom-media --small-viewport (max-width: 30em);
+
 @media (--small-viewport) {}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/mediaqueries/#mq-ranges">drafts.csswg.org/mediaqueries/#mq-ranges</a></td>
@@ -109,7 +116,7 @@ margin-inline-start: 10px;</pre>
 				<p>An at-rule used to define aliases representing selectors</p>
 				<pre>@custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
-article :--heading + p { margin-top: 0; }</pre>
+article :--heading + p {}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-extensions/#custom-selectors">drafts.csswg.org/css-extensions/#custom-selectors</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-selectors">PostCSS Plugin</a></li></ul></td>
@@ -119,7 +126,9 @@ article :--heading + p { margin-top: 0; }</pre>
 			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A function used to specify colors, similar to HSL, but often even easier for humans to work with</p>
-				<pre>color: hwb(120deg, 44%, 50%);</pre>
+				<pre>p {
+  color: hwb(120deg, 44%, 50%);
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#the-hwb-notation">drafts.csswg.org/css-color/#the-hwb-notation</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-hwb">PostCSS Plugin</a></li></ul></td>
@@ -129,7 +138,9 @@ article :--heading + p { margin-top: 0; }</pre>
 			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A function used to modify a color</p>
-				<pre>color: color-mod(black alpha(50%));</pre>
+				<pre>p {
+  color: color-mod(black alpha(50%));
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#modifying-colors">drafts.csswg.org/css-color/#modifying-colors</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-function">PostCSS Plugin</a></li></ul></td>
@@ -139,8 +150,10 @@ article :--heading + p { margin-top: 0; }</pre>
 			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A 4 & 8 character hex notation for color to include the opacity level</p>
-				<pre>background-color: #f3f3f3f3;
-color: #0003;</pre>
+				<pre>section {
+  background-color: #f3f3f3f3;
+  color: #0003;
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#hex-notation">drafts.csswg.org/css-color/#hex-notation</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-hex-alpha">PostCSS Plugin</a></li></ul></td>
@@ -150,8 +163,10 @@ color: #0003;</pre>
 			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>An at-rule used to define aliases representing media queries</p>
-				<pre>float: inline-start;
-margin-inline-start: 10px;</pre>
+				<pre>span:first-child {
+  float: inline-start;
+  margin-inline-start: 10px;
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/mediaqueries-5/#custom-mq">drafts.csswg.org/mediaqueries-5/#custom-mq</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-custom-media">PostCSS Plugin</a></li></ul></td>
@@ -161,7 +176,9 @@ margin-inline-start: 10px;</pre>
 			<td class="cssdb-feature-stage cssdb-stage-2"><img src="https://jonathantneal.github.io/css-db/stage-2.svg" alt="Stage 2" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A function used to specify fully desaturate colors</p>
-				<pre>color: gray(red);</pre>
+				<pre>p {
+  color: gray(red);
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://drafts.csswg.org/css-color/#grays">drafts.csswg.org/css-color/#grays</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/postcss/postcss-color-gray">PostCSS Plugin</a></li></ul></td>
@@ -185,12 +202,14 @@ margin-inline-start: 10px;</pre>
 			<td class="cssdb-feature-stage cssdb-stage-0"><img src="https://jonathantneal.github.io/css-db/stage-0.svg" alt="Stage 0" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A function used to define media queries within values</p>
-				<pre>font-size: media(
-  16px,
-  (min-width:  600px) 20px,
-  (min-width: 1000px) 40px,
-  (min-width: 1400px) 60px
-);</pre>
+				<pre>p {
+  font-size: media(
+    16px,
+    (min-width:  600px) 20px,
+    (min-width: 1000px) 40px,
+    (min-width: 1400px) 60px
+  );
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://jonathantneal.github.io/media-expressions-spec/">jonathantneal.github.io/media-expressions-spec/</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/jonathantneal/postcss-media-fn">PostCSS Plugin</a></li></ul></td>
@@ -227,12 +246,14 @@ margin-inline-start: 10px;</pre>
 			<td class="cssdb-feature-stage cssdb-stage-rejected"><img src="https://jonathantneal.github.io/css-db/stage-X.svg" alt="Rejected" width="90" height="90"></td>
 			<td class="cssdb-feature-desc">
 				<p>A syntax for storing properties in a named variable, referenceable in other style rules</p>
-				<pre>--some-length-styles: {
-  height: 32px;
-  width: 32px; 
-};
+				<pre>img {
+  --some-length-styles: {
+    height: 32px;
+    width: 32px;
+  };
 
-@apply --some-length-styles;</pre>
+  @apply --some-length-styles;
+}</pre>
 			</td>
 			<td class="cssdb-feature-spec"><a href="https://tabatkins.github.io/specs/css-apply-rule/">tabatkins.github.io/specs/css-apply-rule/</a></td>
 			<td class="cssdb-feature-fill"><ul><li><a href="https://github.com/pascalduez/postcss-apply">PostCSS Plugin</a></li></ul></td>

@@ -4,7 +4,7 @@
     "description": "A 4 & 8 character hex notation for color to include the opacity level",
     "specification": "https://drafts.csswg.org/css-color/#hex-notation",
     "stage": 2,
-    "example": "background-color: #f3f3f3f3;\ncolor: #0003;",
+    "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -17,7 +17,7 @@
     "description": "A function used to modify a color",
     "specification": "https://drafts.csswg.org/css-color/#modifying-colors",
     "stage": 2,
-    "example": "color: color-mod(black alpha(50%));",
+    "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -30,7 +30,7 @@
     "description": "A function used to specify fully desaturate colors",
     "specification": "https://drafts.csswg.org/css-color/#grays",
     "stage": 2,
-    "example": "color: gray(red);",
+    "example": "p {\n  color: gray(red);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -44,7 +44,7 @@
     "description": "A function used to specify colors, similar to HSL, but often even easier for humans to work with",
     "specification": "https://drafts.csswg.org/css-color/#the-hwb-notation",
     "stage": 2,
-    "example": "color: hwb(120deg, 44%, 50%);",
+    "example": "p {\n  color: hwb(120deg, 44%, 50%);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -58,7 +58,7 @@
     "description": "A syntax for defining custom values accepted by all CSS properties",
     "specification": "https://drafts.csswg.org/css-variables/",
     "stage": 5,
-    "example": "--some-length: 32px;\n\nheight: var(--some-length);\nwidth: var(--some-length);",
+    "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -72,7 +72,7 @@
     "description": "A syntax for storing properties in a named variable, referenceable in other style rules",
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
     "stage": -1,
-    "example": "--some-length-styles: {\n  height: 32px;\n  width: 32px; \n};\n\n@apply --some-length-styles;",
+    "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -85,7 +85,7 @@
     "description": "An at-rule used to define aliases representing selectors",
     "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
     "stage": 2,
-    "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p { margin-top: 0; }",
+    "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -111,7 +111,7 @@
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://drafts.csswg.org/css-grid-2/",
     "stage": 4,
-    "example": "display: grid;\ngrid-template-columns: 100px 100px 100px;\ngrid-gap: 10px;",
+    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
     "w3c": "https://www.w3.org/TR/css-grid-1/"
   },
   {
@@ -119,7 +119,7 @@
     "description": "Flow-relative (LTR or RTL) properties and values",
     "specification": "https://drafts.csswg.org/css-logical/",
     "stage": 3,
-    "example": "float: inline-start;\nmargin-inline-start: 10px;",
+    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -133,7 +133,7 @@
     "description": "An at-rule used to define aliases representing media queries",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
     "stage": 2,
-    "example": "float: inline-start;\nmargin-inline-start: 10px;",
+    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -146,7 +146,7 @@
     "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
     "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
     "stage": 3,
-    "example": "@custom-media --small-viewport (max-width: 30em);\n@media (--small-viewport) {}",
+    "example": "@custom-media --small-viewport (max-width: 30em);\n\n@media (--small-viewport) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -160,7 +160,7 @@
     "description": "A function used to define media queries within values",
     "specification": "https://jonathantneal.github.io/media-expressions-spec/",
     "stage": 0,
-    "example": "font-size: media(\n  16px,\n  (min-width:  600px) 20px,\n  (min-width: 1000px) 40px,\n  (min-width: 1400px) 60px\n);",
+    "example": "p {\n  font-size: media(\n    16px,\n    (min-width:  600px) 20px,\n    (min-width: 1000px) 40px,\n    (min-width: 1400px) 60px\n  );\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",

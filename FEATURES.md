@@ -11,8 +11,10 @@ CSS Database is a comprehensive list of CSS features and their positions in the 
 [Specification](https://drafts.csswg.org/css-color/#hex-notation)
 
 ```css
-background-color: #f3f3f3f3;
-color: #0003;
+section {
+  background-color: #f3f3f3f3;
+  color: #0003;
+}
 ```
 
 ###### Polyfills
@@ -28,7 +30,9 @@ color: #0003;
 [Specification](https://drafts.csswg.org/css-color/#modifying-colors)
 
 ```css
-color: color-mod(black alpha(50%));
+p {
+  color: color-mod(black alpha(50%));
+}
 ```
 
 ###### Polyfills
@@ -44,7 +48,9 @@ color: color-mod(black alpha(50%));
 [Specification](https://drafts.csswg.org/css-color/#grays)
 
 ```css
-color: gray(red);
+p {
+  color: gray(red);
+}
 ```
 
 ###### Polyfills
@@ -60,7 +66,9 @@ color: gray(red);
 [Specification](https://drafts.csswg.org/css-color/#the-hwb-notation)
 
 ```css
-color: hwb(120deg, 44%, 50%);
+p {
+  color: hwb(120deg, 44%, 50%);
+}
 ```
 
 ###### Polyfills
@@ -76,10 +84,12 @@ color: hwb(120deg, 44%, 50%);
 [Specification](https://drafts.csswg.org/css-variables/)
 
 ```css
---some-length: 32px;
+img {
+  --some-length: 32px;
 
-height: var(--some-length);
-width: var(--some-length);
+  height: var(--some-length);
+  width: var(--some-length);
+}
 ```
 
 ###### Polyfills
@@ -95,12 +105,14 @@ width: var(--some-length);
 [Specification](https://tabatkins.github.io/specs/css-apply-rule/)
 
 ```css
---some-length-styles: {
-  height: 32px;
-  width: 32px; 
-};
+img {
+  --some-length-styles: {
+    height: 32px;
+    width: 32px;
+  };
 
-@apply --some-length-styles;
+  @apply --some-length-styles;
+}
 ```
 
 ###### Polyfills
@@ -118,7 +130,7 @@ width: var(--some-length);
 ```css
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
-article :--heading + p { margin-top: 0; }
+article :--heading + p {}
 ```
 
 ###### Polyfills
@@ -154,9 +166,11 @@ article :--heading + p { margin-top: 0; }
 [Specification](https://drafts.csswg.org/css-grid-2/)
 
 ```css
-display: grid;
-grid-template-columns: 100px 100px 100px;
-grid-gap: 10px;
+section {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+}
 ```
 
 ---
@@ -168,8 +182,10 @@ grid-gap: 10px;
 [Specification](https://drafts.csswg.org/css-logical/)
 
 ```css
-float: inline-start;
-margin-inline-start: 10px;
+span:first-child {
+  float: inline-start;
+  margin-inline-start: 10px;
+}
 ```
 
 ###### Polyfills
@@ -185,8 +201,10 @@ margin-inline-start: 10px;
 [Specification](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
 
 ```css
-float: inline-start;
-margin-inline-start: 10px;
+span:first-child {
+  float: inline-start;
+  margin-inline-start: 10px;
+}
 ```
 
 ###### Polyfills
@@ -203,6 +221,7 @@ margin-inline-start: 10px;
 
 ```css
 @custom-media --small-viewport (max-width: 30em);
+
 @media (--small-viewport) {}
 ```
 
@@ -219,12 +238,14 @@ margin-inline-start: 10px;
 [Specification](https://jonathantneal.github.io/media-expressions-spec/)
 
 ```css
-font-size: media(
-  16px,
-  (min-width:  600px) 20px,
-  (min-width: 1000px) 40px,
-  (min-width: 1400px) 60px
-);
+p {
+  font-size: media(
+    16px,
+    (min-width:  600px) 20px,
+    (min-width: 1000px) 40px,
+    (min-width: 1400px) 60px
+  );
+}
 ```
 
 ###### Polyfills
