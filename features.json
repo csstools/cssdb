@@ -173,7 +173,7 @@
     "description": "A syntax for nesting relative rules inside another",
     "specification": "https://tabatkins.github.io/specs/css-nesting/",
     "stage": 1,
-    "example": "article {\n  p {\n    color: #333;\n  }\n}",
+    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
