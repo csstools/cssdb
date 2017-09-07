@@ -2,7 +2,6 @@
 const eslit   = require('eslit');
 const fs      = require('fse');
 const marked  = require('marked');
-const midas   = require('./midas');
 const path    = require('path');
 const postcss = require('postcss');
 
