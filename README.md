@@ -1,5 +1,6 @@
 # cssdb [<img src="https://jonathantneal.github.io/css-db/cssdb.svg" alt="cssdb logo" width="90" height="90" align="right">][cssdb]
 
+[![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
 [![Licensing][lic-img]][lic-url]
 
