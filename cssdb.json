@@ -36,8 +36,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-color-gray"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/css-color-4/#grays"
+    ]
   },
   {
     "title": "Color `hwb()` Function",
@@ -50,8 +49,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-color-hwb"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/css-color-4/#modifying-colors"
+    ]
   },
   {
     "title": "Custom Properties",
@@ -64,8 +62,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-custom-properties"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/css-variables-1/"
+    ]
   },
   {
     "title": "Custom Property Sets",
@@ -111,8 +108,7 @@
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://drafts.csswg.org/css-grid-2/",
     "stage": 4,
-    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
-    "w3c": "https://www.w3.org/TR/css-grid-1/"
+    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}"
   },
   {
     "title": "Logical Properties and Values",
@@ -125,8 +121,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/jonathantneal/postcss-logical-properties"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/css-logical-1/"
+    ]
   },
   {
     "title": "Media Queries Custom Media Queries",
@@ -152,8 +147,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-media-minmax"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/mediaqueries-4/#mq-ranges"
+    ]
   },
   {
     "title": "Media Queries `media()` Function",
@@ -205,8 +199,7 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-not"
       }
-    ],
-    "w3c": "https://www.w3.org/TR/selectors4/#negation"
+    ]
   },
   {
     "title": "Sizing `aspect-ratio` Property",

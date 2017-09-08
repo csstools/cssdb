@@ -1,4 +1,7 @@
 gh-pages
 node_modules
-*.*cache
+.*
+!.editorconfig
+!.gitignore
+!.travis.yml
 *.log*

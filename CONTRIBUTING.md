@@ -2,10 +2,9 @@
 
 Pull requests are the most helpful contributions.
 
-We need updates to existing CSS features and to add missing and new features.
-A feature only needs a **title**, a **description**, and a link to its
-**specification**, because every feature is "*unrecognized*" until we see proof
-of a **stage** change from the [CSSWG](#join-the-csswg).
+I love folks who can add missing features and keep existing features up to date.
+A new feature only needs a **title**, a **description**, and a link to its
+**specification**.
 
 Non-CSSWG members can still update CSS features by including **citations** to
 public notes that show how the CSSWG is advancing a feature. If you need
@@ -13,66 +12,65 @@ further clarification, read [why we are doing this](#why-are-we-doing-this).
 
 ### Updating a feature
 
-Does one of the CSS features listed here have out-of-date info? Goto
-[css-features](css-features) and find the feature you want to update. It’s a
-JSON file, so make changes directly to the JSON and
-[make a pull request](#making-a-pull-request).
+Is one of these CSS features out-of-date? Open [`features.json`] and find the
+feature you want to update. It’s a JSON file, so make changes directly to the
+file, commit it, and then [make a pull request](#making-a-pull-request).
 
 ### Adding a new feature
 
-Is an experimental CSS feature not listed here? Add the feature to
-[css-features](css-features). You’ll be creating a JSON file, so make additions
-directly to the JSON and [make a pull request](#making-a-pull-request).
+Is a CSS feature not listed here? Add the feature to [`features.json`]. Again,
+it’s a JSON file, so make changes directly to the JSON, commit it, and then
+[make a pull request](#making-a-pull-request).
 
 ### Making a Pull Request
 
 For best results, be sure your contributions make sense to everyone else. If
 you’re unfamiliar with git, consider the following workflow.
 
-1. To begin; [fork this project][fork], clone your fork, and add our upstream.
-    ```bash
-    # Clone your fork of the repo into the current directory
-    git clone git@github.com:YOUR_USER/css-db.git
+1. To begin; [fork this project] and then clone your fork locally
+   ```bash
+   # Clone your fork of this project
+   git clone git@github.com:YOUR_USER/css-db.git
 
-    # Navigate to the newly cloned directory
-    cd css-db
+   # Navigate to your fork of this project
+   cd css-db
 
-    # Assign the original repo to a remote called "upstream"
-    git remote add upstream git@github.com:jonathantneal/css-db.git
+   # Install the tools necessary for testing this project
+   npm install
 
-    # Install the tools necessary for testing
-    npm install
-    ```
+   # Assign the original repo to a remote called "upstream"
+   git remote add upstream git@github.com:jonathantneal/css-db.git
+   ```
 
-2. Create a branch for your feature or update:
-    ```bash
-    # Move into a new branch for your new feature
-    git checkout -b feature/thing
-    ```
-    ```bash
-    # Or, move into a new branch for your update
-    git checkout -b update/something
-    ```
+2. Create a branch for your feature or fix:
+   ```bash
+   # Move into a new branch for your feature
+   git checkout -b feature/thing
+   ```
+   ```bash
+   # Move into a new branch for your fix
+   git checkout -b fix/something
+   ```
 
-3. If your code follows our practices, then push your branch up to your fork:
-    ```bash
-    # Test current code
-    npm test
-    ```
-    ```bash
-    # Push the branch for your new feature
-    git push origin feature/thing
-    ```
-    ```bash
-    # Or, push the branch for your update
-    git push origin update/something
-    ```
+3. If your code follows our practices, then push your feature branch:
+   ```bash
+   # Test your code
+   npm test
+   ```
+   ```bash
+   # Push the branch for your new feature
+   git push origin feature/thing
+   ```
+   ```bash
+   # Or, push the branch for your update
+   git push origin update/something
+   ```
 
 ---
 
 ## Advanced Usage: How the JSON file looks
 
-The only fields you’ll see in our JSON file are, in order:
+The only fields you’ll see in [`features.json`] are, in order:
 
 - `title`: the name of the feature.
 - `description`: a brief description of the feature.
@@ -85,22 +83,17 @@ The only fields you’ll see in our JSON file are, in order:
     + `2` means **Stage 2** — *Draft*,
     + `3` means **Stage 3** — *Adoption*,
     + `4` means **Stage 4** — *Complete*, and
-    + `null` means **No Stage** — *Unrecognized*.
-- `citations`: a list of links related to the feature and its progress.
-- `issues`: a link to issue tracking for the feature.
+    + `-1` means **Rejected**.
 - `polyfills`: A list of polyfills used to simulate the feature; which includes
-    + `name`: the shorthand name of the polyfill, and
+    + `type`: the type of polyfill (e.g. *PostCSS*, *JS Library*), and
     + `link`: the URL to the page or repository for the polyfill.
 
-All contributions must follow the syntax and style of existing JSON files,
+All contributions must follow the existing syntax and style of the JSON file,
 which;
 
-1. Exist as `css-features/${ featureName }.json`, where `featureName` is the
-   [kebab-case](http://wiki.c2.com/?KebabCase) name representing the title and
-   thematic category of the feature, like `hwb-color`, `matches-pseudo-class`,
-   or `grid-syntax`.
-2. Include at least the required fields; **title**, **description**,
-   **specification**, and **stage** (which is `null` if you don’t know it).
+1. Exists as `features.json`, and;
+2. Includes at least the required fields; **title**, **description**,
+   **specification**, and **stage** (which is `0` if you don’t know it).
 
 Did you write the specification you are submitting? It must;
 
@@ -109,19 +102,17 @@ Did you write the specification you are submitting? It must;
 3. Describe how the feature and its parts operate as clearly and completely as
    possible.
 
-If you’re changing the **stage** of a feature, be sure to add a **citation**
-that proves its new position in the
-[staging process](README.md#staging-process).
+If you’re changing the **stage** of a feature, be sure to include a link along
+with your PR to prove the new position.
 
 ---
 
 ## Join the CSSWG
 
 Passionate and informed developers should consider joining the CSSWG. Read the
-[instructions for joining the CSSWG](https://www.w3.org/2004/01/pp-impl/32061/instructions).
-Supposedly this is very difficult to actually accomplish, so pull requests are
-welcomed to update this section with a beginner-friendly version of these
-instructions.
+[instructions for joining the CSSWG]. This is a very difficult to actually
+accomplish, so I welcome pull requests to update this section with some
+beginner-friendly instructions.
 
 ### Why are we doing this?
 
@@ -131,6 +122,8 @@ browsers
 so we have to discern what’s really going on ourselves. If we didn’t, we
 probably wouldn’t need this repository.
 
-[fork]: fork
+[fork this project]: fork
 [staging process]: README.md#staging-process
 [TC39 process]: https://thefeedbackloop.xyz/tc39-a-process-sketch-stages-0-and-1/
+[`features.json`]: features.json
+[instructions for joining the CSSWG]: https://www.w3.org/2004/01/pp-impl/32061/instructions

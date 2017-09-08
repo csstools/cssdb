@@ -1,0 +1,72 @@
+<!doctype html>
+<title>cssdb</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jon_neal">
+<meta name="twitter:title" content="CSS Database">
+<meta name="twitter:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<meta name="twitter:image" content="https://jonathantneal.github.io/css-db/cssdb.jpg">
+<meta property="og:image" content="https://jonathantneal.github.io/css-db/cssdb.jpg" itemprop="thumbnailUrl">
+<meta property="og:title" content="CSS Database">
+<meta property="og:url" content="https://jonathantneal.github.io/css-db">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<link href="cssdb.ico" rel="shortcut icon">
+<link href="style.css" rel="stylesheet">
+
+<header class="cssdb-header">
+	<img class="cssdb-header-branding" src="cssdb.svg" alt="cssdb logo" width="90" height="90">
+	<div class="cssdb-header-heading">
+		<h1 class="cssdb-header-title">
+			What’s next for CSS?
+		</h1>
+		<p class="cssdb-header-description">
+			<strong>cssdb</strong> is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+		</p>
+	</div>
+	<a class="cssdb-header-link" href="#staging-process">What are the stages?</a>
+</header>
+
+<main class="cssdb-features" id="features">
+	${features.map((feature) => `<section class="cssdb-feature" id="${feature.id}">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#${feature.id}">${feature.title}</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					${feature.description}
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="${feature.specification}">Specification</a>
+			</p>
+			<pre class="cssdb-feature-example">${feature.example}</pre>
+			${feature.polyfills
+				? `<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list">${feature.polyfills.map(
+						(polyfill) => `<li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="${polyfill.link}">${polyfill.type}</a>
+						</li>`
+					)}</ul>
+				</div>`
+				: ''
+			}
+		</div>
+	</section>`)}
+</main>
+
+<aside class="cssdb-process">
+	${staging}
+</aside>
+
+<p>
+	Want to contribute? Checkout the
+	<a href="https://github.com/jonathantneal/css-db">cssdb on GitHub</a>
+</p>

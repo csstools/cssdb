@@ -1,56 +1,26 @@
 {
-  "name": "css-db",
+  "name": "cssdb",
   "version": "1.0.0",
-  "private": true,
-  "description": "A database of staged CSS features",
+  "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/css-db",
+  "repository": "jonathantneal/cssdb",
   "homepage": "https://github.com/jonathantneal/css-db#readme",
   "bugs": "https://github.com/jonathantneal/css-db/issues",
-  "main": "index.js",
+  "main": "cssdb.json",
   "files": [
-    "index.js",
-    "features"
+    "cssdb.json"
   ],
   "scripts": {
-    "lint": "npm run lint:ec && npm run lint:js",
-    "lint:ec": "echint",
-    "lint:js": "eslint *.js --cache --ignore-pattern .gitignore",
-    "publish": "npm run publish:gh-pages && npm run publish:features && npm run publish:push",
-    "publish:gh-pages": "node tasks/publish-gh-pages",
-    "publish:features": "node tasks/publish-features",
-    "publish:push": "git push -f && git push -f origin `git subtree split --prefix gh-pages master`:gh-pages",
-    "test": "echo 'Running tests...'; npm run lint && npm run test:json",
-    "test:json": "node tasks/test-json"
-  },
-  "engines": {
-    "node": ">=6.5.0"
+    "start": "node tasks/start",
+    "test": "node tasks/test"
   },
   "devDependencies": {
-    "echint": "^4.0.1",
-    "echint-config-dev": "1.0.0",
-    "eslint": "^4.6.1",
-    "eslint-config-dev": "2.0.0",
     "eslit": "^5.0.0",
     "fse": "^3.1.0",
     "marked": "^0.3.6",
     "postcss": "^6.0.11",
     "pre-commit": "^1.2.2"
-  },
-  "echint": {
-    "extends": "dev"
-  },
-  "eslintConfig": {
-    "extends": "dev",
-    "rules": {
-      "no-nested-ternary": [
-        0
-      ],
-      "wrap-regex": [
-        0
-      ]
-    }
   },
   "keywords": [
     "css",
