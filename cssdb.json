@@ -124,6 +124,19 @@
     ]
   },
   {
+    "title": "Image `image-set()` function",
+    "description": "A function for delivering the most appropriate image for a user’s device",
+    "specification": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+    "stage": 3,
+    "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/SuperOl3g/postcss-image-set-polyfill"
+      }
+    ]
+  },
+  {
     "title": "Media Queries Custom Media Queries",
     "description": "An at-rule used to define aliases representing media queries",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
@@ -176,7 +189,20 @@
     ]
   },
   {
-    "title": "Selectors `:matches()` Matches-Any Pseudo-class",
+    "title": "Selector `:dir` Pseudo-Class",
+    "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
+    "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
+    "stage": 4,
+    "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-dir-pseudo-class"
+      }
+    ]
+  },
+  {
+    "title": "Selector `:matches()` Matches-Any Pseudo-class",
     "description": "A pseudo-class used to match a selector list",
     "specification": "https://drafts.csswg.org/selectors-4/#matches",
     "stage": 3,
@@ -189,7 +215,7 @@
     ]
   },
   {
-    "title": "Selectors `:not()` Negation Pseudo-Class",
+    "title": "Selector `:not()` Negation Pseudo-Class",
     "description": "A pseudo-class used to ignore a selector list",
     "specification": "https://drafts.csswg.org/selectors-4/#negation",
     "stage": 3,
