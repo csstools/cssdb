@@ -12,13 +12,13 @@ further clarification, read [why we are doing this](#why-are-we-doing-this).
 
 ### Updating a feature
 
-Is one of these CSS features out-of-date? Open [`features.json`] and find the
+Is one of these CSS features out-of-date? Open [`cssdb.json`] and find the
 feature you want to update. It’s a JSON file, so make changes directly to the
 file, commit it, and then [make a pull request](#making-a-pull-request).
 
 ### Adding a new feature
 
-Is a CSS feature not listed here? Add the feature to [`features.json`]. Again,
+Is a CSS feature not listed here? Add the feature to [`cssdb.json`]. Again,
 it’s a JSON file, so make changes directly to the JSON, commit it, and then
 [make a pull request](#making-a-pull-request).
 
@@ -70,7 +70,7 @@ you’re unfamiliar with git, consider the following workflow.
 
 ## Advanced Usage: How the JSON file looks
 
-The only fields you’ll see in [`features.json`] are, in order:
+The only fields you’ll see in [`cssdb.json`] are, in order:
 
 - `title`: the name of the feature.
 - `description`: a brief description of the feature.
@@ -93,7 +93,7 @@ The only fields you’ll see in [`features.json`] are, in order:
 All contributions must follow the existing syntax and style of the JSON file,
 which;
 
-1. Exists as `features.json`, and;
+1. Exists as `cssdb.json`, and;
 2. Includes at least the required fields; **title**, **description**,
    **specification**, and **stage** (which is `0` if you don’t know it).
 
@@ -124,7 +124,7 @@ browsers
 so we have to discern what’s really going on ourselves. If we didn’t, we
 probably wouldn’t need this repository.
 
-[`features.json`]: features.json
+[`cssdb.json`]: cssdb.json
 [fork this project]: fork
 [instructions for joining the CSSWG]: https://www.w3.org/2004/01/pp-impl/32061/instructions
 [staging process]: README.md#staging-process
