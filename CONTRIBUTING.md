@@ -75,6 +75,8 @@ The only fields you’ll see in [`features.json`] are, in order:
 - `title`: the name of the feature.
 - `description`: a brief description of the feature.
 - `specification`: a link to feature’s specification.
+- `specificationId`: the specification’s [Shortname]
+   (and [Section Heading ID], if necessary).
 - `stage`: the position of the feature within the [staging process]. Stages
    should be a number, and no stage (*unrecognized*) should be `null`.
 - `stage`: the current [stage](README.md#staging-process) of the feature; where
@@ -122,8 +124,10 @@ browsers
 so we have to discern what’s really going on ourselves. If we didn’t, we
 probably wouldn’t need this repository.
 
+[`features.json`]: features.json
 [fork this project]: fork
+[instructions for joining the CSSWG]: https://www.w3.org/2004/01/pp-impl/32061/instructions
 [staging process]: README.md#staging-process
 [TC39 process]: https://thefeedbackloop.xyz/tc39-a-process-sketch-stages-0-and-1/
-[`features.json`]: features.json
-[instructions for joining the CSSWG]: https://www.w3.org/2004/01/pp-impl/32061/instructions
+[Section Heading ID]: https://tabatkins.github.io/bikeshed/#section-links
+[Shortname]: https://tabatkins.github.io/bikeshed/#metadata-shortname

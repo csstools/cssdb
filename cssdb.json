@@ -3,6 +3,7 @@
     "title": "Color `#RRGGBBAA` Notation",
     "description": "A 4 & 8 character hex notation for color to include the opacity level",
     "specification": "https://drafts.csswg.org/css-color/#hex-notation",
+    "specificationId": "css-color-hex-notation",
     "stage": 2,
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
@@ -16,6 +17,7 @@
     "title": "Color `color-mod()` Function",
     "description": "A function used to modify a color",
     "specification": "https://drafts.csswg.org/css-color/#modifying-colors",
+    "specificationId": "css-color-modifying-colors",
     "stage": 2,
     "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
@@ -29,6 +31,7 @@
     "title": "Color `gray()` Function",
     "description": "A function used to specify fully desaturate colors",
     "specification": "https://drafts.csswg.org/css-color/#grays",
+    "specificationId": "css-color-grays",
     "stage": 2,
     "example": "p {\n  color: gray(red);\n}",
     "polyfills": [
@@ -42,6 +45,7 @@
     "title": "Color `hwb()` Function",
     "description": "A function used to specify colors, similar to HSL, but often even easier for humans to work with",
     "specification": "https://drafts.csswg.org/css-color/#the-hwb-notation",
+    "specificationId": "css-color-the-hwb-notation",
     "stage": 2,
     "example": "p {\n  color: hwb(120deg, 44%, 50%);\n}",
     "polyfills": [
@@ -55,6 +59,7 @@
     "title": "Custom Properties",
     "description": "A syntax for defining custom values accepted by all CSS properties",
     "specification": "https://drafts.csswg.org/css-variables/",
+    "specificationId": "css-variables",
     "stage": 5,
     "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
@@ -68,6 +73,7 @@
     "title": "Custom Property Sets",
     "description": "A syntax for storing properties in a named variable, referenceable in other style rules",
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
+    "specificationId": "css-apply-rule",
     "stage": -1,
     "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
@@ -81,6 +87,7 @@
     "title": "Custom Selectors",
     "description": "An at-rule used to define aliases representing selectors",
     "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
+    "specificationId": "css-extensions-custom-selectors",
     "stage": 2,
     "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p {}",
     "polyfills": [
@@ -94,6 +101,7 @@
     "title": "Element Queries",
     "description": "A syntax for container-style element queries",
     "specification": "https://tomhodgins.github.io/element-queries-spec/element-queries.html",
+    "specificationId": "elementqueries",
     "stage": 0,
     "example": "@element html and (min-width: 500px) {\n  body {\n    background: lime;\n  }\n}",
     "polyfills": [
@@ -107,26 +115,15 @@
     "title": "Grid Layout",
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://drafts.csswg.org/css-grid-2/",
+    "specificationId": "css-grid",
     "stage": 4,
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}"
-  },
-  {
-    "title": "Logical Properties and Values",
-    "description": "Flow-relative (LTR or RTL) properties and values",
-    "specification": "https://drafts.csswg.org/css-logical/",
-    "stage": 3,
-    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-logical-properties"
-      }
-    ]
   },
   {
     "title": "Image `image-set()` function",
     "description": "A function for delivering the most appropriate image for a user’s device",
     "specification": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+    "specificationId": "css-images-image-set-notation",
     "stage": 3,
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "polyfills": [
@@ -137,9 +134,24 @@
     ]
   },
   {
+    "title": "Logical Properties and Values",
+    "description": "Flow-relative (LTR or RTL) properties and values",
+    "specification": "https://drafts.csswg.org/css-logical/",
+    "specificationId": "css-logical",
+    "stage": 3,
+    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-logical-properties"
+      }
+    ]
+  },
+  {
     "title": "Media Queries Custom Media Queries",
     "description": "An at-rule used to define aliases representing media queries",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
+    "specificationId": "mediaqueries-5-custom-mq",
     "stage": 2,
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
@@ -153,6 +165,7 @@
     "title": "Media Queries Ranges",
     "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
     "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
+    "specificationId": "mediaqueries-mq-ranges",
     "stage": 3,
     "example": "@custom-media --small-viewport (max-width: 30em);\n\n@media (--small-viewport) {}",
     "polyfills": [
@@ -166,6 +179,7 @@
     "title": "Media Queries `media()` Function",
     "description": "A function used to define media queries within values",
     "specification": "https://jonathantneal.github.io/media-expressions-spec/",
+    "specificationId": "media-expressions",
     "stage": 0,
     "example": "p {\n  font-size: media(\n    16px,\n    (min-width:  600px) 20px,\n    (min-width: 1000px) 40px,\n    (min-width: 1400px) 60px\n  );\n}",
     "polyfills": [
@@ -179,6 +193,7 @@
     "title": "Nesting",
     "description": "A syntax for nesting relative rules inside another",
     "specification": "https://tabatkins.github.io/specs/css-nesting/",
+    "specificationId": "css-nesting",
     "stage": 1,
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
@@ -192,6 +207,7 @@
     "title": "Selector `:dir` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
     "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
+    "specificationId": "selectors-matches-the-dir-pseudo",
     "stage": 4,
     "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
@@ -202,9 +218,10 @@
     ]
   },
   {
-    "title": "Selector `:matches()` Matches-Any Pseudo-class",
+    "title": "Selector `:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class used to match a selector list",
     "specification": "https://drafts.csswg.org/selectors-4/#matches",
+    "specificationId": "selectors-matches",
     "stage": 3,
     "example": "p:matches(:first-child, .special) {}",
     "polyfills": [
@@ -218,6 +235,7 @@
     "title": "Selector `:not()` Negation Pseudo-Class",
     "description": "A pseudo-class used to ignore a selector list",
     "specification": "https://drafts.csswg.org/selectors-4/#negation",
+    "specificationId": "selectors-negation",
     "stage": 3,
     "example": "p:not(:first-child, .special) {}",
     "polyfills": [
@@ -231,6 +249,7 @@
     "title": "Sizing `aspect-ratio` Property",
     "description": "A property for defining the aspect ratio of an element",
     "specification": "https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html",
+    "specificationId": "aspect-ratio",
     "stage": 0,
     "example": "div {\n  aspect-ratio: 16/9;\n  width: 200px;\n}",
     "polyfills": [

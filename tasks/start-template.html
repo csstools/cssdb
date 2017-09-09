@@ -30,12 +30,12 @@
 </header>
 
 <main class="cssdb-features" id="features">
-	${features.map((feature) => `<section class="cssdb-feature" id="${feature.id}">
+	${features.map((feature) => `<section class="cssdb-feature" id="${feature.specificationId}">
 		<header class="cssdb-feature-header">
 			<img class="cssdb-feature-stage" src="stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="" width="62" height="62">
 			<div class="cssdb-feature-header-content">
 				<h3 class="cssdb-feature-heading">
-					<a href="#${feature.id}">${feature.title}</a>
+					<a href="#${feature.specificationId}">${feature.title}</a>
 				</h3>
 				<p class="cssdb-feature-description">
 					${feature.description}
@@ -45,6 +45,9 @@
 		<div class="cssdb-feature-content">
 			<p class="cssdb-feature-specification">
 				<a class="cssdb-feature-specification-link" href="${feature.specification}">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/${feature.specificationId}.svg">
+					<img class="cssdb-feature-specification-badge" src="badge/${feature.specificationId}.svg" alt="cssdb badge">
+				</a>
 			</p>
 			<pre class="cssdb-feature-example">${feature.example}</pre>
 			${feature.polyfills

@@ -3,6 +3,7 @@ const path = require('path');
 
 // external tooling
 const eslit   = require('eslit');
+const fetch   = require('node-fetch');
 const fs      = require('fse');
 const marked  = require('marked');
 const postcss = require('postcss');
@@ -30,6 +31,16 @@ Promise.all([
 		// write the rendered html
 		(html) => fs.writeFile(destination, html)
 	).then(
+		// empty the badge directory
+		() => fs.rmdir(
+			path.join(__dirname, '../gh-pages/badge')
+		).then(
+			// write all new badges
+			Promise.all(
+				features.map(writeStageSVG)
+			)
+		)
+	).then(
 		// return the array of features
 		() => features
 	)
@@ -46,7 +57,7 @@ const markedOptions = {
 
 // marked heading renderer
 markedOptions.renderer.heading = (text, level) => {
-	const escapedText = text.toLowerCase().replace(/:.+/, '').replace(/[^\w]+$/, '').replace(/[^\w]+/g, '-');
+	const escapedText = text.replace(/:.+$/, '').replace(/^[^\w]+|[^\w]+$/g, '').replace(/[^\w]+/g, '-').toLowerCase();
 
 	return `<h${level}><a id="${escapedText}" href="#${escapedText}">${text}</a></h${level}>`;
 };
@@ -59,8 +70,6 @@ function sortFeatures(a, b) {
 // format feature for HTML output
 function formatFeature(feature) {
 	return Object.assign({}, feature, {
-		// format id as title
-		id: String(feature.title).toLowerCase().replace(/[^\w]+/g, '-'),
 		// format title using marked inline lexer
 		title: marked.inlineLexer(feature.title, [], {}),
 		// format example as syntax-highlighted html
@@ -98,5 +107,35 @@ function postcssToHTML(root, builder) {
 
 	builder(
 		toString(root)
+	);
+}
+
+function writeStageSVG(feature) {
+	// shield colors
+	const colors = [
+		'414141',
+		'ed782a',
+		'd7b914',
+		'899c1f',
+		'3e7817',
+		'005a9c'
+	];
+
+	const shieldSubject = 'cssdb';
+	const shieldStatus = feature.stage === -1 ? 'Rejected' : encodeURIComponent(`Stage ${feature.stage}`);
+	const shieldColor = colors[feature.stage] || 'd02c2c';
+
+	return fetch(
+		// get a shield svg from shields.io
+		`https://img.shields.io/badge/${shieldSubject}-${shieldStatus}-${shieldColor}.svg`
+	).then(
+		// get the shield svg as text
+		(response) => response.text()
+	).then(
+		// write the shield svg to the badge directory
+		(svg) => fs.writeFile(
+			path.join(__dirname, `../gh-pages/badge/${feature.specificationId}.svg`),
+			svg
+		)
 	);
 }

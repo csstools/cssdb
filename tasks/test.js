@@ -33,15 +33,15 @@ function hasRequiredData(feature) {
 	const title = Object(feature).title || 'Unknown Feature';
 	const keys = Object.keys(Object(feature));
 
-	const hasRequiredFields = keys.slice(0, 4).join() === 'title,description,specification,stage';
+	const hasRequiredFields = keys.slice(0, 5).join() === 'title,description,specification,specificationId,stage';
 	const hasValidStage = feature.stage === -1 || feature.stage === 0 || feature.stage === 1 || feature.stage === 2 || feature.stage === 3 || feature.stage === 4 || feature.stage === 5;
-	const hasOrderlyAdditionalFields = keys.slice(4).join() === keys.slice(4).sort().join();
+	const hasOrderlyAdditionalFields = keys.slice(5).join() === keys.slice(5).sort().join();
 	const hasOrderlyPolyfills = !Array.isArray(feature.polyfills) || feature.polyfills.every(
 		(polyfill) => Object.keys(Object(polyfill)).join() === 'type,link'
 	);
 
 	if (!hasRequiredFields) {
-		throw ValidationError('MISSING OR UNORDERLY REQUIRED FIELDS', title, keys.slice(0, 4).join(', '));
+		throw ValidationError('MISSING OR UNORDERLY REQUIRED FIELDS', title, keys.slice(0, 5).join(', '));
 	}
 
 	if (!hasValidStage) {
@@ -49,7 +49,7 @@ function hasRequiredData(feature) {
 	}
 
 	if (!hasOrderlyAdditionalFields) {
-		throw ValidationError('UNORDERLY ADDITIONAL FIELDS', title, keys.slice(4).join(', '));
+		throw ValidationError('UNORDERLY ADDITIONAL FIELDS', title, keys.slice(5).join(', '));
 	}
 
 	if (!hasOrderlyPolyfills) {
