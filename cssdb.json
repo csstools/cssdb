@@ -272,5 +272,19 @@
         "link": "https://github.com/tomhodgins/aspect-ratio-spec"
       }
     ]
+  },
+  {
+    "title": "Text `overflow-wrap` Property",
+    "description": "A property for defining whether to insert line breaks within words to prevent overflowing",
+    "specification": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+    "specificationId": "css-text-overflow-wrap-property",
+    "stage": 3,
+    "example": "p {\n  overflow-wrap: break-word;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
+      }
+    ]
   }
 ]
