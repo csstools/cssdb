@@ -207,7 +207,7 @@
     "title": "Selector `:dir` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
     "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
-    "specificationId": "selectors-matches-the-dir-pseudo",
+    "specificationId": "selectors-the-dir-pseudo",
     "stage": 4,
     "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
