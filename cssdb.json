@@ -204,6 +204,20 @@
     ]
   },
   {
+    "title": "Selector `:any-link` Pseudo-Class",
+    "description": "A pseudo-class for writing selectors that represent an anchor element independent of whether it has been visited",
+    "specification": "https://drafts.csswg.org/selectors/#any-link-pseudo",
+    "specificationId": "selectors-any-link-pseudo",
+    "stage": 3,
+    "example": "nav :any-link > span {\n  background-color: yellow;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-pseudo-class-any-link"
+      }
+    ]
+  },
+  {
     "title": "Selector `:dir` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
     "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
