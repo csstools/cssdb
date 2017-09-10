@@ -112,6 +112,20 @@
     ]
   },
   {
+    "title": "Font `system-ui` Family",
+    "description": "A generic font intended to match the default user interface",
+    "specification": "https://drafts.csswg.org/css-fonts-4/#system-ui-def",
+    "specificationId": "css-fonts-system-ui-def",
+    "stage": 3,
+    "example": "body {\n  font-family: system-ui;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
+      }
+    ]
+  },
+  {
     "title": "Grid Layout",
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://drafts.csswg.org/css-grid-2/",
