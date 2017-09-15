@@ -314,5 +314,13 @@
         "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
       }
     ]
+  },
+  {
+    "title": "When/Else Rules",
+    "description": "At-rules used to define conditional rules and unify the disparate conditional rules into a single grammar",
+    "specification": "https://tabatkins.github.io/specs/css-when-else/",
+    "specificationId": "css-when-else",
+    "stage": 1,
+    "example": "@when media(width >= 640px) and (supports(display: flex) or supports(display: grid)) {\n  /* A */\n} @else media(pointer: coarse) {\n  /* B */\n} @else {\n  /* C */\n}"
   }
 ]
