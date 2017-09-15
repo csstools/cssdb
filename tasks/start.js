@@ -88,6 +88,8 @@ function postcssToHTML(root, builder) {
 			return ruleToString(node, semicolon);
 		} else if ('decl' === node.type) {
 			return declToString(node, semicolon);
+		} else if ('comment' === node.type) {
+			return commentToString(node, semicolon);
 		} else {
 			return node.nodes ? node.nodes.map((childNodes) => toString(childNodes, semicolon)).join('') : '';
 		}
@@ -103,6 +105,10 @@ function postcssToHTML(root, builder) {
 
 	function declToString(decl, semicolon) {
 		return `${decl.raws.before || ''}<span class=css-declaration><span class=css-property>${decl.prop}</span>${decl.raws.between || ':'}<span class=css-value>${decl.value}</span>${semicolon?';':''}</span>`;
+	}
+
+	function commentToString(comment, semicolon) {
+		return `${comment.raws.before}<span class=css-comment>/*${comment.raws.left}${comment.text}${comment.raws.right}*/</span>`;
 	}
 
 	builder(
