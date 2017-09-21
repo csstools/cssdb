@@ -232,6 +232,20 @@
     ]
   },
   {
+    "title": "Selector Attribute Case-Sensitivity",
+    "description": "An attribute selector used to match attribute values case-insensitively",
+    "specification": "https://drafts.csswg.org/selectors/#attribute-case",
+    "specificationId": "selectors-attribute-case",
+    "stage": 3,
+    "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/Semigradsky/postcss-attribute-case-insensitive"
+      }
+    ]
+  },
+  {
     "title": "Selector `:any-link` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an anchor element independent of whether it has been visited",
     "specification": "https://drafts.csswg.org/selectors/#any-link-pseudo",
