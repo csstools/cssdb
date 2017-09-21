@@ -70,6 +70,20 @@
     ]
   },
   {
+    "title": "Color `rebeccapurple`",
+    "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
+    "specification": "https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple",
+    "specificationId": "css-color-valdef-color-rebeccapurple",
+    "stage": 3,
+    "example": "html {\n  color: rebeccapurple;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple"
+      }
+    ]
+  },
+  {
     "title": "Custom Properties",
     "description": "A syntax for defining custom values accepted by all CSS properties",
     "specification": "https://drafts.csswg.org/css-variables/",
