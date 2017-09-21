@@ -140,6 +140,20 @@
     ]
   },
   {
+    "title": "Font `font-variant` Property",
+    "description": "A property for defining the usage of alternate glyphs in a font",
+    "specification": "https://drafts.csswg.org/css-fonts/#propdef-font-variant",
+    "specificationId": "css-fonts-propdef-font-variant",
+    "stage": 4,
+    "example": "h2 {\n  font-variant-caps: small-caps;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/postcss/postcss-font-variant"
+      }
+    ]
+  },
+  {
     "title": "Font `system-ui` Family",
     "description": "A generic font intended to match the default user interface",
     "specification": "https://drafts.csswg.org/css-fonts-4/#system-ui-def",
