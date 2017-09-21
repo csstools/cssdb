@@ -43,7 +43,7 @@
   },
   {
     "title": "Color `gray()` Function",
-    "description": "A function used to specify fully desaturate colors",
+    "description": "A function used to fully desaturate colors",
     "specification": "https://drafts.csswg.org/css-color/#grays",
     "specificationId": "css-color-grays",
     "stage": 2,
