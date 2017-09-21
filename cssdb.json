@@ -14,6 +14,15 @@
     ]
   },
   {
+    "title": "Color Functional Notation",
+    "description": "A space and slash separated notation used to specify colors",
+    "specification": "https://drafts.csswg.org/css-color/#changes-from-3",
+    "specificationId": "css-color-functional-notation",
+    "stage": 2,
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
+    "polyfills": []
+  },
+  {
     "title": "Color `#RRGGBBAA` Notation",
     "description": "A 4 & 8 character hex notation for color to include the opacity level",
     "specification": "https://drafts.csswg.org/css-color/#hex-notation",
