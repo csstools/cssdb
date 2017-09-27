@@ -192,7 +192,7 @@
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}"
   },
   {
-    "title": "Image `image-set()` function",
+    "title": "Image `image-set()` Function",
     "description": "A function for delivering the most appropriate image for a user’s device",
     "specification": "https://drafts.csswg.org/css-images-4/#image-set-notation",
     "specificationId": "css-images-image-set-notation",
