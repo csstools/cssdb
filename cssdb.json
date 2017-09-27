@@ -5,6 +5,7 @@
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
     "specificationId": "css-cascade-all-shorthand",
     "stage": 4,
+    "caniuse": "css-all",
     "example": "a {\n  all: initial;\n}",
     "polyfills": [
       {
@@ -28,6 +29,7 @@
     "specification": "https://drafts.csswg.org/css-color/#hex-notation",
     "specificationId": "css-color-hex-notation",
     "stage": 2,
+    "caniuse": "rrggbbaa",
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
       {
@@ -84,6 +86,7 @@
     "specification": "https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple",
     "specificationId": "css-color-valdef-color-rebeccapurple",
     "stage": 3,
+    "caniuse": "css-rebeccapurple",
     "example": "html {\n  color: rebeccapurple;\n}",
     "polyfills": [
       {
@@ -98,6 +101,7 @@
     "specification": "https://drafts.csswg.org/css-variables/",
     "specificationId": "css-variables",
     "stage": 5,
+    "caniuse": "css-variables",
     "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
@@ -112,6 +116,7 @@
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
     "specificationId": "css-apply-rule",
     "stage": -1,
+    "caniuse": "css-apply-rule",
     "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
       {
@@ -154,6 +159,7 @@
     "specification": "https://drafts.csswg.org/css-fonts/#propdef-font-variant",
     "specificationId": "css-fonts-propdef-font-variant",
     "stage": 4,
+    "caniuse": "font-variant-alternates",
     "example": "h2 {\n  font-variant-caps: small-caps;\n}",
     "polyfills": [
       {
@@ -182,6 +188,7 @@
     "specification": "https://drafts.csswg.org/css-grid-2/",
     "specificationId": "css-grid",
     "stage": 4,
+    "caniuse": "css-grid",
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}"
   },
   {
@@ -190,6 +197,7 @@
     "specification": "https://drafts.csswg.org/css-images-4/#image-set-notation",
     "specificationId": "css-images-image-set-notation",
     "stage": 3,
+    "caniuse": "css-image-set",
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "polyfills": [
       {
@@ -204,6 +212,7 @@
     "specification": "https://drafts.csswg.org/css-logical/",
     "specificationId": "css-logical",
     "stage": 3,
+    "caniuse": "logical",
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
@@ -274,6 +283,7 @@
     "specification": "https://drafts.csswg.org/selectors/#attribute-case",
     "specificationId": "selectors-attribute-case",
     "stage": 3,
+    "caniuse": "css-case-insensitive",
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
     "polyfills": [
       {
@@ -302,6 +312,7 @@
     "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
     "specificationId": "selectors-the-dir-pseudo",
     "stage": 3,
+    "caniuse": "css-dir-pseudo",
     "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
       {
@@ -316,6 +327,7 @@
     "specification": "https://drafts.csswg.org/selectors-4/#matches",
     "specificationId": "selectors-matches",
     "stage": 3,
+    "caniuse": "css-matches-pseudo",
     "example": "p:matches(:first-child, .special) {}",
     "polyfills": [
       {
@@ -325,11 +337,12 @@
     ]
   },
   {
-    "title": "Selector `:not()` Negation Pseudo-Class",
+    "title": "Selector `:not()` Selector List Negation Pseudo-Class",
     "description": "A pseudo-class used to ignore a selector list",
     "specification": "https://drafts.csswg.org/selectors-4/#negation",
     "specificationId": "selectors-negation",
     "stage": 3,
+    "caniuse": "css-not-sel-list",
     "example": "p:not(:first-child, .special) {}",
     "polyfills": [
       {
@@ -358,6 +371,7 @@
     "specification": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
     "specificationId": "css-text-overflow-wrap-property",
     "stage": 3,
+    "caniuse": "wordwrap",
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "polyfills": [
       {
