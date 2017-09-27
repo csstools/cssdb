@@ -36,7 +36,7 @@ Promise.all([
 			path.join(__dirname, '../gh-pages/badge')
 		).then(
 			// write all new badges
-			Promise.all(
+			() => Promise.all(
 				features.map(writeStageSVG)
 			)
 		)
@@ -46,8 +46,8 @@ Promise.all([
 	)
 ).then(
 	// report success or errors
-	(array) => console.log(`\x1b[32m✔\x1b[0m css-db successfully published ${ array.length } features.`),
-	(error) => console.log(`\x1b[31m✖\x1b[0m css-db failed to published a feature.\x1b[0m\n  → ${ error }`)
+	(array) => console.log(`\x1b[32m✔\x1b[0m css-db successfully published ${ array.length } features.`) || process.exit(0),
+	(error) => console.log(`\x1b[31m✖\x1b[0m css-db failed to published a feature.\x1b[0m\n  → ${ error }`) || process.exit(1)
 );
 
 // marked renderer
