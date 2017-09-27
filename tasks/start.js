@@ -15,6 +15,9 @@ const stagesMD = path.join(__dirname, '../STAGES.md');
 // destination (configure the gh-pages directory to be the gh-pages branch)
 const destination = path.join(__dirname, '../gh-pages/index.html');
 
+// option to update gh-pages without updating badges (npm start -- --no-badges)
+const noBadges = process.argv.slice(2).includes('--no-badges');
+
 // render cssdb features as html
 Promise.all([
 	fs.readJson('cssdb.json'),
@@ -31,8 +34,8 @@ Promise.all([
 		// write the rendered html
 		(html) => fs.writeFile(destination, html)
 	).then(
-		// empty the badge directory
-		() => fs.rmdir(
+		// conditionally empty the badge directory
+		() => noBadges ? true : fs.rmdir(
 			path.join(__dirname, '../gh-pages/badge')
 		).then(
 			// write all new badges
