@@ -73,3 +73,50 @@
 	Want to contribute? Checkout the
 	<a href="https://github.com/jonathantneal/css-db">cssdb on GitHub</a>
 </p>
+
+<script>
+document.addEventListener('click', function (event) {
+	var closestHash = event.target.closest('a[href^="#"]');
+
+	if (closestHash) {
+		var target = document.getElementById(closestHash.hash.slice(1));
+		var easing = function (t) {
+			return t * (2 - t);
+		};
+
+		if (target) {
+			event.preventDefault();
+
+			scrollTo(target, 300, easing, function () {
+				location.hash = closestHash.hash;
+			});
+		}
+	}
+});
+
+function scrollTo(target, duration, easing, callback) {
+	var start = window.pageYOffset;
+	var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+	var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+	var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var targetOffset = typeof target === 'number' ? target : target.offsetTop;
+	var targetOffsetToScroll = Math.round(documentHeight - targetOffset < windowHeight ? documentHeight - windowHeight : targetOffset);
+
+	scroll();
+
+	function scroll() {
+		var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+		var time = Math.min(1, ((now - startTime) / duration));
+		var timeFunction = easing(time);
+
+		window.scroll(0, Math.ceil((timeFunction * (targetOffsetToScroll - start)) + start));
+
+		if (window.pageYOffset !== targetOffsetToScroll) {
+			requestAnimationFrame(scroll);
+		} else {
+			callback();
+		}
+	}
+}
+</script>
