@@ -241,7 +241,7 @@
     "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
     "specificationId": "mediaqueries-mq-ranges",
     "stage": 3,
-    "example": "@custom-media --small-viewport (max-width: 30em);\n\n@media (--small-viewport) {}",
+    "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px)\n\n@media (width >= 768px) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
