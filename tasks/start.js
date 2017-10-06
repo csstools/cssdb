@@ -2,6 +2,7 @@
 const path = require('path');
 
 // external tooling
+const caniuse = require('caniuse-lite');
 const eslit   = require('eslit');
 const fetch   = require('node-fetch');
 const fs      = require('fse');
@@ -78,7 +79,8 @@ function formatFeature(feature) {
 		// format example as syntax-highlighted html
 		example: postcss().process(feature.example, {
 			stringifier: postcssToHTML
-		}).css
+		}).css,
+		caniuse: feature.caniuse in caniuse.features ? caniuse.feature(caniuse.features[feature.caniuse]) : false
 	});
 }
 
