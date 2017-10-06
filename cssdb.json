@@ -20,8 +20,7 @@
     "specification": "https://drafts.csswg.org/css-color/#changes-from-3",
     "specificationId": "css-color-functional-notation",
     "stage": 2,
-    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
-    "polyfills": []
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}"
   },
   {
     "title": "Color `#RRGGBBAA` Notation",
@@ -29,7 +28,7 @@
     "specification": "https://drafts.csswg.org/css-color/#hex-notation",
     "specificationId": "css-color-hex-notation",
     "stage": 2,
-    "caniuse": "rrggbbaa",
+    "caniuse": "css-rrggbbaa",
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
       {
@@ -225,7 +224,7 @@
     "title": "Media Queries Custom Media Queries",
     "description": "An at-rule used to define aliases representing media queries",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
-    "specificationId": "mediaqueries-5-custom-mq",
+    "specificationId": "mediaqueries-custom-mq",
     "stage": 2,
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
@@ -298,6 +297,7 @@
     "specification": "https://drafts.csswg.org/selectors/#any-link-pseudo",
     "specificationId": "selectors-any-link-pseudo",
     "stage": 3,
+    "caniuse": "css-any-link",
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "polyfills": [
       {
