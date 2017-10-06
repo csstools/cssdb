@@ -56,7 +56,7 @@
 						(id) => `<span class="cssdb-browser cssdb-browser--${id}">${Object.keys(feature.caniuse.stats[id]).filter(
 							(version) => feature.caniuse.stats[id][version] === 'y'
 						).slice(0, 1).map(
-							(version) => `<span>${version}</span>`
+							(version) => `<span class="cssdb-browser-version">${version}</span>`
 						)}</span>`
 					)}
 				</div>`
