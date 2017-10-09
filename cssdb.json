@@ -226,7 +226,7 @@
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
     "specificationId": "mediaqueries-custom-mq",
     "stage": 2,
-    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "example": "@custom-media --narrow-window (max-width: 30em);\n\n@media (--narrow-window) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
