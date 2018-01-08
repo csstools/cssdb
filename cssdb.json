@@ -69,7 +69,7 @@
     "title": "Color `hwb()` Function",
     "description": "A function used to specify colors, similar to HSL, but often even easier for humans to work with",
     "specification": "https://drafts.csswg.org/css-color/#the-hwb-notation",
-    "specificationId": "css-color-the-hwb-notation",
+    "specificationId": "css-color-hwb-notation",
     "stage": 2,
     "example": "p {\n  color: hwb(120deg, 44%, 50%);\n}",
     "polyfills": [
@@ -310,7 +310,7 @@
     "title": "Selector `:dir` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
     "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
-    "specificationId": "selectors-the-dir-pseudo",
+    "specificationId": "selectors-dir-pseudo",
     "stage": 3,
     "caniuse": "css-dir-pseudo",
     "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",

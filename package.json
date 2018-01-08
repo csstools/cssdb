@@ -16,13 +16,13 @@
     "test": "node tasks/test"
   },
   "devDependencies": {
-    "browserslist": "^2.5.1",
-    "caniuse-lite": "^1.0.30000745",
+    "browserslist": "^2.11.0",
+    "caniuse-lite": "^1.0.30000789",
     "eslit": "^5.0.0",
-    "fse": "^3.1.0",
-    "marked": "^0.3.6",
+    "fse": "^4.0.0",
+    "marked": "^0.3.9",
     "node-fetch": "^1.7.3",
-    "postcss": "^6.0.13",
+    "postcss": "^6.0.16",
     "pre-commit": "^1.2.2"
   },
   "keywords": [
