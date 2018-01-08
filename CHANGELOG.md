@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### 1.2.0 (January 8th, 2017)
+
+- Fixed: specification identifiers for `css-color-hwb-notation`,
+         `selectors-dir-pseudo`
+- Fixed: Examples for Media Queries Custom Media Queries
+
 ### 1.1.0 (September 27th, 2017)
 
 - Added: Image `image-set()` Function, Selector `:dir` Pseudo-Class,
