@@ -45,15 +45,15 @@
 		<div class="cssdb-feature-content">
 			<p class="cssdb-feature-specification">
 				<a class="cssdb-feature-specification-link" href="${feature.specification}">Specification</a>
-				<a class="cssdb-feature-specification-badge-link" href="badge/${feature.specificationId}.svg">
+				<a class="cssdb-feature-specification-badge-link" href="badge/${feature.specificationId}.svg" tabindex="-1">
 					<img class="cssdb-feature-specification-badge" src="badge/${feature.specificationId}.svg" alt="cssdb badge">
 				</a>
 			</p>
 			<pre class="cssdb-feature-example">${feature.example}</pre>
 			${feature.caniuse
-				? `<div class="cssdb-feature-caniuse" aria-hidden="true">
+				? `<a class="cssdb-feature-caniuse" href="https://caniuse.com/#${feature.caniuseURL}" target="_blank" aria-label="can i use browser support">
 					${Object.keys(feature.caniuse.stats).map(
-						id => `<span class="cssdb-browser cssdb-browser--${id}">${Object.keys(feature.caniuse.stats[id]).filter(
+						id => `<span class="cssdb-browser cssdb-browser--${id}" aria-hidden="true">${Object.keys(feature.caniuse.stats[id]).filter(
 							version => feature.caniuse.stats[id][version].indexOf('y') === 0
 						).slice(0, 1).map(
 							version => version.replace(/(\.0)?(-.+)?$/, '')
@@ -61,7 +61,7 @@
 							version => `<span class="cssdb-browser-version">${version}</span>`
 						)}</span>`
 					)}
-				</div>`
+				</a>`
 				: ''
 			}
 			${feature.polyfills && feature.polyfills.length

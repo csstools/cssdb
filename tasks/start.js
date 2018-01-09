@@ -80,7 +80,8 @@ function formatFeature(feature) {
 		example: postcss().process(feature.example, {
 			stringifier: postcssToHTML
 		}).css,
-		caniuse: feature.caniuse in caniuse.features ? caniuse.feature(caniuse.features[feature.caniuse]) : false
+		caniuse: feature.caniuse in caniuse.features ? caniuse.feature(caniuse.features[feature.caniuse]) : false,
+		caniuseURL: feature.caniuse
 	});
 }
 
