@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 1.3.0 (January 8th, 2017)
+
+- Added: caniuse references for `css-logical` and `css-fonts-system-ui-def`
+- Fixed: caniuse parsing for browser support
+
 ### 1.2.0 (January 8th, 2017)
 
 - Fixed: specification identifiers for `css-color-hwb-notation`,
