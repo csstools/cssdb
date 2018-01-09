@@ -30,7 +30,7 @@
 </header>
 
 <main class="cssdb-features" id="features">
-	${features.map((feature) => `<section class="cssdb-feature" id="${feature.specificationId}">
+	${features.map(feature => `<section class="cssdb-feature" id="${feature.specificationId}">
 		<header class="cssdb-feature-header">
 			<img class="cssdb-feature-stage" src="stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="" width="62" height="62">
 			<div class="cssdb-feature-header-content">
@@ -53,10 +53,10 @@
 			${feature.caniuse
 				? `<div class="cssdb-feature-caniuse" aria-hidden="true">
 					${Object.keys(feature.caniuse.stats).map(
-						(id) => `<span class="cssdb-browser cssdb-browser--${id}">${Object.keys(feature.caniuse.stats[id]).filter(
-							(version) => feature.caniuse.stats[id][version].indexOf('y') === 0
+						id => `<span class="cssdb-browser cssdb-browser--${id}">${Object.keys(feature.caniuse.stats[id]).filter(
+							version => feature.caniuse.stats[id][version].indexOf('y') === 0
 						).slice(0, 1).map(
-							(version) => `<span class="cssdb-browser-version">${version}</span>`
+							version => `<span class="cssdb-browser-version">${version}</span>`
 						)}</span>`
 					)}
 				</div>`
@@ -66,7 +66,7 @@
 				? `<div class="cssdb-feature-polyfills">
 					Use with a
 					<ul class="cssdb-feature-polyfill-list">${feature.polyfills.map(
-						(polyfill) => `<li class="cssdb-feature-polyfill-item">
+						polyfill => `<li class="cssdb-feature-polyfill-item">
 							<a class="cssdb-feature-polyfill-link" href="${polyfill.link}">${polyfill.type}</a>
 						</li>`
 					)}</ul>
