@@ -173,6 +173,7 @@
     "specification": "https://drafts.csswg.org/css-fonts-4/#system-ui-def",
     "specificationId": "css-fonts-system-ui-def",
     "stage": 3,
+    "caniuse": "font-family-system-ui",
     "example": "body {\n  font-family: system-ui;\n}",
     "polyfills": [
       {
@@ -211,7 +212,7 @@
     "specification": "https://drafts.csswg.org/css-logical/",
     "specificationId": "css-logical",
     "stage": 3,
-    "caniuse": "logical",
+    "caniuse": "css-logical-props",
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
