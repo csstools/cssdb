@@ -20,7 +20,7 @@
     "caniuse-lite": "^1.0.30000789",
     "eslit": "^5.0.0",
     "fse": "^4.0.0",
-    "marked": "^0.3.9",
+    "marked": "^0.3.12",
     "node-fetch": "^1.7.3",
     "postcss": "^6.0.16",
     "pre-commit": "^1.2.2"
