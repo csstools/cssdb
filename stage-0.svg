@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="90" height="90">
+	<path d="M 0 0 120 0 120 120 0 120" fill="#414141"/>
+	<text x="60" y="31.75" font-family="Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="1" fill="#ffffff">Stage</text>
+	<text x="60" y="96.5" font-family="Helvetica, sans-serif" font-size="72" font-weight="700" text-anchor="middle" fill="#ffffff">0</text>
+</svg>

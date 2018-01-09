@@ -1,0 +1,415 @@
+/* Document
+/* ========================================================================== */
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+body {
+	font: 300 100%/1.5 "Helvetica Neue", sans-serif;
+	letter-spacing: .025em;
+	padding: 0 calc((100% - 960px) / 2);
+}
+
+@media (max-width: 559px) {
+	body {
+		margin: 16px;
+	}
+}
+
+@media (min-width: 560px) {
+	body {
+		margin: 32px 64px;
+	}
+}
+
+a {
+	color: #0077dd;
+	text-decoration: none;
+}
+
+code {
+	font-family: monospace, monospace;
+	letter-spacing: 0;
+}
+
+code::before {
+	content: '‘';
+	font-family: "Helvetica Neue", sans-serif;
+	padding-right: .125em;
+}
+
+code::after {
+	content: '’';
+	font-family: "Helvetica Neue", sans-serif;
+	padding-left: .125em;
+}
+
+/* Header
+/* ========================================================================== */
+
+@media (min-width: 960px) {
+	.cssdb-header {
+		align-items: center;
+		display: flex;
+	}
+}
+
+.cssdb-header-branding {
+	flex-shrink: 0;
+	height: 114px;
+	margin-right: 36px;
+	width: 114px;
+}
+
+@media (max-width: 959px) {
+	.cssdb-header-branding {
+		float: left;
+		margin-bottom: 20px;
+	}
+}
+
+.cssdb-header-heading {
+	flex-grow: 1;
+}
+
+.cssdb-header-title {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0 0 12px;
+}
+
+.cssdb-header-desc {
+	color: #616161;
+	font-size: 14px;
+	line-height: calc(18 / 14);
+	margin: 0;
+	max-width: 44em;
+}
+
+.cssdb-header-link {
+	text-align: right;
+	margin-left: 60px;
+	white-space: nowrap;
+}
+
+/* Features
+/* ========================================================================== */
+
+.cssdb-feature {
+	margin-top: 100px;
+}
+
+.cssdb-feature-header {
+	display: flex;
+}
+
+.cssdb-feature-stage {
+	flex-shrink: 0;
+	margin: 0 15px 20px 0;
+	height: 62px;
+	width: 62px;
+}
+
+.cssdb-feature-heading {
+	margin: 0;
+}
+
+.cssdb-feature-heading a {
+	color: inherit;
+}
+
+.cssdb-feature-description {
+	display: inline-block;
+	margin: 5px 0 25px;
+}
+
+.cssdb-feature-specification {
+	font-size: 87.5%;
+	font-weight: 700;
+	margin: 0 0 -22.5px;
+	padding: 0 15px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.cssdb-feature-specification-link {
+	background-image: linear-gradient(currentColor 25%, transparent 50%);
+	background-repeat: no-repeat;
+	background-position: 200% 100%;
+	background-size: 200% 2px;
+	padding: 0 0 2px;
+	transition: background-position 250ms;
+}
+
+.cssdb-feature-specification-link:hover {
+	background-position: 100% 100%;
+}
+
+.cssdb-feature-specification-badge {
+	height: 20px;
+	vertical-align: top;
+}
+
+.cssdb-feature-polyfills {
+	display: flex;
+	font-size: 87.5%;
+	margin: 0 0 -24px;
+	padding: 0 15px;
+}
+
+.cssdb-feature-polyfill-list {
+	font-weight: 700;
+	list-style: none;
+	margin: 0 0 0 .5em;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.cssdb-feature-polyfill-link {
+	background-image: linear-gradient(currentColor 25%, transparent 50%);
+	background-repeat: no-repeat;
+	background-position: 200% 100%;
+	background-size: 200% 2px;
+	padding: 0 0 2px;
+	transition: background-position 250ms;
+}
+
+.cssdb-feature-polyfill-link:hover {
+	background-position: 100% 100%;
+}
+
+/* Examples
+/* ========================================================================== */
+
+.cssdb-feature-example {
+	background-color: #f7f7f7;
+	overflow: auto;
+	padding: 20px 15px;
+}
+
+.css-selector {
+	color: #292;
+}
+
+.css-property {
+	color: #0055aa;
+}
+
+.css-atrule-name {
+	color: #ee5500;
+}
+
+.css-comment {
+	color: #777777;
+}
+
+/* Browsers
+/* ========================================================================== */
+
+.cssdb-feature-caniuse {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.cssdb-browser {
+	display: inline-block;
+	height: 46px;
+	margin: 0 0 12px;
+	position: relative;
+	width: 32px;
+}
+
+.cssdb-browser:empty {
+	display: none;
+}
+
+.cssdb-browser + .cssdb-browser {
+	margin-left: 6px;
+}
+
+.cssdb-browser-version {
+	display: block;
+	font-size: 10px;
+	line-height: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.cssdb-browser::before {
+	display: inline-block;
+	height: 32px;
+	line-height: 0;
+	vertical-align: top;
+	width: 32px;
+}
+
+.cssdb-browser--and_chr::after, .cssdb-browser--and_ff::after, .cssdb-browser--and_qq::after, .cssdb-browser--and_uc::after {
+	background-color: #fff;
+	border-radius: 50%;
+	bottom: 14px;
+	box-shadow: 0 0 0 2px #8bc34a;
+	content: url("browsers/and.svg");
+	display: block;
+	height: 12px;
+	line-height: 0;
+	padding: 2px;
+	position: absolute;
+	right: -2px;
+	width: 12px;
+	z-index: 1;
+}
+
+.cssdb-browser--ie_mob::after, .cssdb-browser--op_mini::after, .cssdb-browser--op_mob::after {
+	background-color: #fff;
+	border-radius: 50%;
+	bottom: 14px;
+	box-shadow: 0 0 0 2px #474748;
+	content: url("browsers/mob.svg");
+	display: block;
+	height: 12px;
+	line-height: 0;
+	padding: 2px;
+	position: absolute;
+	right: -2px;
+	width: 12px;
+	z-index: 1;
+}
+
+.cssdb-browser--and_uc::before {
+	content: url("browsers/and_uc.svg");
+}
+
+.cssdb-browser--and_qq::before {
+	content: url("browsers/and_qq.svg");
+}
+
+.cssdb-browser--android::before {
+	content: url("browsers/android.svg");
+}
+
+.cssdb-browser--baidu::before {
+	content: url("browsers/baidu.svg");
+}
+
+.cssdb-browser--bb::before {
+	content: url("browsers/bb.svg");
+}
+
+.cssdb-browser--chrome::before, .cssdb-browser--and_chr::before {
+	content: url("browsers/chrome.svg");
+}
+
+.cssdb-browser--edge::before {
+	content: url("browsers/edge.svg");
+}
+
+.cssdb-browser--firefox::before, .cssdb-browser--and_ff::before {
+	content: url("browsers/firefox.svg");
+}
+
+.cssdb-browser--ie::before, .cssdb-browser--ie_mob::before {
+	content: url("browsers/ie.svg");
+}
+
+.cssdb-browser--ios_saf::before {
+	content: url("browsers/ios_saf.svg");
+}
+
+.cssdb-browser--opera::before, .cssdb-browser--op_mini::before, .cssdb-browser--op_mob::before {
+	content: url("browsers/opera.svg");
+}
+
+.cssdb-browser--safari::before {
+	content: url("browsers/safari.svg");
+}
+
+.cssdb-browser--samsung::before {
+	content: url("browsers/samsung.svg");
+}
+
+/* Process
+/* ========================================================================== */
+
+.cssdb-process {
+	margin: 90px 0;
+}
+
+.cssdb-process h2 {
+	box-shadow: inset 0 -1px 0 0 #eaecef;
+	font-size: 150%;
+	padding-bottom: 10px;
+}
+
+.cssdb-process h1 a,
+.cssdb-process h2 a,
+.cssdb-process h3 a,
+.cssdb-process h4 a,
+.cssdb-process h5 a,
+.cssdb-process h6 a {
+	color: inherit;
+	position: relative;
+}
+
+.cssdb-process h1 a::before,
+.cssdb-process h2 a::before,
+.cssdb-process h3 a::before,
+.cssdb-process h4 a::before,
+.cssdb-process h5 a::before,
+.cssdb-process h6 a::before {
+	content: "#";
+	display: inline-block;
+	position: absolute;
+	left: -.75em;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+.cssdb-process h1 a:hover::before,
+.cssdb-process h2 a:hover::before,
+.cssdb-process h3 a:hover::before,
+.cssdb-process h4 a:hover::before,
+.cssdb-process h5 a:hover::before,
+.cssdb-process h6 a:hover::before {
+	opacity: 1;
+}
+
+.cssdb-process h3 {
+	font-size: 1.125em;
+	line-height: 1.2223;
+}
+
+.cssdb-process p a {
+	background-image: linear-gradient(currentColor 25%, transparent 50%);
+	background-repeat: no-repeat;
+	background-position: 200% 100%;
+	background-size: 200% 2px;
+	cursor: pointer;
+	padding: 0 0 2px;
+	transition: background-position 250ms;
+}
+
+.cssdb-process p a:hover {
+	background-position: 100% 100%;
+}
+
+.cssdb-process blockquote {
+	border-left: 0.25em solid #dfe2e5;
+	color: #6a737d;
+	font-weight: 400;
+	letter-spacing: .05em;
+	padding: 0 1em;
+}
+
+.cssdb-process hr {
+	background: #e1e4e8;
+	border: none;
+	height: .25em;
+	padding: 0;
+	margin: 24px 0;
+	overflow: hidden;
+}
+
+.cssdb-process img[align=left] {
+	margin: 0 20px 20px 0;
+}

@@ -1,0 +1,1050 @@
+<!doctype html>
+<title>cssdb</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jon_neal">
+<meta name="twitter:title" content="CSS Database">
+<meta name="twitter:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<meta name="twitter:image" content="https://jonathantneal.github.io/css-db/cssdb.jpg">
+<meta property="og:image" content="https://jonathantneal.github.io/css-db/cssdb.jpg" itemprop="thumbnailUrl">
+<meta property="og:title" content="CSS Database">
+<meta property="og:url" content="https://jonathantneal.github.io/css-db">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+<link href="cssdb.ico" rel="shortcut icon">
+<link href="style.css" rel="stylesheet">
+
+<header class="cssdb-header">
+	<img class="cssdb-header-branding" src="cssdb.svg" alt="cssdb logo" width="90" height="90">
+	<div class="cssdb-header-heading">
+		<h1 class="cssdb-header-title">
+			What’s next for CSS?
+		</h1>
+		<p class="cssdb-header-description">
+			<strong>cssdb</strong> is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+		</p>
+	</div>
+	<a class="cssdb-header-link" href="#staging-process">What are the stages?</a>
+</header>
+
+<main class="cssdb-features" id="features">
+	<section class="cssdb-feature" id="css-variables">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-5.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-variables">Custom Properties</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for defining custom values accepted by all CSS properties
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-variables/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-variables.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-variables.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>img</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>--some-length</span>: <span class=css-value>32px</span>;</span>
+
+  <span class=css-declaration><span class=css-property>height</span>: <span class=css-value>var(--some-length)</span>;</span>
+  <span class=css-declaration><span class=css-property>width</span>: <span class=css-value>var(--some-length)</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-variables" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">16</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">31</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">36</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-properties">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-cascade-all-shorthand">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-4.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-cascade-all-shorthand">Cascade <code>all</code> Property</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A property for defining the reset of all properties of an element
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-cascade-3/#all-shorthand">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-cascade-all-shorthand.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-cascade-all-shorthand.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>a</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>all</span>: <span class=css-value>initial</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-all" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">27</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">24</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.4</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/maximkoretskiy/postcss-initial">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-fonts-propdef-font-variant">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-4.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-fonts-propdef-font-variant">Font <code>font-variant</code> Property</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A property for defining the usage of alternate glyphs in a font
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-fonts/#propdef-font-variant">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-fonts-propdef-font-variant.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-fonts-propdef-font-variant.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>h2</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>font-variant-caps</span>: <span class=css-value>small-caps</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#font-variant-alternates" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">34</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-font-variant">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-grid">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-4.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-grid">Grid Layout</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for using a grid concept to lay out content
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-grid-2/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-grid.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-grid.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>section</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>display</span>: <span class=css-value>grid</span>;</span>
+  <span class=css-declaration><span class=css-property>grid-template-columns</span>: <span class=css-value>100px 100px 100px</span>;</span>
+  <span class=css-declaration><span class=css-property>grid-gap</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-grid" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">16</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">52</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">44</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10.3</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">6.2</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			
+		</div>
+	</section><section class="cssdb-feature" id="css-images-image-set-notation">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-images-image-set-notation">Image <code>image-set()</code> Function</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A function for delivering the most appropriate image for a user’s device
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-images-4/#image-set-notation">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-images-image-set-notation.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-images-image-set-notation.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-image</span>: <span class=css-value>image-set(
+    "foo.png" 1x,
+    "foo-2x.png" 2x,
+    "foo-print.png" 600dpi
+  )</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-image-set" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">21</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">6</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.4</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/SuperOl3g/postcss-image-set-polyfill">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-fonts-system-ui-def">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-fonts-system-ui-def">Font <code>system-ui</code> Family</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A generic font intended to match the default user interface
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-fonts-4/#system-ui-def">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-fonts-system-ui-def.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-fonts-system-ui-def.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>font-family</span>: <span class=css-value>system-ui</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#font-family-system-ui" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">56</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">43</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.4</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">6.2</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/JLHwung/postcss-font-family-system-ui">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-valdef-color-rebeccapurple">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-valdef-color-rebeccapurple">Color <code>rebeccapurple</code></a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A particularly lovely shade of purple in memory of Rebecca Alison Meyer
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-valdef-color-rebeccapurple.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-valdef-color-rebeccapurple.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>html</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>rebeccapurple</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-rebeccapurple" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">12</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">33</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">38</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">25</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.4</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-logical">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-logical">Logical Properties and Values</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					Flow-relative (LTR or RTL) properties and values
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-logical/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-logical.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-logical.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>span:first-child</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>float</span>: <span class=css-value>inline-start</span>;</span>
+  <span class=css-declaration><span class=css-property>margin-inline-start</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-logical-props" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">41</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-logical-properties">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="mediaqueries-mq-ranges">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#mediaqueries-mq-ranges">Media Queries Ranges</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for defining media query ranges using ordinary mathematical comparison operators
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/mediaqueries/#mq-ranges">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/mediaqueries-mq-ranges.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/mediaqueries-mq-ranges.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(width < 480px)</span> <span class=css-block>{}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(480px <= width < 768px)</span> <span class=css-block>{}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(width >= 768px)</span> <span class=css-block>{}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-media-minmax">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="selectors-any-link-pseudo">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#selectors-any-link-pseudo">Selector <code>:any-link</code> Pseudo-Class</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A pseudo-class for writing selectors that represent an anchor element independent of whether it has been visited
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors/#any-link-pseudo">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/selectors-any-link-pseudo.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/selectors-any-link-pseudo.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>nav :any-link > span</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>yellow</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-any-link" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">21</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">24</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-pseudo-class-any-link">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="selectors-dir-pseudo">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#selectors-dir-pseudo">Selector <code>:dir</code> Pseudo-Class</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A pseudo-class for writing selectors that represent an element based on its directionality
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors/#the-dir-pseudo">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/selectors-dir-pseudo.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/selectors-dir-pseudo.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>.example:dir(rtl)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-right</span>: <span class=css-value>10px</span>;</span>
+}</span></span>
+
+<span class=css-rule><span class=css-selector>.example:dir(ltr)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-left</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-dir-pseudo" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">17</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-dir-pseudo-class">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="selectors-matches">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#selectors-matches">Selector <code>:matches()</code> Matches-Any Pseudo-Class</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A pseudo-class used to match a selector list
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors-4/#matches">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/selectors-matches.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/selectors-matches.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p:matches(:first-child, .special)</span> <span class=css-block>{}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-matches-pseudo" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-selector-matches">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="selectors-negation">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#selectors-negation">Selector <code>:not()</code> Selector List Negation Pseudo-Class</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A pseudo-class used to ignore a selector list
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors-4/#negation">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/selectors-negation.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/selectors-negation.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p:not(:first-child, .special)</span> <span class=css-block>{}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-not-sel-list" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-selector-not">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="selectors-attribute-case">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#selectors-attribute-case">Selector Attribute Case-Sensitivity</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					An attribute selector used to match attribute values case-insensitively
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors/#attribute-case">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/selectors-attribute-case.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/selectors-attribute-case.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>[frame=hsides i]</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>border-style</span>: <span class=css-value>solid none</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-case-insensitive" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">47</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">36</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/Semigradsky/postcss-attribute-case-insensitive">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-text-overflow-wrap-property">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-text-overflow-wrap-property">Text <code>overflow-wrap</code> Property</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A property for defining whether to insert line breaks within words to prevent overflowing
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-text-3/#overflow-wrap-property">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-text-overflow-wrap-property.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-text-overflow-wrap-property.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>overflow-wrap</span>: <span class=css-value>break-word</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#wordwrap" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">23</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.4</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/mattdimu/postcss-replace-overflow-wrap">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-grays">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-grays">Color <code>gray()</code> Function</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A function used to fully desaturate colors
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#grays">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-grays.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-grays.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>gray(red)</span>;</span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-gray">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-modifying-colors">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-modifying-colors">Color <code>color-mod()</code> Function</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A function used to modify a color
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#modifying-colors">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-modifying-colors.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-modifying-colors.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>color-mod(black alpha(50%))</span>;</span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-function">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-hex-notation">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-hex-notation">Color <code>#RRGGBBAA</code> Notation</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A 4 & 8 character hex notation for color to include the opacity level
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#hex-notation">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-hex-notation.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-hex-notation.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>section</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>#f3f3f3f3</span>;</span>
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>#0003</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-rrggbbaa" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-hex-alpha">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-hwb-notation">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-hwb-notation">Color <code>hwb()</code> Function</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A function used to specify colors, similar to HSL, but often even easier for humans to work with
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#the-hwb-notation">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-hwb-notation.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-hwb-notation.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>hwb(120deg, 44%, 50%)</span>;</span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-hwb">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-color-functional-notation">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-color-functional-notation">Color Functional Notation</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A space and slash separated notation used to specify colors
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#changes-from-3">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-color-functional-notation.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-color-functional-notation.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>em</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>hsl(120deg 100% 25%)</span>;</span>
+  <span class=css-declaration><span class=css-property>box-shadow</span>: <span class=css-value>0 0 0 10px hwb(120deg 100% 25% / 80%)</span>;</span>
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>rgb(0 255 0)</span>;</span>
+}</span></span></pre>
+			
+			
+		</div>
+	</section><section class="cssdb-feature" id="css-extensions-custom-selectors">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-extensions-custom-selectors">Custom Selectors</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					An at-rule used to define aliases representing selectors
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-extensions/#custom-selectors">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-extensions-custom-selectors.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-extensions-custom-selectors.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-atrule><span class=css-atrule-name>@custom-selector</span> <span class=css-atrule-params>:--heading h1, h2, h3, h4, h5, h6</span></span>
+
+<span class=css-rule><span class=css-selector>article :--heading + p</span> <span class=css-block>{}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-selectors">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="mediaqueries-custom-mq">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#mediaqueries-custom-mq">Media Queries Custom Media Queries</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					An at-rule used to define aliases representing media queries
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/mediaqueries-5/#custom-mq">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/mediaqueries-custom-mq.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/mediaqueries-custom-mq.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-atrule><span class=css-atrule-name>@custom-media</span> <span class=css-atrule-params>--narrow-window (max-width: 30em)</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(--narrow-window)</span> <span class=css-block>{}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-media">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-nesting">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-nesting">Nesting</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for nesting relative rules inside another
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://tabatkins.github.io/specs/css-nesting/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-nesting.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-nesting.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>article</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>& p</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>#333</span>;</span>
+  }</span></span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-nesting">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-when-else">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-when-else">When/Else Rules</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					At-rules used to define conditional rules and unify the disparate conditional rules into a single grammar
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://tabatkins.github.io/specs/css-when-else/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-when-else.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-when-else.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-atrule><span class=css-atrule-name>@when</span> <span class=css-atrule-params>media(width >= 640px) and (supports(display: flex) or supports(display: grid))</span> <span class=css-block>{
+  <span class=css-comment>/* A */</span>
+}</span></span> <span class=css-atrule><span class=css-atrule-name>@else</span> <span class=css-atrule-params>media(pointer: coarse)</span> <span class=css-block>{
+  <span class=css-comment>/* B */</span>
+}</span></span> <span class=css-atrule><span class=css-atrule-name>@else</span><span class=css-atrule-params></span> <span class=css-block>{
+  <span class=css-comment>/* C */</span>
+}</span></span></pre>
+			
+			
+		</div>
+	</section><section class="cssdb-feature" id="elementqueries">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-0.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#elementqueries">Element Queries</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for container-style element queries
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://tomhodgins.github.io/element-queries-spec/element-queries.html">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/elementqueries.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/elementqueries.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-atrule><span class=css-atrule-name>@element</span> <span class=css-atrule-params>html and (min-width: 500px)</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>background</span>: <span class=css-value>lime</span>;</span>
+  }</span></span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/eqcss/eqcss">JS Library</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="media-expressions">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-0.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#media-expressions">Media Queries <code>media()</code> Function</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A function used to define media queries within values
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://jonathantneal.github.io/media-expressions-spec/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/media-expressions.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/media-expressions.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>font-size</span>: <span class=css-value>media(
+    16px,
+    (min-width:  600px) 20px,
+    (min-width: 1000px) 40px,
+    (min-width: 1400px) 60px
+  )</span>;</span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-media-fn">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="aspect-ratio">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-0.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#aspect-ratio">Sizing <code>aspect-ratio</code> Property</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A property for defining the aspect ratio of an element
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/aspect-ratio.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/aspect-ratio.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>div</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>aspect-ratio</span>: <span class=css-value>16/9</span>;</span>
+  <span class=css-declaration><span class=css-property>width</span>: <span class=css-value>200px</span>;</span>
+}</span></span></pre>
+			
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/tomhodgins/aspect-ratio-spec">JS Library</a>
+						</li></ul>
+				</div>
+		</div>
+	</section><section class="cssdb-feature" id="css-apply-rule">
+		<header class="cssdb-feature-header">
+			<img class="cssdb-feature-stage" src="stage-X.svg" alt="" width="62" height="62">
+			<div class="cssdb-feature-header-content">
+				<h3 class="cssdb-feature-heading">
+					<a href="#css-apply-rule">Custom Property Sets</a>
+				</h3>
+				<p class="cssdb-feature-description">
+					A syntax for storing properties in a named variable, referenceable in other style rules
+				</p>
+			</div>
+		</header>
+		<div class="cssdb-feature-content">
+			<p class="cssdb-feature-specification">
+				<a class="cssdb-feature-specification-link" href="https://tabatkins.github.io/specs/css-apply-rule/">Specification</a>
+				<a class="cssdb-feature-specification-badge-link" href="badge/css-apply-rule.svg" tabindex="-1">
+					<img class="cssdb-feature-specification-badge" src="badge/css-apply-rule.svg" alt="cssdb badge">
+				</a>
+			</p>
+			<pre class="cssdb-feature-example"><span class=css-rule><span class=css-selector>img</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>--some-length-styles:</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>height</span>: <span class=css-value>32px</span>;</span>
+    <span class=css-declaration><span class=css-property>width</span>: <span class=css-value>32px</span>;</span>
+  }</span></span>
+
+  <span class=css-atrule><span class=css-atrule-name>@apply</span> <span class=css-atrule-params>--some-length-styles</span>;</span>
+}</span></span></pre>
+			<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-apply-rule" target="_blank" aria-label="can i use browser support">
+					<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"></span>
+				</a>
+			<div class="cssdb-feature-polyfills">
+					Use with a
+					<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+							<a class="cssdb-feature-polyfill-link" href="https://github.com/pascalduez/postcss-apply">PostCSS Plugin</a>
+						</li></ul>
+				</div>
+		</div>
+	</section>
+</main>
+
+<aside class="cssdb-process">
+	<h2><a id="staging-process" href="#staging-process">Staging Process</a></h2><p>Staging processes allow developers to accomplish real things and get involved
+in the creation of standards, testing, feedback, and new use cases.</p>
+<p>This staging process reflects the real-life stability of new CSS features.</p>
+<p>You can read an <a href="http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process">inside view of the CSSWG</a> to learn about the official
+(and unofficial) development stages of CSS specifications. In reality,
+specifications and browser implementations happen out of sync. For example,
+there are stable CSS features missing in all browsers, while other CSS features
+developed outside the <a href="https://wiki.csswg.org/spec">CSSWG</a> have appeared in browsers behind flags. This is
+too ambiguous for the web development community, and a more accountable process
+is desired.</p>
+<h3><a id="stage-0" href="#stage-0">Stage 0: Aspirational</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-0.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This is my crazy idea.”</p>
+</blockquote>
+<p>An <strong>Editor’s Draft</strong> <a href="#what-is-a-champion">championed</a> by a non-<a href="https://wiki.csswg.org/spec">CSSWG</a> member. It should be
+considered highly unstable and subject to change.</p>
+<hr>
+<h3><a id="stage-1" href="#stage-1">Stage 1: Enthusiastic</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-1.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This is a crazy idea.”</p>
+</blockquote>
+<p>An <strong>Editor’s Draft</strong> <a href="#what-is-a-champion">championed</a> by a <a href="https://wiki.csswg.org/spec">CSSWG</a> member. It should still be
+considered highly unstable and subject to change.</p>
+<hr>
+<h3><a id="stage-2" href="#stage-2">Stage 2: Experimental</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-2.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This idea might not be crazy.”</p>
+</blockquote>
+<p>An <strong>Editor’s Draft</strong> <a href="#what-is-a-champion">hosted</a> by the <a href="https://wiki.csswg.org/spec">CSSWG</a> or <a href="https://www.w3.org/">W3C</a>. It should still be
+considered highly unstable and subject to change.</p>
+<hr>
+<h3><a id="stage-3" href="#stage-3">Stage 3: Allowable</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-3.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This idea is not crazy.”</p>
+</blockquote>
+<p>A <strong>Working Draft</strong> <a href="#what-is-a-champion">hosted</a> by the <a href="https://wiki.csswg.org/spec">CSSWG</a> or <a href="https://www.w3.org/">W3C</a> and requiring
+implementations to move forward. It should be considered stable and subject to
+little change. It is still subject to rejection as a standard.</p>
+<hr>
+<h3><a id="stage-4" href="#stage-4">Stage 4: Embraced</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-4.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This idea is becoming part of the web.”</p>
+</blockquote>
+<p>A <strong>Candidate Recommendation</strong> <a href="#what-is-a-champion">hosted</a> by the <a href="https://wiki.csswg.org/spec">CSSWG</a> or <a href="https://www.w3.org/">W3C</a> and being
+implemented by at least 2 <a href="#recognized-browser-vendors">recognized browser vendors</a>, possibly behind a flag.
+It should be considered stable and subject to little change. It will likely
+become a standard.</p>
+<hr>
+<h3><a id="stage-5" href="#stage-5">Stage 5: Standardized</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-5.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“This idea is part of the web.”</p>
+</blockquote>
+<p>A <strong>Recommendation</strong> <a href="#what-is-a-champion">hosted</a> by the <a href="https://wiki.csswg.org/spec">CSSWG</a> or <a href="https://www.w3.org/">W3C</a> and implemented by all
+<a href="#recognized-browser-vendors">recognized browser vendors</a>. It is a standard.</p>
+<hr>
+<h3><a id="rejected" href="#rejected">Rejected</a></h3><p><img src="https://jonathantneal.github.io/css-db/stage-X.svg" align="left" width="90" height="90"></p>
+<blockquote>
+<p>“I had no idea what I was doing.”</p>
+</blockquote>
+<p>This is any specification that has been rejected or neglected by its editor, or
+formally rejected by the <a href="https://wiki.csswg.org/spec">CSSWG</a>.</p>
+<hr>
+<h2><a id="terminology" href="#terminology">Terminology</a></h2><h3><a id="recognized-browser-vendors" href="#recognized-browser-vendors">Recognized Browser Vendors</a></h3><p>Recognized browser vendors include, in alphabetical order; Apple, Google,
+Microsoft, Mozilla, and Opera.</p>
+<h3><a id="what-is-a-champion" href="#what-is-a-champion">What is a champion?</a></h3><p>A champion is the person responsible for advocating a new feature to
+completion, performing the legwork necessary to ensure the concerns of
+interested parties are identified and incorporated into the proposal. Once the
+<a href="https://wiki.csswg.org/spec">CSSWG</a> hosts the draft for a feature, its champion is recognized as the
+organization itself.</p>
+
+</aside>
+
+<p>
+	Want to contribute? Checkout the
+	<a href="https://github.com/jonathantneal/css-db">cssdb on GitHub</a>
+</p>
+
+<script>
+document.addEventListener('click', function (event) {
+	var closestHash = event.target.closest('a[href^="#"]');
+
+	if (closestHash) {
+		var target = document.getElementById(closestHash.hash.slice(1));
+		var easing = function (t) {
+			return t * (2 - t);
+		};
+
+		if (target) {
+			event.preventDefault();
+
+			scrollTo(target, 300, easing, function () {
+				location.hash = closestHash.hash;
+			});
+		}
+	}
+});
+
+function scrollTo(target, duration, easing, callback) {
+	var start = window.pageYOffset;
+	var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+	var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+	var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var targetOffset = typeof target === 'number' ? target : target.offsetTop;
+	var targetOffsetToScroll = Math.round(documentHeight - targetOffset < windowHeight ? documentHeight - windowHeight : targetOffset);
+
+	scroll();
+
+	function scroll() {
+		var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+		var time = Math.min(1, ((now - startTime) / duration));
+		var timeFunction = easing(time);
+
+		window.scroll(0, Math.ceil((timeFunction * (targetOffsetToScroll - start)) + start));
+
+		if (window.pageYOffset !== targetOffsetToScroll) {
+			requestAnimationFrame(scroll);
+		} else {
+			callback();
+		}
+	}
+}
+</script>
