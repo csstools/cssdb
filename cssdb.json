@@ -47,7 +47,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-function"
+        "link": "https://github.com/jonathantneal/postcss-color-mod-function"
       }
     ]
   },
