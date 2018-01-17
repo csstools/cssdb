@@ -16,8 +16,8 @@
     "test": "node tasks/test"
   },
   "devDependencies": {
-    "browserslist": "^2.11.0",
-    "caniuse-lite": "^1.0.30000789",
+    "browserslist": "^2.11.3",
+    "caniuse-lite": "^1.0.30000792",
     "eslit": "^5.0.0",
     "fse": "^4.0.0",
     "marked": "^0.3.12",
