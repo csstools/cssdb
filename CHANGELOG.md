@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 1.4.0 (January 16th, 2017)
+
+- Changed: polyfill for `css-color-modifying-colors`
+
 ### 1.3.0 (January 8th, 2017)
 
 - Added: caniuse references for `css-logical` and `css-fonts-system-ui-def`
