@@ -17,7 +17,7 @@
   {
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation used to specify colors",
-    "specification": "https://drafts.csswg.org/css-color/#changes-from-3",
+    "specification": "https://drafts.csswg.org/css-color/#ref-for-funcdef-rgb%E2%91%A1%E2%91%A0",
     "specificationId": "css-color-functional-notation",
     "stage": 2,
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}"
@@ -25,9 +25,9 @@
   {
     "title": "Color `#RRGGBBAA` Notation",
     "description": "A 4 & 8 character hex notation for color to include the opacity level",
-    "specification": "https://drafts.csswg.org/css-color/#hex-notation",
+    "specification": "https://www.w3.org/TR/css-color-4/#hex-notation",
     "specificationId": "css-color-hex-notation",
-    "stage": 2,
+    "stage": 3,
     "caniuse": "css-rrggbbaa",
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
@@ -40,9 +40,9 @@
   {
     "title": "Color `color-mod()` Function",
     "description": "A function used to modify a color",
-    "specification": "https://drafts.csswg.org/css-color/#modifying-colors",
+    "specification": "https://www.w3.org/TR/css-color-4/#modifying-colors",
     "specificationId": "css-color-modifying-colors",
-    "stage": 2,
+    "stage": 3,
     "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
@@ -54,9 +54,9 @@
   {
     "title": "Color `gray()` Function",
     "description": "A function used to fully desaturate colors",
-    "specification": "https://drafts.csswg.org/css-color/#grays",
+    "specification": "https://www.w3.org/TR/css-color-4/#grays",
     "specificationId": "css-color-grays",
-    "stage": 2,
+    "stage": 3,
     "example": "p {\n  color: gray(red);\n}",
     "polyfills": [
       {
@@ -68,10 +68,10 @@
   {
     "title": "Color `hwb()` Function",
     "description": "A function used to specify colors, similar to HSL, but often even easier for humans to work with",
-    "specification": "https://drafts.csswg.org/css-color/#the-hwb-notation",
+    "specification": "https://www.w3.org/TR/css-color-4/#the-hwb-notation",
     "specificationId": "css-color-hwb-notation",
-    "stage": 2,
-    "example": "p {\n  color: hwb(120deg, 44%, 50%);\n}",
+    "stage": 3,
+    "example": "p {\n  color: hwb(120, 44%, 50%);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -82,7 +82,7 @@
   {
     "title": "Color `rebeccapurple`",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
-    "specification": "https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple",
+    "specification": "https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple",
     "specificationId": "css-color-valdef-color-rebeccapurple",
     "stage": 3,
     "caniuse": "css-rebeccapurple",
@@ -90,16 +90,16 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://drafts.csswg.org/css-color/#valdef-color-rebeccapurple"
+        "link": "https://github.com/postcss/postcss-color-rebeccapurple"
       }
     ]
   },
   {
     "title": "Custom Properties",
     "description": "A syntax for defining custom values accepted by all CSS properties",
-    "specification": "https://drafts.csswg.org/css-variables/",
+    "specification": "https://www.w3.org/TR/css-variables-1/",
     "specificationId": "css-variables",
-    "stage": 5,
+    "stage": 4,
     "caniuse": "css-variables",
     "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
@@ -155,7 +155,7 @@
   {
     "title": "Font `font-variant` Property",
     "description": "A property for defining the usage of alternate glyphs in a font",
-    "specification": "https://drafts.csswg.org/css-fonts/#propdef-font-variant",
+    "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "specificationId": "css-fonts-propdef-font-variant",
     "stage": 4,
     "caniuse": "font-variant-alternates",
@@ -170,7 +170,7 @@
   {
     "title": "Font `system-ui` Family",
     "description": "A generic font intended to match the default user interface",
-    "specification": "https://drafts.csswg.org/css-fonts-4/#system-ui-def",
+    "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
     "specificationId": "css-fonts-system-ui-def",
     "stage": 3,
     "caniuse": "font-family-system-ui",
@@ -185,7 +185,7 @@
   {
     "title": "Grid Layout",
     "description": "A syntax for using a grid concept to lay out content",
-    "specification": "https://drafts.csswg.org/css-grid-2/",
+    "specification": "https://www.w3.org/TR/css-grid-1/",
     "specificationId": "css-grid",
     "stage": 4,
     "caniuse": "css-grid",
@@ -194,7 +194,7 @@
   {
     "title": "Image `image-set()` Function",
     "description": "A function for delivering the most appropriate image for a user’s device",
-    "specification": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+    "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "specificationId": "css-images-image-set-notation",
     "stage": 3,
     "caniuse": "css-image-set",
@@ -209,7 +209,7 @@
   {
     "title": "Logical Properties and Values",
     "description": "Flow-relative (LTR or RTL) properties and values",
-    "specification": "https://drafts.csswg.org/css-logical/",
+    "specification": "https://www.w3.org/TR/css-logical/",
     "specificationId": "css-logical",
     "stage": 3,
     "caniuse": "css-logical-props",
@@ -238,7 +238,7 @@
   {
     "title": "Media Queries Ranges",
     "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
-    "specification": "https://drafts.csswg.org/mediaqueries/#mq-ranges",
+    "specification": "https://www.w3.org/TR/mediaqueries-4/#mq-ranges",
     "specificationId": "mediaqueries-mq-ranges",
     "stage": 3,
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
@@ -280,7 +280,7 @@
   {
     "title": "Selector Attribute Case-Sensitivity",
     "description": "An attribute selector used to match attribute values case-insensitively",
-    "specification": "https://drafts.csswg.org/selectors/#attribute-case",
+    "specification": "https://www.w3.org/TR/selectors4/#attribute-case",
     "specificationId": "selectors-attribute-case",
     "stage": 3,
     "caniuse": "css-case-insensitive",
@@ -295,7 +295,7 @@
   {
     "title": "Selector `:any-link` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an anchor element independent of whether it has been visited",
-    "specification": "https://drafts.csswg.org/selectors/#any-link-pseudo",
+    "specification": "https://www.w3.org/TR/selectors4/#the-any-link-pseudo",
     "specificationId": "selectors-any-link-pseudo",
     "stage": 3,
     "caniuse": "css-any-link",
@@ -310,7 +310,7 @@
   {
     "title": "Selector `:dir` Pseudo-Class",
     "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
-    "specification": "https://drafts.csswg.org/selectors/#the-dir-pseudo",
+    "specification": "https://www.w3.org/TR/selectors4/#the-dir-pseudo",
     "specificationId": "selectors-dir-pseudo",
     "stage": 3,
     "caniuse": "css-dir-pseudo",
@@ -325,7 +325,7 @@
   {
     "title": "Selector `:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class used to match a selector list",
-    "specification": "https://drafts.csswg.org/selectors-4/#matches",
+    "specification": "https://www.w3.org/TR/selectors4/#matches",
     "specificationId": "selectors-matches",
     "stage": 3,
     "caniuse": "css-matches-pseudo",
@@ -340,7 +340,7 @@
   {
     "title": "Selector `:not()` Selector List Negation Pseudo-Class",
     "description": "A pseudo-class used to ignore a selector list",
-    "specification": "https://drafts.csswg.org/selectors-4/#negation",
+    "specification": "https://www.w3.org/TR/selectors4/#negation",
     "specificationId": "selectors-negation",
     "stage": 3,
     "caniuse": "css-not-sel-list",
@@ -369,7 +369,7 @@
   {
     "title": "Text `overflow-wrap` Property",
     "description": "A property for defining whether to insert line breaks within words to prevent overflowing",
-    "specification": "https://drafts.csswg.org/css-text-3/#overflow-wrap-property",
+    "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
     "specificationId": "css-text-overflow-wrap-property",
     "stage": 3,
     "caniuse": "wordwrap",
