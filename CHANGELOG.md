@@ -1,15 +1,26 @@
 # Changes to cssdb
 
-### 1.4.0 (January 16th, 2017)
+### 1.5.0 (January 22th, 2018)
+
+- Changed: Use the latest published specification URL whenever possible
+- Changed: Upgrade Color #RRGGBBAA Notation to Stage 3
+- Changed: Upgrade Color gray() Function to Stage 3
+- Changed: Upgrade Color color-mod() Function to Stage 3
+- Changed: Upgrade Color hwb() Function to Stage 3
+- Changed: Downgrade Custom Properties to Stage 4
+- Fixed: Color hwb() Function example
+- Fixed: the Color rebeccapurple PostCSS Plugin URL
+
+### 1.4.0 (January 16th, 2018)
 
 - Changed: polyfill for `css-color-modifying-colors`
 
-### 1.3.0 (January 8th, 2017)
+### 1.3.0 (January 8th, 2018)
 
 - Added: caniuse references for `css-logical` and `css-fonts-system-ui-def`
 - Fixed: caniuse parsing for browser support
 
-### 1.2.0 (January 8th, 2017)
+### 1.2.0 (January 8th, 2018)
 
 - Fixed: specification identifiers for `css-color-hwb-notation`,
          `selectors-dir-pseudo`
