@@ -16,7 +16,7 @@
   },
   {
     "title": "Color Functional Notation",
-    "description": "A space and slash separated notation used to specify colors",
+    "description": "A space and slash separated notation specifying colors",
     "specification": "https://drafts.csswg.org/css-color/#ref-for-funcdef-rgb%E2%91%A1%E2%91%A0",
     "specificationId": "css-color-functional-notation",
     "stage": 2,
@@ -53,7 +53,7 @@
   },
   {
     "title": "Color `gray()` Function",
-    "description": "A function used to fully desaturate colors",
+    "description": "A function used to create fully desaturated colors",
     "specification": "https://www.w3.org/TR/css-color-4/#grays",
     "specificationId": "css-color-grays",
     "stage": 3,
@@ -126,7 +126,7 @@
   },
   {
     "title": "Custom Selectors",
-    "description": "An at-rule used to define aliases representing selectors",
+    "description": "An at-rule defining aliases representing selectors",
     "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
     "specificationId": "css-extensions-custom-selectors",
     "stage": 2,
@@ -154,7 +154,7 @@
   },
   {
     "title": "Font `font-variant` Property",
-    "description": "A property for defining the usage of alternate glyphs in a font",
+    "description": "A property defining the usage of alternate glyphs in a font",
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "specificationId": "css-fonts-propdef-font-variant",
     "stage": 4,
@@ -223,7 +223,7 @@
   },
   {
     "title": "Media Queries Custom Media Queries",
-    "description": "An at-rule used to define aliases representing media queries",
+    "description": "An at-rule defining aliases representing media queries",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#custom-mq",
     "specificationId": "mediaqueries-custom-mq",
     "stage": 2,
@@ -237,7 +237,7 @@
   },
   {
     "title": "Media Queries Ranges",
-    "description": "A syntax for defining media query ranges using ordinary mathematical comparison operators",
+    "description": "A syntax defining media query ranges using ordinary mathematical comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#mq-ranges",
     "specificationId": "mediaqueries-mq-ranges",
     "stage": 3,
@@ -251,7 +251,7 @@
   },
   {
     "title": "Media Queries `media()` Function",
-    "description": "A function used to define media queries within values",
+    "description": "A function matching media queries within values",
     "specification": "https://jonathantneal.github.io/media-expressions-spec/",
     "specificationId": "media-expressions",
     "stage": 0,
@@ -279,7 +279,7 @@
   },
   {
     "title": "Selector Attribute Case-Sensitivity",
-    "description": "An attribute selector used to match attribute values case-insensitively",
+    "description": "An attribute selector matching attribute values case-insensitively",
     "specification": "https://www.w3.org/TR/selectors4/#attribute-case",
     "specificationId": "selectors-attribute-case",
     "stage": 3,
@@ -294,7 +294,7 @@
   },
   {
     "title": "Selector `:any-link` Pseudo-Class",
-    "description": "A pseudo-class for writing selectors that represent an anchor element independent of whether it has been visited",
+    "description": "A pseudo-class matching anchor elements independent of whether they have been visited",
     "specification": "https://www.w3.org/TR/selectors4/#the-any-link-pseudo",
     "specificationId": "selectors-any-link-pseudo",
     "stage": 3,
@@ -309,7 +309,7 @@
   },
   {
     "title": "Selector `:dir` Pseudo-Class",
-    "description": "A pseudo-class for writing selectors that represent an element based on its directionality",
+    "description": "A pseudo-class matching elements based on their directionality",
     "specification": "https://www.w3.org/TR/selectors4/#the-dir-pseudo",
     "specificationId": "selectors-dir-pseudo",
     "stage": 3,
@@ -358,12 +358,12 @@
   },
   {
     "title": "Selector `:matches()` Matches-Any Pseudo-Class",
-    "description": "A pseudo-class used to match a selector list",
+    "description": "A pseudo-class matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors4/#matches",
     "specificationId": "selectors-matches-pseudo",
     "stage": 3,
     "caniuse": "css-matches-pseudo",
-    "example": "p:matches(:first-child, .special) {}",
+    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -373,12 +373,12 @@
   },
   {
     "title": "Selector `:not()` Selector List Negation Pseudo-Class",
-    "description": "A pseudo-class used to ignore a selector list",
+    "description": "A pseudo-class ignoring elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors4/#negation",
     "specificationId": "selectors-negation-pseudo",
     "stage": 3,
     "caniuse": "css-not-sel-list",
-    "example": "p:not(:first-child, .special) {}",
+    "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -417,7 +417,7 @@
   },
   {
     "title": "When/Else Rules",
-    "description": "At-rules used to define conditional rules and unify the disparate conditional rules into a single grammar",
+    "description": "At-rules defining conditional rules and unifying the disparate conditional rules into a single grammar",
     "specification": "https://tabatkins.github.io/specs/css-when-else/",
     "specificationId": "css-when-else",
     "stage": 1,

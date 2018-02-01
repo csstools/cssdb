@@ -76,6 +76,8 @@ function formatFeature(feature) {
 	return Object.assign({}, feature, {
 		// format title using marked inline lexer
 		title: marked.inlineLexer(feature.title, [], {}),
+		// format description using marked inline lexer
+		description: marked.inlineLexer(feature.description, [], {}),
 		// format example as syntax-highlighted html
 		example: postcss().process(feature.example, {
 			stringifier: postcssToHTML
