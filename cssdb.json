@@ -323,6 +323,25 @@
     ]
   },
   {
+    "title": "Selector `:focus-visible()` Focus-Indicated Pseudo-Class",
+    "description": "A pseudo-class matching elements with `:focus` that would also make focus evident",
+    "specification": "https://www.w3.org/TR/selectors-4/#the-focus-visible-pseudo",
+    "specificationId": "selectors-focus-visible-pseudo",
+    "stage": 3,
+    "caniuse": "css-focus-visible",
+    "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
+    "polyfills": [
+      {
+        "type": "JavaScript Library",
+        "link": "https://github.com/WICG/focus-visible"
+      },
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-focus-ring"
+      }
+    ]
+  },
+  {
     "title": "Selector `:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class used to match a selector list",
     "specification": "https://www.w3.org/TR/selectors4/#matches",
