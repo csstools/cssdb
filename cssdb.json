@@ -342,6 +342,21 @@
     ]
   },
   {
+    "title": "Selector `:focus-within()` Focus Container Pseudo-Class",
+    "description": "A pseudo-class matching elements that either themselves match `:focus` or that have descendants which match `:focus`",
+    "specification": "https://www.w3.org/TR/selectors-4/#the-focus-within-pseudo",
+    "specificationId": "selectors-focus-within-pseudo",
+    "stage": 3,
+    "caniuse": "css-focus-within",
+    "example": "form:focus-within {\n  background: rgba(0, 0, 0, 0.3);\n}",
+    "polyfills": [
+      {
+        "type": "JavaScript Library",
+        "link": "https://allyjs.io/api/style/focus-within.html"
+      }
+    ]
+  },
+  {
     "title": "Selector `:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class used to match a selector list",
     "specification": "https://www.w3.org/TR/selectors4/#matches",
