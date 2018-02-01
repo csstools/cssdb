@@ -147,7 +147,7 @@
     "example": "@element html and (min-width: 500px) {\n  body {\n    background: lime;\n  }\n}",
     "polyfills": [
       {
-        "type": "JS Library",
+        "type": "JavaScript Library",
         "link": "https://github.com/eqcss/eqcss"
       }
     ]
@@ -361,7 +361,7 @@
     "example": "div {\n  aspect-ratio: 16/9;\n  width: 200px;\n}",
     "polyfills": [
       {
-        "type": "JS Library",
+        "type": "JavaScript Library",
         "link": "https://github.com/tomhodgins/aspect-ratio-spec"
       }
     ]
