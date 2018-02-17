@@ -323,7 +323,7 @@
     ]
   },
   {
-    "title": "Selector `:focus-visible()` Focus-Indicated Pseudo-Class",
+    "title": "Selector `:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class matching elements with `:focus` that would also make focus evident",
     "specification": "https://www.w3.org/TR/selectors-4/#the-focus-visible-pseudo",
     "specificationId": "selectors-focus-visible-pseudo",
@@ -337,12 +337,12 @@
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-focus-ring"
+        "link": "https://github.com/jonathantneal/postcss-focus-visible"
       }
     ]
   },
   {
-    "title": "Selector `:focus-within()` Focus Container Pseudo-Class",
+    "title": "Selector `:focus-within` Focus Container Pseudo-Class",
     "description": "A pseudo-class matching elements that either themselves match `:focus` or that have descendants which match `:focus`",
     "specification": "https://www.w3.org/TR/selectors-4/#the-focus-within-pseudo",
     "specificationId": "selectors-focus-within-pseudo",
