@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 1.5.1 (February 17th, 2018)
+
+- Fixed: `:focus-visible` and `:focus-within` title syntax
+
 ### 1.5.0 (January 22th, 2018)
 
 - Changed: Use the latest published specification URL whenever possible
