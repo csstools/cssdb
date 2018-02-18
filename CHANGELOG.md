@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 1.5.2 (February 18th, 2018)
+
+- Updated: `:focus-within` polyfills
+
 ### 1.5.1 (February 17th, 2018)
 
 - Fixed: `:focus-visible` and `:focus-within` title syntax
