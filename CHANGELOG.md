@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 1.6.0 (February 18th, 2018)
+
+- Added: Break Properties
+
 ### 1.5.2 (February 18th, 2018)
 
 - Updated: `:focus-within` polyfills
