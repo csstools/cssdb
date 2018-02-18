@@ -352,7 +352,11 @@
     "polyfills": [
       {
         "type": "JavaScript Library",
-        "link": "https://allyjs.io/api/style/focus-within.html"
+        "link": "https://github.com/jonathantneal/focus-within"
+      },
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-focus-within"
       }
     ]
   },
