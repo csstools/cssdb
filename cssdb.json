@@ -1,5 +1,19 @@
 [
   {
+    "title": "Box `break-*` properties",
+    "description": "Controlling breaks between and within boxes",
+    "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
+    "specificationId": "css-break",
+    "stage": 4,
+    "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/shrpne/postcss-page-break"
+      }
+    ]
+  },
+  {
     "title": "Cascade `all` Property",
     "description": "A property for defining the reset of all properties of an element",
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
