@@ -204,7 +204,13 @@
     "specificationId": "css-grid",
     "stage": 4,
     "caniuse": "css-grid",
-    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}"
+    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/postcss/autoprefixer"
+      }
+    ]
   },
   {
     "title": "Image `image-set()` Function",
