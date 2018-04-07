@@ -3,8 +3,8 @@
 Pull requests are the most helpful contributions.
 
 I love folks who can add missing features and keep existing features up to date.
-A new feature only needs a **title**, a **description**, and a link to its
-**specification**.
+A new feature only needs a **title**, **id**, **description**, and a link to
+its **specification**.
 
 Non-CSSWG members can still update CSS features by including **citations** to
 public notes that show how the CSSWG is advancing a feature. If you need
@@ -30,16 +30,16 @@ you’re unfamiliar with git, consider the following workflow.
 1. To begin; [fork this project] and then clone your fork locally
    ```bash
    # Clone your fork of this project
-   git clone git@github.com:YOUR_USER/css-db.git
+   git clone git@github.com:YOUR_USER/cssdb.git
 
    # Navigate to your fork of this project
-   cd css-db
+   cd cssdb
 
    # Install the tools necessary for testing this project
    npm install
 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream git@github.com:jonathantneal/css-db.git
+   git remote add upstream git@github.com:jonathantneal/cssdb.git
    ```
 
 2. Create a branch for your feature or fix:
@@ -72,23 +72,21 @@ you’re unfamiliar with git, consider the following workflow.
 
 The only fields you’ll see in [`cssdb.json`] are, in order:
 
+- `id`: the feature shortname, similar to a specification [Shortname].
 - `title`: the name of the feature.
 - `description`: a brief description of the feature.
-- `specification`: a link to feature’s specification.
-- `specificationId`: the specification’s [Shortname]
-   (and [Section Heading ID], if necessary).
-- `stage`: the position of the feature within the [staging process]. Stages
-   should be a number, and no stage (*unrecognized*) should be `null`.
+- `specification`: a link to the specification for the feature.
 - `stage`: the current [stage](README.md#staging-process) of the feature; where
     + `0` means **Stage 0** — *Aspirational*,
-    + `1` means **Stage 1** — *Experimental*,
-    + `2` means **Stage 2** — *Draft*,
-    + `3` means **Stage 3** — *Adoption*,
-    + `4` means **Stage 4** — *Complete*, and
+    + `1` means **Stage 1** — *Enthusiastic*,
+    + `2` means **Stage 2** — *Experimental*,
+    + `3` means **Stage 3** — *Allowable*,
+    + `4` means **Stage 4** — *Embraced*,
+    + `5` means **Stage 5** — *Standardized*, and
     + `-1` means **Rejected**.
-- `polyfills`: A list of polyfills used to simulate the feature; which includes
+- `polyfills`: a list of polyfills used to simulate the feature; each including
     + `type`: the type of polyfill (e.g. *PostCSS*, *JS Library*), and
-    + `link`: the URL to the page or repository for the polyfill.
+    + `link`: the URL to the repository for the polyfill.
 
 All contributions must follow the existing syntax and style of the JSON file,
 which;

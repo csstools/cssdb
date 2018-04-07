@@ -4,9 +4,9 @@
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/css-db",
-  "homepage": "https://github.com/jonathantneal/css-db#readme",
-  "bugs": "https://github.com/jonathantneal/css-db/issues",
+  "repository": "jonathantneal/cssdb",
+  "homepage": "https://github.com/jonathantneal/cssdb#readme",
+  "bugs": "https://github.com/jonathantneal/cssdb/issues",
   "main": "cssdb.json",
   "files": [
     "cssdb.json"
@@ -16,13 +16,13 @@
     "test": "node tasks/test"
   },
   "devDependencies": {
-    "browserslist": "^3.2.0",
-    "caniuse-lite": "^1.0.30000815",
+    "browserslist": "^3.2.4",
+    "caniuse-lite": "^1.0.30000824",
     "eslit": "^5.0.0",
     "fse": "^4.0.0",
-    "marked": "^0.3.17",
-    "node-fetch": "^2.1.1",
-    "postcss": "^6.0.20",
+    "marked": "^0.3.19",
+    "node-fetch": "^2.1.2",
+    "postcss": "^6.0.21",
     "pre-commit": "^1.2.2"
   },
   "keywords": [

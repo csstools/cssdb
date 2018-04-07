@@ -33,7 +33,7 @@ Promise.all([
 		}
 	).then(
 		// write the rendered html
-		(html) => fs.writeFile(destination, html)
+		html => fs.writeFile(destination, html)
 	).then(
 		// conditionally empty the badge directory
 		() => noBadges ? true : fs.rmdir(
@@ -50,8 +50,8 @@ Promise.all([
 	)
 ).then(
 	// report success or errors
-	(array) => console.log(`\x1b[32m✔\x1b[0m css-db successfully published ${ array.length } features.`) || process.exit(0),
-	(error) => console.log(`\x1b[31m✖\x1b[0m css-db failed to published a feature.\x1b[0m\n  → ${ error }`) || process.exit(1)
+	array => console.log(`\x1b[32m✔\x1b[0m cssdb successfully published ${ array.length } features.`) || process.exit(0),
+	error => console.log(`\x1b[31m✖\x1b[0m cssdb failed to published a feature.\x1b[0m\n  → ${ error }`) || process.exit(1)
 );
 
 // marked renderer
@@ -61,14 +61,24 @@ const markedOptions = {
 
 // marked heading renderer
 markedOptions.renderer.heading = (text, level) => {
-	const escapedText = text.replace(/:.+$/, '').replace(/^[^\w]+|[^\w]+$/g, '').replace(/[^\w]+/g, '-').toLowerCase();
+	const escapedText = text
+		// strip any opening "the", "an", "a"
+		.replace(/^\s*(an?|the)\s+/i, '')
+		// strip colons followed by anything
+		.replace(/:.+$/, '')
+		// strip opening and closing non-word characters
+		.replace(/^[^\w]+|[^\w]+$/g, '')
+		// replace remaining non-word character strings with dashes
+		.replace(/[^\w]+/g, '-')
+		// lowercase the entire string
+		.toLowerCase();
 
 	return `<h${level}><a id="${escapedText}" href="#${escapedText}">${text}</a></h${level}>`;
 };
 
 // sort features by stage or title
-function sortFeatures(a, b) {
-	return b.stage - a.stage || b.title.toLowerCase() < a.title.toLowerCase();
+function sortFeatures({ stage: a, id: aa }, { stage: b, id: bb }) {
+	return b - a || (aa < bb ? -1 : aa > bb ? 1 : 0);
 }
 
 // format feature for HTML output
@@ -99,16 +109,16 @@ function postcssToHTML(root, builder) {
 		} else if ('comment' === node.type) {
 			return commentToString(node, semicolon);
 		} else {
-			return node.nodes ? node.nodes.map((childNodes) => toString(childNodes, semicolon)).join('') : '';
+			return node.nodes ? node.nodes.map(childNodes => toString(childNodes, semicolon)).join('') : '';
 		}
 	}
 
 	function atruleToString(atrule, semicolon) {
-		return `${atrule.raws.before||''}<span class=css-atrule><span class=css-atrule-name>@${atrule.name}</span>${atrule.raws.afterName||''}<span class=css-atrule-params>${atrule.params}</span>${atrule.raws.between||''}${atrule.nodes?`<span class=css-block>{${atrule.nodes.map((node) => toString(node, atrule.raws.semicolon)).join('')}${atrule.raws.after||''}}</span>`:semicolon?';':''}</span>`;
+		return `${atrule.raws.before||''}<span class=css-atrule><span class=css-atrule-name>@${atrule.name}</span>${atrule.raws.afterName||''}<span class=css-atrule-params>${atrule.params}</span>${atrule.raws.between||''}${atrule.nodes?`<span class=css-block>{${atrule.nodes.map(node => toString(node, atrule.raws.semicolon)).join('')}${atrule.raws.after||''}}</span>`:semicolon?';':''}</span>`;
 	}
 
 	function ruleToString(rule, semicolon) {
-		return `${rule.raws.before||''}<span class=css-rule><span class=css-selector>${rule.selector}</span>${rule.raws.between||''}<span class=css-block>{${rule.nodes.map((node) => toString(node, rule.raws.semicolon)).join('')}${rule.raws.after||''}}</span></span>`;
+		return `${rule.raws.before||''}<span class=css-rule><span class=css-selector>${rule.selector}</span>${rule.raws.between||''}<span class=css-block>{${rule.nodes.map(node => toString(node, rule.raws.semicolon)).join('')}${rule.raws.after||''}}</span></span>`;
 	}
 
 	function declToString(decl, semicolon) {
@@ -144,11 +154,11 @@ function writeStageSVG(feature) {
 		`https://img.shields.io/badge/${shieldSubject}-${shieldStatus}-${shieldColor}.svg`
 	).then(
 		// get the shield svg as text
-		(response) => response.text()
+		response => response.text()
 	).then(
 		// write the shield svg to the badge directory
-		(svg) => fs.writeFile(
-			path.join(__dirname, `../gh-pages/badge/${feature.specificationId}.svg`),
+		svg => fs.writeFile(
+			path.join(__dirname, `../gh-pages/badge/${feature.id}.svg`),
 			svg
 		)
 	);
