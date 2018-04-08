@@ -1,4 +1,4 @@
-## Staging Process
+## The Staging Process
 
 Staging processes allow developers to accomplish real things and get involved
 in the creation of standards, testing, feedback, and new use cases.
@@ -15,7 +15,7 @@ is desired.
 
 ### Stage 0: Aspirational
 
-<img src="https://jonathantneal.github.io/css-db/stage-0.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-0.svg" align="left" width="90" height="90">
 
 > “This is my crazy idea.”
 
@@ -26,7 +26,7 @@ considered highly unstable and subject to change.
 
 ### Stage 1: Enthusiastic
 
-<img src="https://jonathantneal.github.io/css-db/stage-1.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-1.svg" align="left" width="90" height="90">
 
 > “This is a crazy idea.”
 
@@ -37,7 +37,7 @@ considered highly unstable and subject to change.
 
 ### Stage 2: Experimental
 
-<img src="https://jonathantneal.github.io/css-db/stage-2.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-2.svg" align="left" width="90" height="90">
 
 > “This idea might not be crazy.”
 
@@ -48,7 +48,7 @@ considered highly unstable and subject to change.
 
 ### Stage 3: Allowable
 
-<img src="https://jonathantneal.github.io/css-db/stage-3.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-3.svg" align="left" width="90" height="90">
 
 > “This idea is not crazy.”
 
@@ -60,7 +60,7 @@ little change. It is still subject to rejection as a standard.
 
 ### Stage 4: Embraced
 
-<img src="https://jonathantneal.github.io/css-db/stage-4.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-4.svg" align="left" width="90" height="90">
 
 > “This idea is becoming part of the web.”
 
@@ -73,7 +73,7 @@ become a standard.
 
 ### Stage 5: Standardized
 
-<img src="https://jonathantneal.github.io/css-db/stage-5.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-5.svg" align="left" width="90" height="90">
 
 > “This idea is part of the web.”
 
@@ -84,7 +84,7 @@ A **Recommendation** [hosted] by the [CSSWG] or [W3C] and implemented by all
 
 ### Rejected
 
-<img src="https://jonathantneal.github.io/css-db/stage-X.svg" align="left" width="90" height="90">
+<img src="https://jonathantneal.github.io/cssdb/stage-X.svg" align="left" width="90" height="90">
 
 > “I had no idea what I was doing.”
 

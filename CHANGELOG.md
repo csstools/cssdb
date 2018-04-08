@@ -1,5 +1,20 @@
 # Changes to cssdb
 
+### 2.0.0 (April 7th, 2018)
+
+- Renamed: GitHub repository from `css-db` to `cssdb`, now aligning with npm.
+- Renamed: All feature IDs.
+- Updated: Documentation.
+
+Notes: The old feature IDs were problematic because they attempted to follow
+specification section IDs, but some specifications weren’t aren’t always
+covered by a single section, and many sections were inconsistently named.
+Because there was no pattern one could predict for any of the headings, a new
+system was created; to **name** the feature and provide **context**. This meant
+a feature ID like `css-cascade-all-shorthand` became `all-property`, and `css-fonts-propdef-font-variant` became `font-variant-property`, etc. This
+greatly simplified all of the feature IDs and allowed for more predictive
+naming moving forward.
+
 ### 1.6.0 (February 18th, 2018)
 
 - Added: Break Properties
