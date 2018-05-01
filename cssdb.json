@@ -183,6 +183,20 @@
     ]
   },
   {
+    "id": "environment-variables",
+    "title": "Environment Variables",
+    "description": "A syntax for using custom values accepted by CSS globally",
+    "specification": "https://drafts.csswg.org/css-overflow/#propdef-overflow",
+    "stage": 1,
+    "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-env-function"
+      }
+    ]
+  },
+  {
     "id": "focus-visible-pseudo-class",
     "title": "`:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
