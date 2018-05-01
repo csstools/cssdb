@@ -236,6 +236,35 @@
     ]
   },
   {
+    "id": "gap-properties",
+    "title": "Gap Properties",
+    "description": "Properties for defining gutters within a layout",
+    "specification": "https://www.w3.org/TR/css-grid-1/#gutters",
+    "stage": 4,
+    "caniuse-compat": {
+      "chrome": {
+        "66": "y"
+      },
+      "edge": {
+        "16": "y"
+      },
+      "firefox": {
+        "61": "y"
+      },
+      "safari": {
+        "11.2": "y",
+        "TP": "y"
+      }
+    },
+    "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-gap-properties"
+      }
+    ]
+  },
+  {
     "id": "gray-function",
     "title": "`gray()` Function",
     "description": "A function for specifying fully desaturated colors",
