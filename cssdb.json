@@ -449,6 +449,28 @@
     ]
   },
   {
+    "id": "overflow-property",
+    "title": "`overflow` Property",
+    "description": "A property for defining `overflow-x` and `overflow-y`",
+    "specification": "https://drafts.csswg.org/css-overflow/#propdef-overflow",
+    "stage": 2,
+    "caniuse-compat": {
+      "chrome": {
+        "68": "y"
+      },
+      "firefox": {
+        "61": "y"
+      }
+    },
+    "example": "html {\n  overflow: hidden auto;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-overflow-shorthand"
+      }
+    ]
+  },
+  {
     "id": "overflow-wrap-property",
     "title": "`overflow-wrap` Property",
     "description": "A property for defining whether to insert line breaks within words to prevent overflowing",
