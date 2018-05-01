@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### 2.1.0 (May 1st, 2018)
+
+- Added: `environment-variables`
+- Added: `overflow-property`
+- Added: `gap-properties`
+
 ### 2.0.0 (April 7th, 2018)
 
 - Renamed: GitHub repository from `css-db` to `cssdb`, now aligning with npm.
