@@ -500,6 +500,28 @@
     ]
   },
   {
+    "id": "place-properties",
+    "title": "Place Properties",
+    "description": "Properties for defining alignment within a layout",
+    "specification": "https://drafts.csswg.org/css-align-3/#place-items-property",
+    "stage": 2,
+    "caniuse-compat": {
+      "chrome": {
+        "59": "y"
+      },
+      "firefox": {
+        "45": "y"
+      }
+    },
+    "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-place"
+      }
+    ]
+  },
+  {
     "id": "rebeccapurple-color",
     "title": "`rebeccapurple` Color",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
