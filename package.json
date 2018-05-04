@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "browserslist": "^3.2.6",
-    "caniuse-lite": "^1.0.30000832",
+    "caniuse-lite": "^1.0.30000833",
     "eslit": "^5.0.0",
     "fse": "^4.0.0",
     "marked": "^0.3.19",
