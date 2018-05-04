@@ -424,7 +424,7 @@
     "title": "Media Query Ranges",
     "description": "A syntax for defining media query ranges using ordinary comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
-    "stage": 3,
+    "stage": 4,
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "polyfills": [
       {
