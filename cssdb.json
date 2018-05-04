@@ -279,28 +279,6 @@
     ]
   },
   {
-    "id": "place-properties",
-    "title": "Place Shorthand Properties",
-    "description": "Properties for defining Box Alignment properties",
-    "specification": "https://drafts.csswg.org/css-align-3/#place-items-property",
-    "stage": 2,
-    "caniuse-compat": {
-      "chrome": {
-        "59": "y"
-      },
-      "firefox": {
-        "45": "y"
-      }
-    },
-    "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-place"
-      }
-    ]
-  },
-  {
     "id": "gray-function",
     "title": "`gray()` Function",
     "description": "A function for specifying fully desaturated colors",
@@ -518,6 +496,28 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
+      }
+    ]
+  },
+  {
+    "id": "place-properties",
+    "title": "Place Properties",
+    "description": "Properties for defining alignment within a layout",
+    "specification": "https://drafts.csswg.org/css-align-3/#place-items-property",
+    "stage": 2,
+    "caniuse-compat": {
+      "chrome": {
+        "59": "y"
+      },
+      "firefox": {
+        "45": "y"
+      }
+    },
+    "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-place"
       }
     ]
   },
