@@ -1,10 +1,16 @@
 # Changes to cssdb
 
+### 2.2.0 (May 7th, 2018)
+
+- Added: Place Properties as Stage 2
+- Added: PostCSS plugin for Color Functional Notation
+- Updated: Media Query Ranges to Stage 4
+
 ### 2.1.0 (May 1st, 2018)
 
-- Added: `environment-variables`
-- Added: `overflow-property`
-- Added: `gap-properties`
+- Added: Environment Variables as Stage 1
+- Added: `overflow` Property as Stage 2
+- Added: Gap Properties as Stage 4
 
 ### 2.0.0 (April 7th, 2018)
 
