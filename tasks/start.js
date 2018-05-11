@@ -143,7 +143,6 @@ function writeStageSVG(feature) {
 	const colors = [
 		'414141',
 		'ed782a',
-		'd7b914',
 		'899c1f',
 		'3e7817',
 		'005a9c'
