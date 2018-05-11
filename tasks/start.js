@@ -28,7 +28,7 @@ Promise.all([
 	([ features, staging ]) => eslit(
 		template,
 		{
-			features: features.slice(0).sort(sortFeatures).map(formatFeature),
+			features: features.slice(0).sort(sortFeatures).filter(filterFeatures).map(formatFeature),
 			staging:  marked(staging, markedOptions)
 		}
 	).then(
@@ -79,6 +79,11 @@ markedOptions.renderer.heading = (text, level) => {
 // sort features by stage or title
 function sortFeatures({ stage: a, id: aa }, { stage: b, id: bb }) {
 	return b - a || (aa < bb ? -1 : aa > bb ? 1 : 0);
+}
+
+// filter features by stage
+function filterFeatures({ stage }) {
+	return stage >= 0;
 }
 
 // format feature for HTML output
@@ -143,7 +148,6 @@ function writeStageSVG(feature) {
 	const colors = [
 		'414141',
 		'ed782a',
-		'd7b914',
 		'899c1f',
 		'3e7817',
 		'005a9c'

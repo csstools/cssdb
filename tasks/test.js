@@ -48,7 +48,7 @@ function hasRequiredData(feature) {
 	const polyfillOrdering = ['type', 'link'];
 
 	const hasRequiredFields = keys.slice(0, 5).join() === ordering.join();
-	const hasValidStage = feature.stage === -1 || feature.stage === 0 || feature.stage === 1 || feature.stage === 2 || feature.stage === 3 || feature.stage === 4 || feature.stage === 5;
+	const hasValidStage = feature.stage === -1 || feature.stage === 0 || feature.stage === 1 || feature.stage === 2 || feature.stage === 3 || feature.stage === 4;
 	const hasOrderlyAdditionalFields = keys.slice(5).join() === keys.slice(5).sort().join();
 	const hasOrderlyPolyfills = !Array.isArray(feature.polyfills) || feature.polyfills.every(
 		polyfill => Object.keys(Object(polyfill)).join() === polyfillOrdering.join()
