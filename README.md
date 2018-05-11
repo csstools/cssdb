@@ -1,4 +1,4 @@
-# cssdb [<img src="https://jonathantneal.github.io/cssdb/cssdb.svg" alt="cssdb logo" width="90" height="90" align="right">][cssdb]
+# cssdb [<img src="https://cssdb.org/cssdb.svg" alt="cssdb logo" width="90" height="90" align="right">][cssdb]
 
 [![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
@@ -26,9 +26,9 @@ developed outside the [CSSWG] have appeared in browsers behind flags. This is
 too ambiguous for the web development community, and a more accountable process
 is desired.
 
-[cli-img]: https://img.shields.io/travis/jonathantneal/cssdb.svg
-[cli-url]: https://travis-ci.org/jonathantneal/cssdb
-[cssdb]: https://github.com/jonathantneal/cssdb
+[cli-img]: https://img.shields.io/travis/csstools/cssdb.svg
+[cli-url]: https://travis-ci.org/csstools/cssdb
+[cssdb]: https://github.com/csstools/cssdb
 [CSSWG]: https://wiki.csswg.org/spec
 [inside view of the CSSWG]: http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process
 [npm-img]: https://img.shields.io/npm/v/cssdb.svg

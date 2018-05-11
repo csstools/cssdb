@@ -15,7 +15,7 @@ is desired.
 
 ### Stage 0: Aspirational
 
-<img src="https://jonathantneal.github.io/cssdb/stage-0.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-0.svg" alt="" align="left" width="90" height="90">
 
 > “This is a crazy idea.”
 
@@ -26,7 +26,7 @@ highly unstable and subject to change.
 
 ### Stage 1: Experimental
 
-<img src="https://jonathantneal.github.io/cssdb/stage-1.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-1.svg" alt="" align="left" width="90" height="90">
 
 > “This idea might not be crazy.”
 
@@ -37,7 +37,7 @@ considered highly unstable and subject to change.
 
 ### Stage 2: Allowable
 
-<img src="https://jonathantneal.github.io/cssdb/stage-2.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-2.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is not crazy.”
 
@@ -49,7 +49,7 @@ little change. It is still subject to rejection as a standard.
 
 ### Stage 3: Embraced
 
-<img src="https://jonathantneal.github.io/cssdb/stage-3.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-3.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is becoming part of the web.”
 
@@ -62,7 +62,7 @@ become a standard.
 
 ### Stage 4: Standardized
 
-<img src="https://jonathantneal.github.io/cssdb/stage-4.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-4.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is part of the web.”
 
@@ -73,7 +73,7 @@ A **Recommendation** [championed] by the [W3C] and implemented by all
 
 ### Rejected
 
-<img src="https://jonathantneal.github.io/cssdb/stage-X.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/stage-X.svg" alt="" align="left" width="90" height="90">
 
 > “I had no idea what I was doing.”
 

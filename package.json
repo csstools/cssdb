@@ -4,9 +4,9 @@
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/cssdb",
-  "homepage": "https://github.com/jonathantneal/cssdb#readme",
-  "bugs": "https://github.com/jonathantneal/cssdb/issues",
+  "repository": "csstools/cssdb",
+  "homepage": "https://github.com/csstools/cssdb#readme",
+  "bugs": "https://github.com/csstools/cssdb/issues",
   "main": "cssdb.json",
   "files": [
     "cssdb.json"

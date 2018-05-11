@@ -39,7 +39,7 @@ you’re unfamiliar with git, consider the following workflow.
    npm install
 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream git@github.com:jonathantneal/cssdb.git
+   git remote add upstream git@github.com:csstools/cssdb.git
    ```
 
 2. Create a branch for your feature or fix:
