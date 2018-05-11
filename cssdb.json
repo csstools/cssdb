@@ -343,7 +343,13 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
-    "example": "body {\n  color: lab(240 50 20)\n}"
+    "example": "body {\n  color: lab(240 50 20);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-lab-function"
+      }
+    ]
   },
   {
     "id": "lch-function",
@@ -351,7 +357,13 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space with chroma and hue",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
-    "example": "body {\n  color: lch(53 105 40)\n}"
+    "example": "body {\n  color: lch(53 105 40);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-lab-function"
+      }
+    ]
   },
   {
     "id": "logical-properties-and-values",

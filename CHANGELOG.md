@@ -1,6 +1,10 @@
 # Changes to cssdb
 
-### 3.0.0 (May 7th, 2018)
+### 3.1.0 (May 11th, 2018)
+
+- Added: Polyfills for `lab-function` and `lch-function`
+
+### 3.0.0 (May 10th, 2018)
 
 - Changed: All stages from 1-4 to 0-4 to align with TC39
 - Updated: Tests, badges, descriptions, and dependencies
