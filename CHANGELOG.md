@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 3.0.0 (May 7th, 2018)
+
+- Changed: All stages from 1-4 to 0-4 to align with TC39
+- Updated: Tests, badges, descriptions, and dependencies
+
 ### 2.2.0 (May 7th, 2018)
 
 - Added: Place Properties as Stage 2
@@ -14,7 +19,7 @@
 
 ### 2.0.0 (April 7th, 2018)
 
-- Renamed: GitHub repository from `css-db` to `cssdb`, now aligning with npm.
+- Renamed: GitHub repository from `css-db` to `cssdb`, now aligning with npm
 - Renamed: All feature IDs.
 - Updated: Documentation.
 
