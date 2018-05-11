@@ -152,7 +152,7 @@
     "specification": "https://www.w3.org/TR/selectors4/#dir-pseudo",
     "stage": 2,
     "caniuse": "css-dir-pseudo",
-    "example": ".example:dir(rtl) {\n  margin-right: 10px;\n}\n\n.example:dir(ltr) {\n  margin-left: 10px;\n}",
+    "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -162,9 +162,9 @@
   },
   {
     "id": "environment-variables",
-    "title": "Environment Variables",
+    "title": "Custom Environment Variables",
     "description": "A syntax for using custom values accepted by CSS globally",
-    "specification": "https://drafts.csswg.org/css-overflow/#propdef-overflow",
+    "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
@@ -219,7 +219,7 @@
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 3,
     "caniuse": "font-variant-alternates",
-    "example": "h2 {\n  font-variant-caps: small-caps;\n}",
+    "example": "h2 {\n  font-variant: small-caps;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -343,7 +343,7 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
-    "example": "example {\n  color: lab(240 50 20)\n}"
+    "example": "body {\n  color: lab(240 50 20)\n}"
   },
   {
     "id": "lch-function",
@@ -351,7 +351,7 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space with chroma and hue",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
-    "example": "example {\n  color: lch(53 105 40)\n}"
+    "example": "body {\n  color: lch(53 105 40)\n}"
   },
   {
     "id": "logical-properties-and-values",
@@ -413,7 +413,7 @@
   },
   {
     "id": "not-pseudo-class",
-    "title": "`:not()` Negation Pseudo-Class",
+    "title": "`:not()` Negation List Pseudo-Class",
     "description": "A pseudo-class for ignoring elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors4/#negation-pseudo",
     "stage": 2,
@@ -428,7 +428,7 @@
   },
   {
     "id": "overflow-property",
-    "title": "`overflow` Property",
+    "title": "`overflow` Shorthand Property",
     "description": "A property for defining `overflow-x` and `overflow-y`",
     "specification": "https://drafts.csswg.org/css-overflow/#propdef-overflow",
     "stage": 1,
