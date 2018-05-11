@@ -467,8 +467,8 @@
     "id": "place-properties",
     "title": "Place Properties",
     "description": "Properties for defining alignment within a layout",
-    "specification": "https://drafts.csswg.org/css-align-3/#place-items-property",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-align-3/#place-items-property",
+    "stage": 2,
     "caniuse-compat": {
       "chrome": {
         "59": "y"
