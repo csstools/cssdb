@@ -30,20 +30,6 @@
     ]
   },
   {
-    "id": "aspect-ratio-property",
-    "title": "`aspect-ratio` Property",
-    "description": "A property for defining the aspect ratio of an element",
-    "specification": "https://tomhodgins.github.io/aspect-ratio-spec/aspect-ratio.html",
-    "stage": 0,
-    "example": "div {\n  aspect-ratio: 16/9;\n  width: 200px;\n}",
-    "polyfills": [
-      {
-        "type": "JavaScript Library",
-        "link": "https://github.com/tomhodgins/aspect-ratio-spec"
-      }
-    ]
-  },
-  {
     "id": "break-properties",
     "title": "Break Properties",
     "description": "Properties for defining the break behavior between and within boxes",
@@ -171,20 +157,6 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/jonathantneal/postcss-dir-pseudo-class"
-      }
-    ]
-  },
-  {
-    "id": "element-queries",
-    "title": "Element Queries",
-    "description": "A syntax for container-style element queries",
-    "specification": "https://tomhodgins.github.io/element-queries-spec/element-queries.html",
-    "stage": 0,
-    "example": "@element html and (min-width: 500px) {\n  body {\n    background: lime;\n  }\n}",
-    "polyfills": [
-      {
-        "type": "JavaScript Library",
-        "link": "https://github.com/eqcss/eqcss"
       }
     ]
   },
@@ -408,20 +380,6 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-matches"
-      }
-    ]
-  },
-  {
-    "id": "media-function",
-    "title": "`media()` Function",
-    "description": "A function for specifying media queries within values",
-    "specification": "https://jonathantneal.github.io/media-expressions-spec/",
-    "stage": 0,
-    "example": "p {\n  font-size: media(\n    16px,\n    (min-width:  600px) 20px,\n    (min-width: 1000px) 40px,\n    (min-width: 1400px) 60px\n  );\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-media-fn"
       }
     ]
   },
