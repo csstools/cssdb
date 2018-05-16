@@ -108,33 +108,44 @@ function formatFeature(feature) {
 
 // format css as syntax-highlighted HTML
 function postcssToHTML(root, builder) {
-	function toString(node, semicolon) {
+	function toString(node) {
 		if ('atrule' === node.type) {
-			return atruleToString(node, semicolon);
+			return atruleToString(node);
 		} if ('rule' === node.type) {
-			return ruleToString(node, semicolon);
+			return ruleToString(node);
 		} else if ('decl' === node.type) {
-			return declToString(node, semicolon);
+			return declToString(node);
 		} else if ('comment' === node.type) {
-			return commentToString(node, semicolon);
+			return commentToString(node);
 		} else {
-			return node.nodes ? node.nodes.map(childNodes => toString(childNodes, semicolon)).join('') : '';
+			return node.nodes ? node.nodes.map(childNodes => toString(childNodes)).join('') : '';
 		}
 	}
 
-	function atruleToString(atrule, semicolon) {
-		return `${atrule.raws.before||''}<span class=css-atrule><span class=css-atrule-name>@${atrule.name}</span>${atrule.raws.afterName||''}<span class=css-atrule-params>${atrule.params}</span>${atrule.raws.between||''}${atrule.nodes?`<span class=css-block>{${atrule.nodes.map(node => toString(node, atrule.raws.semicolon)).join('')}${atrule.raws.after||''}}</span>`:semicolon?';':''}</span>`;
+	function replaceVars(string) {
+		return string
+			.replace(/:?--[\w-]+/g, '<span class=css-var>$&</span>')
 	}
 
-	function ruleToString(rule, semicolon) {
-		return `${rule.raws.before||''}<span class=css-rule><span class=css-selector>${rule.selector}</span>${rule.raws.between||''}<span class=css-block>{${rule.nodes.map(node => toString(node, rule.raws.semicolon)).join('')}${rule.raws.after||''}}</span></span>`;
+	function replaceVarsAndFns(string) {
+		return replaceVars(string)
+			.replace(/(:?[\w-]+)\(/g, '<span class=css-function>$1</span>(')
+			.replace(/"[^"]+"/g, '<span class=css-string>$&</span>')
 	}
 
-	function declToString(decl, semicolon) {
-		return `${decl.raws.before || ''}<span class=css-declaration><span class=css-property>${decl.prop}</span>${decl.raws.between || ':'}<span class=css-value>${decl.value}</span>${semicolon?';':''}</span>`;
+	function atruleToString(atrule) {
+		return `${atrule.raws.before||''}<span class=css-atrule><span class=css-atrule-name>@${atrule.name}</span>${atrule.raws.afterName||''}<span class=css-atrule-params>${replaceVarsAndFns(atrule.params)}</span>${atrule.raws.between||''}${atrule.nodes?`<span class=css-block>{${atrule.nodes.map(node => toString(node)).join('')}${atrule.raws.after||''}}</span>`:';'}</span>`;
 	}
 
-	function commentToString(comment, semicolon) {
+	function ruleToString(rule) {
+		return `${rule.raws.before||''}<span class=css-rule><span class=css-selector>${replaceVars(rule.selector)}</span>${rule.raws.between||''}<span class=css-block>{${rule.nodes.map(node => toString(node)).join('')}${rule.raws.after||''}}</span></span>`;
+	}
+
+	function declToString(decl) {
+		return `${decl.raws.before || ''}<span class=css-declaration><span class=css-property>${decl.prop}</span>${decl.raws.between || ':'}<span class=css-value>${replaceVarsAndFns(decl.value)}</span>;</span>`;
+	}
+
+	function commentToString(comment) {
 		return `${comment.raws.before}<span class=css-comment>/*${comment.raws.left}${comment.text}${comment.raws.right}*/</span>`;
 	}
 

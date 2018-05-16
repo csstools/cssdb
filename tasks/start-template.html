@@ -11,7 +11,7 @@
 <meta property="og:site_name" content="cssdb">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cssdb.org/">
-<link href="cssdb.ico" rel="shortcut icon">
+<link href="favicon.ico" rel="shortcut icon">
 <link href="style.css" rel="stylesheet">
 
 <header class="cssdb-header">
@@ -30,11 +30,11 @@
 <main class="cssdb-features" id="features">
 	${features.map(feature => `<section class="cssdb-feature" id="${feature.id}">
 		<header class="cssdb-feature-header">
-			<img class="cssdb-feature-stage" src="stage-${ feature.stage === -1 ? 'X' : feature.stage }.svg" alt="" width="62" height="62">
+			<img class="cssdb-feature-stage" src="stage-${feature.stage === -1 ? 'X' : feature.stage}.svg" alt="" width="62" height="62">
 			<div class="cssdb-feature-header-content">
-				<h3 class="cssdb-feature-heading">
+				<h2 class="cssdb-feature-heading">
 					<a href="#${feature.id}">${feature.title}</a>
-				</h3>
+				</h2>
 				<p class="cssdb-feature-description">
 					${feature.description}
 				</p>
@@ -44,7 +44,7 @@
 			<p class="cssdb-feature-specification">
 				<a class="cssdb-feature-specification-link" href="${feature.specification}">Specification</a>
 				<a class="cssdb-feature-specification-badge-link" href="badge/${feature.id}.svg" tabindex="-1">
-					<img class="cssdb-feature-specification-badge" src="badge/${feature.id}.svg" alt="cssdb badge">
+					<img class="cssdb-feature-specification-badge" src="badge/${feature.id}.svg" alt="Stage ${feature.stage} badge">
 				</a>
 			</p>
 			<pre class="cssdb-feature-example">${feature.example}</pre>
@@ -127,6 +127,8 @@ function scrollTo(target, duration, easing, callback) {
 		if (window.pageYOffset !== targetOffsetToScroll) {
 			requestAnimationFrame(scroll);
 		} else {
+			window.scroll(0, start);
+
 			callback();
 		}
 	}
