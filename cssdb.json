@@ -78,7 +78,7 @@
     "title": "`color-mod()` Function",
     "description": "A function for modifying colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color-mod",
-    "stage": 2,
+    "stage": -1,
     "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
