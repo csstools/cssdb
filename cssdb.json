@@ -369,7 +369,7 @@
     "id": "logical-properties-and-values",
     "title": "Logical Properties and Values",
     "description": "Flow-relative (left-to-right or right-to-left) properties and values",
-    "specification": "https://www.w3.org/TR/css-logical/",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "caniuse": "css-logical-props",
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
