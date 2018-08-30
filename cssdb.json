@@ -442,8 +442,8 @@
     "id": "overflow-property",
     "title": "`overflow` Shorthand Property",
     "description": "A property for defining `overflow-x` and `overflow-y`",
-    "specification": "https://drafts.csswg.org/css-overflow/#propdef-overflow",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-overflow-3/#propdef-overflow",
+    "stage": 2,
     "caniuse-compat": {
       "chrome": {
         "68": "y"
