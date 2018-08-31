@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### 3.2.1 (August 31st, 2018)
+
+- Updated: caniuse-like browser statistics for Custom Environment Variables
+
+I really wish caniuse would start adding some of these.
+
 ### 3.2.0 (August 30th, 2018)
 
 - Removed: Rejected `color-mod()` function
