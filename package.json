@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "start": "node tasks/start",
+    "start:nobadges": "node tasks/start --no-badges",
     "test": "node tasks/test"
   },
   "devDependencies": {
