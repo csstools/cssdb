@@ -166,6 +166,17 @@
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
+    "caniuse-compat": {
+      "and_chr": {
+        "69": "y"
+      },
+      "ios_saf": {
+        "11.2": "y"
+      },
+      "safari": {
+        "11.2": "y"
+      }
+    },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
       {
@@ -445,6 +456,12 @@
     "specification": "https://www.w3.org/TR/css-overflow-3/#propdef-overflow",
     "stage": 2,
     "caniuse-compat": {
+      "and_chr": {
+        "68": "y"
+      },
+      "and_ff": {
+        "61": "y"
+      },
       "chrome": {
         "68": "y"
       },
