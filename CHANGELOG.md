@@ -1,5 +1,12 @@
 # Changes to cssdb
 
+### 3.2.0 (August 30th, 2018)
+
+- Removed: Rejected `color-mod()` function
+- Updated: Overflow shorthand is now Stage 2
+- Updated: caniuse-like browser statistics for Custom Environment Variables and
+  Overflow Shorthand
+
 ### 3.1.0 (May 11th, 2018)
 
 - Added: Polyfills for `lab-function` and `lch-function`
