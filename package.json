@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -17,8 +17,8 @@
     "test": "node tasks/test"
   },
   "devDependencies": {
-    "browserslist": "^4.1.0",
-    "caniuse-lite": "^1.0.30000883",
+    "browserslist": "^4.1.1",
+    "caniuse-lite": "^1.0.30000885",
     "eslit": "^5.0.0",
     "fse": "^4.0.1",
     "marked": "^0.5.0",
