@@ -19,8 +19,10 @@ is desired.
 
 > “This is a crazy idea.”
 
-An **Editor’s Draft** [championed] by a [W3C] member. It should be considered
-highly unstable and subject to change.
+An **Unofficial Draft** or **Editor’s Draft** [championed] by a
+[W3C Working Group] Member. It should be considered highly unstable and subject
+to change. Stage 0 features are open to ideas and discussion, but may not be
+considered serious.
 
 ---
 
@@ -30,8 +32,10 @@ highly unstable and subject to change.
 
 > “This idea might not be crazy.”
 
-An **Editor’s Draft** [championed] by a [W3C Working Group]. It should still be
-considered highly unstable and subject to change.
+An **Editor’s Draft** or early **Working Draft** [championed] by a
+[W3C Working Group]. It should be considered highly unstable and subject to
+change. Stage 1 features are recognized as a real problem, but they may not be
+tied to any particular solution.
 
 ---
 
@@ -41,9 +45,9 @@ considered highly unstable and subject to change.
 
 > “This idea is not crazy.”
 
-A **Working Draft** [championed] by a [W3C Working Group] and requiring
-implementations to move forward. It should be considered stable and subject to
-little change. It is still subject to rejection as a standard.
+A **Working Draft** [championed] by a [W3C Working Group]. It should be
+considered relatively unstable and subject to change. Stage 2 features are tied
+to a particular way of solving a problem.
 
 ---
 
@@ -53,10 +57,10 @@ little change. It is still subject to rejection as a standard.
 
 > “This idea is becoming part of the web.”
 
-A **Candidate Recommendation** [championed] by a [W3C Working Group] and being
-implemented by at least 2 [recognized browser vendors], possibly behind a flag.
-It should be considered stable and subject to little change. It will likely
-become a standard.
+A **Candidate Recommendation** [championed] by a [W3C Working Group], usually
+implemented by at least 2 [recognized browser vendors], possibly behind a flag. |
+It should be considered stable and subject to little change. Stage 3 features
+will likely become a standard.
 
 ---
 
@@ -66,8 +70,8 @@ become a standard.
 
 > “This idea is part of the web.”
 
-A **Recommendation** [championed] by the [W3C] and implemented by all
-[recognized browser vendors]. It is a standard.
+A **Recommendation** [championed] by the [W3C]. It should be implemented by all
+[recognized browser vendors]. Stage 4 features are web standards.
 
 ---
 
@@ -77,7 +81,7 @@ A **Recommendation** [championed] by the [W3C] and implemented by all
 
 > “I had no idea what I was doing.”
 
-This is any specification that has been rejected or neglected by its editor, or
+Any specification that has been rejected or neglected by its editor, or
 formally rejected by a [W3C Working Group].
 
 ---
