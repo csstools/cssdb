@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 4.0.0 (October 23, 2018)
+
+- Changed: `:something()` is now `:where()` and moved from Stage 2 to Stage 1
+
 ### 3.2.1 (August 31st, 2018)
 
 - Updated: caniuse-like browser statistics for Custom Environment Variables
