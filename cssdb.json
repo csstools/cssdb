@@ -533,14 +533,6 @@
     ]
   },
   {
-    "id": "something-pseudo-class",
-    "title": "`:something()` Zero-Specificity Pseudo-Class",
-    "description": "A pseudo-class for matching elements in a selector list without contributing specificity",
-    "specification": "https://www.w3.org/TR/selectors-4/#something-pseudo",
-    "stage": 2,
-    "example": "a:something(:not(:hover)) {\n  text-decoration: none;\n}"
-  },
-  {
     "id": "system-ui-font-family",
     "title": "`system-ui` Font Family",
     "description": "A generic font used to match the user’s interface",
@@ -562,5 +554,13 @@
     "specification": "https://tabatkins.github.io/specs/css-when-else/",
     "stage": 0,
     "example": "@when media(width >= 640px) and (supports(display: flex) or supports(display: grid)) {\n  /* A */\n} @else media(pointer: coarse) {\n  /* B */\n} @else {\n  /* C */\n}"
+  },
+  {
+    "id": "where-pseudo-class",
+    "title": "`:where()` Zero-Specificity Pseudo-Class",
+    "description": "A pseudo-class for matching elements in a selector list without contributing specificity",
+    "specification": "https://drafts.csswg.org/selectors-4/#where-pseudo",
+    "stage": 1,
+    "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}"
   }
 ]
