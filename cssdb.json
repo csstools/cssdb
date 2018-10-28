@@ -161,6 +161,28 @@
     ]
   },
   {
+    "id": "double-position-gradients",
+    "title": "Double Position Gradients",
+    "description": "A syntax for using two positions in a gradient.",
+    "specification": "https://www.w3.org/TR/css-images-4/#color-stop-syntax",
+    "stage": 2,
+    "caniuse-compat": {
+      "and_chr": {
+        "71": "y"
+      },
+      "chrome": {
+        "71": "y"
+      }
+    },
+    "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jonathantneal/postcss-double-position-gradients"
+      }
+    ]
+  },
+  {
     "id": "environment-variables",
     "title": "Custom Environment Variables",
     "description": "A syntax for using custom values accepted by CSS globally",
