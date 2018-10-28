@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 4.1.0 (October 28, 2018)
+
+- Added: Double Position Gradients
+
 ### 4.0.0 (October 23, 2018)
 
 - Changed: `:something()` is now `:where()` and moved from Stage 2 to Stage 1
