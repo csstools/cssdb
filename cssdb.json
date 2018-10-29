@@ -480,20 +480,7 @@
     "description": "A property for defining `overflow-x` and `overflow-y`",
     "specification": "https://www.w3.org/TR/css-overflow-3/#propdef-overflow",
     "stage": 2,
-    "caniuse-compat": {
-      "and_chr": {
-        "68": "y"
-      },
-      "and_ff": {
-        "61": "y"
-      },
-      "chrome": {
-        "68": "y"
-      },
-      "firefox": {
-        "61": "y"
-      }
-    },
+    "caniuse": "css-overflow",
     "example": "html {\n  overflow: hidden auto;\n}",
     "polyfills": [
       {
