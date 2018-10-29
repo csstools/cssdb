@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 4.1.1 (October 28, 2018)
+
+- Added: caniuse link for `overflow` shorthand property
+
 ### 4.1.0 (October 28, 2018)
 
 - Added: Double Position Gradients
