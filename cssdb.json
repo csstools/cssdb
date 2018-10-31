@@ -527,6 +527,15 @@
     ]
   },
   {
+    "id": "prefers-reduced-motion",
+    "title": "`prefers-reduced-motion` Media Query",
+    "description": "Media query based on a user preference for preferring reduced motion (animation, etc)",
+    "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
+    "stage": 1,
+    "caniuse": "prefers-reduced-motion",
+    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}"
+  },
+  {
     "id": "rebeccapurple-color",
     "title": "`rebeccapurple` Color",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
