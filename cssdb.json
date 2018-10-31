@@ -60,6 +60,15 @@
     ]
   },
   {
+    "id": "color-adjust",
+    "title": "`color-adjust` Property",
+    "description": "The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images",
+    "specification": "https://drafts.csswg.org/css-color/#color-adjust",
+    "stage": 1,
+    "caniuse": "css-color-adjust",
+    "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}"
+  },
+  {
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
