@@ -527,6 +527,15 @@
     ]
   },
   {
+    "id": "read-only-write",
+    "title": "`:read-only` and `:read-write` selectors",
+    "description": "Pseudo-classes to match elements which are considered user-alterable",
+    "specification": "https://drafts.csswg.org/selectors-4/#rw-pseudos",
+    "stage": 1,
+    "caniuse": "css-read-only-write",
+    "example": "input:read-only {\n  background-color: #ccc;\n}"
+  },
+  {
     "id": "rebeccapurple-color",
     "title": "`rebeccapurple` Color",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
