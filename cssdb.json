@@ -514,6 +514,15 @@
     ]
   },
   {
+    "id": "overscroll-behavior-property",
+    "title": "`overscroll-behavior` Property",
+    "description": "Properties for controlling when the scroll position of a scroll container reaches the edge of a scrollport",
+    "specification": "https://drafts.csswg.org/css-overscroll-behavior",
+    "stage": 1,
+    "caniuse": "css-overscroll-behavior",
+    "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}"
+  },
+  {
     "id": "place-properties",
     "title": "Place Properties",
     "description": "Properties for defining alignment within a layout",
