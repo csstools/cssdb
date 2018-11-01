@@ -531,7 +531,7 @@
     "title": "`:read-only` and `:read-write` selectors",
     "description": "Pseudo-classes to match elements which are considered user-alterable",
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
-    "stage": 1,
+    "stage": 2,
     "caniuse": "css-read-only-write",
     "example": "input:read-only {\n  background-color: #ccc;\n}"
   },
