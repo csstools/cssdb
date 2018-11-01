@@ -376,7 +376,7 @@
   {
     "id": "in-out-of-range-pseudo-class",
     "title": "`:in-range` and `:out-of-range` Pseudo-Classes",
-    "description": "A pseudo-class for matching elements that have range limitations,
+    "description": "A pseudo-class for matching elements that have range limitations",
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
     "caniuse": "css-in-out-of-range",
