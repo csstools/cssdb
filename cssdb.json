@@ -64,7 +64,7 @@
     "title": "`color-adjust` Property",
     "description": "The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images",
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
-    "stage": 1,
+    "stage": 2,
     "caniuse": "css-color-adjust",
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}"
   },
