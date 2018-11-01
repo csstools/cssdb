@@ -374,7 +374,7 @@
     ]
   },
   {
-    "id": "in-out-of-range",
+    "id": "in-out-of-range-pseudo-class",
     "title": "`:in-range` and `:out-of-range` Pseudo-Classes",
     "description": "If a temporal or number <input> has max and/or min attributes, then :in-range matches when the value is within the specified range and :out-of-range matches when the value is outside the specified range.",
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
