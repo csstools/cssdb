@@ -378,7 +378,7 @@
     "title": "`:in-range` and `:out-of-range` Pseudo-Classes",
     "description": "If a temporal or number <input> has max and/or min attributes, then :in-range matches when the value is within the specified range and :out-of-range matches when the value is outside the specified range.",
     "specification": "https://drafts.csswg.org/selectors-4/#range-pseudos",
-    "stage": 1,
+    "stage": 2,
     "caniuse": "css-in-out-of-range",
     "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}"
   },
