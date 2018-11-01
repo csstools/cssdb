@@ -505,7 +505,7 @@
     ]
   },
   {
-    "id": "overscroll-behavior",
+    "id": "overscroll-behavior-property",
     "title": "`overscroll-behavior` Property",
     "description": "CSS property to control the behavior when the scroll position of a scroll container reaches the edge of the scrollport",
     "specification": "https://drafts.csswg.org/css-overscroll-behavior",
