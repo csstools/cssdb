@@ -43,6 +43,9 @@
 		<div class="cssdb-feature-content">
 			<p class="cssdb-feature-specification">
 				<a class="cssdb-feature-specification-link" href="${feature.specification}">Specification</a>
+				${feature.mdn
+					? `<a class="cssdb-feature-mdn-link" href="${feature.mdn}" target="_blank">MDN Docs</a>`
+					: ``}
 				<a class="cssdb-feature-specification-badge-link" href="badge/${feature.id}.svg" tabindex="-1">
 					<img class="cssdb-feature-specification-badge" src="badge/${feature.id}.svg" alt="Stage ${feature.stage} badge">
 				</a>
