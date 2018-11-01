@@ -527,7 +527,7 @@
     ]
   },
   {
-    "id": "prefers-reduced-motion",
+    "id": "prefers-reduced-motion-query",
     "title": "`prefers-reduced-motion` Media Query",
     "description": "Media query based on a user preference for preferring reduced motion (animation, etc)",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
