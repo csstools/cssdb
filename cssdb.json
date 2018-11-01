@@ -529,7 +529,7 @@
   {
     "id": "prefers-reduced-motion-query",
     "title": "`prefers-reduced-motion` Media Query",
-    "description": "Media query based on a user preference for preferring reduced motion (animation, etc)",
+    "description": "A media query to detect a user’s desire for less animation and general motion on the page",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
     "stage": 1,
     "caniuse": "prefers-reduced-motion",
