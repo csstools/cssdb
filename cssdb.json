@@ -527,7 +527,7 @@
     ]
   },
   {
-    "id": "read-only-write",
+    "id": "read-only-write-pseudo-class",
     "title": "`:read-only` and `:read-write` selectors",
     "description": "Pseudo-classes to match elements which are considered user-alterable",
     "specification": "https://drafts.csswg.org/selectors-4/#rw-pseudos",
