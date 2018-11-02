@@ -573,6 +573,15 @@
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}"
   },
   {
+    "id": "read-only-write-pseudo-class",
+    "title": "`:read-only` and `:read-write` selectors",
+    "description": "Pseudo-classes to match elements which are considered user-alterable",
+    "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
+    "stage": 2,
+    "caniuse": "css-read-only-write",
+    "example": "input:read-only {\n  background-color: #ccc;\n}"
+  },
+  {
     "id": "rebeccapurple-color",
     "title": "`rebeccapurple` Color",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
