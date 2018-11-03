@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -14,17 +14,26 @@
   "scripts": {
     "start": "node tasks/start",
     "start:nobadges": "node tasks/start --no-badges",
-    "test": "node tasks/test"
+    "test": "npm run test:css && npm run test:json",
+    "test:css": "stylelint tasks/style-template.css",
+    "test:json": "node tasks/test"
   },
   "devDependencies": {
     "browserslist": "^4.3.4",
-    "caniuse-lite": "^1.0.30000900",
+    "caniuse-lite": "^1.0.30000904",
+    "cssnano": "^4.1.7",
     "eslit": "^5.0.0",
     "fse": "^4.0.1",
     "marked": "^0.5.1",
     "node-fetch": "^2.2.0",
     "postcss": "^7.0.5",
-    "pre-commit": "^1.2.2"
+    "postcss-preset-env": "^6.3.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^9.7.1",
+    "stylelint-config-dev": "^4.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-dev"
   },
   "keywords": [
     "css",

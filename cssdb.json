@@ -4,9 +4,11 @@
     "title": "`all` Property",
     "description": "A property for defining the reset of all properties of an element",
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all",
     "stage": 3,
     "caniuse": "css-all",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
+    },
     "example": "a {\n  all: initial;\n}",
     "polyfills": [
       {
@@ -20,9 +22,11 @@
     "title": "`:any-link` Hyperlink Pseudo-Class",
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link",
     "stage": 2,
     "caniuse": "css-any-link",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
+    },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "polyfills": [
       {
@@ -38,6 +42,9 @@
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
     "caniuse": "multicolumn",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
+    },
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "polyfills": [
       {
@@ -51,9 +58,11 @@
     "title": "Case-Insensitive Attributes",
     "description": "An attribute selector matching attribute values case-insensitively",
     "specification": "https://www.w3.org/TR/selectors-4/#attribute-case",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors",
     "stage": 2,
     "caniuse": "css-case-insensitive",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+    },
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
     "polyfills": [
       {
@@ -69,6 +78,9 @@
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "caniuse": "css-color-adjust",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
+    },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}"
   },
   {
@@ -118,9 +130,11 @@
     "title": "Custom Properties",
     "description": "A syntax for defining custom values accepted by all CSS properties",
     "specification": "https://www.w3.org/TR/css-variables-1/",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var",
     "stage": 3,
     "caniuse": "css-variables",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
+    },
     "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
@@ -163,9 +177,11 @@
     "title": "`:dir` Directionality Pseudo-Class",
     "description": "A pseudo-class for matching elements based on their directionality",
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir",
     "stage": 2,
     "caniuse": "css-dir-pseudo",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
+    },
     "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
       {
@@ -201,7 +217,6 @@
     "title": "Custom Environment Variables",
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env",
     "stage": 0,
     "caniuse-compat": {
       "and_chr": {
@@ -217,6 +232,9 @@
         "11.2": "y"
       }
     },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
+    },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
       {
@@ -230,9 +248,11 @@
     "title": "`:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible",
     "stage": 2,
     "caniuse": "css-focus-visible",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+    },
     "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
     "polyfills": [
       {
@@ -250,9 +270,11 @@
     "title": "`:focus-within` Focus Container Pseudo-Class",
     "description": "A pseudo-class for matching elements that are either focused or that have focused descendants",
     "specification": "https://www.w3.org/TR/selectors-4/#focus-within-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within",
     "stage": 2,
     "caniuse": "css-focus-within",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
+    },
     "example": "form:focus-within {\n  background: rgba(0, 0, 0, 0.3);\n}",
     "polyfills": [
       {
@@ -270,9 +292,11 @@
     "title": "`font-variant` Property",
     "description": "A property for defining the usage of alternate glyphs in a font",
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant",
     "stage": 3,
     "caniuse": "font-variant-alternates",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
+    },
     "example": "h2 {\n  font-variant: small-caps;\n}",
     "polyfills": [
       {
@@ -286,7 +310,6 @@
     "title": "Gap Properties",
     "description": "Properties for defining gutters within a layout",
     "specification": "https://www.w3.org/TR/css-grid-1/#gutters",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
     "stage": 3,
     "caniuse-compat": {
       "chrome": {
@@ -302,6 +325,9 @@
         "11.2": "y",
         "TP": "y"
       }
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
     },
     "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
     "polyfills": [
@@ -330,9 +356,11 @@
     "title": "Grid Layout",
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://www.w3.org/TR/css-grid-1/",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid",
     "stage": 3,
     "caniuse": "css-grid",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+    },
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
     "polyfills": [
       {
@@ -346,8 +374,10 @@
     "title": "`:has()` Relational Pseudo-Class",
     "description": "A pseudo-class for matching ancestor and sibling elements",
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
     "stage": 2,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
+    },
     "example": "a:has(> img) {\n  display: block;\n}"
   },
   {
@@ -355,9 +385,11 @@
     "title": "Hexadecimal Alpha Notation",
     "description": "A 4 & 8 character hex color notation for specifying the opacity level",
     "specification": "https://www.w3.org/TR/css-color-4/#hex-notation",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2",
     "stage": 2,
     "caniuse": "css-rrggbbaa",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
+    },
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
       {
@@ -402,6 +434,9 @@
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
     "caniuse": "css-in-out-of-range",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
+    },
     "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}"
   },
   {
@@ -439,8 +474,10 @@
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "caniuse": "css-logical-props",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
+    },
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -453,9 +490,11 @@
     "title": "`:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:matches",
     "stage": 2,
     "caniuse": "css-matches-pseudo",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:matches"
+    },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
@@ -470,6 +509,9 @@
     "description": "A syntax for defining media query ranges using ordinary comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
+    },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "polyfills": [
       {
@@ -497,9 +539,11 @@
     "title": "`:not()` Negation List Pseudo-Class",
     "description": "A pseudo-class for ignoring elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#negation-pseudo",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
     "stage": 2,
     "caniuse": "css-not-sel-list",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
+    },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
@@ -513,9 +557,25 @@
     "title": "`overflow` Shorthand Property",
     "description": "A property for defining `overflow-x` and `overflow-y`",
     "specification": "https://www.w3.org/TR/css-overflow-3/#propdef-overflow",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
     "stage": 2,
     "caniuse": "css-overflow",
+    "caniuse-compat": {
+      "and_chr": {
+        "68": "y"
+      },
+      "and_ff": {
+        "61": "y"
+      },
+      "chrome": {
+        "68": "y"
+      },
+      "firefox": {
+        "61": "y"
+      }
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+    },
     "example": "html {\n  overflow: hidden auto;\n}",
     "polyfills": [
       {
@@ -529,9 +589,11 @@
     "title": "`overflow-wrap` Property",
     "description": "A property for defining whether to insert line breaks within words to prevent overflowing",
     "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
     "stage": 2,
     "caniuse": "wordwrap",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
+    },
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "polyfills": [
       {
@@ -554,7 +616,6 @@
     "title": "Place Properties",
     "description": "Properties for defining alignment within a layout",
     "specification": "https://www.w3.org/TR/css-align-3/#place-items-property",
-    "mdn": "[]",
     "stage": 2,
     "caniuse-compat": {
       "chrome": {
@@ -563,6 +624,9 @@
       "firefox": {
         "45": "y"
       }
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
     },
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "polyfills": [
@@ -573,13 +637,24 @@
     ]
   },
   {
+    "id": "prefers-color-scheme-query",
+    "title": "`prefers-color-scheme` Media Query",
+    "description": "A media query to detect if the user has requested the system use a light or dark color theme",
+    "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
+    "stage": 1,
+    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}"
+  },
+  {
     "id": "prefers-reduced-motion-query",
     "title": "`prefers-reduced-motion` Media Query",
-    "description": "A media query to detect a user’s desire for less animation and general motion on the page",
+    "description": "A media query to detect if the user has requested less animation and general motion on the page",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
     "stage": 1,
     "caniuse": "prefers-reduced-motion",
-    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}"
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+    },
+    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}"
   },
   {
     "id": "read-only-write-pseudo-class",
@@ -588,6 +663,9 @@
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
     "caniuse": "css-read-only-write",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
+    },
     "example": "input:read-only {\n  background-color: #ccc;\n}"
   },
   {
@@ -595,9 +673,11 @@
     "title": "`rebeccapurple` Color",
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
     "specification": "https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value",
     "stage": 2,
     "caniuse": "css-rebeccapurple",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+    },
     "example": "html {\n  color: rebeccapurple;\n}",
     "polyfills": [
       {
@@ -611,9 +691,11 @@
     "title": "`system-ui` Font Family",
     "description": "A generic font used to match the user’s interface",
     "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
-    "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax",
     "stage": 2,
     "caniuse": "font-family-system-ui",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+    },
     "example": "body {\n  font-family: system-ui;\n}",
     "polyfills": [
       {
