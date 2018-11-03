@@ -1,5 +1,18 @@
 # Changes to cssdb
 
+### 4.2.0 (November 3, 2018)
+
+- Added: Documentation links to MDN
+- Added: `prefers-reduced-motion` Media Query
+- Added: `color-adjust` Property
+- Added: `overscroll-behavior` Property
+- Added: `:read-only` and `:read-write` selectors
+- Added: `:in-range` and `:out-of-range` Pseudo-Classes
+
+This also updates the cssdb.org template and styles, using postcss-preset-env
+to create and minifying cross-browser compatible css, improving font loading
+and display, supporting RTL displays, and adding MDN documentation.
+
 ### 4.1.1 (October 28, 2018)
 
 - Added: caniuse link for `overflow` shorthand property
