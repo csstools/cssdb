@@ -645,7 +645,25 @@
     "description": "A media query to detect if the user has requested the system use a light or dark color theme",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
     "stage": 1,
-    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}"
+    "caniuse-compat": {
+      "ios_saf": {
+        "12.1": "y"
+      },
+      "safari": {
+        "12.1": "y"
+      }
+    },
+    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
+    "polyfills": [
+      {
+        "type": "JavaScript Library",
+        "link": "https://github.com/csstools/css-prefers-color-scheme"
+      },
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/css-prefers-color-scheme"
+      }
+    ]
   },
   {
     "id": "prefers-reduced-motion-query",
