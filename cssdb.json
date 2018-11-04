@@ -609,6 +609,9 @@
     "specification": "https://drafts.csswg.org/css-overscroll-behavior",
     "stage": 1,
     "caniuse": "css-overscroll-behavior",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
+    },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}"
   },
   {
