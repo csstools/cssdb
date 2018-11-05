@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 4.2.0 (November 3, 2018)
+### 4.2.0 (November 4, 2018)
 
 - Added: Documentation links to MDN
 - Added: `color-adjust` Property

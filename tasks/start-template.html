@@ -16,7 +16,7 @@
 	<link href="style.css" rel="stylesheet">
 
 	<header class="cssdb-header">
-		<img class="cssdb-header-branding" src="cssdb.svg" alt="cssdb logo" width="90" height="90">
+		<img class="cssdb-header-branding" src="cssdb.svg" alt="cssdb logo" width="90" height="90" role="presentation">
 		<div class="cssdb-header-heading">
 			<h1 class="cssdb-header-title">
 				What’s next for CSS?
@@ -31,7 +31,7 @@
 	<main class="cssdb-features" id="features">
 		${features.map(feature => `<section class="cssdb-feature" id="${feature.id}">
 			<header class="cssdb-feature-header">
-				<img class="cssdb-feature-stage" src="stage-${feature.stage === -1 ? 'X' : feature.stage}.svg" alt="" width="62" height="62">
+				<img class="cssdb-feature-stage" src="stage-${feature.stage === -1 ? 'X' : feature.stage}.svg" alt="" width="62" height="62" role="presentation">
 				<div class="cssdb-feature-header-content">
 					<h2 class="cssdb-feature-heading">
 						<a href="#${feature.id}">${feature.title}</a>
@@ -94,7 +94,7 @@
 
 	<script>
 	document.addEventListener('click', function (event) {
-		var closestHash = event.target.closest('a[href^="#"]');
+		var closestHash = event.target.closest && event.target.closest('a[href^="#"]');
 
 		if (closestHash) {
 			var target = document.getElementById(closestHash.hash.slice(1));
@@ -139,5 +139,46 @@
 			}
 		}
 	}
+	</script>
+	<script src="https://unpkg.com/css-prefers-color-scheme@3.0.0/browser.min.js"></script>
+	<script>
+	prefersColorScheme=initPrefersColorScheme();
+
+	(function () {
+		prefersColorScheme.onChange = function () {
+			if (!isSchemeManuallyChanging) {
+				$inputSystem.checked = true;
+			}
+		};
+
+		var schemes = { system: prefersColorScheme.scheme };
+		var isSchemeManuallyChanging = false;
+
+		var create = function (type, attrs) {
+			var $element = document.createElement(type);
+
+			for (var attr in Object(attrs)) {
+				$element.setAttribute(attr, attrs[attr]);
+			}
+
+			return $element;
+		}
+
+		var $toggle = create('span', { class: 'cssdb-color_scheme_toggle', role: 'group', title: 'select a color scheme' });
+		var $inputDark   = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'dark',   'aria-label': 'dark color scheme' }));
+		var $inputSystem = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'system', 'aria-label': 'system color scheme', checked: '' }));
+		var $inputLight  = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'light',  'aria-label': 'light color scheme' }));
+		var $label = $toggle.appendChild(create('label'));
+
+		$toggle.addEventListener('change', function (event) {
+			var scheme = event.target.value;
+
+			isSchemeManuallyChanging = true;
+			prefersColorScheme.scheme = schemes[scheme] || scheme;
+			isSchemeManuallyChanging = false;
+		});
+
+		document.body.insertBefore($toggle, document.querySelector('main'));
+	})();
 	</script>
 </html>

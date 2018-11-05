@@ -63,7 +63,8 @@ html {
 }
 
 body {
-	font: 400 100%/1.5 var(--main-font);
+	font: 400 100%/1.5 sans-serif;
+	font-family: var(--main-font);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -71,6 +72,7 @@ body {
 	padding: 0 calc((100% - 960px) / 2);
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
+	transition: 400ms background-color, 400ms color;
 
 	@media (width < 560px) {
 		margin: 16px;
@@ -91,9 +93,13 @@ a {
 	text-decoration: none;
 }
 
-code,
-pre {
+aside, header, main, section {
+	display: block;
+}
+
+code, pre {
 	font-family: var(--code-font);
+	font-size: 100%;
 	font-weight: 600;
 }
 
@@ -115,6 +121,10 @@ code {
 	}
 }
 
+img {
+	border: 0;
+}
+
 /* Header
 /* ========================================================================== */
 
@@ -122,6 +132,11 @@ code {
 	@media (width >= 960px) {
 		align-items: center;
 		display: flex;
+
+		& > * {
+			display: inline-block;
+			vertical-align: top;
+		}
 	}
 }
 
@@ -170,6 +185,11 @@ code {
 
 .cssdb-feature-header {
 	display: flex;
+
+	& > * {
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 .cssdb-feature-stage {
@@ -220,8 +240,7 @@ code {
 	}
 }
 
-.cssdb-feature-mdn-badge,
-.cssdb-feature-specification-badge {
+.cssdb-feature-mdn-badge, .cssdb-feature-specification-badge {
 	height: 20px;
 	vertical-align: top;
 }
@@ -270,6 +289,7 @@ code {
 	color: #727272;
 	overflow: auto;
 	padding: 20px 15px;
+	transition: 400ms background-color, 400ms color;
 
 	@media (prefers-color-scheme: dark) {
 		background-color: #111111;
@@ -309,8 +329,7 @@ code {
 	}
 }
 
-.css-value,
-.css-atrule-params {
+.css-value, .css-atrule-params {
 	color: #000000;
 
 	@media (prefers-color-scheme: dark) {
@@ -584,5 +603,129 @@ code {
 
 	& img[align="left"] {
 		margin-end: 20px;
+	}
+}
+
+/* Color Scheme Toggle
+/* ========================================================================== */
+
+.cssdb-color_scheme_toggle {
+	display: inline-block;
+	position: absolute;
+
+	@media (width < 560px) {
+		inset-inline-end: 16px;
+	}
+
+	@media (560px <= width < 960px) {
+		inset-inline-end: 64px;
+	}
+
+	@media (width >= 960px) {
+		inset-block-start: 32px;
+		inset-inline-end: calc((100% - 960px) / 2);
+
+		&:dir(ltr) {
+			transform: translateX(-100%);
+		}
+
+		&:dir(rtl) {
+			transform: translateX(100%);
+		}
+	}
+
+	& > input {
+		appearance: none;
+		height: 100%;
+		inset-block: 0;
+		margin: 0;
+		opacity: 0;
+		position: absolute;
+		z-index: 1;
+	}
+
+	& > :nth-child(1) {
+		inset-inline-start: 0;
+		width: 37.5%;
+	}
+
+	& > :nth-child(2) {
+		inset-inline-start: 37.5%;
+		width: 25%;
+	}
+
+	& > :nth-child(3) {
+		inset-inline-start: 62.5%;
+		width: 37.5%;
+	}
+
+	& > label::before {
+		background-color: #f2f2f2;
+		border-radius: 1.75em;
+		box-shadow: 0 0 0 2px #dddddd;
+		content: "";
+		display: block;
+		height: 1.75em;
+		transition: 200ms background-color, 200ms box-shadow;
+		width: 4em;
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #181818;
+			box-shadow: 0 0 0 2px #333333;
+		}
+	}
+
+	& > input:nth-child(1):focus ~ label::before {
+		box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+	}
+
+	& > input:nth-child(2):focus ~ label::before {
+		box-shadow: 0 0 3px 0 #3bb5fc, 0 0 0 2px #dddddd;
+
+		@media (prefers-color-scheme: dark) {
+			box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+		}
+	}
+
+	& > input:nth-child(3):focus ~ label::before {
+		box-shadow: 0 0 5px 2px #f0fc3b, 0 0 0 2px #dddddd;
+	}
+
+	& > label::after {
+		background-color: #ffffff;
+		border-radius: 2.5em;
+		box-shadow: 0 0 0 2px #dddddd;
+		content: "";
+		height: 1.75em;
+		inset-block-start: 0;
+		position: absolute;
+		transition: 200ms background-color, 200ms box-shadow, 200ms left, 200ms margin, 200ms width;
+		width: 1.75em;
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #181818;
+			box-shadow: 0 0 0 2px #444444;
+		}
+	}
+
+	& > input:focus ~ label::after {
+		box-shadow: 0 0 5px 2px #3b99fc, 0 0 0 2px #dddddd;
+	}
+
+	& > input:nth-child(1):checked ~ label::after {
+		inset-inline-start: 0;
+	}
+
+	& > input:nth-child(2):checked ~ label::after {
+		inset-inline-start: 1.125em;
+	}
+
+	& > input:nth-child(3):checked ~ label::after {
+		inset-inline-start: 2.25em;
+	}
+
+	& > input:active ~ :last-child::after {
+		margin-inline-start: -.075em;
+		width: 1.875em;
 	}
 }
