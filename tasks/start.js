@@ -10,7 +10,6 @@ const fs      = require('fse');
 const marked  = require('marked');
 const postcss = require('postcss');
 const presete = require('postcss-preset-env');
-const prefers = require('css-prefers-color-scheme/postcss');
 
 // source files
 const htmlTmpl = path.join(__dirname, 'start-template.html');
@@ -43,7 +42,6 @@ Promise.all([
 		),
 		postcss([
 			presete({ stage: 0 }),
-			prefers(),
 			cssnano({ preset: 'default' }),
 		]).process(styles, { from: pcssTmpl, to: pcssDest, map: { inline: false } })
 	]).then(
