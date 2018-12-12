@@ -375,6 +375,7 @@
     "description": "A pseudo-class for matching ancestor and sibling elements",
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
+    "caniuse": "css-has",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
