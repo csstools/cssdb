@@ -41,7 +41,7 @@
     "description": "A pseudo-class for matching form elements when they are empty",
     "specification": "https://drafts.csswg.org/selectors-4/#blank",
     "stage": 1,
-    "example": "input:blank { background-color: yellow; }",
+    "example": "input:blank {\n  background-color: yellow;\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
