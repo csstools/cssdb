@@ -36,6 +36,20 @@
     ]
   },
   {
+    "id": "blank-pseudo-class",
+    "title": "`:blank` Empty-Value Pseudo-Class",
+    "description": "A pseudo-class for matching form elements when they are empty",
+    "specification": "https://drafts.csswg.org/selectors-4/#blank",
+    "stage": 1,
+    "example": "input:blank { background-color: yellow; }",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/css-blank-pseudo"
+      }
+    ]
+  },
+  {
     "id": "break-properties",
     "title": "Break Properties",
     "description": "Properties for defining the break behavior between and within boxes",
