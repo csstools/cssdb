@@ -4,6 +4,8 @@
 
 - Added: `:blank` Empty-Value Pseudo-Class
 - Added: caniuse link for `:has()` Relational Pseudo-Class
+- Added: JavaScript Library and PostCSS Plugin links for the `:blank`
+  Empty-Value Pseudo-Class and the `:has()` Relational Pseudo-Class
 
 ### 4.2.0 (November 4, 2018)
 

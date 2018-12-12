@@ -44,6 +44,10 @@
     "example": "input:blank { background-color: yellow; }",
     "polyfills": [
       {
+        "type": "JavaScript Library",
+        "link": "https://github.com/csstools/css-blank-pseudo"
+      },
+      {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/css-blank-pseudo"
       }
@@ -393,7 +397,17 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
-    "example": "a:has(> img) {\n  display: block;\n}"
+    "example": "a:has(> img) {\n  display: block;\n}",
+    "polyfills": [
+      {
+        "type": "JavaScript Library",
+        "link": "https://github.com/csstools/css-has-pseudo"
+      },
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/css-has-pseudo"
+      }
+    ]
   },
   {
     "id": "hexadecimal-alpha-notation",
