@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 4.3.0 (December 12, 2018)
+
+- Added: `:blank` Empty-Value Pseudo-Class
+- Added: caniuse link for `:has()` Relational Pseudo-Class
+
 ### 4.2.0 (November 4, 2018)
 
 - Added: Documentation links to MDN
@@ -71,7 +76,8 @@ specification section IDs, but some specifications weren’t aren’t always
 covered by a single section, and many sections were inconsistently named.
 Because there was no pattern one could predict for any of the headings, a new
 system was created; to **name** the feature and provide **context**. This meant
-a feature ID like `css-cascade-all-shorthand` became `all-property`, and `css-fonts-propdef-font-variant` became `font-variant-property`, etc. This
+a feature ID like `css-cascade-all-shorthand` became `all-property`, and
+`css-fonts-propdef-font-variant` became `font-variant-property`, etc. This
 greatly simplified all of the feature IDs and allowed for more predictive
 naming moving forward.
 
