@@ -54,7 +54,7 @@
 					</a>
 				</p>
 				<pre class="cssdb-feature-example" dir="ltr">${feature.example}</pre>
-				${feature.caniuse
+				${Object(feature.caniuse).stats
 					? `<a class="cssdb-feature-caniuse" href="https://caniuse.com/${feature.caniuseURL ? `#${feature.caniuseURL}` : ''}" target="_blank" aria-label="can i use browser support">
 						${Object.keys(feature.caniuse.stats).map(
 							id => `<span class="cssdb-browser cssdb-browser--${id}" aria-hidden="true">${Object.keys(feature.caniuse.stats[id]).filter(

@@ -117,10 +117,49 @@ function formatFeature(feature) {
 		caniuse: 'caniuse-compat' in feature
 			? { stats: feature['caniuse-compat'] }
 		: feature.caniuse in caniuse.features
-			? caniuse.feature(caniuse.features[feature.caniuse])
+			? trimCaniuseFeatures(caniuse.feature(caniuse.features[feature.caniuse]))
 		: false,
 		caniuseURL: feature.caniuse
 	});
+}
+
+function trimCaniuseFeatures(feature) {
+	const stats = Object(feature.stats);
+
+	const reducedStats = Object.keys(stats).reduce(
+		(reducedStats, id) => {
+			// ...
+			const versions = Object(stats[id]);
+
+			const reducedVersions = Object.keys(versions).reduce(
+				(reducedVersions, version) => {
+					// ...
+					const hasSupport = versions[version].indexOf('y') === 0;
+
+					if (hasSupport) {
+						reducedVersions = reducedVersions || {};
+						reducedVersions[version] = versions[version];
+					}
+
+					return reducedVersions;
+				},
+				null
+			);
+
+			if (reducedVersions) {
+				reducedStats = reducedStats || {};
+
+				reducedStats[id] = reducedVersions;
+			}
+
+			return reducedStats;
+		},
+		null
+	);
+
+	feature.stats = reducedStats;
+
+	return feature;
 }
 
 // format css as syntax-highlighted HTML
