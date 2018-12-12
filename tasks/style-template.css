@@ -83,7 +83,7 @@ body {
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #000000;
+		background-color: #151515;
 		color: #eaffe5;
 	}
 }
@@ -91,6 +91,10 @@ body {
 a {
 	color: #0077dd;
 	text-decoration: none;
+
+	@media (prefers-color-scheme: dark) {
+		color: #0081f2;
+	}
 }
 
 aside, header, main, section {
@@ -292,8 +296,8 @@ img {
 	transition: 400ms background-color, 400ms color;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #111111;
-		color: #7c7c7c;
+		background-color: #202020;
+		color: #878787;
 	}
 }
 
@@ -317,7 +321,7 @@ img {
 	color: #a00909;
 
 	@media (prefers-color-scheme: dark) {
-		color: #e54545;
+		color: #e95353;
 	}
 }
 
@@ -325,7 +329,7 @@ img {
 	color: #727272;
 
 	@media (prefers-color-scheme: dark) {
-		color: #7c7c7c;
+		color: #878787;
 	}
 }
 
@@ -349,7 +353,7 @@ img {
 	color: #9f6500;
 
 	@media (prefers-color-scheme: dark) {
-		color: #a67134;
+		color: #ae7d4d;
 	}
 }
 
@@ -357,7 +361,7 @@ img {
 	color: #248400;
 
 	@media (prefers-color-scheme: dark) {
-		color: #3f8c33;
+		color: #55964d;
 	}
 }
 
@@ -584,7 +588,7 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			border-left-color: #201d1a;
-			color: #6d757f;
+			color: #787f88;
 		}
 	}
 
