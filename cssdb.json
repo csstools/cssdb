@@ -516,15 +516,15 @@
   },
   {
     "id": "matches-pseudo-class",
-    "title": "`:matches()` Matches-Any Pseudo-Class",
+    "title": "`:is()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
     "stage": 2,
     "caniuse": "css-matches-pseudo",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:matches"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
-    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
