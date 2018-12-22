@@ -120,7 +120,7 @@
     "title": "`color-mod()` Function",
     "description": "A function for modifying colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color-mod",
-    "stage": -1,
+    "stage": 2,
     "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
@@ -310,7 +310,7 @@
     "title": "`font-variant` Property",
     "description": "A property for defining the usage of alternate glyphs in a font",
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
-    "stage": 3,
+    "stage": 4,
     "caniuse": "font-variant-alternates",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
