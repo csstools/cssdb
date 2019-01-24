@@ -515,7 +515,7 @@
     ]
   },
   {
-    "id": "matches-pseudo-class",
+    "id": "is-pseudo-class",
     "title": "`:is()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
