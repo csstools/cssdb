@@ -553,8 +553,8 @@
     "id": "nesting-rules",
     "title": "Nesting Rules",
     "description": "A syntax for nesting relative rules within rules",
-    "specification": "https://tabatkins.github.io/specs/css-nesting/",
-    "stage": 0,
+    "specification": "https://drafts.csswg.org/css-nesting-1/",
+    "stage": 1,
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {
@@ -674,6 +674,7 @@
     "description": "A media query to detect if the user has requested the system use a light or dark color theme",
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
     "stage": 1,
+    "caniuse": "prefers-color-scheme",
     "caniuse-compat": {
       "ios_saf": {
         "12.1": "y"

@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 4.4.0 (March 7, 2019)
+
+- Updated: Nesting Rules are now Stage 1! 🎉
+
 ### 4.3.0 (December 12, 2018)
 
 - Added: `:blank` Empty-Value Pseudo-Class
