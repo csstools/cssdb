@@ -448,6 +448,9 @@
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
     "caniuse": "css-image-set",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
+    },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "polyfills": [
       {
