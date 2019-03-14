@@ -17,7 +17,7 @@ is desired.
 
 <img src="https://cssdb.org/stage-0.svg" alt="" align="left" width="90" height="90">
 
-> “This is a bananas idea.”
+> “This is a silly idea.”
 
 An **Unofficial Draft** or **Editor’s Draft** [championed] by a
 [W3C Working Group] Member. It should be considered highly unstable and subject
@@ -30,7 +30,7 @@ considered serious.
 
 <img src="https://cssdb.org/stage-1.svg" alt="" align="left" width="90" height="90">
 
-> “This idea might not be bananas.”
+> “This idea might not be silly.”
 
 An **Editor’s Draft** or early **Working Draft** [championed] by a
 [W3C Working Group]. It should be considered highly unstable and subject to
@@ -43,7 +43,7 @@ tied to any particular solution.
 
 <img src="https://cssdb.org/stage-2.svg" alt="" align="left" width="90" height="90">
 
-> “This idea is not bananas.”
+> “This idea is not silly.”
 
 A **Working Draft** [championed] by a [W3C Working Group]. It should be
 considered relatively unstable and subject to change. Stage 2 features are tied
