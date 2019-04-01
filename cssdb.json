@@ -515,22 +515,30 @@
     ]
   },
   {
-    "id": "is-pseudo-class",
-    "title": "`:is()` Matches-Any Pseudo-Class",
+    "id": "matches-pseudo-class",
+    "title": "`:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list",
-    "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
-    "stage": 2,
+    "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
+    "stage": -1,
     "caniuse": "css-matches-pseudo",
-    "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
-    },
-    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-matches"
       }
     ]
+  },
+  {
+    "id": "is-pseudo-class",
+    "title": "`:is()` Matches-Any Pseudo-Class",
+    "description": "A pseudo-class for matching elements in a selector list",
+    "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
+    "stage": 2,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+    },
+    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}"
   },
   {
     "id": "media-query-ranges",
