@@ -105,14 +105,14 @@
 			if (target) {
 				event.preventDefault();
 
-				scrollTo(target, 300, easing, function () {
+				scrollTo (target, 300, easing, function () {
 					location.hash = closestHash.hash;
 				});
 			}
 		}
 	});
 
-	function scrollTo(target, duration, easing, callback) {
+	function scrollTo (target, duration, easing, callback) {
 		var start = window.pageYOffset;
 		var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
@@ -123,7 +123,7 @@
 
 		scroll();
 
-		function scroll() {
+		function scroll () {
 			var now = 'now' in window.performance ? performance.now() : new Date().getTime();
 			var time = Math.min(1, ((now - startTime) / duration));
 			var timeFunction = easing(time);

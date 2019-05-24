@@ -1,5 +1,12 @@
 # Changes to cssdb
 
+### 5.0.0 (May 24, 2019)
+
+- Removed: Rejected `:matches()` psuedo-class (major)
+- Added: Stage 2 `:is()` pseudo-class (minor)
+- Added: MDN docs for `image-set-function` (patch)
+- Added: MDN docs for `:blank` pseudo-class (patch)
+
 ### 4.4.0 (March 7, 2019)
 
 - Updated: Nesting Rules are now Stage 1! 🎉

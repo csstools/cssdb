@@ -19,7 +19,7 @@ fs.readJson(cssdbJSON).then(allHaveRequiredData).then(
 );
 
 // test all features for validity
-function allHaveRequiredData(features) {
+function allHaveRequiredData (features) {
 	if (isToBeFixed) {
 		fixFeaturesOrdering(features);
 	}
@@ -41,7 +41,7 @@ function allHaveRequiredData(features) {
 }
 
 // test a feature for validity
-function hasRequiredData(feature) {
+function hasRequiredData (feature) {
 	const title = Object(feature).title || 'Unknown Feature';
 	const keys = Object.keys(Object(feature));
 	const ordering = ['id', 'title', 'description', 'specification', 'stage'];
@@ -76,17 +76,17 @@ function hasRequiredData(feature) {
 }
 
 // report a validation error
-function validationError(issue, title, notice) {
+function validationError (issue, title, notice) {
 	return `${issue}: ${title}${notice ? ` (${notice})` : ''}`
 }
 
 // get feature ids
-function getFeatureIds(features) {
+function getFeatureIds (features) {
 	return features.slice(0).map(feature => feature.id);
 }
 
 // fixes all feature ordering
-function fixFeaturesOrdering(features) {
+function fixFeaturesOrdering (features) {
 	const sorting = ({ id: a }, { id: b }) => a < b ? -1 : a > b ? 1 : 0;
 
 	features.sort(sorting);
@@ -94,7 +94,7 @@ function fixFeaturesOrdering(features) {
 
 
 // fixes a feature ordering
-function fixFeatureOrdering(object, order, error) {
+function fixFeatureOrdering (object, order, error) {
 	const clone = {};
 	const hasEveryKey = order.every(key => key in object);
 	const keys = Object.keys(object);

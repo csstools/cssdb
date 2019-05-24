@@ -94,17 +94,17 @@ markedOptions.renderer.heading = (text, level) => {
 };
 
 // sort features by stage or title
-function sortFeatures({ stage: a, id: aa }, { stage: b, id: bb }) {
+function sortFeatures ({ stage: a, id: aa }, { stage: b, id: bb }) {
 	return b - a || (aa < bb ? -1 : aa > bb ? 1 : 0);
 }
 
 // filter features by stage
-function filterFeatures({ stage }) {
+function filterFeatures ({ stage }) {
 	return stage >= 0;
 }
 
 // format feature for HTML output
-function formatFeature(feature) {
+function formatFeature (feature) {
 	return Object.assign({}, feature, {
 		// format title using marked inline lexer
 		title: marked.inlineLexer(feature.title, [], {}),
@@ -123,7 +123,7 @@ function formatFeature(feature) {
 	});
 }
 
-function trimCaniuseFeatures(feature) {
+function trimCaniuseFeatures (feature) {
 	const stats = Object(feature.stats);
 
 	const reducedStats = Object.keys(stats).reduce(
@@ -163,8 +163,8 @@ function trimCaniuseFeatures(feature) {
 }
 
 // format css as syntax-highlighted HTML
-function postcssToHTML(root, builder) {
-	function toString(node) {
+function postcssToHTML (root, builder) {
+	function toString (node) {
 		if ('atrule' === node.type) {
 			return atruleToString(node);
 		} if ('rule' === node.type) {
@@ -178,30 +178,30 @@ function postcssToHTML(root, builder) {
 		}
 	}
 
-	function replaceVars(string) {
+	function replaceVars (string) {
 		return string
 			.replace(/:?--[\w-]+/g, '<span class=css-var>$&</span>')
 	}
 
-	function replaceVarsAndFns(string) {
+	function replaceVarsAndFns (string) {
 		return replaceVars(string)
 			.replace(/(:?[\w-]+)\(/g, '<span class=css-function>$1</span>(')
 			.replace(/"[^"]+"/g, '<span class=css-string>$&</span>')
 	}
 
-	function atruleToString(atrule) {
+	function atruleToString (atrule) {
 		return `${atrule.raws.before||''}<span class=css-atrule><span class=css-atrule-name>@${atrule.name}</span>${atrule.raws.afterName||''}<span class=css-atrule-params>${replaceVarsAndFns(atrule.params)}</span>${atrule.raws.between||''}${atrule.nodes?`<span class=css-block>{${atrule.nodes.map(node => toString(node)).join('')}${atrule.raws.after||''}}</span>`:';'}</span>`;
 	}
 
-	function ruleToString(rule) {
+	function ruleToString (rule) {
 		return `${rule.raws.before||''}<span class=css-rule><span class=css-selector>${replaceVars(rule.selector)}</span>${rule.raws.between||''}<span class=css-block>{${rule.nodes.map(node => toString(node)).join('')}${rule.raws.after||''}}</span></span>`;
 	}
 
-	function declToString(decl) {
+	function declToString (decl) {
 		return `${decl.raws.before || ''}<span class=css-declaration><span class=css-property>${decl.prop}</span>${decl.raws.between || ':'}<span class=css-value>${replaceVarsAndFns(decl.value)}</span>;</span>`;
 	}
 
-	function commentToString(comment) {
+	function commentToString (comment) {
 		return `${comment.raws.before}<span class=css-comment>/*${comment.raws.left}${comment.text}${comment.raws.right}*/</span>`;
 	}
 
@@ -210,7 +210,7 @@ function postcssToHTML(root, builder) {
 	);
 }
 
-function writeStageSVG(feature) {
+function writeStageSVG (feature) {
 	// shield colors
 	const colors = [
 		'414141',
