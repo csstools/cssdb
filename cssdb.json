@@ -445,6 +445,20 @@
     ]
   },
   {
+    "id": "ic-unit",
+    "title": "`ic` length unit",
+    "description": "Equal to the used advance measure of the \"水\" (CJK water ideograph, U+6C34) glyph found in the font used to render it",
+    "specification": "https://www.w3.org/TR/css-values-4/#ic",
+    "stage": 2,
+    "example": "p {\n  text-indent: 2ic;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/JLHwung/postcss-ic-unit"
+      }
+    ]
+  },
+  {
     "id": "image-set-function",
     "title": "`image-set()` Function",
     "description": "A function for specifying image sources based on the user’s resolution",
