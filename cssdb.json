@@ -313,7 +313,7 @@
     "title": "`font-variant` Property",
     "description": "A property for defining the usage of alternate glyphs in a font",
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
-    "stage": 3,
+    "stage": 4,
     "caniuse": "font-variant-alternates",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
