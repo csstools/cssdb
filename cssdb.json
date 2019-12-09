@@ -309,6 +309,20 @@
     ]
   },
   {
+    "id": "font-format-keywords",
+    "title": "Font `format()` Keywords",
+    "description": "A syntax for specifying font format as a keyword in `@font-face` rule’s `format()` function",
+    "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
+    "stage": 1,
+    "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/valtlai/postcss-font-format-keywords"
+      }
+    ]
+  },
+  {
     "id": "font-variant-property",
     "title": "`font-variant` Property",
     "description": "A property for defining the usage of alternate glyphs in a font",
