@@ -74,6 +74,9 @@
 						<ul class="cssdb-feature-polyfill-list">${feature.polyfills.map(
 							polyfill => `<li class="cssdb-feature-polyfill-item">
 								<a class="cssdb-feature-polyfill-link" href="${polyfill.link}">${polyfill.type}</a>
+								<span class="cssdb-feature-polyfill-stars-minimal">
+									<a href="${polyfill.link+'/stargazers'}"><img alt="GitHub stars" src="https://img.shields.io/github/stars/${polyfill.link.split('/').slice(3,5).join('/')}.svg?style=social"></a>
+								</span>
 							</li>`
 						)}</ul>
 					</div>`
