@@ -265,6 +265,23 @@
     ]
   },
   {
+    "id": "fangsong-font-family",
+    "title": "`fangsong` Font Family",
+    "description": "A generic font used for Fang Song (仿宋) typefaces in Chinese",
+    "specification": "https://www.w3.org/TR/css-fonts-4/#fangsong-def",
+    "stage": 2,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+    },
+    "example": "body {\n  font-family: fangsong;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
+      }
+    ]
+  },
+  {
     "id": "focus-visible-pseudo-class",
     "title": "`:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
