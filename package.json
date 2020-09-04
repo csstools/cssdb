@@ -26,7 +26,7 @@
     "eslit": "^6.0.0",
     "fse": "^4.0.1",
     "http-server": "^0.11.1",
-    "marked": "^0.6.2",
+    "marked": "^1.1.1",
     "node-fetch": "^2.6.0",
     "postcss": "^7.0.16",
     "postcss-preset-env": "^6.6.0",
