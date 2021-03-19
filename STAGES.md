@@ -101,7 +101,7 @@ interested parties are identified and incorporated into the proposal.
 
 [championed]: #what-is-a-champion
 [hosted]: #what-is-a-champion
-[inside view of the CSSWG]: http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process
+[inside view of the CSSWG]: https://fantasai.inkedblade.net/weblog/2011/inside-csswg/process
 [recognized browser vendors]: #recognized-browser-vendors
 [W3C]: https://www.w3.org/
 [W3C Working Group]: https://wiki.csswg.org/spec
