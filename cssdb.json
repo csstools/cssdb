@@ -4,7 +4,7 @@
     "title": "`all` Property",
     "description": "A property for defining the reset of all properties of an element",
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
-    "stage": 3,
+    "stage": 4,
     "caniuse": "css-all",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
