@@ -105,6 +105,15 @@
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}"
   },
   {
+    "id": "color-contrast",
+    "title": "`color-contrast()` Function",
+    "description": "A function for choosing the color that contrasts the most.",
+    "specification": "https://drafts.csswg.org/css-color-5/#funcdef-color-contrast",
+    "stage": 1,
+    "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
+    "polyfills": []
+  },
+  {
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
@@ -117,6 +126,15 @@
         "link": "https://github.com/jonathantneal/postcss-color-functional-notation"
       }
     ]
+  },
+  {
+    "id": "color-mix",
+    "title": "`color-mix()` Function",
+    "description": "A function for mixing colors",
+    "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
+    "stage": 1,
+    "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
+    "polyfills": []
   },
   {
     "id": "color-mod-function",
