@@ -151,6 +151,20 @@
     ]
   },
   {
+    "id": "container-queries",
+    "title": "`color-mod()` Function",
+    "description": "A function for modifying colors",
+    "specification": "https://drafts.csswg.org/css-contain-3/#container-queries",
+    "stage": -1,
+    "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/jsxtools/cqfill"
+      }
+    ]
+  },
+  {
     "id": "custom-media-queries",
     "title": "Custom Media Queries",
     "description": "An at-rule for defining aliases that represent media queries",
