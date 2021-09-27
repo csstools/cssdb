@@ -152,8 +152,8 @@
   },
   {
     "id": "container-queries",
-    "title": "`color-mod()` Function",
-    "description": "A function for modifying colors",
+    "title": "Container Queries",
+    "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://drafts.csswg.org/css-contain-3/#container-queries",
     "stage": -1,
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
