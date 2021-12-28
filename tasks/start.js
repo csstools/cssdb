@@ -6,7 +6,7 @@ const caniuse = require('caniuse-lite');
 const cssnano = require('cssnano');
 const eslit   = require('eslit');
 const fetch   = require('node-fetch');
-const fs      = require('fse');
+const fs      = require('fs/promises');
 const marked  = require('marked');
 const postcss = require('postcss');
 const presete = require('postcss-preset-env');
@@ -24,57 +24,58 @@ const pmapDest = path.join(__dirname, '../gh-pages/style.css.map');
 // option to update gh-pages without updating badges (npm start -- --no-badges)
 const noBadges = process.argv.slice(2).includes('--no-badges');
 
-// render cssdb features as html
-Promise.all([
-	fs.readJson('cssdb.json'),
-	fs.readFile(stagesMD, 'utf8'),
-	fs.readFile(pcssTmpl, 'utf8')
-]).then(
-	// render html from eslit template
-	([ features, staging, styles ]) => Promise.all([
-		eslit(
-			htmlTmpl,
-			{
-				features: features.slice(0).sort(sortFeatures).filter(filterFeatures).map(formatFeature),
-				staging:  marked(staging, markedOptions),
-				mdnLogo: 'https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=='
-			}
-		),
-		postcss([
-			presete({ stage: 0 }),
-			cssnano({ preset: 'default' }),
-		]).process(styles, { from: pcssTmpl, to: pcssDest, map: { inline: false } })
-	]).then(
-		// write the rendered html
-		([ html, css ]) => Promise.all([
-			fs.writeFile(htmlDest, html),
-			fs.writeFile(pcssDest, css),
-			fs.writeFile(pmapDest, css.map)
-		])
-	).then(
-		// conditionally empty the badge directory
-		() => noBadges ? true : fs.rmdir(
-			path.join(__dirname, '../gh-pages/badge')
-		).then(
-			// write all new badges
-			() => Promise.all(
-				features.map(writeStageSVG)
-			)
-		)
-	).then(
-		// return the array of features
-		() => features
-	)
-).then(
-	// report success or errors
-	array => console.log(`\x1b[32m✔\x1b[0m cssdb successfully published ${ array.length } features.`) || process.exit(0),
-	error => console.log(`\x1b[31m✖\x1b[0m cssdb failed to published a feature.\x1b[0m\n  → ${ error }`) || process.exit(1)
-);
-
 // marked renderer
 const markedOptions = {
 	renderer: new marked.Renderer()
 };
+
+(async () => {
+	try {
+		const [features, staging, styles] = await Promise.all([
+			fs.readFile('cssdb.json', 'utf8').then(JSON.parse),
+			fs.readFile(stagesMD, 'utf8'),
+			fs.readFile(pcssTmpl, 'utf8')
+		]);
+
+		const [html, css] = await Promise.all([
+			eslit(
+				htmlTmpl,
+				{
+					features: features.slice(0).sort(sortFeatures).filter(filterFeatures).map(formatFeature),
+					staging:  marked(staging, markedOptions),
+					mdnLogo: 'https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=='
+				}
+			),
+			postcss([
+				presete({ stage: 0 }),
+				cssnano({ preset: 'default' }),
+			]).process(styles, { from: pcssTmpl, to: pcssDest, map: { inline: false } })
+		]);
+
+		let destinationPath = path.join(__dirname, '../gh-pages/');
+
+		if (!noBadges) {
+			destinationPath = path.join(__dirname, '../gh-pages/badge/');
+			await fs.rm(destinationPath, { recursive: true });
+		}
+
+		// Ensuring all directories are available
+		await fs.mkdir(destinationPath, { recursive: true });
+		await Promise.all([
+			fs.writeFile(htmlDest, html),
+			fs.writeFile(pcssDest, css.toString()),
+			fs.writeFile(pmapDest, css.map.toString())
+		]);
+
+		if (!noBadges) {
+			await features.map(writeStageSVG);
+		}
+
+		console.log(`\x1b[32m✔\x1b[0m cssdb successfully published ${ features.length } features.`);
+	} catch (error) {
+		console.log(`\x1b[31m✖\x1b[0m cssdb failed to published a feature.\x1b[0m\n  → ${ error }`);
+	}
+})();
 
 // marked heading renderer
 markedOptions.renderer.heading = (text, level) => {
@@ -126,9 +127,8 @@ function formatFeature (feature) {
 function trimCaniuseFeatures (feature) {
 	const stats = Object(feature.stats);
 
-	const reducedStats = Object.keys(stats).reduce(
-		(reducedStats, id) => {
-			// ...
+	feature.stats = Object.keys( stats ).reduce(
+		( reducedStats, id ) => {
 			const versions = Object(stats[id]);
 
 			const reducedVersions = Object.keys(versions).reduce(
@@ -156,8 +156,6 @@ function trimCaniuseFeatures (feature) {
 		},
 		null
 	);
-
-	feature.stats = reducedStats;
 
 	return feature;
 }

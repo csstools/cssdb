@@ -31,7 +31,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-pseudo-class-any-link"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-pseudo-class-any-link"
       }
     ]
   },
@@ -48,11 +48,11 @@
     "polyfills": [
       {
         "type": "JavaScript Library",
-        "link": "https://github.com/csstools/css-blank-pseudo"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-blank-pseudo"
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/css-blank-pseudo"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-blank-pseudo"
       }
     ]
   },
@@ -111,6 +111,9 @@
     "specification": "https://drafts.csswg.org/css-color-5/#funcdef-color-contrast",
     "stage": 1,
     "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
+    },
     "polyfills": []
   },
   {
@@ -123,7 +126,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-color-functional-notation"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ]
   },
@@ -132,7 +135,7 @@
     "title": "`color-mix()` Function",
     "description": "A function for mixing colors",
     "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
-    "stage": 1,
+    "stage": -1,
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": []
   },
@@ -146,7 +149,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-color-mod-function"
+        "link": "https://github.com/csstools/postcss-color-mod-function"
       }
     ]
   },
@@ -155,8 +158,12 @@
     "title": "Container Queries",
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://drafts.csswg.org/css-contain-3/#container-queries",
-    "stage": -1,
+    "stage": 0,
+    "caniuse": "css-container-queries",
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -192,7 +199,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-custom-properties"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-properties"
       }
     ]
   },
@@ -239,7 +246,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-dir-pseudo-class"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
     ]
   },
@@ -255,13 +262,22 @@
       },
       "chrome": {
         "71": "y"
+      },
+      "edge": {
+        "79": "y"
+      },
+      "ios_saf": {
+        "12.2": "y"
+      },
+      "opera": {
+        "58": "y"
       }
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-double-position-gradients"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-double-position-gradients"
       }
     ]
   },
@@ -271,20 +287,7 @@
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
-    "caniuse-compat": {
-      "and_chr": {
-        "69": "y"
-      },
-      "chrome": {
-        "69": "y"
-      },
-      "ios_saf": {
-        "11.2": "y"
-      },
-      "safari": {
-        "11.2": "y"
-      }
-    },
+    "caniuse": "css-env-function",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
@@ -292,7 +295,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-env-function"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-env-function"
       }
     ]
   },
@@ -331,7 +334,7 @@
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-focus-visible"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ]
   },
@@ -349,11 +352,11 @@
     "polyfills": [
       {
         "type": "JavaScript Library",
-        "link": "https://github.com/jonathantneal/focus-within"
+        "link": "https://github.com/jsxtools/focus-within"
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-focus-within"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-within"
       }
     ]
   },
@@ -364,6 +367,9 @@
     "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
     "stage": 1,
     "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -417,7 +423,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-gap-properties"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gap-properties"
       }
     ]
   },
@@ -426,7 +432,7 @@
     "title": "`gray()` Function",
     "description": "A function for specifying fully desaturated colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-gray",
-    "stage": 2,
+    "stage": -1,
     "example": "p {\n  color: gray(50);\n}",
     "polyfills": [
       {
@@ -467,11 +473,11 @@
     "polyfills": [
       {
         "type": "JavaScript Library",
-        "link": "https://github.com/csstools/css-has-pseudo"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/css-has-pseudo"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ]
   },
@@ -489,7 +495,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-hex-alpha"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-hex-alpha"
       }
     ]
   },
@@ -500,6 +506,9 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -514,6 +523,9 @@
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
     "example": "p {\n  text-indent: 2ic;\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -535,7 +547,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-image-set-function"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ]
   },
@@ -557,6 +569,7 @@
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
     "stage": 2,
+    "caniuse": "css-matches-pseudo",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
@@ -569,10 +582,14 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "example": "body {\n  color: lab(240 50 20);\n}",
+    "caniuse": "css-lch-lab",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-lab-function"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ]
   },
@@ -583,10 +600,14 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "example": "body {\n  color: lch(53 105 40);\n}",
+    "caniuse": "css-lch-lab",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-lab-function"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ]
   },
@@ -604,7 +625,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-logical-properties"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ]
   },
@@ -616,6 +637,9 @@
     "stage": -1,
     "caniuse": "css-matches-pseudo",
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -647,10 +671,11 @@
     "specification": "https://drafts.csswg.org/css-nesting-1/",
     "stage": 1,
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
+    "caniuse": "css-nesting",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-nesting"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting"
       }
     ]
   },
@@ -700,7 +725,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-overflow-shorthand"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-overflow-shorthand"
       }
     ]
   },
@@ -755,7 +780,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/jonathantneal/postcss-place"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-place"
       }
     ]
   },
@@ -775,14 +800,17 @@
       }
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+    },
     "polyfills": [
       {
         "type": "JavaScript Library",
-        "link": "https://github.com/csstools/css-prefers-color-scheme"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-prefers-color-scheme"
       },
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/css-prefers-color-scheme"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-prefers-color-scheme"
       }
     ]
   },
@@ -824,7 +852,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-rebeccapurple"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-rebeccapurple"
       }
     ]
   },
@@ -860,6 +888,9 @@
     "description": "A pseudo-class for matching elements in a selector list without contributing specificity",
     "specification": "https://drafts.csswg.org/selectors-4/#where-pseudo",
     "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
+    },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}"
   }
 ]
