@@ -168,6 +168,10 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/jsxtools/cqfill"
+      },
+      {
+        "type": "JavaScript Library",
+        "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ]
   },
@@ -791,14 +795,6 @@
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
     "stage": 1,
     "caniuse": "prefers-color-scheme",
-    "caniuse-compat": {
-      "ios_saf": {
-        "12.1": "y"
-      },
-      "safari": {
-        "12.1": "y"
-      }
-    },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
