@@ -6,5 +6,7 @@ export default {
   buildOptions: {
     site: 'https://cssdb.org'
   },
-  renderers: [],
+  renderers: [
+    '@astrojs/renderer-react'
+  ],
 };
