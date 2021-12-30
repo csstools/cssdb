@@ -1,6 +1,9 @@
-const path = require('path');
-const fs = require('fs/promises');
-const fetch = require('node-fetch');
+import path from 'path';
+import fs from 'fs/promises';
+import fetch from 'node-fetch';
+import { URL } from 'url';
+
+const __dirname = new URL('.', import.meta.url).pathname;
 
 (async () => {
 	const features = await fs.readFile('cssdb.json', 'utf8').then(JSON.parse);

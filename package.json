@@ -15,7 +15,7 @@
     "start": "astro dev",
     "prestart": "npm run create-badges",
     "prebuild": "npm run create-badges",
-    "create-badges": "node tasks/write-badges.js",
+    "create-badges": "node tasks/write-badges.mjs",
     "test": "npm run test:css && npm run test:json",
     "test:css": "stylelint src/styles/style.css",
     "test:json": "node tasks/test"
