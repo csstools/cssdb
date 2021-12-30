@@ -60,7 +60,7 @@ const isBundled = presetEnvPlugins.includes(feature.id);
 ---
 <section class="cssdb-feature" id={feature.id}>
 	<header class="cssdb-feature-header">
-		<img class="cssdb-feature-stage" src={imageName} alt="" width="62" height="62" role="presentation">
+		<img class="cssdb-feature-stage" src={imageName} alt="" width="62" height="62" role="presentation" loading="lazy">
 		<div class="cssdb-feature-header-content">
 			<h2 class="cssdb-feature-heading">
 				<a href={`#${feature.id}`}>{simpleTitle}</a>
