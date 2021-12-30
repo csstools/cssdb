@@ -1,0 +1,21 @@
+---
+const { polyfill, title } = Astro.props;
+const repoUrl = polyfill.link.includes('csstools/postcss-plugins') ? 'https://github.com/csstools/postcss-plugins' : polyfill.link;
+const starImage = `https://img.shields.io/github/stars/${polyfill.link.split('/').slice(3,5).join('/')}.svg?style=social`;
+const isGithub = repoUrl.includes('github.com');
+---
+
+<li class="cssdb-feature-polyfill-item">
+	<a class="cssdb-feature-polyfill-link" href={polyfill.link}>
+		{polyfill.type}
+		<span class="sr-only">for {title}</span>
+	</a>
+	{isGithub && (
+		<span class="cssdb-feature-polyfill-stars-minimal">
+			<a href={`${repoUrl}/stargazers`}>
+				<img alt="GitHub stars"
+						 src={starImage}>
+			</a>
+		</span>
+	)}
+</li>

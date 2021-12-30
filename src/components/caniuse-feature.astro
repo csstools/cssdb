@@ -1,0 +1,28 @@
+---
+import { trimCaniuseFeatures } from '../../utils/trim-caniuse-features.js';
+const { feature, title } = Astro.props;
+const caniuse = trimCaniuseFeatures(feature);
+
+const link = `https://caniuse.com/${feature.caniuse ? `${feature.caniuse}` : ''}`;
+---
+{ caniuse && caniuse.stats && (
+<a
+		class="cssdb-feature-caniuse"
+		href={link}
+		target="_blank"
+		rel="noreferrer"
+		aria-label={`can i use browser support for ${title}`}
+>
+	{Object.keys(caniuse.stats).map(id => (
+		<span class={`cssdb-browser cssdb-browser--${id}`} aria-hidden="true">
+			{Object.keys(caniuse.stats[id]).filter(
+				version => caniuse.stats[id][version].indexOf('y') === 0
+			).slice(0, 1).map(
+				version => version.replace(/(\.0)?(-.+)?$/, '')
+			).map(
+				version => <span class="cssdb-browser-version">{version}</span>
+			)}
+		</span>
+	))}
+</a>
+) }

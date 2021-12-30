@@ -1,0 +1,14 @@
+---
+import FeaturePolyfill from './feature-polyfill.astro';
+const polyfills = Astro.props.polyfills && Astro.props.polyfills.length ? Astro.props.polyfills : [];
+---
+
+{polyfills.length ? (
+<div class="cssdb-feature-polyfills">
+	Use with a
+
+	<ul class="cssdb-feature-polyfill-list">{polyfills.map(polyfill => (
+		<FeaturePolyfill polyfill={polyfill} title={Astro.props.title} />
+	))}</ul>
+</div>
+) : ''}

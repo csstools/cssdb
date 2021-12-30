@@ -12,27 +12,26 @@
     "cssdb.json"
   ],
   "scripts": {
-    "start": "node tasks/start",
-    "start:nobadges": "node tasks/start --no-badges",
+    "start": "astro dev",
+    "prestart": "npm run create-badges",
+    "prebuild": "npm run create-badges",
+    "create-badges": "node tasks/write-badges.js",
     "test": "npm run test:css && npm run test:json",
-    "test:css": "stylelint tasks/style-template.css",
-    "test:json": "node tasks/test",
-    "watch": "http-server gh-pages"
+    "test:css": "stylelint src/styles/style.css",
+    "test:json": "node tasks/test"
   },
   "devDependencies": {
     "browserslist": "^4.19.1",
     "caniuse-lite": "^1.0.30001292",
-    "cssnano": "^5.0.14",
-    "eslit": "^6.0.0",
     "fse": "^4.0.1",
-    "http-server": "^0.11.1",
-    "marked": "^0.6.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.0",
     "postcss": "^8.4.5",
     "postcss-preset-env": "^7.1.0",
     "pre-commit": "^1.2.2",
-    "stylelint": "^10.0.1",
-    "stylelint-config-dev": "^4.0.0"
+    "stylelint": "^14.2.0",
+    "stylelint-config-dev": "^4.0.0",
+    "astro": "^0.22.1",
+    "@astrojs/renderer-react": "^0.4.0"
   },
   "stylelint": {
     "extends": "stylelint-config-dev"
