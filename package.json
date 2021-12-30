@@ -21,6 +21,8 @@
     "test:json": "node tasks/test"
   },
   "devDependencies": {
+    "@astrojs/renderer-react": "^0.4.0",
+    "astro": "^0.22.1",
     "browserslist": "^4.19.1",
     "caniuse-lite": "^1.0.30001292",
     "fse": "^4.0.1",
@@ -29,12 +31,24 @@
     "postcss-preset-env": "^7.1.0",
     "pre-commit": "^1.2.2",
     "stylelint": "^14.2.0",
-    "stylelint-config-dev": "^4.0.0",
-    "astro": "^0.22.1",
-    "@astrojs/renderer-react": "^0.4.0"
+    "stylelint-config-standard": "^24.0.0"
   },
   "stylelint": {
-    "extends": "stylelint-config-dev"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": "tab",
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "font-smoothing"
+          ]
+        }
+      ],
+      "selector-class-pattern": null,
+      "no-descending-specificity": null,
+      "number-leading-zero": "never"
+    }
   },
   "keywords": [
     "css",

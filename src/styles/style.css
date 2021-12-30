@@ -45,7 +45,24 @@
 	font-style: normal;
 	font-weight: 600;
 	src: local("Source Code Pro Semibold"), local("SourceCodePro-Semibold"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cq7Gq0DA.woff2") format("woff2"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cs.woff") format("woff");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range:
+		U+0000-00FF,
+		U+0131,
+		U+0152-0153,
+		U+02BB-02BC,
+		U+02C6,
+		U+02DA,
+		U+02DC,
+		U+2000-206F,
+		U+2074,
+		U+20AC,
+		U+2122,
+		U+2191,
+		U+2193,
+		U+2212,
+		U+2215,
+		U+FEFF,
+		U+FFFD;
 }
 
 /* Document
@@ -74,7 +91,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	letter-spacing: -.00125em;
+	letter-spacing: -.0013em;
 	padding: 0 calc((100% - 960px) / 2);
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
@@ -95,7 +112,7 @@ body {
 }
 
 a {
-	color: #0077dd;
+	color: #07d;
 	text-decoration: none;
 
 	@media (prefers-color-scheme: dark) {
@@ -103,11 +120,15 @@ a {
 	}
 }
 
-aside, header, main, section {
+aside,
+header,
+main,
+section {
 	display: block;
 }
 
-code, pre {
+code,
+pre {
 	font-family: var(--code-font);
 	font-size: 100%;
 	font-weight: 600;
@@ -265,7 +286,8 @@ img {
 	}
 }
 
-.cssdb-feature-mdn-badge, .cssdb-feature-specification-badge {
+.cssdb-feature-mdn-badge,
+.cssdb-feature-specification-badge {
 	height: 20px;
 	vertical-align: top;
 }
@@ -355,7 +377,7 @@ img {
 }
 
 .css-property {
-	color: #0055aa;
+	color: #05a;
 
 	@media (prefers-color-scheme: dark) {
 		color: #498ef5;
@@ -378,8 +400,9 @@ img {
 	}
 }
 
-.css-value, .css-atrule-params {
-	color: #000000;
+.css-value,
+.css-atrule-params {
+	color: #000;
 
 	@media (prefers-color-scheme: dark) {
 		color: #e8e8e8;
@@ -455,7 +478,7 @@ img {
 .cssdb-browser--and_qq::after,
 .cssdb-browser--kaios::after,
 .cssdb-browser--and_uc::after {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #8bc34a;
 	content: url("/images/browsers/and.svg");
@@ -470,7 +493,7 @@ img {
 	z-index: 1;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #111111;
+		background-color: #111;
 	}
 }
 
@@ -478,7 +501,7 @@ img {
 .cssdb-browser--ios_saf::after,
 .cssdb-browser--op_mini::after,
 .cssdb-browser--op_mob::after {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #474748;
 	content: url("/images/browsers/mob.svg");
@@ -493,7 +516,7 @@ img {
 	z-index: 1;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #111111;
+		background-color: #111;
 		content: url("/images/browsers/mob@dark.svg");
 	}
 }
@@ -715,7 +738,7 @@ img {
 	& > label::before {
 		background-color: #f2f2f2;
 		border-radius: 1.75em;
-		box-shadow: 0 0 0 2px #dddddd;
+		box-shadow: 0 0 0 2px #ddd;
 		content: "";
 		display: block;
 		height: 1.75em;
@@ -724,30 +747,30 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			background-color: #181818;
-			box-shadow: 0 0 0 2px #333333;
+			box-shadow: 0 0 0 2px #333;
 		}
 	}
 
 	& > input:nth-child(1):focus ~ label::before {
-		box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+		box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333;
 	}
 
 	& > input:nth-child(2):focus ~ label::before {
-		box-shadow: 0 0 3px 0 #3bb5fc, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 3px 0 #3bb5fc, 0 0 0 2px #ddd;
 
 		@media (prefers-color-scheme: dark) {
-			box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+			box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333;
 		}
 	}
 
 	& > input:nth-child(3):focus ~ label::before {
-		box-shadow: 0 0 5px 2px #f0fc3b, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 5px 2px #f0fc3b, 0 0 0 2px #ddd;
 	}
 
 	& > label::after {
-		background-color: #ffffff;
+		background-color: #fff;
 		border-radius: 2.5em;
-		box-shadow: 0 0 0 2px #dddddd;
+		box-shadow: 0 0 0 2px #ddd;
 		content: "";
 		height: 1.75em;
 		inset-block-start: 0;
@@ -757,12 +780,12 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			background-color: #181818;
-			box-shadow: 0 0 0 2px #444444;
+			box-shadow: 0 0 0 2px #444;
 		}
 	}
 
 	& > input:focus ~ label::after {
-		box-shadow: 0 0 5px 2px #3b99fc, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 5px 2px #3b99fc, 0 0 0 2px #ddd;
 	}
 
 	& > input:nth-child(1):checked ~ label::after {

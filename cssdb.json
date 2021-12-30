@@ -110,10 +110,10 @@
     "description": "A function for choosing the color that contrasts the most.",
     "specification": "https://drafts.csswg.org/css-color-5/#funcdef-color-contrast",
     "stage": 1,
-    "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
     },
+    "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "polyfills": []
   },
   {
@@ -160,10 +160,10 @@
     "specification": "https://drafts.csswg.org/css-contain-3/#container-queries",
     "stage": 0,
     "caniuse": "css-container-queries",
-    "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
     },
+    "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -370,10 +370,10 @@
     "description": "A syntax for specifying font format as a keyword in `@font-face` rule’s `format()` function",
     "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
     "stage": 1,
-    "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
     },
+    "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -509,10 +509,10 @@
     "description": "A function for specifying colors by hue and then a degree of whiteness and blackness to mix into it",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
-    "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
     },
+    "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -526,10 +526,10 @@
     "description": "Equal to the used advance measure of the \"水\" (CJK water ideograph, U+6C34) glyph found in the font used to render it",
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
-    "example": "p {\n  text-indent: 2ic;\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
     },
+    "example": "p {\n  text-indent: 2ic;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -585,11 +585,11 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
-    "example": "body {\n  color: lab(240 50 20);\n}",
     "caniuse": "css-lch-lab",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
     },
+    "example": "body {\n  color: lab(240 50 20);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -603,11 +603,11 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space with chroma and hue",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
-    "example": "body {\n  color: lch(53 105 40);\n}",
     "caniuse": "css-lch-lab",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
     },
+    "example": "body {\n  color: lch(53 105 40);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -640,10 +640,10 @@
     "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
     "stage": -1,
     "caniuse": "css-matches-pseudo",
-    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
+    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -674,8 +674,8 @@
     "description": "A syntax for nesting relative rules within rules",
     "specification": "https://drafts.csswg.org/css-nesting-1/",
     "stage": 1,
-    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "caniuse": "css-nesting",
+    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -795,10 +795,10 @@
     "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
     "stage": 1,
     "caniuse": "prefers-color-scheme",
-    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
+    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
