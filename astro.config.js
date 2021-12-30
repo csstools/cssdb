@@ -5,8 +5,5 @@ export default {
   // public: './public',   // A folder of static files Astro will copy to the root. Useful for favicons, images, and other files that don’t need processing.
   buildOptions: {
     site: 'https://cssdb.org'
-  },
-  renderers: [
-    '@astrojs/renderer-react'
-  ],
+  }
 };
