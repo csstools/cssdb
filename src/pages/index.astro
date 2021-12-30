@@ -3,6 +3,7 @@ import Header from '../components/header.astro';
 import Features from '../components/features.astro';
 import Stages from '../components/stages.astro';
 import Footer from '../components/footer.astro';
+import ModeToggler from '../components/mode-toggler.astro';
 ---
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -26,12 +27,10 @@ import Footer from '../components/footer.astro';
 	<link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/style.css')}>
 </head>
 <body>
-	<script>
-		Astro.privateRenderMarkdownDoNotUse;
-	</script>
 	<Header />
 	<Features />
 	<Stages />
 	<Footer />
+	<ModeToggler />
 </body>
 </html>

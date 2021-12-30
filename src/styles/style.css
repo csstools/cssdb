@@ -181,6 +181,10 @@ img {
 			display: inline-block;
 			vertical-align: top;
 		}
+
+		& > script {
+			display: none;
+		}
 	}
 }
 
