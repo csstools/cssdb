@@ -1,8 +1,7 @@
 ---
-import content from '../../STAGES.md?raw';
-import { Markdown } from 'astro/components';
+import content from '../../STAGES.md?raw'
+import { Markdown } from 'astro/components'
 ---
-
 <aside class="cssdb-process">
-	<Markdown content={content}>
+	<Markdown content={content.replace(/https\:\/\/cssdb\.org/g, '/images/stages')}>
 </aside>

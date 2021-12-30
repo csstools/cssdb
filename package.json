@@ -1,6 +1,7 @@
 {
   "name": "cssdb",
   "version": "5.0.0",
+  "type": "module",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -15,7 +16,7 @@
     "start": "astro dev",
     "prestart": "npm run create-badges",
     "prebuild": "npm run create-badges",
-    "create-badges": "node tasks/write-badges.mjs",
+    "create-badges": "node tasks/write-badges.js",
     "test": "npm run test:css && npm run test:json",
     "test:css": "stylelint src/styles/style.css",
     "test:json": "node tasks/test"
