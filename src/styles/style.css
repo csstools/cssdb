@@ -239,6 +239,7 @@ img {
 
 .cssdb-feature-specification {
 	display: flex;
+	flex-wrap: wrap;
 	font-size: 87.5%;
 	font-weight: 700;
 	margin-block: 0 -10.5px;
@@ -246,8 +247,8 @@ img {
 	position: relative;
 	text-transform: uppercase;
 
-	& > :not(:first-child) {
-		margin-inline-start: .25em;
+	& > :not(:last-child) {
+		margin-inline-end: .25em;
 	}
 }
 
@@ -428,8 +429,8 @@ img {
 		display: none;
 	}
 
-	& + .cssdb-browser {
-		margin-inline-start: 6px;
+	& + .cssdb-browser:not(:last-child) {
+		margin-inline-end: 6px;
 	}
 
 	&::before {
