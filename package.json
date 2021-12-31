@@ -25,6 +25,7 @@
     "start": "astro dev",
     "prestart": "npm run create-badges",
     "prebuild": "npm run create-badges",
+    "build": "astro build",
     "prepublishOnly": "node tasks/esm-converter.mjs",
     "create-badges": "node tasks/write-badges.js",
     "test": "npm run test:css && npm run test:json",

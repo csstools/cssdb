@@ -1,4 +1,5 @@
 gh-pages
 node_modules
+dist
 public/images/badges
 cssdb.mjs
