@@ -116,7 +116,7 @@ beginner-friendly instructions.
 
 ### Why are we doing this?
 
-The CSSWG doesn’t follow the [TC39 process]. How they operate [in theory](https://www.w3.org/Style/CSS/specs.en.html) versus [in real life](http://fantasai.inkedblade.net/weblog/2011/inside-csswg/) is unclear, and
+The CSSWG doesn’t follow the [TC39 process]. How they operate [in theory](https://www.w3.org/Style/CSS/specs.en.html) versus [in real life](https://fantasai.inkedblade.net/weblog/2011/inside-csswg/) is unclear, and
 browsers
 [don’t necessarily follow their process anyway](https://www.chromestatus.com/feature/5753701012602880),
 so we have to discern what’s really going on ourselves. If we didn’t, we

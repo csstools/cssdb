@@ -30,6 +30,6 @@ is desired.
 [cli-url]: https://github.com/csstools/cssdb/actions/workflows/test.yml
 [cssdb]: https://github.com/csstools/cssdb
 [CSSWG]: https://wiki.csswg.org/spec
-[inside view of the CSSWG]: http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process
+[inside view of the CSSWG]: https://fantasai.inkedblade.net/weblog/2011/inside-csswg/process
 [npm-img]: https://img.shields.io/npm/v/cssdb.svg
 [npm-url]: https://www.npmjs.com/package/cssdb
