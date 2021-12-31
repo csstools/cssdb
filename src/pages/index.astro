@@ -1,0 +1,36 @@
+---
+import Header from '../components/header.astro';
+import Features from '../components/features.astro';
+import Stages from '../components/stages.astro';
+import Footer from '../components/footer.astro';
+import ModeToggler from '../components/mode-toggler.astro';
+---
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>cssdb - CSS Database</title>
+	<meta name="description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://d32ekf2zat2q3c.cloudfront.net" crossorigin />
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@jon_neal">
+	<meta property="og:title" content="CSS Database">
+	<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+	<meta property="og:image" content="https://cssdb.org/cssdb.jpg">
+	<meta property="og:site_name" content="cssdb">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://cssdb.org/">
+	<link href="/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/style.css')}>
+</head>
+<body>
+	<Header />
+	<Features />
+	<Stages />
+	<Footer />
+	<ModeToggler />
+</body>
+</html>

@@ -1,0 +1,22 @@
+name: test
+on:
+  push:
+
+concurrency:
+  group: branch-node-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [12, 14, 16]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - run: npm ci --ignore-scripts
+      - run: npm run test --if-present

@@ -45,7 +45,24 @@
 	font-style: normal;
 	font-weight: 600;
 	src: local("Source Code Pro Semibold"), local("SourceCodePro-Semibold"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cq7Gq0DA.woff2") format("woff2"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cs.woff") format("woff");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range:
+		U+0000-00FF,
+		U+0131,
+		U+0152-0153,
+		U+02BB-02BC,
+		U+02C6,
+		U+02DA,
+		U+02DC,
+		U+2000-206F,
+		U+2074,
+		U+20AC,
+		U+2122,
+		U+2191,
+		U+2193,
+		U+2212,
+		U+2215,
+		U+FEFF,
+		U+FFFD;
 }
 
 /* Document
@@ -54,6 +71,12 @@
 html {
 	--main-font: "Avenir Next", sans-serif;
 	--code-font: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Consolas", "Lucida Console", monospace, monospace;
+
+	scroll-behavior: smooth;
+
+	@media screen and (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
 }
 
 *,
@@ -68,7 +91,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	letter-spacing: -.00125em;
+	letter-spacing: -.0013em;
 	padding: 0 calc((100% - 960px) / 2);
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
@@ -89,7 +112,7 @@ body {
 }
 
 a {
-	color: #0077dd;
+	color: #07d;
 	text-decoration: none;
 
 	@media (prefers-color-scheme: dark) {
@@ -97,11 +120,15 @@ a {
 	}
 }
 
-aside, header, main, section {
+aside,
+header,
+main,
+section {
 	display: block;
 }
 
-code, pre {
+code,
+pre {
 	font-family: var(--code-font);
 	font-size: 100%;
 	font-weight: 600;
@@ -129,6 +156,19 @@ img {
 	border: 0;
 }
 
+.sr-only {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 /* Header
 /* ========================================================================== */
 
@@ -140,6 +180,10 @@ img {
 		& > * {
 			display: inline-block;
 			vertical-align: top;
+		}
+
+		& > script {
+			display: none;
 		}
 	}
 }
@@ -199,7 +243,8 @@ img {
 .cssdb-feature-stage {
 	flex-shrink: 0;
 	height: 62px;
-	margin-end: 20px 15px;
+	margin-block-end: 20px;
+	margin-inline-end: 15px;
 	width: 62px;
 }
 
@@ -219,6 +264,7 @@ img {
 
 .cssdb-feature-specification {
 	display: flex;
+	flex-wrap: wrap;
 	font-size: 87.5%;
 	font-weight: 700;
 	margin-block: 0 -10.5px;
@@ -226,8 +272,8 @@ img {
 	position: relative;
 	text-transform: uppercase;
 
-	& > :not(:first-child) {
-		margin-inline-start: .25em;
+	& > :not(:last-child) {
+		margin-inline-end: .25em;
 	}
 }
 
@@ -244,7 +290,8 @@ img {
 	}
 }
 
-.cssdb-feature-mdn-badge, .cssdb-feature-specification-badge {
+.cssdb-feature-mdn-badge,
+.cssdb-feature-specification-badge {
 	height: 20px;
 	vertical-align: top;
 }
@@ -334,7 +381,7 @@ img {
 }
 
 .css-property {
-	color: #0055aa;
+	color: #05a;
 
 	@media (prefers-color-scheme: dark) {
 		color: #498ef5;
@@ -357,8 +404,9 @@ img {
 	}
 }
 
-.css-value, .css-atrule-params {
-	color: #000000;
+.css-value,
+.css-atrule-params {
+	color: #000;
 
 	@media (prefers-color-scheme: dark) {
 		color: #e8e8e8;
@@ -408,8 +456,8 @@ img {
 		display: none;
 	}
 
-	& + .cssdb-browser {
-		margin-inline-start: 6px;
+	& + .cssdb-browser:not(:last-child) {
+		margin-inline-end: 6px;
 	}
 
 	&::before {
@@ -432,14 +480,16 @@ img {
 .cssdb-browser--and_chr::after,
 .cssdb-browser--and_ff::after,
 .cssdb-browser--and_qq::after,
+.cssdb-browser--kaios::after,
 .cssdb-browser--and_uc::after {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #8bc34a;
-	content: url("browsers/and.svg");
+	content: url("/images/browsers/and.svg");
 	display: block;
 	height: 12px;
-	inset-end: 14px -2px;
+	inset-block-end: 14px;
+	inset-inline-end: -2px;
 	line-height: 0;
 	padding: 2px;
 	position: absolute;
@@ -447,7 +497,7 @@ img {
 	z-index: 1;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #111111;
+		background-color: #111;
 	}
 }
 
@@ -455,13 +505,14 @@ img {
 .cssdb-browser--ios_saf::after,
 .cssdb-browser--op_mini::after,
 .cssdb-browser--op_mob::after {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #474748;
-	content: url("browsers/mob.svg");
+	content: url("/images/browsers/mob.svg");
 	display: block;
 	height: 12px;
-	inset-end: 14px -2px;
+	inset-block-end: 14px;
+	inset-inline-end: -2px;
 	line-height: 0;
 	padding: 2px;
 	position: absolute;
@@ -469,78 +520,79 @@ img {
 	z-index: 1;
 
 	@media (prefers-color-scheme: dark) {
-		background-color: #111111;
-		content: url("browsers/mob@dark.svg");
+		background-color: #111;
+		content: url("/images/browsers/mob@dark.svg");
 	}
 }
 
-.cssdb-browser--and_uc::before {
-	content: url("browsers/and_uc.svg");
+.cssdb-browser--and_uc::before,
+.cssdb-browser--kaios::before {
+	content: url("/images/browsers/and_uc.svg");
 }
 
 .cssdb-browser--and_qq::before {
-	content: url("browsers/and_qq.svg");
+	content: url("/images/browsers/and_qq.svg");
 }
 
 .cssdb-browser--android::before {
-	content: url("browsers/android.svg");
+	content: url("/images/browsers/android.svg");
 }
 
 .cssdb-browser--baidu::before {
-	content: url("browsers/baidu.svg");
+	content: url("/images/browsers/baidu.svg");
 
 	@media (prefers-color-scheme: dark) {
-		content: url("browsers/baidu@dark.svg");
+		content: url("/images/browsers/baidu@dark.svg");
 	}
 }
 
 .cssdb-browser--bb::before {
-	content: url("browsers/bb.svg");
+	content: url("/images/browsers/bb.svg");
 
 	@media (prefers-color-scheme: dark) {
-		content: url("browsers/bb@dark.svg");
+		content: url("/images/browsers/bb@dark.svg");
 	}
 }
 
 .cssdb-browser--chrome::before,
 .cssdb-browser--and_chr::before {
-	content: url("browsers/chrome.svg");
+	content: url("/images/browsers/chrome.svg");
 }
 
 .cssdb-browser--edge::before {
-	content: url("browsers/edge.svg");
+	content: url("/images/browsers/edge.svg");
 }
 
 .cssdb-browser--firefox::before,
 .cssdb-browser--and_ff::before {
-	content: url("browsers/firefox.svg");
+	content: url("/images/browsers/firefox.svg");
 }
 
 .cssdb-browser--ie::before,
 .cssdb-browser--ie_mob::before {
-	content: url("browsers/ie.svg");
+	content: url("/images/browsers/ie.svg");
 }
 
 .cssdb-browser--ios_saf::before {
-	content: url("browsers/ios_saf.svg");
+	content: url("/images/browsers/ios_saf.svg");
 
 	@media (prefers-color-scheme: dark) {
-		content: url("browsers/ios_saf@dark.svg");
+		content: url("/images/browsers/ios_saf@dark.svg");
 	}
 }
 
 .cssdb-browser--opera::before,
 .cssdb-browser--op_mini::before,
 .cssdb-browser--op_mob::before {
-	content: url("browsers/opera.svg");
+	content: url("/images/browsers/opera.svg");
 }
 
 .cssdb-browser--safari::before {
-	content: url("browsers/safari.svg");
+	content: url("/images/browsers/safari.svg");
 }
 
 .cssdb-browser--samsung::before {
-	content: url("browsers/samsung.svg");
+	content: url("/images/browsers/samsung.svg");
 }
 
 /* Process
@@ -630,7 +682,7 @@ img {
 	}
 
 	& img[align="left"] {
-		margin-end: 20px;
+		margin-inline-end: 20px;
 	}
 }
 
@@ -690,7 +742,7 @@ img {
 	& > label::before {
 		background-color: #f2f2f2;
 		border-radius: 1.75em;
-		box-shadow: 0 0 0 2px #dddddd;
+		box-shadow: 0 0 0 2px #ddd;
 		content: "";
 		display: block;
 		height: 1.75em;
@@ -699,30 +751,30 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			background-color: #181818;
-			box-shadow: 0 0 0 2px #333333;
+			box-shadow: 0 0 0 2px #333;
 		}
 	}
 
 	& > input:nth-child(1):focus ~ label::before {
-		box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+		box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333;
 	}
 
 	& > input:nth-child(2):focus ~ label::before {
-		box-shadow: 0 0 3px 0 #3bb5fc, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 3px 0 #3bb5fc, 0 0 0 2px #ddd;
 
 		@media (prefers-color-scheme: dark) {
-			box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333333;
+			box-shadow: 0 0 5px 0 #5e9ed7, 0 0 0 2px #333;
 		}
 	}
 
 	& > input:nth-child(3):focus ~ label::before {
-		box-shadow: 0 0 5px 2px #f0fc3b, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 5px 2px #f0fc3b, 0 0 0 2px #ddd;
 	}
 
 	& > label::after {
-		background-color: #ffffff;
+		background-color: #fff;
 		border-radius: 2.5em;
-		box-shadow: 0 0 0 2px #dddddd;
+		box-shadow: 0 0 0 2px #ddd;
 		content: "";
 		height: 1.75em;
 		inset-block-start: 0;
@@ -732,12 +784,12 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			background-color: #181818;
-			box-shadow: 0 0 0 2px #444444;
+			box-shadow: 0 0 0 2px #444;
 		}
 	}
 
 	& > input:focus ~ label::after {
-		box-shadow: 0 0 5px 2px #3b99fc, 0 0 0 2px #dddddd;
+		box-shadow: 0 0 5px 2px #3b99fc, 0 0 0 2px #ddd;
 	}
 
 	& > input:nth-child(1):checked ~ label::after {

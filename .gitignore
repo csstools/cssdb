@@ -1,7 +1,5 @@
 gh-pages
 node_modules
-.*
-!.editorconfig
-!.gitignore
-!.travis.yml
-*.log*
+dist
+public/images/badges
+cssdb.mjs

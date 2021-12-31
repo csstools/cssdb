@@ -26,8 +26,8 @@ developed outside the [CSSWG] have appeared in browsers behind flags. This is
 too ambiguous for the web development community, and a more accountable process
 is desired.
 
-[cli-img]: https://img.shields.io/travis/csstools/cssdb.svg
-[cli-url]: https://travis-ci.org/csstools/cssdb
+[cli-img]: https://github.com/csstools/cssdb/actions/workflows/test.yml/badge.svg
+[cli-url]: https://github.com/csstools/cssdb/actions/workflows/test.yml
 [cssdb]: https://github.com/csstools/cssdb
 [CSSWG]: https://wiki.csswg.org/spec
 [inside view of the CSSWG]: http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process

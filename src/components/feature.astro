@@ -1,0 +1,136 @@
+---
+import FeaturePolyfills from './feature-polyfills.astro';
+import CaniuseFeature from './caniuse-feature.astro';
+import { parseExample }  from '../../utils/feature-example.js';
+
+const { feature } = Astro.props;
+const imageName = `/images/stages/stage-${feature.stage}.svg`;
+const badge = `/images/badges/${feature.id}.svg`;
+
+const [title, description] = await Promise.all([
+	Astro.privateRenderMarkdownDoNotUse(feature.title),
+	Astro.privateRenderMarkdownDoNotUse(feature.description),
+]);
+
+const simpleTitle = title.replace('<p>', '').replace('</p>', '');
+const cleanTitle = simpleTitle.replace(/<\/?[^>]+(>|$)/g, '');
+const simpleDescription = description.replace('<p>', '').replace('</p>', '');
+
+const mdnLogo = 'https://shields.io/badge/docs-black?logo=mozilla&style=flat-square';
+const presetEnvPlugins = [
+	'all-property',
+	'any-link-pseudo-class',
+	'blank-pseudo-class',
+	'break-properties',
+	'case-insensitive-attributes',
+	'color-functional-notation',
+	'custom-media-queries',
+	'custom-properties',
+	'custom-selectors',
+	'dir-pseudo-class',
+	'double-position-gradients',
+	'environment-variables',
+	'focus-visible-pseudo-class',
+	'focus-within-pseudo-class',
+	'font-variant-property',
+	'gap-properties',
+	'has-pseudo-class',
+	'hexadecimal-alpha-notation',
+	'image-set-function',
+	'lab-function',
+	'logical-properties-and-values',
+	'media-query-ranges',
+	'nesting-rules',
+	'not-pseudo-class',
+	'overflow-property',
+	'overflow-wrap-property',
+	'place-properties',
+	'prefers-color-scheme-query',
+	'rebeccapurple-color',
+	'system-ui-font-family',
+];
+const stages = [
+	'stage-0-aspirational',
+	'stage-1-experimental',
+	'stage-2-allowable',
+	'stage-3-embraced',
+	'stage-4-standardized',
+]
+const isBundled = presetEnvPlugins.includes(feature.id);
+---
+<section class="cssdb-feature" id={feature.id}>
+	<header class="cssdb-feature-header">
+		<img class="cssdb-feature-stage" src={imageName} alt="" width="62" height="62" role="presentation" loading="lazy">
+		<div class="cssdb-feature-header-content">
+			<h2 class="cssdb-feature-heading">
+				<a href={`#${feature.id}`}>{simpleTitle}</a>
+			</h2>
+			<p class="cssdb-feature-description">
+				{simpleDescription}
+			</p>
+		</div>
+	</header>
+	<div class="cssdb-feature-content">
+		<p class="cssdb-feature-specification">
+			<a
+					class="cssdb-feature-specification-link"
+					href={feature.specification}
+					aria-label={`Specification for ${cleanTitle}`}
+			>
+				Specification
+			</a>
+			{feature.docs?.mdn && (
+			<a
+					class="cssdb-feature-mdn-badge-link"
+					href={feature.docs.mdn}
+					aria-label={`Documentation for ${cleanTitle}`}
+					target="_blank"
+					rel="noreferrer"
+			>
+				<img
+						class="cssdb-feature-mdn-badge"
+						src={mdnLogo}
+						alt="Mozilla Developer Network Documentation"
+						loading="lazy"
+						decoding="async"
+						width="53"
+						height="20"
+				>
+			</a>
+			)}
+			<a class="cssdb-feature-specification-badge-link" href={`#${stages[feature.stage]}`}>
+				<img
+						class="cssdb-feature-specification-badge"
+						src={badge}
+						alt={`Stage ${feature.stage}`}
+						loading="lazy"
+						decoding="async"
+						width="94"
+						height="20"
+				/>
+			</a>
+			{isBundled && (
+			<a
+					class="cssdb-feature-mdn-badge-link"
+					href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env"
+					aria-label={`${cleanTitle} is bundled with PostCSS Preset Env`}
+					target="_blank"
+					rel="noreferrer"
+			>
+				<img
+						class="cssdb-feature-mdn-badge"
+						src="https://img.shields.io/badge/Bundled%20with-PostCSS%20Preset%20Env-brightgreen?style=flat-square"
+						alt=""
+						loading="lazy"
+						decoding="async"
+						width="200"
+						height="20"
+				>
+			</a>
+			)}
+		</p>
+		<pre class="cssdb-feature-example" dir="ltr">{ parseExample(feature.example) }</pre>
+		<CaniuseFeature feature={feature} title={cleanTitle} />
+		<FeaturePolyfills polyfills={feature.polyfills} title={cleanTitle} />
+	</div>
+</section>
