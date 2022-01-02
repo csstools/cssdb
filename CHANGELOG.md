@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 6.0.0
+
+- Exported CSSDB no longer exposes example or `caniuse-compat` (breaking)
+- Stage is now calculated from a mix of Spec status and Engine implementation (breaking)
+
 ### 5.0.0 (May 24, 2019)
 
 - Removed: Rejected `:matches()` psuedo-class (major)
