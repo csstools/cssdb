@@ -15,7 +15,7 @@ is desired.
 
 ### Stage 0: Aspirational
 
-<img src="https://cssdb.org/stage-0.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-0.svg" alt="" align="left" width="90" height="90">
 
 > “This is a silly idea.”
 
@@ -28,7 +28,7 @@ considered serious.
 
 ### Stage 1: Experimental
 
-<img src="https://cssdb.org/stage-1.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-1.svg" alt="" align="left" width="90" height="90">
 
 > “This idea might not be silly.”
 
@@ -41,7 +41,7 @@ tied to any particular solution.
 
 ### Stage 2: Allowable
 
-<img src="https://cssdb.org/stage-2.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-2.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is not silly.”
 
@@ -53,7 +53,7 @@ to a particular way of solving a problem.
 
 ### Stage 3: Embraced
 
-<img src="https://cssdb.org/stage-3.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-3.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is becoming part of the web.”
 
@@ -66,7 +66,7 @@ will likely become a standard.
 
 ### Stage 4: Standardized
 
-<img src="https://cssdb.org/stage-4.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-4.svg" alt="" align="left" width="90" height="90">
 
 > “This idea is part of the web.”
 
@@ -77,7 +77,7 @@ A **Recommendation** [championed] by the [W3C]. It should be implemented by all
 
 ### Rejected
 
-<img src="https://cssdb.org/stage-X.svg" alt="" align="left" width="90" height="90">
+<img src="https://cssdb.org/images/stages/stage-X.svg" alt="" align="left" width="90" height="90">
 
 > “I had no idea what I was doing.”
 
