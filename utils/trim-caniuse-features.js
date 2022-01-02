@@ -1,9 +1,9 @@
 import caniuse from 'caniuse-lite';
 
 export function trimCaniuseFeatures(feature) {
-	if (feature['caniuse-compat']) {
+	if (feature.caniuse_compat) {
 		return {
-			stats: feature['caniuse-compat']
+			stats: feature.caniuse_compat
 		};
 	}
 
