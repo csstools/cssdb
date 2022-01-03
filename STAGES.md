@@ -23,7 +23,7 @@ terms of vendor implementation and spec progress.
 > “This is a silly idea.”
 
 An **Unofficial Draft** or **Editor’s Draft** [championed] by a
-[W3C Working Group] Member or implemented by less than two [recognized browser vendors]. It should be considered highly unstable and subject to change. This feature should be considered highly unstable and subject to change.
+[W3C Working Group] Member or implemented by less than two [recognized browser vendors]. This feature should be considered highly unstable and subject to change.
 Polyfill authors and users should expect significant changes to their codebase as the specification evolves.
 
 ---
