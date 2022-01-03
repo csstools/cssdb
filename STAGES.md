@@ -13,9 +13,6 @@ features developed outside the [W3C] have appeared in browsers. This is too
 ambiguous for the web development community, and a more accountable process
 is desired.
 
-Our staging process tries to faithfully picture the feature's support both in 
-terms of vendor implementation and spec progress.
-
 ### Stage 0: Aspirational
 
 <img src="https://cssdb.org/images/stages/stage-0.svg" alt="" align="left" width="90" height="90">
@@ -23,8 +20,9 @@ terms of vendor implementation and spec progress.
 > “This is a silly idea.”
 
 An **Unofficial Draft** or **Editor’s Draft** [championed] by a
-[W3C Working Group] Member or implemented by less than two [recognized browser vendors]. This feature should be considered highly unstable and subject to change.
-Polyfill authors and users should expect significant changes to their codebase as the specification evolves.
+[W3C Working Group] Member. It should be considered highly unstable and subject
+to change. Stage 0 features are open to ideas and discussion, but may not be
+considered serious.
 
 ---
 
@@ -35,9 +33,9 @@ Polyfill authors and users should expect significant changes to their codebase a
 > “This idea might not be silly.”
 
 An **Editor’s Draft** or early **Working Draft** [championed] by a
-[W3C Working Group] or implemented by less than two browser engines. It should be considered highly unstable and subject to change. Stage 1 features are recognized as a real problem, but they may not be
-tied to any particular solution. This feature should be considered highly unstable and subject to change.
-Polyfill authors and users should expect significant changes to their codebase as the specification evolves.
+[W3C Working Group]. It should be considered highly unstable and subject to
+change. Stage 1 features are recognized as a real problem, but they may not be
+tied to any particular solution.
 
 ---
 
@@ -47,8 +45,9 @@ Polyfill authors and users should expect significant changes to their codebase a
 
 > “This idea is not silly.”
 
-A **Working Draft** [championed] by a [W3C Working Group] or implemented by at least two [recognized browser vendors]. It should be considered relatively unstable and subject to change. Stage 2 features are tied to a particular way of solving a problem. This feature should be considered somewhat unstable and subject to change.
-Polyfill authors and users could experience changes to their codebase as the specification evolves.
+A **Working Draft** [championed] by a [W3C Working Group]. It should be
+considered relatively unstable and subject to change. Stage 2 features are tied
+to a particular way of solving a problem.
 
 ---
 
@@ -58,9 +57,10 @@ Polyfill authors and users could experience changes to their codebase as the spe
 
 > “This idea is becoming part of the web.”
 
-A **Candidate Recommendation** [championed] by a [W3C Working Group] or implemented by at least 3 [recognized browser vendors]. It should be considered stable and subject to little change. Stage 3 features
-will likely become a standard. This feature should be considered somewhat stable but subject to change.
-Polyfill authors and users might experience minor changes to their codebase as the specification evolves.
+A **Candidate Recommendation** [championed] by a [W3C Working Group], usually
+implemented by at least 2 [recognized browser vendors], possibly behind a flag. |
+It should be considered stable and subject to little change. Stage 3 features
+will likely become a standard.
 
 ---
 
@@ -70,7 +70,8 @@ Polyfill authors and users might experience minor changes to their codebase as t
 
 > “This idea is part of the web.”
 
-A **Recommendation** [championed] by the [W3C]. It should be implemented by all [recognized browser vendors]. Stage 4 features are web standards.
+A **Recommendation** [championed] by the [W3C]. It should be implemented by all
+[recognized browser vendors]. Stage 4 features are web standards.
 
 ---
 

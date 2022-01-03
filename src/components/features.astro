@@ -1,7 +1,8 @@
 ---
 import cssdb from '../../cssdb.json';
+import cssdbSettings from '../../cssdb.settings.json';
 import Feature from './feature.astro';
-const features = cssdb
+const features = cssdbSettings.map((feature, index) => ({ ...feature, ...cssdb[index] }))
 	.sort((a, b) => b.stage - a.stage || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
 	.filter(feature => feature.stage >= 0);
 ---

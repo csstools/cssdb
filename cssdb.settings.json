@@ -94,6 +94,18 @@
     ]
   },
   {
+    "id": "clamp",
+    "title": "`clamp` Function",
+    "description": "The clamp() CSS function clamps a value between an upper and lower bound. It enables selecting a middle value within a range of values between a defined minimum and maximum.",
+    "specification": "https://drafts.csswg.org/css-values/#calc-notation",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
+    },
+    "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
+    "mdn_path": "css.types.clamp"
+  },
+  {
     "id": "color-adjust",
     "title": "`color-adjust` Property",
     "description": "The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images",
@@ -240,6 +252,18 @@
         "link": "https://github.com/postcss/postcss-custom-selectors"
       }
     ]
+  },
+  {
+    "id": "display-two-values",
+    "title": "Two values syntax for `display`",
+    "description": "Syntax that allows definition of outer and inner displays types for an element",
+    "specification": "https://drafts.csswg.org/css-display/#the-display-properties",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
+    },
+    "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
+    "mdn_path": "css.properties.display['multi-keyword_values']"
   },
   {
     "id": "dir-pseudo-class",
@@ -685,6 +709,18 @@
         "link": "https://github.com/postcss/postcss-selector-not"
       }
     ]
+  },
+  {
+    "id": "opacity-percentage",
+    "title": "Support for percentages for `opacity`",
+    "description": "Syntactic sugar to use percentages instead of a float between 0 and 1.",
+    "specification": "https://drafts.csswg.org/css-color/#transparency",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+    },
+    "example": "img {\n  opacity: 90%;\n}",
+    "mdn_path": "css.properties.opacity.percentages"
   },
   {
     "id": "overflow-property",

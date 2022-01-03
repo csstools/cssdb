@@ -2,8 +2,15 @@
 
 ### 6.0.0
 
-- Exported CSSDB no longer exposes example or `caniuse-compat` (breaking)
-- Stage is now calculated from a mix of Spec status and Engine implementation (breaking)
+- Exported CSSDB no longer exposes `example`, `caniuse` nor `caniuse-compat` (breaking).
+- Added `browser_support` field that contains a dictionary with the smaller supported version.
+- Added a mechanism to fetch browser support from [mdn](https://github.com/mdn/browser-compat-data).
+- Added `vendors_implementations` that states how many vendors have implemented the feature.
+- Added: Stage 1 `clamp()` function (minor)
+- Added: Stage 1 Two values syntax for `display` (minor)
+- Added: Stage 1 percentages for opacity (minor)
+- Updated `postcss-preset-enve` to `7.2.0` (minor).
+- Updated `caniuse-lite` to `1.0.30001295` (patch).
 
 ### 5.0.0 (May 24, 2019)
 

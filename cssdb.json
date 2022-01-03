@@ -24,7 +24,7 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -54,11 +54,11 @@
       "chrome": "65",
       "safari": "9",
       "opera": "52",
-      "ios_saf": "9.0-9.2",
+      "ios_saf": "9",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "samsung": "9.2",
       "and_qq": "10.4",
       "baidu": "7.12"
@@ -107,12 +107,12 @@
       "edge": "12",
       "safari": "10",
       "opera": "12",
-      "ios_saf": "10.0-10.2",
+      "ios_saf": "10",
       "op_mini": "all",
       "op_mob": "12",
       "ie_mob": "10",
       "and_uc": "12.12",
-      "samsung": "5.0-5.4"
+      "samsung": "5"
     },
     "vendors_implementations": 1
   },
@@ -137,15 +137,39 @@
       "chrome": "49",
       "safari": "9",
       "opera": "36",
-      "ios_saf": "9.0-9.2",
+      "ios_saf": "9",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
-      "samsung": "5.0-5.4",
+      "samsung": "5",
       "and_qq": "10.4",
       "kaios": "2.5"
+    },
+    "vendors_implementations": 3
+  },
+  {
+    "id": "clamp",
+    "title": "`clamp` Function",
+    "description": "The clamp() CSS function clamps a value between an upper and lower bound. It enables selecting a middle value within a range of values between a defined minimum and maximum.",
+    "specification": "https://drafts.csswg.org/css-values/#calc-notation",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
+    },
+    "browser_support": {
+      "chrome": "79",
+      "and_chr": "79",
+      "edge": "79",
+      "firefox": "75",
+      "and_ff": "79",
+      "opera": "66",
+      "op_mob": "57",
+      "safari": "13.1",
+      "ios_saf": "13.4",
+      "samsung": "12.0",
+      "android": "79"
     },
     "vendors_implementations": 3
   },
@@ -160,7 +184,7 @@
     },
     "browser_support": {
       "firefox": "48",
-      "and_ff": "94",
+      "and_ff": "95",
       "kaios": "2.5"
     },
     "vendors_implementations": 1
@@ -291,13 +315,13 @@
       "chrome": "49",
       "safari": "10",
       "opera": "36",
-      "ios_saf": "10.0-10.2",
+      "ios_saf": "10",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
-      "samsung": "5.0-5.4",
+      "samsung": "5",
       "kaios": "2.5"
     },
     "vendors_implementations": 3
@@ -333,6 +357,20 @@
     "vendors_implementations": 0
   },
   {
+    "id": "display-two-values",
+    "title": "Two values syntax for `display`",
+    "description": "",
+    "specification": "https://drafts.csswg.org/css-display/#the-display-properties",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
+    },
+    "browser_support": {
+      "firefox": "70"
+    },
+    "vendors_implementations": 1
+  },
+  {
     "id": "dir-pseudo-class",
     "title": "`:dir` Directionality Pseudo-Class",
     "description": "A pseudo-class for matching elements based on their directionality",
@@ -349,7 +387,7 @@
     ],
     "browser_support": {
       "firefox": "49",
-      "and_ff": "94"
+      "and_ff": "95"
     },
     "vendors_implementations": 1
   },
@@ -401,11 +439,11 @@
       "chrome": "69",
       "safari": "12",
       "opera": "56",
-      "ios_saf": "11.3-11.4",
+      "ios_saf": "11.3",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "samsung": "10.1"
     },
     "vendors_implementations": 3
@@ -455,8 +493,8 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "14.0"
+      "and_ff": "95",
+      "samsung": "14"
     },
     "vendors_implementations": 2
   },
@@ -489,7 +527,7 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -535,7 +573,7 @@
       "firefox": "34",
       "safari": "10",
       "ios_saf": "9.3",
-      "and_ff": "94",
+      "and_ff": "95",
       "kaios": "2.5"
     },
     "vendors_implementations": 2
@@ -610,9 +648,9 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
-      "samsung": "6.2-6.4",
+      "samsung": "6.2",
       "and_qq": "10.4",
       "kaios": "2.5"
     },
@@ -637,8 +675,10 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "browser_support": {},
-    "vendors_implementations": 0
+    "browser_support": {
+      "safari": "TP"
+    },
+    "vendors_implementations": 1
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -661,11 +701,11 @@
       "chrome": "62",
       "safari": "10",
       "opera": "52",
-      "ios_saf": "10.0-10.2",
+      "ios_saf": "10",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "samsung": "8.2"
     },
     "vendors_implementations": 3
@@ -746,9 +786,9 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
-      "samsung": "5.0-5.4",
+      "samsung": "5",
       "and_qq": "10.4",
       "baidu": "7.12"
     },
@@ -769,12 +809,12 @@
       "chrome": "88",
       "safari": "14",
       "opera": "75",
-      "ios_saf": "14.0-14.4",
+      "ios_saf": "14",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "15.0"
+      "and_ff": "95",
+      "samsung": "15"
     },
     "vendors_implementations": 3
   },
@@ -795,7 +835,7 @@
     ],
     "browser_support": {
       "safari": "15",
-      "ios_saf": "15.0-15.1"
+      "ios_saf": "15"
     },
     "vendors_implementations": 1
   },
@@ -816,7 +856,7 @@
     ],
     "browser_support": {
       "safari": "15",
-      "ios_saf": "15.0-15.1"
+      "ios_saf": "15"
     },
     "vendors_implementations": 1
   },
@@ -841,12 +881,12 @@
       "chrome": "89",
       "safari": "15",
       "opera": "76",
-      "ios_saf": "15.0-15.1",
+      "ios_saf": "15",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "15.0"
+      "and_ff": "95",
+      "samsung": "15"
     },
     "vendors_implementations": 3
   },
@@ -871,12 +911,12 @@
       "chrome": "88",
       "safari": "14",
       "opera": "75",
-      "ios_saf": "14.0-14.4",
+      "ios_saf": "14",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "15.0"
+      "and_ff": "95",
+      "samsung": "15"
     },
     "vendors_implementations": 3
   },
@@ -937,14 +977,33 @@
       "chrome": "88",
       "safari": "9",
       "opera": "75",
-      "ios_saf": "9.0-9.2",
+      "ios_saf": "9",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "15.0"
+      "and_ff": "95",
+      "samsung": "15"
     },
     "vendors_implementations": 3
+  },
+  {
+    "id": "opacity-percentage",
+    "title": "Support for percentages for `opacity`",
+    "description": "Syntactic sugar to use percentages instead of a float between 0 and 1.",
+    "specification": "https://drafts.csswg.org/css-color/#transparency",
+    "stage": 1,
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+    },
+    "browser_support": {
+      "chrome": "78",
+      "and_chr": "78",
+      "edge": "79",
+      "firefox": "70",
+      "samsung": "12.0",
+      "android": "78"
+    },
+    "vendors_implementations": 2
   },
   {
     "id": "overflow-property",
@@ -1000,7 +1059,7 @@
       "bb": "10",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1025,7 +1084,7 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -1086,12 +1145,12 @@
       "chrome": "76",
       "safari": "13",
       "opera": "62",
-      "ios_saf": "13.0-13.1",
+      "ios_saf": "13",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "12.0"
+      "and_ff": "95",
+      "samsung": "12"
     },
     "vendors_implementations": 3
   },
@@ -1114,8 +1173,8 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
-      "samsung": "11.1-11.2"
+      "and_ff": "95",
+      "samsung": "11.1"
     },
     "vendors_implementations": 3
   },
@@ -1134,12 +1193,12 @@
       "chrome": "36",
       "safari": "9",
       "opera": "23",
-      "ios_saf": "9.0-9.2",
+      "ios_saf": "9",
       "android": "96",
       "bb": "10",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1172,7 +1231,7 @@
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1202,13 +1261,13 @@
       "chrome": "56",
       "safari": "11",
       "opera": "43",
-      "ios_saf": "11.0-11.2",
+      "ios_saf": "11",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
-      "and_ff": "94",
+      "and_ff": "95",
       "and_uc": "12.12",
-      "samsung": "6.2-6.4",
+      "samsung": "6.2",
       "and_qq": "10.4"
     },
     "vendors_implementations": 3

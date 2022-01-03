@@ -15,7 +15,7 @@ export default function supportedBrowsersFromCanIUse(key) {
 			.filter(([,support]) => support === 'y');
 
 		if (smalledSupported) {
-			result[browserKey] = smalledSupported[0];
+			result[browserKey] = smalledSupported[0].replace(/(\.0)?(-.+)?$/, '');
 		}
 	});
 
