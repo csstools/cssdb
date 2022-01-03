@@ -58,7 +58,7 @@ Polyfill authors and users could experience changes to their codebase as the spe
 
 > “This idea is becoming part of the web.”
 
-A **Candidate Recommendation** [championed] by a [W3C Working Group] or implemented by at least 3 [recognized browser vendors], possibly behind a flag. It should be considered stable and subject to little change. Stage 3 features
+A **Candidate Recommendation** [championed] by a [W3C Working Group] or implemented by at least 3 [recognized browser vendors]. It should be considered stable and subject to little change. Stage 3 features
 will likely become a standard. This feature should be considered somewhat stable but subject to change.
 Polyfill authors and users might experience minor changes to their codebase as the specification evolves.
 
