@@ -23,11 +23,13 @@
   },
   "scripts": {
     "start": "astro dev",
-    "prestart": "npm run create-badges",
-    "prebuild": "npm run create-badges",
+    "prestart": "npm run preparesite",
+    "prebuild": "npm run preparesite",
+    "populatedb": "node tasks/populate-db.mjs",
     "build": "astro build",
-    "prepublishOnly": "node tasks/esm-converter.mjs",
+    "prepublishOnly": "npm run populatedb",
     "create-badges": "node tasks/write-badges.js",
+    "preparesite": "npm run populatedb && npm run create-badges",
     "test": "npm run test:css && npm run test:json",
     "test:css": "stylelint src/styles/style.css",
     "test:json": "node tasks/test.cjs"

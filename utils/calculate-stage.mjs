@@ -14,7 +14,7 @@ const Engines = {
 };
 
 export default function calculateStage(feature) {
-	const defaultStage = feature.stage;
+	const defaultStage = feature.spec_stage;
 
 	if (typeof feature.browser_support === 'undefined' || defaultStage === -1) {
 		return defaultStage;
