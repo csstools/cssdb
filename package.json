@@ -35,11 +35,11 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@astropub/webapi": "^0.7.4",
+    "@astropub/webapi": "^0.10.1",
     "@mdn/browser-compat-data": "^4.1.2",
-    "astro": "^0.22.3",
+    "astro": "^0.22.4",
     "browserslist": "^4.19.1",
-    "caniuse-lite": "^1.0.30001295",
+    "caniuse-lite": "^1.0.30001296",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.5",
