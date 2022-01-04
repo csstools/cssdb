@@ -12,6 +12,23 @@
 - Updated `postcss-preset-env` to `7.2.0` (minor).
 - Updated `caniuse-lite` to `1.0.30001295` (patch).
 
+### 5.1.0 (January 4, 2022)
+
+- Updated: All plugins urls are pointing to the right place.
+- Added: `color-contrast()` function.
+- Added: Container Queries.
+- Updated: `env()` now has Browser Support table.
+- Updated: `nesting-rules` now have Browser Support table and Can I Use property.
+- Updated: `prefers-color-scheme` Media Query Browser Support.
+- Updated: Font `format()` Keywords now has MDN docs.
+- Updated: `hwb()` Function now has MDN docs.
+- Updated: `ic` unit now has MDN docs.
+- Updated: `lch()` Function now has MDN docs.
+- Updated: `:matches()` Pseudo Class now has MDN docs.
+- Updated: `:where()` Zero-Specificity Pseudo-Class now has MDN docs.
+- Updated: `all` Property is now Stage 3! 🎉
+- Updated: `gray()` function is now Stage -1! 🙁
+
 ### 5.0.0 (May 24, 2019)
 
 - Removed: Rejected `:matches()` psuedo-class (major)
