@@ -3,7 +3,7 @@
 ### 6.0.0
 
 - Exported CSSDB no longer exposes `example`, `caniuse` nor `caniuse-compat` (breaking).
-- Added `browser_support` field that contains a dictionary with the smaller supported version.
+- Added `browser_support` field that contains a dictionary with the earliest supported version.
 - Added a mechanism to fetch browser support from [mdn](https://github.com/mdn/browser-compat-data).
 - Added `vendors_implementations` that states how many vendors have implemented the feature.
 - Added: Stage 1 `clamp()` function (minor)
