@@ -3,6 +3,7 @@
 ### 5.1.0 (January 4, 2022)
 
 - Updated: All plugins urls are pointing to the right place.
+- Added: Exported now a cssdb.mjs to allow support of ESM modules.
 - Added: `color-contrast()` function.
 - Added: Container Queries.
 - Updated: `env()` now has Browser Support table.
