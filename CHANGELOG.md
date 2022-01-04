@@ -9,7 +9,7 @@
 - Added: Stage 1 `clamp()` function (minor)
 - Added: Stage 1 Two values syntax for `display` (minor)
 - Added: Stage 1 percentages for opacity (minor)
-- Updated `postcss-preset-enve` to `7.2.0` (minor).
+- Updated `postcss-preset-env` to `7.2.0` (minor).
 - Updated `caniuse-lite` to `1.0.30001295` (patch).
 
 ### 5.0.0 (May 24, 2019)
