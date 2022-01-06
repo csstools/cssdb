@@ -1,4 +1,4 @@
-[
+export default [
   {
     "id": "all-property",
     "title": "`all` Property",

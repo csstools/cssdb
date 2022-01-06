@@ -1,7 +1,5 @@
 ---
-import { trimCaniuseFeatures } from '../../utils/trim-caniuse-features.js';
 const { feature, title } = Astro.props;
-const caniuse = trimCaniuseFeatures(feature);
 
 const link = `https://caniuse.com/${feature.caniuse ? `${feature.caniuse}` : ''}`;
 const browsers = {
@@ -13,7 +11,7 @@ const browsers = {
 	'and_qq': 'QQ Browserr',
 };
 ---
-{ caniuse && caniuse.stats && (
+{ feature.browser_support && (
 <a
 		class="cssdb-feature-caniuse"
 		href={link}
@@ -21,18 +19,10 @@ const browsers = {
 		rel="noreferrer"
 		aria-label={`can i use browser support for ${title}`}
 >
-	{Object.keys(caniuse.stats).map(id => (
+	{Object.keys(feature.browser_support).map(id => (
 		<span class={`cssdb-browser cssdb-browser--${id}`}>
-			{Object.keys(caniuse.stats[id]).filter(
-				version => caniuse.stats[id][version].indexOf('y') === 0
-			).slice(0, 1).map(
-				version => version.replace(/(\.0)?(-.+)?$/, '')
-			).map(
-				version => (
-					 <span class="sr-only">Supported on {browsers[id] || id} since version </span>
-					 <span class="cssdb-browser-version">{version}</span>
-				)
-			)}
+		 <span class="sr-only">Supported on {browsers[id] || id} since version </span>
+		 <span class="cssdb-browser-version">{feature.browser_support[id]}</span>
 		</span>
 	))}
 </a>

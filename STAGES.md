@@ -90,8 +90,7 @@ formally rejected by a [W3C Working Group].
 
 ### Recognized Browser Vendors
 
-Recognized browser vendors include, in alphabetical order; Apple, Google,
-Microsoft, Mozilla, and Opera.
+Recognized browser vendors include, in alphabetical order; Apple (Safari/Webkit), Google (Chrome/Chromium) and Mozilla (Firefox/Gecko).
 
 ### What is a champion?
 
