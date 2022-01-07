@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### 6.0.1 (January 7, 2022) 
+
+- Updated: Conditional media queries now Stage 2 and has links to an official spec! 🎉 (minor)
+- Updated `astro` to `0.22.8` (patch).
+- Updated `caniuse-lite` to `1.0.30001297` (patch).
+
 ### 6.0.0 (January 7, 2022)
 
 - Exported CSSDB no longer exposes `example`, `caniuse` nor `caniuse-compat` (breaking).
@@ -11,7 +17,7 @@
 - Added: Stage 1 percentages for opacity (minor)
 - Updated `postcss-preset-env` to `7.2.0` (minor).
 - Updated `@astropub/webapi` to `0.10.2` (minor).
-- Updated `astro` to `0.2.7` (patch).
+- Updated `astro` to `0.22.7` (patch).
 - Updated `caniuse-lite` to `1.0.30001296` (patch).
 
 ### 5.1.0 (January 4, 2022)

@@ -1276,8 +1276,8 @@
     "id": "when-else-rules",
     "title": "When/Else Rules",
     "description": "At-rules for specifying media queries and support queries in a single grammar",
-    "specification": "https://tabatkins.github.io/specs/css-when-else/",
-    "stage": 0,
+    "specification": "https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/",
+    "stage": 2,
     "browser_support": {},
     "vendors_implementations": 0
   },
