@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 6.0.0
+### 6.0.0 (January 7, 2022)
 
 - Exported CSSDB no longer exposes `example`, `caniuse` nor `caniuse-compat` (breaking).
 - Added `browser_support` field that contains a dictionary with the earliest supported version.
@@ -10,8 +10,8 @@
 - Added: Stage 1 Two values syntax for `display` (minor)
 - Added: Stage 1 percentages for opacity (minor)
 - Updated `postcss-preset-env` to `7.2.0` (minor).
-- Updated `@astropub/webapi` to `0.10.1` (minor).
-- Updated `astro` to `0.2.4` (patch).
+- Updated `@astropub/webapi` to `0.10.2` (minor).
+- Updated `astro` to `0.2.7` (patch).
 - Updated `caniuse-lite` to `1.0.30001296` (patch).
 
 ### 5.1.0 (January 4, 2022)
