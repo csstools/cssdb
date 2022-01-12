@@ -809,3 +809,11 @@ img {
 		width: 1.875em;
 	}
 }
+
+.cssdb-deploys {
+	text-align: center;
+}
+
+.cssdb-deploys__logo {
+	display: inline-flex;
+}
