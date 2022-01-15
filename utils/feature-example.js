@@ -17,13 +17,13 @@ function postcssToHTML(root, builder) {
 
 	function replaceVars (string) {
 		return string
+			.replace(/</g, '&lt;')
+			.replace(/>/g, '&gt;')
 			.replace(/:?--[\w-]+/g, '<span class=css-var>$&</span>')
 	}
 
 	function replaceVarsAndFns (string) {
 		return replaceVars(string)
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;')
 			.replace(/(:?[\w-]+)\(/g, '<span class=css-function>$1</span>(')
 			.replace(/"[^"]+"/g, '<span class=css-string>$&</span>')
 	}
