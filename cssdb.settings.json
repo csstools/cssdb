@@ -25,6 +25,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
     "caniuse": "css-any-link",
+    "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
@@ -275,7 +276,7 @@
     "description": "A pseudo-class for matching elements based on their directionality",
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
-    "caniuse": "css-dir-pseudo",
+    "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -286,7 +287,8 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
-    ]
+    ],
+    "mdn_path": "css.selectors.dir"
   },
   {
     "id": "display-two-values",

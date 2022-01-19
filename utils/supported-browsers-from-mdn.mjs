@@ -10,8 +10,9 @@ const MDNToBrowserlist = {
 	webview_android: 'android',
 };
 
-function getBrowsersFromFeature(feature) {
-	const mdnFeature = _get(mdn, feature);
+function getBrowsersFromFeature(mdnConfigPath, feature) {
+	const mdnFeature = _get(mdn, mdnConfigPath);
+	const supportsPrefixes = feature.allow_partial_implementation;
 	const result = {};
 
 	if (!mdnFeature) {
@@ -25,9 +26,27 @@ function getBrowsersFromFeature(feature) {
 		let version;
 
 		if (Array.isArray(browserSupport)) {
-			version = browserSupport.find(({ alternative_name }) => !alternative_name)?.version_added;
+			const versions = browserSupport.sort((a, b) => Number(a?.version_added) - Number(b?.version_added));
+			version = versions.find(browserEntry => {
+				const hasNoAlternativeName = typeof browserEntry.alternative_name === 'undefined';
+				const isPrefixed = typeof browserEntry.prefix !== 'undefined';
+
+				if (!hasNoAlternativeName) {
+					return false;
+				}
+
+				if (supportsPrefixes && isPrefixed) {
+					return true;
+				}
+
+				return !isPrefixed;
+			})?.version_added;
 		} else {
 			version = browserSupport.version_added;
+
+			if (!supportsPrefixes && browserSupport.prefix) {
+				return;
+			}
 
 			if (browserSupport.alternative_name) {
 				return;
@@ -43,11 +62,11 @@ function getBrowsersFromFeature(feature) {
 	return result;
 }
 
-export default function supportedBrowsersFromMdn(path) {
+export default function supportedBrowsersFromMdn(path, feature) {
 	const result = {};
 
 	const paths = Array.isArray(path) ? path : [path];
-	const supports = paths.map(getBrowsersFromFeature);
+	const supports = paths.map(mdnPath => getBrowsersFromFeature(mdnPath, feature));
 
 	Object.keys(supports[0]).forEach(browserKey => {
 		const isInAllFeatures = supports.every(featureSupport => typeof featureSupport[browserKey] !== 'undefined');

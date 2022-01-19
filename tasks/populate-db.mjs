@@ -13,9 +13,9 @@ cssdb.forEach(feature => {
 	feature.browser_support = {};
 
 	if (feature.caniuse) {
-		feature.browser_support = supportedBrowsersFromCanIUse(feature.caniuse);
+		feature.browser_support = supportedBrowsersFromCanIUse(feature.caniuse, feature);
 	} else if (feature.mdn_path) {
-		feature.browser_support = supportedBrowsersFromMdn(feature.mdn_path);
+		feature.browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
 	}
 
 	feature.vendors_implementations = countVendors(feature);
@@ -27,9 +27,10 @@ const cleanDB = cssdb.map(
 		 caniuse,
 		 caniuse_compat,
 		 mdn_path,
-		// The above are discarded
+		 allow_partial_implementation,
+		 // The above are discarded
 		 ...properties
-	}) => properties
+	 }) => properties
 );
 
 const newCSSDB = JSON.stringify(cleanDB, null, 2);

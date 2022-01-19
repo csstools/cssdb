@@ -182,21 +182,14 @@
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
       "firefox": "48",
-      "chrome": "19",
-      "safari": "6",
-      "opera": "15",
-      "android": "96",
-      "op_mob": "64",
       "and_ff": "95",
-      "and_qq": "10.4",
       "kaios": "2.5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
     },
-    "vendors_implementations": 3
+    "vendors_implementations": 1
   },
   {
     "id": "color-contrast",
@@ -373,8 +366,7 @@
     "stage": 2,
     "browser_support": {
       "firefox": "17",
-      "and_ff": "95",
-      "kaios": "2.5"
+      "and_ff": "17"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -484,15 +476,14 @@
     "stage": 2,
     "browser_support": {
       "edge": "86",
-      "firefox": "4",
+      "firefox": "85",
       "chrome": "86",
       "opera": "72",
       "android": "96",
       "op_mob": "64",
       "and_chr": "96",
       "and_ff": "95",
-      "samsung": "14",
-      "kaios": "2.5"
+      "samsung": "14"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -642,8 +633,8 @@
     "stage": 3,
     "browser_support": {
       "edge": "16",
-      "firefox": "52",
-      "chrome": "57",
+      "firefox": "54",
+      "chrome": "58",
       "safari": "11",
       "opera": "44",
       "ios_saf": "10.3",
@@ -766,10 +757,7 @@
     "description": "A function for specifying image sources based on the user’s resolution",
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
-    "browser_support": {
-      "firefox": "89",
-      "and_ff": "95"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
     },
@@ -779,7 +767,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -1200,7 +1188,7 @@
     "stage": 2,
     "browser_support": {
       "edge": "13",
-      "firefox": "3",
+      "firefox": "78",
       "chrome": "36",
       "safari": "9",
       "opera": "23",
@@ -1213,8 +1201,7 @@
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
-      "baidu": "7.12",
-      "kaios": "2.5"
+      "baidu": "7.12"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
