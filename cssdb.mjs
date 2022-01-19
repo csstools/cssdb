@@ -475,15 +475,15 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
     "browser_support": {
-      "edge": "86",
+      "chrome": "67",
+      "and_chr": "67",
+      "edge": "79",
       "firefox": "85",
-      "chrome": "86",
-      "opera": "72",
-      "android": "96",
-      "op_mob": "64",
-      "and_chr": "96",
-      "and_ff": "95",
-      "samsung": "14"
+      "and_ff": "85",
+      "opera": "54",
+      "op_mob": "48",
+      "samsung": "14.0",
+      "android": "86"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"

@@ -367,7 +367,6 @@
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
-    "caniuse": "css-focus-visible",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -382,7 +381,8 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
-    ]
+    ],
+    "mdn_path": "css.selectors['focus-visible']"
   },
   {
     "id": "focus-within-pseudo-class",
