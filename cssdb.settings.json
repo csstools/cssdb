@@ -276,7 +276,6 @@
     "description": "A pseudo-class for matching elements based on their directionality",
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
-    "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"

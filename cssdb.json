@@ -365,8 +365,8 @@
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
     "browser_support": {
-      "firefox": "17",
-      "and_ff": "17"
+      "firefox": "49",
+      "and_ff": "49"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
