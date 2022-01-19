@@ -12,7 +12,7 @@ export default function supportedBrowsersFromCanIUse(key) {
 	Object.keys(stats).forEach(browserKey => {
 		const [ smalledSupported ] = Object.keys(stats[browserKey])
 			.map(version => [version, stats[browserKey][version]])
-			.filter(([,support]) => support === 'y');
+			.filter(([,support]) => support.startsWith('y'));
 
 		if (smalledSupported) {
 			result[browserKey] = smalledSupported[0].replace(/(\.0)?(-.+)?$/, '');
