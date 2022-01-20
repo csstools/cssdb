@@ -24,13 +24,13 @@
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
-    "caniuse": "css-any-link",
     "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
+    "mdn_path": "css.selectors['any-link']",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -710,7 +710,6 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
-    "mdn_path": "css['at-rules'].media.range_syntax",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
