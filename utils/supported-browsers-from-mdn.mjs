@@ -28,14 +28,15 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 		if (Array.isArray(browserSupport)) {
 			const versions = browserSupport.sort((a, b) => Number(a?.version_added) - Number(b?.version_added));
 			version = versions.find(browserEntry => {
-				const hasNoAlternativeName = typeof browserEntry.alternative_name === 'undefined';
+				const hasAlternativeName = typeof browserEntry.alternative_name !== 'undefined';
 				const isPrefixed = typeof browserEntry.prefix !== 'undefined';
+				const isAllowedPrefix = isPrefixed && browserEntry.prefix !== '-khtml-';
 
-				if (!hasNoAlternativeName) {
+				if (hasAlternativeName) {
 					return false;
 				}
 
-				if (supportsPrefixes && isPrefixed) {
+				if (supportsPrefixes && isAllowedPrefix) {
 					return true;
 				}
 
