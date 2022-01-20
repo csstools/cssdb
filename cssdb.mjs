@@ -40,21 +40,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
     "browser_support": {
+      "chrome": "1",
+      "and_chr": "18",
       "edge": "79",
-      "firefox": "3",
-      "chrome": "15",
-      "safari": "7",
+      "firefox": "1",
+      "and_ff": "4",
       "opera": "15",
-      "ios_saf": "8",
-      "android": "96",
-      "op_mob": "64",
-      "and_chr": "96",
-      "and_ff": "95",
-      "and_uc": "12.12",
-      "samsung": "9.2",
-      "and_qq": "10.4",
-      "baidu": "7.12",
-      "kaios": "2.5"
+      "op_mob": "14",
+      "safari": "3",
+      "ios_saf": "1",
+      "samsung": "1.0",
+      "android": "65"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
@@ -928,10 +924,7 @@ export default [
     "description": "A syntax for defining media query ranges using ordinary comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
-    "browser_support": {
-      "firefox": "63",
-      "and_ff": "63"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
@@ -941,7 +934,7 @@ export default [
         "link": "https://github.com/postcss/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "nesting-rules",
