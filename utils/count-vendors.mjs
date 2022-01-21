@@ -15,9 +15,14 @@ const Engines = {
 
 export default function countVendors(feature) {
 	return Object.keys(Engines).reduce((acc, engine) => {
-		const isSupportedOnEgine = Engines[engine].some(browser => !!feature.browser_support[browser]);
+		const isSupportedOnEngine = Engines[engine].some(browser => {
+			const support = feature.browser_support[browser];
 
-		if (isSupportedOnEgine) {
+			// Do not allow pre-releases to count as a vendor implementation
+			return typeof support === 'string' && support.match(/^[0-9|.]+$/) !== null;
+		});
+
+		if (isSupportedOnEngine) {
 			return acc + 1;
 		}
 
