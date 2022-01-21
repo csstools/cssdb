@@ -33,8 +33,8 @@ const cleanDB = cssdb.map(
 	 }) => properties
 );
 
-const newCSSDB = JSON.stringify(cleanDB, null, 2);
-const esmCSSDB = `export default ${newCSSDB}`;
+const newCSSDB = `${JSON.stringify(cleanDB, null, 2)}\n`;
+const esmCSSDB = `export default ${newCSSDB}\n`;
 
 await Promise.all([
 	fs.writeFile(path.resolve(__dirname, '../cssdb.json'), newCSSDB),
