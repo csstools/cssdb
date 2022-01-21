@@ -12,9 +12,9 @@
       "safari": "10",
       "opera": "24",
       "ios_saf": "9.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
@@ -40,19 +40,17 @@
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
     "browser_support": {
+      "chrome": "1",
+      "and_chr": "18",
       "edge": "79",
-      "firefox": "50",
-      "chrome": "65",
-      "safari": "9",
-      "opera": "52",
-      "ios_saf": "9",
-      "android": "96",
-      "op_mob": "64",
-      "and_chr": "96",
-      "and_ff": "95",
-      "samsung": "9.2",
-      "and_qq": "10.4",
-      "baidu": "7.12"
+      "firefox": "1",
+      "and_ff": "4",
+      "opera": "15",
+      "op_mob": "14",
+      "safari": "3",
+      "ios_saf": "1",
+      "samsung": "1.0",
+      "android": "65"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
@@ -129,9 +127,9 @@
       "safari": "9",
       "opera": "36",
       "ios_saf": "9",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
@@ -307,9 +305,9 @@
       "safari": "10",
       "opera": "36",
       "ios_saf": "10",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
@@ -364,7 +362,7 @@
     "stage": 2,
     "browser_support": {
       "firefox": "49",
-      "and_ff": "95"
+      "and_ff": "49"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -431,9 +429,9 @@
       "safari": "12",
       "opera": "56",
       "ios_saf": "11.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "10.1"
     },
@@ -473,15 +471,15 @@
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
     "browser_support": {
-      "edge": "86",
+      "chrome": "67",
+      "and_chr": "67",
+      "edge": "79",
       "firefox": "85",
-      "chrome": "86",
-      "opera": "72",
-      "android": "96",
-      "op_mob": "64",
-      "and_chr": "96",
-      "and_ff": "95",
-      "samsung": "14"
+      "and_ff": "85",
+      "opera": "54",
+      "op_mob": "48",
+      "samsung": "14.0",
+      "android": "86"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -511,9 +509,9 @@
       "safari": "11",
       "opera": "47",
       "ios_saf": "10.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
@@ -636,9 +634,9 @@
       "safari": "11",
       "opera": "44",
       "ios_saf": "10.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "6.2",
@@ -678,7 +676,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -693,9 +691,9 @@
       "safari": "10",
       "opera": "52",
       "ios_saf": "10",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "8.2"
     },
@@ -717,6 +715,8 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
     "browser_support": {
+      "firefox": "96",
+      "and_ff": "96",
       "safari": "15",
       "ios_saf": "15"
     },
@@ -729,7 +729,7 @@
         "link": "https://github.com/postcss/postcss-color-hwb"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "ic-unit",
@@ -737,7 +737,10 @@
     "description": "Equal to the used advance measure of the \"水\" (CJK water ideograph, U+6C34) glyph found in the font used to render it",
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "firefox": "97",
+      "and_ff": "97"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
     },
@@ -747,7 +750,7 @@
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "image-set-function",
@@ -780,9 +783,9 @@
       "safari": "11",
       "opera": "40",
       "ios_saf": "10.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
@@ -807,9 +810,9 @@
       "safari": "14",
       "opera": "75",
       "ios_saf": "14",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "15"
     },
@@ -873,9 +876,9 @@
       "safari": "15",
       "opera": "76",
       "ios_saf": "15",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "15"
     },
@@ -903,9 +906,9 @@
       "safari": "14",
       "opera": "75",
       "ios_saf": "14",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "15"
     },
@@ -926,10 +929,7 @@
     "description": "A syntax for defining media query ranges using ordinary comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
-    "browser_support": {
-      "firefox": "63",
-      "and_ff": "63"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
@@ -939,7 +939,7 @@
         "link": "https://github.com/postcss/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "nesting-rules",
@@ -969,9 +969,9 @@
       "safari": "9",
       "opera": "75",
       "ios_saf": "9",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "15"
     },
@@ -1046,10 +1046,10 @@
       "safari": "7",
       "opera": "15",
       "ios_saf": "8",
-      "android": "96",
+      "android": "97",
       "bb": "10",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1078,9 +1078,9 @@
       "firefox": "59",
       "chrome": "65",
       "opera": "52",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
@@ -1133,9 +1133,9 @@
       "safari": "13",
       "opera": "62",
       "ios_saf": "13",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "12"
     },
@@ -1167,9 +1167,9 @@
       "safari": "11",
       "opera": "64",
       "ios_saf": "10.3",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "samsung": "11.1"
     },
@@ -1191,10 +1191,10 @@
       "safari": "9",
       "opera": "23",
       "ios_saf": "9",
-      "android": "96",
+      "android": "97",
       "bb": "10",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1219,9 +1219,9 @@
       "safari": "7",
       "opera": "25",
       "ios_saf": "8",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1253,9 +1253,9 @@
       "safari": "11",
       "opera": "43",
       "ios_saf": "11",
-      "android": "96",
+      "android": "97",
       "op_mob": "64",
-      "and_chr": "96",
+      "and_chr": "97",
       "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "6.2",

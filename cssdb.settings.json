@@ -24,12 +24,13 @@
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
-    "caniuse": "css-any-link",
+    "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
+    "mdn_path": "css.selectors['any-link']",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -275,7 +276,6 @@
     "description": "A pseudo-class for matching elements based on their directionality",
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
-    "caniuse": "css-dir-pseudo",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -286,7 +286,8 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
-    ]
+    ],
+    "mdn_path": "css.selectors.dir"
   },
   {
     "id": "display-two-values",
@@ -366,7 +367,6 @@
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
-    "caniuse": "css-focus-visible",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -381,7 +381,8 @@
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
-    ]
+    ],
+    "mdn_path": "css.selectors['focus-visible']"
   },
   {
     "id": "focus-within-pseudo-class",
@@ -709,7 +710,6 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
-    "mdn_path": "css['at-rules'].media.range_syntax",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
