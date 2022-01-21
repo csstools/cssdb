@@ -1,5 +1,14 @@
 # Changes to cssdb
 
+### 6.0.2 (January 21, 2022)
+
+- Updated mechanism to calculate browser versions to be more reliable. This also introduces the option through `allow_partial_implementation` if we want to allow something such as Autoprefixer to take care with prefixing a given feature such as `:any-link`.
+- Ensuring pre-releases aren't counted as vendor implementation. This was flagging that `:has` had 1 vendor implementation, but it's not in stable Safari yet.
+- Removed `media-query-ranges` support data as it was not correct that Firefox supports it fully. See [#57](https://github.com/csstools/cssdb/issues/57) and [mdn/browser-compat-data#14593](https://github.com/mdn/browser-compat-data/issues/14593)
+- Updated `@mdn/browser-compat-data` to `4.1.4` (patch)
+- Updated `astro` to `0.22.16` (patch)
+- Updated `caniuse-lite` to `1.0.30001300` (patch)
+
 ### 6.0.1 (January 7, 2022) 
 
 - Updated: Conditional media queries now Stage 2 and has links to an official spec! 🎉 (minor)
