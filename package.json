@@ -35,17 +35,17 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@astropub/webapi": "^0.10.2",
+    "@astropub/webapi": "^0.10.7",
     "@mdn/browser-compat-data": "^4.1.4",
-    "astro": "^0.22.16",
+    "astro": "^0.22.18",
     "browserslist": "^4.19.1",
-    "caniuse-lite": "^1.0.30001300",
+    "caniuse-lite": "^1.0.30001302",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.5",
     "postcss-preset-env": "^7.2.3",
     "pre-commit": "^1.2.2",
-    "stylelint": "^14.2.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-standard": "^24.0.0"
   },
   "stylelint": {
@@ -62,6 +62,7 @@
       ],
       "selector-class-pattern": null,
       "no-descending-specificity": null,
+      "value-keyword-case": null,
       "number-leading-zero": "never"
     }
   },
