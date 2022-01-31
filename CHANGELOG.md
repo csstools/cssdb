@@ -1,5 +1,27 @@
 # Changes to cssdb
 
+### 6.1.0 (Unreleased)
+
+- `blank-pseudo-class` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `clamp` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `color-contrast` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `color-functional-notation` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `custom-media-queries` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `display-two-values` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `display-two-values` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `opacity-percentage` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `prefers-color-scheme-query` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `prefers-reduced-motion-query` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `where-pseudo-class` is now Stage 2 and has links to an official spec! 🎉 (minor)
+- `container-queries` has official Working Draft linked (instead of Editor's Draft).
+- `nesting-rules` has official Working Draft linked (instead of Editor's Draft).
+- `overscroll-behavior-property` has official Working Draft linked (instead of Editor's Draft).
+- Updated `@mdn/browser-compat-data` to `4.1.5` (patch)
+- Updated `@astropub/webapi` to `0.10.11` (patch)
+- Updated `astro` to `0.22.20` (patch)
+- Updated `caniuse-lite` to `1.0.30001304` (patch)
+- Updated `stylelint` to `14.3.0` (minor)
+
 ### 6.0.2 (January 21, 2022)
 
 - Updated mechanism to calculate browser versions to be more reliable. This also introduces the option through `allow_partial_implementation` if we want to allow something such as Autoprefixer to take care with prefixing a given feature such as `:any-link`.
