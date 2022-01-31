@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 6.1.0 (Unreleased)
+### 6.1.0 (January 31, 2022)
 
 - `blank-pseudo-class` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `clamp` is now Stage 2 and has links to an official spec! 🎉 (minor)
