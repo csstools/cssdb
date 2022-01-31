@@ -42,8 +42,8 @@
     "id": "blank-pseudo-class",
     "title": "`:blank` Empty-Value Pseudo-Class",
     "description": "A pseudo-class for matching form elements when they are empty",
-    "specification": "https://drafts.csswg.org/selectors-4/#blank",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/selectors-4/#blank",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
@@ -103,8 +103,8 @@
     "id": "clamp",
     "title": "`clamp` Function",
     "description": "The clamp() CSS function clamps a value between an upper and lower bound. It enables selecting a middle value within a range of values between a defined minimum and maximum.",
-    "specification": "https://drafts.csswg.org/css-values/#calc-notation",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-values-4/#funcdef-clamp",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
@@ -129,8 +129,8 @@
     "id": "color-contrast",
     "title": "`color-contrast()` Function",
     "description": "A function for choosing the color that contrasts the most.",
-    "specification": "https://drafts.csswg.org/css-color-5/#funcdef-color-contrast",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-color-5/#colorcontrast",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
@@ -143,8 +143,8 @@
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
-    "specification": "https://drafts.csswg.org/css-color/#ref-for-funcdef-rgb%E2%91%A1%E2%91%A0",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
+    "stage": 2,
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
     "mdn_path": [
       "css.types.color.space_separated_functional_notation"
@@ -186,7 +186,7 @@
     "id": "container-queries",
     "title": "Container Queries",
     "description": "New container property and container at rule to make changes depending on the container's size",
-    "specification": "https://drafts.csswg.org/css-contain-3/#container-queries",
+    "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
     "caniuse": "css-container-queries",
     "browser_support": {},
@@ -209,8 +209,8 @@
     "id": "custom-media-queries",
     "title": "Custom Media Queries",
     "description": "An at-rule for defining aliases that represent media queries",
-    "specification": "https://drafts.csswg.org/mediaqueries-5/#at-ruledef-custom-media",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/mediaqueries-5/#at-ruledef-custom-media",
+    "stage": 2,
     "example": "@custom-media --narrow-window (max-width: 30em);\n\n@media (--narrow-window) {}",
     "browser_support": {},
     "polyfills": [
@@ -293,8 +293,8 @@
     "id": "display-two-values",
     "title": "Two values syntax for `display`",
     "description": "Syntax that allows definition of outer and inner displays types for an element",
-    "specification": "https://drafts.csswg.org/css-display/#the-display-properties",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-display-3/#the-display-properties",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
@@ -721,7 +721,7 @@
     "id": "nesting-rules",
     "title": "Nesting Rules",
     "description": "A syntax for nesting relative rules within rules",
-    "specification": "https://drafts.csswg.org/css-nesting-1/",
+    "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 1,
     "caniuse": "css-nesting",
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
@@ -756,8 +756,8 @@
     "id": "opacity-percentage",
     "title": "Support for percentages for `opacity`",
     "description": "Syntactic sugar to use percentages instead of a float between 0 and 1.",
-    "specification": "https://drafts.csswg.org/css-color/#transparency",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/css-color-4/#transparency",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
@@ -807,7 +807,7 @@
     "id": "overscroll-behavior-property",
     "title": "`overscroll-behavior` Property",
     "description": "Properties for controlling when the scroll position of a scroll container reaches the edge of a scrollport",
-    "specification": "https://drafts.csswg.org/css-overscroll-behavior",
+    "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 1,
     "caniuse": "css-overscroll-behavior",
     "browser_support": {},
@@ -843,8 +843,8 @@
     "id": "prefers-color-scheme-query",
     "title": "`prefers-color-scheme` Media Query",
     "description": "A media query to detect if the user has requested the system use a light or dark color theme",
-    "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
+    "stage": 2,
     "caniuse": "prefers-color-scheme",
     "browser_support": {},
     "docs": {
@@ -866,8 +866,8 @@
     "id": "prefers-reduced-motion-query",
     "title": "`prefers-reduced-motion` Media Query",
     "description": "A media query to detect if the user has requested less animation and general motion on the page",
-    "specification": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
+    "stage": 2,
     "caniuse": "prefers-reduced-motion",
     "browser_support": {},
     "docs": {
@@ -938,8 +938,8 @@
     "id": "where-pseudo-class",
     "title": "`:where()` Zero-Specificity Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list without contributing specificity",
-    "specification": "https://drafts.csswg.org/selectors-4/#where-pseudo",
-    "stage": 1,
+    "specification": "https://www.w3.org/TR/selectors-4/#where-pseudo",
+    "stage": 2,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
