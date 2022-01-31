@@ -58,7 +58,7 @@ to a particular way of solving a problem.
 > “This idea is becoming part of the web.”
 
 A **Candidate Recommendation** [championed] by a [W3C Working Group], usually
-implemented by at least 2 [recognized browser vendors], possibly behind a flag. |
+implemented by at least 2 [recognized browser vendors], possibly behind a flag.
 It should be considered stable and subject to little change. Stage 3 features
 will likely become a standard.
 
