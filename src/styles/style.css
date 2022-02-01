@@ -193,28 +193,31 @@ img {
 /* ========================================================================== */
 
 .cssdb-feature {
-	margin-block-start: 100px;
+	margin-block-start: 80px;
 }
 
 .cssdb-feature-header {
-	display: flex;
-
-	& > * {
-		display: inline-block;
-		vertical-align: top;
-	}
+	display: grid;
+	gap: 5px 20px;
+	grid:
+		"stage title"
+		"stage description"
+		/ 62px auto;
 }
 
 .cssdb-feature-stage {
-	flex-shrink: 0;
+	grid-area: stage;
+}
+
+.cssdb-feature-stage-image {
 	height: 62px;
-	margin-block-end: 20px;
-	margin-inline-end: 15px;
 	width: 62px;
+	display: block;
 }
 
 .cssdb-feature-heading {
 	font-size: 1.17em;
+	grid-area: title;
 	margin: 0;
 
 	& a {
@@ -223,49 +226,24 @@ img {
 }
 
 .cssdb-feature-description {
-	display: inline-block;
-	margin-block: 5px 25px;
+	grid-area: description;
+	margin: 0;
 }
 
-.cssdb-feature-specification {
-	display: flex;
-	flex-wrap: wrap;
+.cssdb-feature-docs {
 	font-size: 87.5%;
+}
+
+.cssdb-feature-docs-link {
 	font-weight: 700;
-	margin-block: 0 -10.5px;
-	padding-inline: 15px;
-	position: relative;
 	text-transform: uppercase;
-
-	& > :not(:last-child) {
-		margin-inline-end: .25em;
-	}
-}
-
-.cssdb-feature-specification-link {
-	background-image: linear-gradient(currentColor 25%, transparent 50%);
-	background-position: 200% 100%;
-	background-repeat: no-repeat;
-	background-size: 200% 2px;
-	padding-block-end: 2px;
-	transition: background-position 250ms;
-
-	&:hover {
-		background-position: 100% 100%;
-	}
-}
-
-.cssdb-feature-mdn-badge,
-.cssdb-feature-specification-badge {
-	height: 20px;
-	vertical-align: top;
 }
 
 .cssdb-feature-polyfills {
 	display: flex;
+	flex-wrap: wrap;
 	font-size: 87.5%;
-	margin-block-end: -24px;
-	padding-inline: 15px;
+	margin-top: 5px;
 
 	&:dir(rtl) {
 		flex-direction: column;
@@ -273,11 +251,9 @@ img {
 }
 
 .cssdb-feature-polyfill-list {
-	font-weight: 700;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
 
 	&:dir(ltr) {
 		margin-left: .5em;
@@ -285,6 +261,8 @@ img {
 }
 
 .cssdb-feature-polyfill-link {
+	font-weight: 700;
+	text-transform: uppercase;
 	background-image: linear-gradient(currentColor 25%, transparent 50%);
 	background-position: 200% 100%;
 	background-repeat: no-repeat;
@@ -299,8 +277,9 @@ img {
 
 .cssdb-feature-polyfill-item {
 	display: flex;
-	height: 20px;
+	flex-wrap: wrap;
 	margin-block-end: 7px;
+	column-gap: 5px;
 
 	& .cssdb-feature-polyfill-stars {
 		margin-inline-start: 3px;
@@ -313,12 +292,17 @@ img {
 	& .cssdb-feature-polyfill-stars-minimal {
 		margin-inline-start: 3px;
 		overflow: hidden;
+		inline-size: 32px;
 
 		& img {
 			height: 20px;
 			transform: translateX(-58px);
 		}
 	}
+}
+
+.cssdb-feature-preset-env-badge-link {
+	margin-inline-start: 10px;
 }
 
 /* Examples
@@ -408,6 +392,7 @@ img {
 .cssdb-feature-caniuse {
 	display: inline-flex;
 	flex-wrap: wrap;
+	margin-block-start: 15px;
 }
 
 .cssdb-browser {
