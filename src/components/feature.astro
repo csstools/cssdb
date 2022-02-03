@@ -5,6 +5,7 @@ import { parseExample }  from '../../utils/feature-example.js';
 
 const { feature } = Astro.props;
 const imageName = `/images/stages/stage-${feature.stage}.svg`;
+const badge = `/images/badges/${feature.id}.svg`;
 
 const [title, description] = await Promise.all([
 	Astro.privateRenderMarkdownDoNotUse(feature.title),
@@ -35,24 +36,49 @@ const stages = [
 			{simpleDescription}
 		</p>
 	</header>
-	<pre class="cssdb-feature-example" dir="ltr">{ parseExample(feature.example) }</pre>
 	<p class="cssdb-feature-docs">
-		<a class="cssdb-feature-docs-link" href={feature.specification}>
-			Specification <span class="sr-only">for ${cleanTitle}</span>
+		<a
+			href={feature.specification}
+			aria-label={`Specification for ${cleanTitle}`}
+		>
+			<img
+				src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
+				alt="W3C Specification"
+				loading="lazy"
+				decoding="async"
+				width="55"
+				height="20"
+			>
 		</a>
-
 		{feature.docs?.mdn && (
-			<>
-				and <a class="cssdb-feature-docs-link"
-					href={feature.docs.mdn}
-					target="_blank"
-					rel="noreferrer"
+			<a
+				href={feature.docs.mdn}
+				aria-label={`Documentation for ${cleanTitle}`}
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img
+					src="https://shields.io/badge/docs-black?logo=mozilla&style=flat-square"
+					alt="Mozilla Developer Network Documentation"
+					loading="lazy"
+					decoding="async"
+					width="53"
+					height="20"
 				>
-					MDN documentation <span class="sr-only">for ${cleanTitle}</span>
-				</a>
-			</>
+			</a>
 		)}
+		<a href={`#${stages[feature.stage]}`}>
+			<img
+				src={badge}
+				alt={`Stage ${feature.stage}`}
+				loading="lazy"
+				decoding="async"
+				width="94"
+				height="20"
+			/>
+		</a>
 	</p>
+	<pre class="cssdb-feature-example" dir="ltr">{ parseExample(feature.example) }</pre>
 	<CaniuseFeature feature={feature} title={cleanTitle} />
 	<FeaturePolyfills polyfills={feature.polyfills} id={feature.id} title={cleanTitle} />
 </article>

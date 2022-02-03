@@ -46,9 +46,6 @@ const isBundled = presetEnvPlugins.includes(id);
 		{polyfill.type}
 		<span class="sr-only">for {title}</span>
 	</a>
-	{(polyfill.type === "PostCSS Plugin" && isBundled) &&  (
-		<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
-	)}
 	{isGithub && (
 		<span class="cssdb-feature-polyfill-stars-minimal">
 			<a href={`${repoUrl}/stargazers`}>
@@ -58,4 +55,7 @@ const isBundled = presetEnvPlugins.includes(id);
 			</a>
 		</span>
 	)}
+	{(polyfill.type === "PostCSS Plugin" && isBundled) &&  (
+		<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
+	)}	
 </li>
