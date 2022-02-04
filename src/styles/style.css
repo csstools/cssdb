@@ -296,6 +296,7 @@ img {
 		& img {
 			height: 20px;
 			margin-inline-start: -56px;
+			min-width: 57px;
 		}
 	}
 }
