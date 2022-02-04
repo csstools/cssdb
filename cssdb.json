@@ -204,6 +204,21 @@
     "vendors_implementations": 1
   },
   {
+    "id": "color-function",
+    "title": "`color()` Function",
+    "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
+    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
+    "stage": 2,
+    "browser_support": {
+      "safari": "15",
+      "ios_saf": "15"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
+    },
+    "vendors_implementations": 1
+  },
+  {
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
@@ -276,21 +291,6 @@
       }
     ],
     "vendors_implementations": 0
-  },
-  {
-    "id": "css-color-function",
-    "title": "`color()` Function",
-    "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
-    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
-    "stage": 2,
-    "browser_support": {
-      "safari": "15",
-      "ios_saf": "15"
-    },
-    "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
-    },
-    "vendors_implementations": 1
   },
   {
     "id": "custom-media-queries",
