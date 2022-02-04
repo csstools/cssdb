@@ -1,8 +1,44 @@
 ---
-const { polyfill, title } = Astro.props;
+const { polyfill, id, title } = Astro.props;
 const repoUrl = polyfill.link.includes('csstools/postcss-plugins') ? 'https://github.com/csstools/postcss-plugins' : polyfill.link;
 const starImage = `https://img.shields.io/github/stars/${polyfill.link.split('/').slice(3,5).join('/')}.svg?style=social`;
 const isGithub = repoUrl.includes('github.com');
+const presetEnvPlugins = [
+	'all-property',
+	'any-link-pseudo-class',
+	'blank-pseudo-class',
+	'break-properties',
+	'case-insensitive-attributes',
+	'clamp',
+	'color-functional-notation',
+	'custom-media-queries',
+	'custom-properties',
+	'custom-selectors',
+	'dir-pseudo-class',
+	'display-two-values',
+	'double-position-gradients',
+	'environment-variables',
+	'focus-visible-pseudo-class',
+	'focus-within-pseudo-class',
+	'font-format-keywords',
+	'font-variant-property',
+	'gap-properties',
+	'has-pseudo-class',
+	'hexadecimal-alpha-notation',
+	'image-set-function',
+	'lab-function',
+	'logical-properties-and-values',
+	'media-query-ranges',
+	'nesting-rules',
+	'not-pseudo-class',
+	'overflow-property',
+	'overflow-wrap-property',
+	'place-properties',
+	'prefers-color-scheme-query',
+	'rebeccapurple-color',
+	'system-ui-font-family',
+];
+const isBundled = presetEnvPlugins.includes(id);
 ---
 
 <li class="cssdb-feature-polyfill-item">
@@ -19,4 +55,7 @@ const isGithub = repoUrl.includes('github.com');
 			</a>
 		</span>
 	)}
+	{(polyfill.type === "PostCSS Plugin" && isBundled) &&  (
+		<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
+	)}	
 </li>

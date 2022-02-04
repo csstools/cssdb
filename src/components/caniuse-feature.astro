@@ -11,7 +11,7 @@ const browsers = {
 	'and_qq': 'QQ Browserr',
 };
 ---
-{ feature.browser_support && (
+{ feature.browser_support && Object.keys(feature.browser_support).length > 0 && (
 <a
 		class="cssdb-feature-caniuse"
 		href={link}
