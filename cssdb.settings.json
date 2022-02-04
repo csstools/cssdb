@@ -216,7 +216,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
     },
-    "example": "p {\n  color(display-p3 1 0.5 0);\n  color(display-p3 1 0.5 0 / .5);\n}"
+    "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}"
   },
   {
     "id": "custom-media-queries",
