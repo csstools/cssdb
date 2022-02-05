@@ -1,5 +1,14 @@
 # Changes to cssdb
 
+### 6.2.0 (February 5, 2022)
+
+- Added: `color()` function feature as Stage 2.
+- Fixed `vendors_implementations` so it doesn't count unreleased browsers.
+- Updated `postcss-preset-env` to `^7.3.1` (minor)
+- Updated `@mdn/browser-compat-data` to `^4.1.6` (patch)
+- Updated `caniuse-lite` to `^1.0.30001307` (patch)
+- Updated `postcss` to `^8.4.6` (patch)
+
 ### 6.1.0 (January 31, 2022)
 
 - `blank-pseudo-class` is now Stage 2 and has links to an official spec! 🎉 (minor)
