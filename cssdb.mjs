@@ -750,7 +750,7 @@ export default [
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "image-set-function",

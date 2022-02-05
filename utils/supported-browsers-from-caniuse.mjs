@@ -10,7 +10,7 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 	const { stats } = caniuse.feature(caniuse.features[key]);
 
 	Object.keys(stats).forEach(browserKey => {
-		const [ smalledSupported ] = Object.keys(stats[browserKey])
+		const [ smallestSupported ] = Object.keys(stats[browserKey])
 			.map(version => [version, stats[browserKey][version]])
 			.filter(([,support]) => {
 				if (feature['allow_partial_implementation']) {
@@ -20,8 +20,8 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 				return support === 'y';
 			});
 
-		if (smalledSupported) {
-			result[browserKey] = smalledSupported[0].replace(/(\.0)?(-.+)?$/, '');
+		if (smallestSupported) {
+			result[browserKey] = smallestSupported[0].replace(/(\.0)?(-.+)?$/, '');
 		}
 	});
 
