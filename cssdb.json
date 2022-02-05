@@ -692,7 +692,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -768,7 +768,7 @@
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 0
   },
   {
     "id": "image-set-function",
