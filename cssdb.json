@@ -15,7 +15,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -130,7 +130,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -179,7 +179,7 @@
     "stage": 2,
     "browser_support": {
       "firefox": "48",
-      "and_ff": "95",
+      "and_ff": "96",
       "kaios": "2.5"
     },
     "docs": {
@@ -201,6 +201,21 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
     },
     "polyfills": [],
+    "vendors_implementations": 1
+  },
+  {
+    "id": "color-function",
+    "title": "`color()` Function",
+    "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
+    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
+    "stage": 2,
+    "browser_support": {
+      "safari": "15",
+      "ios_saf": "15"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
+    },
     "vendors_implementations": 1
   },
   {
@@ -308,7 +323,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "kaios": "2.5"
@@ -432,7 +447,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "10.1"
     },
     "docs": {
@@ -512,7 +527,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -562,7 +577,7 @@
       "firefox": "34",
       "safari": "10",
       "ios_saf": "9.3",
-      "and_ff": "95",
+      "and_ff": "96",
       "kaios": "2.5"
     },
     "docs": {
@@ -637,7 +652,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4",
@@ -661,7 +676,8 @@
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
-      "safari": "TP"
+      "safari": "15.4",
+      "ios_saf": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
@@ -676,7 +692,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -694,7 +710,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2"
     },
     "docs": {
@@ -739,7 +755,9 @@
     "stage": 2,
     "browser_support": {
       "firefox": "97",
-      "and_ff": "97"
+      "and_ff": "97",
+      "safari": "15.4",
+      "ios_saf": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
@@ -750,7 +768,7 @@
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "image-set-function",
@@ -786,7 +804,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -813,7 +831,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -879,7 +897,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -909,7 +927,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -972,7 +990,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -1050,7 +1068,7 @@
       "bb": "10",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1081,7 +1099,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -1136,7 +1154,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "12"
     },
     "docs": {
@@ -1170,7 +1188,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "11.1"
     },
     "docs": {
@@ -1195,7 +1213,7 @@
       "bb": "10",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1222,7 +1240,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1256,7 +1274,7 @@
       "android": "97",
       "op_mob": "64",
       "and_chr": "97",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4"

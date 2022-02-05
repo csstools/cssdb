@@ -140,6 +140,19 @@
     "polyfills": []
   },
   {
+    "id": "color-function",
+    "title": "`color()` Function",
+    "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
+    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
+    "stage": 2,
+    "caniuse": "css-color-function",
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
+    },
+    "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}"
+  },
+  {
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
