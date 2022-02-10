@@ -209,10 +209,6 @@
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "polyfills": [
       {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/jsxtools/cqfill"
-      },
-      {
         "type": "JavaScript Library",
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
