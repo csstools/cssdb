@@ -25,6 +25,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
     },
+    "example": "a {\n  all: initial;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -55,6 +56,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
+    "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -73,6 +75,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
     },
+    "example": "input:blank {\n  background-color: yellow;\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -106,6 +109,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
     },
+    "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -139,6 +143,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
     },
+    "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -169,6 +174,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
     },
+    "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
     "vendors_implementations": 3
   },
   {
@@ -185,6 +191,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
     },
+    "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
     "vendors_implementations": 1
   },
   {
@@ -200,6 +207,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
     },
+    "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "polyfills": [],
     "vendors_implementations": 1
   },
@@ -216,6 +224,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
     },
+    "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
     "vendors_implementations": 1
   },
   {
@@ -237,6 +246,7 @@
       "samsung": "9.0",
       "android": "65"
     },
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -252,6 +262,7 @@
     "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
     "stage": -1,
     "browser_support": {},
+    "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [],
     "vendors_implementations": 0
   },
@@ -262,6 +273,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color-mod",
     "stage": -1,
     "browser_support": {},
+    "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -280,11 +292,8 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
     },
+    "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/jsxtools/cqfill"
-      },
       {
         "type": "JavaScript Library",
         "link": "https://www.npmjs.com/package/container-query-polyfill"
@@ -299,6 +308,7 @@
     "specification": "https://www.w3.org/TR/mediaqueries-5/#at-ruledef-custom-media",
     "stage": 2,
     "browser_support": {},
+    "example": "@custom-media --narrow-window (max-width: 30em);\n\n@media (--narrow-window) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -331,6 +341,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
+    "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -346,6 +357,7 @@
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
     "stage": -1,
     "browser_support": {},
+    "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -361,6 +373,7 @@
     "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
     "stage": 1,
     "browser_support": {},
+    "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -382,6 +395,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
     },
+    "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -397,12 +411,15 @@
     "specification": "https://www.w3.org/TR/css-display-3/#the-display-properties",
     "stage": 2,
     "browser_support": {
-      "firefox": "70"
+      "firefox": "70",
+      "safari": "15",
+      "ios_saf": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
     },
-    "vendors_implementations": 1
+    "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
+    "vendors_implementations": 2
   },
   {
     "id": "double-position-gradients",
@@ -423,6 +440,7 @@
       "samsung": "11.0",
       "android": "72"
     },
+    "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -453,6 +471,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
+    "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -471,6 +490,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
+    "example": "body {\n  font-family: fangsong;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -499,6 +519,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
     },
+    "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -534,6 +555,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
     },
+    "example": "form:focus-within {\n  background: rgba(0, 0, 0, 0.3);\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -559,6 +581,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
     },
+    "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -583,6 +606,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
     },
+    "example": "h2 {\n  font-variant: small-caps;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -613,6 +637,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
     },
+    "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -628,6 +653,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-gray",
     "stage": -1,
     "browser_support": {},
+    "example": "p {\n  color: gray(50);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -661,6 +687,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
     },
+    "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -682,6 +709,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
+    "example": "a:has(> img) {\n  display: block;\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -690,6 +718,10 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
+      },
+      {
+        "type": "Experimental Library",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ],
     "vendors_implementations": 0
@@ -716,6 +748,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
     },
+    "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -739,6 +772,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
     },
+    "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -762,6 +796,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
     },
+    "example": "p {\n  text-indent: 2ic;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -780,6 +815,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
     },
+    "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -813,6 +849,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
     },
+    "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}",
     "vendors_implementations": 3
   },
   {
@@ -837,6 +874,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
+    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
     "vendors_implementations": 3
   },
   {
@@ -852,6 +890,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
     },
+    "example": "body {\n  color: lab(240 50 20);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -873,6 +912,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
     },
+    "example": "body {\n  color: lch(53 105 40);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -903,6 +943,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
+    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -933,6 +974,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
+    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -951,6 +993,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
+    "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -966,6 +1009,7 @@
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 1,
     "browser_support": {},
+    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -996,6 +1040,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
     },
+    "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1021,6 +1066,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
     },
+    "example": "img {\n  opacity: 90%;\n}",
     "vendors_implementations": 2
   },
   {
@@ -1043,6 +1089,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
     },
+    "example": "html {\n  overflow: hidden auto;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1077,6 +1124,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
     },
+    "example": "p {\n  overflow-wrap: break-word;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1106,6 +1154,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
+    "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
     "vendors_implementations": 2
   },
   {
@@ -1130,6 +1179,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
     },
+    "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1160,6 +1210,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
+    "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -1194,6 +1245,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
     },
+    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
     "vendors_implementations": 3
   },
   {
@@ -1222,6 +1274,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
+    "example": "input:read-only {\n  background-color: #ccc;\n}",
     "vendors_implementations": 3
   },
   {
@@ -1250,6 +1303,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
     },
+    "example": "html {\n  color: rebeccapurple;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1282,6 +1336,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
+    "example": "body {\n  font-family: system-ui;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1297,6 +1352,7 @@
     "specification": "https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/",
     "stage": 2,
     "browser_support": {},
+    "example": "@when media(width >= 640px) and (supports(display: flex) or supports(display: grid)) {\n  /* A */\n} @else media(pointer: coarse) {\n  /* B */\n} @else {\n  /* C */\n}",
     "vendors_implementations": 0
   },
   {
@@ -1319,6 +1375,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },
+    "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
     "vendors_implementations": 2
   }
 ]
