@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 6.2.1 (Unreleased)
+### 6.2.1 (February 10, 2022)
 
 - Returning `example` to the exported DB (removed on `6.0.0`).
 - Removed outdated plugin from Container Queries.
