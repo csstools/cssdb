@@ -1,5 +1,16 @@
 # Changes to cssdb
 
+### 6.2.1 (Unreleased)
+
+- Returning `example` to the exported DB (removed on `6.0.0`).
+- Removed outdated plugin from Container Queries.
+- Added link to experimental version of `:has`.
+- Updated `@astropub/webapi` to `0.10.13` (patch)
+- Updated `@mdn/browser-compat-data` to `4.1.7` (patch)
+- Updated `caniuse-lite` to `1.0.30001310` (patch)
+- Updated `stylelint` to `14.4.0` (minor)
+- Updated `stylelint-config-standard` to`25.0.0` (major)
+
 ### 6.2.0 (February 5, 2022)
 
 - Added: `color()` function feature as Stage 2.
