@@ -23,7 +23,6 @@ cssdb.forEach(feature => {
 
 const cleanDB = cssdb.map(
 	({
-		 example,
 		 caniuse,
 		 caniuse_compat,
 		 mdn_path,
