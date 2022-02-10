@@ -158,11 +158,11 @@
     "description": "A space and slash separated notation for specifying colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
-    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
     "mdn_path": [
       "css.types.color.space_separated_functional_notation"
     ],
     "browser_support": {},
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -176,8 +176,8 @@
     "description": "A function for mixing colors",
     "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
     "stage": -1,
-    "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "browser_support": {},
+    "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": []
   },
   {
@@ -186,8 +186,8 @@
     "description": "A function for modifying colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color-mod",
     "stage": -1,
-    "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "browser_support": {},
+    "example": "p {\n  color: color-mod(black alpha(50%));\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -220,8 +220,8 @@
     "description": "An at-rule for defining aliases that represent media queries",
     "specification": "https://www.w3.org/TR/mediaqueries-5/#at-ruledef-custom-media",
     "stage": 2,
-    "example": "@custom-media --narrow-window (max-width: 30em);\n\n@media (--narrow-window) {}",
     "browser_support": {},
+    "example": "@custom-media --narrow-window (max-width: 30em);\n\n@media (--narrow-window) {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -255,8 +255,8 @@
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
     "stage": -1,
     "caniuse": "css-apply-rule",
-    "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "browser_support": {},
+    "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -270,8 +270,8 @@
     "description": "An at-rule for defining aliases that represent selectors",
     "specification": "https://drafts.csswg.org/css-extensions/#custom-selectors",
     "stage": 1,
-    "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p {}",
     "browser_support": {},
+    "example": "@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n\narticle :--heading + p {}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -317,7 +317,6 @@
     "description": "A syntax for using two positions in a gradient.",
     "specification": "https://www.w3.org/TR/css-images-4/#color-stop-syntax",
     "stage": 2,
-    "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "mdn_path": [
       "css.types.image.gradient['conic-gradient'].doubleposition",
       "css.types.image.gradient['linear-gradient'].doubleposition",
@@ -326,6 +325,7 @@
       "css.types.image.gradient['repeating-radial-gradient'].doubleposition"
     ],
     "browser_support": {},
+    "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -479,8 +479,8 @@
     "description": "A function for specifying fully desaturated colors",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-gray",
     "stage": -1,
-    "example": "p {\n  color: gray(50);\n}",
     "browser_support": {},
+    "example": "p {\n  color: gray(50);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -737,8 +737,8 @@
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 1,
     "caniuse": "css-nesting",
-    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "browser_support": {},
+    "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -945,6 +945,7 @@
     "description": "At-rules for specifying media queries and support queries in a single grammar",
     "specification": "https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/",
     "stage": 2,
+    "browser_support": {},
     "example": "@when media(width >= 640px) and (supports(display: flex) or supports(display: grid)) {\n  /* A */\n} @else media(pointer: coarse) {\n  /* B */\n} @else {\n  /* C */\n}"
   },
   {
