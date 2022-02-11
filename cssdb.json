@@ -1067,6 +1067,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
     },
     "example": "img {\n  opacity: 90%;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/mrcgrtz/postcss-opacity-percentage"
+      }
+    ],
     "vendors_implementations": 2
   },
   {

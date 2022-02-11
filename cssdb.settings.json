@@ -776,7 +776,13 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
     },
     "example": "img {\n  opacity: 90%;\n}",
-    "mdn_path": "css.properties.opacity.percentages"
+    "mdn_path": "css.properties.opacity.percentages",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/mrcgrtz/postcss-opacity-percentage"
+      }
+    ]
   },
   {
     "id": "overflow-property",
