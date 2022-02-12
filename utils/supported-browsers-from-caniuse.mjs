@@ -18,12 +18,21 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 				}
 
 				return support === 'y';
-			});
+			})
+			.sort(([versionA], [versionB]) => parseFloat(versionA.split('-')[0]) -  parseFloat(versionB.split('-')[0]));
 
 		if (smallestSupported) {
 			result[browserKey] = smallestSupported[0].replace(/(\.0)?(-.+)?$/, '');
 		}
 	});
+
+	if (typeof result.and_chr !== 'undefined') {
+		const [latestAndroidChrome] = Object.keys(caniuse.agents.and_chr.release_date);
+
+		if (result.and_chr === latestAndroidChrome) {
+			result.and_chr = result.chrome;
+		}
+	}
 
 	return result;
 }
