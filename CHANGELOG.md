@@ -1,5 +1,14 @@
 # Changes to cssdb
 
+### 6.3.0 (February 12, 2022) 
+
+- Added: Stage 2 `oklab` function (minor).
+- Added missing polyfills for `clamp()`, `opacity` percentages, `:is` pseudo and `display-two-values`.
+- Fixed `and_chr` and `android` browsers always using the latest version on Can I Use, now leverages Desktop version if the supported version is the latest one. See [Fyrd/caniuse#3518](https://github.com/Fyrd/caniuse/issues/3518).
+- Updated `stylelint` to `14.5.0` (minor)
+- Updated `caniuse-lite` to `1.0.30001311` (patch)
+- Updated `postcss-preset-env` to `7.3.2` (patch)
+
 ### 6.2.1 (February 10, 2022)
 
 - Returning `example` to the exported DB (removed on `6.0.0`).
@@ -27,7 +36,6 @@
 - `color-contrast` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `color-functional-notation` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `custom-media-queries` is now Stage 2 and has links to an official spec! 🎉 (minor)
-- `display-two-values` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `display-two-values` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `opacity-percentage` is now Stage 2 and has links to an official spec! 🎉 (minor)
 - `prefers-color-scheme-query` is now Stage 2 and has links to an official spec! 🎉 (minor)
