@@ -26,12 +26,20 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 		}
 	});
 
-	if (typeof result.and_chr !== 'undefined') {
-		const [latestAndroidChrome] = Object.keys(caniuse.agents.and_chr.release_date);
+	/*
+	* CanIUse doesn't keep track of Android version history so only the last version
+	* is currently tracked, see https://github.com/Fyrd/caniuse/issues/3518
+	*
+	* caniuse.agents holds an object with versions as keys and dates as the value
+	* */
+	const [latestAndroidChrome] = Object.keys(caniuse.agents.and_chr.release_date);
 
-		if (result.and_chr === latestAndroidChrome) {
-			result.and_chr = result.chrome;
-		}
+	if (typeof result.and_chr !== 'undefined' && result.and_chr === latestAndroidChrome) {
+		result.and_chr = result.chrome;
+	}
+
+	if (typeof result.android !== 'undefined' && result.android === latestAndroidChrome) {
+		result.android = result.chrome;
 	}
 
 	return result;
