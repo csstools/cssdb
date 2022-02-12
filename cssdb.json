@@ -9,12 +9,12 @@
       "edge": "79",
       "firefox": "27",
       "chrome": "37",
-      "safari": "10",
+      "safari": "9.1",
       "opera": "24",
       "ios_saf": "9.3",
-      "android": "97",
+      "android": "4.4.3",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "37",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
@@ -98,10 +98,10 @@
       "ie": "10",
       "edge": "12",
       "safari": "10",
-      "opera": "12",
+      "opera": "11.1",
       "ios_saf": "10",
       "op_mini": "all",
-      "op_mob": "12",
+      "op_mob": "11.1",
       "ie_mob": "10",
       "and_uc": "12.12",
       "samsung": "5"
@@ -131,9 +131,9 @@
       "safari": "9",
       "opera": "36",
       "ios_saf": "9",
-      "android": "97",
+      "android": "49",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "49",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
@@ -175,6 +175,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/polemius/postcss-clamp"
+      }
+    ],
     "vendors_implementations": 3
   },
   {
@@ -330,9 +336,9 @@
       "safari": "10",
       "opera": "36",
       "ios_saf": "10",
-      "android": "97",
+      "android": "49",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "49",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
@@ -419,6 +425,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
+      }
+    ],
     "vendors_implementations": 2
   },
   {
@@ -459,12 +471,12 @@
       "edge": "79",
       "firefox": "65",
       "chrome": "69",
-      "safari": "12",
+      "safari": "11.1",
       "opera": "56",
       "ios_saf": "11.3",
-      "android": "97",
+      "android": "69",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "69",
       "and_ff": "96",
       "samsung": "10.1"
     },
@@ -542,12 +554,12 @@
       "edge": "79",
       "firefox": "52",
       "chrome": "60",
-      "safari": "11",
+      "safari": "10.1",
       "opera": "47",
       "ios_saf": "10.3",
-      "android": "97",
+      "android": "60",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "60",
       "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
@@ -598,7 +610,7 @@
     "stage": 4,
     "browser_support": {
       "firefox": "34",
-      "safari": "10",
+      "safari": "9.1",
       "ios_saf": "9.3",
       "and_ff": "96",
       "kaios": "2.5"
@@ -672,12 +684,12 @@
       "edge": "16",
       "firefox": "54",
       "chrome": "58",
-      "safari": "11",
+      "safari": "10.1",
       "opera": "44",
       "ios_saf": "10.3",
-      "android": "97",
+      "android": "58",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "58",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",
@@ -739,9 +751,9 @@
       "safari": "10",
       "opera": "52",
       "ios_saf": "10",
-      "android": "97",
+      "android": "62",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "62",
       "and_ff": "96",
       "samsung": "8.2"
     },
@@ -803,7 +815,7 @@
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "image-set-function",
@@ -834,12 +846,12 @@
       "edge": "79",
       "firefox": "50",
       "chrome": "53",
-      "safari": "11",
+      "safari": "10.1",
       "opera": "40",
       "ios_saf": "10.3",
-      "android": "97",
+      "android": "53",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "53",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
@@ -865,9 +877,9 @@
       "safari": "14",
       "opera": "75",
       "ios_saf": "14",
-      "android": "97",
+      "android": "88",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "88",
       "and_ff": "96",
       "samsung": "15"
     },
@@ -875,6 +887,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-is-pseudo-class"
+      }
+    ],
     "vendors_implementations": 3
   },
   {
@@ -934,9 +952,9 @@
       "safari": "15",
       "opera": "76",
       "ios_saf": "15",
-      "android": "97",
+      "android": "89",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "89",
       "and_ff": "96",
       "samsung": "15"
     },
@@ -965,9 +983,9 @@
       "safari": "14",
       "opera": "75",
       "ios_saf": "14",
-      "android": "97",
+      "android": "88",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "88",
       "and_ff": "96",
       "samsung": "15"
     },
@@ -1031,9 +1049,9 @@
       "safari": "9",
       "opera": "75",
       "ios_saf": "9",
-      "android": "97",
+      "android": "88",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "88",
       "and_ff": "96",
       "samsung": "15"
     },
@@ -1048,6 +1066,22 @@
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "oklab-function",
+    "title": "`oklab` and `oklch` color functions",
+    "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
+    "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
+    "stage": 2,
+    "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
+      }
+    ],
+    "browser_support": {},
+    "vendors_implementations": 0
   },
   {
     "id": "opacity-percentage",
@@ -1114,13 +1148,13 @@
       "edge": "18",
       "firefox": "49",
       "chrome": "23",
-      "safari": "7",
-      "opera": "15",
-      "ios_saf": "8",
-      "android": "97",
+      "safari": "6.1",
+      "opera": "12.1",
+      "ios_saf": "7",
+      "android": "4.4",
       "bb": "10",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "23",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1150,9 +1184,9 @@
       "firefox": "59",
       "chrome": "65",
       "opera": "52",
-      "android": "97",
+      "android": "65",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "65",
       "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
@@ -1204,12 +1238,12 @@
       "edge": "79",
       "firefox": "67",
       "chrome": "76",
-      "safari": "13",
+      "safari": "12.1",
       "opera": "62",
       "ios_saf": "13",
-      "android": "97",
+      "android": "76",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "76",
       "and_ff": "96",
       "samsung": "12"
     },
@@ -1239,12 +1273,12 @@
       "edge": "79",
       "firefox": "63",
       "chrome": "74",
-      "safari": "11",
+      "safari": "10.1",
       "opera": "64",
       "ios_saf": "10.3",
-      "android": "97",
+      "android": "74",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "74",
       "and_ff": "96",
       "samsung": "11.1"
     },
@@ -1267,10 +1301,10 @@
       "safari": "9",
       "opera": "23",
       "ios_saf": "9",
-      "android": "97",
+      "android": "36",
       "bb": "10",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "36",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1296,9 +1330,9 @@
       "safari": "7",
       "opera": "25",
       "ios_saf": "8",
-      "android": "97",
+      "android": "4.4",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "38",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
@@ -1331,9 +1365,9 @@
       "safari": "11",
       "opera": "43",
       "ios_saf": "11",
-      "android": "97",
+      "android": "56",
       "op_mob": "64",
-      "and_chr": "97",
+      "and_chr": "56",
       "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",

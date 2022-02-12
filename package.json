@@ -39,13 +39,13 @@
     "@mdn/browser-compat-data": "^4.1.7",
     "astro": "^0.22.20",
     "browserslist": "^4.19.1",
-    "caniuse-lite": "^1.0.30001310",
+    "caniuse-lite": "^1.0.30001311",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.6",
-    "postcss-preset-env": "^7.3.1",
+    "postcss-preset-env": "^7.3.2",
     "pre-commit": "^1.2.2",
-    "stylelint": "^14.4.0",
+    "stylelint": "^14.5.0",
     "stylelint-config-standard": "^25.0.0"
   },
   "stylelint": {

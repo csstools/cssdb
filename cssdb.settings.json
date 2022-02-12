@@ -110,6 +110,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/polemius/postcss-clamp"
+      }
+    ],
     "mdn_path": "css.types.clamp"
   },
   {
@@ -309,6 +315,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
+      }
+    ],
     "mdn_path": "css.properties.display['multi-keyword_values']"
   },
   {
@@ -634,7 +646,13 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
-    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}"
+    "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-is-pseudo-class"
+      }
+    ]
   },
   {
     "id": "lab-function",
@@ -762,6 +780,20 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-not"
+      }
+    ]
+  },
+  {
+    "id": "oklab-function",
+    "title": "`oklab` and `oklch` color functions",
+    "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
+    "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
+    "stage": 2,
+    "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ]
   },
