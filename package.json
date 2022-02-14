@@ -43,7 +43,7 @@
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.6",
-    "postcss-preset-env": "^7.3.2",
+    "postcss-preset-env": "^7.3.3",
     "pre-commit": "^1.2.2",
     "stylelint": "^14.5.0",
     "stylelint-config-standard": "^25.0.0"
