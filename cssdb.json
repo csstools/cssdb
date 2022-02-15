@@ -231,6 +231,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
+      }
+    ],
     "vendors_implementations": 1
   },
   {
@@ -788,7 +794,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-hwb"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
     "vendors_implementations": 2
@@ -812,7 +818,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/JLHwung/postcss-ic-unit"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
     "vendors_implementations": 1
