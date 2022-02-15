@@ -168,7 +168,7 @@
       "css.types.color.space_separated_functional_notation"
     ],
     "browser_support": {},
-    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -246,7 +246,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
-    "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
+    "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -665,7 +665,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
     },
-    "example": "body {\n  color: lab(240 50 20);\n}",
+    "example": "body {\n  color: lab(80% 50 20);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -684,7 +684,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
     },
-    "example": "body {\n  color: lch(53 105 40);\n}",
+    "example": "body {\n  color: lch(53% 105 40);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",

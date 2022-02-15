@@ -15,7 +15,7 @@ export default [
       "android": "4.4.3",
       "op_mob": "64",
       "and_chr": "37",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -134,7 +134,7 @@ export default [
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -191,7 +191,7 @@ export default [
     "stage": 2,
     "browser_support": {
       "firefox": "48",
-      "and_ff": "96",
+      "and_ff": "95",
       "kaios": "2.5"
     },
     "docs": {
@@ -252,7 +252,7 @@ export default [
       "samsung": "9.0",
       "android": "65"
     },
-    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  box-shadow: 0 0 0 10px hwb(120deg 100% 25% / 80%);\n  color: rgb(0 255 0);\n}",
+    "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -339,7 +339,7 @@ export default [
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
       "kaios": "2.5"
@@ -347,7 +347,7 @@ export default [
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
-    "example": "img {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
+    "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -417,9 +417,7 @@ export default [
     "specification": "https://www.w3.org/TR/css-display-3/#the-display-properties",
     "stage": 2,
     "browser_support": {
-      "firefox": "70",
-      "safari": "15",
-      "ios_saf": "15"
+      "firefox": "70"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
@@ -431,7 +429,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 1
   },
   {
     "id": "double-position-gradients",
@@ -477,7 +475,7 @@ export default [
       "android": "69",
       "op_mob": "64",
       "and_chr": "69",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "10.1"
     },
     "docs": {
@@ -560,7 +558,7 @@ export default [
       "android": "60",
       "op_mob": "64",
       "and_chr": "60",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -612,7 +610,7 @@ export default [
       "firefox": "34",
       "safari": "9.1",
       "ios_saf": "9.3",
-      "and_ff": "96",
+      "and_ff": "95",
       "kaios": "2.5"
     },
     "docs": {
@@ -690,7 +688,7 @@ export default [
       "android": "58",
       "op_mob": "64",
       "and_chr": "58",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4",
@@ -715,8 +713,7 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
-      "safari": "15.4",
-      "ios_saf": "15.4"
+      "safari": "TP"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
@@ -754,7 +751,7 @@ export default [
       "android": "62",
       "op_mob": "64",
       "and_chr": "62",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "8.2"
     },
     "docs": {
@@ -801,9 +798,7 @@ export default [
     "stage": 2,
     "browser_support": {
       "firefox": "97",
-      "and_ff": "97",
-      "safari": "15.4",
-      "ios_saf": "15.4"
+      "and_ff": "97"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
@@ -815,7 +810,7 @@ export default [
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "image-set-function",
@@ -852,7 +847,7 @@ export default [
       "android": "53",
       "op_mob": "64",
       "and_chr": "53",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -880,7 +875,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "15"
     },
     "docs": {
@@ -908,7 +903,7 @@ export default [
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
     },
-    "example": "body {\n  color: lab(240 50 20);\n}",
+    "example": "body {\n  color: lab(80% 50 20);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -930,7 +925,7 @@ export default [
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
     },
-    "example": "body {\n  color: lch(53 105 40);\n}",
+    "example": "body {\n  color: lch(53% 105 40);\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -955,7 +950,7 @@ export default [
       "android": "89",
       "op_mob": "64",
       "and_chr": "89",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "15"
     },
     "docs": {
@@ -986,7 +981,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "15"
     },
     "docs": {
@@ -1052,7 +1047,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "15"
     },
     "docs": {
@@ -1155,7 +1150,7 @@ export default [
       "bb": "10",
       "op_mob": "64",
       "and_chr": "23",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1187,7 +1182,7 @@ export default [
       "android": "65",
       "op_mob": "64",
       "and_chr": "65",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -1244,7 +1239,7 @@ export default [
       "android": "76",
       "op_mob": "64",
       "and_chr": "76",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "12"
     },
     "docs": {
@@ -1279,7 +1274,7 @@ export default [
       "android": "74",
       "op_mob": "64",
       "and_chr": "74",
-      "and_ff": "96",
+      "and_ff": "95",
       "samsung": "11.1"
     },
     "docs": {
@@ -1305,7 +1300,7 @@ export default [
       "bb": "10",
       "op_mob": "64",
       "and_chr": "36",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1333,7 +1328,7 @@ export default [
       "android": "4.4",
       "op_mob": "64",
       "and_chr": "38",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1368,7 +1363,7 @@ export default [
       "android": "56",
       "op_mob": "64",
       "and_chr": "56",
-      "and_ff": "96",
+      "and_ff": "95",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4"
