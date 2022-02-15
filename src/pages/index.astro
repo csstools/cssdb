@@ -30,7 +30,7 @@ import ModeToggler from '../components/mode-toggler.astro';
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://cssdb.org/">
 	<link href="/favicon.ico" rel="shortcut icon">
-	<link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/style.css')}>
+	<style global>@import "../styles/style.css";</style>
 </head>
 <body>
 	<Header />
