@@ -15,7 +15,7 @@
       "android": "4.4.3",
       "op_mob": "64",
       "and_chr": "37",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -134,7 +134,7 @@
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -191,7 +191,7 @@
     "stage": 2,
     "browser_support": {
       "firefox": "48",
-      "and_ff": "95",
+      "and_ff": "96",
       "kaios": "2.5"
     },
     "docs": {
@@ -339,7 +339,7 @@
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "kaios": "2.5"
@@ -417,7 +417,9 @@
     "specification": "https://www.w3.org/TR/css-display-3/#the-display-properties",
     "stage": 2,
     "browser_support": {
-      "firefox": "70"
+      "firefox": "70",
+      "safari": "15",
+      "ios_saf": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
@@ -429,7 +431,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "double-position-gradients",
@@ -475,7 +477,7 @@
       "android": "69",
       "op_mob": "64",
       "and_chr": "69",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "10.1"
     },
     "docs": {
@@ -558,7 +560,7 @@
       "android": "60",
       "op_mob": "64",
       "and_chr": "60",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -610,7 +612,7 @@
       "firefox": "34",
       "safari": "9.1",
       "ios_saf": "9.3",
-      "and_ff": "95",
+      "and_ff": "96",
       "kaios": "2.5"
     },
     "docs": {
@@ -688,7 +690,7 @@
       "android": "58",
       "op_mob": "64",
       "and_chr": "58",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4",
@@ -713,7 +715,8 @@
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
-      "safari": "TP"
+      "safari": "15.4",
+      "ios_saf": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
@@ -751,7 +754,7 @@
       "android": "62",
       "op_mob": "64",
       "and_chr": "62",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2"
     },
     "docs": {
@@ -798,7 +801,9 @@
     "stage": 2,
     "browser_support": {
       "firefox": "97",
-      "and_ff": "97"
+      "and_ff": "97",
+      "safari": "15.4",
+      "ios_saf": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
@@ -810,7 +815,7 @@
         "link": "https://github.com/JLHwung/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "image-set-function",
@@ -847,7 +852,7 @@
       "android": "53",
       "op_mob": "64",
       "and_chr": "53",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -875,7 +880,7 @@
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -950,7 +955,7 @@
       "android": "89",
       "op_mob": "64",
       "and_chr": "89",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -981,7 +986,7 @@
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -1047,7 +1052,7 @@
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "15"
     },
     "docs": {
@@ -1150,7 +1155,7 @@
       "bb": "10",
       "op_mob": "64",
       "and_chr": "23",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1182,7 +1187,7 @@
       "android": "65",
       "op_mob": "64",
       "and_chr": "65",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -1239,7 +1244,7 @@
       "android": "76",
       "op_mob": "64",
       "and_chr": "76",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "12"
     },
     "docs": {
@@ -1274,7 +1279,7 @@
       "android": "74",
       "op_mob": "64",
       "and_chr": "74",
-      "and_ff": "95",
+      "and_ff": "96",
       "samsung": "11.1"
     },
     "docs": {
@@ -1300,7 +1305,7 @@
       "bb": "10",
       "op_mob": "64",
       "and_chr": "36",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1328,7 +1333,7 @@
       "android": "4.4",
       "op_mob": "64",
       "and_chr": "38",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1363,7 +1368,7 @@
       "android": "56",
       "op_mob": "64",
       "and_chr": "56",
-      "and_ff": "95",
+      "and_ff": "96",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4"
