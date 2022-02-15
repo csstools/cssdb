@@ -3,6 +3,8 @@
 ### Unreleased
 
 - Fix certain examples
+- Adding new features to PostCSS Preset Env bundled collection.
+- Ensuring all features that have plugins have them listed.
 
 ### 6.3.0 (February 12, 2022) 
 
