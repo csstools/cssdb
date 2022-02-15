@@ -580,7 +580,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-hwb"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ]
   },
@@ -599,7 +599,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/JLHwung/postcss-ic-unit"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ]
   },
