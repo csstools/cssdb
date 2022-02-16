@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased
+### 6.3.1 (February 16, 2022)
 
 - Fix certain examples
 - Adding new features to PostCSS Preset Env bundled collection.
