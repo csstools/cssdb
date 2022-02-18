@@ -33,9 +33,14 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 	* caniuse.agents holds an object with versions as keys and dates as the value
 	* */
 	const [latestAndroidChrome] = Object.keys(caniuse.agents.and_chr.release_date);
+	const [latestAndroidFirefox] = Object.keys(caniuse.agents.and_ff.release_date);
 
 	if (typeof result.and_chr !== 'undefined' && result.and_chr === latestAndroidChrome) {
 		result.and_chr = result.chrome;
+	}
+
+	if (typeof result.and_ff !== 'undefined' && result.and_ff === latestAndroidFirefox) {
+		result.and_ff = result.firefox;
 	}
 
 	if (typeof result.android !== 'undefined' && result.android === latestAndroidChrome) {
