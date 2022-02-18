@@ -994,13 +994,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
     },
-    "example": "div {\n  border-color: unset;\n  color: unset;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value"
-      }
-    ]
+    "example": "div {\n  border-color: unset;\n  color: unset;\n}"
   },
   {
     "id": "when-else-rules",
