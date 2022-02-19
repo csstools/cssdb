@@ -1,5 +1,15 @@
 # Changes to cssdb
 
+### 6.4.0 (February 19, 2022)
+
+- Added: `unset-value` function feature as Stage 3.
+- Updated `@astropub/webapi` to`0.10.14` (patch)
+- Updated `@mdn/browser-compat-data` to `4.1.8` (patch)
+- Updated `astro` to `0.23.0` (minor)
+- Updated `browserslist` to `4.19.3` (patch)
+- Updated `postcss-preset-env` to `7.4.1` (minor)
+- Updated `stylelint` to `14.5.1` (minor)
+
 ### 6.3.1 (February 16, 2022)
 
 - Fix certain examples
