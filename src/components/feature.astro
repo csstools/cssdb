@@ -30,11 +30,9 @@ const stages = [
 			<img class="cssdb-feature-stage-image" src={imageName} alt="" width="62" height="62" role="presentation" loading="lazy">
 		</a>
 		<h2 class="cssdb-feature-heading">
-			<a href={`#${feature.id}`}>{simpleTitle}</a>
+			<a href={`#${feature.id}`} set:html={simpleTitle} />
 		</h2>
-		<p class="cssdb-feature-description">
-			{simpleDescription}
-		</p>
+		<p class="cssdb-feature-description" set:html={simpleDescription} />
 	</header>
 	<p class="cssdb-feature-docs">
 		<a
@@ -78,7 +76,7 @@ const stages = [
 			/>
 		</a>
 	</p>
-	<pre class="cssdb-feature-example" dir="ltr">{ parseExample(feature.example) }</pre>
+	<pre class="cssdb-feature-example" dir="ltr" set:html={parseExample(feature.example)} />
 	<CaniuseFeature feature={feature} title={cleanTitle} />
 	<FeaturePolyfills polyfills={feature.polyfills} id={feature.id} title={cleanTitle} />
 </article>
