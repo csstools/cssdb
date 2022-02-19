@@ -984,6 +984,19 @@
     ]
   },
   {
+    "id": "unset-value",
+    "title": "`unset` Keyword",
+    "description": "The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not.",
+    "specification": "https://www.w3.org/TR/css-cascade-4/#inherit-initial",
+    "stage": 3,
+    "mdn_path": "css.types.global_keywords.unset",
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+    },
+    "example": "div {\n  border-color: unset;\n  color: unset;\n}"
+  },
+  {
     "id": "when-else-rules",
     "title": "When/Else Rules",
     "description": "At-rules for specifying media queries and support queries in a single grammar",

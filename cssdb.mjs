@@ -15,7 +15,7 @@ export default [
       "android": "4.4.3",
       "op_mob": "64",
       "and_chr": "37",
-      "and_ff": "96",
+      "and_ff": "27",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -134,7 +134,7 @@ export default [
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "96",
+      "and_ff": "47",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -191,7 +191,7 @@ export default [
     "stage": 2,
     "browser_support": {
       "firefox": "48",
-      "and_ff": "96",
+      "and_ff": "48",
       "kaios": "2.5"
     },
     "docs": {
@@ -345,7 +345,7 @@ export default [
       "android": "49",
       "op_mob": "64",
       "and_chr": "49",
-      "and_ff": "96",
+      "and_ff": "31",
       "and_uc": "12.12",
       "samsung": "5",
       "kaios": "2.5"
@@ -483,7 +483,7 @@ export default [
       "android": "69",
       "op_mob": "64",
       "and_chr": "69",
-      "and_ff": "96",
+      "and_ff": "65",
       "samsung": "10.1"
     },
     "docs": {
@@ -566,7 +566,7 @@ export default [
       "android": "60",
       "op_mob": "64",
       "and_chr": "60",
-      "and_ff": "96",
+      "and_ff": "52",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -618,7 +618,7 @@ export default [
       "firefox": "34",
       "safari": "9.1",
       "ios_saf": "9.3",
-      "and_ff": "96",
+      "and_ff": "34",
       "kaios": "2.5"
     },
     "docs": {
@@ -696,7 +696,7 @@ export default [
       "android": "58",
       "op_mob": "64",
       "and_chr": "58",
-      "and_ff": "96",
+      "and_ff": "54",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4",
@@ -760,7 +760,7 @@ export default [
       "android": "62",
       "op_mob": "64",
       "and_chr": "62",
-      "and_ff": "96",
+      "and_ff": "49",
       "samsung": "8.2"
     },
     "docs": {
@@ -858,7 +858,7 @@ export default [
       "android": "53",
       "op_mob": "64",
       "and_chr": "53",
-      "and_ff": "96",
+      "and_ff": "50",
       "and_uc": "12.12",
       "samsung": "5",
       "and_qq": "10.4",
@@ -886,7 +886,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "78",
       "samsung": "15"
     },
     "docs": {
@@ -961,7 +961,7 @@ export default [
       "android": "89",
       "op_mob": "64",
       "and_chr": "89",
-      "and_ff": "96",
+      "and_ff": "66",
       "samsung": "15"
     },
     "docs": {
@@ -992,7 +992,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "78",
       "samsung": "15"
     },
     "docs": {
@@ -1058,7 +1058,7 @@ export default [
       "android": "88",
       "op_mob": "64",
       "and_chr": "88",
-      "and_ff": "96",
+      "and_ff": "84",
       "samsung": "15"
     },
     "docs": {
@@ -1161,7 +1161,7 @@ export default [
       "bb": "10",
       "op_mob": "64",
       "and_chr": "23",
-      "and_ff": "96",
+      "and_ff": "49",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1193,7 +1193,7 @@ export default [
       "android": "65",
       "op_mob": "64",
       "and_chr": "65",
-      "and_ff": "96",
+      "and_ff": "59",
       "samsung": "8.2",
       "and_qq": "10.4"
     },
@@ -1250,7 +1250,7 @@ export default [
       "android": "76",
       "op_mob": "64",
       "and_chr": "76",
-      "and_ff": "96",
+      "and_ff": "67",
       "samsung": "12"
     },
     "docs": {
@@ -1285,7 +1285,7 @@ export default [
       "android": "74",
       "op_mob": "64",
       "and_chr": "74",
-      "and_ff": "96",
+      "and_ff": "63",
       "samsung": "11.1"
     },
     "docs": {
@@ -1311,7 +1311,7 @@ export default [
       "bb": "10",
       "op_mob": "64",
       "and_chr": "36",
-      "and_ff": "96",
+      "and_ff": "78",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1339,7 +1339,7 @@ export default [
       "android": "4.4",
       "op_mob": "64",
       "and_chr": "38",
-      "and_ff": "96",
+      "and_ff": "33",
       "and_uc": "12.12",
       "samsung": "4",
       "and_qq": "10.4",
@@ -1374,7 +1374,7 @@ export default [
       "android": "56",
       "op_mob": "64",
       "and_chr": "56",
-      "and_ff": "96",
+      "and_ff": "92",
       "and_uc": "12.12",
       "samsung": "6.2",
       "and_qq": "10.4"
@@ -1389,6 +1389,31 @@ export default [
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
       }
     ],
+    "vendors_implementations": 3
+  },
+  {
+    "id": "unset-value",
+    "title": "`unset` Keyword",
+    "description": "The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not.",
+    "specification": "https://www.w3.org/TR/css-cascade-4/#inherit-initial",
+    "stage": 3,
+    "browser_support": {
+      "chrome": "41",
+      "and_chr": "41",
+      "edge": "13",
+      "firefox": "27",
+      "and_ff": "27",
+      "opera": "28",
+      "op_mob": "28",
+      "safari": "9.1",
+      "ios_saf": "9.3",
+      "samsung": "4.0",
+      "android": "41"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+    },
+    "example": "div {\n  border-color: unset;\n  color: unset;\n}",
     "vendors_implementations": 3
   },
   {
