@@ -1440,6 +1440,8 @@ export default [
       "and_ff": "82",
       "opera": "74",
       "op_mob": "63",
+      "safari": "14",
+      "ios_saf": "14",
       "samsung": "15.0",
       "android": "88"
     },
@@ -1447,6 +1449,6 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   }
 ]
