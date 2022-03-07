@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "type": "module",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
