@@ -1,5 +1,15 @@
 # Changes to cssdb
 
+### 6.4.1 (March 7, 2022)
+
+- Updated `@mdn/browser-compat-data` to `4.1.10` (patch). This now shows correct support for `:where` on Safari version 14.
+- Updated `astro` to `0.23.7` (patch)
+- Updated `browserslist` to `4.20.0` (minor)
+- Updated `caniuse-lite` to `1.0.30001313` (patch)
+- Updated `postcss` to `8.4.8` (patch)
+- Updated `postcss-preset-env` to `7.4.2` (patch)
+- Updated `stylelint` to `14.5.3` (patch)
+
 ### 6.4.0 (February 19, 2022)
 
 - Added: `unset-value` function feature as Stage 3.
