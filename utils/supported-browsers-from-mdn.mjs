@@ -31,8 +31,9 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				const hasAlternativeName = typeof browserEntry.alternative_name !== 'undefined';
 				const isPrefixed = typeof browserEntry.prefix !== 'undefined';
 				const isAllowedPrefix = isPrefixed && browserEntry.prefix !== '-khtml-';
+				const hasFlags = Array.isArray(browserEntry.flags);
 
-				if (hasAlternativeName) {
+				if (hasAlternativeName || hasFlags) {
 					return false;
 				}
 
@@ -43,7 +44,12 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				return !isPrefixed;
 			})?.version_added;
 		} else {
+			const hasFlags = Array.isArray(browserSupport.flags);
 			version = browserSupport.version_added;
+
+			if (hasFlags) {
+				return;
+			}
 
 			if (!supportsPrefixes && browserSupport.prefix) {
 				return;
