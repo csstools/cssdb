@@ -200,8 +200,11 @@
     "id": "color-mix",
     "title": "`color-mix()` Function",
     "description": "A function for mixing colors",
-    "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
-    "stage": -1,
+    "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
+    "stage": 2,
+    "mdn_path": [
+      "css.types.color['color-mix']"
+    ],
     "browser_support": {},
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": []
