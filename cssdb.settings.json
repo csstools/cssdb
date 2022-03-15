@@ -81,6 +81,20 @@
     ]
   },
   {
+    "id": "cascade-layers",
+    "title": "CSS Cascade Layers",
+    "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
+    "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
+    "stage": 2,
+    "caniuse": "css-cascade-layers",
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+    },
+    "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
+    "polyfills": []
+  },
+  {
     "id": "case-insensitive-attributes",
     "title": "Case-Insensitive Attributes",
     "description": "An attribute selector matching attribute values case-insensitively",
@@ -186,8 +200,11 @@
     "id": "color-mix",
     "title": "`color-mix()` Function",
     "description": "A function for mixing colors",
-    "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
-    "stage": -1,
+    "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
+    "stage": 2,
+    "mdn_path": [
+      "css.types.color['color-mix']"
+    ],
     "browser_support": {},
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": []
@@ -795,6 +812,7 @@
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
+    "browser_support": {},
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
       {
