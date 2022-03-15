@@ -119,6 +119,28 @@ export default [
     "vendors_implementations": 1
   },
   {
+    "id": "cascade-layers",
+    "title": "CSS Cascade Layers",
+    "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
+    "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
+    "stage": 2,
+    "browser_support": {
+      "edge": "99",
+      "firefox": "97",
+      "chrome": "99",
+      "safari": "15.4",
+      "ios_saf": "15.4",
+      "android": "99",
+      "and_chr": "99"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+    },
+    "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
+    "polyfills": [],
+    "vendors_implementations": 3
+  },
+  {
     "id": "case-insensitive-attributes",
     "title": "Case-Insensitive Attributes",
     "description": "An attribute selector matching attribute values case-insensitively",
@@ -206,16 +228,13 @@ export default [
     "description": "A function for choosing the color that contrasts the most.",
     "specification": "https://www.w3.org/TR/css-color-5/#colorcontrast",
     "stage": 2,
-    "browser_support": {
-      "safari": "15",
-      "ios_saf": "15"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
     },
     "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "polyfills": [],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "color-function",
@@ -271,8 +290,8 @@ export default [
     "id": "color-mix",
     "title": "`color-mix()` Function",
     "description": "A function for mixing colors",
-    "specification": "https://drafts.csswg.org/css-color-5/#color-mix",
-    "stage": -1,
+    "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
+    "stage": 2,
     "browser_support": {},
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [],
@@ -524,13 +543,13 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
     "browser_support": {
-      "chrome": "67",
-      "and_chr": "67",
-      "edge": "79",
+      "chrome": "86",
+      "and_chr": "86",
+      "edge": "86",
       "firefox": "85",
       "and_ff": "85",
-      "opera": "54",
-      "op_mob": "48",
+      "opera": "72",
+      "op_mob": "61",
       "samsung": "14.0",
       "android": "86"
     },
@@ -742,7 +761,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -821,7 +840,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "image-set-function",
@@ -1079,6 +1098,7 @@ export default [
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
+    "browser_support": {},
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
       {
@@ -1086,7 +1106,6 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "browser_support": {},
     "vendors_implementations": 0
   },
   {
