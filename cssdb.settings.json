@@ -81,6 +81,20 @@
     ]
   },
   {
+    "id": "cascade-layers",
+    "title": "CSS Cascade Layers",
+    "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
+    "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
+    "stage": 2,
+    "caniuse": "css-cascade-layers",
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+    },
+    "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
+    "polyfills": []
+  },
+  {
     "id": "case-insensitive-attributes",
     "title": "Case-Insensitive Attributes",
     "description": "An attribute selector matching attribute values case-insensitively",
