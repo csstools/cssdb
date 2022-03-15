@@ -1,5 +1,14 @@
 # Changes to cssdb
 
+### 6.5.0 (March 15, 2022)
+
+- Updated `@mdn/browser-compat-data` to `4.1.11` (patch)
+- Updated `astro` to `0.24.0` (minor)
+- Updated `caniuse-lite` to `1.0.30001317` (patch)
+- Fixed issue in which features under a flag on MDN were counting as implemented.
+- Added: Stage 2 cascade layers. (minor)
+- `color-mix` is now Stage 2 (was deprecated) and has links to an official spec! 🎉 (minor)
+
 ### 6.4.1 (March 7, 2022)
 
 - Updated `@mdn/browser-compat-data` to `4.1.10` (patch). This now shows correct support for `:where` on Safari version 14.
