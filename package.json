@@ -36,16 +36,16 @@
   },
   "devDependencies": {
     "@astropub/webapi": "^0.10.14",
-    "@mdn/browser-compat-data": "^4.1.11",
-    "astro": "^0.24.0",
-    "browserslist": "^4.20.0",
-    "caniuse-lite": "^1.0.30001317",
+    "@mdn/browser-compat-data": "^4.1.12",
+    "astro": "^0.24.3",
+    "browserslist": "^4.20.2",
+    "caniuse-lite": "^1.0.30001319",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
-    "postcss": "^8.4.8",
-    "postcss-preset-env": "^7.4.2",
+    "postcss": "^8.4.12",
+    "postcss-preset-env": "^7.4.3",
     "pre-commit": "^1.2.2",
-    "stylelint": "^14.5.3",
+    "stylelint": "^14.6.0",
     "stylelint-config-standard": "^25.0.0"
   },
   "stylelint": {
