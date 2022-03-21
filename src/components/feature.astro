@@ -5,7 +5,7 @@ import { parseExample }  from '../../utils/feature-example.js';
 
 const { feature } = Astro.props;
 const imageName = `/images/stages/stage-${feature.stage}.svg`;
-const badge = `/images/badges/${feature.id}.svg`;
+const badge = `/images/badges/stage-${feature.stage}.svg`;
 
 const [title, description] = await Promise.all([
 	Astro.privateRenderMarkdownDoNotUse(feature.title),
