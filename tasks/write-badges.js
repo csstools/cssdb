@@ -31,6 +31,6 @@ await Promise.all(features.map(async feature => {
 	const badgeURL = new URL(`../public/images/badges/${feature.id}.svg`, import.meta.url);
 
 	return fs.writeFile(badgeURL, shield);
-}))
+}));
 
 process.exit(0);
