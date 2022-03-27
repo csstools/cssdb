@@ -41,7 +41,7 @@
   "devDependencies": {
     "@astropub/webapi": "^0.10.14",
     "@mdn/browser-compat-data": "^4.1.12",
-    "astro": "^0.24.3",
+    "astro": "^0.25.2",
     "browserslist": "^4.20.2",
     "caniuse-lite": "^1.0.30001319",
     "fse": "^4.0.1",
