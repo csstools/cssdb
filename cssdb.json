@@ -319,7 +319,9 @@
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
-    "browser_support": {},
+    "browser_support": {
+      "safari": "TP"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
     },
