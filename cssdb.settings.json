@@ -185,7 +185,10 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
     "mdn_path": [
-      "css.types.color.space_separated_functional_notation"
+      "css.types.color.hsl.space_separated_parameters",
+      "css.types.color.hsla.space_separated_parameters",
+      "css.types.color.rgb.space_separated_parameters",
+      "css.types.color.rgba.space_separated_parameters"
     ],
     "browser_support": {},
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
