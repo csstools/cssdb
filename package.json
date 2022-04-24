@@ -42,7 +42,7 @@
     "@astropub/webapi": "^0.10.14",
     "@mdn/browser-compat-data": "^4.1.13",
     "astro": "0.24.3",
-    "browserslist": "^4.20.2",
+    "browserslist": "^4.20.3",
     "caniuse-lite": "^1.0.30001320",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
