@@ -552,6 +552,8 @@ export default [
       "and_ff": "85",
       "opera": "72",
       "op_mob": "61",
+      "safari": "15.4",
+      "ios_saf": "15.4",
       "samsung": "14.0",
       "android": "86"
     },
@@ -569,7 +571,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "focus-within-pseudo-class",
@@ -803,10 +805,14 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
     "browser_support": {
+      "chrome": "101",
+      "and_chr": "101",
+      "edge": "101",
       "firefox": "96",
       "and_ff": "96",
       "safari": "15",
-      "ios_saf": "15"
+      "ios_saf": "15",
+      "android": "101"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
@@ -1210,6 +1216,7 @@ export default [
       "edge": "79",
       "firefox": "59",
       "chrome": "65",
+      "safari": "TP",
       "opera": "52",
       "android": "65",
       "op_mob": "64",
