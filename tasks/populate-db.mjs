@@ -10,8 +10,6 @@ const settingsPath = path.resolve(__dirname, '../cssdb.settings.json');
 const cssdb = await fs.readFile(settingsPath, 'utf8').then(JSON.parse);
 
 cssdb.forEach(feature => {
-	feature.browser_support = {};
-
 	if (feature.caniuse) {
 		feature.browser_support = supportedBrowsersFromCanIUse(feature.caniuse, feature);
 	} else if (feature.mdn_path) {

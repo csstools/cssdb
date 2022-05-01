@@ -129,9 +129,11 @@ export default [
       "firefox": "97",
       "chrome": "99",
       "safari": "15.4",
+      "opera": "86",
       "ios_saf": "15.4",
       "android": "99",
-      "and_chr": "99"
+      "and_chr": "99",
+      "and_ff": "97"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -520,6 +522,22 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "exponential-functions",
+    "title": "`pow()`, `sqrt()`, `hypot()`, `log()`, `exp()` exponential functions",
+    "description": "Compute various exponential functions with their arguments",
+    "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
+    "stage": 2,
+    "browser_support": {},
+    "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "fangsong-font-family",
     "title": "`fangsong` Font Family",
     "description": "A generic font used for Fang Song (仿宋) typefaces in Chinese",
@@ -824,7 +842,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "ic-unit",
@@ -1387,6 +1405,16 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "stepped-value-functions",
+    "title": "`round()`, `mod()` and `rem()` functions",
+    "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways.",
+    "specification": "https://www.w3.org/TR/css-values-4/#round-func",
+    "stage": 2,
+    "browser_support": {},
+    "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
+    "vendors_implementations": 0
+  },
+  {
     "id": "system-ui-font-family",
     "title": "`system-ui` Font Family",
     "description": "A generic font used to match the user’s interface",
@@ -1418,6 +1446,19 @@ export default [
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "trigonometric-functions",
+    "title": "`sin()`, `cos()`, `tan()`, `asin()`, `acos()`, `atan()` and `atan2()` functions",
+    "description": "Functions to calculate varios basic trigonometric relationships",
+    "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
+    "stage": 2,
+    "browser_support": {
+      "safari": "15.4",
+      "ios_saf": "15.4"
+    },
+    "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
+    "vendors_implementations": 1
   },
   {
     "id": "unset-value",
