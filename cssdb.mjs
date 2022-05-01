@@ -529,12 +529,6 @@ export default [
     "stage": 2,
     "browser_support": {},
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
-      }
-    ],
     "vendors_implementations": 0
   },
   {
@@ -1119,6 +1113,16 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "calc-constants",
+    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
+    "description": "Constants for calculation simplification",
+    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
+    "stage": 2,
+    "browser_support": {},
+    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
+    "vendors_implementations": 0
+  },
+  {
     "id": "oklab-function",
     "title": "`oklab` and `oklch` color functions",
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
@@ -1405,9 +1409,19 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "sign-functions",
+    "title": "`abs()` and `sign()` functions",
+    "description": "The sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
+    "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
+    "stage": 2,
+    "browser_support": {},
+    "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
+    "vendors_implementations": 0
+  },
+  {
     "id": "stepped-value-functions",
     "title": "`round()`, `mod()` and `rem()` functions",
-    "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways.",
+    "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways",
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {},
