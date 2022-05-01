@@ -820,7 +820,7 @@
   },
   {
     "id": "calc-constants",
-    "title": "`e`, `pi`, `infinity`, `-infinity and `NaN` constants for calculation",
+    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
     "description": "Constants for calculation simplification",
     "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
     "stage": 2,
