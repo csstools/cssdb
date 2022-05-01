@@ -825,7 +825,7 @@
     "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
     "stage": 2,
     "browser_support": {},
-    "example": "p {\n  font-size: calc(calc(pow(e, pi) - pi) * 1rem);\n}"
+    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}"
   },
   {
     "id": "oklab-function",
