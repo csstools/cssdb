@@ -1006,7 +1006,7 @@
   {
     "id": "sign-functions",
     "title": "`abs()` and `sign()` functions",
-    "description": "he sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
+    "description": "The sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {},
