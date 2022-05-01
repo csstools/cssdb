@@ -1,5 +1,14 @@
 # Changes to cssdb
 
+### 6.6.0 (May 1, 2022)
+
+- Added: Stage 2 Exponential (`pow()`, `sqrt()`, `hypot()`, `log()`, `exp()`) functions (minor).
+- Added: Stage 2 `calc()` constants (`e`, `pi`, `infinity`, `-infinity` and `NaN`) (minor).
+- Added: Stage 2 Sign (`abs()` and `sign()`) functions (minor).
+- Added: Stage 2 Trigonometric (`sin()`, `cos()`, `tan()`, `asin()`, `acos()`, `atan()` and `atan2()`) functions (minor).
+- Updated `@mdn/browser-compat-data` to `4.1.18` (patch)
+- Updated `caniuse-lite` to `1.0.30001334` (patch)
+
 ### 6.5.0 (March 15, 2022)
 
 - Updated `@mdn/browser-compat-data` to `4.1.11` (patch)
