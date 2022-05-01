@@ -129,9 +129,11 @@ export default [
       "firefox": "97",
       "chrome": "99",
       "safari": "15.4",
+      "opera": "86",
       "ios_saf": "15.4",
       "android": "99",
-      "and_chr": "99"
+      "and_chr": "99",
+      "and_ff": "97"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -824,7 +826,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "ic-unit",
