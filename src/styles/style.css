@@ -485,7 +485,9 @@ img {
 }
 
 .cssdb-browser--android::before {
-	content: url("/images/browsers/android.svg");
+	background-image: url("/images/browsers/android.png");
+	background-size: contain;
+	content: "";
 }
 
 .cssdb-browser--baidu::before {
@@ -525,10 +527,6 @@ img {
 
 .cssdb-browser--ios_saf::before {
 	content: url("/images/browsers/ios_saf.svg");
-
-	@media (prefers-color-scheme: dark) {
-		content: url("/images/browsers/ios_saf@dark.svg");
-	}
 }
 
 .cssdb-browser--opera::before,
