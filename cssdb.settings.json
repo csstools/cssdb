@@ -1019,7 +1019,13 @@
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {},
-    "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}"
+    "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
+      }
+    ]
   },
   {
     "id": "system-ui-font-family",
@@ -1063,7 +1069,13 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
     },
-    "example": "div {\n  border-color: unset;\n  color: unset;\n}"
+    "example": "div {\n  border-color: unset;\n  color: unset;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value"
+      }
+    ]
   },
   {
     "id": "when-else-rules",

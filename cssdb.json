@@ -1426,6 +1426,12 @@
     "stage": 2,
     "browser_support": {},
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
+      }
+    ],
     "vendors_implementations": 0
   },
   {
@@ -1497,6 +1503,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
     },
     "example": "div {\n  border-color: unset;\n  color: unset;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value"
+      }
+    ],
     "vendors_implementations": 3
   },
   {
