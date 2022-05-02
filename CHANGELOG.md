@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 6.6.1 (May 2, 2022)
+
+- Added polyfills to `unset-value` and `stepped-value-functions` (patch)
+
 ### 6.6.0 (May 1, 2022)
 
 - Added: Stage 2 Exponential (`pow()`, `sqrt()`, `hypot()`, `log()`, `exp()`) functions (minor).
