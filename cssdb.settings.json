@@ -1017,7 +1017,7 @@
     "title": "`round()`, `mod()` and `rem()` functions",
     "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways",
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
-    "stage": 2,
+    "stage": 3,
     "browser_support": {},
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "polyfills": [
