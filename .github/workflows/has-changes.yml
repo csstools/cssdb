@@ -16,9 +16,9 @@ jobs:
       - run: npm run preparesite
       - name: Check if there are changes
         id: changes
-        uses: UnicornGlobal/has-changes-action@v1.0.11
+        run: echo "::set-output name=changed::$(git status --porcelain | wc -l)"
       - name: Process changes
-        if: steps.changes.outputs.changed == 1
+        if: steps.get_changes.outputs.changed != 0
         uses: actions/github-script@v6
         with:
           script: |
