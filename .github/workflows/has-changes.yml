@@ -1,0 +1,25 @@
+name: Has Changes
+on:
+  push:
+
+jobs:
+  has-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci --ignore-scripts
+      - run: npm run preparesite
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+      - name: Process changes
+        if: steps.changes.outputs.changed == 1
+        uses: actions/github-script@v6
+        with:
+          script: |
+            core.setFailed('cssdb generated files have changed')
