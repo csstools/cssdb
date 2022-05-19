@@ -16,9 +16,9 @@ jobs:
       - run: npm run preparesite
       - name: Check if there are changes
         id: changes
-        run: echo "::set-output name=changed::$(git status --porcelain | wc -l)"
+        run: git diff --quiet --exit-code
       - name: Process changes
-        if: steps.get_changes.outputs.changed != 0
+        if: failure()
         uses: actions/github-script@v6
         with:
           script: |
