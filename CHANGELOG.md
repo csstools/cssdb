@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 6.6.2 (May 23, 2022)
+
+- Added polyfills to `cascade-layer` and `trigonometric-functions`.
+
 ### 6.6.1 (May 2, 2022)
 
 - Added polyfills to `unset-value` and `stepped-value-functions` (patch)
