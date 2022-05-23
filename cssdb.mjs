@@ -119,6 +119,16 @@ export default [
     "vendors_implementations": 1
   },
   {
+    "id": "calc-constants",
+    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
+    "description": "Constants for calculation simplification",
+    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
+    "stage": 2,
+    "browser_support": {},
+    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
+    "vendors_implementations": 0
+  },
+  {
     "id": "cascade-layers",
     "title": "CSS Cascade Layers",
     "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
@@ -1116,16 +1126,6 @@ export default [
       }
     ],
     "vendors_implementations": 3
-  },
-  {
-    "id": "calc-constants",
-    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
-    "description": "Constants for calculation simplification",
-    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
-    "stage": 2,
-    "browser_support": {},
-    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
-    "vendors_implementations": 0
   },
   {
     "id": "oklab-function",

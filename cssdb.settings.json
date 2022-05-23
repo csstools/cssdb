@@ -81,6 +81,15 @@
     ]
   },
   {
+    "id": "calc-constants",
+    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
+    "description": "Constants for calculation simplification",
+    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
+    "stage": 2,
+    "browser_support": {},
+    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}"
+  },
+  {
     "id": "cascade-layers",
     "title": "CSS Cascade Layers",
     "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
@@ -822,15 +831,6 @@
         "link": "https://github.com/postcss/postcss-selector-not"
       }
     ]
-  },
-  {
-    "id": "calc-constants",
-    "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
-    "description": "Constants for calculation simplification",
-    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
-    "stage": 2,
-    "browser_support": {},
-    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}"
   },
   {
     "id": "oklab-function",
