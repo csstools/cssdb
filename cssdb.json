@@ -139,7 +139,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
-    "polyfills": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers"
+      }
+    ],
     "vendors_implementations": 3
   },
   {
@@ -1478,6 +1483,12 @@
       "ios_saf": "15.4"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
+      }
+    ],
     "vendors_implementations": 1
   },
   {
