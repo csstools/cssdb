@@ -123,7 +123,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/Semigradsky/postcss-attribute-case-insensitive"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-attribute-case-insensitive"
       }
     ]
   },
@@ -271,7 +271,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-custom-media"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-media"
       }
     ]
   },
@@ -321,7 +321,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-custom-selectors"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-selectors"
       }
     ]
   },
@@ -828,7 +828,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-selector-not"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-selector-not"
       }
     ]
   },
