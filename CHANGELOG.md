@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 6.6.3 (Unreleased)
+### 6.6.3 (June 3, 2022)
 
 - Updated `case-insensitive-attributes` plugin's url
 - Updated `custom-media-queries` plugin's url
