@@ -1,4 +1,4 @@
-import mdn from '@mdn/browser-compat-data';
+import mdn from '@mdn/browser-compat-data/forLegacyNode';
 import _get from 'lodash.get';
 
 const MDNToBrowserlist = {
