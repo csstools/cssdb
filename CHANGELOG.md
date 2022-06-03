@@ -1,5 +1,16 @@
 # Changes to cssdb
 
+### 6.6.3 (Unreleased)
+
+- Updated `case-insensitive-attributes` plugin's url
+- Updated `custom-media-queries` plugin's url
+- Updated `custom-selectors` plugin's url
+- Updated `not-pseudo-class` plugin's url
+- Included `trigonometric-functions` plugin as bundled by PostCSS Preset Env
+- Updated `@mdn/browser-compat-data` to `5.0.1` (major)
+- Updated `caniuse-lite` to `1.0.30001346` (patch)
+- Updated `postcss-preset-env` to `7.7.0` (minor)
+
 ### 6.6.2 (May 23, 2022)
 
 - Added polyfills to `cascade-layer` and `trigonometric-functions`.
