@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Updated `is-pseudo-class` now uses mdn data.
+
 ### 6.6.3 (June 3, 2022)
 
 - Updated `case-insensitive-attributes` plugin's url
