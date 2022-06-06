@@ -6,21 +6,21 @@ export default [
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
     "stage": 4,
     "browser_support": {
-      "edge": "79",
-      "firefox": "27",
-      "chrome": "37",
-      "safari": "9.1",
-      "opera": "24",
-      "ios_saf": "9.3",
-      "android": "4.4.3",
-      "op_mob": "64",
       "and_chr": "37",
       "and_ff": "27",
-      "and_uc": "12.12",
-      "samsung": "4",
       "and_qq": "10.4",
+      "and_uc": "12.12",
+      "android": "4.4.3",
       "baidu": "7.12",
-      "kaios": "2.5"
+      "chrome": "37",
+      "edge": "79",
+      "firefox": "27",
+      "ios_saf": "9.3",
+      "kaios": "2.5",
+      "op_mob": "64",
+      "opera": "24",
+      "safari": "9.1",
+      "samsung": "4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
@@ -41,17 +41,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
     "browser_support": {
-      "chrome": "1",
       "and_chr": "18",
+      "and_ff": "4",
+      "android": "65",
+      "chrome": "1",
       "edge": "79",
       "firefox": "1",
-      "and_ff": "4",
-      "opera": "15",
-      "op_mob": "14",
-      "safari": "3",
       "ios_saf": "1",
-      "samsung": "1.0",
-      "android": "65"
+      "op_mob": "14",
+      "opera": "15",
+      "safari": "3",
+      "samsung": "1.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
@@ -95,15 +95,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
     "browser_support": {
-      "ie": "10",
+      "and_uc": "12.12",
       "edge": "12",
-      "safari": "10",
-      "opera": "11.1",
+      "ie": "10",
+      "ie_mob": "10",
       "ios_saf": "10",
       "op_mini": "all",
       "op_mob": "11.1",
-      "ie_mob": "10",
-      "and_uc": "12.12",
+      "opera": "11.1",
+      "safari": "10",
       "samsung": "5"
     },
     "docs": {
@@ -135,15 +135,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
     "stage": 2,
     "browser_support": {
+      "and_chr": "99",
+      "and_ff": "97",
+      "android": "99",
+      "chrome": "99",
       "edge": "99",
       "firefox": "97",
-      "chrome": "99",
-      "safari": "15.4",
-      "opera": "86",
       "ios_saf": "15.4",
-      "android": "99",
-      "and_chr": "99",
-      "and_ff": "97"
+      "opera": "86",
+      "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -164,20 +164,20 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#attribute-case",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "47",
-      "chrome": "49",
-      "safari": "9",
-      "opera": "36",
-      "ios_saf": "9",
-      "android": "49",
-      "op_mob": "64",
       "and_chr": "49",
       "and_ff": "47",
-      "and_uc": "12.12",
-      "samsung": "5",
       "and_qq": "10.4",
-      "kaios": "2.5"
+      "and_uc": "12.12",
+      "android": "49",
+      "chrome": "49",
+      "edge": "79",
+      "firefox": "47",
+      "ios_saf": "9",
+      "kaios": "2.5",
+      "op_mob": "64",
+      "opera": "36",
+      "safari": "9",
+      "samsung": "5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
@@ -198,17 +198,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#funcdef-clamp",
     "stage": 2,
     "browser_support": {
-      "chrome": "79",
       "and_chr": "79",
+      "and_ff": "79",
+      "android": "79",
+      "chrome": "79",
       "edge": "79",
       "firefox": "75",
-      "and_ff": "79",
-      "opera": "66",
-      "op_mob": "57",
-      "safari": "13.1",
       "ios_saf": "13.4",
-      "samsung": "12.0",
-      "android": "79"
+      "op_mob": "57",
+      "opera": "66",
+      "safari": "13.1",
+      "samsung": "12.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
@@ -229,8 +229,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "browser_support": {
-      "firefox": "48",
       "and_ff": "48",
+      "firefox": "48",
       "kaios": "2.5"
     },
     "docs": {
@@ -260,8 +260,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
     "browser_support": {
-      "safari": "15",
-      "ios_saf": "15"
+      "ios_saf": "15",
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -282,17 +282,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
     "browser_support": {
-      "chrome": "65",
       "and_chr": "65",
+      "and_ff": "52",
+      "android": "65",
+      "chrome": "65",
       "edge": "79",
       "firefox": "52",
-      "and_ff": "52",
-      "opera": "52",
-      "op_mob": "47",
-      "safari": "12.1",
       "ios_saf": "12.2",
-      "samsung": "9.0",
-      "android": "65"
+      "op_mob": "47",
+      "opera": "52",
+      "safari": "12.1",
+      "samsung": "9.0"
     },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
@@ -374,19 +374,19 @@ export default [
     "specification": "https://www.w3.org/TR/css-variables-1/",
     "stage": 3,
     "browser_support": {
-      "edge": "16",
-      "firefox": "31",
-      "chrome": "49",
-      "safari": "10",
-      "opera": "36",
-      "ios_saf": "10",
-      "android": "49",
-      "op_mob": "64",
       "and_chr": "49",
       "and_ff": "31",
       "and_uc": "12.12",
-      "samsung": "5",
-      "kaios": "2.5"
+      "android": "49",
+      "chrome": "49",
+      "edge": "16",
+      "firefox": "31",
+      "ios_saf": "10",
+      "kaios": "2.5",
+      "op_mob": "64",
+      "opera": "36",
+      "safari": "10",
+      "samsung": "5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
@@ -439,8 +439,8 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
     "browser_support": {
-      "firefox": "49",
-      "and_ff": "49"
+      "and_ff": "49",
+      "firefox": "49"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -462,8 +462,8 @@ export default [
     "stage": 2,
     "browser_support": {
       "firefox": "70",
-      "safari": "15",
-      "ios_saf": "15"
+      "ios_saf": "15",
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
@@ -484,17 +484,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-images-4/#color-stop-syntax",
     "stage": 2,
     "browser_support": {
-      "chrome": "72",
       "and_chr": "72",
+      "and_ff": "83",
+      "android": "72",
+      "chrome": "72",
       "edge": "79",
       "firefox": "83",
-      "and_ff": "83",
-      "opera": "60",
-      "op_mob": "51",
-      "safari": "12.1",
       "ios_saf": "12.2",
-      "samsung": "11.0",
-      "android": "72"
+      "op_mob": "51",
+      "opera": "60",
+      "safari": "12.1",
+      "samsung": "11.0"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -512,16 +512,16 @@ export default [
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
     "browser_support": {
-      "edge": "79",
-      "firefox": "65",
-      "chrome": "69",
-      "safari": "11.1",
-      "opera": "56",
-      "ios_saf": "11.3",
-      "android": "69",
-      "op_mob": "64",
       "and_chr": "69",
       "and_ff": "65",
+      "android": "69",
+      "chrome": "69",
+      "edge": "79",
+      "firefox": "65",
+      "ios_saf": "11.3",
+      "op_mob": "64",
+      "opera": "56",
+      "safari": "11.1",
       "samsung": "10.1"
     },
     "docs": {
@@ -572,17 +572,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
     "browser_support": {
-      "chrome": "86",
       "and_chr": "86",
+      "and_ff": "85",
+      "android": "86",
+      "chrome": "86",
       "edge": "86",
       "firefox": "85",
-      "and_ff": "85",
-      "opera": "72",
-      "op_mob": "61",
-      "safari": "15.4",
       "ios_saf": "15.4",
-      "samsung": "14.0",
-      "android": "86"
+      "op_mob": "61",
+      "opera": "72",
+      "safari": "15.4",
+      "samsung": "14.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -607,18 +607,18 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#focus-within-pseudo",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "52",
-      "chrome": "60",
-      "safari": "10.1",
-      "opera": "47",
-      "ios_saf": "10.3",
-      "android": "60",
-      "op_mob": "64",
       "and_chr": "60",
       "and_ff": "52",
-      "samsung": "8.2",
-      "and_qq": "10.4"
+      "and_qq": "10.4",
+      "android": "60",
+      "chrome": "60",
+      "edge": "79",
+      "firefox": "52",
+      "ios_saf": "10.3",
+      "op_mob": "64",
+      "opera": "47",
+      "safari": "10.1",
+      "samsung": "8.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
@@ -643,8 +643,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
     "stage": 1,
     "browser_support": {
-      "safari": "4",
-      "ios_saf": "5"
+      "ios_saf": "5",
+      "safari": "4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
@@ -665,11 +665,11 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
     "browser_support": {
-      "firefox": "34",
-      "safari": "9.1",
-      "ios_saf": "9.3",
       "and_ff": "34",
-      "kaios": "2.5"
+      "firefox": "34",
+      "ios_saf": "9.3",
+      "kaios": "2.5",
+      "safari": "9.1"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
@@ -690,17 +690,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-grid-1/#gutters",
     "stage": 3,
     "browser_support": {
-      "chrome": "66",
       "and_chr": "66",
+      "and_ff": "61",
+      "android": "66",
+      "chrome": "66",
       "edge": "16",
       "firefox": "61",
-      "and_ff": "61",
-      "opera": "53",
-      "op_mob": "47",
-      "safari": "12",
       "ios_saf": "12",
-      "samsung": "9.0",
-      "android": "66"
+      "op_mob": "47",
+      "opera": "53",
+      "safari": "12",
+      "samsung": "9.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
@@ -737,20 +737,20 @@ export default [
     "specification": "https://www.w3.org/TR/css-grid-1/",
     "stage": 3,
     "browser_support": {
-      "edge": "16",
-      "firefox": "54",
-      "chrome": "58",
-      "safari": "10.1",
-      "opera": "44",
-      "ios_saf": "10.3",
-      "android": "58",
-      "op_mob": "64",
       "and_chr": "58",
       "and_ff": "54",
-      "and_uc": "12.12",
-      "samsung": "6.2",
       "and_qq": "10.4",
-      "kaios": "2.5"
+      "and_uc": "12.12",
+      "android": "58",
+      "chrome": "58",
+      "edge": "16",
+      "firefox": "54",
+      "ios_saf": "10.3",
+      "kaios": "2.5",
+      "op_mob": "64",
+      "opera": "44",
+      "safari": "10.1",
+      "samsung": "6.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
@@ -771,8 +771,8 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
-      "safari": "15.4",
-      "ios_saf": "15.4"
+      "ios_saf": "15.4",
+      "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
@@ -801,16 +801,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#hex-notation",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "49",
-      "chrome": "62",
-      "safari": "10",
-      "opera": "52",
-      "ios_saf": "10",
-      "android": "62",
-      "op_mob": "64",
       "and_chr": "62",
       "and_ff": "49",
+      "android": "62",
+      "chrome": "62",
+      "edge": "79",
+      "firefox": "49",
+      "ios_saf": "10",
+      "op_mob": "64",
+      "opera": "52",
+      "safari": "10",
       "samsung": "8.2"
     },
     "docs": {
@@ -832,14 +832,14 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
     "browser_support": {
-      "chrome": "101",
       "and_chr": "101",
+      "and_ff": "96",
+      "android": "101",
+      "chrome": "101",
       "edge": "101",
       "firefox": "96",
-      "and_ff": "96",
-      "safari": "15",
       "ios_saf": "15",
-      "android": "101"
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
@@ -860,10 +860,10 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
     "browser_support": {
-      "firefox": "97",
       "and_ff": "97",
-      "safari": "15.4",
-      "ios_saf": "15.4"
+      "firefox": "97",
+      "ios_saf": "15.4",
+      "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
@@ -903,20 +903,20 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "50",
-      "chrome": "53",
-      "safari": "10.1",
-      "opera": "40",
-      "ios_saf": "10.3",
-      "android": "53",
-      "op_mob": "64",
       "and_chr": "53",
       "and_ff": "50",
-      "and_uc": "12.12",
-      "samsung": "5",
       "and_qq": "10.4",
-      "baidu": "7.12"
+      "and_uc": "12.12",
+      "android": "53",
+      "baidu": "7.12",
+      "chrome": "53",
+      "edge": "79",
+      "firefox": "50",
+      "ios_saf": "10.3",
+      "op_mob": "64",
+      "opera": "40",
+      "safari": "10.1",
+      "samsung": "5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
@@ -931,16 +931,16 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
     "stage": 2,
     "browser_support": {
-      "edge": "88",
-      "firefox": "78",
-      "chrome": "88",
-      "safari": "14",
-      "opera": "75",
-      "ios_saf": "14",
-      "android": "88",
-      "op_mob": "64",
       "and_chr": "88",
       "and_ff": "78",
+      "android": "88",
+      "chrome": "88",
+      "edge": "88",
+      "firefox": "78",
+      "ios_saf": "14",
+      "op_mob": "64",
+      "opera": "75",
+      "safari": "14",
       "samsung": "15"
     },
     "docs": {
@@ -962,8 +962,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "browser_support": {
-      "safari": "15",
-      "ios_saf": "15"
+      "ios_saf": "15",
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
@@ -984,8 +984,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "browser_support": {
-      "safari": "15",
-      "ios_saf": "15"
+      "ios_saf": "15",
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
@@ -1006,16 +1006,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "browser_support": {
-      "edge": "89",
-      "firefox": "66",
-      "chrome": "89",
-      "safari": "15",
-      "opera": "76",
-      "ios_saf": "15",
-      "android": "89",
-      "op_mob": "64",
       "and_chr": "89",
       "and_ff": "66",
+      "android": "89",
+      "chrome": "89",
+      "edge": "89",
+      "firefox": "66",
+      "ios_saf": "15",
+      "op_mob": "64",
+      "opera": "76",
+      "safari": "15",
       "samsung": "15"
     },
     "docs": {
@@ -1037,16 +1037,16 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
     "stage": -1,
     "browser_support": {
-      "edge": "88",
-      "firefox": "78",
-      "chrome": "88",
-      "safari": "14",
-      "opera": "75",
-      "ios_saf": "14",
-      "android": "88",
-      "op_mob": "64",
       "and_chr": "88",
       "and_ff": "78",
+      "android": "88",
+      "chrome": "88",
+      "edge": "88",
+      "firefox": "78",
+      "ios_saf": "14",
+      "op_mob": "64",
+      "opera": "75",
+      "safari": "14",
       "samsung": "15"
     },
     "docs": {
@@ -1103,16 +1103,16 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#negation-pseudo",
     "stage": 2,
     "browser_support": {
-      "edge": "88",
-      "firefox": "84",
-      "chrome": "88",
-      "safari": "9",
-      "opera": "75",
-      "ios_saf": "9",
-      "android": "88",
-      "op_mob": "64",
       "and_chr": "88",
       "and_ff": "84",
+      "android": "88",
+      "chrome": "88",
+      "edge": "88",
+      "firefox": "84",
+      "ios_saf": "9",
+      "op_mob": "64",
+      "opera": "75",
+      "safari": "9",
       "samsung": "15"
     },
     "docs": {
@@ -1150,12 +1150,12 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#transparency",
     "stage": 2,
     "browser_support": {
-      "chrome": "78",
       "and_chr": "78",
+      "android": "78",
+      "chrome": "78",
       "edge": "79",
       "firefox": "70",
-      "samsung": "12.0",
-      "android": "78"
+      "samsung": "12.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
@@ -1176,15 +1176,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-overflow-3/#propdef-overflow",
     "stage": 2,
     "browser_support": {
-      "chrome": "68",
       "and_chr": "68",
+      "and_ff": "61",
+      "android": "68",
+      "chrome": "68",
       "edge": "79",
       "firefox": "61",
-      "and_ff": "61",
-      "opera": "55",
       "op_mob": "48",
-      "samsung": "10.0",
-      "android": "68"
+      "opera": "55",
+      "samsung": "10.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
@@ -1205,21 +1205,21 @@ export default [
     "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
     "stage": 2,
     "browser_support": {
-      "edge": "18",
-      "firefox": "49",
-      "chrome": "23",
-      "safari": "6.1",
-      "opera": "12.1",
-      "ios_saf": "7",
-      "android": "4.4",
-      "bb": "10",
-      "op_mob": "64",
       "and_chr": "23",
       "and_ff": "49",
-      "and_uc": "12.12",
-      "samsung": "4",
       "and_qq": "10.4",
-      "baidu": "7.12"
+      "and_uc": "12.12",
+      "android": "4.4",
+      "baidu": "7.12",
+      "bb": "10",
+      "chrome": "23",
+      "edge": "18",
+      "firefox": "49",
+      "ios_saf": "7",
+      "op_mob": "64",
+      "opera": "12.1",
+      "safari": "6.1",
+      "samsung": "4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
@@ -1240,17 +1240,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 1,
     "browser_support": {
-      "edge": "79",
-      "firefox": "59",
-      "chrome": "65",
-      "safari": "TP",
-      "opera": "52",
-      "android": "65",
-      "op_mob": "64",
       "and_chr": "65",
       "and_ff": "59",
-      "samsung": "8.2",
-      "and_qq": "10.4"
+      "and_qq": "10.4",
+      "android": "65",
+      "chrome": "65",
+      "edge": "79",
+      "firefox": "59",
+      "op_mob": "64",
+      "opera": "52",
+      "safari": "TP",
+      "samsung": "8.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
@@ -1265,17 +1265,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-align-3/#place-items-property",
     "stage": 2,
     "browser_support": {
-      "chrome": "59",
       "and_chr": "59",
+      "and_ff": "53",
+      "android": "59",
+      "chrome": "59",
       "edge": "79",
       "firefox": "53",
-      "and_ff": "53",
-      "opera": "46",
-      "op_mob": "43",
-      "safari": "11",
       "ios_saf": "11",
-      "samsung": "7.0",
-      "android": "59"
+      "op_mob": "43",
+      "opera": "46",
+      "safari": "11",
+      "samsung": "7.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
@@ -1296,16 +1296,16 @@ export default [
     "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "67",
-      "chrome": "76",
-      "safari": "12.1",
-      "opera": "62",
-      "ios_saf": "13",
-      "android": "76",
-      "op_mob": "64",
       "and_chr": "76",
       "and_ff": "67",
+      "android": "76",
+      "chrome": "76",
+      "edge": "79",
+      "firefox": "67",
+      "ios_saf": "13",
+      "op_mob": "64",
+      "opera": "62",
+      "safari": "12.1",
       "samsung": "12"
     },
     "docs": {
@@ -1331,16 +1331,16 @@ export default [
     "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "63",
-      "chrome": "74",
-      "safari": "10.1",
-      "opera": "64",
-      "ios_saf": "10.3",
-      "android": "74",
-      "op_mob": "64",
       "and_chr": "74",
       "and_ff": "63",
+      "android": "74",
+      "chrome": "74",
+      "edge": "79",
+      "firefox": "63",
+      "ios_saf": "10.3",
+      "op_mob": "64",
+      "opera": "64",
+      "safari": "10.1",
       "samsung": "11.1"
     },
     "docs": {
@@ -1356,21 +1356,21 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
     "browser_support": {
-      "edge": "13",
-      "firefox": "78",
-      "chrome": "36",
-      "safari": "9",
-      "opera": "23",
-      "ios_saf": "9",
-      "android": "36",
-      "bb": "10",
-      "op_mob": "64",
       "and_chr": "36",
       "and_ff": "78",
-      "and_uc": "12.12",
-      "samsung": "4",
       "and_qq": "10.4",
-      "baidu": "7.12"
+      "and_uc": "12.12",
+      "android": "36",
+      "baidu": "7.12",
+      "bb": "10",
+      "chrome": "36",
+      "edge": "13",
+      "firefox": "78",
+      "ios_saf": "9",
+      "op_mob": "64",
+      "opera": "23",
+      "safari": "9",
+      "samsung": "4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
@@ -1385,21 +1385,21 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple",
     "stage": 2,
     "browser_support": {
-      "edge": "12",
-      "firefox": "33",
-      "chrome": "38",
-      "safari": "7",
-      "opera": "25",
-      "ios_saf": "8",
-      "android": "4.4",
-      "op_mob": "64",
       "and_chr": "38",
       "and_ff": "33",
-      "and_uc": "12.12",
-      "samsung": "4",
       "and_qq": "10.4",
+      "and_uc": "12.12",
+      "android": "4.4",
       "baidu": "7.12",
-      "kaios": "2.5"
+      "chrome": "38",
+      "edge": "12",
+      "firefox": "33",
+      "ios_saf": "8",
+      "kaios": "2.5",
+      "op_mob": "64",
+      "opera": "25",
+      "safari": "7",
+      "samsung": "4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
@@ -1446,19 +1446,19 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
     "stage": 2,
     "browser_support": {
-      "edge": "79",
-      "firefox": "92",
-      "chrome": "56",
-      "safari": "11",
-      "opera": "43",
-      "ios_saf": "11",
-      "android": "56",
-      "op_mob": "64",
       "and_chr": "56",
       "and_ff": "92",
+      "and_qq": "10.4",
       "and_uc": "12.12",
-      "samsung": "6.2",
-      "and_qq": "10.4"
+      "android": "56",
+      "chrome": "56",
+      "edge": "79",
+      "firefox": "92",
+      "ios_saf": "11",
+      "op_mob": "64",
+      "opera": "43",
+      "safari": "11",
+      "samsung": "6.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
@@ -1478,10 +1478,7 @@ export default [
     "description": "Functions to calculate varios basic trigonometric relationships",
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
-    "browser_support": {
-      "safari": "15.4",
-      "ios_saf": "15.4"
-    },
+    "browser_support": {},
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "polyfills": [
       {
@@ -1489,7 +1486,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "unset-value",
@@ -1498,17 +1495,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-cascade-4/#inherit-initial",
     "stage": 3,
     "browser_support": {
-      "chrome": "41",
       "and_chr": "41",
+      "and_ff": "27",
+      "android": "41",
+      "chrome": "41",
       "edge": "13",
       "firefox": "27",
-      "and_ff": "27",
-      "opera": "28",
-      "op_mob": "28",
-      "safari": "9.1",
       "ios_saf": "9.3",
-      "samsung": "4.0",
-      "android": "41"
+      "op_mob": "28",
+      "opera": "28",
+      "safari": "9.1",
+      "samsung": "4.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
@@ -1539,17 +1536,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#where-pseudo",
     "stage": 2,
     "browser_support": {
-      "chrome": "88",
       "and_chr": "88",
+      "and_ff": "82",
+      "android": "88",
+      "chrome": "88",
       "edge": "88",
       "firefox": "82",
-      "and_ff": "82",
-      "opera": "74",
-      "op_mob": "63",
-      "safari": "14",
       "ios_saf": "14",
-      "samsung": "15.0",
-      "android": "88"
+      "op_mob": "63",
+      "opera": "74",
+      "safari": "14",
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
