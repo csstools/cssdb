@@ -10,11 +10,18 @@ const settingsPath = path.resolve(__dirname, '../cssdb.settings.json');
 const cssdb = await fs.readFile(settingsPath, 'utf8').then(JSON.parse);
 
 cssdb.forEach(feature => {
+	feature.browser_support = {};
+	let browser_support = {};
 	if (feature.caniuse) {
-		feature.browser_support = supportedBrowsersFromCanIUse(feature.caniuse, feature);
+		browser_support = supportedBrowsersFromCanIUse(feature.caniuse, feature);
 	} else if (feature.mdn_path) {
-		feature.browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
+		browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
 	}
+
+	const browsers = Object.keys(browser_support).sort();
+	browsers.forEach(browser => {
+		feature.browser_support[browser] = browser_support[browser];
+	});
 
 	feature.vendors_implementations = countVendors(feature);
 });
