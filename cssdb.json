@@ -932,16 +932,16 @@
     "stage": 2,
     "browser_support": {
       "and_chr": "88",
-      "and_ff": "78",
+      "and_ff": "82",
       "android": "88",
       "chrome": "88",
       "edge": "88",
-      "firefox": "78",
+      "firefox": "82",
       "ios_saf": "14",
-      "op_mob": "64",
-      "opera": "75",
+      "op_mob": "63",
+      "opera": "74",
       "safari": "14",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
