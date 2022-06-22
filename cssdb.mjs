@@ -137,7 +137,7 @@ export default [
     "browser_support": {
       "and_chr": "99",
       "and_ff": "97",
-      "android": "99",
+      "android": "101",
       "chrome": "99",
       "edge": "99",
       "firefox": "97",
@@ -168,7 +168,7 @@ export default [
       "and_ff": "47",
       "and_qq": "10.4",
       "and_uc": "12.12",
-      "android": "49",
+      "android": "101",
       "chrome": "49",
       "edge": "79",
       "firefox": "47",
@@ -337,7 +337,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
     "browser_support": {
-      "safari": "TP"
+      "ios_saf": "16",
+      "safari": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
@@ -377,7 +378,7 @@ export default [
       "and_chr": "49",
       "and_ff": "31",
       "and_uc": "12.12",
-      "android": "49",
+      "android": "101",
       "chrome": "49",
       "edge": "16",
       "firefox": "31",
@@ -514,7 +515,7 @@ export default [
     "browser_support": {
       "and_chr": "69",
       "and_ff": "65",
-      "android": "69",
+      "android": "101",
       "chrome": "69",
       "edge": "79",
       "firefox": "65",
@@ -610,7 +611,7 @@ export default [
       "and_chr": "60",
       "and_ff": "52",
       "and_qq": "10.4",
-      "android": "60",
+      "android": "101",
       "chrome": "60",
       "edge": "79",
       "firefox": "52",
@@ -741,7 +742,7 @@ export default [
       "and_ff": "54",
       "and_qq": "10.4",
       "and_uc": "12.12",
-      "android": "58",
+      "android": "101",
       "chrome": "58",
       "edge": "16",
       "firefox": "54",
@@ -771,6 +772,7 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
+      "chrome": "105",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -803,7 +805,7 @@ export default [
     "browser_support": {
       "and_chr": "62",
       "and_ff": "49",
-      "android": "62",
+      "android": "101",
       "chrome": "62",
       "edge": "79",
       "firefox": "49",
@@ -907,7 +909,7 @@ export default [
       "and_ff": "50",
       "and_qq": "10.4",
       "and_uc": "12.12",
-      "android": "53",
+      "android": "101",
       "baidu": "7.12",
       "chrome": "53",
       "edge": "79",
@@ -1008,7 +1010,7 @@ export default [
     "browser_support": {
       "and_chr": "89",
       "and_ff": "66",
-      "android": "89",
+      "android": "101",
       "chrome": "89",
       "edge": "89",
       "firefox": "66",
@@ -1039,7 +1041,7 @@ export default [
     "browser_support": {
       "and_chr": "88",
       "and_ff": "78",
-      "android": "88",
+      "android": "101",
       "chrome": "88",
       "edge": "88",
       "firefox": "78",
@@ -1105,7 +1107,7 @@ export default [
     "browser_support": {
       "and_chr": "88",
       "and_ff": "84",
-      "android": "88",
+      "android": "101",
       "chrome": "88",
       "edge": "88",
       "firefox": "84",
@@ -1243,13 +1245,14 @@ export default [
       "and_chr": "65",
       "and_ff": "59",
       "and_qq": "10.4",
-      "android": "65",
+      "android": "101",
       "chrome": "65",
       "edge": "79",
       "firefox": "59",
+      "ios_saf": "16",
       "op_mob": "64",
       "opera": "52",
-      "safari": "TP",
+      "safari": "16",
       "samsung": "8.2"
     },
     "docs": {
@@ -1298,7 +1301,7 @@ export default [
     "browser_support": {
       "and_chr": "76",
       "and_ff": "67",
-      "android": "76",
+      "android": "101",
       "chrome": "76",
       "edge": "79",
       "firefox": "67",
@@ -1333,7 +1336,7 @@ export default [
     "browser_support": {
       "and_chr": "74",
       "and_ff": "63",
-      "android": "74",
+      "android": "101",
       "chrome": "74",
       "edge": "79",
       "firefox": "63",
@@ -1360,7 +1363,7 @@ export default [
       "and_ff": "78",
       "and_qq": "10.4",
       "and_uc": "12.12",
-      "android": "36",
+      "android": "101",
       "baidu": "7.12",
       "bb": "10",
       "chrome": "36",
@@ -1450,7 +1453,7 @@ export default [
       "and_ff": "92",
       "and_qq": "10.4",
       "and_uc": "12.12",
-      "android": "56",
+      "android": "101",
       "chrome": "56",
       "edge": "79",
       "firefox": "92",
