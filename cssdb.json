@@ -1093,7 +1093,10 @@
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
       {
@@ -1101,7 +1104,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "opacity-percentage",
