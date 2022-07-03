@@ -952,6 +952,10 @@
     "stage": 2,
     "browser_support": {},
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
+    "mdn_path": [
+      "css.types.color.oklab",
+      "css.types.color.oklch"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
