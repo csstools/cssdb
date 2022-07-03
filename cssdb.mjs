@@ -8,19 +8,15 @@ export default [
     "browser_support": {
       "and_chr": "37",
       "and_ff": "27",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4.3",
-      "baidu": "7.12",
+      "android": "37",
       "chrome": "37",
       "edge": "79",
       "firefox": "27",
       "ios_saf": "9.3",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "op_mob": "24",
       "opera": "24",
       "safari": "9.1",
-      "samsung": "4"
+      "samsung": "3.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
@@ -94,18 +90,7 @@ export default [
     "description": "Properties for defining the break behavior between and within boxes",
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
-    "browser_support": {
-      "and_uc": "12.12",
-      "edge": "12",
-      "ie": "10",
-      "ie_mob": "10",
-      "ios_saf": "10",
-      "op_mini": "all",
-      "op_mob": "11.1",
-      "opera": "11.1",
-      "safari": "10",
-      "samsung": "5"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
     },
@@ -116,7 +101,7 @@ export default [
         "link": "https://github.com/shrpne/postcss-page-break"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "calc-constants",
@@ -137,12 +122,13 @@ export default [
     "browser_support": {
       "and_chr": "99",
       "and_ff": "97",
-      "android": "101",
+      "android": "99",
       "chrome": "99",
       "edge": "99",
       "firefox": "97",
       "ios_saf": "15.4",
-      "opera": "86",
+      "op_mob": "68",
+      "opera": "85",
       "safari": "15.4"
     },
     "docs": {
@@ -166,18 +152,15 @@ export default [
     "browser_support": {
       "and_chr": "49",
       "and_ff": "47",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "101",
+      "android": "49",
       "chrome": "49",
       "edge": "79",
       "firefox": "47",
       "ios_saf": "9",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "op_mob": "36",
       "opera": "36",
       "safari": "9",
-      "samsung": "5"
+      "samsung": "5.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
@@ -229,15 +212,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "browser_support": {
-      "and_ff": "48",
-      "firefox": "48",
-      "kaios": "2.5"
+      "and_ff": "97",
+      "firefox": "97",
+      "ios_saf": "15.4",
+      "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "color-contrast",
@@ -260,8 +244,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
     "browser_support": {
-      "ios_saf": "15",
-      "safari": "15"
+      "ios_saf": "10.3",
+      "safari": "10.1"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -377,17 +361,15 @@ export default [
     "browser_support": {
       "and_chr": "49",
       "and_ff": "31",
-      "and_uc": "12.12",
-      "android": "101",
+      "android": "50",
       "chrome": "49",
-      "edge": "16",
+      "edge": "15",
       "firefox": "31",
-      "ios_saf": "10",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "ios_saf": "9.3",
+      "op_mob": "36",
       "opera": "36",
-      "safari": "10",
-      "samsung": "5"
+      "safari": "9.1",
+      "samsung": "5.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
@@ -513,17 +495,12 @@ export default [
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
     "browser_support": {
-      "and_chr": "69",
-      "and_ff": "65",
-      "android": "101",
-      "chrome": "69",
-      "edge": "79",
-      "firefox": "65",
-      "ios_saf": "11.3",
-      "op_mob": "64",
-      "opera": "56",
-      "safari": "11.1",
-      "samsung": "10.1"
+      "and_chr": "92",
+      "chrome": "92",
+      "edge": "92",
+      "op_mob": "65",
+      "opera": "78",
+      "samsung": "17.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
@@ -535,7 +512,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-env-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 1
   },
   {
     "id": "exponential-functions",
@@ -610,16 +587,15 @@ export default [
     "browser_support": {
       "and_chr": "60",
       "and_ff": "52",
-      "and_qq": "10.4",
-      "android": "101",
+      "android": "60",
       "chrome": "60",
       "edge": "79",
       "firefox": "52",
       "ios_saf": "10.3",
-      "op_mob": "64",
+      "op_mob": "44",
       "opera": "47",
       "safari": "10.1",
-      "samsung": "8.2"
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
@@ -669,7 +645,6 @@ export default [
       "and_ff": "34",
       "firefox": "34",
       "ios_saf": "9.3",
-      "kaios": "2.5",
       "safari": "9.1"
     },
     "docs": {
@@ -738,20 +713,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-grid-1/",
     "stage": 3,
     "browser_support": {
-      "and_chr": "58",
-      "and_ff": "54",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "101",
-      "chrome": "58",
+      "and_chr": "57",
+      "and_ff": "52",
+      "android": "57",
+      "chrome": "57",
       "edge": "16",
-      "firefox": "54",
+      "firefox": "52",
       "ios_saf": "10.3",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "op_mob": "43",
       "opera": "44",
       "safari": "10.1",
-      "samsung": "6.2"
+      "samsung": "6.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
@@ -772,7 +744,6 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
-      "chrome": "105",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -805,15 +776,15 @@ export default [
     "browser_support": {
       "and_chr": "62",
       "and_ff": "49",
-      "android": "101",
+      "android": "62",
       "chrome": "62",
       "edge": "79",
       "firefox": "49",
-      "ios_saf": "10",
-      "op_mob": "64",
-      "opera": "52",
+      "ios_saf": "9.3",
+      "op_mob": "47",
+      "opera": "49",
       "safari": "10",
-      "samsung": "8.2"
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
@@ -885,7 +856,10 @@ export default [
     "description": "A function for specifying image sources based on the user’s resolution",
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_ff": "88",
+      "firefox": "88"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
     },
@@ -896,7 +870,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -905,20 +879,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
     "browser_support": {
-      "and_chr": "53",
-      "and_ff": "50",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "101",
-      "baidu": "7.12",
-      "chrome": "53",
-      "edge": "79",
-      "firefox": "50",
-      "ios_saf": "10.3",
-      "op_mob": "64",
-      "opera": "40",
-      "safari": "10.1",
-      "samsung": "5"
+      "and_chr": "18",
+      "and_ff": "16",
+      "android": "2.2",
+      "chrome": "10",
+      "edge": "13",
+      "firefox": "29",
+      "ios_saf": "5",
+      "op_mob": "11",
+      "opera": "11",
+      "safari": "5.1",
+      "samsung": "1.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
@@ -1007,19 +978,7 @@ export default [
     "description": "Flow-relative (left-to-right or right-to-left) properties and values",
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
-    "browser_support": {
-      "and_chr": "89",
-      "and_ff": "66",
-      "android": "101",
-      "chrome": "89",
-      "edge": "89",
-      "firefox": "66",
-      "ios_saf": "15",
-      "op_mob": "64",
-      "opera": "76",
-      "safari": "15",
-      "samsung": "15"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
@@ -1030,7 +989,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 0
   },
   {
     "id": "matches-pseudo-class",
@@ -1040,16 +999,16 @@ export default [
     "stage": -1,
     "browser_support": {
       "and_chr": "88",
-      "and_ff": "78",
-      "android": "101",
+      "and_ff": "82",
+      "android": "88",
       "chrome": "88",
       "edge": "88",
-      "firefox": "78",
+      "firefox": "82",
       "ios_saf": "14",
-      "op_mob": "64",
-      "opera": "75",
+      "op_mob": "63",
+      "opera": "74",
       "safari": "14",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
@@ -1107,15 +1066,14 @@ export default [
     "browser_support": {
       "and_chr": "88",
       "and_ff": "84",
-      "android": "101",
+      "android": "88",
       "chrome": "88",
       "edge": "88",
       "firefox": "84",
       "ios_saf": "9",
-      "op_mob": "64",
-      "opera": "75",
+      "opera": "74",
       "safari": "9",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
@@ -1207,21 +1165,14 @@ export default [
     "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
     "stage": 2,
     "browser_support": {
-      "and_chr": "23",
-      "and_ff": "49",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4",
-      "baidu": "7.12",
-      "bb": "10",
-      "chrome": "23",
-      "edge": "18",
-      "firefox": "49",
-      "ios_saf": "7",
-      "op_mob": "64",
-      "opera": "12.1",
-      "safari": "6.1",
-      "samsung": "4"
+      "and_chr": "80",
+      "and_ff": "65",
+      "android": "80",
+      "chrome": "80",
+      "edge": "80",
+      "firefox": "65",
+      "opera": "67",
+      "samsung": "13.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
@@ -1233,7 +1184,7 @@ export default [
         "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 2
   },
   {
     "id": "overscroll-behavior-property",
@@ -1242,18 +1193,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 1,
     "browser_support": {
-      "and_chr": "65",
+      "and_chr": "63",
       "and_ff": "59",
-      "and_qq": "10.4",
-      "android": "101",
-      "chrome": "65",
-      "edge": "79",
+      "android": "63",
+      "chrome": "63",
+      "edge": "18",
       "firefox": "59",
       "ios_saf": "16",
-      "op_mob": "64",
-      "opera": "52",
+      "op_mob": "46",
+      "opera": "50",
       "safari": "16",
-      "samsung": "8.2"
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
@@ -1301,15 +1251,15 @@ export default [
     "browser_support": {
       "and_chr": "76",
       "and_ff": "67",
-      "android": "101",
+      "android": "76",
       "chrome": "76",
       "edge": "79",
       "firefox": "67",
       "ios_saf": "13",
-      "op_mob": "64",
+      "op_mob": "54",
       "opera": "62",
       "safari": "12.1",
-      "samsung": "12"
+      "samsung": "14.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
@@ -1335,16 +1285,16 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "74",
-      "and_ff": "63",
-      "android": "101",
+      "and_ff": "64",
+      "android": "74",
       "chrome": "74",
       "edge": "79",
       "firefox": "63",
       "ios_saf": "10.3",
-      "op_mob": "64",
-      "opera": "64",
+      "op_mob": "53",
+      "opera": "62",
       "safari": "10.1",
-      "samsung": "11.1"
+      "samsung": "11.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
@@ -1359,21 +1309,16 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
     "browser_support": {
-      "and_chr": "36",
-      "and_ff": "78",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "101",
-      "baidu": "7.12",
-      "bb": "10",
-      "chrome": "36",
+      "and_chr": "18",
+      "android": "≤37",
+      "chrome": "1",
       "edge": "13",
       "firefox": "78",
-      "ios_saf": "9",
-      "op_mob": "64",
-      "opera": "23",
-      "safari": "9",
-      "samsung": "4"
+      "ios_saf": "3.2",
+      "op_mob": "10.1",
+      "opera": "9",
+      "safari": "4",
+      "samsung": "1.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
@@ -1390,19 +1335,16 @@ export default [
     "browser_support": {
       "and_chr": "38",
       "and_ff": "33",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4",
-      "baidu": "7.12",
+      "android": "38",
       "chrome": "38",
       "edge": "12",
       "firefox": "33",
+      "ie": "11",
       "ios_saf": "8",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "op_mob": "25",
       "opera": "25",
-      "safari": "7",
-      "samsung": "4"
+      "safari": "9",
+      "samsung": "3.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
@@ -1451,17 +1393,13 @@ export default [
     "browser_support": {
       "and_chr": "56",
       "and_ff": "92",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "101",
+      "android": "56",
       "chrome": "56",
       "edge": "79",
       "firefox": "92",
-      "ios_saf": "11",
-      "op_mob": "64",
+      "op_mob": "43",
       "opera": "43",
-      "safari": "11",
-      "samsung": "6.2"
+      "samsung": "6.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
@@ -1473,7 +1411,7 @@ export default [
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 2
   },
   {
     "id": "trigonometric-functions",
