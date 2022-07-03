@@ -5,12 +5,12 @@
     "description": "A property for defining the reset of all properties of an element",
     "specification": "https://www.w3.org/TR/css-cascade-3/#all-shorthand",
     "stage": 4,
-    "caniuse": "css-all",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
     },
     "example": "a {\n  all: initial;\n}",
+    "mdn_path": "css.properties.all",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -67,12 +67,23 @@
     "description": "Properties for defining the break behavior between and within boxes",
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
-    "caniuse": "multicolumn",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
     },
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
+    "mdn_path": [
+      "css.properties['break-after'].paged_context",
+      "css.properties['break-after'].paged_context.always",
+      "css.properties['break-after'].paged_context.page",
+      "css.properties['break-after'].paged_context.recto",
+      "css.properties['break-before'].paged_context",
+      "css.properties['break-before'].paged_context.always",
+      "css.properties['break-before'].paged_context.page",
+      "css.properties['break-before'].paged_context.recto",
+      "css.properties['break-inside'].paged_context",
+      "css.properties['break-inside'].paged_context['avoid-page']"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -95,12 +106,12 @@
     "description": "The `@layer` at-rule allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.",
     "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
     "stage": 2,
-    "caniuse": "css-cascade-layers",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
+    "mdn_path": "css['at-rules'].layer",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -114,12 +125,12 @@
     "description": "An attribute selector matching attribute values case-insensitively",
     "specification": "https://www.w3.org/TR/selectors-4/#attribute-case",
     "stage": 2,
-    "caniuse": "css-case-insensitive",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
     },
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
+    "mdn_path": "css.selectors.attribute.case_insensitive_modifier",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -152,12 +163,12 @@
     "description": "The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images",
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
-    "caniuse": "css-color-adjust",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
     },
-    "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}"
+    "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
+    "mdn_path": "css.properties['print-color-adjust']"
   },
   {
     "id": "color-contrast",
@@ -179,12 +190,12 @@
     "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
-    "caniuse": "css-color-function",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
+    "mdn_path": "css.types.color.color",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -281,12 +292,12 @@
     "description": "A syntax for defining custom values accepted by all CSS properties",
     "specification": "https://www.w3.org/TR/css-variables-1/",
     "stage": 3,
-    "caniuse": "css-variables",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
+    "mdn_path": "css.properties['custom-property']var",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -300,7 +311,6 @@
     "description": "A syntax for storing properties in named variables, referenceable in other style rules",
     "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
     "stage": -1,
-    "caniuse": "css-apply-rule",
     "browser_support": {},
     "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
     "polyfills": [
@@ -391,12 +401,22 @@
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
-    "caniuse": "css-env-function",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
+    "mdn_path": [
+      "css.properties['custom-property'].env",
+      "css.properties['custom-property'].env['safe-area-inset-bottom']",
+      "css.properties['custom-property'].env['safe-area-inset-left']",
+      "css.properties['custom-property'].env['safe-area-inset-right']",
+      "css.properties['custom-property'].env['safe-area-inset-top']",
+      "css.properties['custom-property'].env['titlebar-area-height']",
+      "css.properties['custom-property'].env['titlebar-area-width']",
+      "css.properties['custom-property'].env['titlebar-area-x']",
+      "css.properties['custom-property'].env['titlebar-area-y']"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -460,12 +480,12 @@
     "description": "A pseudo-class for matching elements that are either focused or that have focused descendants",
     "specification": "https://www.w3.org/TR/selectors-4/#focus-within-pseudo",
     "stage": 2,
-    "caniuse": "css-focus-within",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
     },
     "example": "form:focus-within {\n  background: rgba(0, 0, 0, 0.3);\n}",
+    "mdn_path": "css.selectors['focus-within']",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -502,12 +522,18 @@
     "description": "A property for defining the usage of alternate glyphs in a font",
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
-    "caniuse": "font-variant-alternates",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
+    "mdn_path": [
+      "css.properties['font-variant-caps']",
+      "css.properties['font-variant-numeric']",
+      "css.properties['font-variant-alternates']",
+      "css.properties['font-variant-ligatures']",
+      "css.properties['font-variant-position']"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -555,12 +581,12 @@
     "description": "A syntax for using a grid concept to lay out content",
     "specification": "https://www.w3.org/TR/css-grid-1/",
     "stage": 3,
-    "caniuse": "css-grid",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
     },
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
+    "mdn_path": "css.properties.grid",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -574,12 +600,12 @@
     "description": "A pseudo-class for matching ancestor and sibling elements",
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
-    "caniuse": "css-has",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
     "example": "a:has(> img) {\n  display: block;\n}",
+    "mdn_path": "css.selectors.has",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -601,12 +627,12 @@
     "description": "A 4 & 8 character hex color notation for specifying the opacity level",
     "specification": "https://www.w3.org/TR/css-color-4/#hex-notation",
     "stage": 2,
-    "caniuse": "css-rrggbbaa",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
     },
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
+    "mdn_path": "css.types.color.rgb_hexadecimal_notation.alpha_hexadecimal_notation",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -658,12 +684,12 @@
     "description": "A function for specifying image sources based on the user’s resolution",
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
-    "caniuse": "css-image-set",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
+    "mdn_path": "css.types.image['image-set']",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -677,11 +703,11 @@
     "description": "A pseudo-class for matching elements that have range limitations",
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
-    "caniuse": "css-in-out-of-range",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
     },
+    "mdn_path": "css.selectors['in-range']",
     "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}"
   },
   {
@@ -712,12 +738,12 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
-    "caniuse": "css-lch-lab",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
+    "mdn_path": "css.types.color.lab",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -731,12 +757,12 @@
     "description": "A function for specifying colors expressed in the CIE Lab color space with chroma and hue",
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
-    "caniuse": "css-lch-lab",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
+    "mdn_path": "css.types.color.lch",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -750,12 +776,92 @@
     "description": "Flow-relative (left-to-right or right-to-left) properties and values",
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
-    "caniuse": "css-logical-props",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
     "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "mdn_path": [
+      "css.properties['inline-size']",
+      "css.properties['inline-size']['fit-content']",
+      "css.properties['inline-size']['fit-content_function']",
+      "css.properties['inline-size']['max-content']",
+      "css.properties['inline-size']['min-content']",
+      "css.properties['min-inline-size']",
+      "css.properties['min-inline-size']['fit-content']",
+      "css.properties['min-inline-size']['fit-content_function']",
+      "css.properties['min-inline-size']['max-content']",
+      "css.properties['min-inline-size']['min-content']",
+      "css.properties['max-inline-size']",
+      "css.properties['max-inline-size']['fit-content']",
+      "css.properties['max-inline-size']['fit-content_function']",
+      "css.properties['max-inline-size']['max-content']",
+      "css.properties['max-inline-size']['min-content']",
+      "css.properties['block-size']",
+      "css.properties['block-size']['fit-content']",
+      "css.properties['block-size']['fit-content_function']",
+      "css.properties['block-size']['max-content']",
+      "css.properties['block-size']['min-content']",
+      "css.properties['min-block-size']",
+      "css.properties['min-block-size']['fit-content']",
+      "css.properties['min-block-size']['fit-content_function']",
+      "css.properties['min-block-size']['max-content']",
+      "css.properties['min-block-size']['min-content']",
+      "css.properties['max-block-size']",
+      "css.properties['max-block-size']['fit-content']",
+      "css.properties['max-block-size']['fit-content_function']",
+      "css.properties['max-block-size']['max-content']",
+      "css.properties['max-block-size']['min-content']",
+      "css.properties['border-block-end']",
+      "css.properties['border-block-end-color']",
+      "css.properties['border-block-end-style']",
+      "css.properties['border-block-end-width']",
+      "css.properties['border-block-start']",
+      "css.properties['border-block-start-color']",
+      "css.properties['border-block-start-style']",
+      "css.properties['border-block-start-width']",
+      "css.properties['border-inline-end']",
+      "css.properties['border-inline-end-color']",
+      "css.properties['border-inline-end-style']",
+      "css.properties['border-inline-end-width']",
+      "css.properties['border-inline-start']",
+      "css.properties['border-inline-start-color']",
+      "css.properties['border-inline-start-style']",
+      "css.properties['border-inline-start-width']",
+      "css.properties['border-start-start-radius']",
+      "css.properties['border-end-start-radius']",
+      "css.properties['border-start-end-radius']",
+      "css.properties['border-end-end-radius']",
+      "css.properties['margin-block-end']",
+      "css.properties['margin-block-start']",
+      "css.properties['margin-inline-end']",
+      "css.properties['margin-inline-start']",
+      "css.properties['padding-block-end']",
+      "css.properties['padding-block-start']",
+      "css.properties['padding-inline-end']",
+      "css.properties['padding-inline-start']",
+      "css.properties['border-block']",
+      "css.properties['border-block-color']",
+      "css.properties['border-block-style']",
+      "css.properties['border-block-width']",
+      "css.properties['border-inline']",
+      "css.properties['border-inline-color']",
+      "css.properties['border-inline-style']",
+      "css.properties['border-inline-width']",
+      "css.properties['margin-block']",
+      "css.properties['margin-inline']",
+      "css.properties['padding-block']",
+      "css.properties['padding-inline']",
+      "css.properties.float.flow_relative_values",
+      "css.properties.clear.flow_relative_values",
+      "css.properties['inset-inline']",
+      "css.properties['inset-inline-start']",
+      "css.properties['inset-inline-end']",
+      "css.properties['inset-block']",
+      "css.properties['inset-block-start']",
+      "css.properties['inset-block-end']",
+      "css.properties['text-align'].flow_relative_values_start_and_end"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -769,12 +875,15 @@
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
     "stage": -1,
-    "caniuse": "css-matches-pseudo",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "mdn_path": [
+      "css.selectors.is",
+      "css.selectors.is.forgiving_selector_list"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -822,12 +931,12 @@
     "description": "A pseudo-class for ignoring elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#negation-pseudo",
     "stage": 2,
-    "caniuse": "css-not-sel-list",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
     },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "mdn_path": "css.selectors.not.selector_list",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -894,12 +1003,16 @@
     "description": "A property for defining whether to insert line breaks within words to prevent overflowing",
     "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
     "stage": 2,
-    "caniuse": "wordwrap",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
+    "mdn_path": [
+      "css.properties['overflow-wrap']",
+      "css.properties['overflow-wrap'].anywhere",
+      "css.properties['overflow-wrap']['break-word']"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -913,12 +1026,12 @@
     "description": "Properties for controlling when the scroll position of a scroll container reaches the edge of a scrollport",
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 1,
-    "caniuse": "css-overscroll-behavior",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
-    "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}"
+    "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
+    "mdn_path": "css.properties['overscroll-behavior']"
   },
   {
     "id": "place-properties",
@@ -949,12 +1062,15 @@
     "description": "A media query to detect if the user has requested the system use a light or dark color theme",
     "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
     "stage": 2,
-    "caniuse": "prefers-color-scheme",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
+    "mdn_path": [
+      "css['at-rules'].media['prefers-color-scheme']",
+      "css['at-rules'].media['prefers-color-scheme']['no-preference']"
+    ],
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -972,12 +1088,12 @@
     "description": "A media query to detect if the user has requested less animation and general motion on the page",
     "specification": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
     "stage": 2,
-    "caniuse": "prefers-reduced-motion",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
     },
-    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}"
+    "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
+    "mdn_path": "css['at-rules'].media['prefers-reduced-motion']"
   },
   {
     "id": "read-only-write-pseudo-class",
@@ -985,12 +1101,12 @@
     "description": "Pseudo-classes to match elements which are considered user-alterable",
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
-    "caniuse": "css-read-only-write",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
-    "example": "input:read-only {\n  background-color: #ccc;\n}"
+    "example": "input:read-only {\n  background-color: #ccc;\n}",
+    "mdn_path": "css.selectors['read-only']"
   },
   {
     "id": "rebeccapurple-color",
@@ -998,12 +1114,12 @@
     "description": "A particularly lovely shade of purple in memory of Rebecca Alison Meyer",
     "specification": "https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple",
     "stage": 2,
-    "caniuse": "css-rebeccapurple",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
+    "mdn_path": "css.types.color.color_keywords.rebeccapurple",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1041,12 +1157,12 @@
     "description": "A generic font used to match the user’s interface",
     "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
     "stage": 2,
-    "caniuse": "font-family-system-ui",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
     "example": "body {\n  font-family: system-ui;\n}",
+    "mdn_path": "css.properties['font-family'].system_ui",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
