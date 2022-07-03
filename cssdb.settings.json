@@ -1071,10 +1071,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
-    "mdn_path": [
-      "css['at-rules'].media['prefers-color-scheme']",
-      "css['at-rules'].media['prefers-color-scheme']['no-preference']"
-    ],
+    "mdn_path": "css['at-rules'].media['prefers-color-scheme']",
     "polyfills": [
       {
         "type": "JavaScript Library",
