@@ -1,5 +1,6 @@
 import mdn from '@mdn/browser-compat-data/forLegacyNode';
 import _get from 'lodash.get';
+import semver from 'semver';
 
 const MDNToBrowserlist = {
 	chrome_android: 'and_chr',
@@ -12,7 +13,10 @@ const MDNToBrowserlist = {
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
 	const mdnFeature = _get(mdn, mdnConfigPath);
-	const supportsPrefixes = feature.allow_partial_implementation;
+
+	// We assume users also have autoprefixer.
+	// If autoprefixer adds prefixes for this feature we count it as supported.
+	const supportsPrefixes = Object(feature.mdn_count_prefixed_as_supported)[mdnConfigPath];
 	const result = {};
 
 	if (!mdnFeature) {
@@ -26,11 +30,20 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 		let version;
 
 		if (Array.isArray(browserSupport)) {
-			const versions = browserSupport.sort((a, b) => Number(a?.version_added) - Number(b?.version_added));
+			const versions = browserSupport.sort((a, b) => {
+				const aa = semver.coerce(a.version_added);
+				const bb = semver.coerce(b.version_added);
+				if (!aa || !bb) {
+					return 0;
+				}
+
+				return semver.compare(aa, bb);
+			});
+
 			version = versions.find(browserEntry => {
 				const hasAlternativeName = typeof browserEntry.alternative_name !== 'undefined';
 				const isPrefixed = typeof browserEntry.prefix !== 'undefined';
-				const isAllowedPrefix = isPrefixed && browserEntry.prefix !== '-khtml-';
+				const isAllowedPrefix = isPrefixed && browserEntry.prefix !== '-khtml-' && !browserEntry.partial_implementation;
 				const hasFlags = Array.isArray(browserEntry.flags);
 
 				if (hasAlternativeName || hasFlags) {
@@ -51,7 +64,9 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				return;
 			}
 
-			if (!supportsPrefixes && browserSupport.prefix) {
+			const isPrefixed = typeof browserSupport.prefix !== 'undefined';
+			const isAllowedPrefix = isPrefixed && browserSupport.prefix !== '-khtml-' && !browserSupport.partial_implementation;
+			if (isPrefixed && !(supportsPrefixes && isAllowedPrefix)) {
 				return;
 			}
 
@@ -81,7 +96,13 @@ export default function supportedBrowsersFromMdn(path, feature) {
 		if (isInAllFeatures) {
 			// Sort by descending version and get the first
 			const [version] = supports.map(featureSupport => featureSupport[browserKey]).sort((a, b) => {
-				return parseFloat(b) - parseFloat(a);
+				const aa = semver.coerce(a);
+				const bb = semver.coerce(b);
+				if (!aa || !bb) {
+					return 0;
+				}
+
+				return semver.compare(bb, aa); // reverse sort
 			});
 			result[browserKey] = version;
 		}

@@ -13,6 +13,7 @@ export default [
       "edge": "79",
       "firefox": "27",
       "ios_saf": "9.3",
+      "oculus": "5.0",
       "op_mob": "24",
       "opera": "24",
       "safari": "9.1",
@@ -39,11 +40,12 @@ export default [
     "browser_support": {
       "and_chr": "18",
       "and_ff": "4",
-      "android": "65",
+      "android": "37",
       "chrome": "1",
       "edge": "79",
       "firefox": "1",
       "ios_saf": "1",
+      "oculus": "5.0",
       "op_mob": "14",
       "opera": "15",
       "safari": "3",
@@ -90,7 +92,18 @@ export default [
     "description": "Properties for defining the break behavior between and within boxes",
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "51",
+      "and_ff": "92",
+      "android": "51",
+      "chrome": "51",
+      "edge": "12",
+      "firefox": "92",
+      "oculus": "5.0",
+      "op_mob": "37",
+      "opera": "11.1",
+      "samsung": "5.0"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
     },
@@ -101,7 +114,7 @@ export default [
         "link": "https://github.com/shrpne/postcss-page-break"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "calc-constants",
@@ -127,6 +140,7 @@ export default [
       "edge": "99",
       "firefox": "97",
       "ios_saf": "15.4",
+      "oculus": "21.0",
       "op_mob": "68",
       "opera": "85",
       "safari": "15.4"
@@ -157,6 +171,7 @@ export default [
       "edge": "79",
       "firefox": "47",
       "ios_saf": "9",
+      "oculus": "5.0",
       "op_mob": "36",
       "opera": "36",
       "safari": "9",
@@ -188,6 +203,7 @@ export default [
       "edge": "79",
       "firefox": "75",
       "ios_saf": "13.4",
+      "oculus": "8.0",
       "op_mob": "57",
       "opera": "66",
       "safari": "13.1",
@@ -273,6 +289,7 @@ export default [
       "edge": "79",
       "firefox": "52",
       "ios_saf": "12.2",
+      "oculus": "5.0",
       "op_mob": "47",
       "opera": "52",
       "safari": "12.1",
@@ -321,6 +338,7 @@ export default [
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
     "browser_support": {
+      "chrome": "106",
       "ios_saf": "16",
       "safari": "16"
     },
@@ -366,6 +384,7 @@ export default [
       "edge": "15",
       "firefox": "31",
       "ios_saf": "9.3",
+      "oculus": "5.0",
       "op_mob": "36",
       "opera": "36",
       "safari": "9.1",
@@ -474,6 +493,7 @@ export default [
       "edge": "79",
       "firefox": "83",
       "ios_saf": "12.2",
+      "oculus": "6.0",
       "op_mob": "51",
       "opera": "60",
       "safari": "12.1",
@@ -494,14 +514,7 @@ export default [
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
-    "browser_support": {
-      "and_chr": "92",
-      "chrome": "92",
-      "edge": "92",
-      "op_mob": "65",
-      "opera": "78",
-      "samsung": "17.0"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
@@ -512,7 +525,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-env-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 0
   },
   {
     "id": "exponential-functions",
@@ -544,6 +557,28 @@ export default [
     "vendors_implementations": 0
   },
   {
+    "id": "float-clear-logical-values",
+    "title": "Logical Values in float and clear",
+    "description": "Flow-relative (inline-start and inline-end) values for float and clear",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "55",
+      "firefox": "55"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
+    },
+    "example": "span:first-child {\n  float: inline-start;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
+      }
+    ],
+    "vendors_implementations": 1
+  },
+  {
     "id": "focus-visible-pseudo-class",
     "title": "`:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
@@ -557,6 +592,7 @@ export default [
       "edge": "86",
       "firefox": "85",
       "ios_saf": "15.4",
+      "oculus": "12.0",
       "op_mob": "61",
       "opera": "72",
       "safari": "15.4",
@@ -592,6 +628,7 @@ export default [
       "edge": "79",
       "firefox": "52",
       "ios_saf": "10.3",
+      "oculus": "5.0",
       "op_mob": "44",
       "opera": "47",
       "safari": "10.1",
@@ -673,6 +710,7 @@ export default [
       "edge": "16",
       "firefox": "61",
       "ios_saf": "12",
+      "oculus": "5.0",
       "op_mob": "47",
       "opera": "53",
       "safari": "12",
@@ -720,6 +758,7 @@ export default [
       "edge": "16",
       "firefox": "52",
       "ios_saf": "10.3",
+      "oculus": "5.0",
       "op_mob": "43",
       "opera": "44",
       "safari": "10.1",
@@ -744,7 +783,12 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
+      "and_chr": "105",
+      "android": "105",
+      "chrome": "105",
+      "edge": "105",
       "ios_saf": "15.4",
+      "opera": "90",
       "safari": "15.4"
     },
     "docs": {
@@ -781,6 +825,7 @@ export default [
       "edge": "79",
       "firefox": "49",
       "ios_saf": "9.3",
+      "oculus": "5.0",
       "op_mob": "47",
       "opera": "49",
       "safari": "10",
@@ -812,6 +857,8 @@ export default [
       "edge": "101",
       "firefox": "96",
       "ios_saf": "15",
+      "oculus": "22.0",
+      "op_mob": "70",
       "safari": "15"
     },
     "docs": {
@@ -857,8 +904,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
     "browser_support": {
+      "and_chr": "25",
       "and_ff": "88",
-      "firefox": "88"
+      "android": "4.4",
+      "chrome": "21",
+      "edge": "79",
+      "firefox": "88",
+      "oculus": "5.0",
+      "op_mob": "14",
+      "opera": "15",
+      "samsung": "1.5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
@@ -870,7 +925,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -886,6 +941,7 @@ export default [
       "edge": "13",
       "firefox": "29",
       "ios_saf": "5",
+      "oculus": "5.0",
       "op_mob": "11",
       "opera": "11",
       "safari": "5.1",
@@ -911,6 +967,7 @@ export default [
       "edge": "88",
       "firefox": "82",
       "ios_saf": "14",
+      "oculus": "14.0",
       "op_mob": "63",
       "opera": "74",
       "safari": "14",
@@ -978,18 +1035,30 @@ export default [
     "description": "Flow-relative (left-to-right or right-to-left) properties and values",
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "89",
+      "and_ff": "66",
+      "android": "89",
+      "chrome": "89",
+      "edge": "89",
+      "firefox": "66",
+      "ios_saf": "15",
+      "oculus": "15.0",
+      "opera": "75",
+      "safari": "15",
+      "samsung": "15.0"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
-    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 3
   },
   {
     "id": "matches-pseudo-class",
@@ -1005,6 +1074,7 @@ export default [
       "edge": "88",
       "firefox": "82",
       "ios_saf": "14",
+      "oculus": "14.0",
       "op_mob": "63",
       "opera": "74",
       "safari": "14",
@@ -1071,6 +1141,7 @@ export default [
       "edge": "88",
       "firefox": "84",
       "ios_saf": "9",
+      "oculus": "14.0",
       "opera": "74",
       "safari": "9",
       "samsung": "15.0"
@@ -1118,6 +1189,7 @@ export default [
       "chrome": "78",
       "edge": "79",
       "firefox": "70",
+      "oculus": "8.0",
       "samsung": "12.0"
     },
     "docs": {
@@ -1145,6 +1217,7 @@ export default [
       "chrome": "68",
       "edge": "79",
       "firefox": "61",
+      "oculus": "6.0",
       "op_mob": "48",
       "opera": "55",
       "samsung": "10.0"
@@ -1174,6 +1247,7 @@ export default [
       "chrome": "80",
       "edge": "80",
       "firefox": "65",
+      "oculus": "9.0",
       "opera": "67",
       "samsung": "13.0"
     },
@@ -1203,6 +1277,7 @@ export default [
       "edge": "18",
       "firefox": "59",
       "ios_saf": "16",
+      "oculus": "5.0",
       "op_mob": "46",
       "opera": "50",
       "safari": "16",
@@ -1228,6 +1303,7 @@ export default [
       "edge": "79",
       "firefox": "53",
       "ios_saf": "11",
+      "oculus": "5.0",
       "op_mob": "43",
       "opera": "46",
       "safari": "11",
@@ -1259,6 +1335,7 @@ export default [
       "edge": "79",
       "firefox": "67",
       "ios_saf": "13",
+      "oculus": "7.0",
       "op_mob": "54",
       "opera": "62",
       "safari": "12.1",
@@ -1294,6 +1371,7 @@ export default [
       "edge": "79",
       "firefox": "63",
       "ios_saf": "10.3",
+      "oculus": "6.0",
       "op_mob": "53",
       "opera": "62",
       "safari": "10.1",
@@ -1318,6 +1396,7 @@ export default [
       "edge": "13",
       "firefox": "78",
       "ios_saf": "3.2",
+      "oculus": "5.0",
       "op_mob": "10.1",
       "opera": "9",
       "safari": "4",
@@ -1344,6 +1423,7 @@ export default [
       "firefox": "33",
       "ie": "11",
       "ios_saf": "8",
+      "oculus": "5.0",
       "op_mob": "25",
       "opera": "25",
       "safari": "9",
@@ -1400,9 +1480,12 @@ export default [
       "chrome": "56",
       "edge": "79",
       "firefox": "92",
+      "oculus": "5.0",
       "op_mob": "43",
       "opera": "43",
-      "samsung": "6.0"
+      "samsung": "6.0",
+      "safari": "11",
+      "ios_saf": "11"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
@@ -1414,7 +1497,7 @@ export default [
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "trigonometric-functions",
@@ -1446,6 +1529,7 @@ export default [
       "edge": "13",
       "firefox": "27",
       "ios_saf": "9.3",
+      "oculus": "5.0",
       "op_mob": "28",
       "opera": "28",
       "safari": "9.1",
@@ -1487,6 +1571,7 @@ export default [
       "edge": "88",
       "firefox": "82",
       "ios_saf": "14",
+      "oculus": "14.0",
       "op_mob": "63",
       "opera": "74",
       "safari": "14",

@@ -23,17 +23,21 @@ cssdb.forEach(feature => {
 		feature.browser_support[browser] = browser_support[browser];
 	});
 
+	feature.browser_support = Object.assign({}, feature.browser_support, feature.browser_support_overrides);
+
 	feature.vendors_implementations = countVendors(feature);
 });
 
 const cleanDB = cssdb.map(
 	({
-		 caniuse,
-		 caniuse_compat,
-		 mdn_path,
-		 allow_partial_implementation,
-		 // The above are discarded
-		 ...properties
+		caniuse,
+		caniuse_compat,
+		mdn_path,
+		allow_partial_implementation,
+		mdn_count_prefixed_as_supported,
+		browser_support_overrides,
+		// The above are discarded
+		...properties
 	 }) => properties
 );
 
