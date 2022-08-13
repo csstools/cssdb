@@ -1018,7 +1018,6 @@
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "mdn_path": [
       "css.properties['overflow-wrap']",
-      "css.properties['overflow-wrap'].anywhere",
       "css.properties['overflow-wrap']['break-word']"
     ],
     "polyfills": [
