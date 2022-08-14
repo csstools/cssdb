@@ -16,15 +16,6 @@ export function renderFeature(feature) {
 	const imageName = `/images/stages/stage-${feature.stage}.svg`;
 	const badge = `/images/badges/${feature.id}.svg`;
 
-	// const [title, description] = await Promise.all([
-	// 	Astro.privateRenderMarkdownDoNotUse(feature.title),
-	// 	Astro.privateRenderMarkdownDoNotUse(feature.description),
-	// ]);
-
-	// const simpleTitle = title.replace('<p>', '').replace('</p>', '');
-	// const cleanTitle = simpleTitle.replace(/<\/?[^>]+(>|$)/g, '');
-	// const simpleDescription = description.replace('<p>', '').replace('</p>', '');
-
 	const cleanTitle = feature.title.replace(/`/g, '');
 
 	return html`
