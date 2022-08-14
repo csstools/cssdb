@@ -5,6 +5,7 @@ polyfill(globalThis);
 
 const cssdbJsonURL = new URL('../cssdb.json', import.meta.url);
 const badgesDirURL = new URL('../public/images/badges/', import.meta.url);
+const badgesDirURLOld = new URL('../public/badge/', import.meta.url);
 
 const features = await fs.readFile(cssdbJsonURL, 'utf8').then(JSON.parse);
 
@@ -17,8 +18,10 @@ const colors = [
 ];
 
 await fs.rm(badgesDirURL, { force: true, recursive: true });
-
 await fs.mkdir(badgesDirURL);
+
+await fs.rm(badgesDirURLOld, { force: true, recursive: true });
+await fs.mkdir(badgesDirURLOld);
 
 const shieldSubject = 'cssdb';
 
@@ -29,8 +32,12 @@ await Promise.all(features.map(async feature => {
 	const shield = await fetch(shieldUrl).then(response => response.text());
 
 	const badgeURL = new URL(`../public/images/badges/${feature.id}.svg`, import.meta.url);
+	const badgeURLOld = new URL(`../public/badge/${feature.id}.svg`, import.meta.url);
 
-	return fs.writeFile(badgeURL, shield);
+	return Promise.all([
+		fs.writeFile(badgeURL, shield),
+		fs.writeFile(badgeURLOld, shield)
+	]);
 }));
 
 process.exit(0);
