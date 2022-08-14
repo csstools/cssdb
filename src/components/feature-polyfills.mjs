@@ -1,6 +1,7 @@
-import { featurePolyfill } from "./feature-polyfill.mjs";
+import { html } from "../util/html.mjs";
+import { renderFeaturePolyfill } from "./feature-polyfill.mjs";
 
-export function featurePolyfills(polyfills, id, title) {
+export function renderFeaturePolyfills(polyfills, id, title) {
 	if (!polyfills || !polyfills.length) {
 		return '';
 	}
@@ -10,7 +11,7 @@ export function featurePolyfills(polyfills, id, title) {
 			Use with a
 			<ul class="cssdb-feature-polyfill-list">
 				${polyfills.map(polyfill => {
-					return featurePolyfill(polyfill, id, title);
+					return renderFeaturePolyfill(polyfill, id, title);
 				})}
 			</ul>
 		</div>

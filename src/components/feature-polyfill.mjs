@@ -1,4 +1,4 @@
-import { html } from "../util/html.mjs";
+import { escapeHTML, html } from "../util/html.mjs";
 
 const presetEnvPlugins = [
 	'all-property',
@@ -46,7 +46,7 @@ const presetEnvPlugins = [
 	'unset-value'
 ];
 
-export function featurePolyfill(polyfill, id, title) {
+export function renderFeaturePolyfill(polyfill, id, title) {
 	const repoUrl = polyfill.link.includes('csstools/postcss-plugins') ? 'https://github.com/csstools/postcss-plugins' : polyfill.link;
 	const starImage = `https://img.shields.io/github/stars/${polyfill.link.split('/').slice(3, 5).join('/')}.svg?style=social`;
 	const isGithub = repoUrl.includes('github.com');
@@ -56,7 +56,7 @@ export function featurePolyfill(polyfill, id, title) {
 		<li class="cssdb-feature-polyfill-item">
 			<a class="cssdb-feature-polyfill-link" href="${polyfill.link}">
 				${polyfill.type}
-				<span class="sr-only">for ${title}</span>
+				<span class="sr-only">for ${escapeHTML(title)}</span>
 			</a>
 
 			${isGithub ? (html`
@@ -69,11 +69,12 @@ export function featurePolyfill(polyfill, id, title) {
 						>
 					</a>
 				</span>`
-		) : ''}
-		${(polyfill.type === "PostCSS Plugin" && isBundled) && (
-			html`
-				<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
-			`
-		)}
-	</li>`;
+			) : ''}
+
+			${(polyfill.type === "PostCSS Plugin" && isBundled) ? (
+				html`
+					<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
+				`
+			) : ''}
+		</li>`;
 }

@@ -1,4 +1,4 @@
-import { html } from "../util/html.mjs";
+import { escapeHTML, html } from "../util/html.mjs";
 
 const browsers = {
 	'ios_saf': 'iOS Safari',
@@ -27,7 +27,7 @@ const browser_order = [
 	"android",
 ];
 
-export function caniuseFeature(title, feature) {
+export function renderCaniuseFeature(title, feature) {
 	let link = '';
 	if (feature.caniuse) {
 		link = `https://caniuse.com/${feature.caniuse}`;
@@ -56,10 +56,10 @@ export function caniuseFeature(title, feature) {
 			rel="noreferrer"
 			aria-label="View the browser support for ${title}.Opens in a new tab."
 		>
-			${(feature_browsers.map(id => {
-				return html`<span class="cssdb - browser cssdb - browser--${id}">
+			${(feature_browsers.map((id) => {
+				return html`<span class="cssdb-browser cssdb-browser--${id}">
 					<span class="sr-only">Supported on ${browsers[id] || id} since version </span>
-					<span class="cssdb-browser-version">${feature.browser_support[id]}</span>
+					<span class="cssdb-browser-version">${escapeHTML(feature.browser_support[id])}</span>
 				</span>`;
 			}).join(''))}
 		</a>`;

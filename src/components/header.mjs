@@ -1,6 +1,6 @@
 import { html } from "../util/html.mjs";
 
-export function header() {
+export function renderHeader() {
 	return html`
 		<header class="cssdb-header">
 			<img class="cssdb-header-branding" src="/images/cssdb.svg" alt="cssdb logo" width="90" height="90" role="presentation">

@@ -1,6 +1,6 @@
 import { html } from "../util/html.mjs";
 
-export function stages() {
+export function renderStages() {
 	// TODO : this is copy/paste from the previous Astro output.
 	// Astro had a way to convert markdown to html.
 	// The original content can be found in "STAGES.md" in the root of the repo.

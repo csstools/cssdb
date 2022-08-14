@@ -1,6 +1,6 @@
 import { html } from "../util/html.mjs";
 
-export function footer() {
+export function renderFooter() {
 	return html`
 		<footer>
 			<p>Want to contribute? Checkout the <a href="https://github.com/csstools/cssdb">cssdb on GitHub</a>.</p>
