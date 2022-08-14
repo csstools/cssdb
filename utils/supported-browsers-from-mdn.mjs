@@ -76,6 +76,13 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 		}
 
 		if (version) {
+			// see : https://github.com/mdn/browser-compat-data/issues/17336
+			//   Ranged values means that a feature may have been added in a version earlier than "37",
+			//   but we don't know exactly when.
+			if (version.startsWith('≤')) {
+				version = version.substring(1);
+			}
+
 			const browser = MDNToBrowserlist[browserKey] || browserKey;
 			result[browser] = version;
 		}

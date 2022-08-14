@@ -1243,7 +1243,7 @@
     "browser_support": {
       "and_chr": "25",
       "and_ff": "49",
-      "android": "≤37",
+      "android": "37",
       "chrome": "23",
       "edge": "18",
       "firefox": "49",
@@ -1394,7 +1394,7 @@
     "stage": 2,
     "browser_support": {
       "and_chr": "18",
-      "android": "≤37",
+      "android": "37",
       "chrome": "1",
       "edge": "13",
       "firefox": "78",

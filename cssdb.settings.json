@@ -25,9 +25,6 @@
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
     "browser_support": {},
-    "browser_support_overrides": {
-      "android": "37"
-    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
@@ -1163,8 +1160,16 @@
     "stage": 2,
     "browser_support": {},
     "browser_support_overrides": {
-      "safari": "11",
-      "ios_saf": "11"
+      "safari": {
+        "from": null,
+        "to": "11",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
+      },
+      "ios_saf": {
+        "from": null,
+        "to": "11",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
+      }
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"

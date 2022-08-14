@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 import supportedBrowsersFromCanIUse from '../utils/supported-browsers-from-caniuse.mjs';
 import supportedBrowsersFromMdn from '../utils/supported-browsers-from-mdn.mjs';
 import countVendors from '../utils/count-vendors.mjs';
+import applyBrowserOverrides from '../utils/apply-browser-overrides.mjs';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 const settingsPath = path.resolve(__dirname, '../cssdb.settings.json');
@@ -23,7 +24,11 @@ cssdb.forEach(feature => {
 		feature.browser_support[browser] = browser_support[browser];
 	});
 
-	feature.browser_support = Object.assign({}, feature.browser_support, feature.browser_support_overrides);
+	feature.browser_support = applyBrowserOverrides(
+		feature.id,
+		feature.browser_support,
+		feature.browser_support_overrides
+	);
 
 	feature.vendors_implementations = countVendors(feature);
 });
