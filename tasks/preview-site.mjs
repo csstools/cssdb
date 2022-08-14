@@ -30,6 +30,7 @@ const distPath = new URL('../dist', import.meta.url).href;
 				res.setHeader('Content-type', 'image/vnd.microsoft.icon');
 				res.writeHead(200);
 				res.end(await fsp.readFile(new URL('../dist/favicon.ico', import.meta.url)));
+				break;
 			case '/styles/style.css':
 				res.setHeader('Content-type', 'text/css');
 				res.writeHead(200);
