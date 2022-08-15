@@ -26,11 +26,12 @@ const presetEnvPlugins = [
 	'hexadecimal-alpha-notation',
 	'hwb-function',
 	'ic-unit',
-	'is-pseudo-class',
 	'image-set-function',
+	'is-pseudo-class',
 	'lab-function',
 	'logical-properties-and-values',
 	'media-query-ranges',
+	'nested-calc',
 	'nesting-rules',
 	'not-pseudo-class',
 	'oklab-function',
@@ -42,8 +43,9 @@ const presetEnvPlugins = [
 	'rebeccapurple-color',
 	'stepped-value-functions',
 	'system-ui-font-family',
+	'text-decoration-shorthand',
 	'trigonometric-functions',
-	'unset-value'
+	'unset-value',
 ];
 
 export function renderFeaturePolyfill(polyfill, id, title) {
