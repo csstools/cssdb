@@ -911,6 +911,25 @@
     ]
   },
   {
+    "id": "nested-calc",
+    "title": "Nested `calc()`",
+    "description": "Nest calc functions with the calc function name",
+    "specification": "https://www.w3.org/TR/css-values-4/#calc-func",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
+    },
+    "example": "p {\n  padding: calc(1px + calc(4 / 3));\n}",
+    "mdn_path": "css.types.calc.nested",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nested-calc"
+      }
+    ]
+  },
+  {
     "id": "nesting-rules",
     "title": "Nesting Rules",
     "description": "A syntax for nesting relative rules within rules",
@@ -1180,6 +1199,31 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
+      }
+    ]
+  },
+    {
+    "id": "text-decoration-shorthand",
+    "title": "`text-decoration` shorthand",
+    "description": "A property for defining `text-decoration-line`, `text-decoration-thickness`, `text-decoration-style` and `text-decoration-color`",
+    "specification": "https://www.w3.org/TR/css-text-decor-4/#text-decoration-property",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"
+    },
+    "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
+    "mdn_path": [
+      "css.properties.text-decoration.shorthand",
+      "css.properties.text-decoration.text-decoration-thickness"
+    ],
+    "mdn_count_prefixed_as_supported": {
+      "css.properties.text-decoration.shorthand": true
+    },
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-text-decoration-shorthand"
       }
     ]
   },
