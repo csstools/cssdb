@@ -1,5 +1,5 @@
 import { parseExample }  from '../../utils/feature-example.js';
-import { escapeHTML, html } from '../util/html.mjs';
+import { backTicksToCodeTags, escapeHTML, html } from '../util/html.mjs';
 import { renderCaniuseFeature } from './caniuse-feature.mjs';
 import { renderFeaturePolyfills } from './feature-polyfills.mjs';
 
@@ -26,7 +26,7 @@ export function renderFeature(feature) {
 				</a>
 				<h2 class="cssdb-feature-heading">
 					<a href="#${feature.id}">
-						${escapeHTML(feature.title)}
+						${backTicksToCodeTags(escapeHTML(feature.title))}
 					</a>
 				</h2>
 				<p class="cssdb-feature-description">

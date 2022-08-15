@@ -16,3 +16,26 @@ export function escapeHTML(string) {
 		return htmlEntities[tag];
 	});
 }
+
+export function backTicksToCodeTags(string) {
+	let result = '';
+	let inBackticks = false;
+
+	for (let i = 0; i < string.length; i++) {
+		if (string[i] === '`') {
+			if (inBackticks) {
+				result += '</code>';
+				inBackticks = false;
+			} else {
+				result += '<code>';
+				inBackticks = true;
+			}
+
+			continue;
+		}
+
+		result += string[i];
+	}
+
+	return result;
+}

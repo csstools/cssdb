@@ -1,6 +1,7 @@
 import { renderFeatures } from "../components/features.mjs";
 import { renderFooter } from "../components/footer.mjs";
 import { renderHeader } from "../components/header.mjs";
+import { renderModeToggler } from "../components/mode-toggler.mjs";
 import { renderStages } from "../components/stages.mjs";
 import { html } from "../util/html.mjs";
 
@@ -37,6 +38,7 @@ export function renderIndex() {
 	${renderFeatures()}
 	${renderStages()}
 	${renderFooter()}
+	${renderModeToggler()}
 </body>
 </html>
 `;
