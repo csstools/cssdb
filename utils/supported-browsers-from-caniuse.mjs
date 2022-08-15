@@ -13,7 +13,7 @@ export default function supportedBrowsersFromCanIUse(key, feature) {
 		const [ smallestSupported ] = Object.keys(stats[browserKey])
 			.map(version => [version, stats[browserKey][version]])
 			.filter(([,support]) => {
-				if (feature['allow_partial_implementation']) {
+				if (feature.allow_partial_implementation) {
 					return support.startsWith('y');
 				}
 

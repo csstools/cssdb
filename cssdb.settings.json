@@ -24,13 +24,15 @@
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
     "specification": "https://www.w3.org/TR/selectors-4/#any-link-pseudo",
     "stage": 2,
-    "allow_partial_implementation": true,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "mdn_path": "css.selectors['any-link']",
+    "mdn_count_prefixed_as_supported": {
+      "css.selectors['any-link']": true
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -74,13 +76,9 @@
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "mdn_path": [
       "css.properties['break-after'].paged_context",
-      "css.properties['break-after'].paged_context.always",
       "css.properties['break-after'].paged_context.page",
-      "css.properties['break-after'].paged_context.recto",
       "css.properties['break-before'].paged_context",
-      "css.properties['break-before'].paged_context.always",
       "css.properties['break-before'].paged_context.page",
-      "css.properties['break-before'].paged_context.recto",
       "css.properties['break-inside'].paged_context",
       "css.properties['break-inside'].paged_context['avoid-page']"
     ],
@@ -297,7 +295,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
-    "mdn_path": "css.properties['custom-property']var",
+    "mdn_path": "css.properties['custom-property'].var",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -406,17 +404,6 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
-    "mdn_path": [
-      "css.properties['custom-property'].env",
-      "css.properties['custom-property'].env['safe-area-inset-bottom']",
-      "css.properties['custom-property'].env['safe-area-inset-left']",
-      "css.properties['custom-property'].env['safe-area-inset-right']",
-      "css.properties['custom-property'].env['safe-area-inset-top']",
-      "css.properties['custom-property'].env['titlebar-area-height']",
-      "css.properties['custom-property'].env['titlebar-area-width']",
-      "css.properties['custom-property'].env['titlebar-area-x']",
-      "css.properties['custom-property'].env['titlebar-area-y']"
-    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -448,6 +435,28 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
+      }
+    ]
+  },
+  {
+    "id": "float-clear-logical-values",
+    "title": "Logical Values in float and clear",
+    "description": "Flow-relative (inline-start and inline-end) values for float and clear",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
+    },
+    "example": "span:first-child {\n  float: inline-start;\n}",
+    "mdn_path": [
+      "css.properties.float.flow_relative_values",
+      "css.properties.clear.flow_relative_values"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ]
   },
@@ -534,6 +543,9 @@
       "css.properties['font-variant-ligatures']",
       "css.properties['font-variant-position']"
     ],
+    "mdn_count_prefixed_as_supported": {
+      "css.properties['font-variant-ligatures']": true
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -690,6 +702,9 @@
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "mdn_path": "css.types.image['image-set']",
+    "mdn_count_prefixed_as_supported": {
+      "css.types.image['image-set']": true
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -780,36 +795,24 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
-    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "mdn_path": [
       "css.properties['inline-size']",
-      "css.properties['inline-size']['fit-content']",
-      "css.properties['inline-size']['fit-content_function']",
       "css.properties['inline-size']['max-content']",
       "css.properties['inline-size']['min-content']",
       "css.properties['min-inline-size']",
-      "css.properties['min-inline-size']['fit-content']",
-      "css.properties['min-inline-size']['fit-content_function']",
       "css.properties['min-inline-size']['max-content']",
       "css.properties['min-inline-size']['min-content']",
       "css.properties['max-inline-size']",
-      "css.properties['max-inline-size']['fit-content']",
-      "css.properties['max-inline-size']['fit-content_function']",
       "css.properties['max-inline-size']['max-content']",
       "css.properties['max-inline-size']['min-content']",
       "css.properties['block-size']",
-      "css.properties['block-size']['fit-content']",
-      "css.properties['block-size']['fit-content_function']",
       "css.properties['block-size']['max-content']",
       "css.properties['block-size']['min-content']",
       "css.properties['min-block-size']",
-      "css.properties['min-block-size']['fit-content']",
-      "css.properties['min-block-size']['fit-content_function']",
       "css.properties['min-block-size']['max-content']",
       "css.properties['min-block-size']['min-content']",
       "css.properties['max-block-size']",
-      "css.properties['max-block-size']['fit-content']",
-      "css.properties['max-block-size']['fit-content_function']",
       "css.properties['max-block-size']['max-content']",
       "css.properties['max-block-size']['min-content']",
       "css.properties['border-block-end']",
@@ -852,8 +855,6 @@
       "css.properties['margin-inline']",
       "css.properties['padding-block']",
       "css.properties['padding-inline']",
-      "css.properties.float.flow_relative_values",
-      "css.properties.clear.flow_relative_values",
       "css.properties['inset-inline']",
       "css.properties['inset-inline-start']",
       "css.properties['inset-inline-end']",
@@ -1014,7 +1015,6 @@
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "mdn_path": [
       "css.properties['overflow-wrap']",
-      "css.properties['overflow-wrap'].anywhere",
       "css.properties['overflow-wrap']['break-word']"
     ],
     "polyfills": [
@@ -1159,6 +1159,18 @@
     "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
     "stage": 2,
     "browser_support": {},
+    "browser_support_overrides": {
+      "safari": {
+        "from": null,
+        "to": "11",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
+      },
+      "ios_saf": {
+        "from": null,
+        "to": "11",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
+      }
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
