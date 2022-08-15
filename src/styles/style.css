@@ -543,6 +543,14 @@ img {
 	content: url("/images/browsers/samsung.svg");
 }
 
+.cssdb-browser--oculus::before {
+	content: url("/images/browsers/oculus.svg");
+
+	@media (prefers-color-scheme: dark) {
+		filter: invert(1);
+	}
+}
+
 /* Process
 /* ========================================================================== */
 

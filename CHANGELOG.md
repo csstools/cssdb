@@ -1,8 +1,15 @@
 # Changes to cssdb
 
-### Unreleased
+### Unreleased (major)
 
-- Updated `is-pseudo-class` now uses mdn data.
+- Updated most features to use data from [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data)
+- Updated `environment-variables` to mean **custom** environment variables. No browsers currently support this feature. (breaking)
+- Added: Stage 2 `nested-calc`.
+- Added: Stage 2 `text-decoration-shorthand`.
+- Added: Stage 2 `float-clear-logical-values`.
+- Updated `@mdn/browser-compat-data"` to `5.1.8` (minor)
+- Updated `browserslist` to `4.21.3` (minor)
+- Updated `caniuse-lite` to `1.0.30001376` (patch)
 
 ### 6.6.3 (June 3, 2022)
 
