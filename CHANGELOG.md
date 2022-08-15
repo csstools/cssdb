@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (major)
+### 7.0.0 (August 15, 2022)
 
 - Updated most features to use data from [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data)
 - Updated `environment-variables` to mean **custom** environment variables. No browsers currently support this feature. (breaking)
