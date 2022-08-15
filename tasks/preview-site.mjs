@@ -35,12 +35,12 @@ const distPath = new URL('../dist', import.meta.url).href;
 				res.setHeader('Content-type', 'text/css');
 				res.writeHead(200);
 
-				const css = await fsp.readFile(new URL('../dist/styles/style.css', import.meta.url), 'utf8');
+				const css = await fsp.readFile(new URL('../src/styles/style.css', import.meta.url), 'utf8');
 				const processesCSS = await postcss([
 					postcssPresetEnv({ stage: 0 })
 				]).process(css, {
-					from: './src/styles/style.css',
-					sourceMap: { inline: true }
+					from: new URL('../src/styles/style.css', import.meta.url).href,
+					map: { inline: true }
 				});
 
 				res.end(processesCSS.css);

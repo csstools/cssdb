@@ -1,7 +1,10 @@
 const postcssPresetEnv = require('postcss-preset-env');
 
-module.exports = {
-	plugins: [
-		postcssPresetEnv({ stage: 0 })
-	],
-};
+module.exports = (ctx) => {
+	return {
+		map: ctx.options.map,
+		plugins: [
+			postcssPresetEnv({ stage: 0 })
+		],
+	}
+}
