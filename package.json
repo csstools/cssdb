@@ -43,7 +43,7 @@
     "@mdn/browser-compat-data": "^5.1.8",
     "astro": "0.24.3",
     "browserslist": "^4.21.3",
-    "caniuse-lite": "^1.0.30001375",
+    "caniuse-lite": "^1.0.30001376",
     "fse": "^4.0.1",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.16",
