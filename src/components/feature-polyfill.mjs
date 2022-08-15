@@ -75,7 +75,7 @@ export function renderFeaturePolyfill(polyfill, id, title) {
 
 			${(polyfill.type === "PostCSS Plugin" && isBundled) ? (
 				html`
-					<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env">Preset Env</a>)</span>
+					<span> (bundled with <a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/postcss-plugins/blob/main/plugin-packs/postcss-preset-env#readme">Preset Env</a>)</span>
 				`
 			) : ''}
 		</li>`;
