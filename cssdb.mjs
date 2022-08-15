@@ -8,19 +8,16 @@ export default [
     "browser_support": {
       "and_chr": "37",
       "and_ff": "27",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4.3",
-      "baidu": "7.12",
+      "android": "37",
       "chrome": "37",
       "edge": "79",
       "firefox": "27",
       "ios_saf": "9.3",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "24",
       "opera": "24",
       "safari": "9.1",
-      "samsung": "4"
+      "samsung": "3.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
@@ -43,11 +40,12 @@ export default [
     "browser_support": {
       "and_chr": "18",
       "and_ff": "4",
-      "android": "65",
+      "android": "37",
       "chrome": "1",
       "edge": "79",
       "firefox": "1",
       "ios_saf": "1",
+      "oculus": "5.0",
       "op_mob": "14",
       "opera": "15",
       "safari": "3",
@@ -95,16 +93,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-break-3/#breaking-controls",
     "stage": 3,
     "browser_support": {
-      "and_uc": "12.12",
+      "and_chr": "51",
+      "and_ff": "92",
+      "android": "51",
+      "chrome": "51",
       "edge": "12",
-      "ie": "10",
-      "ie_mob": "10",
-      "ios_saf": "10",
-      "op_mini": "all",
-      "op_mob": "11.1",
+      "firefox": "92",
+      "oculus": "5.0",
+      "op_mob": "37",
       "opera": "11.1",
-      "safari": "10",
-      "samsung": "5"
+      "samsung": "5.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
@@ -116,7 +114,7 @@ export default [
         "link": "https://github.com/shrpne/postcss-page-break"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "calc-constants",
@@ -142,7 +140,9 @@ export default [
       "edge": "99",
       "firefox": "97",
       "ios_saf": "15.4",
-      "opera": "86",
+      "oculus": "21.0",
+      "op_mob": "68",
+      "opera": "85",
       "safari": "15.4"
     },
     "docs": {
@@ -166,18 +166,16 @@ export default [
     "browser_support": {
       "and_chr": "49",
       "and_ff": "47",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
       "android": "49",
       "chrome": "49",
       "edge": "79",
       "firefox": "47",
       "ios_saf": "9",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "36",
       "opera": "36",
       "safari": "9",
-      "samsung": "5"
+      "samsung": "5.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
@@ -205,6 +203,7 @@ export default [
       "edge": "79",
       "firefox": "75",
       "ios_saf": "13.4",
+      "oculus": "8.0",
       "op_mob": "57",
       "opera": "66",
       "safari": "13.1",
@@ -229,15 +228,16 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "browser_support": {
-      "and_ff": "48",
-      "firefox": "48",
-      "kaios": "2.5"
+      "and_ff": "97",
+      "firefox": "97",
+      "ios_saf": "15.4",
+      "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "color-contrast",
@@ -260,8 +260,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
     "browser_support": {
-      "ios_saf": "15",
-      "safari": "15"
+      "ios_saf": "10.3",
+      "safari": "10.1"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -289,6 +289,7 @@ export default [
       "edge": "79",
       "firefox": "52",
       "ios_saf": "12.2",
+      "oculus": "5.0",
       "op_mob": "47",
       "opera": "52",
       "safari": "12.1",
@@ -337,7 +338,9 @@ export default [
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
     "browser_support": {
-      "safari": "TP"
+      "chrome": "106",
+      "ios_saf": "16",
+      "safari": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
@@ -376,17 +379,16 @@ export default [
     "browser_support": {
       "and_chr": "49",
       "and_ff": "31",
-      "and_uc": "12.12",
-      "android": "49",
+      "android": "50",
       "chrome": "49",
-      "edge": "16",
+      "edge": "15",
       "firefox": "31",
-      "ios_saf": "10",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "ios_saf": "9.3",
+      "oculus": "5.0",
+      "op_mob": "36",
       "opera": "36",
-      "safari": "10",
-      "samsung": "5"
+      "safari": "9.1",
+      "samsung": "5.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
@@ -491,6 +493,7 @@ export default [
       "edge": "79",
       "firefox": "83",
       "ios_saf": "12.2",
+      "oculus": "6.0",
       "op_mob": "51",
       "opera": "60",
       "safari": "12.1",
@@ -511,19 +514,7 @@ export default [
     "description": "A syntax for using custom values accepted by CSS globally",
     "specification": "https://drafts.csswg.org/css-env-1/",
     "stage": 0,
-    "browser_support": {
-      "and_chr": "69",
-      "and_ff": "65",
-      "android": "69",
-      "chrome": "69",
-      "edge": "79",
-      "firefox": "65",
-      "ios_saf": "11.3",
-      "op_mob": "64",
-      "opera": "56",
-      "safari": "11.1",
-      "samsung": "10.1"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
     },
@@ -534,7 +525,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-env-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 0
   },
   {
     "id": "exponential-functions",
@@ -566,6 +557,28 @@ export default [
     "vendors_implementations": 0
   },
   {
+    "id": "float-clear-logical-values",
+    "title": "Logical Values in float and clear",
+    "description": "Flow-relative (inline-start and inline-end) values for float and clear",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "55",
+      "firefox": "55"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
+    },
+    "example": "span:first-child {\n  float: inline-start;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
+      }
+    ],
+    "vendors_implementations": 1
+  },
+  {
     "id": "focus-visible-pseudo-class",
     "title": "`:focus-visible` Focus-Indicated Pseudo-Class",
     "description": "A pseudo-class for matching focused elements that indicate that focus to a user",
@@ -579,6 +592,7 @@ export default [
       "edge": "86",
       "firefox": "85",
       "ios_saf": "15.4",
+      "oculus": "12.0",
       "op_mob": "61",
       "opera": "72",
       "safari": "15.4",
@@ -609,16 +623,16 @@ export default [
     "browser_support": {
       "and_chr": "60",
       "and_ff": "52",
-      "and_qq": "10.4",
       "android": "60",
       "chrome": "60",
       "edge": "79",
       "firefox": "52",
       "ios_saf": "10.3",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "44",
       "opera": "47",
       "safari": "10.1",
-      "samsung": "8.2"
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
@@ -668,7 +682,6 @@ export default [
       "and_ff": "34",
       "firefox": "34",
       "ios_saf": "9.3",
-      "kaios": "2.5",
       "safari": "9.1"
     },
     "docs": {
@@ -697,6 +710,7 @@ export default [
       "edge": "16",
       "firefox": "61",
       "ios_saf": "12",
+      "oculus": "5.0",
       "op_mob": "47",
       "opera": "53",
       "safari": "12",
@@ -737,20 +751,18 @@ export default [
     "specification": "https://www.w3.org/TR/css-grid-1/",
     "stage": 3,
     "browser_support": {
-      "and_chr": "58",
-      "and_ff": "54",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "58",
-      "chrome": "58",
+      "and_chr": "57",
+      "and_ff": "52",
+      "android": "57",
+      "chrome": "57",
       "edge": "16",
-      "firefox": "54",
+      "firefox": "52",
       "ios_saf": "10.3",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "43",
       "opera": "44",
       "safari": "10.1",
-      "samsung": "6.2"
+      "samsung": "6.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
@@ -771,7 +783,12 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {
+      "and_chr": "105",
+      "android": "105",
+      "chrome": "105",
+      "edge": "105",
       "ios_saf": "15.4",
+      "opera": "90",
       "safari": "15.4"
     },
     "docs": {
@@ -807,11 +824,12 @@ export default [
       "chrome": "62",
       "edge": "79",
       "firefox": "49",
-      "ios_saf": "10",
-      "op_mob": "64",
-      "opera": "52",
+      "ios_saf": "9.3",
+      "oculus": "5.0",
+      "op_mob": "47",
+      "opera": "49",
       "safari": "10",
-      "samsung": "8.2"
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
@@ -839,6 +857,8 @@ export default [
       "edge": "101",
       "firefox": "96",
       "ios_saf": "15",
+      "oculus": "22.0",
+      "op_mob": "70",
       "safari": "15"
     },
     "docs": {
@@ -883,7 +903,18 @@ export default [
     "description": "A function for specifying image sources based on the user’s resolution",
     "specification": "https://www.w3.org/TR/css-images-4/#image-set-notation",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "25",
+      "and_ff": "88",
+      "android": "4.4",
+      "chrome": "21",
+      "edge": "79",
+      "firefox": "88",
+      "oculus": "5.0",
+      "op_mob": "14",
+      "opera": "15",
+      "samsung": "1.5"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
     },
@@ -894,7 +925,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -903,20 +934,18 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#range-pseudos",
     "stage": 2,
     "browser_support": {
-      "and_chr": "53",
-      "and_ff": "50",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "53",
-      "baidu": "7.12",
-      "chrome": "53",
-      "edge": "79",
-      "firefox": "50",
-      "ios_saf": "10.3",
-      "op_mob": "64",
-      "opera": "40",
-      "safari": "10.1",
-      "samsung": "5"
+      "and_chr": "18",
+      "and_ff": "16",
+      "android": "2.2",
+      "chrome": "10",
+      "edge": "13",
+      "firefox": "29",
+      "ios_saf": "5",
+      "oculus": "5.0",
+      "op_mob": "11",
+      "opera": "11",
+      "safari": "5.1",
+      "samsung": "1.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
@@ -938,6 +967,7 @@ export default [
       "edge": "88",
       "firefox": "82",
       "ios_saf": "14",
+      "oculus": "14.0",
       "op_mob": "63",
       "opera": "74",
       "safari": "14",
@@ -1013,15 +1043,15 @@ export default [
       "edge": "89",
       "firefox": "66",
       "ios_saf": "15",
-      "op_mob": "64",
-      "opera": "76",
+      "oculus": "15.0",
+      "opera": "75",
       "safari": "15",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
     },
-    "example": "span:first-child {\n  float: inline-start;\n  margin-inline-start: 10px;\n}",
+    "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1038,16 +1068,17 @@ export default [
     "stage": -1,
     "browser_support": {
       "and_chr": "88",
-      "and_ff": "78",
+      "and_ff": "82",
       "android": "88",
       "chrome": "88",
       "edge": "88",
-      "firefox": "78",
+      "firefox": "82",
       "ios_saf": "14",
-      "op_mob": "64",
-      "opera": "75",
+      "oculus": "14.0",
+      "op_mob": "63",
+      "opera": "74",
       "safari": "14",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
@@ -1081,6 +1112,38 @@ export default [
     "vendors_implementations": 0
   },
   {
+    "id": "nested-calc",
+    "title": "Nested `calc()`",
+    "description": "Nest calc functions with the calc function name",
+    "specification": "https://www.w3.org/TR/css-values-4/#calc-func",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "51",
+      "and_ff": "48",
+      "android": "51",
+      "chrome": "51",
+      "edge": "16",
+      "firefox": "48",
+      "ios_saf": "11",
+      "oculus": "5.0",
+      "op_mob": "41",
+      "opera": "38",
+      "safari": "11",
+      "samsung": "5.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
+    },
+    "example": "p {\n  padding: calc(1px + calc(4 / 3));\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nested-calc"
+      }
+    ],
+    "vendors_implementations": 3
+  },
+  {
     "id": "nesting-rules",
     "title": "Nesting Rules",
     "description": "A syntax for nesting relative rules within rules",
@@ -1110,10 +1173,10 @@ export default [
       "edge": "88",
       "firefox": "84",
       "ios_saf": "9",
-      "op_mob": "64",
-      "opera": "75",
+      "oculus": "14.0",
+      "opera": "74",
       "safari": "9",
-      "samsung": "15"
+      "samsung": "15.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
@@ -1133,7 +1196,10 @@ export default [
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
       {
@@ -1141,7 +1207,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "opacity-percentage",
@@ -1155,6 +1221,7 @@ export default [
       "chrome": "78",
       "edge": "79",
       "firefox": "70",
+      "oculus": "8.0",
       "samsung": "12.0"
     },
     "docs": {
@@ -1182,6 +1249,7 @@ export default [
       "chrome": "68",
       "edge": "79",
       "firefox": "61",
+      "oculus": "6.0",
       "op_mob": "48",
       "opera": "55",
       "samsung": "10.0"
@@ -1205,21 +1273,18 @@ export default [
     "specification": "https://www.w3.org/TR/css-text-3/#overflow-wrap-property",
     "stage": 2,
     "browser_support": {
-      "and_chr": "23",
+      "and_chr": "25",
       "and_ff": "49",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4",
-      "baidu": "7.12",
-      "bb": "10",
+      "android": "37",
       "chrome": "23",
       "edge": "18",
       "firefox": "49",
       "ios_saf": "7",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "12.1",
       "opera": "12.1",
-      "safari": "6.1",
-      "samsung": "4"
+      "safari": "7",
+      "samsung": "1.5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
@@ -1240,17 +1305,18 @@ export default [
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 1,
     "browser_support": {
-      "and_chr": "65",
+      "and_chr": "63",
       "and_ff": "59",
-      "and_qq": "10.4",
-      "android": "65",
-      "chrome": "65",
-      "edge": "79",
+      "android": "63",
+      "chrome": "63",
+      "edge": "18",
       "firefox": "59",
-      "op_mob": "64",
-      "opera": "52",
-      "safari": "TP",
-      "samsung": "8.2"
+      "ios_saf": "16",
+      "oculus": "5.0",
+      "op_mob": "46",
+      "opera": "50",
+      "safari": "16",
+      "samsung": "8.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
@@ -1272,6 +1338,7 @@ export default [
       "edge": "79",
       "firefox": "53",
       "ios_saf": "11",
+      "oculus": "5.0",
       "op_mob": "43",
       "opera": "46",
       "safari": "11",
@@ -1303,10 +1370,11 @@ export default [
       "edge": "79",
       "firefox": "67",
       "ios_saf": "13",
-      "op_mob": "64",
+      "oculus": "7.0",
+      "op_mob": "54",
       "opera": "62",
       "safari": "12.1",
-      "samsung": "12"
+      "samsung": "14.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
@@ -1332,16 +1400,17 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "74",
-      "and_ff": "63",
+      "and_ff": "64",
       "android": "74",
       "chrome": "74",
       "edge": "79",
       "firefox": "63",
       "ios_saf": "10.3",
-      "op_mob": "64",
-      "opera": "64",
+      "oculus": "6.0",
+      "op_mob": "53",
+      "opera": "62",
       "safari": "10.1",
-      "samsung": "11.1"
+      "samsung": "11.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
@@ -1356,21 +1425,17 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
     "browser_support": {
-      "and_chr": "36",
-      "and_ff": "78",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "36",
-      "baidu": "7.12",
-      "bb": "10",
-      "chrome": "36",
+      "and_chr": "18",
+      "android": "37",
+      "chrome": "1",
       "edge": "13",
       "firefox": "78",
-      "ios_saf": "9",
-      "op_mob": "64",
-      "opera": "23",
-      "safari": "9",
-      "samsung": "4"
+      "ios_saf": "3.2",
+      "oculus": "5.0",
+      "op_mob": "10.1",
+      "opera": "9",
+      "safari": "4",
+      "samsung": "1.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
@@ -1387,19 +1452,17 @@ export default [
     "browser_support": {
       "and_chr": "38",
       "and_ff": "33",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
-      "android": "4.4",
-      "baidu": "7.12",
+      "android": "38",
       "chrome": "38",
       "edge": "12",
       "firefox": "33",
+      "ie": "11",
       "ios_saf": "8",
-      "kaios": "2.5",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "25",
       "opera": "25",
-      "safari": "7",
-      "samsung": "4"
+      "safari": "9",
+      "samsung": "3.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
@@ -1448,17 +1511,16 @@ export default [
     "browser_support": {
       "and_chr": "56",
       "and_ff": "92",
-      "and_qq": "10.4",
-      "and_uc": "12.12",
       "android": "56",
       "chrome": "56",
       "edge": "79",
       "firefox": "92",
-      "ios_saf": "11",
-      "op_mob": "64",
+      "oculus": "5.0",
+      "op_mob": "43",
       "opera": "43",
+      "samsung": "6.0",
       "safari": "11",
-      "samsung": "6.2"
+      "ios_saf": "11"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
@@ -1471,6 +1533,35 @@ export default [
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "text-decoration-shorthand",
+    "title": "`text-decoration` shorthand",
+    "description": "A property for defining `text-decoration-line`, `text-decoration-thickness`, `text-decoration-style` and `text-decoration-color`",
+    "specification": "https://www.w3.org/TR/css-text-decor-4/#text-decoration-property",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "87",
+      "android": "87",
+      "chrome": "87",
+      "edge": "87",
+      "firefox": "70",
+      "oculus": "13.0",
+      "op_mob": "62",
+      "opera": "73",
+      "samsung": "14.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"
+    },
+    "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-text-decoration-shorthand"
+      }
+    ],
+    "vendors_implementations": 2
   },
   {
     "id": "trigonometric-functions",
@@ -1502,6 +1593,7 @@ export default [
       "edge": "13",
       "firefox": "27",
       "ios_saf": "9.3",
+      "oculus": "5.0",
       "op_mob": "28",
       "opera": "28",
       "safari": "9.1",
@@ -1543,6 +1635,7 @@ export default [
       "edge": "88",
       "firefox": "82",
       "ios_saf": "14",
+      "oculus": "14.0",
       "op_mob": "63",
       "opera": "74",
       "safari": "14",

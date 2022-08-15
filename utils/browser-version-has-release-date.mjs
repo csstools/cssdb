@@ -1,4 +1,5 @@
 import caniuse from 'caniuse-lite';
+import semver from 'semver';
 
 export default function browserVersionHasReleaseDate(browser, version) {
 	if (!caniuse.agents[browser]) {
@@ -6,8 +7,8 @@ export default function browserVersionHasReleaseDate(browser, version) {
 		return false;
 	}
 
-	if (!(/^[0-9|.]+$/.test(version))) {
-		// Safari TP
+	const semverVersion = semver.coerce(version);
+	if (!semverVersion) {
 		return false;
 	}
 
@@ -25,7 +26,11 @@ export default function browserVersionHasReleaseDate(browser, version) {
 		// Caniuse doesn't have very old versions.
 		// Substitute the oldest version for the version we're looking for.
 		// chrome 1 -> chrome 4
-		if (majorVersionAsInt(version) < majorVersionAsInt(x)) {
+		const xx = semver.coerce(x);
+		if (!xx) {
+			return false;
+		}
+		if (semver.lt(semverVersion, xx)) {
 			return true;
 		}
 
@@ -37,8 +42,4 @@ export default function browserVersionHasReleaseDate(browser, version) {
 	}
 
 	return true;
-}
-
-function majorVersionAsInt(version) {
-	return parseInt(version.split('.')[0], 10);
 }
