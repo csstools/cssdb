@@ -9,7 +9,7 @@ const stages = [
 	'stage-2-allowable',
 	'stage-3-embraced',
 	'stage-4-standardized',
-]
+];
 
 export function renderFeature(feature) {
 
@@ -21,7 +21,7 @@ export function renderFeature(feature) {
 	return html`
 		<article class="cssdb-feature" id="${feature.id}">
 			<header class="cssdb-feature-header">
-				<a class="cssdb-feature-stage" href="#${stages[feature.stage]}">
+				<a class="cssdb-feature-stage" href="#${stages[feature.stage]}" tabindex="-1" aria-hidden="true">
 					<img class="cssdb-feature-stage-image" src="${imageName}" alt="" width="62" height="62" role="presentation" loading="lazy">
 				</a>
 				<h2 class="cssdb-feature-heading">
@@ -30,17 +30,17 @@ export function renderFeature(feature) {
 					</a>
 				</h2>
 				<p class="cssdb-feature-description">
-					${escapeHTML(feature.description)}
+					${backTicksToCodeTags(escapeHTML(feature.description))}
 				</p>
 			</header>
 			<p class="cssdb-feature-docs">
 				<a
 					href="${feature.specification}"
-					aria-label="Specification for ${escapeHTML(cleanTitle)}"
+					aria-label="Specification"
 				>
 					<img
 						src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
-						alt="W3C Specification"
+						alt=""
 						loading="lazy"
 						decoding="async"
 						width="55"
@@ -50,13 +50,13 @@ export function renderFeature(feature) {
 				${feature.docs?.mdn ? (
 					html`<a
 						href="${feature.docs.mdn}"
-						aria-label="Documentation for ${escapeHTML(cleanTitle)}"
+						aria-label="Documentation"
 						target="_blank"
 						rel="noreferrer"
 					>
 						<img
 							src="https://shields.io/badge/docs-black?logo=mozilla&style=flat-square"
-							alt="Mozilla Developer Network Documentation"
+							alt=""
 							loading="lazy"
 							decoding="async"
 							width="53"
@@ -64,10 +64,13 @@ export function renderFeature(feature) {
 						>
 					</a>`
 				) : ''}
-				<a href="#${stages[feature.stage]}">
+				<a
+					href="#${stages[feature.stage]}"
+					aria-label="Stage ${feature.stage}"
+				>
 					<img
 						src="${badge}"
-						alt="Stage ${feature.stage}"
+						alt=""
 						loading="lazy"
 						decoding="async"
 						width="94"

@@ -54,7 +54,7 @@ export function renderCaniuseFeature(title, feature) {
 			${(link && feature.browser_support && feature_browsers.length > 0) ? `href="${link}"` : ''}
 			target="_blank"
 			rel="noreferrer"
-			aria-label="View the browser support for ${title}.Opens in a new tab."
+			aria-label="Browser support. Opens in a new tab."
 		>
 			${(feature_browsers.map((id) => {
 				return html`<span class="cssdb-browser cssdb-browser--${id}">
