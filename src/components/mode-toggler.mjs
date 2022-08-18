@@ -1,4 +1,7 @@
-<script src="https://unpkg.com/css-prefers-color-scheme@6.0.1/dist/browser-global.js"></script>
+import { html } from "../util/html.mjs";
+
+export function renderModeToggler() {
+	return html`<script src="https://unpkg.com/css-prefers-color-scheme@6.0.1/dist/browser-global.js"></script>
 <script>
 	var prefersColorScheme = window.prefersColorSchemeInit();
 	(function () {
@@ -38,3 +41,5 @@
 		document.body.insertBefore($toggle, document.querySelector('main'));
 	})();
 </script>
+`;
+}

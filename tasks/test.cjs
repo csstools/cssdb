@@ -1,5 +1,5 @@
 // internal tooling
-const fs   = require('fse');
+const fs   = require('fs').promises;
 const path = require('path');
 
 // symbols for passing and failure
@@ -13,7 +13,9 @@ const cssdbJSON = path.join(__dirname, '../cssdb.json');
 const isToBeFixed = process.argv.indexOf('--fix') !== -1;
 
 // test features.json
-fs.readJson(cssdbJSON).then(allHaveRequiredData).then(
+fs.readFile(cssdbJSON).then((data) => {
+	return JSON.parse(data);
+}).then(allHaveRequiredData).then(
 	length => console.log(`${passSymbol} all ${length} features are valid.`),
 	error  => console.log(`${failSymbol} something did not validate.\n  → ${error}`)
 );

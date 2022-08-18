@@ -1,11 +1,12 @@
----
-import Header from '../components/header.astro';
-import Features from '../components/features.astro';
-import Stages from '../components/stages.astro';
-import Footer from '../components/footer.astro';
-import ModeToggler from '../components/mode-toggler.astro';
----
-<!doctype html>
+import { renderFeatures } from "../components/features.mjs";
+import { renderFooter } from "../components/footer.mjs";
+import { renderHeader } from "../components/header.mjs";
+import { renderModeToggler } from "../components/mode-toggler.mjs";
+import { renderStages } from "../components/stages.mjs";
+import { html } from "../util/html.mjs";
+
+export function renderIndex() {
+	return html`<!doctype html>
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
@@ -22,7 +23,7 @@ import ModeToggler from '../components/mode-toggler.astro';
 	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@jon_neal">
+	<meta name="twitter:site" content="@css_tools_">
 	<meta property="og:title" content="CSS Database">
 	<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
 	<meta property="og:image" content="https://cssdb.org/images/cssdb.jpg">
@@ -30,13 +31,15 @@ import ModeToggler from '../components/mode-toggler.astro';
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://cssdb.org/">
 	<link href="/favicon.ico" rel="shortcut icon">
-	<style global>@import "../styles/style.css";</style>
+	<link rel="stylesheet" href="/styles/style.css" />
 </head>
 <body>
-	<Header />
-	<Features />
-	<Stages />
-	<Footer />
-	<ModeToggler />
+	${renderHeader()}
+	${renderFeatures()}
+	${renderStages()}
+	${renderFooter()}
+	${renderModeToggler()}
 </body>
 </html>
+`;
+}
