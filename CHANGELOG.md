@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 7.0.1 (August 23, 2022)
+
+- Updated `@mdn/browser-compat-data` to `5.1.8` (patch)
+- Updated `caniuse-lite` to `1.0.30001382` (patch)
+
 ### 7.0.0 (August 15, 2022)
 
 - Updated most features to use data from [@mdn/browser-compat-data](https://github.com/mdn/browser-compat-data)
@@ -7,7 +12,7 @@
 - Added: Stage 2 `nested-calc`.
 - Added: Stage 2 `text-decoration-shorthand`.
 - Added: Stage 2 `float-clear-logical-values`.
-- Updated `@mdn/browser-compat-data"` to `5.1.8` (minor)
+- Updated `@mdn/browser-compat-data` to `5.1.8` (minor)
 - Updated `browserslist` to `4.21.3` (minor)
 - Updated `caniuse-lite` to `1.0.30001376` (patch)
 
