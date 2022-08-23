@@ -143,7 +143,8 @@ export default [
       "oculus": "21.0",
       "op_mob": "68",
       "opera": "85",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "18.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -859,6 +860,7 @@ export default [
       "ios_saf": "15",
       "oculus": "22.0",
       "op_mob": "70",
+      "opera": "87",
       "safari": "15"
     },
     "docs": {
