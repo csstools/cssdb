@@ -789,7 +789,7 @@ export default [
       "chrome": "105",
       "edge": "105",
       "ios_saf": "15.4",
-      "opera": "90",
+      "opera": "91",
       "safari": "15.4"
     },
     "docs": {
