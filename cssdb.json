@@ -810,7 +810,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "hexadecimal-alpha-notation",
