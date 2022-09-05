@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+## Unreleased (patch)
+
+- Updated `@mdn/browser-compat-data` to `5.2.0` (patch)
+
 ### 7.0.1 (August 23, 2022)
 
 - Updated `@mdn/browser-compat-data` to `5.1.8` (patch)
