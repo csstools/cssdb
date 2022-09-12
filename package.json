@@ -47,7 +47,7 @@
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
-    "postcss-preset-env": "^7.8.0",
+    "postcss-preset-env": "^7.8.1",
     "semver": "^7.3.7",
     "stylelint": "^14.11.0",
     "stylelint-config-standard": "^28.0.0"
