@@ -1178,23 +1178,11 @@
     "specification": "https://www.w3.org/TR/css-fonts-4/#system-ui-def",
     "stage": 2,
     "browser_support": {},
-    "browser_support_overrides": {
-      "safari": {
-        "from": null,
-        "to": "11",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
-      },
-      "ios_saf": {
-        "from": null,
-        "to": "11",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/17337"
-      }
-    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
     "example": "body {\n  font-family: system-ui;\n}",
-    "mdn_path": "css.properties['font-family'].system_ui",
+    "mdn_path": "css.properties['font-family'].system-ui",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
