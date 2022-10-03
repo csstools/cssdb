@@ -882,9 +882,14 @@
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
     "browser_support": {
+      "and_chr": "106",
       "and_ff": "97",
+      "android": "106",
+      "chrome": "106",
+      "edge": "106",
       "firefox": "97",
       "ios_saf": "15.4",
+      "opera": "92",
       "safari": "15.4"
     },
     "docs": {
@@ -897,7 +902,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "image-set-function",
