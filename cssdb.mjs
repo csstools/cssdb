@@ -353,7 +353,7 @@ export default [
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "custom-media-queries",
