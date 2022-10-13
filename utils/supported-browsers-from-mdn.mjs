@@ -13,15 +13,14 @@ const MDNToBrowserlist = {
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
 	const mdnFeature = _get(mdn, mdnConfigPath);
+	if (!mdnFeature) {
+		throw new Error(`Invalid mdn config path "${mdnConfigPath}" in feature "${feature}"`);
+	}
 
 	// We assume users also have autoprefixer.
 	// If autoprefixer adds prefixes for this feature we count it as supported.
 	const supportsPrefixes = Object(feature.mdn_count_prefixed_as_supported)[mdnConfigPath];
 	const result = {};
-
-	if (!mdnFeature) {
-		return result;
-	}
 
 	const { __compat: { support } } = mdnFeature;
 

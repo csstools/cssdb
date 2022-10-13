@@ -418,7 +418,14 @@
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {},
-    "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}"
+    "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
+    "mdn_path": [
+      "css.types.pow",
+      "css.types.sqrt",
+      "css.types.hypot",
+      "css.types.log",
+      "css.types.exp"
+    ]
   },
   {
     "id": "fangsong-font-family",
@@ -1139,7 +1146,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
-    "mdn_path": "css.types.color.color_keywords.rebeccapurple",
+    "mdn_path": "css.types.color.named-color.rebeccapurple",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1154,7 +1161,11 @@
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {},
-    "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}"
+    "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
+    "mdn_path": [
+      "css.types.abs",
+      "css.types.sign"
+    ]
   },
   {
     "id": "stepped-value-functions",
@@ -1164,6 +1175,11 @@
     "stage": 2,
     "browser_support": {},
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
+    "mdn_path": [
+      "css.types.round",
+      "css.types.mod",
+      "css.types.rem"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1221,11 +1237,17 @@
     "description": "Functions to calculate varios basic trigonometric relationships",
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
-    "browser_support": {
-      "safari": "15.4",
-      "ios_saf": "15.4"
-    },
+    "browser_support": {},
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
+    "mdn_path": [
+      "css.types.sin",
+      "css.types.cos",
+      "css.types.tan",
+      "css.types.asin",
+      "css.types.acos",
+      "css.types.atan",
+      "css.types.atan2"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
