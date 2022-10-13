@@ -339,7 +339,10 @@ export default [
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 0,
     "browser_support": {
+      "and_chr": "106",
+      "android": "106",
       "chrome": "106",
+      "edge": "106",
       "ios_saf": "16",
       "safari": "16"
     },
