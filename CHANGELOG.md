@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-## Unreleased (patch)
+## 7.0.2 (November 14, 2022)
 
 - Updated `@mdn/browser-compat-data` to `5.2.6` (patch)
 - Updated `browserslist` to `4.21.4` (patch)
