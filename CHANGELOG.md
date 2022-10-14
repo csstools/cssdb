@@ -2,7 +2,7 @@
 
 ## Unreleased (patch)
 
-- Updated `@mdn/browser-compat-data` to `5.2.4` (patch)
+- Updated `@mdn/browser-compat-data` to `5.2.6` (patch)
 - Updated `browserslist` to `4.21.4` (patch)
 - Updated `caniuse-lite` to `1.0.30001418` (patch)
 

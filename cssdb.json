@@ -356,7 +356,7 @@
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "custom-media-queries",
@@ -537,9 +537,12 @@
     "description": "Compute various exponential functions with their arguments",
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "fangsong-font-family",
@@ -1332,7 +1335,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "place-properties",
@@ -1492,9 +1495,12 @@
     "description": "The sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "stepped-value-functions",
@@ -1502,7 +1508,10 @@
     "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways",
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "polyfills": [
       {
@@ -1510,7 +1519,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "system-ui-font-family",
@@ -1579,7 +1588,10 @@
     "description": "Functions to calculate varios basic trigonometric relationships",
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "15.4",
+      "safari": "15.4"
+    },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "polyfills": [
       {
@@ -1587,7 +1599,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "unset-value",
