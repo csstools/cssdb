@@ -2,8 +2,8 @@
 
 ### Unreleased
 
-- Updated `@mdn/browser-compat-data` to `5.2.9` (patch)
-- Updated `caniuse-lite` to `1.0.30001423` (patch)
+- Updated `@mdn/browser-compat-data` to `5.2.11` (patch)
+- Updated `caniuse-lite` to `1.0.30001427` (patch)
 
 ### 7.0.2 (November 14, 2022)
 

@@ -795,6 +795,7 @@ export default [
       "chrome": "105",
       "edge": "105",
       "ios_saf": "15.4",
+      "op_mob": "72",
       "opera": "91",
       "safari": "15.4"
     },
@@ -895,6 +896,7 @@ export default [
       "edge": "106",
       "firefox": "97",
       "ios_saf": "15.4",
+      "op_mob": "72",
       "opera": "92",
       "safari": "15.4"
     },
