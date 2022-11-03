@@ -2,6 +2,7 @@
 
 ### Unreleased
 
+- Added: Stage 2 `scope-pseudo-class`
 - Updated `@mdn/browser-compat-data` to `5.2.11` (patch)
 - Updated `caniuse-lite` to `1.0.30001427` (patch)
 

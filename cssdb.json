@@ -1492,6 +1492,38 @@
     "vendors_implementations": 3
   },
   {
+    "id": "scope-pseudo-class",
+    "title": "`:scope()` Reference Element Pseudo-class",
+    "description": "A pseudo-class for matching one or more scoping roots",
+    "specification": "https://www.w3.org/TR/selectors-4/#the-scope-pseudo",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "27",
+      "and_ff": "32",
+      "android": "4.4",
+      "chrome": "27",
+      "edge": "79",
+      "firefox": "32",
+      "ios_saf": "7",
+      "oculus": "5.0",
+      "op_mob": "15",
+      "opera": "15",
+      "safari": "7",
+      "samsung": "1.5"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+    },
+    "example": ":scope {\n  background-color: pink;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-scope-pseudo-class"
+      }
+    ],
+    "vendors_implementations": 3
+  },
+  {
     "id": "sign-functions",
     "title": "`abs()` and `sign()` functions",
     "description": "The sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
