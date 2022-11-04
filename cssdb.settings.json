@@ -1155,6 +1155,27 @@
     ]
   },
   {
+    "id": "scope-pseudo-class",
+    "title": "`:scope()` Reference Element Pseudo-class",
+    "description": "A pseudo-class for matching one or more scoping roots",
+    "specification": "https://www.w3.org/TR/selectors-4/#the-scope-pseudo",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+    },
+    "example": ":scope {\n  background-color: pink;\n}",
+    "mdn_path": [
+      "css.selectors.scope"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-scope-pseudo-class"
+      }
+    ]
+  },
+  {
     "id": "sign-functions",
     "title": "`abs()` and `sign()` functions",
     "description": "The sign-related functions—abs() and sign()—compute various functions related to the sign of their argument",
