@@ -1,12 +1,15 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.1.0 (November 4, 2022)
 
 - Added: Stage 2 `scope-pseudo-class`
-- Updated `@mdn/browser-compat-data` to `5.2.11` (patch)
-- Updated `caniuse-lite` to `1.0.30001427` (patch)
+- Updated `@mdn/browser-compat-data` to `5.2.12` (patch)
+- Updated `caniuse-lite` to `1.0.30001430` (patch)
+- Updated `postcss` to `8.4.18` (patch)
+- Updated `postcss-preset-env` to `7.8.2` (patch)
+- Updated `stylelint` to `14.14.1` (patch)
 
-### 7.0.2 (November 14, 2022)
+### 7.0.2 (October 14, 2022)
 
 - Updated `@mdn/browser-compat-data` to `5.2.6` (patch)
 - Updated `browserslist` to `4.21.4` (patch)
