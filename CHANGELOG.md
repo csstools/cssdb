@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Added: Stage 2 `media-queries-aspect-ratio-number-values`
+
 ### 7.1.0 (November 4, 2022)
 
 - Added: Stage 2 `scope-pseudo-class`

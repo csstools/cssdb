@@ -64,6 +64,25 @@
     "vendors_implementations": 3
   },
   {
+    "id": "media-queries-aspect-ratio-number-values",
+    "title": "Aspect-Ratio number values",
+    "description": "Support `<ratio>` values with `<number>` components in `@media`",
+    "specification": "https://www.w3.org/TR/css-values-4/#ratio-value",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
+    },
+    "example": "@media (device-aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-queries-aspect-ratio-number-values"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "blank-pseudo-class",
     "title": "`:blank` Empty-Value Pseudo-Class",
     "description": "A pseudo-class for matching form elements when they are empty",
