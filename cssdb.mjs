@@ -73,7 +73,7 @@ export default [
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
     },
-    "example": "@media (device-aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
+    "example": "@media (aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
