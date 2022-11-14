@@ -1642,6 +1642,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
     "browser_support": {
+      "and_ff": "108",
+      "firefox": "108",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
