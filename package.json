@@ -45,7 +45,7 @@
     "caniuse-lite": "^1.0.30001430",
     "glob": "^8.0.3",
     "lodash.get": "^4.4.2",
-    "postcss": "^8.4.18",
+    "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",
     "postcss-preset-env": "^7.8.2",
     "semver": "^7.3.8",
