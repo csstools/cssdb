@@ -363,6 +363,7 @@ export default [
       "chrome": "106",
       "edge": "106",
       "ios_saf": "16",
+      "op_mob": "72",
       "safari": "16"
     },
     "docs": {
@@ -887,7 +888,8 @@ export default [
       "oculus": "22.0",
       "op_mob": "70",
       "opera": "87",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "19.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
