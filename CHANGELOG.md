@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Added: Stage 2 `media-queries-aspect-ratio-number-values`
+- Updated `@mdn/browser-compat-data` to `5.2.19` (patch)
+- Updated `caniuse-lite` to `1.0.30001434` (patch)
+
 ### 7.1.0 (November 4, 2022)
 
 - Added: Stage 2 `scope-pseudo-class`
