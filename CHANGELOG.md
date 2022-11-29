@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.2.0 (November 29, 2022)
 
 - Added: Stage 2 `media-queries-aspect-ratio-number-values`
 - Updated `@mdn/browser-compat-data` to `5.2.19` (patch)
