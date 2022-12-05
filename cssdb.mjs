@@ -362,6 +362,7 @@ export default [
       "android": "106",
       "chrome": "106",
       "edge": "106",
+      "firefox": "109",
       "ios_saf": "16",
       "op_mob": "72",
       "safari": "16"
