@@ -592,7 +592,8 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_ff": "55",
-      "firefox": "55"
+      "firefox": "55",
+      "safari": "preview"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
@@ -1259,6 +1260,7 @@ export default [
       "edge": "79",
       "firefox": "70",
       "oculus": "8.0",
+      "safari": "preview",
       "samsung": "12.0"
     },
     "docs": {
@@ -1289,6 +1291,7 @@ export default [
       "oculus": "6.0",
       "op_mob": "48",
       "opera": "55",
+      "safari": "preview",
       "samsung": "10.0"
     },
     "docs": {
