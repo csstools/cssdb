@@ -77,5 +77,8 @@
     "specifications",
     "stages",
     "tc39"
-  ]
+  ],
+  "volta": {
+    "node": "16.18.1"
+  }
 }
