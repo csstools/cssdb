@@ -1,9 +1,10 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.2.1 (January 9, 2022)
 
-- Updated `@mdn/browser-compat-data` to `5.2.21` (patch)
-- Updated `caniuse-lite` to `1.0.30001439` (patch)
+- Updated `@mdn/browser-compat-data` to `5.2.26` (patch)
+- Updated `caniuse-lite` to `1.0.30001442` (patch)
+- Updated `postcss` to `8.4.21` (patch)
 
 ### 7.2.0 (November 29, 2022)
 
