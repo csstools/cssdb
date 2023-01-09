@@ -1644,7 +1644,7 @@ export default [
   {
     "id": "trigonometric-functions",
     "title": "`sin()`, `cos()`, `tan()`, `asin()`, `acos()`, `atan()` and `atan2()` functions",
-    "description": "Functions to calculate varios basic trigonometric relationships",
+    "description": "Functions to calculate various basic trigonometric relationships",
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
     "browser_support": {
@@ -1660,7 +1660,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "unset-value",
