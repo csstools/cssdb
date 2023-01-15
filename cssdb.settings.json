@@ -897,6 +897,23 @@
     ]
   },
   {
+    "id": "logical-viewport-units",
+    "title": "Logical Viewport Units",
+    "description": "Flow-relative (horizontal or vertical) Viewport Units",
+    "specification": "https://www.w3.org/TR/css-values-4/#viewport-relative-units",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
+    },
+    "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
+    "mdn_path": [
+      "css.types.length.vb",
+      "css.types.length.vi"
+    ],
+    "polyfills": []
+  },
+  {
     "id": "matches-pseudo-class",
     "title": "`:matches()` Matches-Any Pseudo-Class",
     "description": "A pseudo-class for matching elements in a selector list",
