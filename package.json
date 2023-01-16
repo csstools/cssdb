@@ -43,7 +43,7 @@
     "@mdn/browser-compat-data": "^5.2.26",
     "browserslist": "^4.21.4",
     "caniuse-lite": "^1.0.30001442",
-    "glob": "^8.0.3",
+    "glob": "^8.1.0",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
