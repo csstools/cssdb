@@ -1080,6 +1080,25 @@
     "vendors_implementations": 3
   },
   {
+    "id": "logical-resize",
+    "title": "Logical values in the `resize` property",
+    "description": "Flow-relative (block or inline) values in resize",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "63",
+      "firefox": "63",
+      "ios_saf": "16",
+      "safari": "16"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
+    },
+    "example": "area {\n  resize: inline;\n}",
+    "polyfills": [],
+    "vendors_implementations": 2
+  },
+  {
     "id": "logical-viewport-units",
     "title": "Logical Viewport Units",
     "description": "Flow-relative (horizontal or vertical) Viewport Units",
