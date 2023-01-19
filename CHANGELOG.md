@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Added: Stage 2 `logical-viewport-units`
+- Updated `@mdn/browser-compat-data` to `5.2.29` (patch)
+- Updated `caniuse-lite` to `1.0.30001445` (patch)
+
 ### 7.2.1 (January 9, 2022)
 
 - Updated `@mdn/browser-compat-data` to `5.2.26` (patch)
