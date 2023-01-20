@@ -928,6 +928,48 @@
     "specification": "https://www.w3.org/TR/css-values-4/#ratio-value",
     "stage": 2,
     "browser_support": {},
+    "browser_support_overrides": {
+      "and_chr": {
+        "from": null,
+        "to": "110",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "and_ff": {
+        "from": null,
+        "to": "78",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "android": {
+        "from": null,
+        "to": "110",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "chrome": {
+        "from": null,
+        "to": "110",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "edge": {
+        "from": null,
+        "to": "110",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "firefox": {
+        "from": null,
+        "to": "78",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "ios_saf": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      },
+      "safari": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+      }
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
     },
@@ -1268,7 +1310,7 @@
       }
     ]
   },
-    {
+  {
     "id": "text-decoration-shorthand",
     "title": "`text-decoration` shorthand",
     "description": "A property for defining `text-decoration-line`, `text-decoration-thickness`, `text-decoration-style` and `text-decoration-color`",
