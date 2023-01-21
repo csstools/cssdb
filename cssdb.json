@@ -1160,7 +1160,16 @@
     "description": "Support `<ratio>` values with `<number>` components in `@media`",
     "specification": "https://www.w3.org/TR/css-values-4/#ratio-value",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "110",
+      "and_ff": "78",
+      "android": "110",
+      "chrome": "110",
+      "edge": "110",
+      "firefox": "78",
+      "ios_saf": "16.2",
+      "safari": "16.2"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
     },
@@ -1171,7 +1180,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-queries-aspect-ratio-number-values"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "media-query-ranges",
