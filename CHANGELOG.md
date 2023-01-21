@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Added: Stage 2 `logical-resize`
+
 ### 7.3.0 (January 19, 2023)
 
 - Added: Stage 2 `logical-viewport-units`
