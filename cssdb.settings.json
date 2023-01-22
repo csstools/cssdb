@@ -463,7 +463,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-float-and-clear"
       }
     ]
   },
@@ -880,7 +880,12 @@
     "mdn_path": [
       "css.properties['resize'].flow_relative_support"
     ],
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-resize"
+      }
+    ]
   },
   {
     "id": "logical-viewport-units",
@@ -897,7 +902,12 @@
       "css.types.length.vb",
       "css.types.length.vi"
     ],
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-viewport-units"
+      }
+    ]
   },
   {
     "id": "matches-pseudo-class",
