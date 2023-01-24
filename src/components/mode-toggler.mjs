@@ -1,7 +1,7 @@
 import { html } from "../util/html.mjs";
 
 export function renderModeToggler() {
-	return html`<script src="https://unpkg.com/css-prefers-color-scheme@6.0.1/dist/browser-global.js"></script>
+	return html`<script src="https://unpkg.com/css-prefers-color-scheme@8.0.0/dist/browser-global.js"></script>
 <script>
 	var prefersColorScheme = window.prefersColorSchemeInit();
 	(function () {

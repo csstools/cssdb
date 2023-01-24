@@ -583,7 +583,7 @@ export default [
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-float-and-clear"
       }
     ],
     "vendors_implementations": 1
@@ -1095,7 +1095,12 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
     },
     "example": "area {\n  resize: inline;\n}",
-    "polyfills": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-resize"
+      }
+    ],
     "vendors_implementations": 2
   },
   {
@@ -1119,7 +1124,12 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
-    "polyfills": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-viewport-units"
+      }
+    ],
     "vendors_implementations": 3
   },
   {

@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Added: Links to plugins.
+
 ### 7.4.0 (January 22, 2023)
 
 - Added: Stage 2 `logical-resize`

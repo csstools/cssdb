@@ -37,7 +37,10 @@ const distPath = new URL('../dist', import.meta.url).href;
 
 				const css = await fsp.readFile(new URL('../src/styles/style.css', import.meta.url), 'utf8');
 				const processesCSS = await postcss([
-					postcssPresetEnv({ stage: 0 })
+					postcssPresetEnv({
+						stage: 0,
+						enableClientSidePolyfills: true
+					})
 				]).process(css, {
 					from: new URL('../src/styles/style.css', import.meta.url).href,
 					map: { inline: true }
