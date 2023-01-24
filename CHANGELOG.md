@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.4.1 (January 24, 2023)
 
 - Added: Links to plugins.
 
