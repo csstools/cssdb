@@ -1117,6 +1117,7 @@ export default [
       "edge": "108",
       "firefox": "101",
       "ios_saf": "15.4",
+      "op_mob": "73",
       "opera": "94",
       "safari": "15.4"
     },
@@ -1682,6 +1683,7 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "87",
+      "and_ff": "79",
       "android": "87",
       "chrome": "87",
       "edge": "87",
