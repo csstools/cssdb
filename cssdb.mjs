@@ -345,7 +345,8 @@ export default [
       "edge": "106",
       "firefox": "110",
       "ios_saf": "16",
-      "op_mob": "72",
+      "op_mob": "73",
+      "opera": "94",
       "safari": "16"
     },
     "docs": {
