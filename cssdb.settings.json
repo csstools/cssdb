@@ -1035,7 +1035,6 @@
     "description": "A syntax for nesting relative rules within rules",
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 1,
-    "caniuse": "css-nesting",
     "browser_support": {},
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [

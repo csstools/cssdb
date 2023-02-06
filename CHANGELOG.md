@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Updated `caniuse-lite` to `1.0.30001450` (patch)
+
 ### 7.4.1 (January 24, 2023)
 
 - Added: Links to plugins.
