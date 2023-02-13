@@ -261,7 +261,12 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
     "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
       "ios_saf": "10.3",
+      "opera": "97",
       "safari": "10.1"
     },
     "docs": {
@@ -311,7 +316,13 @@
     "description": "A function for mixing colors",
     "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
+      "opera": "97"
+    },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [],
     "vendors_implementations": 0
@@ -1713,9 +1724,14 @@
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
     "browser_support": {
+      "and_chr": "111",
       "and_ff": "108",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
       "firefox": "108",
       "ios_saf": "15.4",
+      "opera": "97",
       "safari": "15.4"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
