@@ -3,7 +3,7 @@ on:
   push:
 
 concurrency:
-  group: branch-node-${{ github.ref }}
+  group: test-node-12-branch-node-${{ github.ref }}
   cancel-in-progress: true
 
 # TODO : delete this workflow on next major if we drop node 12
