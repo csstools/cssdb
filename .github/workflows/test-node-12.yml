@@ -1,17 +1,19 @@
-name: test
+name: test-node-12
 on:
   push:
 
 concurrency:
-  group: test-branch-node-${{ github.ref }}
+  group: test-node-12-branch-node-${{ github.ref }}
   cancel-in-progress: true
 
+# TODO : delete this workflow on next major if we drop node 12
+
 jobs:
-  test:
+  test-node-12:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [14, 16, 18]
+        node: [12]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -19,4 +21,4 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - run: npm ci --ignore-scripts
-      - run: npm run test
+      - run: npm run test:json
