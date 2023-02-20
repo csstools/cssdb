@@ -370,7 +370,7 @@ export default [
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "custom-media-queries",
@@ -1190,8 +1190,8 @@ export default [
       "chrome": "110",
       "edge": "110",
       "firefox": "78",
-      "ios_saf": "16.2",
-      "safari": "16.2"
+      "ios_saf": "16.4",
+      "safari": "16.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"

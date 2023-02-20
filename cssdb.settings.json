@@ -971,12 +971,12 @@
       },
       "ios_saf": {
         "from": null,
-        "to": "16.2",
+        "to": "16.4",
         "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
       },
       "safari": {
         "from": null,
-        "to": "16.2",
+        "to": "16.4",
         "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
       }
     },
