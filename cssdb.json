@@ -351,7 +351,8 @@
     "stage": 0,
     "browser_support": {
       "and_chr": "106",
-      "android": "106",
+      "and_ff": "110",
+      "android": "109",
       "chrome": "106",
       "edge": "106",
       "firefox": "110",
