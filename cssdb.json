@@ -279,7 +279,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "color-functional-notation",
@@ -325,7 +325,7 @@
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "color-mod-function",
@@ -352,14 +352,15 @@
     "browser_support": {
       "and_chr": "106",
       "and_ff": "110",
-      "android": "109",
+      "android": "106",
       "chrome": "106",
       "edge": "106",
       "firefox": "110",
       "ios_saf": "16",
       "op_mob": "73",
       "opera": "94",
-      "safari": "16"
+      "safari": "16",
+      "samsung": "20"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
@@ -1044,7 +1045,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "lch-function",
@@ -1071,7 +1072,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "logical-properties-and-values",
@@ -1339,7 +1340,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "opacity-percentage",
@@ -1760,7 +1761,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "unset-value",
