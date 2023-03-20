@@ -1,7 +1,7 @@
 import fsSync, { promises as fs } from 'fs';
 import { renderIndex } from "../src/pages/index.mjs";
 import path from 'path';
-import glob from 'glob';
+import { globSync } from 'glob';
 
 // Cleanup
 {
@@ -32,7 +32,7 @@ import glob from 'glob';
 
 // Assets
 {
-	glob.sync(path.join('./public', '**/*'), {
+	globSync(path.join('./public', '**/*'), {
 		nodir: true,
 	}).forEach((file) => {
 		const outPath = path.join('./dist', file.replace(path.normalize('./public/'), ''));
