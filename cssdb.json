@@ -1026,7 +1026,12 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
       "ios_saf": "15",
+      "opera": "97",
       "safari": "15"
     },
     "docs": {
@@ -1048,7 +1053,12 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
       "ios_saf": "15",
+      "opera": "97",
       "safari": "15"
     },
     "docs": {
@@ -1078,6 +1088,7 @@
       "firefox": "66",
       "ios_saf": "15",
       "oculus": "15.0",
+      "op_mob": "63",
       "opera": "75",
       "safari": "15",
       "samsung": "15.0"
@@ -1313,7 +1324,12 @@
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
     "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
       "ios_saf": "15.4",
+      "opera": "97",
       "safari": "15.4"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
