@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.5.0 (March 24, 2023)
 
 - Added: Stage 2 `gradients-interpolation-method`
 - Updated `@mdn/browser-compat-data` to `5.2.45` (patch)
