@@ -2,8 +2,9 @@
 
 ### Unreleased
 
-- Updated `@mdn/browser-compat-data` to `5.2.43` (patch)
-- Updated `caniuse-lite` to `1.0.30001468` (patch)
+- Added: Stage 2 `gradients-interpolation-method`
+- Updated `@mdn/browser-compat-data` to `5.2.45` (patch)
+- Updated `caniuse-lite` to `1.0.30001469` (patch)
 
 ### 7.4.1 (January 24, 2023)
 
