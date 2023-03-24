@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 7.5.1 (March 24, 2023)
+
+- Fixed potentially old generated files (patch)
+
 ### 7.5.0 (March 24, 2023)
 
 - Added: Stage 2 `gradients-interpolation-method`
