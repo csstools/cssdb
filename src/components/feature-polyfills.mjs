@@ -12,7 +12,7 @@ export function renderFeaturePolyfills(polyfills, id, title) {
 			<ul class="cssdb-feature-polyfill-list">
 				${polyfills.map(polyfill => {
 					return renderFeaturePolyfill(polyfill, id, title);
-				})}
+				}).join('')}
 			</ul>
 		</div>
 	`;
