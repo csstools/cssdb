@@ -753,6 +753,17 @@
     "vendors_implementations": 3
   },
   {
+    "id": "gradients-interpolation-method",
+    "title": "Gradients Interpolation Method",
+    "description": "Define the interpolation method for gradients",
+    "specification": "https://www.w3.org/TR/css-images-4/#color-interpolation",
+    "stage": 2,
+    "browser_support": {},
+    "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
+    "polyfills": [],
+    "vendors_implementations": 0
+  },
+  {
     "id": "gray-function",
     "title": "`gray()` Function",
     "description": "A function for specifying fully desaturated colors",
