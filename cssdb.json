@@ -859,10 +859,6 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
-      },
-      {
-        "type": "Experimental Library",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ],
     "vendors_implementations": 2
