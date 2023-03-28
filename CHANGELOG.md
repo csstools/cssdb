@@ -3,7 +3,7 @@
 ### Unreleased (patch)
 
 - Updated support data for `color-mix`
-- Updated support date for `gradients-interpolation-method`
+- Updated support data for `gradients-interpolation-method`
 
 ### 7.5.1 (March 24, 2023)
 
