@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (patch)
+### 7.5.2 (March 28, 2023)
 
 - Updated support data for `color-mix`
 - Updated support data for `gradients-interpolation-method`
