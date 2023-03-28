@@ -321,11 +321,18 @@ export default [
       "android": "111",
       "chrome": "111",
       "edge": "111",
-      "opera": "97"
+      "opera": "97",
+      "ios_saf": "16.2",
+      "safari": "16.2"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
-    "polyfills": [],
-    "vendors_implementations": 1
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
+      }
+    ],
+    "vendors_implementations": 2
   },
   {
     "id": "color-mod-function",
@@ -758,10 +765,22 @@ export default [
     "description": "Define the interpolation method for gradients",
     "specification": "https://www.w3.org/TR/css-images-4/#color-interpolation",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "111",
+      "android": "111",
+      "chrome": "111",
+      "edge": "111",
+      "ios_saf": "16.2",
+      "safari": "16.2"
+    },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
-    "polyfills": [],
-    "vendors_implementations": 0
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gradients-interpolation-method"
+      }
+    ],
+    "vendors_implementations": 2
   },
   {
     "id": "gray-function",
@@ -840,10 +859,6 @@ export default [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
-      },
-      {
-        "type": "Experimental Library",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ],
     "vendors_implementations": 2

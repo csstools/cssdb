@@ -232,8 +232,25 @@
       "css.types.color['color-mix']"
     ],
     "browser_support": {},
+    "browser_support_overrides": {
+      "ios_saf": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19245"
+      },
+      "safari": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19245"
+      }
+    },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
+      }
+    ]
   },
   {
     "id": "color-mod-function",
@@ -586,8 +603,45 @@
     "specification": "https://www.w3.org/TR/css-images-4/#color-interpolation",
     "stage": 2,
     "browser_support": {},
+    "browser_support_overrides": {
+      "and_chr": {
+        "from": null,
+        "to": "111",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      },
+      "android": {
+        "from": null,
+        "to": "111",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      },
+      "chrome": {
+        "from": null,
+        "to": "111",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      },
+      "edge": {
+        "from": null,
+        "to": "111",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      },
+      "ios_saf": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      },
+      "safari": {
+        "from": null,
+        "to": "16.2",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
+      }
+    },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gradients-interpolation-method"
+      }
+    ]
   },
   {
     "id": "gray-function",
@@ -643,10 +697,6 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
-      },
-      {
-        "type": "Experimental Library",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/experimental/css-has-pseudo"
       }
     ]
   },
