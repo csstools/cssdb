@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased (patch)
+
+- Updated support data for `media-query-ranges`
+
 ### 7.5.2 (March 28, 2023)
 
 - Updated support data for `color-mix`
