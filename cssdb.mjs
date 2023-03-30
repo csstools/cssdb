@@ -1244,7 +1244,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-queries-aspect-ratio-number-values"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "media-query-ranges",
@@ -1252,7 +1252,16 @@ export default [
     "description": "A syntax for defining media query ranges using ordinary comparison operators",
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "104",
+      "and_ff": "63",
+      "android": "104",
+      "chrome": "104",
+      "firefox": "63",
+      "oculus": "23.0",
+      "op_mob": "71",
+      "samsung": "20.0"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
@@ -1263,7 +1272,7 @@ export default [
         "link": "https://github.com/postcss/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "nested-calc",
