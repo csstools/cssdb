@@ -1059,6 +1059,28 @@
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
     "browser_support": {},
+    "browser_support_overrides": {
+      "and_ff": {
+        "from": "63",
+        "to": "102",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
+      },
+      "firefox": {
+        "from": "63",
+        "to": "102",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
+      },
+      "ios_saf": {
+        "from": null,
+        "to": "16.4",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
+      },
+      "safari": {
+        "from": null,
+        "to": "16.4",
+        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
+      }
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
