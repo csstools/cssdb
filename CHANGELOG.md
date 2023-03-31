@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (patch)
+### 7.5.3 (March 31, 2023)
 
 - Updated support data for `media-query-ranges`
 
