@@ -232,18 +232,6 @@
       "css.types.color['color-mix']"
     ],
     "browser_support": {},
-    "browser_support_overrides": {
-      "ios_saf": {
-        "from": null,
-        "to": "16.2",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19245"
-      },
-      "safari": {
-        "from": null,
-        "to": "16.2",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19245"
-      }
-    },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
       {
@@ -602,39 +590,21 @@
     "description": "Define the interpolation method for gradients",
     "specification": "https://www.w3.org/TR/css-images-4/#color-interpolation",
     "stage": 2,
+    "mdn_path": [
+      "css.types.image.gradient['conic-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['conic-gradient'].interpolation_color_space",
+      "css.types.image.gradient['linear-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['linear-gradient'].interpolation_color_space",
+      "css.types.image.gradient['radial-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['radial-gradient'].interpolation_color_space",
+      "css.types.image.gradient['repeating-conic-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['repeating-conic-gradient'].interpolation_color_space",
+      "css.types.image.gradient['repeating-linear-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['repeating-linear-gradient'].interpolation_color_space",
+      "css.types.image.gradient['repeating-radial-gradient'].hue_interpolation_method",
+      "css.types.image.gradient['repeating-radial-gradient'].interpolation_color_space"
+    ],
     "browser_support": {},
-    "browser_support_overrides": {
-      "and_chr": {
-        "from": null,
-        "to": "111",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      },
-      "android": {
-        "from": null,
-        "to": "111",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      },
-      "chrome": {
-        "from": null,
-        "to": "111",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      },
-      "edge": {
-        "from": null,
-        "to": "111",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      },
-      "ios_saf": {
-        "from": null,
-        "to": "16.2",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      },
-      "safari": {
-        "from": null,
-        "to": "16.2",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19244"
-      }
-    },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
@@ -1059,28 +1029,6 @@
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
     "browser_support": {},
-    "browser_support_overrides": {
-      "and_ff": {
-        "from": "63",
-        "to": "102",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
-      },
-      "firefox": {
-        "from": "63",
-        "to": "102",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
-      },
-      "ios_saf": {
-        "from": null,
-        "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
-      },
-      "safari": {
-        "from": null,
-        "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/pull/19284"
-      }
-    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
