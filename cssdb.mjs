@@ -771,6 +771,7 @@ export default [
       "chrome": "111",
       "edge": "111",
       "ios_saf": "16.2",
+      "opera": "97",
       "safari": "16.2"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
