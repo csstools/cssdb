@@ -265,9 +265,9 @@
       "android": "111",
       "chrome": "111",
       "edge": "111",
-      "ios_saf": "10.3",
+      "ios_saf": "15",
       "opera": "97",
-      "safari": "10.1"
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -321,8 +321,8 @@
       "android": "111",
       "chrome": "111",
       "edge": "111",
-      "opera": "97",
       "ios_saf": "16.2",
+      "opera": "97",
       "safari": "16.2"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
@@ -771,6 +771,7 @@
       "chrome": "111",
       "edge": "111",
       "ios_saf": "16.2",
+      "opera": "97",
       "safari": "16.2"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
@@ -1257,12 +1258,14 @@
       "and_ff": "102",
       "android": "104",
       "chrome": "104",
+      "edge": "104",
       "firefox": "102",
+      "ios_saf": "16.4",
       "oculus": "23.0",
       "op_mob": "71",
-      "samsung": "20.0",
-      "ios_saf": "16.4",
-      "safari": "16.4"
+      "opera": "90",
+      "safari": "16.4",
+      "samsung": "20.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
@@ -1481,7 +1484,6 @@
       "and_ff": "59",
       "android": "63",
       "chrome": "63",
-      "edge": "18",
       "firefox": "59",
       "ios_saf": "16",
       "oculus": "5.0",

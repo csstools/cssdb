@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### Unreleased (patch)
+
+- Updated `@mdn/browser-compat-data` to `5.2.49` (patch)
+- Updated `caniuse-lite` to `1.0.30001477` (patch)
+
 ### 7.5.3 (March 31, 2023)
 
 - Updated support data for `media-query-ranges`

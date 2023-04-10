@@ -49,6 +49,10 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 					return false;
 				}
 
+				if (browserEntry.partial_implementation) {
+					return false;
+				}
+
 				if (supportsPrefixes && isAllowedPrefix) {
 					return true;
 				}
@@ -61,6 +65,10 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 
 			if (hasFlags) {
 				return;
+			}
+
+			if (browserSupport.partial_implementation) {
+				return false;
 			}
 
 			const isPrefixed = typeof browserSupport.prefix !== 'undefined';
