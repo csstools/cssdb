@@ -55,7 +55,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^8.3.0",
     "semver": "^7.3.8",
-    "stylelint": "^15.4.0",
+    "stylelint": "^15.6.0",
     "stylelint-config-standard": "^32.0.0"
   },
   "stylelint": {
