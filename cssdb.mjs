@@ -469,7 +469,9 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_ff": "49",
-      "firefox": "49"
+      "firefox": "49",
+      "ios_saf": "16.4",
+      "safari": "16.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -481,7 +483,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "display-two-values",
@@ -561,6 +563,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {
+      "and_ff": "112",
+      "firefox": "112",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
