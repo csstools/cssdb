@@ -262,9 +262,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "113",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
       "safari": "15"
@@ -318,9 +320,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "113",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "113",
       "ios_saf": "16.2",
       "opera": "97",
       "safari": "16.2"
@@ -492,6 +496,7 @@ export default [
     "specification": "https://www.w3.org/TR/css-display-3/#the-display-properties",
     "stage": 2,
     "browser_support": {
+      "and_ff": "79",
       "firefox": "70",
       "ios_saf": "15",
       "safari": "15"
@@ -1059,9 +1064,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "113",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
       "safari": "15"
@@ -1086,9 +1093,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "113",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
       "safari": "15"
@@ -1370,9 +1379,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "113",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "113",
       "ios_saf": "15.4",
       "opera": "97",
       "safari": "15.4"
@@ -1394,11 +1405,14 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "78",
+      "and_ff": "79",
       "android": "78",
       "chrome": "78",
       "edge": "79",
       "firefox": "70",
       "oculus": "8.0",
+      "op_mob": "56",
+      "opera": "65",
       "safari": "preview",
       "samsung": "12.0"
     },
