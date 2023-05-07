@@ -604,7 +604,8 @@ export default [
     "browser_support": {
       "and_ff": "55",
       "firefox": "55",
-      "safari": "preview"
+      "ios_saf": "15",
+      "safari": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
@@ -616,7 +617,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-float-and-clear"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "focus-visible-pseudo-class",
