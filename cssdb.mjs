@@ -244,8 +244,8 @@ export default [
     "id": "color-contrast",
     "title": "`color-contrast()` Function",
     "description": "A function for choosing the color that contrasts the most.",
-    "specification": "https://www.w3.org/TR/css-color-5/#colorcontrast",
-    "stage": 2,
+    "specification": "https://drafts.csswg.org/css-color-6/#colorcontrast",
+    "stage": 1,
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
@@ -359,7 +359,7 @@ export default [
     "title": "Container Queries",
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
-    "stage": 0,
+    "stage": 2,
     "browser_support": {
       "and_chr": "106",
       "and_ff": "110",
@@ -696,7 +696,7 @@ export default [
     "title": "Font `format()` Keywords",
     "description": "A syntax for specifying font format as a keyword in `@font-face` rule’s `format()` function",
     "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
-    "stage": 1,
+    "stage": 2,
     "browser_support": {
       "ios_saf": "5",
       "safari": "4"
@@ -1330,7 +1330,7 @@ export default [
     "title": "Nesting Rules",
     "description": "A syntax for nesting relative rules within rules",
     "specification": "https://www.w3.org/TR/css-nesting-1/",
-    "stage": 1,
+    "stage": 2,
     "browser_support": {},
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
@@ -1497,7 +1497,7 @@ export default [
     "title": "`overscroll-behavior` Property",
     "description": "Properties for controlling when the scroll position of a scroll container reaches the edge of a scrollport",
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
-    "stage": 1,
+    "stage": 2,
     "browser_support": {
       "and_chr": "63",
       "and_ff": "59",
