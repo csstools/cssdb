@@ -4,6 +4,11 @@
 
 - Updated `@mdn/browser-compat-data` to `5.2.54` (patch)
 - Updated `caniuse-lite` to `1.0.30001481` (patch)
+- `color-contrast` is now Stage 1
+- `container-queries` is now Stage 2
+- `font-format-keywords` is now Stage 2
+- `nesting-rules` is now Stage 2
+- `overscroll-behavior-property` is now Stage 2
 
 ### 7.5.4 (April 10, 2023)
 
