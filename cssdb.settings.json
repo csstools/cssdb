@@ -1278,6 +1278,34 @@
     ]
   },
   {
+    "id": "relative-color-syntax",
+    "title": "Relative Color Syntax",
+    "description": "Modify existing colors using color functions",
+    "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
+    "stage": 2,
+    "browser_support": {},
+    "browser_support_overrides": {
+      "ios_saf": {
+        "from": null,
+        "to": "16.4",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/19855"
+      },
+      "safari": {
+        "from": null,
+        "to": "16.4",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/19855"
+      }
+    },
+    "docs": {},
+    "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
+      }
+    ]
+  },
+  {
     "id": "scope-pseudo-class",
     "title": "`:scope()` Reference Element Pseudo-class",
     "description": "A pseudo-class for matching one or more scoping roots",
