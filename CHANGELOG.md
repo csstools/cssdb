@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (minor)
+### 7.6.0 (May 15, 2023)
 
 - Added: Stage 2 `relative-color-syntax`
 - Updated `@mdn/browser-compat-data` to `5.2.57` (patch)
