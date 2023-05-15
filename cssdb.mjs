@@ -281,7 +281,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "color-functional-notation",
@@ -336,7 +336,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "color-mod-function",
@@ -1084,7 +1084,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "lch-function",
@@ -1113,7 +1113,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "logical-properties-and-values",
@@ -1396,7 +1396,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "opacity-percentage",
@@ -1668,6 +1668,26 @@ export default [
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "relative-color-syntax",
+    "title": "Relative Color Syntax",
+    "description": "Modify existing colors using color functions",
+    "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
+    "stage": 2,
+    "browser_support": {
+      "ios_saf": "16.4",
+      "safari": "16.4"
+    },
+    "docs": {},
+    "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
+      }
+    ],
+    "vendors_implementations": 1
   },
   {
     "id": "scope-pseudo-class",
