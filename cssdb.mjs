@@ -1187,7 +1187,8 @@ export default [
       "ios_saf": "15.4",
       "op_mob": "73",
       "opera": "94",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "21.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
