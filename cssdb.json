@@ -363,7 +363,7 @@
     "browser_support": {
       "and_chr": "106",
       "and_ff": "110",
-      "android": "106",
+      "android": "113",
       "chrome": "106",
       "edge": "106",
       "firefox": "110",
