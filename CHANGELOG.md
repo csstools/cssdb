@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Updated `@mdn/browser-compat-data` to `5.2.61` (patch)
+- Updated `caniuse-lite` to `1.0.30001494` (patch)
+
 ### 7.6.0 (May 15, 2023)
 
 - Added: Stage 2 `relative-color-syntax`
