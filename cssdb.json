@@ -363,7 +363,7 @@
     "browser_support": {
       "and_chr": "106",
       "and_ff": "110",
-      "android": "113",
+      "android": "106",
       "chrome": "106",
       "edge": "106",
       "firefox": "110",
@@ -1412,10 +1412,11 @@
       "chrome": "78",
       "edge": "79",
       "firefox": "70",
+      "ios_saf": "13.4",
       "oculus": "8.0",
       "op_mob": "56",
       "opera": "65",
-      "safari": "preview",
+      "safari": "13.1",
       "samsung": "12.0"
     },
     "docs": {
@@ -1428,7 +1429,7 @@
         "link": "https://github.com/mrcgrtz/postcss-opacity-percentage"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "overflow-property",
@@ -1443,10 +1444,11 @@
       "chrome": "68",
       "edge": "79",
       "firefox": "61",
+      "ios_saf": "13.4",
       "oculus": "6.0",
       "op_mob": "48",
       "opera": "55",
-      "safari": "preview",
+      "safari": "13.1",
       "samsung": "10.0"
     },
     "docs": {
@@ -1459,7 +1461,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-overflow-shorthand"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "overflow-wrap-property",

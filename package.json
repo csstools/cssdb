@@ -46,16 +46,16 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.2.61",
-    "browserslist": "^4.21.5",
-    "caniuse-lite": "^1.0.30001494",
-    "glob": "^10.2.4",
+    "@mdn/browser-compat-data": "^5.2.63",
+    "browserslist": "^4.21.7",
+    "caniuse-lite": "^1.0.30001499",
+    "glob": "^10.2.7",
     "lodash.get": "^4.4.2",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^8.4.2",
-    "semver": "^7.5.0",
-    "stylelint": "^15.6.3",
+    "semver": "^7.5.1",
+    "stylelint": "^15.7.0",
     "stylelint-config-standard": "^33.0.0"
   },
   "stylelint": {
