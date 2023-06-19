@@ -46,7 +46,7 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.2.63",
+    "@mdn/browser-compat-data": "^5.2.65",
     "browserslist": "^4.21.9",
     "caniuse-lite": "^1.0.30001499",
     "glob": "^10.2.7",
