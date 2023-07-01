@@ -9,3 +9,7 @@ updates:
   open-pull-requests-limit: 10
   versioning-strategy: increase
   rebase-strategy: auto
+  groups:
+    all-dependencies:
+      patterns:
+        - "*"
