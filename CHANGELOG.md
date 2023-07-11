@@ -1,9 +1,10 @@
 # Changes to cssdb
 
-### Unreleased
+### Unreleased (minor)
 
-- Updated `@mdn/browser-compat-data` to `5.2.67` (patch)
-- Updated `caniuse-lite` to `1.0.30001508` (patch)
+- Added: Stage 2 `src-function`
+- Updated `@mdn/browser-compat-data` to `5.3.1` (patch)
+- Updated `caniuse-lite` to `1.0.30001514` (patch)
 
 ### 7.6.0 (May 15, 2023)
 

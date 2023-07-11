@@ -1742,6 +1742,22 @@ export default [
     "vendors_implementations": 1
   },
   {
+    "id": "src-function",
+    "title": "`src()` function",
+    "description": "The argument of `src()` can be provided by functions, such as var(). Otherwise this behaves the same as `url()`",
+    "specification": "https://www.w3.org/TR/css-values-4/#funcdef-src",
+    "stage": 2,
+    "browser_support": {},
+    "example": "div {\n  background: src('./image.jpg');\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/google/postcss-src"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "stepped-value-functions",
     "title": "`round()`, `mod()` and `rem()` functions",
     "description": "The stepped-value functions, `round()`, `mod()`, and `rem()`, all transform a given value according to another \"step value\", in different ways",
