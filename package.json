@@ -46,12 +46,12 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.3.1",
+    "@mdn/browser-compat-data": "^5.3.3",
     "browserslist": "^4.21.9",
-    "caniuse-lite": "^1.0.30001514",
+    "caniuse-lite": "^1.0.30001516",
     "glob": "^10.3.3",
     "lodash.get": "^4.4.2",
-    "postcss": "^8.4.25",
+    "postcss": "^8.4.26",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^9.0.0",
     "semver": "^7.5.4",
