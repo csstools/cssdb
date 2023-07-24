@@ -430,6 +430,12 @@
       "css.types.hypot",
       "css.types.log",
       "css.types.exp"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
+      }
     ]
   },
   {

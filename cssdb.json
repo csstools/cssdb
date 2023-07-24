@@ -578,6 +578,12 @@
       "safari": "15.4"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
+      }
+    ],
     "vendors_implementations": 2
   },
   {
