@@ -515,7 +515,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "double-position-gradients",
