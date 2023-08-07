@@ -269,7 +269,8 @@
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -327,7 +328,8 @@
       "firefox": "113",
       "ios_saf": "16.2",
       "opera": "97",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "22.0"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
@@ -792,7 +794,8 @@
       "edge": "111",
       "ios_saf": "16.2",
       "opera": "97",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "22.0"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -992,9 +995,11 @@
       "chrome": "21",
       "edge": "79",
       "firefox": "88",
+      "ios_saf": "14",
       "oculus": "5.0",
       "op_mob": "14",
       "opera": "15",
+      "safari": "14",
       "samsung": "1.5"
     },
     "docs": {
@@ -1007,7 +1012,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -1082,7 +1087,8 @@
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
@@ -1111,7 +1117,8 @@
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
@@ -1398,7 +1405,8 @@
       "firefox": "113",
       "ios_saf": "15.4",
       "opera": "97",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "22.0"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
@@ -1741,6 +1749,7 @@
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
+      "firefox": "preview",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -1859,7 +1868,8 @@
       "firefox": "108",
       "ios_saf": "15.4",
       "opera": "97",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "22.0"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "polyfills": [

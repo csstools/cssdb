@@ -17,6 +17,7 @@ const presetEnvPlugins = [
 	'dir-pseudo-class',
 	'display-two-values',
 	'double-position-gradients',
+	'exponential-functions',
 	'float-clear-logical-values',
 	'focus-visible-pseudo-class',
 	'focus-within-pseudo-class',
