@@ -2,8 +2,14 @@
 
 ### Unreleased
 
-- Updated `@mdn/browser-compat-data` to `5.2.67` (patch)
-- Updated `caniuse-lite` to `1.0.30001508` (patch)
+- Updated `@mdn/browser-compat-data` to `5.3.8` (patch)
+- Updated `caniuse-lite` to `1.0.30001519` (patch)
+
+### 7.7.0 (July 24, 2023)
+
+- Added: Stage 2 `src-function`
+- Updated `@mdn/browser-compat-data` to `5.3.5` (patch)
+- Updated `caniuse-lite` to `1.0.30001517` (patch)
 
 ### 7.6.0 (May 15, 2023)
 

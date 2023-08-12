@@ -269,7 +269,8 @@ export default [
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
@@ -327,7 +328,8 @@ export default [
       "firefox": "113",
       "ios_saf": "16.2",
       "opera": "97",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "22.0"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
@@ -515,7 +517,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "double-position-gradients",
@@ -578,6 +580,12 @@ export default [
       "safari": "15.4"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
+      }
+    ],
     "vendors_implementations": 2
   },
   {
@@ -786,7 +794,8 @@ export default [
       "edge": "111",
       "ios_saf": "16.2",
       "opera": "97",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "22.0"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -986,9 +995,11 @@ export default [
       "chrome": "21",
       "edge": "79",
       "firefox": "88",
+      "ios_saf": "14",
       "oculus": "5.0",
       "op_mob": "14",
       "opera": "15",
+      "safari": "14",
       "samsung": "1.5"
     },
     "docs": {
@@ -1001,7 +1012,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -1076,7 +1087,8 @@ export default [
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
@@ -1105,7 +1117,8 @@ export default [
       "firefox": "113",
       "ios_saf": "15",
       "opera": "97",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "22.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
@@ -1392,7 +1405,8 @@ export default [
       "firefox": "113",
       "ios_saf": "15.4",
       "opera": "97",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "22.0"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
@@ -1735,11 +1749,28 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
+      "firefox": "preview",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
     "vendors_implementations": 1
+  },
+  {
+    "id": "src-function",
+    "title": "`src()` function",
+    "description": "The argument of `src()` can be provided by functions, such as var(). Otherwise this behaves the same as `url()`",
+    "specification": "https://www.w3.org/TR/css-values-4/#funcdef-src",
+    "stage": 2,
+    "browser_support": {},
+    "example": "div {\n  background: src('./image.jpg');\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/google/postcss-src"
+      }
+    ],
+    "vendors_implementations": 0
   },
   {
     "id": "stepped-value-functions",
@@ -1837,7 +1868,8 @@ export default [
       "firefox": "108",
       "ios_saf": "15.4",
       "opera": "97",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "22.0"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "polyfills": [

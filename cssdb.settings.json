@@ -430,6 +430,12 @@
       "css.types.hypot",
       "css.types.log",
       "css.types.exp"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
+      }
     ]
   },
   {
@@ -1337,6 +1343,21 @@
     "mdn_path": [
       "css.types.abs",
       "css.types.sign"
+    ]
+  },
+  {
+    "id": "src-function",
+    "title": "`src()` function",
+    "description": "The argument of `src()` can be provided by functions, such as var(). Otherwise this behaves the same as `url()`",
+    "specification": "https://www.w3.org/TR/css-values-4/#funcdef-src",
+    "stage": 2,
+    "browser_support": {},
+    "example": "div {\n  background: src('./image.jpg');\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/google/postcss-src"
+      }
     ]
   },
   {
