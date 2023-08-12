@@ -1349,16 +1349,7 @@
     "description": "A syntax for nesting relative rules within rules",
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 2,
-    "browser_support": {
-      "and_chr": "114",
-      "android": "114",
-      "chrome": "112",
-      "edge": "112",
-      "and_ff": "116",
-      "firefox": "116",
-      "ios_saf": "16.5",
-      "safari": "16.5"
-    },
+    "browser_support": {},
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {

@@ -1074,6 +1074,7 @@
     "stage": 2,
     "browser_support": {},
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
+    "mdn_path": "css.selectors.nesting",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
