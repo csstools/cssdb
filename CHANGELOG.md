@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased
+### 7.7.1 (August 20, 2023)
 
 - Updated `@mdn/browser-compat-data` to `5.3.11` (patch)
 - Updated `caniuse-lite` to `1.0.30001522` (patch)
