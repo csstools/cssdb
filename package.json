@@ -46,22 +46,21 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.3.9",
+    "@mdn/browser-compat-data": "^5.3.11",
     "browserslist": "^4.21.10",
-    "caniuse-lite": "^1.0.30001520",
+    "caniuse-lite": "^1.0.30001522",
     "glob": "^10.3.3",
     "lodash.get": "^4.4.2",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.28",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^9.1.1",
     "semver": "^7.5.4",
-    "stylelint": "^15.10.2",
+    "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "indentation": "tab",
       "property-no-unknown": [
         true,
         {
@@ -72,8 +71,7 @@
       ],
       "selector-class-pattern": null,
       "no-descending-specificity": null,
-      "value-keyword-case": null,
-      "number-leading-zero": "never"
+      "value-keyword-case": null
     }
   },
   "keywords": [
