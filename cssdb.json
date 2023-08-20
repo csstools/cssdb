@@ -1306,7 +1306,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-media-minmax"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-minmax"
       }
     ],
     "vendors_implementations": 3
@@ -1349,7 +1349,10 @@
     "description": "A syntax for nesting relative rules within rules",
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_ff": "117",
+      "firefox": "117"
+    },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
       {

@@ -61,7 +61,6 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "indentation": "tab",
       "property-no-unknown": [
         true,
         {
@@ -72,8 +71,7 @@
       ],
       "selector-class-pattern": null,
       "no-descending-specificity": null,
-      "value-keyword-case": null,
-      "number-leading-zero": "never"
+      "value-keyword-case": null
     }
   },
   "keywords": [

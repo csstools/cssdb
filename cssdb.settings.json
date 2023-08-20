@@ -1043,7 +1043,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-media-minmax"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-minmax"
       }
     ]
   },
