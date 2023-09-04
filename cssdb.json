@@ -1360,7 +1360,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "not-pseudo-class",
