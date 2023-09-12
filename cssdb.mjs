@@ -574,8 +574,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {
-      "and_ff": "112",
-      "firefox": "112",
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -586,7 +586,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 1
   },
   {
     "id": "fangsong-font-family",
@@ -1752,7 +1752,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
-      "firefox": "preview",
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -1782,6 +1783,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
