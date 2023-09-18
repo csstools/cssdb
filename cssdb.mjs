@@ -26,7 +26,7 @@ export default [
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/maximkoretskiy/postcss-initial"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-initial"
       }
     ],
     "vendors_implementations": 3
