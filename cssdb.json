@@ -614,7 +614,11 @@
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "browser_support": {
+      "and_chr": "118",
       "and_ff": "55",
+      "android": "118",
+      "chrome": "118",
+      "edge": "118",
       "firefox": "55",
       "ios_saf": "15",
       "safari": "15"
@@ -1171,7 +1175,11 @@
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "browser_support": {
+      "and_chr": "118",
       "and_ff": "63",
+      "android": "118",
+      "chrome": "118",
+      "edge": "118",
       "firefox": "63",
       "ios_saf": "16",
       "safari": "16"
