@@ -505,6 +505,7 @@ export default [
       "edge": "115",
       "firefox": "70",
       "ios_saf": "15",
+      "opera": "102",
       "safari": "15"
     },
     "docs": {
