@@ -47,8 +47,8 @@
   },
   "devDependencies": {
     "@mdn/browser-compat-data": "^5.3.19",
-    "browserslist": "^4.22.0",
-    "caniuse-lite": "^1.0.30001541",
+    "browserslist": "^4.22.1",
+    "caniuse-lite": "^1.0.30001542",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.30",
