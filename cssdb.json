@@ -505,7 +505,7 @@
       "edge": "115",
       "firefox": "70",
       "ios_saf": "15",
-      "opera": "102",
+      "opera": "101",
       "safari": "15"
     },
     "docs": {
@@ -587,7 +587,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "fangsong-font-family",
@@ -1767,7 +1767,7 @@
       "safari": "15.4"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "src-function",
@@ -1804,7 +1804,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "system-ui-font-family",

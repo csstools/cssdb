@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "7.7.2",
+  "version": "7.7.3",
   "type": "module",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
@@ -46,9 +46,9 @@
     "test:json": "node tasks/test.cjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.3.19",
+    "@mdn/browser-compat-data": "^5.3.20",
     "browserslist": "^4.22.1",
-    "caniuse-lite": "^1.0.30001542",
+    "caniuse-lite": "^1.0.30001546",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.30",
