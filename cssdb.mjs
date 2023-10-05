@@ -505,6 +505,7 @@ export default [
       "edge": "115",
       "firefox": "70",
       "ios_saf": "15",
+      "opera": "101",
       "safari": "15"
     },
     "docs": {
@@ -574,8 +575,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {
-      "and_ff": "112",
-      "firefox": "112",
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -614,7 +615,11 @@ export default [
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "browser_support": {
+      "and_chr": "118",
       "and_ff": "55",
+      "android": "118",
+      "chrome": "118",
+      "edge": "118",
       "firefox": "55",
       "ios_saf": "15",
       "safari": "15"
@@ -1171,7 +1176,11 @@ export default [
     "specification": "https://www.w3.org/TR/css-logical-1/",
     "stage": 2,
     "browser_support": {
+      "and_chr": "118",
       "and_ff": "63",
+      "android": "118",
+      "chrome": "118",
+      "edge": "118",
       "firefox": "63",
       "ios_saf": "16",
       "safari": "16"
@@ -1752,12 +1761,13 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
-      "firefox": "preview",
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "src-function",
@@ -1782,6 +1792,8 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {
+      "and_ff": "118",
+      "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
     },
@@ -1792,7 +1804,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "system-ui-font-family",
