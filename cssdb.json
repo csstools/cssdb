@@ -622,6 +622,7 @@
       "edge": "118",
       "firefox": "55",
       "ios_saf": "15",
+      "opera": "104",
       "safari": "15"
     },
     "docs": {
@@ -753,6 +754,17 @@
       }
     ],
     "vendors_implementations": 2
+  },
+  {
+    "id": "gamut-mapping",
+    "title": "Gamut mapping for CSS color functions",
+    "description": "Gamut map css colors to fit display specific gamuts.",
+    "specification": "https://www.w3.org/TR/css-color-4/#gamut-mapping",
+    "stage": 2,
+    "browser_support": {},
+    "example": "@media (color-gamut: rec2020) {\n\tp {\n\t\tcolor: oklch(40% 0.234 0.39 / 0.5);\n\t}\n}",
+    "polyfills": [],
+    "vendors_implementations": 0
   },
   {
     "id": "gap-properties",
@@ -1183,6 +1195,7 @@
       "edge": "118",
       "firefox": "63",
       "ios_saf": "16",
+      "opera": "104",
       "safari": "16"
     },
     "docs": {
