@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 7.8.0 (October 08, 2023)
+
+- Added: Stage 2 `gamut-mapping`
+- Updated `@mdn/browser-compat-data` to `5.3.21` (patch)
+
 ### 7.7.3 (October 05, 2023)
 
 - Updated `@mdn/browser-compat-data` to `5.3.20` (patch)

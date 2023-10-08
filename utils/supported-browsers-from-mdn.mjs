@@ -102,6 +102,10 @@ export default function supportedBrowsersFromMdn(path, feature) {
 	const result = {};
 
 	const paths = Array.isArray(path) ? path : [path];
+	if (!paths.length) {
+		return result;
+	}
+
 	const supports = paths.map(mdnPath => getBrowsersFromFeature(mdnPath, feature));
 
 	Object.keys(supports[0]).forEach(browserKey => {
