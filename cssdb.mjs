@@ -763,7 +763,12 @@ export default [
     "stage": 2,
     "browser_support": {},
     "example": "@media (color-gamut: rec2020) {\n\tp {\n\t\tcolor: oklch(40% 0.234 0.39 / 0.5);\n\t}\n}",
-    "polyfills": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gamut-mapping"
+      }
+    ],
     "vendors_implementations": 0
   },
   {
