@@ -580,7 +580,12 @@
     "browser_support": {},
     "example": "@media (color-gamut: rec2020) {\n\tp {\n\t\tcolor: oklch(40% 0.234 0.39 / 0.5);\n\t}\n}",
     "mdn_path": [],
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gamut-mapping"
+      }
+    ]
   },
   {
     "id": "gap-properties",

@@ -23,6 +23,7 @@ const presetEnvPlugins = [
 	'focus-within-pseudo-class',
 	'font-format-keywords',
 	'font-variant-property',
+	'gamut-mapping',
 	'gap-properties',
 	'gradients-interpolation-method',
 	'has-pseudo-class',
