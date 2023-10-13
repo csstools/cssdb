@@ -922,7 +922,7 @@
     "id": "logical-overflow",
     "title": "Logical Overflow",
     "description": "Flow-relative `overflow` properties",
-    "specification": "https://www.w3.org/TR/css-overflow-3/",
+    "specification": "https://www.w3.org/TR/css-overflow-3/#overflow-control",
     "stage": 2,
     "browser_support": {},
     "docs": {
@@ -944,7 +944,7 @@
     "id": "logical-overscroll-behavior",
     "title": "Logical Overscroll Behavior",
     "description": "Flow-relative `overscroll-behavior` properties",
-    "specification": "https://www.w3.org/TR/css-overscroll-1/",
+    "specification": "https://www.w3.org/TR/css-overscroll-1/#overscroll-behavior-longhands-logical",
     "stage": 2,
     "browser_support": {},
     "docs": {
