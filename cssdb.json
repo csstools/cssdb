@@ -738,9 +738,14 @@
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
     "browser_support": {
+      "and_chr": "117",
       "and_ff": "34",
+      "android": "117",
+      "chrome": "117",
+      "edge": "117",
       "firefox": "34",
       "ios_saf": "9.3",
+      "opera": "103",
       "safari": "9.1"
     },
     "docs": {
@@ -753,7 +758,7 @@
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "gamut-mapping",

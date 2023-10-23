@@ -4,8 +4,8 @@
 
 - Added: Stage 2 `logical-overflow`
 - Added: Stage 2 `logical-overscroll-behavior`
-- Updated `@mdn/browser-compat-data` to `5.3.23` (patch)
-- Updated `caniuse-lite` to `1.0.30001549` (patch)
+- Updated `@mdn/browser-compat-data` to `5.3.25` (patch)
+- Updated `caniuse-lite` to `1.0.30001553` (patch)
 
 ### 7.8.0 (October 08, 2023)
 
