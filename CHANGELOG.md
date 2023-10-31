@@ -1,5 +1,12 @@
 # Changes to cssdb
 
+### Unreleased (minor)
+
+- Added: Stage 2 `logical-overflow`
+- Added: Stage 2 `logical-overscroll-behavior`
+- Updated `@mdn/browser-compat-data` to `5.3.25` (patch)
+- Updated `caniuse-lite` to `1.0.30001553` (patch)
+
 ### 7.8.0 (October 08, 2023)
 
 - Added: Stage 2 `gamut-mapping`

@@ -738,9 +738,14 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
     "browser_support": {
+      "and_chr": "117",
       "and_ff": "34",
+      "android": "117",
+      "chrome": "117",
+      "edge": "117",
       "firefox": "34",
       "ios_saf": "9.3",
+      "opera": "103",
       "safari": "9.1"
     },
     "docs": {
@@ -753,7 +758,7 @@ export default [
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "gamut-mapping",
@@ -1182,6 +1187,60 @@ export default [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
+      }
+    ],
+    "vendors_implementations": 3
+  },
+  {
+    "id": "logical-overflow",
+    "title": "Logical Overflow",
+    "description": "Flow-relative `overflow` properties",
+    "specification": "https://www.w3.org/TR/css-overflow-3/#overflow-control",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "79",
+      "firefox": "69"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
+    },
+    "example": "div {\n  overflow-block: scroll;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overflow"
+      }
+    ],
+    "vendors_implementations": 1
+  },
+  {
+    "id": "logical-overscroll-behavior",
+    "title": "Logical Overscroll Behavior",
+    "description": "Flow-relative `overscroll-behavior` properties",
+    "specification": "https://www.w3.org/TR/css-overscroll-1/#overscroll-behavior-longhands-logical",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "77",
+      "and_ff": "79",
+      "android": "77",
+      "chrome": "77",
+      "edge": "79",
+      "firefox": "73",
+      "ios_saf": "16",
+      "oculus": "7.0",
+      "op_mob": "55",
+      "opera": "64",
+      "safari": "16",
+      "samsung": "12.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
+    },
+    "example": "div {\n  overscroll-behavior-block: scroll;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overscroll-behavior"
       }
     ],
     "vendors_implementations": 3
