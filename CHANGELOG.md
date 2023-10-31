@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (minor)
+### 7.9.0 (October 31, 2023)
 
 - Added: Stage 2 `logical-overflow`
 - Added: Stage 2 `logical-overscroll-behavior`
