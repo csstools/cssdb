@@ -268,6 +268,7 @@ export default [
       "edge": "111",
       "firefox": "113",
       "ios_saf": "15",
+      "op_mob": "75",
       "opera": "97",
       "safari": "15",
       "samsung": "22.0"
@@ -327,6 +328,7 @@ export default [
       "edge": "111",
       "firefox": "113",
       "ios_saf": "16.2",
+      "op_mob": "75",
       "opera": "97",
       "safari": "16.2",
       "samsung": "22.0"
@@ -474,9 +476,14 @@ export default [
     "specification": "https://www.w3.org/TR/selectors-4/#dir-pseudo",
     "stage": 2,
     "browser_support": {
+      "and_chr": "120",
       "and_ff": "49",
+      "android": "120",
+      "chrome": "120",
+      "edge": "120",
       "firefox": "49",
       "ios_saf": "16.4",
+      "opera": "106",
       "safari": "16.4"
     },
     "docs": {
@@ -489,7 +496,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "display-two-values",
@@ -505,8 +512,10 @@ export default [
       "edge": "115",
       "firefox": "70",
       "ios_saf": "15",
+      "op_mob": "77",
       "opera": "101",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "23.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
@@ -716,8 +725,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-4/#font-format-values",
     "stage": 2,
     "browser_support": {
+      "and_chr": "108",
+      "android": "108",
+      "chrome": "108",
+      "edge": "108",
       "ios_saf": "5",
-      "safari": "4"
+      "op_mob": "73",
+      "opera": "94",
+      "safari": "4",
+      "samsung": "21.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
@@ -729,7 +745,7 @@ export default [
         "link": "https://github.com/valtlai/postcss-font-format-keywords"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "font-variant-property",
@@ -745,6 +761,7 @@ export default [
       "edge": "117",
       "firefox": "34",
       "ios_saf": "9.3",
+      "op_mob": "78",
       "opera": "103",
       "safari": "9.1"
     },
@@ -820,6 +837,7 @@ export default [
       "chrome": "111",
       "edge": "111",
       "ios_saf": "16.2",
+      "op_mob": "75",
       "opera": "97",
       "safari": "16.2",
       "samsung": "22.0"
@@ -889,9 +907,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "105",
+      "and_ff": "121",
       "android": "105",
       "chrome": "105",
       "edge": "105",
+      "firefox": "121",
       "ios_saf": "15.4",
       "op_mob": "72",
       "opera": "91",
@@ -1113,6 +1133,7 @@ export default [
       "edge": "111",
       "firefox": "113",
       "ios_saf": "15",
+      "op_mob": "75",
       "opera": "97",
       "safari": "15",
       "samsung": "22.0"
@@ -1143,6 +1164,7 @@ export default [
       "edge": "111",
       "firefox": "113",
       "ios_saf": "15",
+      "op_mob": "75",
       "opera": "97",
       "safari": "15",
       "samsung": "22.0"
@@ -1155,38 +1177,6 @@ export default [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
-      }
-    ],
-    "vendors_implementations": 3
-  },
-  {
-    "id": "logical-properties-and-values",
-    "title": "Logical Properties and Values",
-    "description": "Flow-relative (left-to-right or right-to-left) properties and values",
-    "specification": "https://www.w3.org/TR/css-logical-1/",
-    "stage": 2,
-    "browser_support": {
-      "and_chr": "89",
-      "and_ff": "66",
-      "android": "89",
-      "chrome": "89",
-      "edge": "89",
-      "firefox": "66",
-      "ios_saf": "15",
-      "oculus": "15.0",
-      "op_mob": "63",
-      "opera": "75",
-      "safari": "15",
-      "samsung": "15.0"
-    },
-    "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
-    },
-    "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
     "vendors_implementations": 3
@@ -1241,6 +1231,38 @@ export default [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overscroll-behavior"
+      }
+    ],
+    "vendors_implementations": 3
+  },
+  {
+    "id": "logical-properties-and-values",
+    "title": "Logical Properties and Values",
+    "description": "Flow-relative (left-to-right or right-to-left) properties and values",
+    "specification": "https://www.w3.org/TR/css-logical-1/",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "89",
+      "and_ff": "66",
+      "android": "89",
+      "chrome": "89",
+      "edge": "89",
+      "firefox": "66",
+      "ios_saf": "15",
+      "oculus": "15.0",
+      "op_mob": "63",
+      "opera": "75",
+      "safari": "15",
+      "samsung": "15.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
+    },
+    "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
     "vendors_implementations": 3
@@ -1493,6 +1515,7 @@ export default [
       "edge": "111",
       "firefox": "113",
       "ios_saf": "15.4",
+      "op_mob": "75",
       "opera": "97",
       "safari": "15.4",
       "samsung": "22.0"
@@ -1729,6 +1752,7 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "18",
+      "and_ff": "79",
       "android": "37",
       "chrome": "1",
       "edge": "13",
@@ -1959,6 +1983,7 @@ export default [
       "edge": "111",
       "firefox": "108",
       "ios_saf": "15.4",
+      "op_mob": "75",
       "opera": "97",
       "safari": "15.4",
       "samsung": "22.0"
