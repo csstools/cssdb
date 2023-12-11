@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 7.9.1 (December 11, 2023)
+
+- Updated `@mdn/browser-compat-data` to `5.4.5` (patch)
+- Updated `caniuse-lite` to `1.0.30001568` (patch)
+
 ### 7.9.0 (October 31, 2023)
 
 - Added: Stage 2 `logical-overflow`

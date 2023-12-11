@@ -1,6 +1,7 @@
 // internal tooling
 const fs   = require('fs').promises;
 const path = require('path');
+const assert = require('assert');
 
 // symbols for passing and failure
 const passSymbol = '\x1b[32m✔\x1b[0m';
@@ -26,11 +27,10 @@ function allHaveRequiredData (features) {
 		fixFeaturesOrdering(features);
 	}
 
-	const hasOrderlyFeatures = getFeatureIds(features).join() === getFeatureIds(features).sort().join();
-
-	if (!hasOrderlyFeatures) {
-		throw validationError('UNORDERLY FEATURES', 'Received order', JSON.stringify(getFeatureIds(features), null, '    ').slice(1, -2));
-	}
+	assert.deepStrictEqual(
+		getFeatureIds(features),
+		getFeatureIds(features).sort(),
+	)
 
 	features.forEach(hasRequiredData);
 

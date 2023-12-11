@@ -11,7 +11,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 'lts/*'
       - run: npm ci --ignore-scripts
       - run: npm run preparesite
       - name: Check if there are changes
