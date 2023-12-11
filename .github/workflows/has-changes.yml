@@ -6,10 +6,10 @@ jobs:
   has-changes:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout
         with:
           ref: ${{ github.head_ref }}
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node
         with:
           node-version: 'lts/*'
       - run: npm ci --ignore-scripts
@@ -19,7 +19,7 @@ jobs:
         run: git diff --quiet --exit-code
       - name: Process changes
         if: failure()
-        uses: actions/github-script@v6
+        uses: actions/github-script
         with:
           script: |
             core.setFailed('cssdb generated files have changed')

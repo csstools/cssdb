@@ -13,8 +13,8 @@ jobs:
       matrix:
         node: [18, 'lts/*']
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout
+      - uses: actions/setup-node
         with:
           node-version: ${{ matrix.node }}
 
