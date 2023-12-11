@@ -1,15 +1,15 @@
-name: test-node-12
+name: test-older-node
 on:
   push:
 
 concurrency:
-  group: test-node-12-branch-node-${{ github.ref }}
+  group: test-older-node-branch-node-${{ github.ref }}
   cancel-in-progress: true
 
 # TODO : delete this workflow on next major if we drop node 12, 14 and 16
 
 jobs:
-  test-node-12:
+  test-older-node:
     runs-on: ubuntu-latest
     strategy:
       matrix:
