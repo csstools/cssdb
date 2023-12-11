@@ -20,5 +20,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - run: NPM_CONFIG_ENGINE_STRICT=false npm ci --ignore-scripts
+      - run: |
+          NPM_CONFIG_ENGINE_STRICT=false npm install --ignore-scripts
       - run: npm run test:json
