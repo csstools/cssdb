@@ -38,7 +38,7 @@
     "prebuild": "npm run preparesite",
     "prepublishOnly": "npm run populatedb",
     "populatedb": "node tasks/populate-db.mjs",
-    "create-badges": "node tasks/write-badges.js",
+    "create-badges": "node tasks/write-stage-badges.mjs && node tasks/write-baseline-badges.mjs",
     "preparesite": "npm run populatedb && npm run create-badges && npm run buildcss",
     "buildcss": "postcss src/styles/style.css -d dist/styles -m",
     "test": "npm run test:css && npm run test:json",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@mdn/browser-compat-data": "^5.4.5",
     "browserslist": "^4.22.2",
-    "caniuse-lite": "^1.0.30001568",
+    "caniuse-lite": "^1.0.30001570",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.32",

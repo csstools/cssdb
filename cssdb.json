@@ -29,7 +29,8 @@
         "link": "https://github.com/maximkoretskiy/postcss-initial"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "any-link-pseudo-class",
@@ -61,7 +62,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-pseudo-class-any-link"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "blank-pseudo-class",
@@ -156,7 +158,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1647216000
   },
   {
     "id": "case-insensitive-attributes",
@@ -188,7 +191,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-attribute-case-insensitive"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "clamp",
@@ -220,7 +224,8 @@
         "link": "https://github.com/polemius/postcss-clamp"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1586304000
   },
   {
     "id": "color-adjust",
@@ -283,7 +288,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1683590400
   },
   {
     "id": "color-functional-notation",
@@ -312,7 +318,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "color-mix",
@@ -340,7 +347,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1683590400
   },
   {
     "id": "color-mod-function",
@@ -387,7 +395,8 @@
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1676332800
   },
   {
     "id": "custom-media-queries",
@@ -435,7 +444,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-properties"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1491868800
   },
   {
     "id": "custom-property-sets",
@@ -496,7 +506,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1701993600
   },
   {
     "id": "display-two-values",
@@ -527,7 +538,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1689897600
   },
   {
     "id": "double-position-gradients",
@@ -556,7 +568,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-double-position-gradients"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1605571200
   },
   {
     "id": "environment-variables",
@@ -644,7 +657,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-float-and-clear"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1697155200
   },
   {
     "id": "focus-visible-pseudo-class",
@@ -680,7 +694,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1647216000
   },
   {
     "id": "focus-within-pseudo-class",
@@ -716,7 +731,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-within"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "font-format-keywords",
@@ -775,7 +791,8 @@
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1694649600
   },
   {
     "id": "gamut-mapping",
@@ -823,7 +840,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gap-properties"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1537142400
   },
   {
     "id": "gradients-interpolation-method",
@@ -897,7 +915,8 @@
         "link": "https://github.com/postcss/autoprefixer"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1508198400
   },
   {
     "id": "has-pseudo-class",
@@ -964,7 +983,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-hex-alpha"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "hwb-function",
@@ -996,7 +1016,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1651190400
   },
   {
     "id": "ic-unit",
@@ -1027,7 +1048,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1664755200
   },
   {
     "id": "image-set-function",
@@ -1059,7 +1081,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1618790400
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -1085,7 +1108,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
     },
     "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}",
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1447286400
   },
   {
     "id": "is-pseudo-class",
@@ -1117,7 +1141,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-is-pseudo-class"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1611360000
   },
   {
     "id": "lab-function",
@@ -1148,7 +1173,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1683590400
   },
   {
     "id": "lch-function",
@@ -1179,7 +1205,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1683590400
   },
   {
     "id": "logical-overflow",
@@ -1233,7 +1260,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overscroll-behavior"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1662940800
   },
   {
     "id": "logical-properties-and-values",
@@ -1265,7 +1293,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1632096000
   },
   {
     "id": "logical-resize",
@@ -1294,7 +1323,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-resize"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1697155200
   },
   {
     "id": "logical-viewport-units",
@@ -1325,7 +1355,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-viewport-units"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1670198400
   },
   {
     "id": "matches-pseudo-class",
@@ -1357,7 +1388,8 @@
         "link": "https://github.com/postcss/postcss-selector-matches"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1611360000
   },
   {
     "id": "media-queries-aspect-ratio-number-values",
@@ -1385,7 +1417,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-queries-aspect-ratio-number-values"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1679875200
   },
   {
     "id": "media-query-ranges",
@@ -1417,7 +1450,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1679875200
   },
   {
     "id": "nested-calc",
@@ -1449,7 +1483,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nested-calc"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1508198400
   },
   {
     "id": "nesting-rules",
@@ -1499,7 +1534,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-selector-not"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1611360000
   },
   {
     "id": "oklab-function",
@@ -1527,7 +1563,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1683590400
   },
   {
     "id": "opacity-percentage",
@@ -1559,7 +1596,8 @@
         "link": "https://github.com/mrcgrtz/postcss-opacity-percentage"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1585008000
   },
   {
     "id": "overflow-property",
@@ -1591,7 +1629,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-overflow-shorthand"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1585008000
   },
   {
     "id": "overflow-wrap-property",
@@ -1623,7 +1662,8 @@
         "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1542067200
   },
   {
     "id": "overscroll-behavior-property",
@@ -1648,7 +1688,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1662940800
   },
   {
     "id": "place-properties",
@@ -1680,7 +1721,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-place"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "prefers-color-scheme-query",
@@ -1716,7 +1758,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-prefers-color-scheme"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "prefers-reduced-motion-query",
@@ -1742,7 +1785,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
     },
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "read-only-write-pseudo-class",
@@ -1768,7 +1812,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1593475200
   },
   {
     "id": "rebeccapurple-color",
@@ -1801,7 +1846,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-rebeccapurple"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1443657600
   },
   {
     "id": "relative-color-syntax",
@@ -1853,7 +1899,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-scope-pseudo-class"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1579046400
   },
   {
     "id": "sign-functions",
@@ -1937,7 +1984,8 @@
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1630972800
   },
   {
     "id": "text-decoration-shorthand",
@@ -1995,7 +2043,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1678665600
   },
   {
     "id": "unset-value",
@@ -2027,7 +2076,8 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1458518400
   },
   {
     "id": "when-else-rules",
@@ -2063,6 +2113,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "interoperable_at": 1611360000
   }
 ]

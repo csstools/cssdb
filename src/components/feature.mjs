@@ -1,3 +1,4 @@
+import { baselineStatus } from '../../utils/baseline-status.mjs';
 import { parseExample }  from '../../utils/feature-example.js';
 import { backTicksToCodeTags, escapeHTML, html } from '../util/html.mjs';
 import { renderCaniuseFeature } from './caniuse-feature.mjs';
@@ -15,6 +16,7 @@ export function renderFeature(feature) {
 
 	const imageName = `/images/stages/stage-${feature.stage}.svg`;
 	const badge = `/images/badges/${feature.id}.svg`;
+	const baselineBadge = `/images/badges-baseline/${feature.id}.svg`;
 
 	const cleanTitle = feature.title.replace(/`/g, '');
 
@@ -34,6 +36,20 @@ export function renderFeature(feature) {
 				</p>
 			</header>
 			<p class="cssdb-feature-docs">
+				<a
+					href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility"
+					aria-label="${baselineStatus(feature)}"
+				>
+					<img
+						src="${baselineBadge}"
+						alt=""
+						title="${baselineStatus(feature)}"
+						loading="lazy"
+						decoding="async"
+						height="18"
+						style="margin: 1px 8px;"
+					/>
+				</a>
 				<a
 					href="${feature.specification}"
 					aria-label="Specification"

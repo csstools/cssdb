@@ -3,7 +3,7 @@ import { URL } from 'url';
 import fs from 'fs/promises';
 import supportedBrowsersFromCanIUse from '../utils/supported-browsers-from-caniuse.mjs';
 import supportedBrowsersFromMdn from '../utils/supported-browsers-from-mdn.mjs';
-import countVendors from '../utils/count-vendors.mjs';
+import { baselineData } from '../utils/baseline-data.mjs';
 import applyBrowserOverrides from '../utils/apply-browser-overrides.mjs';
 
 const __dirname = new URL('.', import.meta.url).pathname;
@@ -30,7 +30,9 @@ cssdb.forEach(feature => {
 		feature.browser_support_overrides
 	);
 
-	feature.vendors_implementations = countVendors(feature);
+	const [vendors_implementations, interoperable_at] = baselineData(feature);
+	feature.vendors_implementations = vendors_implementations;
+	feature.interoperable_at = interoperable_at;
 });
 
 const cleanDB = cssdb.map(

@@ -1,18 +1,27 @@
 import caniuse from 'caniuse-lite';
 import semver from 'semver';
 
-export default function browserVersionHasReleaseDate(browser, version) {
+export function releaseDateForBrowserVersion(browser, version) {
+	const caniuseVersion = findCaniuseVersion(browser, version);
+	if (!caniuseVersion) {
+		return false;
+	}
+
+	return caniuse.agents[browser].release_date[caniuseVersion];
+}
+
+export function findCaniuseVersion(browser, version) {
 	if (!caniuse.agents[browser]) {
 		// Unknown browser name
-		return false;
+		return;
 	}
 
 	const semverVersion = semver.coerce(version);
 	if (!semverVersion) {
-		return false;
+		return;
 	}
 
-	const caniuseVersion = caniuse.agents[browser].versions.find((x) => {
+	return caniuse.agents[browser].versions.find((x) => {
 		if (!x) {
 			// x can be null
 			return false;
@@ -20,7 +29,7 @@ export default function browserVersionHasReleaseDate(browser, version) {
 
 		if (x.includes('-')) {
 			// version "15.2" ==  caniuse "15.2-15.3"
-			return x.split('-').includes(version);
+			return semver.satisfies(semverVersion, x);
 		}
 
 		const xx = semver.coerce(x);
@@ -37,10 +46,4 @@ export default function browserVersionHasReleaseDate(browser, version) {
 
 		return semver.eq(semverVersion, xx);
 	});
-
-	if (!caniuse.agents[browser].release_date[caniuseVersion]) {
-		return false;
-	}
-
-	return true;
 }
