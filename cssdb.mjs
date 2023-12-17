@@ -211,7 +211,7 @@ export default [
       "samsung": "12.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
     "polyfills": [
@@ -235,7 +235,7 @@ export default [
       "safari": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
     "vendors_implementations": 2
@@ -248,7 +248,7 @@ export default [
     "stage": 1,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast"
     },
     "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "polyfills": [],
@@ -274,7 +274,7 @@ export default [
       "samsung": "22.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
     "polyfills": [
@@ -305,6 +305,9 @@ export default [
       "safari": "12.1",
       "samsung": "9.0"
     },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
+    },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
@@ -332,6 +335,9 @@ export default [
       "opera": "97",
       "safari": "16.2",
       "samsung": "22.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
@@ -518,7 +524,7 @@ export default [
       "samsung": "23.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "polyfills": [
@@ -548,6 +554,9 @@ export default [
       "opera": "60",
       "safari": "12.1",
       "samsung": "11.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -588,6 +597,9 @@ export default [
       "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
     "polyfills": [
@@ -631,11 +643,12 @@ export default [
       "edge": "118",
       "firefox": "55",
       "ios_saf": "15",
+      "op_mob": "79",
       "opera": "104",
       "safari": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "polyfills": [
@@ -842,6 +855,9 @@ export default [
       "safari": "16.2",
       "samsung": "22.0"
     },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
+    },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
@@ -987,7 +1003,7 @@ export default [
       "samsung": "19.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "polyfills": [
@@ -1050,7 +1066,7 @@ export default [
       "samsung": "1.5"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "polyfills": [
@@ -1139,7 +1155,7 @@ export default [
       "samsung": "22.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
     "polyfills": [
@@ -1170,7 +1186,7 @@ export default [
       "samsung": "22.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
     "polyfills": [
@@ -1256,7 +1272,7 @@ export default [
       "samsung": "15.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "polyfills": [
@@ -1281,6 +1297,7 @@ export default [
       "edge": "118",
       "firefox": "63",
       "ios_saf": "16",
+      "op_mob": "79",
       "opera": "104",
       "safari": "16"
     },
@@ -1408,7 +1425,7 @@ export default [
       "samsung": "20.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "polyfills": [
@@ -1460,6 +1477,9 @@ export default [
     "browser_support": {
       "and_ff": "117",
       "firefox": "117"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
     },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "polyfills": [
@@ -1519,6 +1539,9 @@ export default [
       "opera": "97",
       "safari": "15.4",
       "samsung": "22.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "polyfills": [
@@ -1810,7 +1833,13 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {
+      "and_chr": "119",
+      "android": "119",
+      "chrome": "119",
+      "edge": "119",
       "ios_saf": "16.4",
+      "op_mob": "79",
+      "opera": "105",
       "safari": "16.4"
     },
     "docs": {},
@@ -1821,7 +1850,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "scope-pseudo-class",
@@ -1867,6 +1896,9 @@ export default [
       "ios_saf": "15.4",
       "safari": "15.4"
     },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
+    },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
     "vendors_implementations": 2
   },
@@ -1897,6 +1929,9 @@ export default [
       "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
     },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "polyfills": [
@@ -1987,6 +2022,9 @@ export default [
       "opera": "97",
       "safari": "15.4",
       "samsung": "22.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "polyfills": [
