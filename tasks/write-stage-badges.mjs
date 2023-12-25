@@ -37,3 +37,5 @@ await Promise.all(features.map(async feature => {
 		fs.writeFile(badgeURLOld, shield)
 	]);
 }));
+
+process.exit(0);
