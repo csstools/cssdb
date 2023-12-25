@@ -948,7 +948,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -1475,8 +1475,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 2,
     "browser_support": {
+      "and_chr": "120",
       "and_ff": "117",
-      "firefox": "117"
+      "android": "120",
+      "chrome": "120",
+      "edge": "120",
+      "firefox": "117",
+      "ios_saf": "17.2",
+      "opera": "106",
+      "safari": "17.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
@@ -1488,7 +1495,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 3
   },
   {
     "id": "not-pseudo-class",
