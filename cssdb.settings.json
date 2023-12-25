@@ -96,7 +96,17 @@
     "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
     "stage": 2,
     "browser_support": {},
-    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}"
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+    },
+    "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
+    "mdn_path": [
+      "css.types['calc-constant']",
+      "css.types['calc-constant'].NaN",
+      "css.types['calc-constant'].e",
+      "css.types['calc-constant'].infinity",
+      "css.types['calc-constant'].pi"
+    ]
   },
   {
     "id": "cascade-layers",

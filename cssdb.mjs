@@ -124,9 +124,17 @@ export default [
     "description": "Constants for calculation simplification",
     "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_ff": "114",
+      "firefox": "114",
+      "ios_saf": "16",
+      "safari": "16"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+    },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "cascade-layers",

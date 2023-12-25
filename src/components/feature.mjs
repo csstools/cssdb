@@ -38,12 +38,12 @@ export function renderFeature(feature) {
 			<p class="cssdb-feature-docs">
 				<a
 					href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility"
-					aria-label="${baselineStatus(feature)}"
+					aria-label="${baselineStatus(feature)[0]}"
 				>
 					<img
 						src="${baselineBadge}"
 						alt=""
-						title="${baselineStatus(feature)}"
+						title="${baselineStatus(feature)[0]}"
 						loading="lazy"
 						decoding="async"
 						height="18"
