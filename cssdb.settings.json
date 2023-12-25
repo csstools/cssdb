@@ -144,7 +144,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
     "polyfills": [
@@ -163,7 +163,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
     "mdn_path": "css.properties['print-color-adjust']"
@@ -176,7 +176,7 @@
     "stage": 1,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast"
     },
     "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
     "mdn_path": "css.types.color['color-contrast']",
@@ -190,7 +190,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
     "mdn_path": "css.types.color.color",
@@ -214,6 +214,9 @@
       "css.types.color.rgba.space_separated_parameters"
     ],
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
+    },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
       {
@@ -232,6 +235,9 @@
       "css.types.color['color-mix']"
     ],
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
+    },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
       {
@@ -365,7 +371,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "polyfills": [
@@ -390,6 +396,9 @@
       "css.types.image.gradient['repeating-radial-gradient'].doubleposition"
     ],
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
+    },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
@@ -423,6 +432,9 @@
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
+    },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
     "mdn_path": [
       "css.types.pow",
@@ -464,7 +476,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float#browser_compatibility"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "mdn_path": [
@@ -627,6 +639,9 @@
       "css.types.image.gradient['repeating-radial-gradient'].interpolation_color_space"
     ],
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
+    },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
       {
@@ -719,7 +734,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "mdn_path": "css.types.color.hwb",
@@ -757,7 +772,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "mdn_path": "css.types.image['image-set']",
@@ -814,7 +829,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
     "mdn_path": "css.types.color.lab",
@@ -833,7 +848,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch()"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
     "mdn_path": "css.types.color.lch",
@@ -896,7 +911,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "mdn_path": [
@@ -1096,7 +1111,7 @@
     "stage": 3,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "mdn_path": "css.at-rules.media.range_syntax",
@@ -1133,6 +1148,9 @@
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
+    },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "mdn_path": "css.selectors.nesting",
     "polyfills": [
@@ -1168,6 +1186,9 @@
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
+    },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "mdn_path": [
       "css.types.color.oklab",
@@ -1351,18 +1372,16 @@
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {},
-    "browser_support_overrides": {
-      "ios_saf": {
-        "from": null,
-        "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/19855"
-      },
-      "safari": {
-        "from": null,
-        "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/19855"
-      }
-    },
+    "mdn_path": [
+      "css.types.color.color.relative_syntax",
+      "css.types.color.hsl.relative_syntax",
+      "css.types.color.hwb.relative_syntax",
+      "css.types.color.lab.relative_syntax",
+      "css.types.color.lch.relative_syntax",
+      "css.types.color.oklab.relative_syntax",
+      "css.types.color.oklch.relative_syntax",
+      "css.types.color.rgb.relative_syntax"
+    ],
     "docs": {},
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "polyfills": [
@@ -1400,6 +1419,9 @@
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
+    },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
     "mdn_path": [
       "css.types.abs",
@@ -1428,6 +1450,9 @@
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
+    },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "mdn_path": [
       "css.types.round",
@@ -1492,6 +1517,9 @@
     "specification": "https://www.w3.org/TR/css-values-4/#trig-funcs",
     "stage": 2,
     "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
+    },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "mdn_path": [
       "css.types.sin",

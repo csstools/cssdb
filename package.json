@@ -43,12 +43,13 @@
     "buildcss": "postcss src/styles/style.css -d dist/styles -m",
     "test": "npm run test:css && npm run test:json",
     "test:css": "stylelint src/styles/style.css",
-    "test:json": "node tasks/test.cjs"
+    "test:json": "node tasks/test.cjs",
+    "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.4.5",
+    "@mdn/browser-compat-data": "^5.5.2",
     "browserslist": "^4.22.2",
-    "caniuse-lite": "^1.0.30001570",
+    "caniuse-lite": "^1.0.30001571",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.32",
