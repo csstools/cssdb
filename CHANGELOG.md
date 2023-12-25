@@ -3,6 +3,8 @@
 ### Unreleased (minor)
 
 - Added `interoperable_at` to make it possible to calculate the Baseline status of a feature
+- Updated `@mdn/browser-compat-data` to `5.5.2` (patch)
+- Updated `caniuse-lite` to `1.0.30001571` (patch)
 
 ### 7.9.1 (December 11, 2023)
 
