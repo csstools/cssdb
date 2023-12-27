@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### Unreleased (minor)
+### 7.10.0 (December 27, 2023)
 
 - Added `interoperable_at` to make it possible to calculate the Baseline status of a feature
 - Updated `@mdn/browser-compat-data` to `5.5.2` (patch)
