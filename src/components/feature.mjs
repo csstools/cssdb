@@ -1,3 +1,4 @@
+import { baselineStatus } from '../../utils/baseline-status.mjs';
 import { parseExample }  from '../../utils/feature-example.js';
 import { backTicksToCodeTags, escapeHTML, html } from '../util/html.mjs';
 import { renderCaniuseFeature } from './caniuse-feature.mjs';
@@ -15,6 +16,7 @@ export function renderFeature(feature) {
 
 	const imageName = `/images/stages/stage-${feature.stage}.svg`;
 	const badge = `/images/badges/${feature.id}.svg`;
+	const baselineBadge = `/images/badges-baseline/${feature.id}.svg`;
 
 	const cleanTitle = feature.title.replace(/`/g, '');
 
@@ -35,17 +37,18 @@ export function renderFeature(feature) {
 			</header>
 			<p class="cssdb-feature-docs">
 				<a
-					href="${feature.specification}"
-					aria-label="Specification"
+					href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility"
+					aria-label="${baselineStatus(feature)[0]}"
 				>
 					<img
-						src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
+						src="${baselineBadge}"
 						alt=""
+						title="${baselineStatus(feature)[0]}"
 						loading="lazy"
 						decoding="async"
-						width="55"
-						height="20"
-					>
+						height="18"
+						style="margin: 1px 8px;"
+					/>
 				</a>
 				${feature.docs?.mdn ? (
 					html`<a
@@ -64,6 +67,19 @@ export function renderFeature(feature) {
 						>
 					</a>`
 				) : ''}
+				<a
+					href="${feature.specification}"
+					aria-label="Specification"
+				>
+					<img
+						src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
+						alt=""
+						loading="lazy"
+						decoding="async"
+						width="55"
+						height="20"
+					>
+				</a>
 				<a
 					href="#${stages[feature.stage]}"
 					aria-label="Stage ${feature.stage}"

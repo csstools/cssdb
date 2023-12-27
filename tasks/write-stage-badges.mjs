@@ -24,7 +24,7 @@ await fs.mkdir(badgesDirURL);
 await fs.rm(badgesDirURLOld, { force: true, recursive: true });
 await fs.mkdir(badgesDirURLOld);
 
-await Promise.all(features.map(async feature => {
+await Promise.all(features.map((feature) => {
 	const shieldStatus = feature.stage === -1 ? 'Rejected' : `Stage ${feature.stage}`;
 	const shieldColor = colors[feature.stage] || 'd02c2c';
 	const shield = renderBadgeSVG('cssdb', shieldStatus, shieldColor)
@@ -37,5 +37,3 @@ await Promise.all(features.map(async feature => {
 		fs.writeFile(badgeURLOld, shield)
 	]);
 }));
-
-process.exit(0);

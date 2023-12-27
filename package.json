@@ -38,7 +38,7 @@
     "prebuild": "npm run preparesite",
     "prepublishOnly": "npm run populatedb",
     "populatedb": "node tasks/populate-db.mjs",
-    "create-badges": "node tasks/write-badges.js",
+    "create-badges": "node tasks/write-stage-badges.mjs && node tasks/write-baseline-badges.mjs",
     "preparesite": "npm run populatedb && npm run create-badges && npm run buildcss",
     "buildcss": "postcss src/styles/style.css -d dist/styles -m",
     "test": "npm run test:css && npm run test:json",

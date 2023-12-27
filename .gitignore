@@ -2,4 +2,5 @@ gh-pages
 node_modules
 dist
 public/images/badges
+public/images/badges-baseline
 public/badge
