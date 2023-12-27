@@ -50,19 +50,6 @@ export function renderFeature(feature) {
 						style="margin: 1px 8px;"
 					/>
 				</a>
-				<a
-					href="${feature.specification}"
-					aria-label="Specification"
-				>
-					<img
-						src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
-						alt=""
-						loading="lazy"
-						decoding="async"
-						width="55"
-						height="20"
-					>
-				</a>
 				${feature.docs?.mdn ? (
 					html`<a
 						href="${feature.docs.mdn}"
@@ -80,6 +67,19 @@ export function renderFeature(feature) {
 						>
 					</a>`
 				) : ''}
+				<a
+					href="${feature.specification}"
+					aria-label="Specification"
+				>
+					<img
+						src="https://img.shields.io/badge/Spec-005A9C?logo=w3c&style=flat-square"
+						alt=""
+						loading="lazy"
+						decoding="async"
+						width="55"
+						height="20"
+					>
+				</a>
 				<a
 					href="#${stages[feature.stage]}"
 					aria-label="Stage ${feature.stage}"
