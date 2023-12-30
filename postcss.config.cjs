@@ -6,7 +6,6 @@ module.exports = (ctx) => {
 		plugins: [
 			postcssPresetEnv({
 				stage: 0,
-				enableClientSidePolyfills: true
 			})
 		],
 	}

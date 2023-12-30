@@ -23,14 +23,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
     },
     "example": "a {\n  all: initial;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/maximkoretskiy/postcss-initial"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "any-link-pseudo-class",
@@ -56,14 +56,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-pseudo-class-any-link"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "blank-pseudo-class",
@@ -160,14 +160,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
+    "interoperable_at": 1647216000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1647216000
+    "vendors_implementations": 3
   },
   {
     "id": "case-insensitive-attributes",
@@ -193,14 +193,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
     },
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-attribute-case-insensitive"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "clamp",
@@ -226,14 +226,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
+    "interoperable_at": 1586304000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/polemius/postcss-clamp"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1586304000
+    "vendors_implementations": 3
   },
   {
     "id": "color-adjust",
@@ -290,14 +290,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
+    "interoperable_at": 1683590400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1683590400
+    "vendors_implementations": 3
   },
   {
     "id": "color-functional-notation",
@@ -323,14 +323,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
     },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "color-mix",
@@ -355,14 +355,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
+    "interoperable_at": 1683590400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1683590400
+    "vendors_implementations": 3
   },
   {
     "id": "color-mod-function",
@@ -403,14 +403,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
     },
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
+    "interoperable_at": 1676332800,
     "polyfills": [
       {
         "type": "JavaScript Library",
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1676332800
+    "vendors_implementations": 3
   },
   {
     "id": "custom-media-queries",
@@ -452,14 +452,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
+    "interoperable_at": 1491868800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-properties"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1491868800
+    "vendors_implementations": 3
   },
   {
     "id": "custom-property-sets",
@@ -514,14 +514,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
     },
     "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
+    "interoperable_at": 1701993600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-dir-pseudo-class"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1701993600
+    "vendors_implementations": 3
   },
   {
     "id": "display-two-values",
@@ -546,14 +546,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
+    "interoperable_at": 1689897600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1689897600
+    "vendors_implementations": 3
   },
   {
     "id": "double-position-gradients",
@@ -579,14 +579,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
+    "interoperable_at": 1605571200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-double-position-gradients"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1605571200
+    "vendors_implementations": 3
   },
   {
     "id": "environment-variables",
@@ -672,14 +672,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
+    "interoperable_at": 1697155200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-float-and-clear"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1697155200
+    "vendors_implementations": 3
   },
   {
     "id": "focus-visible-pseudo-class",
@@ -705,6 +705,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
     },
     "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
+    "interoperable_at": 1647216000,
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -715,8 +716,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1647216000
+    "vendors_implementations": 3
   },
   {
     "id": "focus-within-pseudo-class",
@@ -742,6 +742,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
     },
     "example": "form:focus-within {\n  background: rgba(0, 0, 0, 0.3);\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -752,8 +753,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-within"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "font-format-keywords",
@@ -806,14 +806,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
+    "interoperable_at": 1694649600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1694649600
+    "vendors_implementations": 3
   },
   {
     "id": "gamut-mapping",
@@ -855,14 +855,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
     },
     "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
+    "interoperable_at": 1537142400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gap-properties"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1537142400
+    "vendors_implementations": 3
   },
   {
     "id": "gradients-interpolation-method",
@@ -933,14 +933,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
     },
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
+    "interoperable_at": 1508198400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/autoprefixer"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1508198400
+    "vendors_implementations": 3
   },
   {
     "id": "has-pseudo-class",
@@ -965,6 +965,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
     "example": "a:has(> img) {\n  display: block;\n}",
+    "interoperable_at": 1702944000,
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -975,8 +976,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1702944000
+    "vendors_implementations": 3
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -1002,14 +1002,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
     },
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-hex-alpha"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "hwb-function",
@@ -1035,14 +1035,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
+    "interoperable_at": 1651190400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1651190400
+    "vendors_implementations": 3
   },
   {
     "id": "ic-unit",
@@ -1067,14 +1067,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
     },
     "example": "p {\n  text-indent: 2ic;\n}",
+    "interoperable_at": 1664755200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1664755200
+    "vendors_implementations": 3
   },
   {
     "id": "image-set-function",
@@ -1100,14 +1100,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
+    "interoperable_at": 1618790400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-set-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1618790400
+    "vendors_implementations": 3
   },
   {
     "id": "in-out-of-range-pseudo-class",
@@ -1133,8 +1133,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
     },
     "example": "input:in-range {\n  background-color: rgba(0, 255, 0, 0.25);\n}\ninput:out-of-range {\n  background-color: rgba(255, 0, 0, 0.25);\n  border: 2px solid red;\n}",
-    "vendors_implementations": 3,
-    "interoperable_at": 1447286400
+    "interoperable_at": 1447286400,
+    "vendors_implementations": 3
   },
   {
     "id": "is-pseudo-class",
@@ -1160,14 +1160,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "interoperable_at": 1611360000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-is-pseudo-class"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1611360000
+    "vendors_implementations": 3
   },
   {
     "id": "lab-function",
@@ -1192,14 +1192,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
+    "interoperable_at": 1683590400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1683590400
+    "vendors_implementations": 3
   },
   {
     "id": "lch-function",
@@ -1224,14 +1224,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
+    "interoperable_at": 1683590400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1683590400
+    "vendors_implementations": 3
   },
   {
     "id": "logical-overflow",
@@ -1279,14 +1279,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
     },
     "example": "div {\n  overscroll-behavior-block: scroll;\n}",
+    "interoperable_at": 1662940800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overscroll-behavior"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1662940800
+    "vendors_implementations": 3
   },
   {
     "id": "logical-properties-and-values",
@@ -1312,14 +1312,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
+    "interoperable_at": 1632096000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1632096000
+    "vendors_implementations": 3
   },
   {
     "id": "logical-resize",
@@ -1343,14 +1343,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
     },
     "example": "area {\n  resize: inline;\n}",
+    "interoperable_at": 1697155200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-resize"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1697155200
+    "vendors_implementations": 3
   },
   {
     "id": "logical-viewport-units",
@@ -1375,14 +1375,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
+    "interoperable_at": 1670198400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-viewport-units"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1670198400
+    "vendors_implementations": 3
   },
   {
     "id": "matches-pseudo-class",
@@ -1408,14 +1408,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "interoperable_at": 1611360000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-matches"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1611360000
+    "vendors_implementations": 3
   },
   {
     "id": "media-queries-aspect-ratio-number-values",
@@ -1437,14 +1437,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
     },
     "example": "@media (aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
+    "interoperable_at": 1679875200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-queries-aspect-ratio-number-values"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1679875200
+    "vendors_implementations": 3
   },
   {
     "id": "media-query-ranges",
@@ -1470,14 +1470,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
+    "interoperable_at": 1679875200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1679875200
+    "vendors_implementations": 3
   },
   {
     "id": "nested-calc",
@@ -1503,14 +1503,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
     },
     "example": "p {\n  padding: calc(1px + calc(4 / 3));\n}",
+    "interoperable_at": 1508198400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nested-calc"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1508198400
+    "vendors_implementations": 3
   },
   {
     "id": "nesting-rules",
@@ -1533,14 +1533,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
     },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
+    "interoperable_at": 1702252800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1702252800
+    "vendors_implementations": 3
   },
   {
     "id": "not-pseudo-class",
@@ -1565,14 +1565,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
     },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
+    "interoperable_at": 1611360000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-selector-not"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1611360000
+    "vendors_implementations": 3
   },
   {
     "id": "oklab-function",
@@ -1597,14 +1597,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
+    "interoperable_at": 1683590400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1683590400
+    "vendors_implementations": 3
   },
   {
     "id": "opacity-percentage",
@@ -1630,14 +1630,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
     },
     "example": "img {\n  opacity: 90%;\n}",
+    "interoperable_at": 1585008000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/mrcgrtz/postcss-opacity-percentage"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1585008000
+    "vendors_implementations": 3
   },
   {
     "id": "overflow-property",
@@ -1663,14 +1663,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
     },
     "example": "html {\n  overflow: hidden auto;\n}",
+    "interoperable_at": 1585008000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-overflow-shorthand"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1585008000
+    "vendors_implementations": 3
   },
   {
     "id": "overflow-wrap-property",
@@ -1696,14 +1696,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
+    "interoperable_at": 1542067200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/mattdimu/postcss-replace-overflow-wrap"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1542067200
+    "vendors_implementations": 3
   },
   {
     "id": "overscroll-behavior-property",
@@ -1728,8 +1728,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "vendors_implementations": 3,
-    "interoperable_at": 1662940800
+    "interoperable_at": 1662940800,
+    "vendors_implementations": 3
   },
   {
     "id": "place-properties",
@@ -1755,14 +1755,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
     },
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-place"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "prefers-color-scheme-query",
@@ -1788,6 +1788,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -1798,8 +1799,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-prefers-color-scheme"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "prefers-reduced-motion-query",
@@ -1825,8 +1825,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
     },
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "interoperable_at": 1579046400,
+    "vendors_implementations": 3
   },
   {
     "id": "read-only-write-pseudo-class",
@@ -1852,8 +1852,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
-    "vendors_implementations": 3,
-    "interoperable_at": 1593475200
+    "interoperable_at": 1593475200,
+    "vendors_implementations": 3
   },
   {
     "id": "rebeccapurple-color",
@@ -1880,14 +1880,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
+    "interoperable_at": 1443657600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-rebeccapurple"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1443657600
+    "vendors_implementations": 3
   },
   {
     "id": "relative-color-syntax",
@@ -1939,14 +1939,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
     },
     "example": ":scope {\n  background-color: pink;\n}",
+    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-scope-pseudo-class"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1579046400
+    "vendors_implementations": 3
   },
   {
     "id": "sign-functions",
@@ -2030,14 +2030,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
     "example": "body {\n  font-family: system-ui;\n}",
+    "interoperable_at": 1630972800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1630972800
+    "vendors_implementations": 3
   },
   {
     "id": "text-decoration-shorthand",
@@ -2092,14 +2092,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
+    "interoperable_at": 1678665600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-trigonometric-functions"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1678665600
+    "vendors_implementations": 3
   },
   {
     "id": "unset-value",
@@ -2125,14 +2125,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
     },
     "example": "div {\n  border-color: unset;\n  color: unset;\n}",
+    "interoperable_at": 1458518400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-unset-value"
       }
     ],
-    "vendors_implementations": 3,
-    "interoperable_at": 1458518400
+    "vendors_implementations": 3
   },
   {
     "id": "when-else-rules",
@@ -2168,7 +2168,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
-    "vendors_implementations": 3,
-    "interoperable_at": 1611360000
+    "interoperable_at": 1611360000,
+    "vendors_implementations": 3
   }
 ]
