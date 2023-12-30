@@ -45,7 +45,33 @@ const cleanDB = cssdb.map(
 		browser_support_overrides,
 		// The above are discarded
 		...properties
-	 }) => properties
+	}) => {
+		let feature = {};
+		let sortedKeys = Object.keys(properties).sort((a, b) => {
+			const fixedKeyPositions = ['id', 'title', 'description', 'specification', 'stage'];
+			const aIndex = fixedKeyPositions.indexOf(a);
+			const bIndex = fixedKeyPositions.indexOf(b);
+
+			if (aIndex === -1 && bIndex === -1) {
+				return a.localeCompare(b);
+			}
+
+			if (aIndex === -1) {
+				return 1;
+			}
+
+			if (bIndex === -1) {
+				return -1;
+			}
+
+			return aIndex - bIndex;
+		});
+		sortedKeys.forEach(key => {
+			feature[key] = properties[key];
+		});
+
+		return feature;
+	}
 );
 
 const newCSSDB = `${JSON.stringify(cleanDB, null, 2)}\n`;
