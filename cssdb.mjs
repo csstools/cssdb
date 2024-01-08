@@ -306,31 +306,24 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
     "browser_support": {
-      "and_chr": "65",
-      "and_ff": "52",
-      "android": "65",
-      "chrome": "65",
-      "edge": "79",
-      "firefox": "52",
-      "ios_saf": "12.2",
-      "oculus": "5.0",
-      "op_mob": "47",
-      "opera": "52",
-      "safari": "12.1",
-      "samsung": "9.0"
+      "and_chr": "122",
+      "and_ff": "122",
+      "android": "122",
+      "chrome": "122",
+      "edge": "122",
+      "firefox": "122"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
     },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
-    "interoperable_at": 1579046400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 0
   },
   {
     "id": "color-mix",
@@ -1018,31 +1011,24 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
     "stage": 2,
     "browser_support": {
-      "and_chr": "101",
-      "and_ff": "96",
-      "android": "101",
-      "chrome": "101",
-      "edge": "101",
-      "firefox": "96",
-      "ios_saf": "15",
-      "oculus": "22.0",
-      "op_mob": "70",
-      "opera": "87",
-      "safari": "15",
-      "samsung": "19.0"
+      "and_chr": "121",
+      "and_ff": "122",
+      "android": "121",
+      "chrome": "121",
+      "edge": "121",
+      "firefox": "122"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
-    "interoperable_at": 1651190400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 0
   },
   {
     "id": "ic-unit",
@@ -1176,23 +1162,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1208,23 +1193,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1581,23 +1565,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15.4",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15.4",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",

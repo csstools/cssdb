@@ -203,7 +203,10 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
-    "mdn_path": "css.types.color.color",
+    "mdn_path": [
+      "css.types.color.color",
+      "css.types.color.color.mixed_type_parameters"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -218,9 +221,13 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
     "mdn_path": [
+      "css.types.color.hsl.mixed_type_parameters",
       "css.types.color.hsl.space_separated_parameters",
+      "css.types.color.hsla.mixed_type_parameters",
       "css.types.color.hsla.space_separated_parameters",
+      "css.types.color.rgb.mixed_type_parameters",
       "css.types.color.rgb.space_separated_parameters",
+      "css.types.color.rgba.mixed_type_parameters",
       "css.types.color.rgba.space_separated_parameters"
     ],
     "browser_support": {},
@@ -747,7 +754,10 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
-    "mdn_path": "css.types.color.hwb",
+    "mdn_path": [
+      "css.types.color.hwb",
+      "css.types.color.hwb.mixed_type_parameters"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -842,7 +852,12 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
-    "mdn_path": "css.types.color.lab",
+    "mdn_path": [
+      "css.types.color.lab",
+      "css.types.color.lab.mixed_type_parameters",
+      "css.types.color.lch",
+      "css.types.color.lch.mixed_type_parameters"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -861,7 +876,10 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
-    "mdn_path": "css.types.color.lch",
+    "mdn_path": [
+      "css.types.color.lch",
+      "css.types.color.lch.mixed_type_parameters"
+    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1202,7 +1220,9 @@
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "mdn_path": [
       "css.types.color.oklab",
-      "css.types.color.oklch"
+      "css.types.color.oklab.mixed_type_parameters",
+      "css.types.color.oklch",
+      "css.types.color.oklch.mixed_type_parameters"
     ],
     "polyfills": [
       {
