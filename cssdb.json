@@ -1878,16 +1878,7 @@
     "description": "Modify existing colors using color functions",
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
-    "browser_support": {
-      "and_chr": "119",
-      "android": "119",
-      "chrome": "119",
-      "edge": "119",
-      "ios_saf": "16.4",
-      "op_mob": "79",
-      "opera": "105",
-      "safari": "16.4"
-    },
+    "browser_support": {},
     "docs": {},
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "polyfills": [
@@ -1896,7 +1887,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 0
   },
   {
     "id": "scope-pseudo-class",
