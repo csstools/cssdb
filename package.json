@@ -47,8 +47,8 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.5.7",
-    "browserslist": "^4.22.2",
+    "@mdn/browser-compat-data": "^5.5.8",
+    "browserslist": "^4.22.3",
     "caniuse-lite": "^1.0.30001579",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
