@@ -1507,11 +1507,11 @@
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
     "mdn_path": [
-      "css.properties.text-decoration.shorthand",
-      "css.properties.text-decoration.text-decoration-thickness"
+      "css.properties.text-decoration.includes_color-and-style",
+      "css.properties.text-decoration.includes_thickness"
     ],
     "mdn_count_prefixed_as_supported": {
-      "css.properties.text-decoration.shorthand": true
+      "css.properties.text-decoration.includes_color-and-style": true
     },
     "polyfills": [
       {

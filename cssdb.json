@@ -507,6 +507,7 @@
       "edge": "120",
       "firefox": "49",
       "ios_saf": "16.4",
+      "op_mob": "80",
       "opera": "106",
       "safari": "16.4"
     },
@@ -1526,6 +1527,7 @@
       "edge": "120",
       "firefox": "117",
       "ios_saf": "17.2",
+      "op_mob": "80",
       "opera": "106",
       "safari": "17.2"
     },
