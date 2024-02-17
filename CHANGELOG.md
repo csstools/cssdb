@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 7.11.0 (February 17, 2024)
+
+- Added: Stage 2 `light-dark-function`
+
 ### 7.10.0 (December 27, 2023)
 
 - Added `interoperable_at` to make it possible to calculate the Baseline status of a feature

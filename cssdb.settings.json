@@ -888,6 +888,25 @@
     ]
   },
   {
+    "id": "light-dark-function",
+    "title": "`light-dark()` Function",
+    "description": "React to the current used `color-scheme` value",
+    "specification": "https://drafts.csswg.org/css-color-5/#light-dark",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+    },
+    "example": "body {\n  color: light-dark(cyan, magenta);\n}",
+    "mdn_path": "css.types.color.light-dark",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-light-dark-function"
+      }
+    ]
+  },
+  {
     "id": "logical-overflow",
     "title": "Logical Overflow",
     "description": "Flow-relative `overflow` properties",
@@ -1535,11 +1554,11 @@
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
     "mdn_path": [
-      "css.properties.text-decoration.shorthand",
-      "css.properties.text-decoration.text-decoration-thickness"
+      "css.properties.text-decoration.includes_color-and-style",
+      "css.properties.text-decoration.includes_thickness"
     ],
     "mdn_count_prefixed_as_supported": {
-      "css.properties.text-decoration.shorthand": true
+      "css.properties.text-decoration.includes_color-and-style": true
     },
     "polyfills": [
       {

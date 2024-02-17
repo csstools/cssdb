@@ -323,7 +323,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "color-mix",
@@ -500,6 +500,7 @@
       "edge": "120",
       "firefox": "49",
       "ios_saf": "16.4",
+      "op_mob": "80",
       "opera": "106",
       "safari": "16.4"
     },
@@ -1016,7 +1017,8 @@
       "android": "121",
       "chrome": "121",
       "edge": "121",
-      "firefox": "122"
+      "firefox": "122",
+      "opera": "107"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
@@ -1028,7 +1030,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-hwb-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 2
   },
   {
     "id": "ic-unit",
@@ -1216,6 +1218,29 @@
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "light-dark-function",
+    "title": "`light-dark()` Function",
+    "description": "React to the current used `color-scheme` value",
+    "specification": "https://drafts.csswg.org/css-color-5/#light-dark",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "120",
+      "chrome": "123",
+      "firefox": "120"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+    },
+    "example": "body {\n  color: light-dark(cyan, magenta);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-light-dark-function"
+      }
+    ],
+    "vendors_implementations": 1
   },
   {
     "id": "logical-overflow",
@@ -1510,6 +1535,7 @@
       "edge": "120",
       "firefox": "117",
       "ios_saf": "17.2",
+      "op_mob": "80",
       "opera": "106",
       "safari": "17.2"
     },
