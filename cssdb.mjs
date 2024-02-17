@@ -1235,6 +1235,29 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "light-dark-function",
+    "title": "`light-dark()` Function",
+    "description": "React to the current used `color-scheme` value",
+    "specification": "https://drafts.csswg.org/css-color-5/#light-dark",
+    "stage": 2,
+    "browser_support": {
+      "and_ff": "120",
+      "chrome": "123",
+      "firefox": "120"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+    },
+    "example": "body {\n  color: light-dark(cyan, magenta);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-light-dark-function"
+      }
+    ],
+    "vendors_implementations": 1
+  },
+  {
     "id": "logical-overflow",
     "title": "Logical Overflow",
     "description": "Flow-relative `overflow` properties",
