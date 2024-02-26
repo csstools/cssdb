@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 7.11.1 (February 26, 2024)
+
+- Updated `@mdn/browser-compat-data` to `5.5.11` (patch)
+- Updated `caniuse-lite` to `1.0.30001589` (patch)
+
 ### 7.11.0 (February 17, 2024)
 
 - Added: Stage 2 `light-dark-function`
