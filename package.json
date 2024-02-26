@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "7.11.0",
+  "version": "7.11.1",
   "type": "module",
   "description": "A comprehensive list of CSS features and their positions in the process of becoming implemented web standards",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
@@ -47,14 +47,14 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.5.10",
+    "@mdn/browser-compat-data": "^5.5.11",
     "browserslist": "^4.22.3",
-    "caniuse-lite": "^1.0.30001588",
+    "caniuse-lite": "^1.0.30001589",
     "glob": "^10.3.7",
     "lodash.get": "^4.4.2",
     "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0",
-    "postcss-preset-env": "^9.3.0",
+    "postcss-preset-env": "^9.4.0",
     "semver": "^7.6.0",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0"
