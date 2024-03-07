@@ -6,10 +6,12 @@ export function releaseDateForBrowserVersion(browser, version) {
 		return;
 	}
 
-	// const firstVersion = Object.keys(bcd.browsers[browser].releases)[0];
-	// if (version === firstVersion) {
-	// 	return 0;
-	// }
+	const firstVersion = Object.keys(bcd.browsers[browser].releases)[0];
+	if (version === firstVersion) {
+		// If the first version of a browser implements a feature, then the date isn't a significant marker.
+		// A new browser can be created with support for all features in 2030, that doesn't indicate that those features are new in 2030.
+		return -1;
+	}
 
 	return (new Date(dateStr)).getTime() / 1000;
 }
