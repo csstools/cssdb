@@ -27,11 +27,9 @@ const browser_order = [
 	"android",
 ];
 
-export function renderCaniuseFeature(title, feature) {
+export function renderFeatureSupportStats(title, feature) {
 	let link = '';
-	if (feature.caniuse) {
-		link = `https://caniuse.com/${feature.caniuse}`;
-	} else if (feature.docs && feature.docs.mdn) {
+	if (feature.docs && feature.docs.mdn) {
 		link = `${feature.docs.mdn}#browser_compatibility`;
 	}
 
@@ -50,7 +48,7 @@ export function renderCaniuseFeature(title, feature) {
 
 	return html`
 		<a
-			class="cssdb-feature-caniuse"
+			class="cssdb-feature-support-stats"
 			${(link && feature.browser_support && feature_browsers.length > 0) ? `href="${link}"` : ''}
 			target="_blank"
 			rel="noreferrer"

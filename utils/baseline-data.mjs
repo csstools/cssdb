@@ -36,11 +36,7 @@ export function baselineData(feature) {
 			}
 
 			engineIsSupported = true;
-			if (
-				// release dates of mobile browsers are incorrect in caniuse
-				!mobile_browsers.includes(browser) &&
-				(!latestReleaseDate || releaseDate > latestReleaseDate)
-			) {
+			if (!latestReleaseDate || releaseDate > latestReleaseDate) {
 				latestReleaseDate = releaseDate;
 			}
 		}
