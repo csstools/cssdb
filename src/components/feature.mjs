@@ -1,7 +1,7 @@
 import { baselineStatus } from '../../utils/baseline-status.mjs';
 import { parseExample }  from '../../utils/feature-example.js';
 import { backTicksToCodeTags, escapeHTML, html } from '../util/html.mjs';
-import { renderCaniuseFeature } from './caniuse-feature.mjs';
+import { renderFeatureSupportStats } from './feature-support-stats.mjs';
 import { renderFeaturePolyfills } from './feature-polyfills.mjs';
 
 const stages = [
@@ -96,7 +96,7 @@ export function renderFeature(feature) {
 			</p>
 			<pre class="cssdb-feature-example" dir="ltr">${parseExample(feature.example)}</pre>
 
-			${renderCaniuseFeature(cleanTitle, feature)}
+			${renderFeatureSupportStats(cleanTitle, feature)}
 			${renderFeaturePolyfills(feature.polyfills, feature.id, cleanTitle)}
 		</article>`;
 }

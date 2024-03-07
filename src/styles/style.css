@@ -389,7 +389,7 @@ img {
 /* Browsers
 /* ========================================================================== */
 
-.cssdb-feature-caniuse {
+.cssdb-feature-support-stats {
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin-block-start: 5px;

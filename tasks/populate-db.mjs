@@ -1,7 +1,6 @@
 import path from 'path';
 import { URL } from 'url';
 import fs from 'fs/promises';
-import supportedBrowsersFromCanIUse from '../utils/supported-browsers-from-caniuse.mjs';
 import supportedBrowsersFromMdn from '../utils/supported-browsers-from-mdn.mjs';
 import { baselineData } from '../utils/baseline-data.mjs';
 import applyBrowserOverrides from '../utils/apply-browser-overrides.mjs';
@@ -13,9 +12,7 @@ const cssdb = await fs.readFile(settingsPath, 'utf8').then(JSON.parse);
 cssdb.forEach(feature => {
 	feature.browser_support = {};
 	let browser_support = {};
-	if (feature.caniuse) {
-		browser_support = supportedBrowsersFromCanIUse(feature.caniuse, feature);
-	} else if (feature.mdn_path) {
+	if (feature.mdn_path) {
 		browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
 	}
 
@@ -37,8 +34,6 @@ cssdb.forEach(feature => {
 
 const cleanDB = cssdb.map(
 	({
-		caniuse,
-		caniuse_compat,
 		mdn_path,
 		allow_partial_implementation,
 		mdn_count_prefixed_as_supported,

@@ -275,7 +275,7 @@
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 2,
-    "caniuse": "css-container-queries",
+    "mdn_path": "css['at-rules'].container",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
