@@ -280,7 +280,7 @@
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 2,
-    "caniuse": "css-container-queries",
+    "mdn_path": "css['at-rules'].container",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
@@ -493,8 +493,10 @@
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "mdn_path": [
-      "css.properties.float.flow_relative_values",
-      "css.properties.clear.flow_relative_values"
+      "css.properties.float['inline-end']",
+      "css.properties.float['inline-start']",
+      "css.properties.clear['inline-end']",
+      "css.properties.clear['inline-start']"
     ],
     "polyfills": [
       {
@@ -1011,7 +1013,8 @@
       "css.properties['padding-inline']",
       "css.properties['padding-inline-end']",
       "css.properties['padding-inline-start']",
-      "css.properties['text-align'].flow_relative_values_start_and_end"
+      "css.properties['text-align'].start",
+      "css.properties['text-align'].end"
     ],
     "polyfills": [
       {
@@ -1032,7 +1035,8 @@
     },
     "example": "area {\n  resize: inline;\n}",
     "mdn_path": [
-      "css.properties['resize'].flow_relative_support"
+      "css.properties['resize'].block",
+      "css.properties['resize'].inline"
     ],
     "polyfills": [
       {

@@ -1,4 +1,4 @@
-import mdn from '@mdn/browser-compat-data/forLegacyNode';
+import bcd from '@mdn/browser-compat-data' assert { type: 'json' };
 import _get from 'lodash.get';
 import semver from 'semver';
 
@@ -12,7 +12,7 @@ const MDNToBrowserlist = {
 };
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
-	const mdnFeature = _get(mdn, mdnConfigPath);
+	const mdnFeature = _get(bcd, mdnConfigPath);
 	if (!mdnFeature) {
 		throw new Error(`Invalid mdn config path "${mdnConfigPath}" in feature "${feature}"`);
 	}

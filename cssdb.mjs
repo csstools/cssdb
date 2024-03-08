@@ -226,7 +226,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
-    "interoperable_at": 1586304000,
+    "interoperable_at": 1586217600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -311,7 +311,8 @@ export default [
       "android": "122",
       "chrome": "122",
       "edge": "122",
-      "firefox": "122"
+      "firefox": "122",
+      "opera": "108"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
@@ -323,7 +324,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-functional-notation"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "color-mix",
@@ -380,17 +381,17 @@ export default [
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 2,
     "browser_support": {
-      "and_chr": "106",
+      "and_chr": "105",
       "and_ff": "110",
-      "android": "106",
-      "chrome": "106",
-      "edge": "106",
+      "android": "105",
+      "chrome": "105",
+      "edge": "105",
       "firefox": "110",
       "ios_saf": "16",
-      "op_mob": "73",
-      "opera": "94",
+      "op_mob": "72",
+      "opera": "91",
       "safari": "16",
-      "samsung": "20"
+      "samsung": "20.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
@@ -445,7 +446,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
-    "interoperable_at": 1491868800,
+    "interoperable_at": 1491350400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -508,7 +509,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
     },
     "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
-    "interoperable_at": 1701993600,
+    "interoperable_at": 1701907200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -608,22 +609,29 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
     "stage": 2,
     "browser_support": {
+      "and_chr": "120",
       "and_ff": "118",
+      "android": "120",
+      "chrome": "120",
+      "edge": "120",
       "firefox": "118",
       "ios_saf": "15.4",
+      "op_mob": "80",
+      "opera": "106",
       "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
+    "interoperable_at": 1701907200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-exponential-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "fangsong-font-family",
@@ -800,7 +808,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
-    "interoperable_at": 1694649600,
+    "interoperable_at": 1694736000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1148,7 +1156,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "interoperable_at": 1611360000,
+    "interoperable_at": 1611187200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1226,7 +1234,9 @@ export default [
     "specification": "https://drafts.csswg.org/css-color-5/#light-dark",
     "stage": 2,
     "browser_support": {
+      "and_chr": "123",
       "and_ff": "120",
+      "android": "123",
       "chrome": "123",
       "firefox": "120"
     },
@@ -1240,7 +1250,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-light-dark-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "logical-overflow",
@@ -1384,7 +1394,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
-    "interoperable_at": 1670198400,
+    "interoperable_at": 1670284800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1417,7 +1427,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "interoperable_at": 1611360000,
+    "interoperable_at": 1611187200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1575,7 +1585,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
     },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "interoperable_at": 1611360000,
+    "interoperable_at": 1611187200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1690,7 +1700,7 @@ export default [
     "browser_support": {
       "and_chr": "25",
       "and_ff": "49",
-      "android": "37",
+      "android": "4.4",
       "chrome": "23",
       "edge": "18",
       "firefox": "49",
@@ -1705,7 +1715,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
-    "interoperable_at": 1542067200,
+    "interoperable_at": 1538438400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1889,7 +1899,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
-    "interoperable_at": 1443657600,
+    "interoperable_at": 1443571200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -2168,7 +2178,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
-    "interoperable_at": 1611360000,
+    "interoperable_at": 1611187200,
     "vendors_implementations": 3
   }
 ]

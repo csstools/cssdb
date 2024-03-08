@@ -7,14 +7,20 @@ export function baselineStatus(feature) {
 		return ['Limited availability', null];
 	}
 
-	const interoperableAtDate = new Date(feature.interoperable_at * 1000);
+	const interoperable_at = new Date();
+	interoperable_at.setTime(feature.interoperable_at * 1000);
 	const thirty_months_ago = new Date();
 	thirty_months_ago.setMonth(thirty_months_ago.getMonth() - 30);
 	if (feature.interoperable_at > (thirty_months_ago.getTime() / 1000)) {
-		return [`Newly available (${interoperableAtDate.getFullYear()})`, interoperableAtDate.getFullYear()];
+		return [`Newly available (${interoperable_at.getFullYear()})`, interoperable_at.getFullYear()];
 	}
 
-	return [`Widely available (${interoperableAtDate.getFullYear()})`, interoperableAtDate.getFullYear()];
+	const earliest_baseline_low_date = (new Date("2015-07-29")).getTime() / 1000;
+	if (earliest_baseline_low_date >= feature.interoperable_at) {
+		return [`Widely available`, null];
+	}
+
+	return [`Widely available (${interoperable_at.getFullYear()})`, interoperable_at.getFullYear()];
 }
 
 export function baselineIcon(status, year) {
@@ -27,7 +33,11 @@ export function baselineIcon(status, year) {
 	}
 
 	if (status.startsWith('Newly available')) {
-		return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 232 61"><title>${status}</title><g><path d="M30.833 0 37 6.1l-6.167 6.1-6.166-6.1L30.833 0Zm12.334 12.2 6.166 6.1-6.166 6.1L37 18.3l6.167-6.1Zm49.333 0 6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Zm12.333 12.2L111 30.5l-6.167 6.1-6.166-6.1 6.166-6.1ZM92.5 36.6l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1ZM80.167 48.8l6.166 6.1-6.166 6.1L74 54.9l6.167-6.1ZM67.833 36.6 74 42.7l-6.167 6.1-6.166-6.1 6.166-6.1ZM18.5 12.2l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Z" fill="#A9C1EA"/><path d="m80.167 0 6.166 6.1-55.5 54.9L0 30.5l6.167-6.1 24.666 24.4L80.167 0Z" fill="#1671F1"/><text fill="#1671F1" style="font-family: monospace; font-size: 45px;" x="125" y="34">${year}</text></g></svg>`;
+		return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 232 62"><title>${status}</title><g><path d="M30.833 0 37 6.1l-6.167 6.1-6.166-6.1L30.833 0Zm12.334 12.2 6.166 6.1-6.166 6.1L37 18.3l6.167-6.1Zm49.333 0 6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Zm12.333 12.2L111 30.5l-6.167 6.1-6.166-6.1 6.166-6.1ZM92.5 36.6l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1ZM80.167 48.8l6.166 6.1-6.166 6.1L74 54.9l6.167-6.1ZM67.833 36.6 74 42.7l-6.167 6.1-6.166-6.1 6.166-6.1ZM18.5 12.2l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Z" fill="#A9C1EA"/><path d="m80.167 0 6.166 6.1-55.5 54.9L0 30.5l6.167-6.1 24.666 24.4L80.167 0Z" fill="#1671F1"/><text fill="#1671F1" style="font-family: monospace; font-size: 45px;" x="125" y="34">${year}</text></g></svg>`;
+	}
+
+	if (status === 'Widely available') {
+		return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 111 62"><title>${status}</title><g><path d="M30.833 0 37 6.1l-6.167 6.1-6.166-6.1L30.833 0Zm12.334 12.2 6.166 6.1-6.166 6.1L37 18.3l6.167-6.1Zm49.333 0 6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Zm12.333 12.2L111 30.5l-6.167 6.1-6.166-6.1 6.166-6.1ZM92.5 36.6l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1ZM80.167 48.8l6.166 6.1-6.166 6.1L74 54.9l6.167-6.1ZM67.833 36.6 74 42.7l-6.167 6.1-6.166-6.1 6.166-6.1ZM18.5 12.2l6.167 6.1-6.167 6.1-6.167-6.1 6.167-6.1Z" fill="#A9C1EA"/><path d="m80.167 0 6.166 6.1-55.5 54.9L0 30.5l6.167-6.1 24.666 24.4L80.167 0Z" fill="#1671F1"/></g></svg>`;
 	}
 
 	return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 232 62"><title>${status}</title><g><path d="m86.333 6.2-6.166 6.2 18.5 18.6-18.5 18.6-12.334-12.4-6.166 6.2 18.5 18.6L111 31 86.333 6.2ZM30.833 0 6.167 24.8l6.166 6.2 18.5-18.6 12.334 12.4 6.166-6.2L30.833 0Z" fill="#B9D8BF"/><path d="m80.167 0 6.166 6.2-55.5 55.8L0 31l6.167-6.2 24.666 24.8L80.167 0Z" fill="#148936"/><text fill="#148936" style="font-family: monospace; font-size: 45px;" x="125" y="34">${year}</text></g></svg>`;

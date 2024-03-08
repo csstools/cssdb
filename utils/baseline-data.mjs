@@ -1,6 +1,6 @@
 import { releaseDateForBrowserVersion } from "./release-date-for-browser-version.mjs";
 
-const engines = {
+const baselineEngines = {
 	blink: [
 		'and_chr',
 		'chrome',
@@ -16,18 +16,30 @@ const engines = {
 	]
 };
 
-const mobile_browsers = [
-	'and_chr',
-	'and_ff',
-	'ios_saf'
-];
+const engines = {
+	blink: [
+		'and_chr',
+		'chrome',
+		'edge',
+	],
+	gecko: [
+		'firefox',
+		'and_ff',
+	],
+	trident: [
+		'ie',
+	],
+	webkit: [
+		'safari',
+		'ios_saf'
+	]
+};
 
 export function baselineData(feature) {
 	let supportedEngines = 0;
 	let latestReleaseDate;
 
-
-	for (const engine in engines) {
+	for (const engine in baselineEngines) {
 		let engineIsSupported = false;
 		for (const browser of engines[engine]) {
 			const releaseDate = releaseDateForBrowserVersion(browser, feature.browser_support[browser]);
@@ -36,17 +48,24 @@ export function baselineData(feature) {
 			}
 
 			engineIsSupported = true;
-			if (
-				// release dates of mobile browsers are incorrect in caniuse
-				!mobile_browsers.includes(browser) &&
-				(!latestReleaseDate || releaseDate > latestReleaseDate)
-			) {
-				latestReleaseDate = releaseDate;
-			}
+			break;
 		}
 
 		if (engineIsSupported) {
 			supportedEngines++;
+		}
+	}
+
+	for (const engine in engines) {
+		for (const browser of engines[engine]) {
+			const releaseDate = releaseDateForBrowserVersion(browser, feature.browser_support[browser]);
+			if (!releaseDate) {
+				continue;
+			}
+
+			if (!latestReleaseDate || releaseDate > latestReleaseDate) {
+				latestReleaseDate = releaseDate;
+			}
 		}
 	}
 
