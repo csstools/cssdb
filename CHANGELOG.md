@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 7.11.2 (March 9, 2024)
+
+- Updated `@mdn/browser-compat-data` to `5.5.14` (patch)
+- Take `mixed_type_parameters` into account for most color features.
+
 ### 7.11.1 (February 26, 2024)
 
 - Updated `@mdn/browser-compat-data` to `5.5.11` (patch)

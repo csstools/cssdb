@@ -1184,23 +1184,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1216,23 +1215,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1615,23 +1613,22 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
     "browser_support": {
-      "and_chr": "111",
+      "and_chr": "116",
       "and_ff": "113",
-      "android": "111",
-      "chrome": "111",
-      "edge": "111",
+      "android": "116",
+      "chrome": "116",
+      "edge": "116",
       "firefox": "113",
-      "ios_saf": "15.4",
-      "op_mob": "75",
-      "opera": "97",
-      "safari": "15.4",
-      "samsung": "22.0"
+      "ios_saf": "16.2",
+      "op_mob": "78",
+      "opera": "102",
+      "safari": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
-    "interoperable_at": 1683590400,
+    "interoperable_at": 1692576000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1925,7 +1922,7 @@ export default [
   },
   {
     "id": "relative-color-syntax",
-    "title": "Relative Color Syntax",
+    "title": "Relative Colors",
     "description": "Modify existing colors using color functions",
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
