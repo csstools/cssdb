@@ -221,9 +221,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
     "stage": 2,
     "mdn_path": [
-      "css.types.color.hsl.mixed_type_parameters",
       "css.types.color.hsl.space_separated_parameters",
-      "css.types.color.rgb.mixed_type_parameters",
       "css.types.color.rgb.space_separated_parameters"
     ],
     "browser_support": {},
@@ -753,8 +751,7 @@
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "mdn_path": [
-      "css.types.color.hwb",
-      "css.types.color.hwb.mixed_type_parameters"
+      "css.types.color.hwb"
     ],
     "polyfills": [
       {
@@ -1416,7 +1413,7 @@
   },
   {
     "id": "relative-color-syntax",
-    "title": "Relative Color Syntax",
+    "title": "Relative Colors",
     "description": "Modify existing colors using color functions",
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
@@ -1425,9 +1422,7 @@
       "css.types.color.color.relative_syntax",
       "css.types.color.color.mixed_type_parameters",
       "css.types.color.hsl.relative_syntax",
-      "css.types.color.hsl.mixed_type_parameters",
       "css.types.color.hwb.relative_syntax",
-      "css.types.color.hwb.mixed_type_parameters",
       "css.types.color.lab.relative_syntax",
       "css.types.color.lab.mixed_type_parameters",
       "css.types.color.lch.relative_syntax",
@@ -1436,8 +1431,7 @@
       "css.types.color.oklab.mixed_type_parameters",
       "css.types.color.oklch.relative_syntax",
       "css.types.color.oklch.mixed_type_parameters",
-      "css.types.color.rgb.relative_syntax",
-      "css.types.color.rgb.mixed_type_parameters"
+      "css.types.color.rgb.relative_syntax"
     ],
     "docs": {},
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
