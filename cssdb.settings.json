@@ -1422,7 +1422,9 @@
       "css.types.color.color.relative_syntax",
       "css.types.color.color.mixed_type_parameters",
       "css.types.color.hsl.relative_syntax",
+      "css.types.color.hsl.mixed_type_parameters",
       "css.types.color.hwb.relative_syntax",
+      "css.types.color.hwb.mixed_type_parameters",
       "css.types.color.lab.relative_syntax",
       "css.types.color.lab.mixed_type_parameters",
       "css.types.color.lch.relative_syntax",
@@ -1431,7 +1433,8 @@
       "css.types.color.oklab.mixed_type_parameters",
       "css.types.color.oklch.relative_syntax",
       "css.types.color.oklch.mixed_type_parameters",
-      "css.types.color.rgb.relative_syntax"
+      "css.types.color.rgb.relative_syntax",
+      "css.types.color.rgb.mixed_type_parameters"
     ],
     "docs": {},
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
