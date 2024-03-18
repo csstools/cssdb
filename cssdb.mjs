@@ -1250,7 +1250,8 @@ export default [
       "and_ff": "120",
       "android": "123",
       "chrome": "123",
-      "firefox": "120"
+      "firefox": "120",
+      "safari": "preview"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
