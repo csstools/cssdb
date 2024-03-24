@@ -29,9 +29,9 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
-    "mdn_path": "css.selectors['any-link']",
+    "mdn_path": "css.selectors.any-link",
     "mdn_count_prefixed_as_supported": {
-      "css.selectors['any-link']": true
+      "css.selectors.any-link": true
     },
     "polyfills": [
       {
@@ -75,12 +75,12 @@
     },
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "mdn_path": [
-      "css.properties['break-after'].paged_context",
-      "css.properties['break-after'].paged_context.page",
-      "css.properties['break-before'].paged_context",
-      "css.properties['break-before'].paged_context.page",
-      "css.properties['break-inside'].paged_context",
-      "css.properties['break-inside'].paged_context['avoid-page']"
+      "css.properties.break-after.paged_context",
+      "css.properties.break-after.paged_context.page",
+      "css.properties.break-before.paged_context",
+      "css.properties.break-before.paged_context.page",
+      "css.properties.break-inside.paged_context",
+      "css.properties.break-inside.paged_context.avoid-page"
     ],
     "polyfills": [
       {
@@ -101,11 +101,11 @@
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "mdn_path": [
-      "css.types['calc-constant']",
-      "css.types['calc-constant'].NaN",
-      "css.types['calc-constant'].e",
-      "css.types['calc-constant'].infinity",
-      "css.types['calc-constant'].pi"
+      "css.types.calc-constant",
+      "css.types.calc-constant.NaN",
+      "css.types.calc-constant.e",
+      "css.types.calc-constant.infinity",
+      "css.types.calc-constant.pi"
     ]
   },
   {
@@ -115,11 +115,12 @@
     "specification": "https://www.w3.org/TR/css-cascade-5/#layering",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "cascade-layers",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
-    "mdn_path": "css['at-rules'].layer",
+    "mdn_path": "css.at-rules.layer",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -176,7 +177,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
-    "mdn_path": "css.properties['print-color-adjust']"
+    "mdn_path": "css.properties.print-color-adjust"
   },
   {
     "id": "color-contrast",
@@ -189,7 +190,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast"
     },
     "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
-    "mdn_path": "css.types.color['color-contrast']",
+    "mdn_path": "css.types.color.color-contrast",
     "polyfills": []
   },
   {
@@ -199,6 +200,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "color-function",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
     },
@@ -243,9 +245,10 @@
     "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
     "stage": 2,
     "mdn_path": [
-      "css.types.color['color-mix']"
+      "css.types.color.color-mix"
     ],
     "browser_support": {},
+    "web-feature": "color-mix",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
     },
@@ -278,10 +281,11 @@
     "description": "New container property and container at rule to make changes depending on the container's size",
     "specification": "https://www.w3.org/TR/css-contain-3/#container-queries",
     "stage": 2,
-    "mdn_path": "css['at-rules'].container",
+    "mdn_path": "css.at-rules.container",
     "browser_support": {},
+    "web-feature": "container-queries",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
     },
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "polyfills": [
@@ -313,11 +317,12 @@
     "specification": "https://www.w3.org/TR/css-variables-1/",
     "stage": 3,
     "browser_support": {},
+    "web-feature": "custom-properties",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
-    "mdn_path": "css.properties['custom-property'].var",
+    "mdn_path": "css.properties.custom-property.var",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -391,7 +396,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values"
       }
     ],
-    "mdn_path": "css.properties.display['multi-keyword_values']"
+    "mdn_path": "css.properties.display.multi-keyword_values"
   },
   {
     "id": "double-position-gradients",
@@ -400,11 +405,11 @@
     "specification": "https://www.w3.org/TR/css-images-4/#color-stop-syntax",
     "stage": 2,
     "mdn_path": [
-      "css.types.image.gradient['conic-gradient'].doubleposition",
-      "css.types.image.gradient['linear-gradient'].doubleposition",
-      "css.types.image.gradient['radial-gradient'].doubleposition",
-      "css.types.image.gradient['repeating-linear-gradient'].doubleposition",
-      "css.types.image.gradient['repeating-radial-gradient'].doubleposition"
+      "css.types.image.gradient.conic-gradient.doubleposition",
+      "css.types.image.gradient.linear-gradient.doubleposition",
+      "css.types.image.gradient.radial-gradient.doubleposition",
+      "css.types.image.gradient.repeating-linear-gradient.doubleposition",
+      "css.types.image.gradient.repeating-radial-gradient.doubleposition"
     ],
     "browser_support": {},
     "docs": {
@@ -491,10 +496,10 @@
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "mdn_path": [
-      "css.properties.float['inline-end']",
-      "css.properties.float['inline-start']",
-      "css.properties.clear['inline-end']",
-      "css.properties.clear['inline-start']"
+      "css.properties.float.inline-end",
+      "css.properties.float.inline-start",
+      "css.properties.clear.inline-end",
+      "css.properties.clear.inline-start"
     ],
     "polyfills": [
       {
@@ -510,6 +515,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#focus-visible-pseudo",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "focus-visible",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
     },
@@ -524,7 +530,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ],
-    "mdn_path": "css.selectors['focus-visible']"
+    "mdn_path": "css.selectors.focus-visible"
   },
   {
     "id": "focus-within-pseudo-class",
@@ -537,7 +543,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
     },
     "example": "form:focus-within {\n  background: rgb(0 128 0);\n}",
-    "mdn_path": "css.selectors['focus-within']",
+    "mdn_path": "css.selectors.focus-within",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -560,7 +566,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
     },
     "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
-    "mdn_path": "css['at-rules']['font-face'].src.format_keyword",
+    "mdn_path": "css.at-rules.font-face.src.format_keyword",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -580,14 +586,14 @@
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
     "mdn_path": [
-      "css.properties['font-variant-caps']",
-      "css.properties['font-variant-numeric']",
-      "css.properties['font-variant-alternates']",
-      "css.properties['font-variant-ligatures']",
-      "css.properties['font-variant-position']"
+      "css.properties.font-variant-caps",
+      "css.properties.font-variant-numeric",
+      "css.properties.font-variant-alternates",
+      "css.properties.font-variant-ligatures",
+      "css.properties.font-variant-position"
     ],
     "mdn_count_prefixed_as_supported": {
-      "css.properties['font-variant-ligatures']": true
+      "css.properties.font-variant-ligatures": true
     },
     "polyfills": [
       {
@@ -638,18 +644,18 @@
     "specification": "https://www.w3.org/TR/css-images-4/#color-interpolation",
     "stage": 2,
     "mdn_path": [
-      "css.types.image.gradient['conic-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['conic-gradient'].interpolation_color_space",
-      "css.types.image.gradient['linear-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['linear-gradient'].interpolation_color_space",
-      "css.types.image.gradient['radial-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['radial-gradient'].interpolation_color_space",
-      "css.types.image.gradient['repeating-conic-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['repeating-conic-gradient'].interpolation_color_space",
-      "css.types.image.gradient['repeating-linear-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['repeating-linear-gradient'].interpolation_color_space",
-      "css.types.image.gradient['repeating-radial-gradient'].hue_interpolation_method",
-      "css.types.image.gradient['repeating-radial-gradient'].interpolation_color_space"
+      "css.types.image.gradient.conic-gradient.hue_interpolation_method",
+      "css.types.image.gradient.conic-gradient.interpolation_color_space",
+      "css.types.image.gradient.linear-gradient.hue_interpolation_method",
+      "css.types.image.gradient.linear-gradient.interpolation_color_space",
+      "css.types.image.gradient.radial-gradient.hue_interpolation_method",
+      "css.types.image.gradient.radial-gradient.interpolation_color_space",
+      "css.types.image.gradient.repeating-conic-gradient.hue_interpolation_method",
+      "css.types.image.gradient.repeating-conic-gradient.interpolation_color_space",
+      "css.types.image.gradient.repeating-linear-gradient.hue_interpolation_method",
+      "css.types.image.gradient.repeating-linear-gradient.interpolation_color_space",
+      "css.types.image.gradient.repeating-radial-gradient.hue_interpolation_method",
+      "css.types.image.gradient.repeating-radial-gradient.interpolation_color_space"
     ],
     "browser_support": {},
     "docs": {
@@ -704,6 +710,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#has-pseudo",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "has",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
     },
@@ -767,6 +774,7 @@
     "specification": "https://www.w3.org/TR/css-values-4/#ic",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "ic",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
     },
@@ -790,9 +798,9 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
-    "mdn_path": "css.types.image['image-set']",
+    "mdn_path": "css.types.image.image-set",
     "mdn_count_prefixed_as_supported": {
-      "css.types.image['image-set']": true
+      "css.types.image.image-set": true
     },
     "polyfills": [
       {
@@ -811,7 +819,7 @@
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
     },
-    "mdn_path": "css.selectors['in-range']",
+    "mdn_path": "css.selectors.in-range",
     "example": "input:in-range {\n  background-color: rgb(0 255 0 / 0.25);\n}\ninput:out-of-range {\n  background-color: rgb(255 0 0 / 0.25);\n  border: 2px solid red;\n}"
   },
   {
@@ -821,6 +829,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#matches-pseudo",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "is",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
@@ -843,6 +852,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "lab",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
     },
@@ -867,6 +877,7 @@
     "specification": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "lab",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
     },
@@ -913,8 +924,8 @@
     },
     "example": "div {\n  overflow-block: scroll;\n}",
     "mdn_path": [
-      "css.properties['overflow-block']",
-      "css.properties['overflow-inline']"
+      "css.properties.overflow-block",
+      "css.properties.overflow-inline"
     ],
     "polyfills": [
       {
@@ -935,8 +946,8 @@
     },
     "example": "div {\n  overscroll-behavior-block: scroll;\n}",
     "mdn_path": [
-      "css.properties['overscroll-behavior-block']",
-      "css.properties['overscroll-behavior-inline']"
+      "css.properties.overscroll-behavior-block",
+      "css.properties.overscroll-behavior-inline"
     ],
     "polyfills": [
       {
@@ -957,61 +968,61 @@
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "mdn_path": [
-      "css.properties['block-size']",
-      "css.properties['border-block']",
-      "css.properties['border-block-color']",
-      "css.properties['border-block-end']",
-      "css.properties['border-block-end-color']",
-      "css.properties['border-block-end-style']",
-      "css.properties['border-block-end-width']",
-      "css.properties['border-block-start']",
-      "css.properties['border-block-start-color']",
-      "css.properties['border-block-start-style']",
-      "css.properties['border-block-start-width']",
-      "css.properties['border-block-style']",
-      "css.properties['border-block-width']",
-      "css.properties['border-end-end-radius']",
-      "css.properties['border-end-start-radius']",
-      "css.properties['border-inline']",
-      "css.properties['border-inline-color']",
-      "css.properties['border-inline-end']",
-      "css.properties['border-inline-end-color']",
-      "css.properties['border-inline-end-style']",
-      "css.properties['border-inline-end-width']",
-      "css.properties['border-inline-start']",
-      "css.properties['border-inline-start-color']",
-      "css.properties['border-inline-start-style']",
-      "css.properties['border-inline-start-width']",
-      "css.properties['border-inline-style']",
-      "css.properties['border-inline-width']",
-      "css.properties['border-start-end-radius']",
-      "css.properties['border-start-start-radius']",
-      "css.properties['inline-size']",
-      "css.properties['inset']",
-      "css.properties['inset-block']",
-      "css.properties['inset-block-end']",
-      "css.properties['inset-block-start']",
-      "css.properties['inset-inline']",
-      "css.properties['inset-inline-end']",
-      "css.properties['inset-inline-start']",
-      "css.properties['margin-block']",
-      "css.properties['margin-block-end']",
-      "css.properties['margin-block-start']",
-      "css.properties['margin-inline']",
-      "css.properties['margin-inline-end']",
-      "css.properties['margin-inline-start']",
-      "css.properties['max-block-size']",
-      "css.properties['max-inline-size']",
-      "css.properties['min-block-size']",
-      "css.properties['min-inline-size']",
-      "css.properties['padding-block']",
-      "css.properties['padding-block-end']",
-      "css.properties['padding-block-start']",
-      "css.properties['padding-inline']",
-      "css.properties['padding-inline-end']",
-      "css.properties['padding-inline-start']",
-      "css.properties['text-align'].start",
-      "css.properties['text-align'].end"
+      "css.properties.block-size",
+      "css.properties.border-block",
+      "css.properties.border-block-color",
+      "css.properties.border-block-end",
+      "css.properties.border-block-end-color",
+      "css.properties.border-block-end-style",
+      "css.properties.border-block-end-width",
+      "css.properties.border-block-start",
+      "css.properties.border-block-start-color",
+      "css.properties.border-block-start-style",
+      "css.properties.border-block-start-width",
+      "css.properties.border-block-style",
+      "css.properties.border-block-width",
+      "css.properties.border-end-end-radius",
+      "css.properties.border-end-start-radius",
+      "css.properties.border-inline",
+      "css.properties.border-inline-color",
+      "css.properties.border-inline-end",
+      "css.properties.border-inline-end-color",
+      "css.properties.border-inline-end-style",
+      "css.properties.border-inline-end-width",
+      "css.properties.border-inline-start",
+      "css.properties.border-inline-start-color",
+      "css.properties.border-inline-start-style",
+      "css.properties.border-inline-start-width",
+      "css.properties.border-inline-style",
+      "css.properties.border-inline-width",
+      "css.properties.border-start-end-radius",
+      "css.properties.border-start-start-radius",
+      "css.properties.inline-size",
+      "css.properties.inset",
+      "css.properties.inset-block",
+      "css.properties.inset-block-end",
+      "css.properties.inset-block-start",
+      "css.properties.inset-inline",
+      "css.properties.inset-inline-end",
+      "css.properties.inset-inline-start",
+      "css.properties.margin-block",
+      "css.properties.margin-block-end",
+      "css.properties.margin-block-start",
+      "css.properties.margin-inline",
+      "css.properties.margin-inline-end",
+      "css.properties.margin-inline-start",
+      "css.properties.max-block-size",
+      "css.properties.max-inline-size",
+      "css.properties.min-block-size",
+      "css.properties.min-inline-size",
+      "css.properties.padding-block",
+      "css.properties.padding-block-end",
+      "css.properties.padding-block-start",
+      "css.properties.padding-inline",
+      "css.properties.padding-inline-end",
+      "css.properties.padding-inline-start",
+      "css.properties.text-align.start",
+      "css.properties.text-align.end"
     ],
     "polyfills": [
       {
@@ -1032,8 +1043,8 @@
     },
     "example": "area {\n  resize: inline;\n}",
     "mdn_path": [
-      "css.properties['resize'].block",
-      "css.properties['resize'].inline"
+      "css.properties.resize.block",
+      "css.properties.resize.inline"
     ],
     "polyfills": [
       {
@@ -1049,6 +1060,7 @@
     "specification": "https://www.w3.org/TR/css-values-4/#viewport-relative-units",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "viewport-relative-unit-variants",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
@@ -1075,10 +1087,6 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "mdn_path": [
-      "css.selectors.is",
-      "css.selectors.is.forgiving_selector_list"
-    ],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1154,6 +1162,7 @@
     "specification": "https://www.w3.org/TR/mediaqueries-4/#range-context",
     "stage": 3,
     "browser_support": {},
+    "web-feature": "media-query-range-syntax",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
     },
@@ -1192,6 +1201,7 @@
     "specification": "https://www.w3.org/TR/css-nesting-1/",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "nesting",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
     },
@@ -1229,6 +1239,7 @@
     "description": "Functions that allow colors to be expressed in OKLab and OKLCH.",
     "specification": "https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch",
     "stage": 2,
+    "web-feature": "oklab",
     "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
@@ -1297,8 +1308,8 @@
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "mdn_path": [
-      "css.properties['overflow-wrap']",
-      "css.properties['overflow-wrap']['break-word']"
+      "css.properties.overflow-wrap",
+      "css.properties.overflow-wrap.break-word"
     ],
     "polyfills": [
       {
@@ -1318,7 +1329,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "mdn_path": "css.properties['overscroll-behavior']"
+    "mdn_path": "css.properties.overscroll-behavior"
   },
   {
     "id": "place-properties",
@@ -1332,9 +1343,9 @@
     },
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "mdn_path": [
-      "css.properties['place-content']",
-      "css.properties['place-content'].flex_context",
-      "css.properties['place-content'].grid_context"
+      "css.properties.place-content",
+      "css.properties.place-content.flex_context",
+      "css.properties.place-content.grid_context"
     ],
     "polyfills": [
       {
@@ -1354,7 +1365,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
-    "mdn_path": "css['at-rules'].media['prefers-color-scheme']",
+    "mdn_path": "css.at-rules.media.prefers-color-scheme",
     "polyfills": [
       {
         "type": "JavaScript Library",
@@ -1377,7 +1388,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
     },
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
-    "mdn_path": "css['at-rules'].media['prefers-reduced-motion']"
+    "mdn_path": "css.at-rules.media.prefers-reduced-motion"
   },
   {
     "id": "read-only-write-pseudo-class",
@@ -1386,6 +1397,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#rw-pseudos",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "read-write-pseudos",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
@@ -1418,6 +1430,7 @@
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "relative-color",
     "mdn_path": [
       "css.types.color.color.relative_syntax",
       "css.types.color.color.mixed_type_parameters",
@@ -1436,7 +1449,9 @@
       "css.types.color.rgb.relative_syntax",
       "css.types.color.rgb.mixed_type_parameters"
     ],
-    "docs": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
+    },
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "polyfills": [
       {
@@ -1531,7 +1546,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
     },
     "example": "body {\n  font-family: system-ui;\n}",
-    "mdn_path": "css.properties['font-family'].system-ui",
+    "mdn_path": "css.properties.font-family.system-ui",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1626,6 +1641,7 @@
     "specification": "https://www.w3.org/TR/selectors-4/#where-pseudo",
     "stage": 2,
     "browser_support": {},
+    "web-feature": "where",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
     },

@@ -167,7 +167,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "cascade-layers"
   },
   {
     "id": "case-insensitive-attributes",
@@ -297,7 +298,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "color-function"
   },
   {
     "id": "color-functional-notation",
@@ -362,7 +364,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "color-mix"
   },
   {
     "id": "color-mod-function",
@@ -400,7 +403,7 @@ export default [
       "samsung": "20.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
     },
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "interoperable_at": 1676332800,
@@ -410,7 +413,8 @@ export default [
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "container-queries"
   },
   {
     "id": "custom-media-queries",
@@ -459,7 +463,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-properties"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "custom-properties"
   },
   {
     "id": "custom-property-sets",
@@ -724,7 +729,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-focus-visible"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "focus-visible"
   },
   {
     "id": "focus-within-pseudo-class",
@@ -984,7 +990,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "has"
   },
   {
     "id": "hexadecimal-alpha-notation",
@@ -1082,7 +1089,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "ic"
   },
   {
     "id": "image-set-function",
@@ -1175,7 +1183,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-is-pseudo-class"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "is"
   },
   {
     "id": "lab-function",
@@ -1206,7 +1215,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "lab"
   },
   {
     "id": "lch-function",
@@ -1237,7 +1247,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-lab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "lab"
   },
   {
     "id": "light-dark-function",
@@ -1414,7 +1425,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-viewport-units"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "viewport-relative-unit-variants"
   },
   {
     "id": "matches-pseudo-class",
@@ -1422,32 +1434,18 @@ export default [
     "description": "A pseudo-class for matching elements in a selector list",
     "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
     "stage": -1,
-    "browser_support": {
-      "and_chr": "88",
-      "and_ff": "82",
-      "android": "88",
-      "chrome": "88",
-      "edge": "88",
-      "firefox": "82",
-      "ios_saf": "14",
-      "oculus": "14.0",
-      "op_mob": "63",
-      "opera": "74",
-      "safari": "14",
-      "samsung": "15.0"
-    },
+    "browser_support": {},
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
     },
     "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "interoperable_at": 1611187200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-selector-matches"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 0
   },
   {
     "id": "media-queries-aspect-ratio-number-values",
@@ -1509,7 +1507,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-media-minmax"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "media-query-range-syntax"
   },
   {
     "id": "nested-calc",
@@ -1573,7 +1572,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "nesting"
   },
   {
     "id": "not-pseudo-class",
@@ -1636,7 +1636,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-oklab-function"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "oklab"
   },
   {
     "id": "opacity-percentage",
@@ -1885,7 +1886,8 @@ export default [
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
     "interoperable_at": 1593475200,
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "read-write-pseudos"
   },
   {
     "id": "rebeccapurple-color",
@@ -1928,7 +1930,9 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {},
-    "docs": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
+    },
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "polyfills": [
       {
@@ -1936,7 +1940,8 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 0,
+    "web-feature": "relative-color"
   },
   {
     "id": "scope-pseudo-class",
@@ -2192,6 +2197,7 @@ export default [
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
     "interoperable_at": 1611187200,
-    "vendors_implementations": 3
+    "vendors_implementations": 3,
+    "web-feature": "where"
   }
 ]
