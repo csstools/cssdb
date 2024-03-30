@@ -1,5 +1,16 @@
 # Changes to cssdb
 
+### 8.0.0 (March 30, 2024)
+
+- Added `contrast-color-function`
+- Added `web-feature` identifiers for some features
+- Changed [license to `MIT-0` to align with `postcss-preset-env`](https://preset-env.cssdb.org/blog/license-change/)
+- Removed `color-contrast`
+- Removed `color-mod-function`
+- Removed `custom-property-sets`
+- Removed `gray-function`
+- Removed `matches-pseudo-class`
+
 ### 7.11.2 (March 9, 2024)
 
 - Updated `@mdn/browser-compat-data` to `5.5.14` (patch)

@@ -1,12 +1,10 @@
 import fs from 'fs/promises';
-const cssdbJsonURL = new URL('../cssdb.json', import.meta.url);
-
-const features = await fs.readFile(cssdbJsonURL, 'utf8').then(JSON.parse);
+import cssdb from 'cssdb';
 
 let hasBadLinks = false;
 let hasMissingDocs = false;
 
-for (const feature of features) {
+for (const feature of cssdb) {
 	if (!feature.docs && feature.vendors_implementations > 0) {
 		console.log(`No docs for "${feature.id}" with ${feature.vendors_implementations} vendors implementing`);
 		hasMissingDocs = true;
