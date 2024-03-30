@@ -255,20 +255,6 @@
     "vendors_implementations": 2
   },
   {
-    "id": "color-contrast",
-    "title": "`color-contrast()` Function",
-    "description": "A function for choosing the color that contrasts the most.",
-    "specification": "https://drafts.csswg.org/css-color-6/#colorcontrast",
-    "stage": 1,
-    "browser_support": {},
-    "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast"
-    },
-    "example": "p {\n  color: color-contrast(wheat vs tan, sienna, var(--myAccent), #d2691e);\n}",
-    "polyfills": [],
-    "vendors_implementations": 0
-  },
-  {
     "id": "color-function",
     "title": "`color()` Function",
     "description": "A function that allows a color to be specified in a particular, specified color space rather than the implicit sRGB color space that most of the other color functions operate in.",
@@ -368,22 +354,6 @@
     "web-feature": "color-mix"
   },
   {
-    "id": "color-mod-function",
-    "title": "`color-mod()` Function",
-    "description": "A function for modifying colors",
-    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-color-mod",
-    "stage": -1,
-    "browser_support": {},
-    "example": "p {\n  color: color-mod(black alpha(50%));\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/csstools/postcss-color-mod-function"
-      }
-    ],
-    "vendors_implementations": 0
-  },
-  {
     "id": "container-queries",
     "title": "Container Queries",
     "description": "New container property and container at rule to make changes depending on the container's size",
@@ -415,6 +385,18 @@
     ],
     "vendors_implementations": 3,
     "web-feature": "container-queries"
+  },
+  {
+    "id": "contrast-color-function",
+    "title": "`contrast-color()` Function",
+    "description": "Dynamically specifying a text color with adequate contrast.",
+    "specification": "https://drafts.csswg.org/css-color-5/#contrast-color",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: contrast-color( purple max );\n}",
+    "polyfills": [],
+    "vendors_implementations": 0
   },
   {
     "id": "custom-media-queries",
@@ -465,22 +447,6 @@
     ],
     "vendors_implementations": 3,
     "web-feature": "custom-properties"
-  },
-  {
-    "id": "custom-property-sets",
-    "title": "Custom Property Sets",
-    "description": "A syntax for storing properties in named variables, referenceable in other style rules",
-    "specification": "https://tabatkins.github.io/specs/css-apply-rule/",
-    "stage": -1,
-    "browser_support": {},
-    "example": "img {\n  --some-length-styles: {\n    height: 32px;\n    width: 32px;\n  };\n\n  @apply --some-length-styles;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/pascalduez/postcss-apply"
-      }
-    ],
-    "vendors_implementations": 0
   },
   {
     "id": "custom-selectors",
@@ -906,22 +872,6 @@
       }
     ],
     "vendors_implementations": 2
-  },
-  {
-    "id": "gray-function",
-    "title": "`gray()` Function",
-    "description": "A function for specifying fully desaturated colors",
-    "specification": "https://www.w3.org/TR/css-color-4/#funcdef-gray",
-    "stage": -1,
-    "browser_support": {},
-    "example": "p {\n  color: gray(50);\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-color-gray"
-      }
-    ],
-    "vendors_implementations": 0
   },
   {
     "id": "grid-layout",
@@ -1427,25 +1377,6 @@
     ],
     "vendors_implementations": 3,
     "web-feature": "viewport-relative-unit-variants"
-  },
-  {
-    "id": "matches-pseudo-class",
-    "title": "`:matches()` Matches-Any Pseudo-Class",
-    "description": "A pseudo-class for matching elements in a selector list",
-    "specification": "https://www.w3.org/TR/selectors-4/#selectordef-matches",
-    "stage": -1,
-    "browser_support": {},
-    "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
-    },
-    "example": "p:matches(:first-child, .special) {\n  margin-top: 1em;\n}",
-    "polyfills": [
-      {
-        "type": "PostCSS Plugin",
-        "link": "https://github.com/postcss/postcss-selector-matches"
-      }
-    ],
-    "vendors_implementations": 0
   },
   {
     "id": "media-queries-aspect-ratio-number-values",

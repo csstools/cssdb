@@ -1,9 +1,7 @@
 import fs from 'fs/promises';
-const cssdbJsonURL = new URL('../cssdb.json', import.meta.url);
+import cssdb from 'cssdb';
 const badgesDirURL = new URL('../public/images/badges/', import.meta.url);
 const badgesDirURLOld = new URL('../public/badge/', import.meta.url);
-
-const features = await fs.readFile(cssdbJsonURL, 'utf8').then(JSON.parse);
 
 const colors = [
 	'414141',
@@ -24,7 +22,7 @@ await fs.mkdir(badgesDirURL);
 await fs.rm(badgesDirURLOld, { force: true, recursive: true });
 await fs.mkdir(badgesDirURLOld);
 
-await Promise.all(features.map((feature) => {
+await Promise.all(cssdb.map((feature) => {
 	const shieldStatus = feature.stage === -1 ? 'Rejected' : `Stage ${feature.stage}`;
 	const shieldColor = colors[feature.stage] || 'd02c2c';
 	const shield = renderBadgeSVG('cssdb', shieldStatus, shieldColor)

@@ -1,11 +1,10 @@
 import fs from 'fs/promises';
+import cssdb from 'cssdb';
 import { html } from '../util/html.mjs';
 import { renderFeature } from './feature.mjs';
 
-const cssdbURL = new URL('../../cssdb.json', import.meta.url);
 const cssdbSettingsURL = new URL('../../cssdb.settings.json', import.meta.url);
 
-const cssdb = await fs.readFile(cssdbURL, 'utf8').then(JSON.parse);
 const cssdbSettings = await fs.readFile(cssdbSettingsURL, 'utf8').then(JSON.parse);
 
 export function renderFeatures() {
