@@ -4,10 +4,13 @@ import fs from 'fs/promises';
 import supportedBrowsersFromMdn from '../utils/supported-browsers-from-mdn.mjs';
 import { baselineData } from '../utils/baseline-data.mjs';
 import applyBrowserOverrides from '../utils/apply-browser-overrides.mjs';
+import { applyWebFeaturesData } from '../utils/web-features-data.mjs';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 const settingsPath = path.resolve(__dirname, '../cssdb.settings.json');
 const cssdb = await fs.readFile(settingsPath, 'utf8').then(JSON.parse);
+
+cssdb.forEach(applyWebFeaturesData);
 
 cssdb.forEach(feature => {
 	feature.browser_support = {};
