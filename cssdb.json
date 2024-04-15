@@ -1212,7 +1212,8 @@
       "android": "123",
       "chrome": "123",
       "firefox": "120",
-      "safari": "preview"
+      "ios_saf": "17.5",
+      "safari": "17.5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
