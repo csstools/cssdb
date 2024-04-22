@@ -1211,6 +1211,7 @@ export default [
       "and_ff": "120",
       "android": "123",
       "chrome": "123",
+      "edge": "123",
       "firefox": "120",
       "ios_saf": "17.5",
       "safari": "17.5"
