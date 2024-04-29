@@ -125,16 +125,24 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
     "stage": 2,
     "browser_support": {
+      "and_chr": "110",
       "and_ff": "114",
+      "android": "110",
+      "chrome": "110",
+      "edge": "110",
       "firefox": "114",
       "ios_saf": "16",
-      "safari": "16"
+      "op_mob": "74",
+      "opera": "96",
+      "safari": "16",
+      "samsung": "21.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
-    "vendors_implementations": 2
+    "interoperable_at": 1686009600,
+    "vendors_implementations": 3
   },
   {
     "id": "cascade-layers",
@@ -1214,6 +1222,7 @@ export default [
       "edge": "123",
       "firefox": "120",
       "ios_saf": "17.5",
+      "opera": "109",
       "safari": "17.5"
     },
     "docs": {
