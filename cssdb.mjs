@@ -488,7 +488,8 @@ export default [
       "ios_saf": "16.4",
       "op_mob": "80",
       "opera": "106",
-      "safari": "16.4"
+      "safari": "16.4",
+      "samsung": "25.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -603,7 +604,8 @@ export default [
       "ios_saf": "15.4",
       "op_mob": "80",
       "opera": "106",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "25.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
@@ -653,7 +655,8 @@ export default [
       "ios_saf": "15",
       "op_mob": "79",
       "opera": "104",
-      "safari": "15"
+      "safari": "15",
+      "samsung": "25.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
@@ -788,7 +791,8 @@ export default [
       "ios_saf": "9.3",
       "op_mob": "78",
       "opera": "103",
-      "safari": "9.1"
+      "safari": "9.1",
+      "samsung": "24.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
@@ -1008,7 +1012,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
-    "interoperable_at": 1651190400,
+    "interoperable_at": 1651104000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1058,11 +1062,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "25",
-      "and_ff": "88",
+      "and_ff": "89",
       "android": "4.4",
       "chrome": "21",
       "edge": "79",
-      "firefox": "88",
+      "firefox": "89",
       "ios_saf": "14",
       "oculus": "5.0",
       "op_mob": "14",
@@ -1074,7 +1078,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
-    "interoperable_at": 1618790400,
+    "interoperable_at": 1622505600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1160,7 +1164,8 @@ export default [
       "ios_saf": "16.2",
       "op_mob": "78",
       "opera": "102",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "24.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
@@ -1192,7 +1197,8 @@ export default [
       "ios_saf": "16.2",
       "op_mob": "78",
       "opera": "102",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "24.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
@@ -1341,7 +1347,8 @@ export default [
       "ios_saf": "16",
       "op_mob": "79",
       "opera": "104",
-      "safari": "16"
+      "safari": "16",
+      "samsung": "25.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
@@ -1379,7 +1386,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
-    "interoperable_at": 1670284800,
+    "interoperable_at": 1670198400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1387,7 +1394,7 @@ export default [
       }
     ],
     "vendors_implementations": 3,
-    "web-feature": "viewport-relative-unit-variants"
+    "web-feature": "viewport-unit-variants"
   },
   {
     "id": "media-queries-aspect-ratio-number-values",
@@ -1501,7 +1508,8 @@ export default [
       "ios_saf": "17.2",
       "op_mob": "80",
       "opera": "106",
-      "safari": "17.2"
+      "safari": "17.2",
+      "samsung": "25.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
@@ -1565,7 +1573,8 @@ export default [
       "ios_saf": "16.2",
       "op_mob": "78",
       "opera": "102",
-      "safari": "16.2"
+      "safari": "16.2",
+      "samsung": "24.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
@@ -1959,7 +1968,11 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#round-func",
     "stage": 2,
     "browser_support": {
+      "and_chr": "125",
       "and_ff": "118",
+      "android": "125",
+      "chrome": "125",
+      "edge": "125",
       "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
@@ -1968,13 +1981,14 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
     },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
+    "interoperable_at": 1715817600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "system-ui-font-family",

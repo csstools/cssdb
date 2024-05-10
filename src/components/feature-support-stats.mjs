@@ -25,6 +25,8 @@ const browser_order = [
 	"ios_saf",
 	"samsung",
 	"android",
+	// Headset
+	"oculus",
 ];
 
 export function renderFeatureSupportStats(title, feature) {
