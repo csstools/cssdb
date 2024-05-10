@@ -19,16 +19,16 @@ cssdb.forEach(feature => {
 		browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
 	}
 
+	browser_support = applyBrowserOverrides(
+		feature.id,
+		browser_support,
+		feature.browser_support_overrides
+	);
+
 	const browsers = Object.keys(browser_support).sort();
 	browsers.forEach(browser => {
 		feature.browser_support[browser] = browser_support[browser];
 	});
-
-	feature.browser_support = applyBrowserOverrides(
-		feature.id,
-		feature.browser_support,
-		feature.browser_support_overrides
-	);
 
 	const [vendors_implementations, interoperable_at] = baselineData(feature);
 	feature.vendors_implementations = vendors_implementations;

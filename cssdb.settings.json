@@ -755,6 +755,58 @@
     "mdn_count_prefixed_as_supported": {
       "css.types.image.image-set": true
     },
+    "browser_support_overrides": {
+      "and_chr": {
+        "from": "113",
+        "to": "25",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "android": {
+        "from": "113",
+        "to": "4.4",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "chrome": {
+        "from": "113",
+        "to": "21",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "edge": {
+        "from": "113",
+        "to": "79",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "ios_saf": {
+        "from": "17",
+        "to": "14",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "oculus": {
+        "from": null,
+        "to": "5.0",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "op_mob": {
+        "from": "76",
+        "to": "14",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "opera": {
+        "from": "99",
+        "to": "15",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "safari": {
+        "from": "17",
+        "to": "14",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      },
+      "samsung": {
+        "from": "23.0",
+        "to": "1.5",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
+      }
+    },
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1013,7 +1065,7 @@
     "specification": "https://www.w3.org/TR/css-values-4/#viewport-relative-units",
     "stage": 2,
     "browser_support": {},
-    "web-feature": "viewport-relative-unit-variants",
+    "web-feature": "viewport-unit-variants",
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
     },
