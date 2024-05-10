@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.0.1 (May 10, 2024)
+
+- Updated `@mdn/browser-compat-data` to `5.5.26` (patch)
+
 ### 8.0.0 (March 30, 2024)
 
 - Added `contrast-color-function`
