@@ -1228,6 +1228,7 @@ export default [
       "edge": "123",
       "firefox": "120",
       "ios_saf": "17.5",
+      "op_mob": "82",
       "opera": "109",
       "safari": "17.5"
     },
@@ -1975,6 +1976,7 @@ export default [
       "edge": "125",
       "firefox": "118",
       "ios_saf": "15.4",
+      "opera": "111",
       "safari": "15.4"
     },
     "docs": {
