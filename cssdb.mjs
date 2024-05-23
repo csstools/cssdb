@@ -1236,13 +1236,14 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
     },
     "example": "body {\n  color: light-dark(cyan, magenta);\n}",
+    "interoperable_at": 1715558400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-light-dark-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "logical-overflow",
