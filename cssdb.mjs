@@ -1984,7 +1984,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
     },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
-    "interoperable_at": 1715817600,
+    "interoperable_at": 1715904000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
