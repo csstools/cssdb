@@ -864,9 +864,11 @@
     "stage": 2,
     "browser_support": {
       "and_chr": "111",
+      "and_ff": "127",
       "android": "111",
       "chrome": "111",
       "edge": "111",
+      "firefox": "127",
       "ios_saf": "16.2",
       "op_mob": "75",
       "opera": "97",
@@ -877,13 +879,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
+    "interoperable_at": 1718064000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gradients-interpolation-method"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "grid-layout",
@@ -1882,7 +1885,9 @@
     "description": "Modify existing colors using color functions",
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "firefox": "preview"
+    },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
     },
