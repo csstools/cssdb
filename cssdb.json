@@ -1886,7 +1886,8 @@
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {
-      "firefox": "preview"
+      "and_ff": "128",
+      "firefox": "128"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
@@ -1898,7 +1899,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 0,
+    "vendors_implementations": 1,
     "web-feature": "relative-color"
   },
   {
