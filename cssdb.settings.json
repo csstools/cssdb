@@ -97,7 +97,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "mdn_path": [

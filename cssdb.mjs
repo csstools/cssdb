@@ -138,7 +138,7 @@ export default [
       "samsung": "21.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "interoperable_at": 1686009600,
