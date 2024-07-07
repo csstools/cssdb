@@ -97,7 +97,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "mdn_path": [
@@ -265,6 +265,25 @@
         "link": "https://www.npmjs.com/package/container-query-polyfill"
       }
     ]
+  },
+  {
+    "id": "content-alt-text",
+    "title": "Alt text for `content`",
+    "description": "Syntax that allows setting alternative text",
+    "specification": "https://drafts.csswg.org/css-content/#content-property",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content#adding_an_image_with_alternative_text"
+    },
+    "example": ".element {\n  content: url(tree.jpg) / \"image with a tree\";\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-content-alt-text"
+      }
+    ],
+    "mdn_path": "css.properties.content.alt_text"
   },
   {
     "id": "contrast-color-function",

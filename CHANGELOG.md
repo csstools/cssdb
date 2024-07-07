@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 8.1.0 (Jul 7, 2024)
+
+- Added `content-alt-text`
+- Updated `@mdn/browser-compat-data` to `5.5.37` (patch)
+
 ### 8.0.2 (May 23, 2024)
 
 - Updated `@mdn/browser-compat-data` to `5.5.29` (patch)

@@ -138,7 +138,7 @@
       "samsung": "21.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-constant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "interoperable_at": 1686009600,
@@ -393,6 +393,39 @@
     ],
     "vendors_implementations": 3,
     "web-feature": "container-queries"
+  },
+  {
+    "id": "content-alt-text",
+    "title": "Alt text for `content`",
+    "description": "Syntax that allows setting alternative text",
+    "specification": "https://drafts.csswg.org/css-content/#content-property",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "77",
+      "and_ff": "128",
+      "android": "77",
+      "chrome": "77",
+      "edge": "79",
+      "firefox": "128",
+      "ios_saf": "17.4",
+      "oculus": "7.0",
+      "op_mob": "55",
+      "opera": "64",
+      "safari": "17.4",
+      "samsung": "12.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content#adding_an_image_with_alternative_text"
+    },
+    "example": ".element {\n  content: url(tree.jpg) / \"image with a tree\";\n}",
+    "interoperable_at": 1720483200,
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-content-alt-text"
+      }
+    ],
+    "vendors_implementations": 3
   },
   {
     "id": "contrast-color-function",
