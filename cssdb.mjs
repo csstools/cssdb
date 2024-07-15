@@ -2016,6 +2016,7 @@ export default [
       "edge": "125",
       "firefox": "118",
       "ios_saf": "15.4",
+      "op_mob": "83",
       "opera": "111",
       "safari": "15.4"
     },
