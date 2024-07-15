@@ -1,4 +1,4 @@
-import webFeatures from 'web-features';
+import { features } from 'web-features';
 
 export function applyWebFeaturesData(feature) {
 	const webFeatureName = feature['web-feature'];
@@ -6,7 +6,7 @@ export function applyWebFeaturesData(feature) {
 		return;
 	}
 
-	const webFeature = webFeatures[webFeatureName];
+	const webFeature = features[webFeatureName];
 	if (!webFeature) {
 		throw new Error(`Unknown web feature: ${webFeatureName}`);
 	}
