@@ -1,4 +1,6 @@
+import { BrowserslistToMDN } from "./mdn-to-browserslist.mjs";
 import { releaseDateForBrowserVersion } from "./release-date-for-browser-version.mjs";
+import { scanForNextBrowserVersionWithReleaseDate } from "./scan-for-next-browser-version.mjs";
 
 const baselineEngines = {
 	blink: [
@@ -40,25 +42,25 @@ export function baselineData(feature) {
 	let latestReleaseDate;
 
 	for (const engine in baselineEngines) {
-		let engineIsSupported = false;
-		for (const browser of engines[engine]) {
-			const releaseDate = releaseDateForBrowserVersion(browser, feature.browser_support[browser]);
+		let supportedBrowsers = 0;
+		const browsersInEngine = engines[engine];
+		for (const browser of browsersInEngine) {
+			const releaseDate = scanForNextBrowserVersionWithReleaseDate(BrowserslistToMDN(browser), feature.browser_support[browser], releaseDateForBrowserVersion);
 			if (!releaseDate) {
 				continue;
 			}
 
-			engineIsSupported = true;
-			break;
+			supportedBrowsers++;
 		}
 
-		if (engineIsSupported) {
+		if (supportedBrowsers === browsersInEngine.length) {
 			supportedEngines++;
 		}
 	}
 
 	for (const engine in engines) {
 		for (const browser of engines[engine]) {
-			const releaseDate = releaseDateForBrowserVersion(browser, feature.browser_support[browser]);
+			const releaseDate = scanForNextBrowserVersionWithReleaseDate(BrowserslistToMDN(browser), feature.browser_support[browser], releaseDateForBrowserVersion);
 			if (!releaseDate) {
 				continue;
 			}

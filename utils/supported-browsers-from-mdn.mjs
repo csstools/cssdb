@@ -1,15 +1,7 @@
 import bcd from '@mdn/browser-compat-data' assert { type: 'json' };
 import _get from 'lodash.get';
 import semver from 'semver';
-
-const MDNToBrowserlist = {
-	chrome_android: 'and_chr',
-	safari_ios: 'ios_saf',
-	firefox_android: 'and_ff',
-	opera_android: 'op_mob',
-	samsunginternet_android: 'samsung',
-	webview_android: 'android',
-};
+import { MDNToBrowserlist } from './mdn-to-browserslist.mjs';
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
 	const mdnFeature = _get(bcd, mdnConfigPath);
@@ -90,7 +82,7 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				version = version.substring(1);
 			}
 
-			const browser = MDNToBrowserlist[browserKey] || browserKey;
+			const browser = MDNToBrowserlist(browserKey);
 			result[browser] = version;
 		}
 	});
