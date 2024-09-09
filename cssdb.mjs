@@ -1266,7 +1266,8 @@ export default [
       "ios_saf": "17.5",
       "op_mob": "82",
       "opera": "109",
-      "safari": "17.5"
+      "safari": "17.5",
+      "samsung": "27.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
@@ -2015,7 +2016,8 @@ export default [
       "ios_saf": "15.4",
       "op_mob": "83",
       "opera": "111",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "27.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
