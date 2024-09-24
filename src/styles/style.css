@@ -551,6 +551,14 @@ img {
 	}
 }
 
+.cssdb-browser--webview_ios::before {
+	content: url("/images/browsers/webview_ios.svg");
+}
+
+.cssdb-browser--webview_android::before {
+	content: url("/images/browsers/webview_android.svg");
+}
+
 /* Process
 /* ========================================================================== */
 

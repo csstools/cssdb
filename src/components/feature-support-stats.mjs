@@ -6,7 +6,9 @@ const browsers = {
 	'and_uc': 'UC Mobile for Android',
 	'and_chr': 'Chrome for Android',
 	'and_ff': 'Firefox for Android',
-	'and_qq': 'QQ Browserr',
+	'and_qq': 'QQ Browser',
+	'webview_ios': 'WKWebview on iOS',
+	'webview_android': 'Android WebView'
 };
 
 // Similar order as MDN
@@ -27,6 +29,9 @@ const browser_order = [
 	"android",
 	// Headset
 	"oculus",
+	// Webviews
+	'webview_android',
+	'webview_ios',
 ];
 
 export function renderFeatureSupportStats(title, feature) {
