@@ -17,7 +17,8 @@
       "op_mob": "24",
       "opera": "24",
       "safari": "9.1",
-      "samsung": "3.0"
+      "samsung": "3.0",
+      "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
@@ -50,7 +51,8 @@
       "op_mob": "14",
       "opera": "15",
       "safari": "3",
-      "samsung": "1.0"
+      "samsung": "1.0",
+      "webview_ios": "1"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
@@ -135,7 +137,8 @@
       "op_mob": "74",
       "opera": "96",
       "safari": "16",
-      "samsung": "21.0"
+      "samsung": "21.0",
+      "webview_ios": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
@@ -162,7 +165,8 @@
       "op_mob": "68",
       "opera": "85",
       "safari": "15.4",
-      "samsung": "18.0"
+      "samsung": "18.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -196,7 +200,8 @@
       "op_mob": "36",
       "opera": "36",
       "safari": "9",
-      "samsung": "5.0"
+      "samsung": "5.0",
+      "webview_ios": "9"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
@@ -229,7 +234,8 @@
       "op_mob": "57",
       "opera": "66",
       "safari": "13.1",
-      "samsung": "12.0"
+      "samsung": "12.0",
+      "webview_ios": "13.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
@@ -254,7 +260,8 @@
       "and_ff": "97",
       "firefox": "97",
       "ios_saf": "15.4",
-      "safari": "15.4"
+      "safari": "15.4",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
@@ -279,7 +286,8 @@
       "op_mob": "75",
       "opera": "97",
       "safari": "15",
-      "samsung": "22.0"
+      "samsung": "22.0",
+      "webview_ios": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
@@ -313,7 +321,8 @@
       "op_mob": "47",
       "opera": "52",
       "safari": "12.1",
-      "samsung": "9.0"
+      "samsung": "9.0",
+      "webview_ios": "12.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
@@ -378,7 +387,8 @@
       "op_mob": "72",
       "opera": "91",
       "safari": "16",
-      "samsung": "20.0"
+      "samsung": "20.0",
+      "webview_ios": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
@@ -412,7 +422,8 @@
       "op_mob": "55",
       "opera": "64",
       "safari": "17.4",
-      "samsung": "12.0"
+      "samsung": "12.0",
+      "webview_ios": "17.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content#adding_an_image_with_alternative_text"
@@ -473,7 +484,8 @@
       "op_mob": "36",
       "opera": "36",
       "safari": "9.1",
-      "samsung": "5.0"
+      "samsung": "5.0",
+      "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
@@ -522,7 +534,8 @@
       "op_mob": "80",
       "opera": "106",
       "safari": "16.4",
-      "samsung": "25.0"
+      "samsung": "25.0",
+      "webview_ios": "16.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
@@ -554,7 +567,8 @@
       "op_mob": "77",
       "opera": "101",
       "safari": "15",
-      "samsung": "23.0"
+      "samsung": "23.0",
+      "webview_ios": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
@@ -587,7 +601,8 @@
       "op_mob": "51",
       "opera": "60",
       "safari": "12.1",
-      "samsung": "11.0"
+      "samsung": "11.0",
+      "webview_ios": "12.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
@@ -638,7 +653,8 @@
       "op_mob": "80",
       "opera": "106",
       "safari": "15.4",
-      "samsung": "25.0"
+      "samsung": "25.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
@@ -689,7 +705,8 @@
       "op_mob": "79",
       "opera": "104",
       "safari": "15",
-      "samsung": "25.0"
+      "samsung": "25.0",
+      "webview_ios": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
@@ -722,7 +739,8 @@
       "op_mob": "61",
       "opera": "72",
       "safari": "15.4",
-      "samsung": "14.0"
+      "samsung": "14.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
@@ -760,7 +778,8 @@
       "op_mob": "44",
       "opera": "47",
       "safari": "10.1",
-      "samsung": "8.0"
+      "samsung": "8.0",
+      "webview_ios": "10.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
@@ -794,7 +813,8 @@
       "op_mob": "73",
       "opera": "94",
       "safari": "4",
-      "samsung": "21.0"
+      "samsung": "21.0",
+      "webview_ios": "5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
@@ -825,7 +845,8 @@
       "op_mob": "78",
       "opera": "103",
       "safari": "9.1",
-      "samsung": "24.0"
+      "samsung": "24.0",
+      "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
@@ -874,7 +895,8 @@
       "op_mob": "47",
       "opera": "53",
       "safari": "12",
-      "samsung": "9.0"
+      "samsung": "9.0",
+      "webview_ios": "12"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
@@ -906,7 +928,8 @@
       "op_mob": "75",
       "opera": "97",
       "safari": "16.2",
-      "samsung": "22.0"
+      "samsung": "22.0",
+      "webview_ios": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
@@ -939,7 +962,8 @@
       "op_mob": "43",
       "opera": "44",
       "safari": "10.1",
-      "samsung": "6.0"
+      "samsung": "6.0",
+      "webview_ios": "10.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
@@ -971,7 +995,8 @@
       "op_mob": "72",
       "opera": "91",
       "safari": "15.4",
-      "samsung": "20.0"
+      "samsung": "20.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
@@ -1009,7 +1034,8 @@
       "op_mob": "47",
       "opera": "49",
       "safari": "10",
-      "samsung": "8.0"
+      "samsung": "8.0",
+      "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
@@ -1042,7 +1068,8 @@
       "op_mob": "70",
       "opera": "87",
       "safari": "15",
-      "samsung": "19.0"
+      "samsung": "19.0",
+      "webview_ios": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
@@ -1074,7 +1101,8 @@
       "op_mob": "72",
       "opera": "92",
       "safari": "15.4",
-      "samsung": "20.0"
+      "samsung": "20.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
@@ -1108,7 +1136,8 @@
       "op_mob": "14",
       "opera": "15",
       "safari": "14",
-      "samsung": "1.5"
+      "samsung": "1.5",
+      "webview_ios": "17"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
@@ -1141,7 +1170,8 @@
       "op_mob": "11",
       "opera": "11",
       "safari": "5.1",
-      "samsung": "1.0"
+      "samsung": "1.0",
+      "webview_ios": "5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
@@ -1168,7 +1198,8 @@
       "op_mob": "63",
       "opera": "74",
       "safari": "14",
-      "samsung": "15.0"
+      "samsung": "15.0",
+      "webview_ios": "14"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
@@ -1201,7 +1232,8 @@
       "op_mob": "78",
       "opera": "102",
       "safari": "16.2",
-      "samsung": "24.0"
+      "samsung": "24.0",
+      "webview_ios": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
@@ -1234,7 +1266,8 @@
       "op_mob": "78",
       "opera": "102",
       "safari": "16.2",
-      "samsung": "24.0"
+      "samsung": "24.0",
+      "webview_ios": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
@@ -1267,7 +1300,8 @@
       "op_mob": "82",
       "opera": "109",
       "safari": "17.5",
-      "samsung": "27.0"
+      "samsung": "27.0",
+      "webview_ios": "17.5"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
@@ -1322,7 +1356,8 @@
       "op_mob": "55",
       "opera": "64",
       "safari": "16",
-      "samsung": "12.0"
+      "samsung": "12.0",
+      "webview_ios": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
@@ -1355,7 +1390,8 @@
       "op_mob": "63",
       "opera": "75",
       "safari": "15",
-      "samsung": "15.0"
+      "samsung": "15.0",
+      "webview_ios": "15"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
@@ -1417,7 +1453,8 @@
       "op_mob": "73",
       "opera": "94",
       "safari": "15.4",
-      "samsung": "21.0"
+      "samsung": "21.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
@@ -1480,7 +1517,8 @@
       "op_mob": "71",
       "opera": "90",
       "safari": "16.4",
-      "samsung": "20.0"
+      "samsung": "20.0",
+      "webview_ios": "16.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
@@ -1514,7 +1552,8 @@
       "op_mob": "41",
       "opera": "38",
       "safari": "11",
-      "samsung": "5.0"
+      "samsung": "5.0",
+      "webview_ios": "11"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
@@ -1546,7 +1585,8 @@
       "op_mob": "80",
       "opera": "106",
       "safari": "17.2",
-      "samsung": "25.0"
+      "samsung": "25.0",
+      "webview_ios": "17.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
@@ -1579,7 +1619,8 @@
       "oculus": "14.0",
       "opera": "74",
       "safari": "9",
-      "samsung": "15.0"
+      "samsung": "15.0",
+      "webview_ios": "9"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
@@ -1611,7 +1652,8 @@
       "op_mob": "78",
       "opera": "102",
       "safari": "16.2",
-      "samsung": "24.0"
+      "samsung": "24.0",
+      "webview_ios": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
@@ -1645,7 +1687,8 @@
       "op_mob": "56",
       "opera": "65",
       "safari": "13.1",
-      "samsung": "12.0"
+      "samsung": "12.0",
+      "webview_ios": "13.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
@@ -1678,7 +1721,8 @@
       "op_mob": "48",
       "opera": "55",
       "safari": "13.1",
-      "samsung": "10.0"
+      "samsung": "10.0",
+      "webview_ios": "13.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
@@ -1711,7 +1755,8 @@
       "op_mob": "12.1",
       "opera": "12.1",
       "safari": "7",
-      "samsung": "1.5"
+      "samsung": "1.5",
+      "webview_ios": "7"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
@@ -1743,7 +1788,8 @@
       "op_mob": "46",
       "opera": "50",
       "safari": "16",
-      "samsung": "8.0"
+      "samsung": "8.0",
+      "webview_ios": "16"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
@@ -1769,7 +1815,8 @@
       "op_mob": "43",
       "opera": "46",
       "safari": "11",
-      "samsung": "7.0"
+      "samsung": "7.0",
+      "webview_ios": "11"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
@@ -1802,7 +1849,8 @@
       "op_mob": "54",
       "opera": "62",
       "safari": "12.1",
-      "samsung": "14.2"
+      "samsung": "14.2",
+      "webview_ios": "13"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
@@ -1839,7 +1887,8 @@
       "op_mob": "53",
       "opera": "62",
       "safari": "10.1",
-      "samsung": "11.0"
+      "samsung": "11.0",
+      "webview_ios": "10.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
@@ -1866,7 +1915,8 @@
       "op_mob": "10.1",
       "opera": "9",
       "safari": "4",
-      "samsung": "1.0"
+      "samsung": "1.0",
+      "webview_ios": "3.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
@@ -1895,7 +1945,8 @@
       "op_mob": "25",
       "opera": "25",
       "safari": "9",
-      "samsung": "3.0"
+      "samsung": "3.0",
+      "webview_ios": "8"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
@@ -1951,7 +2002,8 @@
       "op_mob": "15",
       "opera": "15",
       "safari": "7",
-      "samsung": "1.5"
+      "samsung": "1.5",
+      "webview_ios": "7"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
@@ -2017,7 +2069,8 @@
       "op_mob": "83",
       "opera": "111",
       "safari": "15.4",
-      "samsung": "27.0"
+      "samsung": "27.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
@@ -2050,7 +2103,8 @@
       "op_mob": "43",
       "opera": "43",
       "safari": "11",
-      "samsung": "6.0"
+      "samsung": "6.0",
+      "webview_ios": "11"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
@@ -2112,7 +2166,8 @@
       "op_mob": "75",
       "opera": "97",
       "safari": "15.4",
-      "samsung": "22.0"
+      "samsung": "22.0",
+      "webview_ios": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
@@ -2145,7 +2200,8 @@
       "op_mob": "28",
       "opera": "28",
       "safari": "9.1",
-      "samsung": "4.0"
+      "samsung": "4.0",
+      "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
@@ -2188,7 +2244,8 @@
       "op_mob": "63",
       "opera": "74",
       "safari": "14",
-      "samsung": "15.0"
+      "samsung": "15.0",
+      "webview_ios": "14"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
