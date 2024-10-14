@@ -835,31 +835,23 @@
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
     "browser_support": {
-      "and_chr": "117",
       "and_ff": "34",
-      "android": "117",
-      "chrome": "117",
-      "edge": "117",
       "firefox": "34",
       "ios_saf": "9.3",
-      "op_mob": "78",
-      "opera": "103",
       "safari": "9.1",
-      "samsung": "24.0",
       "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
-    "interoperable_at": 1694736000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 2
   },
   {
     "id": "gamut-mapping",
@@ -1782,6 +1774,7 @@
       "and_ff": "59",
       "android": "63",
       "chrome": "63",
+      "edge": "18",
       "firefox": "59",
       "ios_saf": "16",
       "oculus": "5.0",
@@ -1795,7 +1788,8 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "vendors_implementations": 2
+    "interoperable_at": 1662940800,
+    "vendors_implementations": 3
   },
   {
     "id": "place-properties",
