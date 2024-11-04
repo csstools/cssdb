@@ -1,4 +1,4 @@
-import bcd from '@mdn/browser-compat-data' assert { type: 'json' };
+import bcd from '@mdn/browser-compat-data' with { type: 'json' };
 import _get from 'lodash.get';
 import semver from 'semver';
 import { MDNToBrowserlist } from './mdn-to-browserslist.mjs';

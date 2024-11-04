@@ -1,4 +1,4 @@
-import bcd from '@mdn/browser-compat-data' assert { type: 'json' };
+import bcd from '@mdn/browser-compat-data' with { type: 'json' };
 
 export function releaseDateForBrowserVersion(browser, version) {
 	const dateStr = bcd.browsers?.[browser]?.releases?.[version]?.release_date;

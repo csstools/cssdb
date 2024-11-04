@@ -1,4 +1,4 @@
-import bcd from '@mdn/browser-compat-data' assert { type: 'json' };
+import bcd from '@mdn/browser-compat-data' with { type: 'json' };
 import semver from 'semver';
 
 export function scanForNextBrowserVersionWithReleaseDate(browser, version, cb) {
