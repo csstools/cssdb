@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.2.0 (November 11, 2024)
+
+- Added `random-function`
+
 ### 8.1.2 (October 14, 2024)
 
 - Updated `@mdn/browser-compat-data` to `5.6.6` (minor)

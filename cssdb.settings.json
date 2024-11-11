@@ -1397,6 +1397,17 @@
     "mdn_path": "css.at-rules.media.prefers-reduced-motion"
   },
   {
+    "id": "random-function",
+    "title": "`random()` function",
+    "description": "Represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits",
+    "specification": "https://drafts.csswg.org/css-values-5/#random",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "div {\n  color: oklch(0.7, 0.2, random(120deg, 240deg));\n}",
+    "mdn_path": []
+  },
+  {
     "id": "read-only-write-pseudo-class",
     "title": "`:read-only` and `:read-write` selectors",
     "description": "Pseudo-classes to match elements which are considered user-alterable",
