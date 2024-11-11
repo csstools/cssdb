@@ -1900,6 +1900,12 @@ export default [
     "browser_support": {},
     "docs": {},
     "example": "div {\n  color: oklch(0.7, 0.2, random(120deg, 240deg));\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-random-function"
+      }
+    ],
     "vendors_implementations": 0
   },
   {
