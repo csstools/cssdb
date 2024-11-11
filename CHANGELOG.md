@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.2.1 (November 11, 2024)
+
+- Added `sign-functions` plugin link
+
 ### 8.2.0 (November 11, 2024)
 
 - Added `random-function`

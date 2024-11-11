@@ -2045,6 +2045,12 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-sign-functions"
+      }
+    ],
     "vendors_implementations": 2
   },
   {

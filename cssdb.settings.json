@@ -1518,6 +1518,12 @@
     "mdn_path": [
       "css.types.abs",
       "css.types.sign"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-sign-functions"
+      }
     ]
   },
   {
