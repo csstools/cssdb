@@ -72,7 +72,7 @@ body {
 
 	@media (prefers-color-scheme: dark) {
 		background-color: #151515;
-		color: #eaffe5;
+		color: #ececec;
 	}
 }
 
@@ -81,7 +81,7 @@ a {
 	text-decoration: none;
 
 	@media (prefers-color-scheme: dark) {
-		color: #0081f2;
+		color: #76bfff;
 	}
 }
 
@@ -149,12 +149,10 @@ img {
 	margin: 0 0 12px;
 }
 
-.cssdb-header-desc {
-	color: #616161;
-	font-size: 14px;
-	line-height: calc(18 / 14);
-	margin: 0;
+.cssdb-header-description {
+	line-height: calc(18 / 16);
 	max-width: 44em;
+	text-wrap: balance;
 }
 
 /* Features
@@ -596,7 +594,7 @@ img {
 
 		@media (prefers-color-scheme: dark) {
 			border-left-color: #201d1a;
-			color: #787f88;
+			color: #d3d7de;
 		}
 	}
 
