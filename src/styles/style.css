@@ -137,36 +137,10 @@ img {
 /* Header
 /* ========================================================================== */
 
-.cssdb-header {
-	@media (width >= 960px) {
-		align-items: center;
-		display: flex;
-
-		& > * {
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		& > script {
-			display: none;
-		}
-	}
-}
-
 .cssdb-header-branding {
-	flex-shrink: 0;
-	height: 114px;
-	margin-inline-end: 36px;
-	width: 114px;
-
-	@media (width < 960px) {
-		float: inline-start;
-		margin-block-end: 20px;
-	}
-}
-
-.cssdb-header-heading {
-	flex-grow: 1;
+	height: 100px;
+	margin-block-end: 36px;
+	width: 220px;
 }
 
 .cssdb-header-title {
@@ -181,12 +155,6 @@ img {
 	line-height: calc(18 / 14);
 	margin: 0;
 	max-width: 44em;
-}
-
-.cssdb-header-link {
-	margin-inline-start: 60px;
-	text-align: end;
-	white-space: nowrap;
 }
 
 /* Features

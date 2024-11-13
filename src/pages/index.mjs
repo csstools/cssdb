@@ -25,7 +25,7 @@ export function renderIndex() {
 	<meta name="twitter:site" content="@css_tools_">
 	<meta property="og:title" content="CSS Database">
 	<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
-	<meta property="og:image" content="https://cssdb.org/images/cssdb.jpg">
+	<meta property="og:image" content="https://cssdb.org/images/css.png">
 	<meta property="og:site_name" content="cssdb">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://cssdb.org/">

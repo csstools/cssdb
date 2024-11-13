@@ -1,4 +1,4 @@
-# cssdb [<img src="https://cssdb.org/images/cssdb.svg" alt="cssdb logo" width="90" height="90" align="right">][cssdb]
+# cssdb [<img src="https://cssdb.org/images/css.svg" alt="" width="90" height="90" align="right">][cssdb]
 
 [![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
