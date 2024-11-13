@@ -9,7 +9,7 @@ export function renderIndex() {
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<title>cssdb - CSS Database</title>
+	<title>CSS Database - CSS Tools</title>
 	<meta name="description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
 	<link rel="preconnect" href="https://d32ekf2zat2q3c.cloudfront.net" crossorigin />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
