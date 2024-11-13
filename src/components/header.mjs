@@ -3,7 +3,7 @@ import { html } from "../util/html.mjs";
 export function renderHeader() {
 	return html`
 		<header class="cssdb-header">
-			<img class="cssdb-header-branding" src="/images/cssdb.svg" alt="cssdb logo" width="90" height="90" role="presentation">
+			<img class="cssdb-header-branding" src="/images/css-tools.svg" alt="CSS Tools" width="220" height="100" role="presentation">
 			<div class="cssdb-header-heading">
 				<h1 class="cssdb-header-title">
 					What’s next for CSS?
