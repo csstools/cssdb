@@ -51,7 +51,6 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
     },
     "example": "input:blank {\n  background-color: yellow;\n}",
-    "mdn_path": "css.selectors.blank",
     "polyfills": [
       {
         "type": "JavaScript Library",
