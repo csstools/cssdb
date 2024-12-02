@@ -1979,8 +1979,15 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-5/#relative-colors",
     "stage": 2,
     "browser_support": {
+      "and_chr": "125",
       "and_ff": "128",
-      "firefox": "128"
+      "android": "125",
+      "chrome": "125",
+      "edge": "125",
+      "firefox": "128",
+      "op_mob": "83",
+      "opera": "111",
+      "samsung": "27.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
@@ -1992,7 +1999,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 1,
+    "vendors_implementations": 2,
     "web-feature": "relative-color"
   },
   {
