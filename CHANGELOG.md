@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.2.2 (December 2, 2024)
+
+- Updated `@mdn/browser-compat-data` to `5.6.20` (patch)
+
 ### 8.2.1 (November 11, 2024)
 
 - Added `sign-functions` plugin link
