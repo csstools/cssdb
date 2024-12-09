@@ -1985,21 +1985,25 @@
       "chrome": "125",
       "edge": "125",
       "firefox": "128",
+      "ios_saf": "18",
       "op_mob": "83",
       "opera": "111",
-      "samsung": "27.0"
+      "safari": "18",
+      "samsung": "27.0",
+      "webview_ios": "18"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
     },
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
+    "interoperable_at": 1726444800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-relative-color-syntax"
       }
     ],
-    "vendors_implementations": 2,
+    "vendors_implementations": 3,
     "web-feature": "relative-color"
   },
   {
