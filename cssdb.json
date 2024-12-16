@@ -124,7 +124,7 @@
     "id": "calc-constants",
     "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
     "description": "Constants for calculation simplification",
-    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
+    "specification": "https://drafts.csswg.org/css-values-4/#calc-keywords",
     "stage": 2,
     "browser_support": {
       "and_chr": "110",
@@ -1470,7 +1470,7 @@
     "stage": 2,
     "browser_support": {
       "and_chr": "110",
-      "and_ff": "78",
+      "and_ff": "79",
       "android": "110",
       "chrome": "110",
       "edge": "110",
