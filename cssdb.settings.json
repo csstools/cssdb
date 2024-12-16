@@ -92,7 +92,7 @@
     "id": "calc-constants",
     "title": "`e`, `pi`, `infinity`, `-infinity` and `NaN` constants for calculation",
     "description": "Constants for calculation simplification",
-    "specification": "https://www.w3.org/TR/css-values-4/#calc-constants",
+    "specification": "https://drafts.csswg.org/css-values-4/#calc-keywords",
     "stage": 2,
     "browser_support": {},
     "docs": {
@@ -100,11 +100,11 @@
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "mdn_path": [
-      "css.types.calc-constant",
-      "css.types.calc-constant.NaN",
-      "css.types.calc-constant.e",
-      "css.types.calc-constant.infinity",
-      "css.types.calc-constant.pi"
+      "css.types.calc-keyword",
+      "css.types.calc-keyword.NaN",
+      "css.types.calc-keyword.e",
+      "css.types.calc-keyword.infinity",
+      "css.types.calc-keyword.pi"
     ]
   },
   {
@@ -1112,11 +1112,6 @@
         "to": "110",
         "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
       },
-      "and_ff": {
-        "from": null,
-        "to": "78",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
-      },
       "android": {
         "from": null,
         "to": "110",
@@ -1130,11 +1125,6 @@
       "edge": {
         "from": null,
         "to": "110",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
-      },
-      "firefox": {
-        "from": null,
-        "to": "78",
         "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
       },
       "ios_saf": {
