@@ -61,7 +61,7 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.6.41",
+    "@mdn/browser-compat-data": "^5.6.43",
     "browserslist": "^4.24.4",
     "glob": "^11.0.1",
     "lodash.get": "^4.4.2",
@@ -69,9 +69,9 @@
     "postcss-cli": "^11.0.0",
     "postcss-preset-env": "^10.1.5",
     "semver": "^7.7.1",
-    "stylelint": "^16.14.1",
+    "stylelint": "^16.15.0",
     "stylelint-config-standard": "^37.0.0",
-    "web-features": "^2.24.0"
+    "web-features": "^2.26.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
