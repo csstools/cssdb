@@ -354,7 +354,8 @@
       "op_mob": "75",
       "opera": "97",
       "safari": "16.2",
-      "samsung": "22.0"
+      "samsung": "22.0",
+      "webview_ios": "16.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
@@ -571,7 +572,7 @@
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/multi-keyword_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "interoperable_at": 1689897600,
@@ -1315,7 +1316,11 @@
     "specification": "https://www.w3.org/TR/css-overflow-3/#overflow-control",
     "stage": 2,
     "browser_support": {
+      "and_chr": "135",
       "and_ff": "79",
+      "android": "135",
+      "chrome": "135",
+      "edge": "135",
       "firefox": "69"
     },
     "docs": {
@@ -1328,7 +1333,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overflow"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "logical-overscroll-behavior",
@@ -2047,7 +2052,11 @@
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
+      "and_chr": "135",
       "and_ff": "118",
+      "android": "135",
+      "chrome": "135",
+      "edge": "135",
       "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
@@ -2056,13 +2065,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
+    "interoperable_at": 1743638400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-sign-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "src-function",
