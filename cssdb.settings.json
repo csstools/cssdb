@@ -323,7 +323,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
-    "mdn_path": "css.properties.custom-property.var",
+    "mdn_path": "css.types.var",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -373,7 +373,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/multi-keyword_syntax_of_display"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "polyfills": [
