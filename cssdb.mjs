@@ -257,7 +257,9 @@ export default [
     "specification": "https://www.w3.org/TR/css-color-4/#color-adjust",
     "stage": 2,
     "browser_support": {
+      "and_chr": "136",
       "and_ff": "97",
+      "chrome": "136",
       "firefox": "97",
       "ios_saf": "15.4",
       "safari": "15.4",
@@ -2052,11 +2054,7 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
-      "and_chr": "135",
       "and_ff": "118",
-      "android": "135",
-      "chrome": "135",
-      "edge": "135",
       "firefox": "118",
       "ios_saf": "15.4",
       "safari": "15.4"
@@ -2065,14 +2063,13 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
-    "interoperable_at": 1743638400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-sign-functions"
       }
     ],
-    "vendors_implementations": 3
+    "vendors_implementations": 2
   },
   {
     "id": "src-function",

@@ -1,16 +1,20 @@
 # Changes to cssdb
 
+### 8.2.5 (April 15, 2025)
+
+- Updated `@mdn/browser-compat-data` to `6.0.5`
+
 ### 8.2.4 (March 10, 2025)
 
-- Updated `@mdn/browser-compat-data` to `5.7.1` (patch)
+- Updated `@mdn/browser-compat-data` to `5.7.1`
 
 ### 8.2.3 (December 9, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.6.22` (patch)
+- Updated `@mdn/browser-compat-data` to `5.6.22`
 
 ### 8.2.2 (December 2, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.6.20` (patch)
+- Updated `@mdn/browser-compat-data` to `5.6.20`
 
 ### 8.2.1 (November 11, 2024)
 
@@ -22,24 +26,24 @@
 
 ### 8.1.2 (October 14, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.6.6` (minor)
+- Updated `@mdn/browser-compat-data` to `5.6.6`
 
 ### 8.1.1 (September 9, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.5.51` (patch)
+- Updated `@mdn/browser-compat-data` to `5.5.51`
 
 ### 8.1.0 (July 7, 2024)
 
 - Added `content-alt-text`
-- Updated `@mdn/browser-compat-data` to `5.5.37` (patch)
+- Updated `@mdn/browser-compat-data` to `5.5.37`
 
 ### 8.0.2 (May 23, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.5.29` (patch)
+- Updated `@mdn/browser-compat-data` to `5.5.29`
 
 ### 8.0.1 (May 10, 2024)
 
-- Updated `@mdn/browser-compat-data` to `5.5.26` (patch)
+- Updated `@mdn/browser-compat-data` to `5.5.26`
 
 ### 8.0.0 (March 30, 2024)
 
