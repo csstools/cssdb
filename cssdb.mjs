@@ -42,7 +42,7 @@ export default [
     "browser_support": {
       "and_chr": "18",
       "and_ff": "4",
-      "android": "37",
+      "android": "4.4",
       "chrome": "1",
       "edge": "79",
       "firefox": "1",
@@ -1924,7 +1924,7 @@ export default [
     "browser_support": {
       "and_chr": "18",
       "and_ff": "79",
-      "android": "37",
+      "android": "4.4",
       "chrome": "1",
       "edge": "13",
       "firefox": "78",
