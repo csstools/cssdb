@@ -1323,7 +1323,8 @@ export default [
       "android": "135",
       "chrome": "135",
       "edge": "135",
-      "firefox": "69"
+      "firefox": "69",
+      "opera": "120"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
