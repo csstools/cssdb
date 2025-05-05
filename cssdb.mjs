@@ -1324,6 +1324,7 @@ export default [
       "chrome": "135",
       "edge": "135",
       "firefox": "69",
+      "op_mob": "89",
       "opera": "120"
     },
     "docs": {
