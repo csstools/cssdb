@@ -16,6 +16,10 @@ export default function applyBrowserOverrides(feature, realValues, overrides) {
 		}
 
 		realValues[key] = to;
+
+		if (to === null) {
+			delete realValues[key];
+		}
 	}
 
 	return realValues;

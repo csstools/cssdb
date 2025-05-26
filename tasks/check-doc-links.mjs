@@ -1,4 +1,3 @@
-import fs from 'fs/promises';
 import cssdb from 'cssdb';
 
 let hasBadLinks = false;

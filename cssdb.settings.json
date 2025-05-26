@@ -1108,34 +1108,59 @@
     "browser_support": {},
     "browser_support_overrides": {
       "and_chr": {
-        "from": null,
+        "from": "87",
         "to": "110",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       },
       "android": {
-        "from": null,
+        "from": "87",
         "to": "110",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       },
       "chrome": {
-        "from": null,
+        "from": "87",
         "to": "110",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       },
       "edge": {
-        "from": null,
+        "from": "87",
         "to": "110",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       },
       "ios_saf": {
-        "from": null,
+        "from": "14.5",
         "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
+      },
+      "oculus": {
+        "from": "13.0",
+        "to": null,
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
+      },
+      "op_mob": {
+        "from": "62",
+        "to": "74",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
+      },
+      "opera": {
+        "from": "73",
+        "to": "96",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
+      },
+      "samsung": {
+        "from": "14.0",
+        "to": "21.0",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
+      },
+      "webview_ios": {
+        "from": "14.5",
+        "to": "16.4",
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       },
       "safari": {
-        "from": null,
+        "from": "14.1",
         "to": "16.4",
-        "bug": "https://github.com/mdn/browser-compat-data/issues/18198"
+        "bug": "https://github.com/mdn/browser-compat-data/issues/25034#issuecomment-2908617595"
       }
     },
     "docs": {
@@ -1414,7 +1439,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
-    "mdn_path": "css.selectors['read-only']"
+    "mdn_path": "css.selectors.read-only"
   },
   {
     "id": "rebeccapurple-color",
