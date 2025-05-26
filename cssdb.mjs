@@ -1485,7 +1485,11 @@ export default [
       "edge": "110",
       "firefox": "78",
       "ios_saf": "16.4",
-      "safari": "16.4"
+      "op_mob": "74",
+      "opera": "96",
+      "safari": "16.4",
+      "samsung": "21.0",
+      "webview_ios": "16.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"

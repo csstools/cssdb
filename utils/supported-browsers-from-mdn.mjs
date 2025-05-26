@@ -1,12 +1,12 @@
 import bcd from '@mdn/browser-compat-data' with { type: 'json' };
-import _get from 'lodash.get';
 import semver from 'semver';
+import { get } from './get.mjs';
 import { MDNToBrowserlist } from './mdn-to-browserslist.mjs';
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
-	const mdnFeature = _get(bcd, mdnConfigPath);
+	const mdnFeature = get(bcd, mdnConfigPath);
 	if (!mdnFeature) {
-		throw new Error(`Invalid mdn config path "${mdnConfigPath}" in feature "${feature}"`);
+		throw new Error(`Invalid mdn config path "${mdnConfigPath}" in feature "${feature.id}"`);
 	}
 
 	// We assume users also have autoprefixer.
