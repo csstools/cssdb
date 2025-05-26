@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.3.0 (May 26, 2025)
+
+- Added `color-mix-variadic-function-arguments`
+
 ### 8.2.6 (May 26, 2025)
 
 - Updated `@mdn/browser-compat-data` to `6.0.17`

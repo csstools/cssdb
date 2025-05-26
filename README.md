@@ -3,7 +3,7 @@
 [![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
 
-[cssdb] is a comprehensive list of CSS features and their positions in
+[cssdb] is a list of CSS features and their positions in
 the process of becoming implemented web standards.
 
 ---
