@@ -1,6 +1,6 @@
 # Changes to cssdb
 
-### 8.3.0 (May 26, 2025)
+### 8.3.0 (May 27, 2025)
 
 - Added `color-mix-variadic-function-arguments`
 
