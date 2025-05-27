@@ -374,6 +374,23 @@ export default [
     "web-feature": "color-mix"
   },
   {
+    "id": "color-mix-variadic-function-arguments",
+    "title": "`color-mix()` Function with 1+ arguments",
+    "description": "Mix any number of colors",
+    "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: color-mix(in lch, red, lime, blue);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-variadic-function-arguments"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "container-queries",
     "title": "Container Queries",
     "description": "New container property and container at rule to make changes depending on the container's size",

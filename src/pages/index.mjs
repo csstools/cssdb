@@ -10,7 +10,7 @@ export function renderIndex() {
 <head>
 	<meta charset="utf-8">
 	<title>CSS Database - CSS Tools</title>
-	<meta name="description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+	<meta name="description" content="A list of CSS features and their positions in the process of becoming implemented web standards.">
 	<link rel="preconnect" href="https://d32ekf2zat2q3c.cloudfront.net" crossorigin />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@ export function renderIndex() {
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@css_tools_">
 	<meta property="og:title" content="CSS Database">
-	<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+	<meta property="og:description" content="A list of CSS features and their positions in the process of becoming implemented web standards.">
 	<meta property="og:image" content="https://cssdb.org/images/css.png">
 	<meta property="og:site_name" content="cssdb">
 	<meta property="og:type" content="website">

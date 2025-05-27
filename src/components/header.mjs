@@ -15,7 +15,7 @@ export function renderHeader() {
 					What’s next for CSS?
 				</h1>
 				<p class="cssdb-header-description">
-					<strong>cssdb</strong> is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+					<strong>cssdb</strong> is a list of CSS features and their positions in the process of becoming implemented web standards.
 				</p>
 			</div>
 			<a class="cssdb-header-link" href="#the-staging-process">What are the stages?</a>
