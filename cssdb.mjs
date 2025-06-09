@@ -259,9 +259,12 @@ export default [
     "browser_support": {
       "and_chr": "136",
       "and_ff": "97",
+      "android": "136",
       "chrome": "136",
+      "edge": "136",
       "firefox": "97",
       "ios_saf": "15.4",
+      "opera": "121",
       "safari": "15.4",
       "webview_ios": "15.4"
     },
@@ -269,7 +272,8 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
-    "vendors_implementations": 2
+    "interoperable_at": 1746057600,
+    "vendors_implementations": 3
   },
   {
     "id": "color-function",
