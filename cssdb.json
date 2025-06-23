@@ -264,6 +264,7 @@
       "edge": "136",
       "firefox": "97",
       "ios_saf": "15.4",
+      "op_mob": "90",
       "opera": "121",
       "safari": "15.4",
       "webview_ios": "15.4"
@@ -1345,20 +1346,24 @@
       "chrome": "135",
       "edge": "135",
       "firefox": "69",
+      "ios_saf": "26",
       "op_mob": "89",
-      "opera": "120"
+      "opera": "120",
+      "safari": "26",
+      "webview_ios": "26"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
     },
     "example": "div {\n  overflow-block: scroll;\n}",
+    "interoperable_at": 1743724800,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-logical-overflow"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "logical-overscroll-behavior",

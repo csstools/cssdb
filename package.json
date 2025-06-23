@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "8.3.0",
+  "version": "8.3.1",
   "type": "module",
   "description": "A list of CSS features and their positions in the process of becoming implemented web standards",
   "license": "MIT-0",
