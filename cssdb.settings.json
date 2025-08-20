@@ -19,6 +19,22 @@
     ]
   },
   {
+    "id": "alpha-function",
+    "title": "`alpha()` Function",
+    "description": "Relative alpha colors",
+    "specification": "https://drafts.csswg.org/css-color-5/#relative-alpha",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: alpha(from red / calc(alpha * 0.5));\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function"
+      }
+    ]
+  },
+  {
     "id": "any-link-pseudo-class",
     "title": "`:any-link` Hyperlink Pseudo-Class",
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
@@ -198,6 +214,23 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function"
+      }
+    ]
+  },
+  {
+    "id": "color-function-display-p3-linear",
+    "title": "The `display-p3-linear` Color Space for the `color()` Function",
+    "description": "The `display-p3-linear` predefined color space is the same as `display-p3` except that the transfer function is linear-light.",
+    "specification": "https://drafts.csswg.org/css-color-4/#predefined-display-p3-linear",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: color(display-p3-linear 0.3081 0.014 0.0567);\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function-display-p3-linear"
       }
     ]
   },

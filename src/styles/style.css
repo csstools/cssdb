@@ -123,6 +123,7 @@ img {
 
 .sr-only {
 	border: 0;
+	/* stylelint-disable-next-line property-no-deprecated */
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	height: 1px;
