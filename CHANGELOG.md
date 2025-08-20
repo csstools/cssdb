@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 8.4.0 (August 20, 2025)
+
+- Added `color-function-display-p3-linear`
+- Updated `@mdn/browser-compat-data` to `6.1.4`
+
 ### 8.3.1 (June 23, 2025)
 
 - Updated `@mdn/browser-compat-data` to `6.0.25`

@@ -311,6 +311,23 @@ export default [
     "web-feature": "color-function"
   },
   {
+    "id": "color-function-display-p3-linear",
+    "title": "The `display-p3-linear` Color Space for the `color()` Function",
+    "description": "The `display-p3-linear` predefined color space is the same as `display-p3` except that the transfer function is linear-light.",
+    "specification": "https://drafts.csswg.org/css-color-4/#predefined-display-p3-linear",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: color(display-p3-linear 0.3081 0.014 0.0567);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function-display-p3-linear"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "color-functional-notation",
     "title": "Color Functional Notation",
     "description": "A space and slash separated notation for specifying colors",
@@ -2086,22 +2103,28 @@ export default [
     "specification": "https://www.w3.org/TR/css-values-4/#sign-funcs",
     "stage": 2,
     "browser_support": {
+      "and_chr": "138",
       "and_ff": "118",
+      "android": "138",
+      "chrome": "138",
+      "edge": "138",
       "firefox": "118",
       "ios_saf": "15.4",
+      "op_mob": "91",
       "safari": "15.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
+    "interoperable_at": 1750896000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-sign-functions"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "src-function",
