@@ -34,6 +34,23 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "alpha-function",
+    "title": "`alpha()` Function",
+    "description": "Relative alpha colors",
+    "specification": "https://drafts.csswg.org/css-color-5/#relative-alpha",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "p {\n  color: alpha(from red / calc(alpha * 0.5));\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "any-link-pseudo-class",
     "title": "`:any-link` Hyperlink Pseudo-Class",
     "description": "A pseudo-class for matching anchor elements independent of whether they have been visited",
