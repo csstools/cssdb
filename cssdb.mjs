@@ -2128,6 +2128,7 @@ export default [
       "firefox": "118",
       "ios_saf": "15.4",
       "op_mob": "91",
+      "opera": "122",
       "safari": "15.4"
     },
     "docs": {
