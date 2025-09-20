@@ -343,7 +343,9 @@
     "browser_support": {},
     "docs": {},
     "example": "p {\n  color: contrast-color( purple max );\n}",
-    "mdn_path": [],
+    "mdn_path": [
+      "css.types.color.contrast-color"
+    ],
     "polyfills": []
   },
   {

@@ -6,8 +6,24 @@ updates:
     interval: weekly
     time: "01:00"
     timezone: "Europe/Brussels"
+  cooldown:
+    default-days: 7
   open-pull-requests-limit: 10
   versioning-strategy: increase
+  rebase-strategy: auto
+  groups:
+    all-dependencies:
+      patterns:
+        - "*"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "01:00"
+    timezone: Europe/Brussels
+    open-pull-requests-limit: 10
+  cooldown:
+    default-days: 7
   rebase-strategy: auto
   groups:
     all-dependencies:
