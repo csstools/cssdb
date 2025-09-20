@@ -503,11 +503,15 @@
     "description": "Dynamically specifying a text color with adequate contrast.",
     "specification": "https://drafts.csswg.org/css-color-5/#contrast-color",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "ios_saf": "26",
+      "safari": "26",
+      "webview_ios": "26"
+    },
     "docs": {},
     "example": "p {\n  color: contrast-color( purple max );\n}",
     "polyfills": [],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "custom-media-queries",
@@ -1390,7 +1394,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
     },
     "example": "div {\n  overflow-block: scroll;\n}",
-    "interoperable_at": 1743724800,
+    "interoperable_at": 1757894400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
