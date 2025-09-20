@@ -21,9 +21,9 @@ updates:
     interval: weekly
     time: "01:00"
     timezone: Europe/Brussels
-    open-pull-requests-limit: 10
   cooldown:
     default-days: 7
+  open-pull-requests-limit: 10
   rebase-strategy: auto
   groups:
     all-dependencies:
