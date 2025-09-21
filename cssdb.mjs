@@ -509,7 +509,7 @@ export default [
       "webview_ios": "26"
     },
     "docs": {},
-    "example": "p {\n  color: contrast-color( purple max );\n}",
+    "example": "p {\n  color: contrast-color( purple );\n}",
     "polyfills": [
       {
         "type": "PostCSS Plugin",
