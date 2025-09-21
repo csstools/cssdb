@@ -342,7 +342,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {},
-    "example": "p {\n  color: contrast-color( purple max );\n}",
+    "example": "p {\n  color: contrast-color( purple );\n}",
     "mdn_path": [
       "css.types.color.contrast-color"
     ],
