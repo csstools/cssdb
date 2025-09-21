@@ -510,7 +510,12 @@ export default [
     },
     "docs": {},
     "example": "p {\n  color: contrast-color( purple max );\n}",
-    "polyfills": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-contrast-color-function"
+      }
+    ],
     "vendors_implementations": 1
   },
   {

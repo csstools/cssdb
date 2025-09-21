@@ -346,7 +346,12 @@
     "mdn_path": [
       "css.types.color.contrast-color"
     ],
-    "polyfills": []
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-contrast-color-function"
+      }
+    ]
   },
   {
     "id": "custom-media-queries",
