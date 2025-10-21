@@ -105,7 +105,9 @@ export default function supportedBrowsersFromMdn(path, feature) {
 
 		if (isInAllFeatures) {
 			// Sort by descending version and get the first
-			const [version] = supports.map(featureSupport => featureSupport[browserKey]).sort((a, b) => {
+			const [version] = supports.map(featureSupport => featureSupport[browserKey]).filter((x) => {
+				return !!semver.coerce(x);
+			}).sort((a, b) => {
 				const aa = semver.coerce(a);
 				const bb = semver.coerce(b);
 				if (!aa || !bb) {

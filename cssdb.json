@@ -284,6 +284,7 @@
       "op_mob": "90",
       "opera": "121",
       "safari": "15.4",
+      "samsung": "29.0",
       "webview_ios": "15.4"
     },
     "docs": {
@@ -1393,6 +1394,7 @@
       "op_mob": "89",
       "opera": "120",
       "safari": "26",
+      "samsung": "29.0",
       "webview_ios": "26"
     },
     "docs": {
