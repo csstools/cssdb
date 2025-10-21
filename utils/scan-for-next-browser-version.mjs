@@ -15,6 +15,10 @@ export function scanForNextBrowserVersionWithReleaseDate(browser, version, cb) {
 
 	const versionNames = Object.keys(bcd.browsers?.[browser]?.releases);
 	const thisVersion = semver.coerce(version);
+	if (!thisVersion) {
+		return;
+	}
+
 	const thisVersionOrLater = versionNames.find(v => {
 		return semver.gte(semver.coerce(v), thisVersion);
 	});
