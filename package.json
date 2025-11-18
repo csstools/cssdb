@@ -63,7 +63,7 @@
   "devDependencies": {
     "@mdn/browser-compat-data": "^7.1.18",
     "browserslist": "^4.27.0",
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-preset-env": "^10.4.0",
