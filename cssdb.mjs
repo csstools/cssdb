@@ -505,6 +505,8 @@ export default [
     "specification": "https://drafts.csswg.org/css-color-5/#contrast-color",
     "stage": 2,
     "browser_support": {
+      "and_ff": "146",
+      "firefox": "146",
       "ios_saf": "26",
       "safari": "26",
       "webview_ios": "26"
@@ -517,7 +519,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-contrast-color-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "custom-media-queries",

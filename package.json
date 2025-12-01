@@ -61,7 +61,7 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^7.1.22",
+    "@mdn/browser-compat-data": "^7.1.23",
     "browserslist": "^4.28.0",
     "glob": "^13.0.0",
     "postcss": "^8.5.6",

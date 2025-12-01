@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.4.3 (December 1, 2025)
+
+- Updated `@mdn/browser-compat-data` to `7.1.23`
+
 ### 8.4.2 (September 21, 2025)
 
 - Add polyfill for `contrast-color-function`
