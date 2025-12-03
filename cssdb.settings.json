@@ -1432,10 +1432,10 @@
     "description": "The `position-area` property offers a convenient grid-based concept for positioning relative to the default anchor box.",
     "specification": "https://drafts.csswg.org/css-anchor-position/#position-area",
     "stage": 2,
-    "browser_support": {
+    "browser_support": {},
+    "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position-area"
     },
-    "docs": {},
     "example": "div {\n  position-area: start end;\n}",
     "mdn_path": [
       "css.properties.position-area"

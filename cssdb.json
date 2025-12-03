@@ -1929,7 +1929,9 @@
       "samsung": "28.0",
       "webview_ios": "26"
     },
-    "docs": {},
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position-area"
+    },
     "example": "div {\n  position-area: start end;\n}",
     "polyfills": [
       {
