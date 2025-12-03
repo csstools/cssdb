@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.5.0 (December 3, 2025)
+
+- Added `position-area`
+
 ### 8.4.3 (December 1, 2025)
 
 - Updated `@mdn/browser-compat-data` to `7.1.23`

@@ -21,7 +21,7 @@ export default [
       "webview_ios": "9.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all"
     },
     "example": "a {\n  all: initial;\n}",
     "interoperable_at": 1579046400,
@@ -72,7 +72,7 @@ export default [
       "webview_ios": "1"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "interoperable_at": 1579046400,
@@ -92,7 +92,7 @@ export default [
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:blank"
     },
     "example": "input:blank {\n  background-color: yellow;\n}",
     "polyfills": [
@@ -126,7 +126,7 @@ export default [
       "samsung": "5.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/break-after"
     },
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "polyfills": [
@@ -158,7 +158,7 @@ export default [
       "webview_ios": "16"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "interoperable_at": 1686009600,
@@ -186,7 +186,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
     "interoperable_at": 1647216000,
@@ -221,7 +221,7 @@ export default [
       "webview_ios": "9"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors"
     },
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
     "interoperable_at": 1579046400,
@@ -255,7 +255,7 @@ export default [
       "webview_ios": "13.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
     "interoperable_at": 1595894400,
@@ -288,7 +288,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
     "interoperable_at": 1746057600,
@@ -315,7 +315,7 @@ export default [
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
     "interoperable_at": 1683590400,
@@ -367,7 +367,7 @@ export default [
       "webview_ios": "12.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/rgb"
     },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "interoperable_at": 1579046400,
@@ -400,7 +400,7 @@ export default [
       "webview_ios": "16.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "interoperable_at": 1683590400,
@@ -451,7 +451,7 @@ export default [
       "webview_ios": "16"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries"
     },
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "interoperable_at": 1676332800,
@@ -486,7 +486,7 @@ export default [
       "webview_ios": "17.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content#adding_an_image_with_alternative_text"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/content"
     },
     "example": ".element {\n  content: url(tree.jpg) / \"image with a tree\";\n}",
     "interoperable_at": 1720483200,
@@ -559,7 +559,7 @@ export default [
       "webview_ios": "9.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "interoperable_at": 1491350400,
@@ -609,7 +609,7 @@ export default [
       "webview_ios": "16.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:dir"
     },
     "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
     "interoperable_at": 1701907200,
@@ -642,7 +642,7 @@ export default [
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/multi-keyword_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Multi-keyword_syntax"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "interoperable_at": 1689897600,
@@ -676,7 +676,7 @@ export default [
       "webview_ios": "12.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "interoperable_at": 1605571200,
@@ -696,7 +696,7 @@ export default [
     "stage": 0,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/env"
     },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
@@ -728,7 +728,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/exp"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
     "interoperable_at": 1701907200,
@@ -748,7 +748,7 @@ export default [
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family"
     },
     "example": "body {\n  font-family: fangsong;\n}",
     "polyfills": [
@@ -780,7 +780,7 @@ export default [
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/float"
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "interoperable_at": 1697155200,
@@ -814,7 +814,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible"
     },
     "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
     "interoperable_at": 1647216000,
@@ -853,7 +853,7 @@ export default [
       "webview_ios": "10.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within"
     },
     "example": "form:focus-within {\n  background: rgb(0 128 0);\n}",
     "interoperable_at": 1579046400,
@@ -888,7 +888,7 @@ export default [
       "webview_ios": "5"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face"
     },
     "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
     "polyfills": [
@@ -913,7 +913,7 @@ export default [
       "webview_ios": "9.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
     "polyfills": [
@@ -962,7 +962,7 @@ export default [
       "webview_ios": "12"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/gap"
     },
     "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
     "interoperable_at": 1537142400,
@@ -995,7 +995,7 @@ export default [
       "webview_ios": "16.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "interoperable_at": 1718064000,
@@ -1029,7 +1029,7 @@ export default [
       "webview_ios": "10.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid"
     },
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
     "interoperable_at": 1508198400,
@@ -1062,7 +1062,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has"
     },
     "example": "a:has(> img) {\n  display: block;\n}",
     "interoperable_at": 1702944000,
@@ -1101,7 +1101,7 @@ export default [
       "webview_ios": "9.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value"
     },
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "interoperable_at": 1579046400,
@@ -1135,7 +1135,7 @@ export default [
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "interoperable_at": 1651104000,
@@ -1168,7 +1168,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units"
     },
     "example": "p {\n  text-indent: 2ic;\n}",
     "interoperable_at": 1664755200,
@@ -1203,7 +1203,7 @@ export default [
       "webview_ios": "17"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "interoperable_at": 1622505600,
@@ -1237,7 +1237,7 @@ export default [
       "webview_ios": "5"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:in-range"
     },
     "example": "input:in-range {\n  background-color: rgb(0 255 0 / 0.25);\n}\ninput:out-of-range {\n  background-color: rgb(255 0 0 / 0.25);\n  border: 2px solid red;\n}",
     "interoperable_at": 1447286400,
@@ -1265,7 +1265,7 @@ export default [
       "webview_ios": "14"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:is"
     },
     "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
     "interoperable_at": 1611187200,
@@ -1299,7 +1299,7 @@ export default [
       "webview_ios": "16.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
     "interoperable_at": 1692576000,
@@ -1333,7 +1333,7 @@ export default [
       "webview_ios": "16.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
     "interoperable_at": 1692576000,
@@ -1367,7 +1367,7 @@ export default [
       "webview_ios": "17.5"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark"
     },
     "example": "body {\n  color: light-dark(cyan, magenta);\n}",
     "interoperable_at": 1715558400,
@@ -1400,7 +1400,7 @@ export default [
       "webview_ios": "26"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-block"
     },
     "example": "div {\n  overflow-block: scroll;\n}",
     "interoperable_at": 1757894400,
@@ -1434,7 +1434,7 @@ export default [
       "webview_ios": "16"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior-block"
     },
     "example": "div {\n  overscroll-behavior-block: scroll;\n}",
     "interoperable_at": 1662940800,
@@ -1468,7 +1468,7 @@ export default [
       "webview_ios": "15"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Logical_properties_and_values"
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "interoperable_at": 1632096000,
@@ -1499,7 +1499,7 @@ export default [
       "samsung": "25.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/resize"
     },
     "example": "area {\n  resize: inline;\n}",
     "polyfills": [
@@ -1531,7 +1531,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
     "interoperable_at": 1670198400,
@@ -1565,7 +1565,7 @@ export default [
       "webview_ios": "16.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ratio"
     },
     "example": "@media (aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
     "interoperable_at": 1679875200,
@@ -1599,7 +1599,7 @@ export default [
       "webview_ios": "16.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "interoperable_at": 1679875200,
@@ -1634,7 +1634,7 @@ export default [
       "webview_ios": "11"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc"
     },
     "example": "p {\n  padding: calc(1px + calc(4 / 3));\n}",
     "interoperable_at": 1508198400,
@@ -1667,7 +1667,7 @@ export default [
       "webview_ios": "17.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector"
     },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "interoperable_at": 1702252800,
@@ -1701,7 +1701,7 @@ export default [
       "webview_ios": "9"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:not"
     },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
     "interoperable_at": 1611187200,
@@ -1734,7 +1734,7 @@ export default [
       "webview_ios": "16.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "interoperable_at": 1692576000,
@@ -1769,7 +1769,7 @@ export default [
       "webview_ios": "13.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity"
     },
     "example": "img {\n  opacity: 90%;\n}",
     "interoperable_at": 1595894400,
@@ -1803,7 +1803,7 @@ export default [
       "webview_ios": "13.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow"
     },
     "example": "html {\n  overflow: hidden auto;\n}",
     "interoperable_at": 1585008000,
@@ -1837,7 +1837,7 @@ export default [
       "webview_ios": "7"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap"
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "interoperable_at": 1538438400,
@@ -1871,7 +1871,7 @@ export default [
       "webview_ios": "16"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
     "interoperable_at": 1662940800,
@@ -1899,7 +1899,7 @@ export default [
       "webview_ios": "11"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/place-content"
     },
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "interoperable_at": 1579046400,
@@ -1910,6 +1910,34 @@ export default [
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "position-area",
+    "title": "`position-area` property",
+    "description": "The `position-area` property offers a convenient grid-based concept for positioning relative to the default anchor box.",
+    "specification": "https://drafts.csswg.org/css-anchor-position/#position-area",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "129",
+      "android": "129",
+      "chrome": "129",
+      "edge": "129",
+      "ios_saf": "26",
+      "op_mob": "86",
+      "opera": "115",
+      "safari": "26",
+      "samsung": "28.0",
+      "webview_ios": "26"
+    },
+    "docs": {},
+    "example": "div {\n  position-area: start end;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-position-area-property"
+      }
+    ],
+    "vendors_implementations": 2
   },
   {
     "id": "prefers-color-scheme-query",
@@ -1933,7 +1961,7 @@ export default [
       "webview_ios": "13"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "interoperable_at": 1579046400,
@@ -1971,7 +1999,7 @@ export default [
       "webview_ios": "10.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion"
     },
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
     "interoperable_at": 1579046400,
@@ -2016,7 +2044,7 @@ export default [
       "webview_ios": "3.2"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:read-only"
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
     "interoperable_at": 1595894400,
@@ -2046,7 +2074,7 @@ export default [
       "webview_ios": "8"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
     "interoperable_at": 1443571200,
@@ -2079,7 +2107,7 @@ export default [
       "webview_ios": "18"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"
     },
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "interoperable_at": 1726444800,
@@ -2114,7 +2142,7 @@ export default [
       "webview_ios": "7"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:scope"
     },
     "example": ":scope {\n  background-color: pink;\n}",
     "interoperable_at": 1579046400,
@@ -2145,7 +2173,7 @@ export default [
       "safari": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
     "interoperable_at": 1750896000,
@@ -2194,7 +2222,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/round"
     },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "interoperable_at": 1715904000,
@@ -2228,7 +2256,7 @@ export default [
       "webview_ios": "11"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family"
     },
     "example": "body {\n  font-family: system-ui;\n}",
     "interoperable_at": 1630972800,
@@ -2259,7 +2287,7 @@ export default [
       "samsung": "14.0"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration"
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
     "polyfills": [
@@ -2291,7 +2319,7 @@ export default [
       "webview_ios": "15.4"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sin"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "interoperable_at": 1678665600,
@@ -2325,7 +2353,7 @@ export default [
       "webview_ios": "9.3"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/unset"
     },
     "example": "div {\n  border-color: unset;\n  color: unset;\n}",
     "interoperable_at": 1458518400,
@@ -2369,7 +2397,7 @@ export default [
       "webview_ios": "14"
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
     "interoperable_at": 1611187200,
