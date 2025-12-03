@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.5.1 (December 3, 2025)
+
+- Rename `position-area` to `position-area-property`
+
 ### 8.5.0 (December 3, 2025)
 
 - Added `position-area`

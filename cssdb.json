@@ -1912,7 +1912,7 @@
     "vendors_implementations": 3
   },
   {
-    "id": "position-area",
+    "id": "position-area-property",
     "title": "`position-area` property",
     "description": "The `position-area` property offers a convenient grid-based concept for positioning relative to the default anchor box.",
     "specification": "https://drafts.csswg.org/css-anchor-position/#position-area",
