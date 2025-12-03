@@ -1,4 +1,6 @@
-import cssdb from 'cssdb';
+import fs from "node:fs/promises"
+
+const cssdb = JSON.parse(await fs.readFile('cssdb.settings.json'), 'utf-8');
 
 let hasBadLinks = false;
 let hasMissingDocs = false;
@@ -23,6 +25,7 @@ for (const feature of cssdb) {
 		if (!resp.ok) {
 			if (resp.status === 301) {
 				console.log(`Bad response for "${feature.id}" when checking "${provider}" docs:\n    "${new URL(resp.headers.get('location'), url).href}"`);
+				feature.docs[provider] = new URL(resp.headers.get('location'), url).href;
 				hasBadLinks = true;
 			} else {
 				console.log(`Bad response for "${feature.id}" when checking "${provider}" docs:\n    ${resp.status} ${resp.statusText}`);
@@ -31,6 +34,8 @@ for (const feature of cssdb) {
 		}
 	}
 }
+
+// await fs.writeFile('cssdb.settings.json', JSON.stringify(cssdb, null, '  '))
 
 if (hasBadLinks || hasMissingDocs) {
 	process.exit(1);

@@ -7,7 +7,7 @@
     "stage": 4,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/all"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all"
     },
     "example": "a {\n  all: initial;\n}",
     "mdn_path": "css.properties.all",
@@ -42,7 +42,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:any-link"
     },
     "example": "nav :any-link > span {\n  background-color: yellow;\n}",
     "mdn_path": "css.selectors.any-link",
@@ -64,7 +64,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:blank"
     },
     "example": "input:blank {\n  background-color: yellow;\n}",
     "polyfills": [
@@ -86,7 +86,7 @@
     "stage": 3,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/break-after"
     },
     "example": "a {\n  break-inside: avoid;\n  break-before: avoid-column;\n  break-after: always;\n}",
     "mdn_path": [
@@ -112,7 +112,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc-keyword"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-keyword"
     },
     "example": "p {\n  font-size: calc(pow(e, pi) * 1rem);\n}",
     "mdn_path": [
@@ -132,7 +132,7 @@
     "browser_support": {},
     "web-feature": "cascade-layers",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer"
     },
     "example": "/* Un-layered styles have the highest priority */\na {\n  color: mediumvioletred;\n}\n\n@layer defaults {\n  a { color: maroon; }\n}",
     "mdn_path": "css.at-rules.layer",
@@ -151,7 +151,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors"
     },
     "example": "[frame=hsides i] {\n  border-style: solid none;\n}",
     "mdn_path": "css.selectors.attribute.case_insensitive_modifier",
@@ -170,7 +170,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp"
     },
     "example": "button {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}",
     "polyfills": [
@@ -189,7 +189,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/print-color-adjust"
     },
     "example": ".background {\n  background-color:#ccc;\n}\n.background.color-adjust {\n  color-adjust: economy;\n}\n.background.color-adjust-exact {\n  color-adjust: exact;\n}",
     "mdn_path": "css.properties.print-color-adjust"
@@ -203,7 +203,7 @@
     "browser_support": {},
     "web-feature": "color-function",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color"
     },
     "example": "p {\n  color: color(display-p3 1 0.5 0);\n  color: color(display-p3 1 0.5 0 / .5);\n}",
     "mdn_path": [
@@ -246,7 +246,7 @@
     ],
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/rgb"
     },
     "example": "em {\n  background-color: hsl(120deg 100% 25%);\n  color: rgb(0 255 0);\n}",
     "polyfills": [
@@ -268,7 +268,7 @@
     "browser_support": {},
     "web-feature": "color-mix",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
     },
     "example": "p {\n  color: color-mix(in lch, purple 50%, plum 50%);\n}",
     "polyfills": [
@@ -305,7 +305,7 @@
     "browser_support": {},
     "web-feature": "container-queries",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries"
     },
     "example": ".container {\n  contain: layout inline-size;\n}\n\n@container (min-width: 700px) {\n  .container {\n    /* styles applied when a container is at least 700px */\n  }\n}",
     "polyfills": [
@@ -323,7 +323,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/content#adding_an_image_with_alternative_text"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/content"
     },
     "example": ".element {\n  content: url(tree.jpg) / \"image with a tree\";\n}",
     "polyfills": [
@@ -377,7 +377,7 @@
     "browser_support": {},
     "web-feature": "custom-properties",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/var"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/var"
     },
     "example": ":root {\n  --some-length: 32px;\n\n  height: var(--some-length);\n  width: var(--some-length);\n}",
     "mdn_path": "css.types.var",
@@ -411,7 +411,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:dir"
     },
     "example": "blockquote:dir(rtl) {\n  margin-right: 10px;\n}\n\nblockquote:dir(ltr) {\n  margin-left: 10px;\n}",
     "polyfills": [
@@ -430,7 +430,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/multi-keyword_syntax_of_display"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Multi-keyword_syntax"
     },
     "example": ".element {\n  display: inline flow-root;\n  display: inline flex;\n  display: block grid;\n}",
     "polyfills": [
@@ -456,7 +456,7 @@
     ],
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -474,7 +474,7 @@
     "stage": 0,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/env"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/env"
     },
     "example": "@media (max-width: env(--brand-small)) {\n  body {\n    padding: env(--brand-spacing);\n  }\n}",
     "polyfills": [
@@ -492,7 +492,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/exp"
     },
     "example": "p {\n  font-size: calc(pow(10, 12) * 1rem);\n  font-size: calc(sqrt(100) * 1rem);\n  font-size: calc(hypot(3, 4) * 1rem);\n  font-size: calc(log(10) * 1rem);\n  font-size: calc(exp(10) * 1rem);\n}",
     "mdn_path": [
@@ -517,7 +517,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family"
     },
     "example": "body {\n  font-family: fangsong;\n}",
     "polyfills": [
@@ -535,7 +535,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/float"
     },
     "example": "span:first-child {\n  float: inline-start;\n}",
     "mdn_path": [
@@ -560,7 +560,7 @@
     "browser_support": {},
     "web-feature": "focus-visible",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible"
     },
     "example": ":focus:not(:focus-visible) {\n  outline: 0;\n}",
     "polyfills": [
@@ -583,7 +583,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within"
     },
     "example": "form:focus-within {\n  background: rgb(0 128 0);\n}",
     "mdn_path": "css.selectors.focus-within",
@@ -606,7 +606,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face"
     },
     "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
     "mdn_path": "css.at-rules.font-face.src.format_keyword",
@@ -625,7 +625,7 @@
     "stage": 4,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
     "mdn_path": [
@@ -669,7 +669,7 @@
     "stage": 3,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/gap"
     },
     "example": ".grid-1 {\n  gap: 20px;\n}\n\n.grid-2 {\n  column-gap: 40px;\n  row-gap: 20px;\n}",
     "mdn_path": "css.properties.gap.grid_context",
@@ -702,7 +702,7 @@
     ],
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient"
     },
     "example": ".pie_chart {\n  background-image: conic-gradient(in oklch, yellowgreen 40%, gold 0deg 75%, #f06 0deg);\n}",
     "polyfills": [
@@ -720,7 +720,7 @@
     "stage": 3,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid"
     },
     "example": "section {\n  display: grid;\n  grid-template-columns: 100px 100px 100px;\n  grid-gap: 10px;\n}",
     "mdn_path": "css.properties.grid",
@@ -740,7 +740,7 @@
     "browser_support": {},
     "web-feature": "has",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has"
     },
     "example": "a:has(> img) {\n  display: block;\n}",
     "mdn_path": "css.selectors.has",
@@ -763,7 +763,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value"
     },
     "example": "section {\n  background-color: #f3f3f3f3;\n  color: #0003;\n}",
     "mdn_path": "css.types.color.rgb_hexadecimal_notation.alpha_hexadecimal_notation",
@@ -782,7 +782,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hwb"
     },
     "example": "p {\n  color: hwb(120 44% 50%);\n}",
     "mdn_path": [
@@ -804,7 +804,7 @@
     "browser_support": {},
     "web-feature": "ic",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units#dimensions"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units"
     },
     "example": "p {\n  text-indent: 2ic;\n}",
     "mdn_path": "css.types.length.ic",
@@ -823,7 +823,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/image/image-set"
     },
     "example": "p {\n  background-image: image-set(\n    \"foo.png\" 1x,\n    \"foo-2x.png\" 2x,\n    \"foo-print.png\" 600dpi\n  );\n}",
     "mdn_path": "css.types.image.image-set",
@@ -897,7 +897,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:in-range"
     },
     "mdn_path": "css.selectors.in-range",
     "example": "input:in-range {\n  background-color: rgb(0 255 0 / 0.25);\n}\ninput:out-of-range {\n  background-color: rgb(255 0 0 / 0.25);\n  border: 2px solid red;\n}"
@@ -911,7 +911,7 @@
     "browser_support": {},
     "web-feature": "is",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:is"
     },
     "example": "p:is(:first-child, .special) {\n  margin-top: 1em;\n}",
     "mdn_path": [
@@ -934,7 +934,7 @@
     "browser_support": {},
     "web-feature": "lab",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lab"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lab"
     },
     "example": "body {\n  color: lab(80% 50 20);\n}",
     "mdn_path": [
@@ -959,7 +959,7 @@
     "browser_support": {},
     "web-feature": "lab",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/lch"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/lch"
     },
     "example": "body {\n  color: lch(53% 105 40);\n}",
     "mdn_path": [
@@ -981,7 +981,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark"
     },
     "example": "body {\n  color: light-dark(cyan, magenta);\n}",
     "mdn_path": "css.types.color.light-dark",
@@ -1000,7 +1000,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-block"
     },
     "example": "div {\n  overflow-block: scroll;\n}",
     "mdn_path": [
@@ -1022,7 +1022,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior-block"
     },
     "example": "div {\n  overscroll-behavior-block: scroll;\n}",
     "mdn_path": [
@@ -1044,7 +1044,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Logical_properties_and_values"
     },
     "example": "span:first-child {\n  margin-inline-start: 10px;\n}",
     "mdn_path": [
@@ -1119,7 +1119,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/resize"
     },
     "example": "area {\n  resize: inline;\n}",
     "mdn_path": [
@@ -1142,7 +1142,7 @@
     "browser_support": {},
     "web-feature": "viewport-unit-variants",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/length#vb"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length"
     },
     "example": "span:first-child {\n  width: 5vi; height: 10vb; \n}",
     "mdn_path": [
@@ -1216,7 +1216,7 @@
       }
     },
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ratio"
     },
     "example": "@media (aspect-ratio: 1.77) {\n  html {\n    background-color: cyan;\n  }\n}",
     "mdn_path": "css.types.ratio.number_value",
@@ -1236,7 +1236,7 @@
     "browser_support": {},
     "web-feature": "media-query-range-syntax",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#Syntax_improvements_in_Level_4"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using"
     },
     "example": "@media (width < 480px) {}\n\n@media (480px <= width < 768px) {}\n\n@media (width >= 768px) {}",
     "mdn_path": "css.at-rules.media.range_syntax",
@@ -1255,7 +1255,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc"
     },
     "example": "p {\n  padding: calc(1px + calc(4 / 3));\n}",
     "mdn_path": "css.types.calc.nested",
@@ -1275,7 +1275,7 @@
     "browser_support": {},
     "web-feature": "nesting",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector"
     },
     "example": "article {\n  & p {\n    color: #333;\n  }\n}",
     "mdn_path": "css.selectors.nesting",
@@ -1294,7 +1294,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:not"
     },
     "example": "p:not(:first-child, .special) {\n  margin-top: 1em;\n}",
     "mdn_path": "css.selectors.not.selector_list",
@@ -1314,7 +1314,7 @@
     "web-feature": "oklab",
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklab"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklab"
     },
     "example": "p {\n  color: oklab(72.322% -0.0465 -0.1150);\n  color: oklch(72.322% 0.12403 247.996);\n}",
     "mdn_path": [
@@ -1338,7 +1338,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity"
     },
     "example": "img {\n  opacity: 90%;\n}",
     "mdn_path": "css.properties.opacity.percentages",
@@ -1357,7 +1357,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow"
     },
     "example": "html {\n  overflow: hidden auto;\n}",
     "mdn_path": "css.properties.overflow.multiple_keywords",
@@ -1376,7 +1376,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap"
     },
     "example": "p {\n  overflow-wrap: break-word;\n}",
     "mdn_path": [
@@ -1398,7 +1398,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
     "mdn_path": "css.properties.overscroll-behavior"
@@ -1411,7 +1411,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-content"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/place-content"
     },
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "mdn_path": [
@@ -1427,6 +1427,27 @@
     ]
   },
   {
+    "id": "position-area",
+    "title": "`position-area` property",
+    "description": "The `position-area` property offers a convenient grid-based concept for positioning relative to the default anchor box.",
+    "specification": "https://drafts.csswg.org/css-anchor-position/#position-area",
+    "stage": 2,
+    "browser_support": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position-area"
+    },
+    "docs": {},
+    "example": "div {\n  position-area: start end;\n}",
+    "mdn_path": [
+      "css.properties.position-area"
+    ],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-position-area-property"
+      }
+    ]
+  },
+  {
     "id": "prefers-color-scheme-query",
     "title": "`prefers-color-scheme` Media Query",
     "description": "A media query to detect if the user has requested the system use a light or dark color theme",
@@ -1434,7 +1455,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme"
     },
     "example": "body {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: black;\n    color: white;\n  }\n}",
     "mdn_path": "css.at-rules.media.prefers-color-scheme",
@@ -1457,7 +1478,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion"
     },
     "example": ".animation {\n  animation: vibrate 0.3s linear infinite both; \n}\n\n@media (prefers-reduced-motion: reduce) {\n  .animation {\n    animation: none;\n  }\n}",
     "mdn_path": "css.at-rules.media.prefers-reduced-motion"
@@ -1488,7 +1509,7 @@
     "browser_support": {},
     "web-feature": "read-write-pseudos",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:read-only"
     },
     "example": "input:read-only {\n  background-color: #ccc;\n}",
     "mdn_path": "css.selectors.read-only"
@@ -1501,7 +1522,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value"
     },
     "example": "html {\n  color: rebeccapurple;\n}",
     "mdn_path": "css.types.color.named-color.rebeccapurple",
@@ -1539,7 +1560,7 @@
       "css.types.color.rgb.mixed_type_parameters"
     ],
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"
     },
     "example": "p {\n  color: lch(from peru calc(l * 0.8) c h);\n}",
     "polyfills": [
@@ -1557,7 +1578,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:scope"
     },
     "example": ":scope {\n  background-color: pink;\n}",
     "mdn_path": [
@@ -1578,7 +1599,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sign"
     },
     "example": "div {\n  order: abs(-10);\n  order: sign(-10);\n}",
     "mdn_path": [
@@ -1615,7 +1636,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/round"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/round"
     },
     "example": "div {\n  left: mod(18px, 5px);\n  top: rem(18px, 5px);\n  right: round(2.5px, 1px);\n  bottom: round(up, 15px, 7px);\n}",
     "mdn_path": [
@@ -1638,7 +1659,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family"
     },
     "example": "body {\n  font-family: system-ui;\n}",
     "mdn_path": "css.properties.font-family.system-ui",
@@ -1657,7 +1678,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration"
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
     "mdn_path": [
@@ -1682,7 +1703,7 @@
     "stage": 2,
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sin"
     },
     "example": "body {\n  left: sin(45deg);\n  left: cos(45deg);\n  left: tan(45deg);\n  left: asin(0.5);\n  left: acos(0.5);\n  left: atan(10);\n  left: atan2(-1, 1);\n}",
     "mdn_path": [
@@ -1710,7 +1731,7 @@
     "mdn_path": "css.types.global_keywords.unset",
     "browser_support": {},
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/unset"
     },
     "example": "div {\n  border-color: unset;\n  color: unset;\n}",
     "polyfills": [
@@ -1738,7 +1759,7 @@
     "browser_support": {},
     "web-feature": "where",
     "docs": {
-      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:where"
     },
     "example": "a:where(:not(:hover)) {\n  text-decoration: none;\n}",
     "mdn_path": [
