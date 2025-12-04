@@ -2265,7 +2265,7 @@ export default [
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/JLHwung/postcss-font-family-system-ui"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-system-ui-font-family"
       }
     ],
     "vendors_implementations": 3

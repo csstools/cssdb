@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.5.2 (December 4, 2025)
+
+- Update `system-ui-font-family` polyfill url
+
 ### 8.5.1 (December 3, 2025)
 
 - Rename `position-area` to `position-area-property`
