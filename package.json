@@ -68,9 +68,9 @@
     "postcss-cli": "^11.0.1",
     "postcss-preset-env": "^10.4.0",
     "semver": "^7.7.3",
-    "stylelint": "^16.26.0",
+    "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
-    "web-features": "^3.9.2"
+    "web-features": "^3.9.3"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
