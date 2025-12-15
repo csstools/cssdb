@@ -1919,9 +1919,11 @@
     "stage": 2,
     "browser_support": {
       "and_chr": "129",
+      "and_ff": "147",
       "android": "129",
       "chrome": "129",
       "edge": "129",
+      "firefox": "147",
       "ios_saf": "26",
       "op_mob": "86",
       "opera": "115",
@@ -1933,13 +1935,14 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position-area"
     },
     "example": "div {\n  position-area: start end;\n}",
+    "interoperable_at": 1768262400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-position-area-property"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "prefers-color-scheme-query",
@@ -2283,22 +2286,26 @@
       "chrome": "87",
       "edge": "87",
       "firefox": "70",
+      "ios_saf": "26.2",
       "oculus": "13.0",
       "op_mob": "62",
       "opera": "73",
-      "samsung": "14.0"
+      "safari": "26.2",
+      "samsung": "14.0",
+      "webview_ios": "26.2"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration"
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
+    "interoperable_at": 1605744000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-text-decoration-shorthand"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "trigonometric-functions",
