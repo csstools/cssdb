@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### Unreleased
+
+- Updated `@mdn/browser-compat-data` to `7.2.1`
+
 ### 8.5.2 (December 4, 2025)
 
 - Update `system-ui-font-family` polyfill url
