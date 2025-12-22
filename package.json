@@ -70,7 +70,7 @@
     "semver": "^7.7.3",
     "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
-    "web-features": "^3.10.0"
+    "web-features": "^3.11.1"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
