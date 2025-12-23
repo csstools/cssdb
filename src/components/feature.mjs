@@ -76,7 +76,7 @@ export function renderFeature(feature) {
 						alt=""
 						loading="lazy"
 						decoding="async"
-						width="55"
+						width="37"
 						height="20"
 					>
 				</a>
