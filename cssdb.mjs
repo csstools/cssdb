@@ -2011,6 +2011,23 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "property-rule-prelude-list",
+    "title": "`@property` prelude list",
+    "description": "Declare a list of custom properties in a single `@property` rule",
+    "specification": "https://github.com/w3c/csswg-drafts/issues/7523#issuecomment-3683970305",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@property --color-a, --color-b {\n  inherits: true;\n  initial-value: black;\n  syntax: \"<color>\";\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-property-rule-prelude-list"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "random-function",
     "title": "`random()` function",
     "description": "Represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits",
@@ -2240,6 +2257,23 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "syntax-descriptor-syntax-production",
+    "title": "`<syntax>` production in `syntax` descriptors",
+    "description": "Use the `<syntax>` production in `syntax` descriptors",
+    "specification": "https://github.com/w3c/csswg-drafts/issues/11426#issuecomment-3657538113",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@property --color {\n  inherits: true;\n  initial-value: black;\n  syntax: <color>;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-syntax-descriptor-syntax-production"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "system-ui-font-family",
     "title": "`system-ui` Font Family",
     "description": "A generic font used to match the user’s interface",
@@ -2298,7 +2332,7 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration"
     },
     "example": "p {\n  text-decoration: green wavy underline 2px;\n}",
-    "interoperable_at": 1605744000,
+    "interoperable_at": 1765497600,
     "polyfills": [
       {
         "type": "PostCSS Plugin",

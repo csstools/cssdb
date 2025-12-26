@@ -226,7 +226,7 @@
     "browser_support": {},
     "docs": {},
     "example": "p {\n  color: color(display-p3-linear 0.3081 0.014 0.0567);\n}",
-    "mdn_path": [],
+    "mdn_path": ["#color.color.colorSpace_parameter_accepts_display-p3-linear_value"],
     "polyfills": [
       {
         "type": "PostCSS Plugin",
@@ -1484,6 +1484,23 @@
     "mdn_path": "css.at-rules.media.prefers-reduced-motion"
   },
   {
+    "id": "property-rule-prelude-list",
+    "title": "`@property` prelude list",
+    "description": "Declare a list of custom properties in a single `@property` rule",
+    "specification": "https://github.com/w3c/csswg-drafts/issues/7523#issuecomment-3683970305",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@property --color-a, --color-b {\n  inherits: true;\n  initial-value: black;\n  syntax: \"<color>\";\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-property-rule-prelude-list"
+      }
+    ]
+  },
+  {
     "id": "random-function",
     "title": "`random()` function",
     "description": "Represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits",
@@ -1648,6 +1665,23 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
+      }
+    ]
+  },
+  {
+    "id": "syntax-descriptor-syntax-production",
+    "title": "`<syntax>` production in `syntax` descriptors",
+    "description": "Use the `<syntax>` production in `syntax` descriptors",
+    "specification": "https://github.com/w3c/csswg-drafts/issues/11426#issuecomment-3657538113",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@property --color {\n  inherits: true;\n  initial-value: black;\n  syntax: <color>;\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-syntax-descriptor-syntax-production"
       }
     ]
   },

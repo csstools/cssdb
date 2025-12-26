@@ -1,8 +1,10 @@
 # Changes to cssdb
 
-### Unreleased
+### 8.6.0 (December 26, 2025)
 
-- Updated `@mdn/browser-compat-data` to `7.2.1`
+- Updated `@mdn/browser-compat-data` to `7.2.2`
+- Added `property-rule-prelude-list`
+- Added `syntax-descriptor-syntax-production`
 
 ### 8.5.2 (December 4, 2025)
 

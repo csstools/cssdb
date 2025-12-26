@@ -4,6 +4,10 @@ import { get } from './get.mjs';
 import { MDNToBrowserlist } from './mdn-to-browserslist.mjs';
 
 function getBrowsersFromFeature(mdnConfigPath, feature) {
+	if (mdnConfigPath.startsWith('#')) {
+		return {};
+	}
+
 	const mdnFeature = get(bcd, mdnConfigPath);
 	if (!mdnFeature) {
 		throw new Error(`Invalid mdn config path "${mdnConfigPath}" in feature "${feature.id}"`);
@@ -100,7 +104,11 @@ export default function supportedBrowsersFromMdn(path, feature) {
 
 	const supports = paths.map(mdnPath => getBrowsersFromFeature(mdnPath, feature));
 
-	Object.keys(supports[0]).forEach(browserKey => {
+	const browserKeys = Array.from(new Set(supports.flatMap((x) => {
+		return Object.keys(x);
+	})));
+
+	browserKeys.forEach(browserKey => {
 		const isInAllFeatures = supports.every(featureSupport => typeof featureSupport[browserKey] !== 'undefined');
 
 		if (isInAllFeatures) {
