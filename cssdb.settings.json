@@ -1248,6 +1248,23 @@
     ]
   },
   {
+    "id": "mixins",
+    "title": "`@mixin`",
+    "description": "Use `@mixin` and `@apply`",
+    "specification": "https://drafts.csswg.org/css-mixins/#mixin-rule",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@mixin --foo() {\n    color: green;\n  }\n\n.foo {\n  @apply --foo;\n}",
+    "mdn_path": "",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-mixins"
+      }
+    ]
+  },
+  {
     "id": "nested-calc",
     "title": "Nested `calc()`",
     "description": "Nest calc functions with the calc function name",

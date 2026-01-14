@@ -1613,6 +1613,23 @@ export default [
     "web-feature": "media-query-range-syntax"
   },
   {
+    "id": "mixins",
+    "title": "`@mixin`",
+    "description": "Use `@mixin` and `@apply`",
+    "specification": "https://drafts.csswg.org/css-mixins/#mixin-rule",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@mixin --foo() {\n    color: green;\n  }\n\n.foo {\n  @apply --foo;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-mixins"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "nested-calc",
     "title": "Nested `calc()`",
     "description": "Nest calc functions with the calc function name",
