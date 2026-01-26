@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.7.1 (January 26, 2026)
+
+- Updated `@mdn/browser-compat-data` to `7.2.5`
+
 ### 8.7.0 (January 14, 2026)
 
 - Updated `@mdn/browser-compat-data` to `7.2.3`
