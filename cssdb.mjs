@@ -877,9 +877,11 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "108",
+      "and_ff": "105",
       "android": "108",
       "chrome": "108",
       "edge": "108",
+      "firefox": "105",
       "ios_saf": "5",
       "op_mob": "73",
       "opera": "94",
@@ -891,13 +893,14 @@ export default [
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face"
     },
     "example": "@font-face {\n  src: url(file.woff2) format(woff2);\n}",
+    "interoperable_at": 1670198400,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/valtlai/postcss-font-format-keywords"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "font-variant-property",
@@ -906,23 +909,31 @@ export default [
     "specification": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
     "stage": 4,
     "browser_support": {
+      "and_chr": "117",
       "and_ff": "34",
+      "android": "117",
+      "chrome": "117",
+      "edge": "117",
       "firefox": "34",
       "ios_saf": "9.3",
+      "op_mob": "78",
+      "opera": "103",
       "safari": "9.1",
+      "samsung": "24.0",
       "webview_ios": "9.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variant"
     },
     "example": "h2 {\n  font-variant: small-caps;\n}",
+    "interoperable_at": 1694736000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/postcss/postcss-font-variant"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "gamut-mapping",
