@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "8.7.1",
+  "version": "8.8.0",
   "type": "module",
   "description": "A list of CSS features and their positions in the process of becoming implemented web standards",
   "license": "MIT-0",
@@ -61,7 +61,7 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^7.3.1",
+    "@mdn/browser-compat-data": "^7.3.3",
     "browserslist": "^4.28.1",
     "glob": "^13.0.1",
     "postcss": "^8.5.6",
@@ -70,7 +70,7 @@
     "semver": "^7.7.4",
     "stylelint": "^17.1.1",
     "stylelint-config-standard": "^40.0.0",
-    "web-features": "^3.15.0"
+    "web-features": "^3.17.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",

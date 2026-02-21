@@ -936,6 +936,28 @@
     "vendors_implementations": 3
   },
   {
+    "id": "font-width-property",
+    "title": "`font-width` property",
+    "description": "Use the `font-width` property and descriptor",
+    "specification": "https://drafts.csswg.org/css-fonts/#font-stretch-prop",
+    "stage": 2,
+    "browser_support": {
+      "ios_saf": "18.4",
+      "safari": "18.4"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-stretch#browser_compatibility"
+    },
+    "example": "p {\n  font-width: 150%;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-font-width-property"
+      }
+    ],
+    "vendors_implementations": 1
+  },
+  {
     "id": "gamut-mapping",
     "title": "Gamut mapping for CSS color functions",
     "description": "Gamut map css colors to fit display specific gamuts.",
