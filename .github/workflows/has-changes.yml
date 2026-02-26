@@ -2,6 +2,9 @@ name: Has Changes
 on:
   push:
 
+permissions:
+  contents: read
+
 jobs:
   has-changes:
     runs-on: ubuntu-latest

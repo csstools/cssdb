@@ -2,6 +2,9 @@ name: test-older-node
 on:
   push:
 
+permissions:
+  contents: read
+
 concurrency:
   group: test-older-node-branch-node-${{ github.ref }}
   cancel-in-progress: true

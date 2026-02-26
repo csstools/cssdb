@@ -60,7 +60,7 @@ const presetEnvPlugins = [
 export function renderFeaturePolyfill(polyfill, id, title) {
 	const repoUrl = polyfill.link.includes('csstools/postcss-plugins') ? 'https://github.com/csstools/postcss-plugins' : polyfill.link;
 	const starImage = `https://img.shields.io/github/stars/${polyfill.link.split('/').slice(3, 5).join('/')}.svg?style=social`;
-	const isGithub = repoUrl.includes('github.com');
+	const isGithub = (new URL(repoUrl)).hostname === 'github.com';
 	const isBundled = presetEnvPlugins.includes(id);
 
 	return html`
