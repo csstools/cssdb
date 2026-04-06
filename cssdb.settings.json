@@ -886,7 +886,7 @@
         "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
       },
       "oculus": {
-        "from": null,
+        "from": "31.2",
         "to": "5.0",
         "bug": "https://github.com/mdn/browser-compat-data/issues/23012#issuecomment-2095840893"
       },
