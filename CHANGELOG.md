@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.8.1 (May 10, 2026)
+
+- Updated `@mdn/browser-compat-data` to `7.3.13`
+
 ### 8.8.0 (February 21, 2026)
 
 - Added `font-width-property`

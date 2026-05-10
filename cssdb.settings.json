@@ -284,7 +284,9 @@
     "description": "Mix any number of colors",
     "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
     "stage": 2,
-    "mdn_path": [],
+    "mdn_path": [
+      "css.types.color.color-mix.variadic_color_arguments"
+    ],
     "browser_support": {},
     "docs": {},
     "example": "p {\n  color: color-mix(in lch, red, lime, blue);\n}",
@@ -1054,6 +1056,7 @@
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior-block"
     },
     "example": "div {\n  overscroll-behavior-block: scroll;\n}",
+    "allow_partial_implementation": true,
     "mdn_path": [
       "css.properties.overscroll-behavior-block",
       "css.properties.overscroll-behavior-inline"

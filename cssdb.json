@@ -423,7 +423,10 @@
     "description": "Mix any number of colors",
     "specification": "https://www.w3.org/TR/css-color-5/#color-mix",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_ff": "150",
+      "firefox": "150"
+    },
     "docs": {},
     "example": "p {\n  color: color-mix(in lch, red, lime, blue);\n}",
     "polyfills": [
@@ -432,7 +435,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-variadic-function-arguments"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "container-queries",
@@ -1928,26 +1931,20 @@
     "specification": "https://www.w3.org/TR/css-overscroll-1/",
     "stage": 2,
     "browser_support": {
-      "and_chr": "63",
-      "and_ff": "59",
-      "android": "63",
-      "chrome": "63",
+      "and_chr": "144",
+      "and_ff": "150",
+      "android": "144",
+      "chrome": "144",
       "edge": "18",
-      "firefox": "59",
-      "ios_saf": "16",
-      "oculus": "5.0",
-      "op_mob": "46",
-      "opera": "50",
-      "safari": "16",
-      "samsung": "8.0",
-      "webview_ios": "16"
+      "firefox": "150",
+      "op_mob": "95",
+      "opera": "128"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior"
     },
     "example": ".messages {\n  height: 220px;\n  overflow: auto;\n  overscroll-behavior-y: contain;\n}\n\nbody {\n  margin: 0;\n  overscroll-behavior: none;\n}",
-    "interoperable_at": 1662940800,
-    "vendors_implementations": 3
+    "vendors_implementations": 2
   },
   {
     "id": "place-properties",

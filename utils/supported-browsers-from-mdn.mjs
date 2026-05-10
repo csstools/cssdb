@@ -46,7 +46,7 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				}
 
 				if (browserEntry.partial_implementation) {
-					return false;
+					return !!feature.allow_partial_implementation;
 				}
 
 				if (supportsPrefixes && isAllowedPrefix) {
@@ -63,8 +63,8 @@ function getBrowsersFromFeature(mdnConfigPath, feature) {
 				return;
 			}
 
-			if (browserSupport.partial_implementation) {
-				return false;
+			if (browserSupport.partial_implementation && !feature.allow_partial_implementation) {
+				return;
 			}
 
 			const isPrefixed = typeof browserSupport.prefix !== 'undefined';
