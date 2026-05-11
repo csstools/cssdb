@@ -513,21 +513,27 @@ export default [
     "specification": "https://drafts.csswg.org/css-color-5/#contrast-color",
     "stage": 2,
     "browser_support": {
+      "and_chr": "147",
       "and_ff": "146",
+      "android": "147",
+      "chrome": "147",
+      "edge": "147",
       "firefox": "146",
       "ios_saf": "26",
+      "opera": "131",
       "safari": "26",
       "webview_ios": "26"
     },
     "docs": {},
     "example": "p {\n  color: contrast-color( purple );\n}",
+    "interoperable_at": 1775779200,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-contrast-color-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "custom-media-queries",
