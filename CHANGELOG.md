@@ -1,5 +1,10 @@
 # Changes to cssdb
 
+### 8.9.0 (May 13, 2026)
+
+- Added `container-rule-prelude-list`
+- Added `image-function`
+
 ### 8.8.1 (May 10, 2026)
 
 - Updated `@mdn/browser-compat-data` to `7.3.13`

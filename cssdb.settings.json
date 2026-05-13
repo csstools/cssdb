@@ -318,6 +318,23 @@
     ]
   },
   {
+    "id": "container-rule-prelude-list",
+    "title": "`@container` prelude list",
+    "description": "Declare a list of container queries in a single `@container` rule",
+    "specification": "https://drafts.csswg.org/css-conditional-5/#container-rule",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@container card (inline-size > 30em), style(--responsive: true) {\n  /* styles */\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-container-rule-prelude-list"
+      }
+    ]
+  },
+  {
     "id": "content-alt-text",
     "title": "Alt text for `content`",
     "description": "Syntax that allows setting alternative text",
@@ -843,6 +860,23 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-ic-unit"
+      }
+    ]
+  },
+  {
+    "id": "image-function",
+    "title": "`image()` Function",
+    "description": "Generate a solid-color image from any color.",
+    "specification": "https://drafts.csswg.org/css-images-4/#funcdef-image",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "div {\n  background-image: image( purple );\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-image-function"
       }
     ]
   },
