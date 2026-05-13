@@ -8,7 +8,7 @@ export function renderFooter() {
 
 			<p class="cssdb-deploys">
 				<a href="https://www.netlify.com" target="_blank" rel="noreferrer" class="cssdb-deploys__logo">
-					<img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" loading="lazy" decoding="async" width="114" height="51" />
+					<img src="https://www.netlify.com/assets/badges/netlify-badge-dark.svg" alt="Deploys by Netlify" loading="lazy" decoding="async" width="114" height="51" />
 				</a>
 			</p>
 		</footer>
