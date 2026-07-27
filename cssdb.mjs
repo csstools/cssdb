@@ -981,7 +981,8 @@ export default [
     "stage": 2,
     "browser_support": {
       "ios_saf": "18.4",
-      "safari": "18.4"
+      "safari": "18.4",
+      "webview_ios": "18.4"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-stretch#browser_compatibility"

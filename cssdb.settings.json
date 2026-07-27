@@ -679,13 +679,7 @@
         "css.at-rules.font-face.font-width",
         "css.properties.font-width"
       ],
-      "browser_support_overrides": {
-        "ios_saf": {
-          "from": null,
-          "to": "18.4",
-          "bug": "https://github.com/mdn/browser-compat-data/issues/29096"
-        }
-      },
+      "browser_support_overrides": {},
       "polyfills": [
         {
           "type": "PostCSS Plugin",
