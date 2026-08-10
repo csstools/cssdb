@@ -64,7 +64,7 @@
     "@mdn/browser-compat-data": "^8.0.7",
     "browserslist": "^4.28.6",
     "glob": "^13.0.1",
-    "postcss": "^8.5.20",
+    "postcss": "^8.5.25",
     "postcss-cli": "^11.0.1",
     "postcss-preset-env": "^11.3.2",
     "semver": "^7.8.5",
