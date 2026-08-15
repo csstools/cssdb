@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.10.0 (Aug 15, 2026)
+
+- Added `fit-tolerance-property`
+
 ### 8.9.0 (May 13, 2026)
 
 - Added `container-rule-prelude-list`
