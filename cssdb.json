@@ -28,7 +28,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/maximkoretskiy/postcss-initial"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-initial"
       }
     ],
     "vendors_implementations": 3
@@ -39,7 +39,16 @@
     "description": "Relative alpha colors",
     "specification": "https://drafts.csswg.org/css-color-5/#relative-alpha",
     "stage": 2,
-    "browser_support": {},
+    "browser_support": {
+      "and_chr": "151",
+      "android": "151",
+      "chrome": "151",
+      "edge": "151",
+      "ios_saf": "27",
+      "opera": "135",
+      "safari": "27",
+      "webview_ios": "27"
+    },
     "docs": {},
     "example": "p {\n  color: alpha(from red / calc(alpha * 0.5));\n}",
     "polyfills": [
@@ -48,7 +57,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function"
       }
     ],
-    "vendors_implementations": 0
+    "vendors_implementations": 1
   },
   {
     "id": "any-link-pseudo-class",
@@ -790,6 +799,23 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
+    "id": "fit-tolerance-property",
+    "title": "`fit-tolerance` Property",
+    "description": "A property for defining placement precision in grid lanes",
+    "specification": "https://drafts.csswg.org/css-grid-3/#placement-tolerance",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "a {\n  fit-tolerance: 2em;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-fit-tolerance-property"
       }
     ],
     "vendors_implementations": 0

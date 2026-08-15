@@ -14,7 +14,7 @@
     "polyfills": [
       {
         "type": "PostCSS Plugin",
-        "link": "https://github.com/maximkoretskiy/postcss-initial"
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-initial"
       }
     ]
   },
@@ -24,6 +24,9 @@
     "description": "Relative alpha colors",
     "specification": "https://drafts.csswg.org/css-color-5/#relative-alpha",
     "stage": 2,
+    "mdn_path": [
+      "css.types.color.alpha"
+    ],
     "browser_support": {},
     "docs": {},
     "example": "p {\n  color: alpha(from red / calc(alpha * 0.5));\n}",
@@ -543,6 +546,22 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/JLHwung/postcss-font-family-fangsong"
+      }
+    ]
+  },
+  {
+    "id": "fit-tolerance-property",
+    "title": "`fit-tolerance` Property",
+    "description": "A property for defining placement precision in grid lanes",
+    "specification": "https://drafts.csswg.org/css-grid-3/#placement-tolerance",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "a {\n  fit-tolerance: 2em;\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-fit-tolerance-property"
       }
     ]
   },

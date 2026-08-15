@@ -17,6 +17,8 @@ cssdb.forEach(feature => {
 	let browser_support = {};
 	if (feature.mdn_path) {
 		browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
+	} else {
+		console.log(`missing mdn_path for ${feature.id}`);
 	}
 
 	browser_support = applyBrowserOverrides(
