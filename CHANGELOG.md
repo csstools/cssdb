@@ -3,6 +3,7 @@
 ### 8.10.0 (Aug 15, 2026)
 
 - Added `fit-tolerance-property`
+- Added `property-rule-optional-descriptors`
 
 ### 8.9.0 (May 13, 2026)
 

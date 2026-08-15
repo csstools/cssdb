@@ -2149,6 +2149,23 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "property-rule-optional-descriptors",
+    "title": "`@property` optional descriptors",
+    "description": "Omit optional descriptors in `@property` rules",
+    "specification": "https://drafts.css-houdini.org/css-properties-values-api/#determining-registration",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "@property {\n  initial-value: red;\n  syntax: '<color>';\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-property-rule-optional-descriptors"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "property-rule-prelude-list",
     "title": "`@property` prelude list",
     "description": "Declare a list of custom properties in a single `@property` rule",

@@ -15,7 +15,7 @@ cssdb.forEach(applyWebFeaturesData);
 cssdb.forEach(feature => {
 	feature.browser_support = {};
 	let browser_support = {};
-	if (feature.mdn_path) {
+	if (feature.mdn_path?.length) {
 		browser_support = supportedBrowsersFromMdn(feature.mdn_path, feature);
 	} else {
 		console.log(`missing mdn_path for ${feature.id}`);
