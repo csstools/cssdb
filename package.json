@@ -1,6 +1,6 @@
 {
   "name": "cssdb",
-  "version": "8.10.0",
+  "version": "8.11.0",
   "type": "module",
   "description": "A list of CSS features and their positions in the process of becoming implemented web standards",
   "license": "MIT-0",
@@ -61,7 +61,7 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^8.0.7",
+    "@mdn/browser-compat-data": "^8.0.13",
     "browserslist": "^4.28.6",
     "glob": "^13.0.1",
     "postcss": "^8.5.25",
@@ -95,6 +95,6 @@
     "stages"
   ],
   "volta": {
-    "node": "24.13.0"
+    "node": "24.20.0"
   }
 }

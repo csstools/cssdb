@@ -41,10 +41,13 @@ export default [
     "stage": 2,
     "browser_support": {
       "and_chr": "151",
+      "and_ff": "155",
       "android": "151",
       "chrome": "151",
       "edge": "151",
+      "firefox": "155",
       "ios_saf": "27",
+      "op_mob": "101",
       "opera": "135",
       "safari": "27",
       "webview_ios": "27"
@@ -57,7 +60,7 @@ export default [
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "any-link-pseudo-class",
@@ -2149,6 +2152,23 @@ export default [
     "vendors_implementations": 3
   },
   {
+    "id": "private-rule",
+    "title": "`@private` rule",
+    "description": "Declare a list of private custom properties",
+    "specification": "https://drafts.csswg.org/css-mixins-1/#private",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": ".foo {\n  @private {\n    --foo: red;\n  }\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-private-rule"
+      }
+    ],
+    "vendors_implementations": 0
+  },
+  {
     "id": "property-rule-optional-descriptors",
     "title": "`@property` optional descriptors",
     "description": "Omit optional descriptors in `@property` rules",
@@ -2413,6 +2433,23 @@ export default [
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "symbols-function",
+    "title": "`symbols()` function",
+    "description": "Define a counter style inline in a property value",
+    "specification": "https://drafts.csswg.org/css-counter-styles/#symbols-function",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "ol{\n  list-style: symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\");\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-symbols-function"
+      }
+    ],
+    "vendors_implementations": 0
   },
   {
     "id": "syntax-descriptor-syntax-production",

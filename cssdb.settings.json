@@ -1580,6 +1580,23 @@
     "mdn_path": "css.at-rules.media.prefers-reduced-motion"
   },
   {
+    "id": "private-rule",
+    "title": "`@private` rule",
+    "description": "Declare a list of private custom properties",
+    "specification": "https://drafts.csswg.org/css-mixins-1/#private",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": ".foo {\n  @private {\n    --foo: red;\n  }\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-private-rule"
+      }
+    ]
+  },
+  {
     "id": "property-rule-optional-descriptors",
     "title": "`@property` optional descriptors",
     "description": "Omit optional descriptors in `@property` rules",
@@ -1778,6 +1795,23 @@
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-stepped-value-functions"
+      }
+    ]
+  },
+  {
+    "id": "symbols-function",
+    "title": "`symbols()` function",
+    "description": "Define a counter style inline in a property value",
+    "specification": "https://drafts.csswg.org/css-counter-styles/#symbols-function",
+    "stage": 2,
+    "browser_support": {},
+    "docs": {},
+    "example": "ol{\n  list-style: symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\");\n}",
+    "mdn_path": [],
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-symbols-function"
       }
     ]
   },

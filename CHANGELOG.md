@@ -1,5 +1,11 @@
 # Changes to cssdb
 
+### 8.11.0 (Aug 30, 2026)
+
+- Added `private-rule`
+- Added `symbols-functions`
+- Updated `@mdn/browser-compat-data` to `8.0.13`
+
 ### 8.10.0 (Aug 15, 2026)
 
 - Added `fit-tolerance-property`
