@@ -61,16 +61,16 @@
     "test:doc-links": "node tasks/check-doc-links.mjs"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^8.0.13",
-    "browserslist": "^4.28.6",
+    "@mdn/browser-compat-data": "^8.1.0",
+    "browserslist": "^4.28.9",
     "glob": "^13.0.1",
-    "postcss": "^8.5.25",
-    "postcss-cli": "^11.0.1",
-    "postcss-preset-env": "^11.4.0",
+    "postcss": "^8.5.28",
+    "postcss-cli": "^12.0.0",
+    "postcss-preset-env": "^11.5.2",
     "semver": "^7.8.5",
-    "stylelint": "^17.14.0",
+    "stylelint": "^17.15.0",
     "stylelint-config-standard": "^40.0.0",
-    "web-features": "^3.36.0"
+    "web-features": "^3.37.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
