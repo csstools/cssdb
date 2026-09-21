@@ -54,13 +54,14 @@ export default [
     },
     "docs": {},
     "example": "p {\n  color: alpha(from red / calc(alpha * 0.5));\n}",
+    "interoperable_at": 1789344000,
     "polyfills": [
       {
         "type": "PostCSS Plugin",
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function"
       }
     ],
-    "vendors_implementations": 2
+    "vendors_implementations": 3
   },
   {
     "id": "any-link-pseudo-class",
@@ -2369,7 +2370,8 @@ export default [
       "oculus": "40.0",
       "op_mob": "91",
       "opera": "122",
-      "safari": "15.4"
+      "safari": "15.4",
+      "samsung": "30.0"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sign"
