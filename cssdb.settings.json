@@ -376,6 +376,26 @@
     ]
   },
   {
+    "id": "custom-functions",
+    "title": "`@function` rule",
+    "description": "An at-rule for defining custom functions that take CSS values or custom properties as arguments and return a value",
+    "specification": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+    "stage": 2,
+    "browser_support": {},
+    "web-feature": "function",
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function"
+    },
+    "example": "@function --double(--value) {\n  result: calc(var(--value) * 2);\n}\n\np {\n  width: --double(10px);\n}",
+    "mdn_path": "css.at-rules.function",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-functions"
+      }
+    ]
+  },
+  {
     "id": "custom-media-queries",
     "title": "Custom Media Queries",
     "description": "An at-rule for defining aliases that represent media queries",

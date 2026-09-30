@@ -438,7 +438,10 @@
     "stage": 2,
     "browser_support": {
       "and_ff": "150",
-      "firefox": "150"
+      "firefox": "150",
+      "ios_saf": "27",
+      "safari": "27",
+      "webview_ios": "27"
     },
     "docs": {},
     "example": "p {\n  color: color-mix(in lch, red, lime, blue);\n}",
@@ -448,7 +451,7 @@
         "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-variadic-function-arguments"
       }
     ],
-    "vendors_implementations": 1
+    "vendors_implementations": 2
   },
   {
     "id": "container-queries",
@@ -565,6 +568,35 @@
       }
     ],
     "vendors_implementations": 3
+  },
+  {
+    "id": "custom-functions",
+    "title": "`@function` rule",
+    "description": "An at-rule for defining custom functions that take CSS values or custom properties as arguments and return a value",
+    "specification": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+    "stage": 2,
+    "browser_support": {
+      "and_chr": "139",
+      "android": "139",
+      "chrome": "139",
+      "edge": "139",
+      "oculus": "41.0",
+      "op_mob": "91",
+      "opera": "123",
+      "samsung": "30.0"
+    },
+    "docs": {
+      "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function"
+    },
+    "example": "@function --double(--value) {\n  result: calc(var(--value) * 2);\n}\n\np {\n  width: --double(10px);\n}",
+    "polyfills": [
+      {
+        "type": "PostCSS Plugin",
+        "link": "https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-functions"
+      }
+    ],
+    "vendors_implementations": 1,
+    "web-feature": "function"
   },
   {
     "id": "custom-media-queries",
