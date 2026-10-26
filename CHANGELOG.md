@@ -1,5 +1,9 @@
 # Changes to cssdb
 
+### 8.12.1 (Oct 26, 2026)
+
+- Updated `@mdn/browser-compat-data` to `8.1.7`
+
 ### 8.12.0 (Sep 30, 2026)
 
 - Added `custom-functions`
