@@ -1532,8 +1532,8 @@
     "example": ".example {\n  place-content: flex-end;\n  place-items: center / space-between;\n  place-self: flex-start / center;\n}",
     "mdn_path": [
       "css.properties.place-content",
-      "css.properties.place-content.flex_context",
-      "css.properties.place-content.grid_context"
+      "css.properties.place-content.context_flex",
+      "css.properties.place-content.context_grid"
     ],
     "polyfills": [
       {
