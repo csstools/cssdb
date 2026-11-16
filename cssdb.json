@@ -580,10 +580,13 @@
       "android": "139",
       "chrome": "139",
       "edge": "139",
+      "ios_saf": "27.3",
       "oculus": "41.0",
       "op_mob": "91",
       "opera": "123",
-      "samsung": "30.0"
+      "safari": "27.3",
+      "samsung": "30.0",
+      "webview_ios": "27.3"
     },
     "docs": {
       "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function"
