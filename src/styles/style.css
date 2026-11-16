@@ -546,7 +546,7 @@ img {
 		margin-block-start: 3em;
 	}
 
-	& :matches(h1, h2, h3, h4, h5, h6) a {
+	& :is(h1, h2, h3, h4, h5, h6) a {
 		color: inherit;
 		position: relative;
 
